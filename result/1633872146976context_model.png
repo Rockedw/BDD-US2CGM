@@ -1,0 +1,19 @@
+// 1633872145920 Context Model
+digraph {
+	1633872146976 [label=Context15]
+	1633872147120 [label="I have a _plugins directory"]
+	1633872146976 -> 1633872147120
+	1633872147120 [label="I have a _plugins directory"]
+	1633872147216 [label="I have a \"_plugins/ext.rb\" file with content:"]
+	1633872146976 -> 1633872147216
+	1633872147216 [label="I have a \"_plugins/ext.rb\" file with content:"]
+	1633872147312 [label="I have a \"index.html\" page that contains \"WRAP ME\""]
+	1633872146976 -> 1633872147312
+	1633872147312 [label="I have a \"index.html\" page that contains \"WRAP ME\""]
+	1633872147408 [label="I have a _posts directory"]
+	1633872146976 -> 1633872147408
+	1633872147408 [label="I have a _posts directory"]
+	1633872147504 [label="I have the following posts:"]
+	1633872146976 -> 1633872147504
+	1633872147504 [label="I have the following posts:"]
+}

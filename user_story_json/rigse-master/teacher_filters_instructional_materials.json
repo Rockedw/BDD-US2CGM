@@ -1,0 +1,158 @@
+{
+    "feature_name": "Teacher filters instructional materials",
+    "user_story": {
+        "as_a": "",
+        "i_want": "search for them by subject and grade",
+        "so_that": "find materials",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "the following Admin::tag records exist:",
+                        "I am on the new material page"
+                    ],
+                    [
+                        "I am on the search instructional materials page",
+                        "I uncheck \"Sequence\"",
+                        "I check \"Math\"",
+                        "I wait for the search to be ready"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"external_activity[name]\" with \"My grade 5 Math Activity\"",
+                        "I check \"external_activity[is_official]\"",
+                        "I select \"published\" from \"external_activity[publication_status]\"",
+                        "I check \"grade_levels_5\"",
+                        "I scroll \"#subject_areas_math\" to the center",
+                        "I check \"subject_areas_math\"",
+                        "I press \"Save\"",
+                        "I am on the new material page"
+                    ],
+                    [
+                        "I fill in \"external_activity[name]\" with \"My grade 7 Science Activity\"",
+                        "I check \"external_activity[is_official]\"",
+                        "I select \"published\" from \"external_activity[publication_status]\"",
+                        "I check \"grade_levels_7\"",
+                        "I check \"subject_areas_science\"",
+                        "I press \"Save\""
+                    ],
+                    [
+                        "I check \"Science\"",
+                        "I uncheck \"Math\"",
+                        "I wait for the search to be ready"
+                    ],
+                    [
+                        "I uncheck \"Math\"",
+                        "I uncheck \"Science\"",
+                        "I check \"grade_level_7-8\"",
+                        "I wait for the search to be ready"
+                    ],
+                    [
+                        "I uncheck \"grade_level_7-8\"",
+                        "I check \"grade_level_5-6\"",
+                        "I wait for the search to be ready"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"(new) /eresources\""
+                    ],
+                    [
+                        "I should see \"(new) /eresources\""
+                    ],
+                    [
+                        "I should see \"My grade 5 Math Activity\"",
+                        "I should not see \"My grade 7 Science Activity\""
+                    ],
+                    [
+                        "I should see \"My grade 7 Science Activity\"",
+                        "I should not see \"My grade 5 Math Activity\""
+                    ],
+                    [
+                        "I should not see \"My grade 5 Math Activity\"",
+                        "I should see \"My grade 7 Science Activity\""
+                    ],
+                    [
+                        "I should see \"My grade 5 Math Activity\"",
+                        "I should not see \"My grade 7 Science Activity\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the following Admin::tag records exist:",
+                        "I am on the new material page"
+                    ],
+                    [
+                        "I am on the search instructional materials page",
+                        "I uncheck \"Sequence\"",
+                        "I check \"Temperature\"",
+                        "I wait for the search to be ready"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"external_activity[name]\" with \"My Temperature Sensor Activity\"",
+                        "I check \"external_activity[is_official]\"",
+                        "I select \"published\" from \"external_activity[publication_status]\"",
+                        "under \"Sensors\" I check \"Temperature\"",
+                        "I press \"Save\"",
+                        "I am on the new material page"
+                    ],
+                    [
+                        "I fill in \"external_activity[name]\" with \"My Force Sensor Activity\"",
+                        "I check \"external_activity[is_official]\"",
+                        "I select \"published\" from \"external_activity[publication_status]\"",
+                        "under \"Sensors\" I check \"Force\"",
+                        "I press \"Save\"",
+                        "I am on the new material page"
+                    ],
+                    [
+                        "I fill in \"external_activity[name]\" with \"My No Sensor Activity\"",
+                        "I check \"external_activity[is_official]\"",
+                        "I select \"published\" from \"external_activity[publication_status]\"",
+                        "I press \"Save\""
+                    ],
+                    [
+                        "I check \"Force\"",
+                        "I wait for the search to be ready"
+                    ],
+                    [
+                        "I uncheck \"Temperature\"",
+                        "I uncheck \"Force\"",
+                        "I check \"Sensors Not Necessary\"",
+                        "I wait for the search to be ready"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"(new) /eresources\""
+                    ],
+                    [
+                        "I should see \"(new) /eresources\""
+                    ],
+                    [
+                        "I should see \"(new) /eresources\""
+                    ],
+                    [
+                        "I should see \"My Temperature Sensor Activity\"",
+                        "I should not see \"My Force Sensor Activity\"",
+                        "I should not see \"My No Sensor Activity\""
+                    ],
+                    [
+                        "I should see \"My Temperature Sensor Activity\"",
+                        "I should see \"My Force Sensor Activity\"",
+                        "I should not see \"My No Sensor Activity\""
+                    ],
+                    [
+                        "I should see \"My No Sensor Activity\"",
+                        "I should not see \"My Force Sensor Activity\"",
+                        "I should not see \"My Temperature Sensor Activity\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

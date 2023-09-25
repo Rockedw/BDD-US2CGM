@@ -1,0 +1,90 @@
+{
+    "feature_name": "Admin rfps",
+    "user_story": {
+        "as_a": "developer and EY admin",
+        "i_want": "",
+        "so_that": "examine all submitted rfps independent of providers",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Tim Stafford\" with an RFP called \"Unwieldy\"",
+                        "a provider \"Chris Thile\" with an RFP called \"Punch\"",
+                        "a logged in admin user",
+                        "I am on the admin dashboard"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Requests\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Unwieldy\"",
+                        "I should see \"2 requests have been submitted\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Tim Stafford\" with an RFP called \"Unwieldy\"",
+                        "a logged in admin user",
+                        "I am on the admin dashboard"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Requests\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Unwieldy\"",
+                        "I should see \"rfp.rfp_count_singular\" translation"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Tim Stafford\" with an RFP called \"Unwieldy\"",
+                        "a logged in admin user",
+                        "I am on the admin dashboard",
+                        "I follow \"Requests\"",
+                        "I follow \"Unwieldy\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"Unwieldy\"",
+                        "I should see \"Tim Stafford\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Tim Stafford\" with an RFP called \"Unwieldy\"",
+                        "a logged in admin user"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the admin dashboard",
+                        "I follow \"Requests\"",
+                        "I follow \"Unwieldy\"",
+                        "I press \"Delete Request\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"rfp.deleted_successfully\" translation"
+                    ]
+                ]
+            }
+        ]
+    }
+}

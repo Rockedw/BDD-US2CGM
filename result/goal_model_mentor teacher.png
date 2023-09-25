@@ -1,0 +1,95 @@
+// Goal Model
+digraph {
+	1847117886080 [label="mentor teacher
+goal"]
+	1847124496960 [label="enter the times and classes that I teach, along with how many students  work with me.
+goal
+1847124506224"]
+	1847117886080 -> 1847124496960
+	1847124496960 [label="enter the times and classes that I teach, along with how many students  work with me.
+goal"]
+	1847124505888 [label="Save the times and classes that I teach
+goal
+140728069287616"]
+	1847124496960 -> 1847124505888
+	1847124505888 [label="Save the times and classes that I teach
+goal"]
+	1847124505984 [label="I go to /mentor_teacher/schedule/new
+task
+140728069287616"]
+	1847124505888 -> 1847124505984
+	1847124505984 [label="I go to /mentor_teacher/schedule/new
+task"]
+	1847124495040 [label="I add timeslot
+goal
+140728069287616"]
+	1847124505888 -> 1847124495040
+	1847124495040 [label="I add timeslot
+goal"]
+	1847124502096 [label="I add the following timeslots on Monday:
+task
+140728069287616"]
+	1847124495040 -> 1847124502096
+	1847124502096 [label="I add the following timeslots on Monday:
+task"]
+	1847124507232 [label="I add the following timeslots on Tuesday:
+task
+140728069287616"]
+	1847124495040 -> 1847124507232
+	1847124507232 [label="I add the following timeslots on Tuesday:
+task"]
+	1847124505360 [label="I press \"Save Schedule\"
+task
+140728069287616"]
+	1847124505888 -> 1847124505360
+	1847124505360 [label="I press \"Save Schedule\"
+task"]
+	1847124507184 [label="Enter in details for the times and classes I teach
+goal
+140728069287616"]
+	1847124496960 -> 1847124507184
+	1847124507184 [label="Enter in details for the times and classes I teach
+goal"]
+	1847124500560 [label="I go to /mentor_teacher/schedule/new?semester_id=1
+task
+140728069287616"]
+	1847124507184 -> 1847124500560
+	1847124500560 [label="I go to /mentor_teacher/schedule/new?semester_id=1
+task"]
+	1847124507952 [label="I create the following event on the calendar on Monday:
+task
+140728069287616"]
+	1847124507184 -> 1847124507952
+	1847124507952 [label="I create the following event on the calendar on Monday:
+task"]
+	1847124499552 [label="I select something
+goal
+140728069287616"]
+	1847124507184 -> 1847124499552
+	1847124499552 [label="I select something
+goal"]
+	1847124504352 [label="I select \"Algebra\" from \"class_name\"
+task
+140728069287616"]
+	1847124499552 -> 1847124504352
+	1847124504352 [label="I select \"Algebra\" from \"class_name\"
+task"]
+	1847124502816 [label="I select \"12 PM\" from \"timeslot_end_time_4i\"
+task
+140728069287616"]
+	1847124499552 -> 1847124502816
+	1847124502816 [label="I select \"12 PM\" from \"timeslot_end_time_4i\"
+task"]
+	1847124508240 [label="I save the event
+task
+140728069287616"]
+	1847124507184 -> 1847124508240
+	1847124508240 [label="I save the event
+task"]
+	1847124503200 [label="register an account
+goal
+140728069287616"]
+	1847117886080 -> 1847124503200
+	1847124503200 [label="register an account
+goal"]
+}

@@ -1,0 +1,61 @@
+{
+    "feature_name": "Kill Line",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo\\nbar\\nbonne\\nbaz\"",
+                        "I move the cursor to 5",
+                        "I kill the line"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"foo\\nbonne\\nbaz\" in the edit tab",
+                        "I should not see \"bar\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo\\nbar\\nbonne\\nbaz\"",
+                        "I select from 5 to 9",
+                        "I kill the line"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"foo\\nbaz\" in the edit tab",
+                        "I should not see \"bar\" in the edit tab",
+                        "I should not see \"bonne\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo\\nbść\\nbonne\\nbaz\"",
+                        "I move the cursor to 5",
+                        "I kill the line"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"foo\\nbonne\\nbaz\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "feature_name": "Updating your account details",
+    "user_story": {
+        "as_a": "",
+        "i_want": "edit and update my personal details",
+        "so_that": "show the world how cool I am",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am logged in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I view the account page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I see the page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I update my account details"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "my account details are updated",
+                        "I am redirected to the account page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I update my account details giving invalid details"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "my account details aren't updated",
+                        "I am shown the account edit page"
+                    ]
+                ]
+            }
+        ]
+    }
+}

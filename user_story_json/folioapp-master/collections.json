@@ -1,0 +1,38 @@
+{
+    "feature_name": "collections",
+    "user_story": {
+        "as_a": "n artists",
+        "i_want": "",
+        "so_that": "have an organized portfolio",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I specify that I wish to add a new collection",
+                        "I give it a title, description and pick a cover image"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see that collection on my collections page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I click the 'Toggle Edit' button",
+                        "I have clicked and edited the collection's title and description"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the new properties on my collections page"
+                    ]
+                ]
+            }
+        ]
+    }
+}

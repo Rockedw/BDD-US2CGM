@@ -1,0 +1,13 @@
+// 1847134701120 Context Model
+digraph {
+	1847134702464 [label=Context6]
+	1847134702608 [label="I need a \"account.fiscalyear\" with oid: scenario.fy2013"]
+	1847134702464 -> 1847134702608
+	1847134702608 [label="I need a \"account.fiscalyear\" with oid: scenario.fy2013"]
+	1847134702704 [label="having:"]
+	1847134702464 -> 1847134702704
+	1847134702704 [label="having:"]
+	1847134702800 [label="I create monthly periods on the fiscal year with reference \"scenario.fy2013\""]
+	1847134702464 -> 1847134702800
+	1847134702800 [label="I create monthly periods on the fiscal year with reference \"scenario.fy2013\""]
+}

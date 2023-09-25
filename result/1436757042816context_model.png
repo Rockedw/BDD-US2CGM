@@ -1,0 +1,10 @@
+// 1436757042432 Context Model
+digraph {
+	1436757042816 [label=Context138]
+	1436757042960 [label="I have a <dir> directory"]
+	1436757042816 -> 1436757042960
+	1436757042960 [label="I have a <dir> directory"]
+	1436757043056 [label="I have a \"<path>\" page that contains \"Source path: {{ page.path }}\""]
+	1436757042816 -> 1436757043056
+	1436757043056 [label="I have a \"<path>\" page that contains \"Source path: {{ page.path }}\""]
+}

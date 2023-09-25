@@ -1,0 +1,32 @@
+{
+    "feature_name": "Viewing director details",
+    "user_story": {
+        "as_a": "director",
+        "i_want": "view the details of a particular director",
+        "so_that": "check records of the directors",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "the application is set up",
+                        "there is a company",
+                        "I am a director of the company",
+                        "the subdomain is the organisation's subdomain",
+                        "I have logged in",
+                        "there are other directors of the company"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to another director's profile page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the details of that director's profile"
+                    ]
+                ]
+            }
+        ]
+    }
+}

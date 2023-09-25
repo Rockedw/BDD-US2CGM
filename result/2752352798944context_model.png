@@ -1,0 +1,10 @@
+// 2752352803408 Context Model
+digraph {
+	2752352798944 [label=Context6]
+	2752352797888 [label="I am not logged in"]
+	2752352798944 -> 2752352797888
+	2752352797888 [label="I am not logged in"]
+	2752352798608 [label="there is a past event"]
+	2752352798944 -> 2752352798608
+	2752352798608 [label="there is a past event"]
+}

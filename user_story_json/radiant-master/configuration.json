@@ -1,0 +1,65 @@
+{
+    "feature_name": "Rich configuration",
+    "user_story": {
+        "as_a": "n administrator",
+        "i_want": "change the configuration of the site",
+        "so_that": "control site delivery",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"Personal Preferences\"",
+                        "I should see \"Configuration\"",
+                        "I should see \"Site Title\"",
+                        "I should see \"Site Domain\"",
+                        "I should see \"Local Timezone\"",
+                        "I should see \"Default Language\"",
+                        "I should see \"Page Filter\"",
+                        "I should see \"Page Parts\"",
+                        "I should see \"Page Fields\"",
+                        "I should see \"Page Status\"",
+                        "I should see \"Allow Password Reset\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I press \"Edit Configuration\""
+                    ],
+                    [
+                        "I fill in \"Site Title\" with \"Something else\"",
+                        "I select \"London\" from \"Local Timezone\"",
+                        "I press \"Save Changes\"",
+                        "I should see \"Configuration\"",
+                        "I should see \"Something else\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the form",
+                        "I should see \"Site Title\"",
+                        "I should see \"Local Timezone\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I press \"Edit Preferences\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Personal Preferences\"",
+                        "I should see the form"
+                    ]
+                ]
+            }
+        ]
+    }
+}

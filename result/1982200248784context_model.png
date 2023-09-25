@@ -1,0 +1,13 @@
+// 1982200247968 Context Model
+digraph {
+	1982200248784 [label=Context61]
+	1982200248928 [label="I have the module account installed"]
+	1982200248784 -> 1982200248928
+	1982200248928 [label="I have the module account installed"]
+	1982200249024 [label="no account set"]
+	1982200248784 -> 1982200249024
+	1982200249024 [label="no account set"]
+	1982200249120 [label="I want to generate account chart from module l10n_ch"]
+	1982200248784 -> 1982200249120
+	1982200249120 [label="I want to generate account chart from module l10n_ch"]
+}

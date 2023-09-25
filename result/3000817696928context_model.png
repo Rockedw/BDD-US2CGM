@@ -1,0 +1,22 @@
+// 3000817704896 Context Model
+digraph {
+	3000817696928 [label=Context22]
+	3000817707248 [label="there is 1 existing individual like \"myItem\""]
+	3000817696928 -> 3000817707248
+	3000817707248 [label="there is 1 existing individual like \"myItem\""]
+	3000817701728 [label="I am on the new connections page"]
+	3000817696928 -> 3000817701728
+	3000817701728 [label="I am on the new connections page"]
+	3000817705088 [label="I select \"myItem0 : myItem item number 0\" from \"Subject\""]
+	3000817696928 -> 3000817705088
+	3000817705088 [label="I select \"myItem0 : myItem item number 0\" from \"Subject\""]
+	3000817697504 [label="I select \"one_of : One Of (basic relationship)\" from \"Relates to\""]
+	3000817696928 -> 3000817697504
+	3000817697504 [label="I select \"one_of : One Of (basic relationship)\" from \"Relates to\""]
+	3000817700816 [label="I choose \"Item\""]
+	3000817696928 -> 3000817700816
+	3000817700816 [label="I choose \"Item\""]
+	3000817702688 [label="I select \"myItem0 : myItem item number 0\" from \"Object\""]
+	3000817696928 -> 3000817702688
+	3000817702688 [label="I select \"myItem0 : myItem item number 0\" from \"Object\""]
+}

@@ -1,0 +1,812 @@
+{
+    "feature_name": "Snippets",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"DBL\" and scope \"\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"DBL<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Daniel Benjamin Lucraft<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"ewf\" and scope \"\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"}}ewf<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ],
+                    [
+                        "I replace the contents with \"(1,2,4)}}ewf<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ],
+                    [
+                        "I replace the contents with \"blank.test1.ewf<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"}}Earth, Wind, and Fire<c>\""
+                    ],
+                    [
+                        "the contents should be \"(1,2,4)}}Earth, Wind, and Fire<c>\""
+                    ],
+                    [
+                        "the contents should be \"blank.test1.Earth, Wind, and Fire<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"DBL\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"DBL<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Daniel Benjamin Lucraft<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"fg\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"0123 fg<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"0123 Felix 5 Gaeta<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"fg\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"0123 fg<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"0123 Felix 5 Gaeta<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"fg\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"CoABC fg<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"CoABC Felix ChiefOfStaffABC  Gaeta<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"fg\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"ABC fg<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"ABC Felix CS CS CS   Gaeta<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"fg\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"ABC fg<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"ABC Felix C/S C/S C/S   Gaeta<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"if\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"if<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"if <c>\\n\\t\\nend\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"DBL\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"DBL<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Daniel $1 Benjamin Lucraft<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"if\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"if<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"if <s>instance<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"if\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"if<c>\"",
+                        "I press the Tab key in the edit tab",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"if \\n\\t\\nend<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"if\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"if<c>\"",
+                        "I press the Tab key in the edit tab",
+                        "I press the Tab key in the edit tab"
+                    ],
+                    [
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"if \\n\\t<c>\\nend\""
+                    ],
+                    [
+                        "the contents should be \"if \\n\\t\\nend<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"if\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"if<c>\"",
+                        "I press the Tab key in the edit tab",
+                        "I press the Tab key in the edit tab"
+                    ],
+                    [
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"if \\n\\t<c>\\nend\""
+                    ],
+                    [
+                        "the contents should be \"if \\n\\t\\nend<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"if\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"if<c>\"",
+                        "I press the Tab key in the edit tab",
+                        "I insert \"Pegasus\" at the cursor",
+                        "I press the Tab key in the edit tab"
+                    ],
+                    [
+                        "I insert \"Cain\" at the cursor",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"if Pegasus\\n\\t<c>\\nend\""
+                    ],
+                    [
+                        "the contents should be \"if Pegasus\\n\\tCain\\nend<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"if\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"if<c>\"",
+                        "I press the Tab key in the edit tab",
+                        "I insert \"Pegasus\" at the cursor",
+                        "I press the Tab key in the edit tab"
+                    ],
+                    [
+                        "I insert \"Cain\" at the cursor",
+                        "I press Shift+Tab in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"if Pegasus\\n\\t<c>\\nend\""
+                    ],
+                    [
+                        "the contents should be \"if <s>Pegasus<c>\\n\\tCain\\nend\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"if\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"if<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"if <s>condition<c>\\n\\t\\nend\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"fg\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"ABC fg<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"ABC Felix 4 Gaeta\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"if\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"ABC if <c>\"",
+                        "I press the Tab key in the edit tab",
+                        "I move the cursor to 0",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should not be \"\\t<c>ABC if condition\\n\\t\\nend\"",
+                        "the contents should be \"\\t<c>ABC if \\t\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"if\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"ABC if<c>\"",
+                        "I press the Tab key in the edit tab",
+                        "I move the cursor to 0",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"\\t<c>ABC if condition\\n\\t\\nend\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"if\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"if<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"if <s>condition<c>\\n\\tcode\\nend\"",
+                        "I press the Tab key in the edit tab"
+                    ],
+                    [
+                        "the contents should be \"if condition\\n\\t<s>code<c>\\nend\"",
+                        "I press the Tab key in the edit tab"
+                    ],
+                    [
+                        "the contents should be \"if condition\\n\\tcode\\nend<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"name2\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"name2<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"name: <c>\\nname: \"",
+                        "I insert \"raider\" at the cursor"
+                    ],
+                    [
+                        "the contents should be \"name: <c>raider\\nname: raider\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"name2\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"name2<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"name: <s>leoban<c>\\nname: leoban\"",
+                        "I insert \"s\" at the cursor"
+                    ],
+                    [
+                        "the contents should be \"name: <s>leoban<c>s\\nname: leobans\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"name2\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"name2<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"name: <s>leoban<c>\\nname: leoban\"",
+                        "I move the cursor to 10",
+                        "I insert \"s\" at the cursor"
+                    ],
+                    [
+                        "the contents should be \"name: leob<c>san\\nname: leobsan\"",
+                        "I move the cursor to 10",
+                        "I press the Backspace key in the edit tab",
+                        "I press the Backspace key in the edit tab"
+                    ],
+                    [
+                        "the contents should be \"name: le<c>san\\nname: lesan\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"name\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"name<c>\"",
+                        "I press the Tab key in the edit tab",
+                        "I insert \"raptor\" at the cursor"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"name: <c>raptor\\nupper: RAPTOR\"",
+                        "I move the cursor to 10",
+                        "I press the Backspace key in the edit tab",
+                        "I press the Backspace key in the edit tab"
+                    ],
+                    [
+                        "the contents should be \"name: ra<c>or\\nupper: RAOR\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"name\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"name<c>\"",
+                        "I press the Tab key in the edit tab",
+                        "I insert \"raptor blackbird\" at the cursor"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"name: <c>raptor blackbird\\nupper: RAPTOR BLACKBIRD\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"hash\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"hash<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \":<s>key<c> => \\\"value\\\", \"",
+                        "I press the Tab key in the edit tab"
+                    ],
+                    [
+                        "the contents should be \":key => <s>\\\"value\\\"<c>, \"",
+                        "I press the Tab key in the edit tab"
+                    ],
+                    [
+                        "the contents should be \":key => \\\"<s>value<c>\\\", \"",
+                        "I insert \"s\" at the cursor"
+                    ],
+                    [
+                        "the contents should be \":key => \\\"<s>value<c>s\\\", \"",
+                        "I press Shift+Tab in the edit tab"
+                    ],
+                    [
+                        "the contents should be \":key => <s>\\\"values\\\"<c>, \""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"hash\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"hash<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ],
+                    [
+                        "I press the Tab key in the edit tab"
+                    ],
+                    [
+                        "I press the Tab key in the edit tab"
+                    ],
+                    [
+                        "I press the Tab key in the edit tab"
+                    ],
+                    [
+                        "I press the Tab key in the edit tab"
+                    ],
+                    [
+                        "I press Shift+Tab in the edit tab"
+                    ],
+                    [
+                        "I press Shift+Tab in the edit tab"
+                    ],
+                    [
+                        "I press Shift+Tab in the edit tab"
+                    ],
+                    [
+                        "I press Shift+Tab in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \":<s>key<c> => \\\"value is 3\\\", \""
+                    ],
+                    [
+                        "the contents should be \":key => <s>\\\"value is 3\\\"<c>, \""
+                    ],
+                    [
+                        "the contents should be \":key => \\\"<s>value is 3<c>\\\", \""
+                    ],
+                    [
+                        "the contents should be \":key => \\\"value <s>is<c> 3\\\", \""
+                    ],
+                    [
+                        "the contents should be \":key => \\\"value is 3\\\"<s>, <c>\""
+                    ],
+                    [
+                        "the contents should be \":key => \\\"value <s>is<c> 3\\\", \""
+                    ],
+                    [
+                        "the contents should be \":key => \\\"<s>value is 3<c>\\\", \""
+                    ],
+                    [
+                        "the contents should be \":key => <s>\\\"value is 3\\\"<c>, \""
+                    ],
+                    [
+                        "the contents should be \":<s>key<c> => \\\"value is 3\\\", \""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"list\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"list<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ],
+                    [
+                        "I replace 7 to 10 with \"list\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"\\begin{<s>env<c>}\\n\\t\\n\\end{env}\""
+                    ],
+                    [
+                        "the contents should be \"\\begin{list<c>}\\n\\t\\item \\n\\end{list}\"",
+                        "I press the Tab key in the edit tab"
+                    ],
+                    [
+                        "the contents should be \"\\begin{list}\\n\\t\\item <c>\\n\\end{list}\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"def\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"def<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"def <c>\"",
+                        "I insert \"a\" at the cursor"
+                    ],
+                    [
+                        "the contents should be \"def <c>a\\\"\\\"\\\"\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"def\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"def<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ],
+                    [
+                        "I replace 4 to 9 with \"\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"def <s>fname<c> docstring for fname\\\"\\\"\\\"\\n\""
+                    ],
+                    [
+                        "the contents should be \"def <c> docstring for \\\"\\\"\\\"\\n\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"def\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"def<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ],
+                    [
+                        "I replace 4 to 9 with \"\""
+                    ],
+                    [
+                        "I insert \"m\" at the cursor"
+                    ],
+                    [
+                        "I insert \"a\" at the cursor"
+                    ],
+                    [
+                        "I replace 6 to 21 with \"\""
+                    ],
+                    [
+                        "I insert \"b\" at the cursor"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"def <s>fname<c> docstring for fname\\\"\\\"\\\"\\n\\tpass\""
+                    ],
+                    [
+                        "the contents should be \"def <c> docstring for \\\"\\\"\\\"\\n\\tpass\""
+                    ],
+                    [
+                        "the contents should be \"def <c>m docstring for m\\\"\\\"\\\"\\n\\tpass\"",
+                        "I press the Tab key in the edit tab"
+                    ],
+                    [
+                        "the contents should be \"def m <s>docstring for m<c>\\\"\\\"\\\"\\n\\tpass\""
+                    ],
+                    [
+                        "the contents should be \"def m <c>a\\\"\\\"\\\"\\n\\tpass\""
+                    ],
+                    [
+                        "the contents should be \"def m <c>ba\\\"\\\"\\\"\\n\\tpass\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"def\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"def<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ],
+                    [
+                        "I replace 6 to 10 with \"foo\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"def i(<s>args<c>)\""
+                    ],
+                    [
+                        "the contents should be \"def i(foo)\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

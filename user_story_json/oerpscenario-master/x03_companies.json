@@ -1,0 +1,68 @@
+{
+    "feature_name": "COMPANIES SETTINGS",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I need a \"res.company\" with oid: scen.holding_company",
+                        "having:"
+                    ],
+                    [
+                        "the company has the \"c2c_logo.png\" logo",
+                        "the company currency is \"CHF\" with a rate of \"1.00\""
+                    ],
+                    [
+                        "I need a \"res.partner\" with oid: scen.holding_partner",
+                        "having:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"res.company\" with oid: base.main_company",
+                        "having:"
+                    ],
+                    [
+                        "the company has the \"c2c_logo.png\" logo",
+                        "the company currency is \"EUR\" with a rate of \"1.00\""
+                    ],
+                    [
+                        "I need a \"res.partner\" with oid: base.main_partner",
+                        "having:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"res.company\" with oid: scen.CH_company",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"res.partner\" with oid: scen.CH_partner",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"res.company\" with oid: scen.CH_company",
+                        "having:"
+                    ],
+                    [
+                        "the company has the \"central_optics.png\" logo",
+                        "the company currency is \"CHF\" with a rate of \"1.00\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            }
+        ]
+    }
+}

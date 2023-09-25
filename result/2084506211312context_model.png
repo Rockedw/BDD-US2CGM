@@ -1,0 +1,16 @@
+// 2084506210256 Context Model
+digraph {
+	2084506211312 [label=Context9]
+	2084506211456 [label="I have a _posts directory"]
+	2084506211312 -> 2084506211456
+	2084506211456 [label="I have a _posts directory"]
+	2084506211552 [label="I have a _layouts directory"]
+	2084506211312 -> 2084506211552
+	2084506211552 [label="I have a _layouts directory"]
+	2084506211648 [label="I have the following post:"]
+	2084506211312 -> 2084506211648
+	2084506211648 [label="I have the following post:"]
+	2084506211744 [label="I have a default layout that contains \"By {{ '_Obi-wan_' | markdownify }}\""]
+	2084506211312 -> 2084506211744
+	2084506211744 [label="I have a default layout that contains \"By {{ '_Obi-wan_' | markdownify }}\""]
+}

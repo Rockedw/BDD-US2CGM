@@ -1,0 +1,54 @@
+{
+    "feature_name": "Voting on a resolution",
+    "user_story": {
+        "as_a": "Member",
+        "i_want": "vote on a resolution",
+        "so_that": "voice my opinion",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Dashboard"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a task telling me to vote in the resolution"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Resolutions page",
+                        "I vote to support the resolution"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"You voted to support this resolution.\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have voted to support the resolution"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Dashboard"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see a task telling me to vote in the resolution"
+                    ]
+                ]
+            }
+        ]
+    }
+}

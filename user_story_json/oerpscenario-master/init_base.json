@@ -1,0 +1,78 @@
+{
+    "feature_name": "Param the new database",
+    "user_story": {
+        "as_a": "",
+        "i_want": "autmated the manual steps.",
+        "so_that": "have a coherent installation",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I update the module list"
+                    ],
+                    [
+                        "I install the required modules with dependencies:"
+                    ],
+                    [
+                        "I give all groups right access to admin user",
+                        "we select admin user",
+                        "we activate the extended view on the users"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "my modules should have been installed and models reloaded"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I install the following language :"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "the language should be available"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have install \"fr_FR\" language",
+                        "I set \"fr_FR\" language to swiss formatting"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "\"fr_FR\" language date format should have changed"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I should have a company"
+                    ],
+                    [
+                        "the company has the \"logo.png\" logo",
+                        "his rml header set to \"rml_header.txt\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I set the company with the following data :",
+                        "the main company currency is \"EUR\" with a rate of \"1.00\"",
+                        "I set the company main partner with the following data :",
+                        "I set the main address with the following data :"
+                    ]
+                ]
+            }
+        ]
+    }
+}

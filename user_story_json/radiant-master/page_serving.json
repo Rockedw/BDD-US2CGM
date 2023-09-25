@@ -1,0 +1,110 @@
+{
+    "feature_name": "Serving pages from front-end",
+    "user_story": {
+        "as_a": "visitor",
+        "i_want": "load pages with caching enhancements",
+        "so_that": "view the website content efficiently",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the first page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a 200 response code",
+                        "I should see \"First body.\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the great-grandchild page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a 200 response code",
+                        "I should see \"Great Grandchild body.\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have turned on X-Sendfile headers"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the first page",
+                        "I go to the first page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get an \"X-Sendfile\" header in the response"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have turned on X-Accel-Redirect headers"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the first page",
+                        "I go to the first page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get an \"X-Accel-Redirect\" header in the response"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have page caching on"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the first page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get an \"ETag\" header in the response",
+                        "the \"Cache-Control\" header should be \"public\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have page caching off"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the first page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not get an \"ETag\" header in the response",
+                        "the \"Cache-Control\" header should be \"private\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

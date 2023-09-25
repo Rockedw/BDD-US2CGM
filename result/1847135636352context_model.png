@@ -1,0 +1,10 @@
+// 1847135637552 Context Model
+digraph {
+	1847135636352 [label=Context66]
+	1847135636640 [label="there is 2 existing individuals like \"friendlyItem\""]
+	1847135636352 -> 1847135636640
+	1847135636640 [label="there is 2 existing individuals like \"friendlyItem\""]
+	1847135636304 [label="there is an existing connection \"friendlyItem0\" \"peer_of\" \"friendlyItem1\""]
+	1847135636352 -> 1847135636304
+	1847135636304 [label="there is an existing connection \"friendlyItem0\" \"peer_of\" \"friendlyItem1\""]
+}

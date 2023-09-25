@@ -1,0 +1,221 @@
+// Goal Model
+digraph {
+	1847132861728 [label="As Alice's friend
+goal"]
+	1847133170336 [label="comment on her post
+goal
+1847133169088"]
+	1847132861728 -> 1847133170336
+	1847133170336 [label="comment on her post
+goal"]
+	1847133486720 [label="comment on a post from within a user's stream
+goal
+140728069287616"]
+	1847133170336 -> 1847133486720
+	1847133486720 [label="comment on a post from within a user's stream
+goal"]
+	1847133477840 [label="I am on \"alice@alice.alice\"'s page
+task
+140728069287616"]
+	1847133486720 -> 1847133477840
+	1847133477840 [label="I am on \"alice@alice.alice\"'s page
+task"]
+	1847133480816 [label="I focus the comment field
+task
+140728069287616"]
+	1847133486720 -> 1847133480816
+	1847133480816 [label="I focus the comment field
+task"]
+	1847133482160 [label="I fill in the following:
+task
+140728069287616"]
+	1847133486720 -> 1847133482160
+	1847133482160 [label="I fill in the following:
+task"]
+	1847133477936 [label="I press \"Comment\"
+task
+140728069287616"]
+	1847133486720 -> 1847133477936
+	1847133477936 [label="I press \"Comment\"
+task"]
+	1847133480192 [label="delete a comment
+goal
+140728069287616"]
+	1847133170336 -> 1847133480192
+	1847133480192 [label="delete a comment
+goal"]
+	1847133474960 [label="\"bob@bob.bob\" has commented \"is that a poodle?\" on \"Look at this dog\"
+task
+140728069287616"]
+	1847133480192 -> 1847133474960
+	1847133474960 [label="\"bob@bob.bob\" has commented \"is that a poodle?\" on \"Look at this dog\"
+task"]
+	1847133478848 [label="I am on \"alice@alice.alice\"'s page
+task
+140728069287616"]
+	1847133480192 -> 1847133478848
+	1847133478848 [label="I am on \"alice@alice.alice\"'s page
+task"]
+	1847133478512 [label="I confirm the alert after I click to delete the first comment
+task
+140728069287616"]
+	1847133480192 -> 1847133478512
+	1847133478512 [label="I confirm the alert after I click to delete the first comment
+task"]
+	1847133480864 [label="expand the comment form in the main stream and an individual aspect stream
+goal
+140728069287616"]
+	1847133170336 -> 1847133480864
+	1847133480864 [label="expand the comment form in the main stream and an individual aspect stream
+goal"]
+	1847133484128 [label="I focus the comment field
+task
+140728069287616"]
+	1847133480864 -> 1847133484128
+	1847133484128 [label="I focus the comment field
+task"]
+	1847133477264 [label="I select only \"Besties\" aspect
+task
+140728069287616"]
+	1847133480864 -> 1847133477264
+	1847133477264 [label="I select only \"Besties\" aspect
+task"]
+	1847133484368 [label="I focus the comment field
+task
+140728069287616"]
+	1847133480864 -> 1847133484368
+	1847133484368 [label="I focus the comment field
+task"]
+	1847133477360 [label="comment on a status show page
+goal
+140728069287616"]
+	1847133170336 -> 1847133477360
+	1847133477360 [label="comment on a status show page
+goal"]
+	1847133485904 [label="I am on \"alice@alice.alice\"'s page
+task
+140728069287616"]
+	1847133477360 -> 1847133485904
+	1847133485904 [label="I am on \"alice@alice.alice\"'s page
+task"]
+	1847133478800 [label="I follow \"less than a minute ago\"
+task
+140728069287616"]
+	1847133477360 -> 1847133478800
+	1847133478800 [label="I follow \"less than a minute ago\"
+task"]
+	1847133477072 [label="I make a show page comment \"I think that’s a cat\"
+task
+140728069287616"]
+	1847133477360 -> 1847133477072
+	1847133477072 [label="I make a show page comment \"I think that’s a cat\"
+task"]
+	1847133475536 [label="I go to \"alice@alice.alice\"'s page
+task
+140728069287616"]
+	1847133477360 -> 1847133475536
+	1847133475536 [label="I go to \"alice@alice.alice\"'s page
+task"]
+	1847133485088 [label="permalink to comment from within a users stream
+goal
+140728069287616"]
+	1847133170336 -> 1847133485088
+	1847133485088 [label="permalink to comment from within a users stream
+goal"]
+	1847133475680 [label="\"bob@bob.bob\" has commented a lot on \"Look at this dog\"
+task
+140728069287616"]
+	1847133485088 -> 1847133475680
+	1847133475680 [label="\"bob@bob.bob\" has commented a lot on \"Look at this dog\"
+task"]
+	1847133475392 [label="\"bob@bob.bob\" has commented \"I think that’s a cat\" on \"Look at this dog\"
+task
+140728069287616"]
+	1847133485088 -> 1847133475392
+	1847133475392 [label="\"bob@bob.bob\" has commented \"I think that’s a cat\" on \"Look at this dog\"
+task"]
+	1847133474192 [label="I am on \"alice@alice.alice\"'s page
+task
+140728069287616"]
+	1847133485088 -> 1847133474192
+	1847133474192 [label="I am on \"alice@alice.alice\"'s page
+task"]
+	1847133475632 [label="I follow \"less than a minute ago\" within \".comment:last-child\"
+task
+140728069287616"]
+	1847133485088 -> 1847133475632
+	1847133475632 [label="I follow \"less than a minute ago\" within \".comment:last-child\"
+task"]
+	1847133482832 [label="permalink to comment from a status show page
+goal
+140728069287616"]
+	1847133170336 -> 1847133482832
+	1847133482832 [label="permalink to comment from a status show page
+goal"]
+	1847133476544 [label="\"bob@bob.bob\" has commented a lot on \"Look at this dog\"
+task
+140728069287616"]
+	1847133482832 -> 1847133476544
+	1847133476544 [label="\"bob@bob.bob\" has commented a lot on \"Look at this dog\"
+task"]
+	1847133486864 [label="\"bob@bob.bob\" has commented \"I think that’s a cat\" on \"Look at this dog\"
+task
+140728069287616"]
+	1847133482832 -> 1847133486864
+	1847133486864 [label="\"bob@bob.bob\" has commented \"I think that’s a cat\" on \"Look at this dog\"
+task"]
+	1847133476448 [label="I am on \"alice@alice.alice\"'s page
+task
+140728069287616"]
+	1847133482832 -> 1847133476448
+	1847133476448 [label="I am on \"alice@alice.alice\"'s page
+task"]
+	1847133486576 [label="I follow \"less than a minute ago\" within \"span.details.gray\"
+task
+140728069287616"]
+	1847133482832 -> 1847133486576
+	1847133486576 [label="I follow \"less than a minute ago\" within \"span.details.gray\"
+task"]
+	1847133476640 [label="I follow \"less than a minute ago\" within \".comments .comment:last-child\"
+task
+140728069287616"]
+	1847133482832 -> 1847133476640
+	1847133476640 [label="I follow \"less than a minute ago\" within \".comments .comment:last-child\"
+task"]
+	1847133481392 [label="Show more comments after loading likes
+goal
+140728069287616"]
+	1847133170336 -> 1847133481392
+	1847133481392 [label="Show more comments after loading likes
+goal"]
+	1847133479616 [label="\"alice@alice.alice\" has commented a lot on \"Look at this dog\"
+task
+140728069287616"]
+	1847133481392 -> 1847133479616
+	1847133479616 [label="\"alice@alice.alice\" has commented a lot on \"Look at this dog\"
+task"]
+	1847133487056 [label="\"alice@alice.alice\" has liked the post \"Look at this dog\"
+task
+140728069287616"]
+	1847133481392 -> 1847133487056
+	1847133487056 [label="\"alice@alice.alice\" has liked the post \"Look at this dog\"
+task"]
+	1847133478560 [label="I am on \"alice@alice.alice\"'s page
+task
+140728069287616"]
+	1847133481392 -> 1847133478560
+	1847133478560 [label="I am on \"alice@alice.alice\"'s page
+task"]
+	1847133476784 [label="I follow \"1 Like\"
+task
+140728069287616"]
+	1847133481392 -> 1847133476784
+	1847133476784 [label="I follow \"1 Like\"
+task"]
+	1847133478032 [label="I click on selector \".toggle_post_comments\"
+task
+140728069287616"]
+	1847133481392 -> 1847133478032
+	1847133478032 [label="I click on selector \".toggle_post_comments\"
+task"]
+}

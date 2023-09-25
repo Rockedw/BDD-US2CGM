@@ -1,0 +1,157 @@
+// Goal Model
+digraph {
+	1847135050128 [label="person short on time
+goal"]
+	1847133380496 [label="tag my tasks
+goal
+1847133385872"]
+	1847135050128 -> 1847133380496
+	1847133380496 [label="tag my tasks
+goal"]
+	1847134011744 [label="Create tag
+goal
+1847134017216"]
+	1847133380496 -> 1847134011744
+	1847134011744 [label="Create tag
+goal"]
+	1847134021008 [label="Add tags to new task
+goal
+1847134022352"]
+	1847133380496 -> 1847134021008
+	1847134021008 [label="Add tags to new task
+goal"]
+	1847134026576 [label="keep track of tasks
+goal
+1847134023024"]
+	1847135050128 -> 1847134026576
+	1847134026576 [label="keep track of tasks
+goal"]
+	1847138475632 [label=" create task
+goal
+140728069287616"]
+	1847134026576 -> 1847138475632
+	1847138475632 [label=" create task
+goal"]
+	1847133159584 [label="Create new task with title
+goal
+1847133160544"]
+	1847138475632 -> 1847133159584
+	1847133159584 [label="Create new task with title
+goal"]
+	1847133168176 [label="Create new task with description
+goal
+1847133164000"]
+	1847138475632 -> 1847133168176
+	1847133168176 [label="Create new task with description
+goal"]
+	1847134920496 [label="I fill
+in something
+goal
+140728069287616"]
+	1847133168176 -> 1847134920496
+	1847134920496 [label="I fill
+in something
+goal"]
+	1847133160640 [label="I fill in all required fields
+task
+140728069287616"]
+	1847134920496 -> 1847133160640
+	1847133160640 [label="I fill in all required fields
+task"]
+	1847133160880 [label="I fill in \"task_description\" with \"A long task description explaining in more detail what the task is about\"
+task
+140728069287616"]
+	1847134920496 -> 1847133160880
+	1847133160880 [label="I fill in \"task_description\" with \"A long task description explaining in more detail what the task is about\"
+task"]
+	1847133163568 [label="I press \"Create\"
+task
+140728069287616"]
+	1847133168176 -> 1847133163568
+	1847133163568 [label="I press \"Create\"
+task"]
+	1847133173456 [label="Descending task order
+goal
+1847133161024"]
+	1847134026576 -> 1847133173456
+	1847133173456 [label="Descending task order
+goal"]
+	1847132854528 [label="time make
+goal
+140728069287616"]
+	1847135050128 -> 1847132854528
+	1847132854528 [label="time make
+goal"]
+	1847133164384 [label="
+goal
+1847133163088"]
+	1847132854528 -> 1847133164384
+	1847133164384 [label="
+goal"]
+	1847133165920 [label="Duration on current task
+goal
+1847133170816"]
+	1847133164384 -> 1847133165920
+	1847133165920 [label="Duration on current task
+goal"]
+	1847133165200 [label="Duration on previous task
+goal
+1847133164048"]
+	1847133164384 -> 1847133165200
+	1847133165200 [label="Duration on previous task
+goal"]
+	1847133161888 [label="I press \"Switch Now\"
+task
+140728069287616"]
+	1847133165200 -> 1847133161888
+	1847133161888 [label="I press \"Switch Now\"
+task"]
+	1847133160256 [label="I follow \"Back\"
+task
+140728069287616"]
+	1847133165200 -> 1847133160256
+	1847133160256 [label="I follow \"Back\"
+task"]
+	1847134507680 [label=" use something
+goal
+140728069287616"]
+	1847133164384 -> 1847134507680
+	1847134507680 [label=" use something
+goal"]
+	1847133163184 [label="New task using 'Switch Now'
+goal
+1847133160400"]
+	1847134507680 -> 1847133163184
+	1847133163184 [label="New task using 'Switch Now'
+goal"]
+	1847133161552 [label="Duration on new task using 'Switch Now'
+goal
+1847133175088"]
+	1847134507680 -> 1847133161552
+	1847133161552 [label="Duration on new task using 'Switch Now'
+goal"]
+	1847133164432 [label="switch back to an existing task again
+goal
+1847133162224"]
+	1847132854528 -> 1847133164432
+	1847133164432 [label="switch back to an existing task again
+goal"]
+	1847133172064 [label="I press \"Again\" in the oldest task
+task
+140728069287616"]
+	1847133164432 -> 1847133172064
+	1847133172064 [label="I press \"Again\" in the oldest task
+task"]
+	1847133168752 [label="see the duration of each task
+goal
+1847133172640"]
+	1847135050128 -> 1847133168752
+	1847133168752 [label="see the duration of each task
+goal"]
+	1847133171728 [label="I am on the tasks page
+task
+140728069287616"]
+	1847133168752 -> 1847133171728
+	1847133171728 [label="I am on the tasks page
+task"]
+}

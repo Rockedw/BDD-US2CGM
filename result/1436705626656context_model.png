@@ -1,0 +1,25 @@
+// 1436705631024 Context Model
+digraph {
+	1436705626656 [label=Context7]
+	1436705898448 [label="an uploader class that uses the 'file' storage"]
+	1436705626656 -> 1436705898448
+	1436705898448 [label="an uploader class that uses the 'file' storage"]
+	1436705894800 [label="a processor method named :upcase"]
+	1436705626656 -> 1436705894800
+	1436705894800 [label="a processor method named :upcase"]
+	1436705898304 [label="that the uploader class has a version named 'thumb' which process 'upcase'"]
+	1436705626656 -> 1436705898304
+	1436705898304 [label="that the uploader class has a version named 'thumb' which process 'upcase'"]
+	1436705893072 [label="that the version 'thumb' has the store_dir overridden to 'public/monkey/llama'"]
+	1436705626656 -> 1436705893072
+	1436705893072 [label="that the version 'thumb' has the store_dir overridden to 'public/monkey/llama'"]
+	1436705893552 [label="that the uploader class has a version named 'small_thumb' which is based on version 'thumb'"]
+	1436705626656 -> 1436705893552
+	1436705893552 [label="that the uploader class has a version named 'small_thumb' which is based on version 'thumb'"]
+	1436705898352 [label="that the version 'small_thumb' has the store_dir overridden to 'public/monkey/toro'"]
+	1436705626656 -> 1436705898352
+	1436705898352 [label="that the version 'small_thumb' has the store_dir overridden to 'public/monkey/toro'"]
+	1436705891440 [label="an instance of that class"]
+	1436705626656 -> 1436705891440
+	1436705891440 [label="an instance of that class"]
+}

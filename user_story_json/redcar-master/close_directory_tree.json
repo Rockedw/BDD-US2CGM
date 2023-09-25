@@ -1,0 +1,48 @@
+{
+    "feature_name": "Close directory tree",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I will choose \"plugins/project/spec/fixtures/myproject\" from the \"open_directory\" dialog"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a directory",
+                        "I click the close button"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the tree width should be the minimum size",
+                        "the window should have title \"Redcar\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I will choose \"plugins/project/spec/fixtures/myproject\" from the \"open_directory\" dialog"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a directory",
+                        "I close the tree"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the tree width should be the minimum size",
+                        "the window should have title \"Redcar\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

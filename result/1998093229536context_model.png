@@ -1,0 +1,40 @@
+// 1998093227856 Context Model
+digraph {
+	1998093229536 [label=Context6]
+	1998093230496 [label="I replace the contents with \"foo\nbar\nbaz\nqux\nquux\ncorge\""]
+	1998093229536 -> 1998093230496
+	1998093230496 [label="I replace the contents with \"foo\nbar\nbaz\nqux\nquux\ncorge\""]
+	1998093224928 [label="I move the cursor to 0"]
+	1998093229536 -> 1998093224928
+	1998093224928 [label="I move the cursor to 0"]
+	1998093228864 [label="I type \"# \""]
+	1998093229536 -> 1998093228864
+	1998093228864 [label="I type \"# \""]
+	1998093232416 [label="I move down"]
+	1998093229536 -> 1998093232416
+	1998093232416 [label="I move down"]
+	1998093230688 [label="I move left"]
+	1998093229536 -> 1998093230688
+	1998093230688 [label="I move left"]
+	1998093227184 [label="I move left"]
+	1998093229536 -> 1998093227184
+	1998093227184 [label="I move left"]
+	1998093228144 [label="I type \"# \""]
+	1998093229536 -> 1998093228144
+	1998093228144 [label="I type \"# \""]
+	1998093228768 [label="I move down"]
+	1998093229536 -> 1998093228768
+	1998093228768 [label="I move down"]
+	1998093233184 [label="I move left"]
+	1998093229536 -> 1998093233184
+	1998093233184 [label="I move left"]
+	1998093230112 [label="I move left"]
+	1998093229536 -> 1998093230112
+	1998093230112 [label="I move left"]
+	1998093227568 [label="I press predict"]
+	1998093229536 -> 1998093227568
+	1998093227568 [label="I press predict"]
+	1998093230304 [label="I press predict"]
+	1998093229536 -> 1998093230304
+	1998093230304 [label="I press predict"]
+}

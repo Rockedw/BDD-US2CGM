@@ -1,0 +1,10 @@
+// 1998090505472 Context Model
+digraph {
+	1998090504176 [label=Context1]
+	1998090517952 [label="the application is set up"]
+	1998090504176 -> 1998090517952
+	1998090517952 [label="the application is set up"]
+	1998090514544 [label="an association has been created"]
+	1998090504176 -> 1998090514544
+	1998090514544 [label="an association has been created"]
+}

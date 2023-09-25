@@ -1,0 +1,10 @@
+// 2084500997696 Context Model
+digraph {
+	2084500998752 [label=Context11]
+	2084500998896 [label="I have an \"index.html\" page with fruit \"{orange: 1}\" that contains \"Fruits: {{ page.fruit.orange | plus: page.fruit.apple }}\""]
+	2084500998752 -> 2084500998896
+	2084500998896 [label="I have an \"index.html\" page with fruit \"{orange: 1}\" that contains \"Fruits: {{ page.fruit.orange | plus: page.fruit.apple }}\""]
+	2084500998992 [label="I have a configuration file with \"defaults\" set to \"[{scope: {path: \"\"}, values: {fruit: {apple: 2}}}]\""]
+	2084500998752 -> 2084500998992
+	2084500998992 [label="I have a configuration file with \"defaults\" set to \"[{scope: {path: \"\"}, values: {fruit: {apple: 2}}}]\""]
+}

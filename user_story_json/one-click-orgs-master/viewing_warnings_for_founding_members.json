@@ -1,0 +1,31 @@
+{
+    "feature_name": "Viewing warnings for Founding Members",
+    "user_story": {
+        "as_a": "founding member",
+        "i_want": "view One Click Orgs' warnings for Founding Members",
+        "so_that": "understand my responsibilities",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "the application is set up",
+                        "an association has been created",
+                        "I am a founding member",
+                        "the subdomain is the organisation's subdomain",
+                        "I have logged in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Warnings for Founding Members\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see One Click Orgs' warnings for Founding Members"
+                    ]
+                ]
+            }
+        ]
+    }
+}

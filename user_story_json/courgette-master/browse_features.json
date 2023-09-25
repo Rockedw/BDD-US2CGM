@@ -1,0 +1,31 @@
+{
+    "feature_name": "Browse features",
+    "user_story": {
+        "as_a": "Product Owner",
+        "i_want": "broswe the features with a treeview file explorer",
+        "so_that": "find a specific feature among the mass of features of my project",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I enter the address of the features page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I click on the folder \"business\"",
+                        "I click on the feature filename \"visitor_transforms\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "it should display the list of features for my application in a treeview which looks like a file explorer"
+                    ],
+                    [
+                        "it should open the \"visitor_transforms.feature\" file source"
+                    ]
+                ]
+            }
+        ]
+    }
+}

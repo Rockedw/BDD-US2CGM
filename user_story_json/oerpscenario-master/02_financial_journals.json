@@ -1,0 +1,55 @@
+{
+    "feature_name": "FINANCIAL JOURNALS CREATION",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I need a \"account.journal\" with oid: scen.eur_journal",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.journal\" with oid: scen.usd_journal",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.journal\" with oid: scen.gbp_journal",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.journal\" with oid: scen.sales_journal",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.journal\" with oid: scen.ref_sales_journal",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.journal\" with oid: scen.purchases_journal",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.journal\" with oid: scen.ref_purchases_journal",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.journal\" with oid: scen.misc_journal",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.journal\" with oid: scen.misc_journal",
+                        "having:"
+                    ],
+                    [
+                        "I allow cancelling entries on all journals"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            }
+        ]
+    }
+}

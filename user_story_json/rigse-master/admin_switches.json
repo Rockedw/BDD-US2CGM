@@ -1,0 +1,34 @@
+{
+    "feature_name": "Admin switches to a different user",
+    "user_story": {
+        "as_a": "n admin",
+        "i_want": "switch to a different user",
+        "so_that": "see the portal as other users do without knowing their passwords",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"Welcome,\"",
+                        "I should see \"Joe Switchuser\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"Welcome,\"",
+                        "I should see \"Joe Switchuser\"",
+                        "I follow \"Switch back\""
+                    ],
+                    [
+                        "I should see \"joe user\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

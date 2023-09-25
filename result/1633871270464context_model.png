@@ -1,0 +1,10 @@
+// 1633871271040 Context Model
+digraph {
+	1633871270464 [label=Context5]
+	1633871278144 [label="a provider \"Kooky\" belonging to \"paul@joy.com\""]
+	1633871270464 -> 1633871278144
+	1633871278144 [label="a provider \"Kooky\" belonging to \"paul@joy.com\""]
+	1633871273536 [label="a user \"Billow\" belonging to the \"Kooky\" provider"]
+	1633871270464 -> 1633871273536
+	1633871273536 [label="a user \"Billow\" belonging to the \"Kooky\" provider"]
+}

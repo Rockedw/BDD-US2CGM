@@ -1,0 +1,83 @@
+{
+    "feature_name": "Strip Trailing Spaces",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I select menu item \"Plugins/Strip Trailing Spaces/Enabled\""
+                    ],
+                    [
+                        "I select menu item \"Plugins/Strip Trailing Spaces/Strip Blank Lines\" menu",
+                        "I save the tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Hi\\n\\n Foo\\n\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I move the cursor to 8",
+                        "I save the tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Hi\\n\\n F<c>oo\\n\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I move the cursor to 5",
+                        "I save the tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Hi\\n<c>\\n Foo\\n\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I select menu item \"Plugins/Strip Trailing Spaces/Strip Blank Lines\" menu",
+                        "I save the tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Hi\\n \\n Foo\\n\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I select menu item \"Plugins/Strip Trailing Spaces/Enabled\"",
+                        "I save the tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Hi \\n \\n Foo \\n\" in the edit tab"
+                    ]
+                ]
+            }
+        ]
+    }
+}

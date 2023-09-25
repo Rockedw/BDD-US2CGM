@@ -1,0 +1,128 @@
+{
+    "feature_name": "Managing draft and suggested resolutions",
+    "user_story": {
+        "as_a": "As the Secretary",
+        "i_want": "deal with draft resolutions and suggested resolutions",
+        "so_that": "bring resolutions up for consideration",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a suggested resolution"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Dashboard"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a task telling me to deal with the suggested resolution"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a draft resolution"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Resolutions page",
+                        "I press \"Start an electronic vote\" for the draft resolution"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the resolution in the list of currently-open resolutions"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a draft resolution"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Resolutions page",
+                        "I press \"Add to a meeting\" for the draft resolution"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the \"Convene a General Meeting\" page",
+                        "I should see the resolution in the list of resolutions to be considered at the meeting"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a suggested resolution"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Resolutions page",
+                        "I press \"Edit\" for the suggested resolution",
+                        "I amend the text of the resolution",
+                        "I save the resolution"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the amended resolution text in the list of suggested resolutions"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a suggested resolution"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Resolutions page",
+                        "I press \"Start an electronic vote\" for the suggested resolution"
+                    ],
+                    [
+                        "I go to the Dashboard"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the resolution in the list of currently-open resolutions",
+                        "I should not see the suggested resolution in the list of suggested resolutions"
+                    ],
+                    [
+                        "I should not see a notification to process the suggested resolution"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a suggested resolution"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Resolutions page",
+                        "I press \"Add to a meeting\" for the suggested resolution"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the \"Convene a General Meeting\" page",
+                        "I should see the resolution in the list of resolutions to be considered at the meeting"
+                    ]
+                ]
+            }
+        ]
+    }
+}

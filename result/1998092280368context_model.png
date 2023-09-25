@@ -1,0 +1,10 @@
+// 1998092279792 Context Model
+digraph {
+	1998092280368 [label=Context29]
+	1998092280512 [label="I have an \"index.html\" file that contains \"Changing destination directory\""]
+	1998092280368 -> 1998092280512
+	1998092280512 [label="I have an \"index.html\" file that contains \"Changing destination directory\""]
+	1998092280608 [label="I have a configuration file with \"destination\" set to \"_mysite\""]
+	1998092280368 -> 1998092280608
+	1998092280608 [label="I have a configuration file with \"destination\" set to \"_mysite\""]
+}

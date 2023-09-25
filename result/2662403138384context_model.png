@@ -1,0 +1,13 @@
+// 2662403137520 Context Model
+digraph {
+	2662403138384 [label=Context22]
+	2662403138528 [label="I have a _posts directory"]
+	2662403138384 -> 2662403138528
+	2662403138528 [label="I have a _posts directory"]
+	2662403138624 [label="I have an \"_posts/2016-01-18-i-am-php.md\" page with permalink \"/2016/i-am-php.php\" that contains \"I am PHP\""]
+	2662403138384 -> 2662403138624
+	2662403138624 [label="I have an \"_posts/2016-01-18-i-am-php.md\" page with permalink \"/2016/i-am-php.php\" that contains \"I am PHP\""]
+	2662403138720 [label="I have a \"i-am-also-php.md\" page with permalink \"/i-am-also-php.php\" that contains \"I am also PHP\""]
+	2662403138384 -> 2662403138720
+	2662403138720 [label="I have a \"i-am-also-php.md\" page with permalink \"/i-am-also-php.php\" that contains \"I am also PHP\""]
+}

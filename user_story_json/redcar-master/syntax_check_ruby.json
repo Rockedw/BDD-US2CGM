@@ -1,0 +1,61 @@
+{
+    "feature_name": "Syntax Checking for Ruby",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "get annotations on syntax errors in Ruby files",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"def foo\\n  bar\\nend\"",
+                        "I save the tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the tab should not have annotations",
+                        "the file \"plugins/ruby/features/fixtures/test.rb\" should be deletable"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"def foo\\n  => bar\\nend\"",
+                        "I save the tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the tab should have annotations",
+                        "the tab should have an annotation on line 2"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"def foo\\n  => bar\\nend\"",
+                        "I save the tab"
+                    ],
+                    [
+                        "I replace the contents with \"def foo\\n  bar\\nend\"",
+                        "I save the tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the tab should have annotations"
+                    ],
+                    [
+                        "the tab should not have annotations"
+                    ]
+                ]
+            }
+        ]
+    }
+}

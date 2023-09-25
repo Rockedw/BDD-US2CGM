@@ -1,0 +1,36 @@
+{
+    "feature_name": "In order to configure the two mains workflows on the sale order importation from Magento. On the Sale order confirmation,",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I want to configure the following TRUSTED Magento payment mode to AUTOMATICALLY handle related sale orders workflow:",
+                        "I \"allow\" partial picking on TRUSTED payment mode",
+                        "I demand OpenERP to regulary ask Magento if sale orders are paid"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I want to configure the following UNTRUSTED Magento payment mode to MANUALLY handle related sale orders workflow:",
+                        "I \"forbid\" partial picking on UNTRUSTED payment mode"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            }
+        ]
+    }
+}

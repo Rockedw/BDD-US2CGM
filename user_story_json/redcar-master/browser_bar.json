@@ -1,0 +1,81 @@
+{
+    "feature_name": "Navigating web content in HtmlTabs using the browser bar",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I will choose \"plugins/html_view/features/fixtures/sample.html\" from the \"open_file\" dialog"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a file",
+                        "I replace the contents with \"<html>I see you!</html>\"",
+                        "I save the tab",
+                        "I close the focussed tab",
+                        "I open the browser bar",
+                        "I press \"Refresh\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the HTML tab should say \"I see you!\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I type \"other.html\" into the \"New URL:\" field in the speedbar",
+                        "I press \"Go!\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the HTML tab should say \"Is today Tuesday?\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I would type \"Other\" in an input box",
+                        "I would type \"\" in an input box"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I type \"other.html\" into the \"New URL:\" field in the speedbar"
+                    ],
+                    [
+                        "I press \"+\" in the speedbar",
+                        "I open the web bookmarks tree"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Other\" in the tree"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should not be an open speedbar"
+                    ]
+                ]
+            }
+        ]
+    }
+}

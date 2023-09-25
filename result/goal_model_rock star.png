@@ -1,0 +1,209 @@
+// Goal Model
+digraph {
+	1847133172160 [label="rock star
+goal"]
+	1847133482208 [label="see what humanity is saying about particular tags
+goal
+1847133470880"]
+	1847133172160 -> 1847133482208
+	1847133482208 [label="see what humanity is saying about particular tags
+goal"]
+	1847133484176 [label="can post a message from the tag page
+goal
+140728069287616"]
+	1847133482208 -> 1847133484176
+	1847133484176 [label="can post a message from the tag page
+goal"]
+	1847133481056 [label="I click the publisher and post \"#boss from the tag page\"
+task
+140728069287616"]
+	1847133484176 -> 1847133481056
+	1847133481056 [label="I click the publisher and post \"#boss from the tag page\"
+task"]
+	1847133483072 [label="I go to the tag page for \"boss\"
+task
+140728069287616"]
+	1847133484176 -> 1847133483072
+	1847133483072 [label="I go to the tag page for \"boss\"
+task"]
+	1847133290400 [label="I see tag
+goal
+140728069287616"]
+	1847133482208 -> 1847133290400
+	1847133290400 [label="I see tag
+goal"]
+	1847133486096 [label="see a tag that I am following
+goal
+140728069287616"]
+	1847133290400 -> 1847133486096
+	1847133486096 [label="see a tag that I am following
+goal"]
+	1847133474912 [label="I go to the home page
+task
+140728069287616"]
+	1847133486096 -> 1847133474912
+	1847133474912 [label="I go to the home page
+task"]
+	1847133483312 [label="I follow \"#boss\"
+task
+140728069287616"]
+	1847133486096 -> 1847133483312
+	1847133483312 [label="I follow \"#boss\"
+task"]
+	1847133484800 [label="see a tag that I am following and I post over there
+goal
+140728069287616"]
+	1847133290400 -> 1847133484800
+	1847133484800 [label="see a tag that I am following and I post over there
+goal"]
+	1847133474480 [label="I go to the home page
+task
+140728069287616"]
+	1847133484800 -> 1847133474480
+	1847133474480 [label="I go to the home page
+task"]
+	1847133482592 [label="I follow \"#boss\"
+task
+140728069287616"]
+	1847133484800 -> 1847133482592
+	1847133482592 [label="I follow \"#boss\"
+task"]
+	1847133475248 [label="I click the publisher and post \"#boss from the #boss tag page\"
+task
+140728069287616"]
+	1847133484800 -> 1847133475248
+	1847133475248 [label="I click the publisher and post \"#boss from the #boss tag page\"
+task"]
+	1847133282192 [label=" stop tag
+goal
+140728069287616"]
+	1847133482208 -> 1847133282192
+	1847133282192 [label=" stop tag
+goal"]
+	1847133474288 [label="can stop following a tag from the tag page
+goal
+140728069287616"]
+	1847133282192 -> 1847133474288
+	1847133474288 [label="can stop following a tag from the tag page
+goal"]
+	1847133471600 [label="I press \"Stop following #boss\"
+task
+140728069287616"]
+	1847133474288 -> 1847133471600
+	1847133471600 [label="I press \"Stop following #boss\"
+task"]
+	1847133482016 [label="I go to the followed tags stream page
+task
+140728069287616"]
+	1847133474288 -> 1847133482016
+	1847133482016 [label="I go to the followed tags stream page
+task"]
+	1847133484272 [label="can stop following a tag from the homepage
+goal
+140728069287616"]
+	1847133282192 -> 1847133484272
+	1847133484272 [label="can stop following a tag from the homepage
+goal"]
+	1847133481584 [label="I go to the followed tags stream page
+task
+140728069287616"]
+	1847133484272 -> 1847133481584
+	1847133481584 [label="I go to the followed tags stream page
+task"]
+	1847133484560 [label="I unfollow the \"boss\" tag
+task
+140728069287616"]
+	1847133484272 -> 1847133484560
+	1847133484560 [label="I unfollow the \"boss\" tag
+task"]
+	1847133486528 [label="Go to a tags page with no posts
+goal
+140728069287616"]
+	1847133482208 -> 1847133486528
+	1847133486528 [label="Go to a tags page with no posts
+goal"]
+	1847133475968 [label="mention someone more cool than the average bear
+goal
+1847133475056"]
+	1847133172160 -> 1847133475968
+	1847133475968 [label="mention someone more cool than the average bear
+goal"]
+	1847133479568 [label="mentioning while posting to all aspects
+goal
+1847133478128"]
+	1847133475968 -> 1847133479568
+	1847133479568 [label="mentioning while posting to all aspects
+goal"]
+	1847133480144 [label="I am on the aspects page
+task
+140728069287616"]
+	1847133479568 -> 1847133480144
+	1847133480144 [label="I am on the aspects page
+task"]
+	1847133474576 [label="I am on the aspects page
+task
+140728069287616"]
+	1847133479568 -> 1847133474576
+	1847133474576 [label="I am on the aspects page
+task"]
+	1847133482304 [label="I follow something
+goal
+140728069287616"]
+	1847133479568 -> 1847133482304
+	1847133482304 [label="I follow something
+goal"]
+	1847133486960 [label="I follow \"PostingTo\" within \"#aspects_list\"
+task
+140728069287616"]
+	1847133482304 -> 1847133486960
+	1847133486960 [label="I follow \"PostingTo\" within \"#aspects_list\"
+task"]
+	1847133485472 [label="I follow \"NotPostingThingsHere\" within \"#aspects_list\"
+task
+140728069287616"]
+	1847133482304 -> 1847133485472
+	1847133485472 [label="I follow \"NotPostingThingsHere\" within \"#aspects_list\"
+task"]
+	1847133471984 [label="mentioning while posting to just one aspect
+goal
+1847133478272"]
+	1847133475968 -> 1847133471984
+	1847133471984 [label="mentioning while posting to just one aspect
+goal"]
+	1847133476976 [label="I am on the aspects page
+task
+140728069287616"]
+	1847133471984 -> 1847133476976
+	1847133476976 [label="I am on the aspects page
+task"]
+	1847133480960 [label="I am on the aspects page
+task
+140728069287616"]
+	1847133471984 -> 1847133480960
+	1847133480960 [label="I am on the aspects page
+task"]
+	1847133479280 [label="I select aspect
+goal
+140728069287616"]
+	1847133471984 -> 1847133479280
+	1847133479280 [label="I select aspect
+goal"]
+	1847133479712 [label="I select only \"PostingTo\" aspect
+task
+140728069287616"]
+	1847133479280 -> 1847133479712
+	1847133479712 [label="I select only \"PostingTo\" aspect
+task"]
+	1847133485232 [label="I select all aspects
+task
+140728069287616"]
+	1847133479280 -> 1847133485232
+	1847133485232 [label="I select all aspects
+task"]
+	1847133479088 [label="I select only \"NotPostingThingsHere\" aspect
+task
+140728069287616"]
+	1847133479280 -> 1847133479088
+	1847133479088 [label="I select only \"NotPostingThingsHere\" aspect
+task"]
+}

@@ -1,0 +1,13 @@
+// 1911333588272 Context Model
+digraph {
+	1911333597584 [label=Context6]
+	1911333590912 [label="I am signed in"]
+	1911333597584 -> 1911333590912
+	1911333590912 [label="I am signed in"]
+	1911333599312 [label="I have 2 contacts"]
+	1911333597584 -> 1911333599312
+	1911333599312 [label="I have 2 contacts"]
+	1911333591968 [label="I have an aspect called \"Cat People\""]
+	1911333597584 -> 1911333591968
+	1911333591968 [label="I have an aspect called \"Cat People\""]
+}

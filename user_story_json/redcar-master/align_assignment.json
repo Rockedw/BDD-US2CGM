@@ -1,0 +1,40 @@
+{
+    "feature_name": "Align Assignment",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I type \"a = 4\\nbc = 5\\nd = 123\"",
+                        "I select all",
+                        "I select menu item \"Edit|Formatting|Align Assignments\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"<c>a  = 4\\nbc = 5\\nd  = 123<s>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the content is:",
+                        "I select from (1,2) to (3,9)",
+                        "I select menu item \"Edit|Formatting|Align Assignments\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "the content should be:"
+                    ]
+                ]
+            }
+        ]
+    }
+}

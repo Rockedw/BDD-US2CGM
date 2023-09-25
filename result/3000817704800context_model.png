@@ -1,0 +1,19 @@
+// 3000817707632 Context Model
+digraph {
+	3000817704800 [label=Context32]
+	3000817703360 [label="there is 1 existing category like \"myCategory\""]
+	3000817704800 -> 3000817703360
+	3000817703360 [label="there is 1 existing category like \"myCategory\""]
+	3000817705376 [label="there is 1 existing individual like \"myItem\""]
+	3000817704800 -> 3000817705376
+	3000817705376 [label="there is 1 existing individual like \"myItem\""]
+	3000817704368 [label="there is an existing connection \"myCategory0\" \"contains\" \"myItem0\""]
+	3000817704800 -> 3000817704368
+	3000817704368 [label="there is an existing connection \"myCategory0\" \"contains\" \"myItem0\""]
+	3000817699568 [label="I am on the edit connections page for \"myCategory0\" \"contains\" \"myItem0\""]
+	3000817704800 -> 3000817699568
+	3000817699568 [label="I am on the edit connections page for \"myCategory0\" \"contains\" \"myItem0\""]
+	3000817703888 [label="I select \"one_of : One Of (basic relationship)\" from \"Relates to\""]
+	3000817704800 -> 3000817703888
+	3000817703888 [label="I select \"one_of : One Of (basic relationship)\" from \"Relates to\""]
+}

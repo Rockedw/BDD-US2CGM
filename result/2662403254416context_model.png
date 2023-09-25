@@ -1,0 +1,13 @@
+// 2662403253648 Context Model
+digraph {
+	2662403254416 [label=Context24]
+	2662403254560 [label="I have a blank site in \"<source>\""]
+	2662403254416 -> 2662403254560
+	2662403254560 [label="I have a blank site in \"<source>\""]
+	2662403254656 [label="I have an \"<source>/index.md\" page that contains \"markdown\""]
+	2662403254416 -> 2662403254656
+	2662403254656 [label="I have an \"<source>/index.md\" page that contains \"markdown\""]
+	2662403254752 [label="I have a configuration file with:"]
+	2662403254416 -> 2662403254752
+	2662403254752 [label="I have a configuration file with:"]
+}

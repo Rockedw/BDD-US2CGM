@@ -1,0 +1,10 @@
+// 1982200244704 Context Model
+digraph {
+	1982200241632 [label=Context19]
+	1982200236544 [label="I need a \"res.partner\" with oid: scen.customer_4_add"]
+	1982200241632 -> 1982200236544
+	1982200236544 [label="I need a \"res.partner\" with oid: scen.customer_4_add"]
+	1982200236016 [label="having:"]
+	1982200241632 -> 1982200236016
+	1982200236016 [label="having:"]
+}

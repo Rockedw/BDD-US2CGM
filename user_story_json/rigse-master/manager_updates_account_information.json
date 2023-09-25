@@ -1,0 +1,85 @@
+{
+    "feature_name": "A manager updates account information for another user",
+    "user_story": {
+        "as_a": "Manager",
+        "i_want": "update a users account information",
+        "so_that": "correct mistakes a user has made",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am logged in with the username mymanager",
+                        "I am on the user preferences page for the user \"<username>\""
+                    ],
+                    [
+                        "I fill in \"user_email\" with \"<changed_email>\"",
+                        "I press \"Save\""
+                    ],
+                    [
+                        "I am on the user preferences page for the user \"<username>\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"User Preferences\""
+                    ],
+                    [
+                        "I should see \"User Preferences\"",
+                        "the \"user_email\" field should contain \"<changed_email>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am logged in with the username mymanager",
+                        "I am on the user list page",
+                        "I click \"Reset Password\" for user: \"<userlogin>\""
+                    ],
+                    [
+                        "I fill in \"user_reset_password_password\" with \"<new_password>\"",
+                        "I fill in \"user_reset_password_password_confirmation\" with \"<new_password>\"",
+                        "I press \"Save\""
+                    ],
+                    [
+                        "I log out",
+                        "I login with username: <userlogin> password: <new_password>"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Password for <username> (<userlogin>)\""
+                    ],
+                    [
+                        "I should be on user list"
+                    ],
+                    [
+                        "I should see \"Welcome\"",
+                        "I should see \"SETTINGS\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "there is an unactivated user named \"justsignedup\"",
+                        "I am logged in with the username mymanager",
+                        "I am on the user list page",
+                        "I look for the user by searching \"justsignedup\"",
+                        "I should see \"justsignedup\"",
+                        "I activate the user from user list by searching \"justsignedup\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the user list page",
+                        "I should see \"Activation of user, joe ( justsignedup ) complete.\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

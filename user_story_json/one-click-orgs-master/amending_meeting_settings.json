@@ -1,0 +1,97 @@
+{
+    "feature_name": "Amending meeting settings",
+    "user_story": {
+        "as_a": "As the secretary",
+        "i_want": "adjust the way meetings are run",
+        "so_that": "make our co-op run the way we want it to",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "the notice period for General Meetings is \"14\" days"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Resolutions page",
+                        "I press \"Create a proposal\"",
+                        "I select \"Change the notice period for General Meetings\" from \"Type of proposal\"",
+                        "I enter \"21\" days"
+                    ],
+                    [
+                        "I go to the Resolutions page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Extraordinary Resolution is required\"",
+                        "I press \"Open this proposal for electronic voting\""
+                    ],
+                    [
+                        "I should see \"A proposal to increase the General Meeting notice period has been opened for electronic voting.\""
+                    ],
+                    [
+                        "I should see the resolution in the list of currently-open resolutions"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the notice period for General Meetings is \"14\" days"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Resolutions page",
+                        "I press \"Create a proposal\"",
+                        "I select \"Change the notice period for General Meetings\" from \"Type of proposal\"",
+                        "I enter \"7\" days"
+                    ],
+                    [
+                        "I press \"Open this proposal for electronic voting\""
+                    ],
+                    [
+                        "I go to the Resolutions page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"90% of Members\""
+                    ],
+                    [
+                        "I should see \"A proposal to decrease the General Meeting notice period has been opened for electronic voting.\""
+                    ],
+                    [
+                        "I should see an open resolution to decrease the General Meeting notice period to 7 days"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Resolutions page",
+                        "I press \"Create a proposal\"",
+                        "I select \"Change the quorum for General Meetings\" from \"Type of proposal\"",
+                        "I fill in \"Number of members\" with \"5\"",
+                        "I fill in \"Percentage of membership\" with \"30%\"",
+                        "I press \"Open this proposal for electronic voting\""
+                    ],
+                    [
+                        "I go to the Resolutions page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"The proposal has been opened for electronic voting.\""
+                    ],
+                    [
+                        "I should see an open Extraordinary Resolution to change the General Meeting quorum",
+                        "the open resolution should be to change the quorum to the greater of 5 members or 30% of the membership"
+                    ]
+                ]
+            }
+        ]
+    }
+}

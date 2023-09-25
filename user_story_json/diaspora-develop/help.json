@@ -1,0 +1,29 @@
+{
+    "feature_name": "Getting help",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on the help page"
+                    ],
+                    [
+                        "I follow \"Mentions\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"diaspora* FAQ\""
+                    ],
+                    [
+                        "I should see \"What is a “mention”?\" within \".faq_question_mentions .question\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

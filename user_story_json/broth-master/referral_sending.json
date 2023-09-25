@@ -1,0 +1,36 @@
+{
+    "feature_name": "Referral sending",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "",
+        "so_that": "share a site with my friends",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "site settings have been enabled for \"referrals\""
+                    ],
+                    [
+                        "an email template for \"referral\" exists"
+                    ],
+                    [
+                        "an email template for \"confirmation\" exists"
+                    ],
+                    [
+                        "I am signed up and signed in as \"email@person.com/password\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the new referral page",
+                        "I fill in \"Emails\" with \"joe.sixpack@test.com\"",
+                        "I fill in \"Email text\" with \"This is a sample email text\"",
+                        "I press \"Tell your friends\"",
+                        "I should see \"Your emails have been sent.\""
+                    ]
+                ],
+                "thens_list": []
+            }
+        ]
+    }
+}

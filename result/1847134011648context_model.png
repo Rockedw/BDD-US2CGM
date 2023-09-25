@@ -1,0 +1,22 @@
+// 1847134018080 Context Model
+digraph {
+	1847134011648 [label=Context2]
+	1847134015968 [label="a provider \"Tim Stafford\" with an approved endorsement from \"Steve Martin\""]
+	1847134011648 -> 1847134015968
+	1847134015968 [label="a provider \"Tim Stafford\" with an approved endorsement from \"Steve Martin\""]
+	1847134016688 [label="a provider \"Chris Thile\" with a rejected endorsement from \"Jimmy Martin\""]
+	1847134011648 -> 1847134016688
+	1847134016688 [label="a provider \"Chris Thile\" with a rejected endorsement from \"Jimmy Martin\""]
+	1847134012896 [label="a logged in admin user"]
+	1847134011648 -> 1847134012896
+	1847134012896 [label="a logged in admin user"]
+	1847134011456 [label="I am on the admin dashboard"]
+	1847134011648 -> 1847134011456
+	1847134011456 [label="I am on the admin dashboard"]
+	1847134014336 [label="I follow \"Endorsements\""]
+	1847134011648 -> 1847134014336
+	1847134014336 [label="I follow \"Endorsements\""]
+	1847134020432 [label="I follow \"Steve Martin\""]
+	1847134011648 -> 1847134020432
+	1847134020432 [label="I follow \"Steve Martin\""]
+}

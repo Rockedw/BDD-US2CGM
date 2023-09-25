@@ -1,0 +1,55 @@
+{
+    "feature_name": "Viewing stats",
+    "user_story": {
+        "as_a": "n administrator",
+        "i_want": "view stats about the users",
+        "so_that": "learn about usage of the instance",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the administrator's users page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a list of all the users"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the administrator's users page",
+                        "I follow \"Active organisations\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a list of all the users in active organisations",
+                        "I should not see any users from draft organisations",
+                        "I should not see any users from proposed organisations"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the administrator's users page",
+                        "I follow \"Organisations awaiting registration\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a list of all the users in proposed organisations",
+                        "I should not see any users from draft organisations",
+                        "I should not see any users from active organisations"
+                    ]
+                ]
+            }
+        ]
+    }
+}

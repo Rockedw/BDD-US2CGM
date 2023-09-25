@@ -1,0 +1,120 @@
+{
+    "feature_name": "Manage Patients",
+    "user_story": {
+        "as_a": "chits user",
+        "i_want": "be able to manage patients by searching,creating,updating and deleting patient information",
+        "so_that": "maximize the time for health care delivery",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"user\" with password \"user\"",
+                        "I click \"RECORDS\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"first\" with \"Jose\"",
+                        "I fill in \"last\" with \"Rizal\"",
+                        "I press \"Search\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Jose Rizal\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"user\" with password \"user\"",
+                        "I click \"RECORDS\"",
+                        "I am on the patient management form"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"patient_firstname\" with \"Andres\"",
+                        "I fill in \"patient_middle\" with \"Cruz\"",
+                        "I fill in \"patient_lastname\" with \"Bonifacio\"",
+                        "I fill in \"patient_dob\" with \"02/03/1982\"",
+                        "I select \"Male\" from \"patient_gender\"",
+                        "I fill in \"patient_mother\" with \"Maria\"",
+                        "I fill in \"patient_cellphone\" with \"09191234567\"",
+                        "I press \"Add Patient\"",
+                        "Debug",
+                        "I fill in \"first\" with \"Andres\"",
+                        "I fill in \"last\" with \"Bonifacio\"",
+                        "I press \"Search\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Found 1 Record: Andres Bonifacio\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"user\" with password \"user\"",
+                        "I click \"RECORDS\"",
+                        "I am on the patient management form"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"first\" with \"Jose\"",
+                        "I fill in \"last\" with \"Rizal\"",
+                        "I press \"Search\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Found\"",
+                        "I click \"Rizal\"",
+                        "I should see patient information at the edit patient form",
+                        "I fill in the \"patient_middlename\" with \"Santos\"",
+                        "I fill in the \"patient_dob\" with \"12/23/1990\"",
+                        "I press the \"Update Patient\"",
+                        "I should be able to see \"patient information is update\"",
+                        "I click \"Andres Bonifacio\""
+                    ],
+                    [
+                        "I should see \"patient_middlename\" is \"Santos\"",
+                        "\"patient_dob\" is \"12/23/1990\";"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"user\" with password \"user\"",
+                        "I click \"RECORDS\"",
+                        "I am on the patient management form"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"first\" with \"Jose\"",
+                        "I fill in \"last\" with \"Rizal\"",
+                        "I press \"Search\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Jose Rizal\"",
+                        "I click \"Rizal\"",
+                        "I should see patient information at the edit patient form",
+                        "I press \"delete patient\"",
+                        "I press \"yes\""
+                    ],
+                    [
+                        "I should not see \"Andres Bonifacio\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

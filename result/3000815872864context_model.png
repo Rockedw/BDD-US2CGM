@@ -1,0 +1,34 @@
+// 3000815616688 Context Model
+digraph {
+	3000815872864 [label=Context3]
+	3000815868400 [label="I have a _layouts directory"]
+	3000815872864 -> 3000815868400
+	3000815868400 [label="I have a _layouts directory"]
+	3000815872096 [label="I have a root layout that contains \"root: {{ content }}\""]
+	3000815872864 -> 3000815872096
+	3000815872096 [label="I have a root layout that contains \"root: {{ content }}\""]
+	3000815867392 [label="I have a subfolder layout that contains \"subfolder: {{ content }}\""]
+	3000815872864 -> 3000815867392
+	3000815867392 [label="I have a subfolder layout that contains \"subfolder: {{ content }}\""]
+	3000815873008 [label="I have a _posts directory"]
+	3000815872864 -> 3000815873008
+	3000815873008 [label="I have a _posts directory"]
+	3000815870752 [label="I have the following post:"]
+	3000815872864 -> 3000815870752
+	3000815870752 [label="I have the following post:"]
+	3000815868112 [label="I have a special/_posts directory"]
+	3000815872864 -> 3000815868112
+	3000815868112 [label="I have a special/_posts directory"]
+	3000815862160 [label="I have the following post in \"special\":"]
+	3000815872864 -> 3000815862160
+	3000815862160 [label="I have the following post in \"special\":"]
+	3000815863792 [label="I have an \"index.html\" page with title \"overview\" that contains \"Overview for {{page.description}}\""]
+	3000815872864 -> 3000815863792
+	3000815863792 [label="I have an \"index.html\" page with title \"overview\" that contains \"Overview for {{page.description}}\""]
+	3000815861824 [label="I have an \"special/index.html\" page with title \"section overview\" that contains \"Overview for {{page.description}}\""]
+	3000815872864 -> 3000815861824
+	3000815861824 [label="I have an \"special/index.html\" page with title \"section overview\" that contains \"Overview for {{page.description}}\""]
+	3000815864272 [label="I have a configuration file with \"defaults\" set to \"[{scope: {path: \"special\"}, values: {layout: \"subfolder\", description: \"the special section\"}}, {scope: {path: \"\"}, values: {layout: \"root\", description: \"the webpage\"}}]\""]
+	3000815872864 -> 3000815864272
+	3000815864272 [label="I have a configuration file with \"defaults\" set to \"[{scope: {path: \"special\"}, values: {layout: \"subfolder\", description: \"the special section\"}}, {scope: {path: \"\"}, values: {layout: \"root\", description: \"the webpage\"}}]\""]
+}

@@ -1,0 +1,50 @@
+{
+    "feature_name": "Admin dashboard",
+    "user_story": {
+        "as_a": "n Engine Yard admin",
+        "i_want": "see statistics on generated content in my dashboard",
+        "so_that": "when I log in I can immediately see exciting and important metrics",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Lehman Bros\"",
+                        "a provider \"AIG\"",
+                        "a provider \"Wachovia\"",
+                        "a logged in admin user"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the admin dashboard"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"3 active\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a logged in admin user"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the admin dashboard",
+                        "I follow \"admin.change_password\" translation",
+                        "I fill in \"user_password\" with \"kablamo\"",
+                        "I press \"Save\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"user.saved_successfully\" translation"
+                    ]
+                ]
+            }
+        ]
+    }
+}

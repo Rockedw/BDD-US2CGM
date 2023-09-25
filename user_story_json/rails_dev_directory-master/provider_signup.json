@@ -1,0 +1,98 @@
+{
+    "feature_name": "Provider sign up",
+    "user_story": {
+        "as_a": "Provider",
+        "i_want": "be able sign up",
+        "so_that": "I can can receive Rails project referrals",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am on the homepage",
+                        "I follow \"provider.signup\" translation",
+                        "I fill in the provider sign up form for \"Pivotpaul Labs\"",
+                        "I fill in the \"First name\" with \"JD\"",
+                        "I fill in the \"Last name\" with \"Crow\"",
+                        "I fill in the \"Email\" with \"jdcrow@oleopry.com\"",
+                        "I fill in the \"Password\" with \"dingusday\"",
+                        "I fill in the \"Retype password\" with \"greasycoat\"",
+                        "I fill in the \"provider[marketing_description]\" with \"The human mind can only stand so much.\"",
+                        "I fill in the \"Company email\" with \"theboys@oleopry.com\"",
+                        "I fill in the \"Company website\" with \"ole opry\"",
+                        "I check \"provider[terms_of_service]\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Sign up\""
+                    ],
+                    [
+                        "I fill in the \"password\" with \"americanpolka\"",
+                        "I fill in the \"Retype password\" with \"americanpolka\"",
+                        "I fill in the \"Company website\" with \"oleopry.com\"",
+                        "I press \"Sign up\""
+                    ],
+                    [
+                        "I follow \"navigation.company\" translation"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Users password doesn't match confirmation\"",
+                        "I should see \"provider.validations.valid_url\" translation"
+                    ],
+                    [
+                        "I should see \"Pivotpaul Labs Admin\""
+                    ],
+                    [
+                        "I should see \"The human mind can only stand so much.\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the homepage",
+                        "primary services \"Ruby on Rails, AJAX\"",
+                        "secondary services \"Visual design, UI\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"provider.signup\" translation",
+                        "I fill in the provider sign up form for \"Pivotpaul Labs\"",
+                        "I fill in the \"provider[marketing_description]\" with \"Some things are too hot to touch.\""
+                    ],
+                    [
+                        "I check \"Ruby on Rails\"",
+                        "I check \"Visual design\"",
+                        "I press \"Sign up\""
+                    ],
+                    [
+                        "I check \"provider[terms_of_service]\"",
+                        "I fill in the provider sign up form for \"Pivotpaul Labs\"",
+                        "I press \"Sign up\""
+                    ],
+                    [
+                        "I follow \"navigation.company\" translation"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Ruby on Rails\""
+                    ],
+                    [
+                        "I should see \"Terms of Use\""
+                    ],
+                    [
+                        "I should see \"Pivotpaul Labs Admin\""
+                    ],
+                    [
+                        "I should see \"Ruby on Rails\"",
+                        "I should see \"Some things are too hot to touch.\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

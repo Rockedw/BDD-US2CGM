@@ -1,0 +1,77 @@
+// Goal Model
+digraph {
+	1847133174416 [label="friendly person
+goal"]
+	1847133477408 [label="like their posts
+goal
+1847133478416"]
+	1847133174416 -> 1847133477408
+	1847133477408 [label="like their posts
+goal"]
+	1847133375072 [label="Liking and unliking a post from the stream
+goal
+140728069287616"]
+	1847133477408 -> 1847133375072
+	1847133375072 [label="Liking and unliking a post from the stream
+goal"]
+	1847133380544 [label="I like the post \"I like unicorns\" in the stream
+task
+140728069287616"]
+	1847133375072 -> 1847133380544
+	1847133380544 [label="I like the post \"I like unicorns\" in the stream
+task"]
+	1847133374256 [label="I unlike the post \"I like unicorns\" in the stream
+task
+140728069287616"]
+	1847133375072 -> 1847133374256
+	1847133374256 [label="I unlike the post \"I like unicorns\" in the stream
+task"]
+	1847133376080 [label="Liking and unliking a post from a single post page
+goal
+140728069287616"]
+	1847133477408 -> 1847133376080
+	1847133376080 [label="Liking and unliking a post from a single post page
+goal"]
+	1847133380112 [label="I open the show page of the \"I like unicorns\" post
+task
+140728069287616"]
+	1847133376080 -> 1847133380112
+	1847133380112 [label="I open the show page of the \"I like unicorns\" post
+task"]
+	1847133381600 [label="I click to like the post
+task
+140728069287616"]
+	1847133376080 -> 1847133381600
+	1847133381600 [label="I click to like the post
+task"]
+	1847133380448 [label="I click to unlike the post
+task
+140728069287616"]
+	1847133376080 -> 1847133380448
+	1847133380448 [label="I click to unlike the post
+task"]
+	1847133374352 [label="Someone likes my post
+goal
+140728069287616"]
+	1847133477408 -> 1847133374352
+	1847133374352 [label="Someone likes my post
+goal"]
+	1847133379104 [label="I like the post \"I like unicorns\" in the stream
+task
+140728069287616"]
+	1847133374352 -> 1847133379104
+	1847133379104 [label="I like the post \"I like unicorns\" in the stream
+task"]
+	1847133376896 [label="I sign out
+task
+140728069287616"]
+	1847133374352 -> 1847133376896
+	1847133376896 [label="I sign out
+task"]
+	1847133381552 [label="I sign in as \"bob@bob.bob\"
+task
+140728069287616"]
+	1847133374352 -> 1847133381552
+	1847133381552 [label="I sign in as \"bob@bob.bob\"
+task"]
+}

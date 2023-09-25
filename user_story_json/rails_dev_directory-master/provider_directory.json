@@ -1,0 +1,77 @@
+{
+    "feature_name": "Provider directory",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "be able to browse through providers, 30 per page",
+        "so_that": "I can find the providers that I like",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "an \"active\" provider \"Trulio\"",
+                        "\"Trulio\" has a new endorsement from \"George Tenet\"",
+                        "\"Trulio\" has a minimum budget of \"15000\"",
+                        "pre checked services \"Ruby on Rails\"",
+                        "primary services \"AJAX, Visual design, UI\"",
+                        "\"Trulio\" provides \"AJAX\"",
+                        "an \"inactive\" provider \"Boolio\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the homepage",
+                        "I follow \"home.full_listing\" translation"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Trulio\""
+                    ],
+                    [
+                        "I should see \"Trulio\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "an \"active\" provider \"Hyper Tiny\"",
+                        "\"Hyper Tiny\" is based in \"NA, IE\"",
+                        "an \"active\" provider \"Hashrocket\"",
+                        "\"Hashrocket\" is based in \"FL, US\"",
+                        "an \"active\" provider \"Nonsense\"",
+                        "\"Nonsense\" is based in \"nowhere\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the homepage",
+                        "I follow \"home.by_location\" translation"
+                    ],
+                    [
+                        "I follow \"Florida\""
+                    ],
+                    [
+                        "I follow \"home.by_location\" translation",
+                        "I follow \"Ireland\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Ireland\"",
+                        "I should see \"United States\"",
+                        "I should see \"Florida\"",
+                        "I should not see \"Hashrocket\"",
+                        "I should not see \"Hyper Tiny\""
+                    ],
+                    [
+                        "I should see \"Hashrocket\""
+                    ],
+                    [
+                        "I should see \"Hyper Tiny\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "feature_name": "Syntax Highlighting",
+    "user_story": {
+        "as_a": "hacker who likes to blog",
+        "i_want": "share code snippets in my blog",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.html\" page with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit-status",
+                        "I should see \"<span class=\"nc\">RewriteCond</span>\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.html\" page with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit-status",
+                        "I should see \"<span class=\\\"hll\\\"><span class=\\\"k\\\">module</span> <span class=\\\"nn\\\">Jekyll</span>\" in \"_site/index.html\"",
+                        "I should see \"<span class=\\\"hll\\\">  <span class=\\\"k\\\">module</span> <span class=\\\"nn\\\">Tags</span>\" in \"_site/index.html\"",
+                        "I should see \"<span class=\\\"k\\\">class</span> <span class=\\\"nc\\\">HighlightBlock</span\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.html\" page with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Liquid Exception: Syntax Error\" in the build output"
+                    ]
+                ]
+            }
+        ]
+    }
+}

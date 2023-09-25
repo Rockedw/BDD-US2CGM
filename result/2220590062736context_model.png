@@ -1,0 +1,13 @@
+// 2220590063888 Context Model
+digraph {
+	2220590062736 [label=Context66]
+	2220590060288 [label="I do not want all demo data to be loaded on install"]
+	2220590062736 -> 2220590060288
+	2220590060288 [label="I do not want all demo data to be loaded on install"]
+	2220590060432 [label="I update the module list"]
+	2220590062736 -> 2220590060432
+	2220590060432 [label="I update the module list"]
+	2220590060528 [label="I install the required modules with dependencies:"]
+	2220590062736 -> 2220590060528
+	2220590060528 [label="I install the required modules with dependencies:"]
+}

@@ -1,0 +1,42 @@
+{
+    "feature_name": "Goto line command",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to 0",
+                        "I run the command Redcar::Top::GotoLineCommand"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the Redcar::Top::GotoLineCommand::Speedbar speedbar should be open"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to 0",
+                        "I run the command Redcar::Top::GotoLineCommand",
+                        "I type \"2\" into the \"line\" field in the speedbar",
+                        "I press \"Go\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be on line 1"
+                    ]
+                ]
+            }
+        ]
+    }
+}

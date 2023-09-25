@@ -1,0 +1,10 @@
+// 1982200237888 Context Model
+digraph {
+	1982200236496 [label=Context51]
+	1982200236736 [label="a purchase tax called 'Buy 19.6%' with a rate of 0.196 exists"]
+	1982200236496 -> 1982200236736
+	1982200236736 [label="a purchase tax called 'Buy 19.6%' with a rate of 0.196 exists"]
+	1982200242928 [label="a sale tax called 'Sale 19.6%' with a rate of 0.196 exists"]
+	1982200236496 -> 1982200242928
+	1982200242928 [label="a sale tax called 'Sale 19.6%' with a rate of 0.196 exists"]
+}

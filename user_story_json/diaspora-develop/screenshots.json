@@ -1,0 +1,46 @@
+{
+    "feature_name": "layout reference screenshots",
+    "user_story": {
+        "as_a": "developer",
+        "i_want": "be able to look at before/after screenshots",
+        "so_that": "be able to compare style and layout changes",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "the reference screenshot directory is used"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I take the screenshots while logged out",
+                        "I sign in as \"alice@alice.alice\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I take the screenshots while logged in"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the comparison screenshot directory is used"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I take the screenshots while logged out",
+                        "I sign in as \"alice@alice.alice\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I take the screenshots while logged in"
+                    ]
+                ]
+            }
+        ]
+    }
+}

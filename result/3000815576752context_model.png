@@ -1,0 +1,10 @@
+// 3000815685056 Context Model
+digraph {
+	3000815576752 [label=Context9]
+	3000815574736 [label="I have a \"_config.yml\" file with content:"]
+	3000815576752 -> 3000815574736
+	3000815574736 [label="I have a \"_config.yml\" file with content:"]
+	3000815569312 [label="I have an \"index.html\" page that contains \"{% for member in site.data %}{{member.name}}{% endfor %}\""]
+	3000815576752 -> 3000815569312
+	3000815569312 [label="I have an \"index.html\" page that contains \"{% for member in site.data %}{{member.name}}{% endfor %}\""]
+}

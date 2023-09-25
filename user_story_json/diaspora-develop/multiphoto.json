@@ -1,0 +1,82 @@
+{
+    "feature_name": "viewing photos on the mobile main page",
+    "user_story": {
+        "as_a": "mobile user",
+        "i_want": "view some photos",
+        "so_that": "navigate Diaspora*",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I visit the mobile publisher page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I attach the file \"spec/fixtures/button.png\" to hidden \"qqfile\" within \"#file-upload-publisher\""
+                    ],
+                    [
+                        "I press \"Share\"",
+                        "I go to the stream page",
+                        "I click on selector \"img.stream-photo\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"button.png completed\"",
+                        "I should see an uploaded image within the photo drop zone"
+                    ],
+                    [
+                        "I should see a \"img\" within \".photos\"",
+                        "I should not see a \"#arrow-right\" within \"#main\"",
+                        "I should not see a \"#arrow-left\" within \"#main\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I visit the mobile publisher page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I attach the file \"spec/fixtures/button.png\" to hidden \"qqfile\" within \"#file-upload-publisher\""
+                    ],
+                    [
+                        "I attach the file \"spec/fixtures/button.gif\" to hidden \"qqfile\" within \"#file-upload-publisher\""
+                    ],
+                    [
+                        "I press \"Share\"",
+                        "I go to the stream page"
+                    ],
+                    [
+                        "I click on selector \"img.stream-photo\""
+                    ],
+                    [
+                        "I click on selector \"#arrow-right\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"button.png completed\""
+                    ],
+                    [
+                        "I should see \"button.gif completed\""
+                    ],
+                    [
+                        "I should see \"+ 1\" within \".additional_photo_count\""
+                    ],
+                    [
+                        "I should see a \"#arrow-right\" within \"#main\"",
+                        "I should not see a \"#arrow-left\" within \"#main\""
+                    ],
+                    [
+                        "I should see a \"#arrow-left\" within \"#main\"",
+                        "I should not see a \"#arrow-right\" within \"#main\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+// 1633827591056 Context Model
+digraph {
+	1633827592304 [label=Context1]
+	1633827592112 [label="I am a user"]
+	1633827592304 -> 1633827592112
+	1633827592112 [label="I am a user"]
+	1633827600320 [label="on my profile"]
+	1633827592304 -> 1633827600320
+	1633827600320 [label="on my profile"]
+	1633827600272 [label="I specify that I wish to upload text"]
+	1633827592304 -> 1633827600272
+	1633827600272 [label="I specify that I wish to upload text"]
+}

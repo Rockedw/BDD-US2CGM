@@ -1,0 +1,13 @@
+// 3000790311136 Context Model
+digraph {
+	3000789883568 [label=Context8]
+	3000789882608 [label="I fill in \"Name\" with \"congruent_with\""]
+	3000789883568 -> 3000789882608
+	3000789882608 [label="I fill in \"Name\" with \"congruent_with\""]
+	3000815779024 [label="I fill in \"Title\" with \"Congruent With\""]
+	3000789883568 -> 3000815779024
+	3000815779024 [label="I fill in \"Title\" with \"Congruent With\""]
+	3000815777776 [label="I fill in \"Description\" with \"Too lazy to write one\""]
+	3000789883568 -> 3000815777776
+	3000815777776 [label="I fill in \"Description\" with \"Too lazy to write one\""]
+}

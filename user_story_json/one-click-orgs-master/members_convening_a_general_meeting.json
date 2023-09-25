@@ -1,0 +1,85 @@
+{
+    "feature_name": "Members convening a general meeting",
+    "user_story": {
+        "as_a": "member",
+        "i_want": "convene a general meeting",
+        "so_that": "ensure some issues are discussed",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a co-op",
+                        "I am a member of the co-op"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Meetings page",
+                        "I follow \"Apply to convene a General Meeting\"",
+                        "I enter the purpose of the meeting",
+                        "I press \"Next\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a special link to share the application"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a co-op",
+                        "I am a member of the co-op",
+                        "another member has created an application to convene a general meeting"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I visit the special link for the general meeting application"
+                    ],
+                    [
+                        "I press \"I support this application to convene a general meeting\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the purpose of the meeting",
+                        "I should see the name of the member who created the application"
+                    ],
+                    [
+                        "I should see that I have signed the general meeting application"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a co-op",
+                        "I am the secretary of the co-op",
+                        "an application to convene a general meeting has been created"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "the general meeting application has reached sufficient signatures",
+                        "the proposal closer runs",
+                        "I go to the dashboard"
+                    ],
+                    [
+                        "I follow the link to view more details about the general meeting application"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a notification of the general meeting application"
+                    ],
+                    [
+                        "I should see the purpose of the general meeting",
+                        "I should see the names of the members who signed the general meeting application"
+                    ]
+                ]
+            }
+        ]
+    }
+}

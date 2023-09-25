@@ -1,0 +1,55 @@
+{
+    "feature_name": "User logs in using header login box to use the portal",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "login",
+        "so_that": "use the portal",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I login with username: teacher password: password",
+                        "I should not see \"Invalid Login or password.\""
+                    ]
+                ],
+                "thens_list": []
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I login with username: student password: password",
+                        "I should not see \"Invalid Login or password.\""
+                    ]
+                ],
+                "thens_list": []
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I login with username: author password: password"
+                    ],
+                    [
+                        "I login as an admin"
+                    ],
+                    [
+                        "I login with username: manager password: password"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"Invalid Login or password.\""
+                    ],
+                    [
+                        "I should not see \"Invalid Login or password.\""
+                    ],
+                    [
+                        "I should not see \"Invalid Login or password.\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

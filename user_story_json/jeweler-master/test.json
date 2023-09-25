@@ -1,0 +1,156 @@
+{
+    "feature_name": "generated test or spec",
+    "user_story": {
+        "as_a": "user should be able to",
+        "i_want": "generate a test or spec",
+        "so_that": "start a new gem",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a bacon project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'spec/the-perfect-gem_spec.rb' should describe 'ThePerfectGem'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a minitest project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'test/test_the-perfect-gem.rb' should define 'TestThePerfectGem' as a subclass of 'MiniTest::Test'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a rspec project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'spec/the-perfect-gem_spec.rb' should describe 'ThePerfectGem'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely",
+                        "I intend to test with shoulda"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'test/test_the-perfect-gem.rb' should define 'TestThePerfectGem' as a subclass of 'Test::Unit::TestCase'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'test/test_the-perfect-gem.rb' should define 'TestThePerfectGem' as a subclass of 'Test::Unit::TestCase'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a micronaut project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'examples/the-perfect-gem_example.rb' should describe 'ThePerfectGem'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a riot project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'test/the-perfect-gem_test.rb' should contextualize 'the-perfect-gem'",
+                        "'test/the-perfect-gem_test.rb' requires 'teststrap'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a shindo project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'tests/the-perfect-gem_tests.rb' should have tests for 'ThePerfectGem'"
+                    ]
+                ]
+            }
+        ]
+    }
+}

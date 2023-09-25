@@ -1,0 +1,36 @@
+{
+    "feature_name": "Viewing draft association details",
+    "user_story": {
+        "as_a": "founding member",
+        "i_want": "view details of the draft association",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the constitution page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the draft constitution"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the members page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the list of founding members"
+                    ]
+                ]
+            }
+        ]
+    }
+}

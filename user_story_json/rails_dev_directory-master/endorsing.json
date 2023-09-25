@@ -1,0 +1,150 @@
+{
+    "feature_name": "Recommending a provider",
+    "user_story": {
+        "as_a": "customer of a provider",
+        "i_want": "be able to submit a endorsement for a company",
+        "so_that": "I can show my appreciation",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "an \"active\" provider \"Hashrocket\"",
+                        "\"Hashrocket\" has an approved endorsement \"Sweet\" \"3.days.ago\"",
+                        "\"Hashrocket\" has an approved endorsement \"Awesome\" \"3.days.ago\"",
+                        "\"Hashrocket\" has an approved endorsement \"Very good\" \"2.days.ago\"",
+                        "\"Hashrocket\" has an approved endorsement \"Super cool\" \"1.day.ago\"",
+                        "\"Hashrocket\" has a new endorsement \"Nice work\" \"1.day.ago\""
+                    ],
+                    [
+                        "\"Hashrocket\" have requested \"Brian Flanagan <btf@coralmade.net>\" submit an endorsement",
+                        "\"btf@coralmade.net\" follows the emailed endorsement link"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the homepage",
+                        "I follow \"home.find_a_provider\" translation",
+                        "I press \"provider.directory.find_providers\" translation",
+                        "I follow \"Hashrocket\""
+                    ],
+                    [
+                        "I fill in \"endorsement[name]\" with \"Brian Flanagan\"",
+                        "I select \"2007\" from \"endorsement[year_hired]\"",
+                        "I fill in \"endorsement[company]\" with \"Coral Made\"",
+                        "I fill in \"endorsement[email]\" with \"btf@coralmade.net\"",
+                        "I fill in \"endorsement[url]\" with \"coralmade.net\"",
+                        "I fill in \"endorsement[position]\" with \"Vice President of Human Resources\"",
+                        "I fill in \"endorsement[endorsement]\" with \"80% perfect\"",
+                        "I press \"endorsement_submit\""
+                    ],
+                    [
+                        "I follow \"more-endorsements\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"provider.more_endorsements\" translation"
+                    ],
+                    [
+                        "I should see \"provider.endorsement_headline\" translation"
+                    ],
+                    [
+                        "I should see \"endorsement.thanks\" translation",
+                        "I should not see \"80% perfect\"",
+                        "I should not see \"Nice work\""
+                    ],
+                    [
+                        "I should not see \"Nice work\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "an \"active\" provider \"Hashrocket\"",
+                        "\"Hashrocket\" has a new endorsement \"Nice work\" \"3.days.ago\"",
+                        "\"Hashrocket\" has a new endorsement \"Very good\" \"2.days.ago\"",
+                        "\"Hashrocket\" has a new endorsement \"Super cool\" \"1.day.ago\"",
+                        "\"Hashrocket\" has an approved endorsement \"Nonchalent\" \"4.days.ago\"",
+                        "\"Hashrocket\" has an approved endorsement \"Awesome\" \"3.days.ago\"",
+                        "\"Hashrocket\" has an approved endorsement \"Deadly\" \"2.days.ago\"",
+                        "\"Hashrocket\" has an approved endorsement \"OK\" \"1.day.ago\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the homepage",
+                        "I follow \"home.find_a_provider\" translation",
+                        "I press \"provider.directory.find_providers\" translation",
+                        "I follow \"Hashrocket\""
+                    ],
+                    [
+                        "I follow \"more-endorsements\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"provider.more_endorsements\" translation"
+                    ],
+                    [
+                        "I should not see \"Nice work\"",
+                        "I should not see \"Very good\"",
+                        "I should not see \"Nice work\"",
+                        "I should see \"Awesome\"",
+                        "I should see \"Deadly\"",
+                        "I should see \"OK\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Hotpocket\" belonging to \"paul@test.com\"",
+                        "\"Hotpocket\" has a rejected endorsement from \"Nick Riviera\"",
+                        "I am on the homepage"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I log in as \"paul@test.com\" with password \"testtest\""
+                    ],
+                    [
+                        "I follow \"Nick Riviera\"",
+                        "I press \"endorsement.approve\" translation"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Nick Riviera\""
+                    ],
+                    [
+                        "I should see \"endorsement.saved_successfully\" translation"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Hotpocket\" belonging to \"paul@test.com\"",
+                        "\"Hotpocket\" has an approved endorsement \"Vaguely competent service.\" \"3.days.ago\"",
+                        "\"Hotpocket\" has a rejected endorsement \"Literally crap. Totally awful. Barely even Ruby.\" \"2.days.ago\"",
+                        "I am on the homepage"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"home.find_a_provider\" translation",
+                        "I press \"provider.directory.find_providers\" translation",
+                        "I follow \"Hotpocket\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Vaguely competent service\"",
+                        "I should not see \"Literally crap.\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

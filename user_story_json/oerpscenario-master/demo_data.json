@@ -1,0 +1,29 @@
+{
+    "feature_name": "check base",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "load the demo data for installed module",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I want to load the demo data on all installed modules"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I tic the demo data field on all found modules",
+                        "ask to upgrade the base module",
+                        "run the update"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see some demo data loaded"
+                    ]
+                ]
+            }
+        ]
+    }
+}

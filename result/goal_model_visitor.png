@@ -1,0 +1,83 @@
+// Goal Model
+digraph {
+	1847135454544 [label="visitor
+goal"]
+	1847133385872 [label="sign up
+goal
+1847133377280"]
+	1847135454544 -> 1847133385872
+	1847133385872 [label="sign up
+goal"]
+	1847133041520 [label="User cannot sign up with invalid data
+goal
+140728069287616"]
+	1847133385872 -> 1847133041520
+	1847133041520 [label="User cannot sign up with invalid data
+goal"]
+	1847133031248 [label="I go to the sign up page
+task
+140728069287616"]
+	1847133041520 -> 1847133031248
+	1847133031248 [label="I go to the sign up page
+task"]
+	1847133044352 [label="I fill in \"Email\" with \"bogusemail\"
+task
+140728069287616"]
+	1847133041520 -> 1847133044352
+	1847133044352 [label="I fill in \"Email\" with \"bogusemail\"
+task"]
+	1847133037488 [label="I fill in \"Password\" with \"passw0rd\"
+task
+140728069287616"]
+	1847133041520 -> 1847133037488
+	1847133037488 [label="I fill in \"Password\" with \"passw0rd\"
+task"]
+	1847133037824 [label="I fill in \"Password confirmation\" with \"\"
+task
+140728069287616"]
+	1847133041520 -> 1847133037824
+	1847133037824 [label="I fill in \"Password confirmation\" with \"\"
+task"]
+	1847133033456 [label="I press \"Sign Up\"
+task
+140728069287616"]
+	1847133041520 -> 1847133033456
+	1847133033456 [label="I press \"Sign Up\"
+task"]
+	1847133044304 [label="User can sign up with valid data
+goal
+140728069287616"]
+	1847133385872 -> 1847133044304
+	1847133044304 [label="User can sign up with valid data
+goal"]
+	1847133036240 [label="I go to the sign up page
+task
+140728069287616"]
+	1847133044304 -> 1847133036240
+	1847133036240 [label="I go to the sign up page
+task"]
+	1847133033168 [label="I fill in \"Email\" with \"joe@gethandcrafted.com\"
+task
+140728069287616"]
+	1847133044304 -> 1847133033168
+	1847133033168 [label="I fill in \"Email\" with \"joe@gethandcrafted.com\"
+task"]
+	1847133037776 [label="I fill in \"Password\" with \"passw0rd\"
+task
+140728069287616"]
+	1847133044304 -> 1847133037776
+	1847133037776 [label="I fill in \"Password\" with \"passw0rd\"
+task"]
+	1847133042960 [label="I fill in \"Password confirmation\" with \"passw0rd\"
+task
+140728069287616"]
+	1847133044304 -> 1847133042960
+	1847133042960 [label="I fill in \"Password confirmation\" with \"passw0rd\"
+task"]
+	1847133041376 [label="I press \"Sign Up\"
+task
+140728069287616"]
+	1847133044304 -> 1847133041376
+	1847133041376 [label="I press \"Sign Up\"
+task"]
+}

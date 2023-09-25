@@ -1,0 +1,89 @@
+{
+    "feature_name": "editing the getting started in the mobile view",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I fill in the following:",
+                        "I follow \"awesome_button\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the stream page",
+                        "I should not see \"awesome_button\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I accept the alert after I attach the file \"spec/fixtures/bad_urls.txt\" to \"qqfile\" within \"#file-upload\"",
+                        "I attach the file \"spec/fixtures/button.png\" to hidden \"qqfile\" within \"#file-upload\""
+                    ],
+                    [
+                        "I fill in \"follow_tags\" with \"#men\"",
+                        "I press the first \".as-result-item\" within \".as-results\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a \"img\" within \"#profile_photo_upload\""
+                    ],
+                    [
+                        "I should see \"#men\" within \"ul#as-selections-tags\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I follow \"awesome_button\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the stream page",
+                        "I should not see \"awesome_button\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I sign out",
+                        "I go to the login page",
+                        "I sign in manually as \"ohai\" with password \"secret\" on the mobile website"
+                    ],
+                    [
+                        "I follow \"awesome_button\""
+                    ],
+                    [
+                        "I sign out",
+                        "I go to the login page",
+                        "I sign in manually as \"ohai\" with password \"secret\" on the mobile website"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the getting started page"
+                    ],
+                    [
+                        "I should be on the stream page"
+                    ],
+                    [
+                        "I should be on the stream page"
+                    ]
+                ]
+            }
+        ]
+    }
+}

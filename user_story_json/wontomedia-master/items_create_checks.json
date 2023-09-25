@@ -1,0 +1,77 @@
+{
+    "feature_name": "Verify inputs for creation of new item dynamically within the page",
+    "user_story": {
+        "as_a": "as a contributor, I want",
+        "i_want": "",
+        "so_that": "create a wontology,",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on the new items page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the focus is on the \"item_sti_type\" element"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the new items page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I type the \"Tab\" special key"
+                    ],
+                    [
+                        "I type the \"Tab\" special key"
+                    ],
+                    [
+                        "I type the \"Tab\" special key"
+                    ],
+                    [
+                        "I type the \"Tab\" special key"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the focus is on the \"item_title\" element"
+                    ],
+                    [
+                        "the focus is on the \"item_name\" element"
+                    ],
+                    [
+                        "the focus is on the \"item_description\" element"
+                    ],
+                    [
+                        "the focus is on the \"item_submit\" element"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the new items page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I select \"Category\" from \"Type\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the element \"category_title\" has the format \"font-weight=bold\"",
+                        "the element \"category_title\" has the format \"text-decoration=underline\"",
+                        "the element \"category_desc\" has the format \"font-weight=bold\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

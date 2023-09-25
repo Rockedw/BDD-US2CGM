@@ -1,0 +1,29 @@
+{
+    "feature_name": "Making decisions",
+    "user_story": {
+        "as_a": "director",
+        "i_want": "",
+        "so_that": "make group decisions official",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a proposal \"Buy more tea\" has been made"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "enough people vote in support of the proposal",
+                        "the proposal closer runs",
+                        "I go to the voting and proposals page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"A decision was made: Buy more tea\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

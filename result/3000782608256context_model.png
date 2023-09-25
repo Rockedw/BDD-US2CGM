@@ -1,0 +1,10 @@
+// 3000782610464 Context Model
+digraph {
+	3000782608256 [label=Context11]
+	3000782604416 [label="an uploader class that uses the 'file' storage"]
+	3000782608256 -> 3000782604416
+	3000782604416 [label="an uploader class that uses the 'file' storage"]
+	3000782617808 [label="an instance of that class"]
+	3000782608256 -> 3000782617808
+	3000782617808 [label="an instance of that class"]
+}

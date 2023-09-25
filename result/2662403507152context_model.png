@@ -1,0 +1,13 @@
+// 2662403508064 Context Model
+digraph {
+	2662403507152 [label=Context7]
+	2662403510272 [label="the default projects exist using factories"]
+	2662403507152 -> 2662403510272
+	2662403510272 [label="the default projects exist using factories"]
+	2662403508928 [label="I am on the projects index page"]
+	2662403507152 -> 2662403508928
+	2662403508928 [label="I am on the projects index page"]
+	2662403508880 [label="I click on the edit link for project \"project 2\""]
+	2662403507152 -> 2662403508880
+	2662403508880 [label="I click on the edit link for project \"project 2\""]
+}

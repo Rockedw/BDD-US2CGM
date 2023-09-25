@@ -1,0 +1,43 @@
+{
+    "feature_name": "Close account",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "sign in, close my account and try to log in again",
+        "so_that": "close an existing account",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am signed in on the mobile website"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the edit user page",
+                        "I click on selector \"#close_account\""
+                    ],
+                    [
+                        "I put in my password in the close account modal",
+                        "I confirm the alert after I press \"Close account\" in the modal"
+                    ],
+                    [
+                        "I try to sign in manually"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a modal",
+                        "I should see \"Hey, please don’t go!\" within \"#closeAccountModal\""
+                    ],
+                    [
+                        "I should be on the mobile new user session page"
+                    ],
+                    [
+                        "I should be on the new user session page",
+                        "I should see a flash message with a warning"
+                    ]
+                ]
+            }
+        ]
+    }
+}

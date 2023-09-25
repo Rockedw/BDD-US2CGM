@@ -1,0 +1,151 @@
+{
+    "feature_name": "posting from the mobile main page",
+    "user_story": {
+        "as_a": "mobile user",
+        "i_want": "tell the world I am eating a yogurt",
+        "so_that": "navigate Diaspora*",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I visit the mobile publisher page",
+                        "I append \"I am eating yogurt\" to the publisher",
+                        "I press the aspect dropdown",
+                        "I toggle the aspect \"Unicorns\"",
+                        "I press the share button"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the stream page"
+                    ],
+                    [
+                        "I confirm the alert after I click on selector \"a.remove\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"I am eating yogurt\""
+                    ],
+                    [
+                        "I should not see \"I am eating yogurt\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I visit the mobile publisher page",
+                        "I append \"I am selecting my friends\" to the publisher",
+                        "I press the aspect dropdown",
+                        "I toggle the aspect \"PostingTo\"",
+                        "I toggle the aspect \"Unicorns\"",
+                        "I press the share button"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I visit the stream with aspect \"PostingTo\""
+                    ],
+                    [
+                        "I visit the stream with aspect \"Unicorns\""
+                    ],
+                    [
+                        "I visit the stream with aspect \"NotPostingThingsHere\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"I am selecting my friends\""
+                    ],
+                    [
+                        "I should see \"I am selecting my friends\""
+                    ],
+                    [
+                        "I should not see \"I am selecting my friends\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I visit the mobile publisher page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I attach the file \"spec/fixtures/button.png\" to hidden \"qqfile\" within \"#file-upload-publisher\""
+                    ],
+                    [
+                        "I press \"Share\""
+                    ],
+                    [
+                        "I go to the stream page"
+                    ],
+                    [
+                        "I log out",
+                        "I sign in as \"alice@alice.alice\" on the mobile website"
+                    ],
+                    [
+                        "I go to the stream page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"button.png completed\"",
+                        "I should see an uploaded image within the photo drop zone"
+                    ],
+                    [
+                        "I should see a \"img\" within \".stream-element div.photo-attachments\""
+                    ],
+                    [
+                        "I should see a \"img\" within \".stream-element div.photo-attachments\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I visit the mobile publisher page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I accept the alert after I attach the file \"spec/fixtures/bad_urls.txt\" to \"qqfile\" within \"#file-upload-publisher\""
+                    ],
+                    [
+                        "I attach the file \"spec/fixtures/button.png\" to hidden \"qqfile\" within \"#file-upload-publisher\"",
+                        "I should see \"button.png completed\"",
+                        "I click to delete the first uploaded photo"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see an uploaded image within the photo drop zone"
+                    ],
+                    [
+                        "I should not see an uploaded image within the photo drop zone"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I visit the mobile publisher page",
+                        "I append \"I am eating yogurt\" to the publisher",
+                        "I attach the file \"spec/fixtures/button.gif\" to hidden \"qqfile\" within \"#file-upload-publisher\"",
+                        "I attach the file \"spec/fixtures/button.png\" to hidden \"qqfile\" within \"#file-upload-publisher\"",
+                        "I click to delete the first uploaded photo"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see an uploaded image within the photo drop zone",
+                        "the text area wrapper mobile should be with attachments"
+                    ]
+                ]
+            }
+        ]
+    }
+}

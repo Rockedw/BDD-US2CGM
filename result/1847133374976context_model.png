@@ -1,0 +1,13 @@
+// 1847133377856 Context Model
+digraph {
+	1847133374976 [label=Context13]
+	1847133379200 [label="\"alice@alice.alice\" has a public post with text \"check this out!\""]
+	1847133374976 -> 1847133379200
+	1847133379200 [label="\"alice@alice.alice\" has a public post with text \"check this out!\""]
+	1847133379296 [label="\"carol@carol.carol\" has commented \"great post, alice!\" on \"check this out!\""]
+	1847133374976 -> 1847133379296
+	1847133379296 [label="\"carol@carol.carol\" has commented \"great post, alice!\" on \"check this out!\""]
+	1847133284640 [label="\"alice@alice.alice\" has commented \"great comment, carol!\" on \"check this out!\""]
+	1847133374976 -> 1847133284640
+	1847133284640 [label="\"alice@alice.alice\" has commented \"great comment, carol!\" on \"check this out!\""]
+}

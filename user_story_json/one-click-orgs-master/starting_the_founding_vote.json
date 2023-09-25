@@ -1,0 +1,26 @@
+{
+    "feature_name": "Starting the founding vote",
+    "user_story": {
+        "as_a": "founder",
+        "i_want": "start the founding vote",
+        "so_that": "found our association",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the home page",
+                        "I press \"Hold the Founding Vote\"",
+                        "I press \"Confirm\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Founding vote in progress\"",
+                        "everyone should receive an email saying that the founding vote has started"
+                    ]
+                ]
+            }
+        ]
+    }
+}

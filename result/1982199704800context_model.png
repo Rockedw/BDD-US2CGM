@@ -1,0 +1,10 @@
+// 1982199704224 Context Model
+digraph {
+	1982199704800 [label=Context54]
+	1982199705184 [label="a user with username \"alice\" and password \"secret\""]
+	1982199704800 -> 1982199705184
+	1982199705184 [label="a user with username \"alice\" and password \"secret\""]
+	1982199705280 [label="2fa is activated for \"alice\""]
+	1982199704800 -> 1982199705280
+	1982199705280 [label="2fa is activated for \"alice\""]
+}

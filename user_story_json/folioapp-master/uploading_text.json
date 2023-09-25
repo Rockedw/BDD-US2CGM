@@ -1,0 +1,26 @@
+{
+    "feature_name": "uploading images",
+    "user_story": {
+        "as_a": "writer",
+        "i_want": "upload text to a collection on my profile",
+        "so_that": "have a nice portfolio",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I enter text",
+                        "I upload a thumbnail, add a title, genres and a short description",
+                        "I click submit"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the work's thumbnail, title, short description and genres in the default group",
+                        "I should see the content of the work"
+                    ]
+                ]
+            }
+        ]
+    }
+}

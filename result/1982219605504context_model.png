@@ -1,0 +1,16 @@
+// 1982219609632 Context Model
+digraph {
+	1982219605504 [label=Context25]
+	1982219603968 [label="there are 3 existing categories like \"ColonialViper\""]
+	1982219605504 -> 1982219603968
+	1982219603968 [label="there are 3 existing categories like \"ColonialViper\""]
+	1982219611792 [label="there are 3 existing properties like \"shootsAt\""]
+	1982219605504 -> 1982219611792
+	1982219611792 [label="there are 3 existing properties like \"shootsAt\""]
+	1982219612704 [label="there are 3 existing individuals like \"CylonRaider\""]
+	1982219605504 -> 1982219612704
+	1982219612704 [label="there are 3 existing individuals like \"CylonRaider\""]
+	1982219602768 [label="there is an existing connection \"ColonialViper0\" \"shootsAt1\" \"CylonRaider2\""]
+	1982219605504 -> 1982219602768
+	1982219602768 [label="there is an existing connection \"ColonialViper0\" \"shootsAt1\" \"CylonRaider2\""]
+}

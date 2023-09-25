@@ -1,0 +1,25 @@
+// 1982197192144 Context Model
+digraph {
+	1982197196368 [label=Context17]
+	1982197187440 [label="there is 1 existing category like \"myCategory\""]
+	1982197196368 -> 1982197187440
+	1982197187440 [label="there is 1 existing category like \"myCategory\""]
+	1982197195552 [label="there is 1 existing individual like \"myItem\""]
+	1982197196368 -> 1982197195552
+	1982197195552 [label="there is 1 existing individual like \"myItem\""]
+	1982197198048 [label="I am on the new connections page"]
+	1982197196368 -> 1982197198048
+	1982197198048 [label="I am on the new connections page"]
+	1982197201360 [label="I select \"myItem0 : myItem item number 0\" from \"Subject\""]
+	1982197196368 -> 1982197201360
+	1982197201360 [label="I select \"myItem0 : myItem item number 0\" from \"Subject\""]
+	1982197192960 [label="I select \"contains : Contains (basic relationship)\" from \"Relates to\""]
+	1982197196368 -> 1982197192960
+	1982197192960 [label="I select \"contains : Contains (basic relationship)\" from \"Relates to\""]
+	1982197201024 [label="I choose \"Item\""]
+	1982197196368 -> 1982197201024
+	1982197201024 [label="I choose \"Item\""]
+	1982197192336 [label="I select \"myCategory0 : myCategory item number 0\" from \"Object\""]
+	1982197196368 -> 1982197192336
+	1982197192336 [label="I select \"myCategory0 : myCategory item number 0\" from \"Object\""]
+}

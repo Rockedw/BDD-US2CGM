@@ -1,0 +1,28 @@
+// 3000790411312 Context Model
+digraph {
+	3000790416688 [label=Context2]
+	3000790405264 [label="the application is set up"]
+	3000790416688 -> 3000790405264
+	3000790405264 [label="the application is set up"]
+	3000790412704 [label="an association has been created"]
+	3000790416688 -> 3000790412704
+	3000790412704 [label="an association has been created"]
+	3000790404832 [label="there are enough members to start the founding vote"]
+	3000790416688 -> 3000790404832
+	3000790404832 [label="there are enough members to start the founding vote"]
+	3000790416928 [label="the founding vote has been started"]
+	3000790416688 -> 3000790416928
+	3000790416928 [label="the founding vote has been started"]
+	3000790413040 [label="I am a founding member"]
+	3000790416688 -> 3000790413040
+	3000790413040 [label="I am a founding member"]
+	3000790409248 [label="the subdomain is the organisation's subdomain"]
+	3000790416688 -> 3000790409248
+	3000790409248 [label="the subdomain is the organisation's subdomain"]
+	3000790413280 [label="one member voted against the founding"]
+	3000790416688 -> 3000790413280
+	3000790413280 [label="one member voted against the founding"]
+	3000790417216 [label="the founding vote still passed"]
+	3000790416688 -> 3000790417216
+	3000790417216 [label="the founding vote still passed"]
+}

@@ -1,0 +1,10 @@
+// 1847125296416 Context Model
+digraph {
+	1847125304720 [label=Context2]
+	1847125303424 [label="I open a new edit tab"]
+	1847125304720 -> 1847125303424
+	1847125303424 [label="I open a new edit tab"]
+	1847125308704 [label="I replace the contents with \"Hello! Hello! Hello!\""]
+	1847125304720 -> 1847125308704
+	1847125308704 [label="I replace the contents with \"Hello! Hello! Hello!\""]
+}

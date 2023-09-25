@@ -1,0 +1,30 @@
+{
+    "feature_name": "Inviting founding members",
+    "user_story": {
+        "as_a": "founder",
+        "i_want": "invite people to join as founding members of my new co-op",
+        "so_that": "have the necessary number of members and directors",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am the founder of a new co-op"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Members page",
+                        "I enter a new founding member's details",
+                        "I press \"Send invitation\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the new founding member in the list of invited members",
+                        "the new founding member should receive an invitation email"
+                    ]
+                ]
+            }
+        ]
+    }
+}

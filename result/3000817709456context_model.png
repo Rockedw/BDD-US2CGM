@@ -1,0 +1,10 @@
+// 3000817708976 Context Model
+digraph {
+	3000817709456 [label=Context39]
+	3000817709600 [label="I am on the new items page"]
+	3000817709456 -> 3000817709600
+	3000817709600 [label="I am on the new items page"]
+	3000817709696 [label="I select \"Property\" from \"Type\""]
+	3000817709456 -> 3000817709696
+	3000817709696 [label="I select \"Property\" from \"Type\""]
+}

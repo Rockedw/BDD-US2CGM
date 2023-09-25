@@ -1,0 +1,46 @@
+{
+    "feature_name": "Verify inputs for creation of new connection dynamically within the page",
+    "user_story": {
+        "as_a": "contributor, I want",
+        "i_want": "give context relating to my selections, so",
+        "so_that": "create a wontology,",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there are 3 existing categories like \"aCategory\"",
+                        "there are 3 existing properties like \"aProperty\"",
+                        "there are 3 existing individuals like \"anItem\"",
+                        "I am on the new connections page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I select \"aCategory0 : aCategory item number 0\" from \"Subject\""
+                    ],
+                    [
+                        "I select \"aProperty1 : aProperty item number 1\" from \"Relates to\""
+                    ],
+                    [
+                        "I choose \"Item\"",
+                        "I select \"anItem2 : anItem item number 2\" from \"Object\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"dolor sit aCategory\"",
+                        "I should see \"Suspendisse 0\""
+                    ],
+                    [
+                        "I should see \"dolor sit aProperty\"",
+                        "I should see \"Suspendisse 1\""
+                    ],
+                    [
+                        "I should see \"dolor sit anItem\"",
+                        "I should see \"Suspendisse 2\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

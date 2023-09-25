@@ -1,0 +1,281 @@
+// Goal Model
+digraph {
+	1847134112928 [label="
+goal"]
+	1847133044112 [label=" visit page
+goal
+140728069287616"]
+	1847134112928 -> 1847133044112
+	1847133044112 [label=" visit page
+goal"]
+	1847134375456 [label="visit the about page
+goal
+140728069287616"]
+	1847133044112 -> 1847134375456
+	1847134375456 [label="visit the about page
+goal"]
+	1847134026288 [label="about page with past events from an iphone
+goal
+1847134019376"]
+	1847134375456 -> 1847134026288
+	1847134026288 [label="about page with past events from an iphone
+goal"]
+	1847134016640 [label="about page with upcoming events from an iphone
+goal
+1847138474048"]
+	1847134375456 -> 1847134016640
+	1847134016640 [label="about page with upcoming events from an iphone
+goal"]
+	1847133043296 [label="visit pages and pages and pages of blog posts
+goal
+140728069287616"]
+	1847133044112 -> 1847133043296
+	1847133043296 [label="visit pages and pages and pages of blog posts
+goal"]
+	1847133039168 [label="viewing a post when logged in
+goal
+1847133041136"]
+	1847133043296 -> 1847133039168
+	1847133039168 [label="viewing a post when logged in
+goal"]
+	1847133042912 [label="I view the post page
+task
+140728069287616"]
+	1847133039168 -> 1847133042912
+	1847133042912 [label="I view the post page
+task"]
+	1847133043632 [label="viewing a post when not logged in
+goal
+1847133042480"]
+	1847133043296 -> 1847133043632
+	1847133043632 [label="viewing a post when not logged in
+goal"]
+	1847133031248 [label="I view the post page
+task
+140728069287616"]
+	1847133043632 -> 1847133031248
+	1847133031248 [label="I view the post page
+task"]
+	1847133038112 [label="viewing a mobile post when logged in
+goal
+1847133036768"]
+	1847133043296 -> 1847133038112
+	1847133038112 [label="viewing a mobile post when logged in
+goal"]
+	1847133043200 [label="I view the mobile post page
+task
+140728069287616"]
+	1847133038112 -> 1847133043200
+	1847133043200 [label="I view the mobile post page
+task"]
+	1847133031344 [label="viewing a mobile post when not logged in
+goal
+1847133033456"]
+	1847133043296 -> 1847133031344
+	1847133031344 [label="viewing a mobile post when not logged in
+goal"]
+	1847133044160 [label="I view the mobile post page
+task
+140728069287616"]
+	1847133031344 -> 1847133044160
+	1847133044160 [label="I view the mobile post page
+task"]
+	1847134020480 [label="edit and update my personal details
+goal
+140728069287616"]
+	1847134112928 -> 1847134020480
+	1847134020480 [label="edit and update my personal details
+goal"]
+	1847138477840 [label="viewing the account page
+goal
+1847133041664"]
+	1847134020480 -> 1847138477840
+	1847138477840 [label="viewing the account page
+goal"]
+	1847134113744 [label=" update detail
+goal
+140728069287616"]
+	1847134020480 -> 1847134113744
+	1847134113744 [label=" update detail
+goal"]
+	1847138471360 [label="updating account details
+goal
+1847133043680"]
+	1847134113744 -> 1847138471360
+	1847138471360 [label="updating account details
+goal"]
+	1847133044352 [label="updating account details with invalid details
+goal
+1847133041616"]
+	1847134113744 -> 1847133044352
+	1847133044352 [label="updating account details with invalid details
+goal"]
+	1847134382128 [label="see stuff
+goal
+140728069287616"]
+	1847134112928 -> 1847134382128
+	1847134382128 [label="see stuff
+goal"]
+	1847132860768 [label="visit the events pages
+goal
+140728069287616"]
+	1847134382128 -> 1847132860768
+	1847132860768 [label="visit the events pages
+goal"]
+	1847134506480 [label=" log page
+goal
+140728069287616"]
+	1847132860768 -> 1847134506480
+	1847134506480 [label=" log page
+goal"]
+	1847133039600 [label="not logged viewing the past events page from an iphone
+goal
+1847133039552"]
+	1847134506480 -> 1847133039600
+	1847133039600 [label="not logged viewing the past events page from an iphone
+goal"]
+	1847133038688 [label="I view the mobile past events page
+task
+140728069287616"]
+	1847133039600 -> 1847133038688
+	1847133038688 [label="I view the mobile past events page
+task"]
+	1847133032736 [label="not logged viewing the event page for a past event
+goal
+1847133044688"]
+	1847134506480 -> 1847133032736
+	1847133032736 [label="not logged viewing the event page for a past event
+goal"]
+	1847133037248 [label="I view the event page for a past event
+task
+140728069287616"]
+	1847133032736 -> 1847133037248
+	1847133037248 [label="I view the event page for a past event
+task"]
+	1847133037296 [label="not logged viewing the event page for an upcoming event
+goal
+1847133031200"]
+	1847134506480 -> 1847133037296
+	1847133037296 [label="not logged viewing the event page for an upcoming event
+goal"]
+	1847133043056 [label="I view the event page for an upcoming event
+task
+140728069287616"]
+	1847133037296 -> 1847133043056
+	1847133043056 [label="I view the event page for an upcoming event
+task"]
+	1847133040992 [label="trying to view an unpublished event
+goal
+1847133041376"]
+	1847132860768 -> 1847133040992
+	1847133040992 [label="trying to view an unpublished event
+goal"]
+	1847133041520 [label="I view the event page for an unpublished event
+task
+140728069287616"]
+	1847133040992 -> 1847133041520
+	1847133041520 [label="I view the event page for an unpublished event
+task"]
+	1847133037776 [label="visit the home page
+goal
+140728069287616"]
+	1847134382128 -> 1847133037776
+	1847133037776 [label="visit the home page
+goal"]
+	1847133042528 [label="not logged in
+goal
+1847133032400"]
+	1847133037776 -> 1847133042528
+	1847133042528 [label="not logged in
+goal"]
+	1847133031920 [label="I view the home page
+task
+140728069287616"]
+	1847133042528 -> 1847133031920
+	1847133031920 [label="I view the home page
+task"]
+	1847133892240 [label=" view something
+goal
+140728069287616"]
+	1847133037776 -> 1847133892240
+	1847133892240 [label=" view something
+goal"]
+	1847133029232 [label="viewing / on a mobile
+goal
+1847133041808"]
+	1847133892240 -> 1847133029232
+	1847133029232 [label="viewing / on a mobile
+goal"]
+	1847133040752 [label="I view the home page from an iphone
+task
+140728069287616"]
+	1847133029232 -> 1847133040752
+	1847133040752 [label="I view the home page from an iphone
+task"]
+	1847133041856 [label="viewing / on a mobile with redirect-to-mobile=no
+goal
+1847133043392"]
+	1847133892240 -> 1847133041856
+	1847133041856 [label="viewing / on a mobile with redirect-to-mobile=no
+goal"]
+	1847133043920 [label="I view the home page from an iphone specifying redirect-to-mobile=no
+task
+140728069287616"]
+	1847133041856 -> 1847133043920
+	1847133043920 [label="I view the home page from an iphone specifying redirect-to-mobile=no
+task"]
+	1847133043728 [label="view the presentations for an event
+goal
+140728069287616"]
+	1847134112928 -> 1847133043728
+	1847133043728 [label="view the presentations for an event
+goal"]
+	1847133042432 [label="viewing an event's presentations page
+goal
+1847133028560"]
+	1847133043728 -> 1847133042432
+	1847133042432 [label="viewing an event's presentations page
+goal"]
+	1847133039504 [label="I view an events presentations page
+task
+140728069287616"]
+	1847133042432 -> 1847133039504
+	1847133039504 [label="I view an events presentations page
+task"]
+	1847133039264 [label="view an event presentation page
+goal
+1847133032304"]
+	1847133043728 -> 1847133039264
+	1847133039264 [label="view an event presentation page
+goal"]
+	1847133044304 [label="I view an event presentation page
+task
+140728069287616"]
+	1847133039264 -> 1847133044304
+	1847133044304 [label="I view an event presentation page
+task"]
+	1847133044256 [label="view a mobile event presentation page
+goal
+1847133042192"]
+	1847133043728 -> 1847133044256
+	1847133044256 [label="view a mobile event presentation page
+goal"]
+	1847133041760 [label="I view a mobile event presentation page
+task
+140728069287616"]
+	1847133044256 -> 1847133041760
+	1847133041760 [label="I view a mobile event presentation page
+task"]
+	1847133044064 [label="browse webjam with a tampered cookie
+goal
+140728069287616"]
+	1847134112928 -> 1847133044064
+	1847133044064 [label="browse webjam with a tampered cookie
+goal"]
+	1847133165488 [label="I view the home page with a tampered cookie
+task
+140728069287616"]
+	1847133044064 -> 1847133165488
+	1847133165488 [label="I view the home page with a tampered cookie
+task"]
+}

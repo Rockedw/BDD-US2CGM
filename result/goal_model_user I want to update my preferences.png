@@ -1,0 +1,59 @@
+// Goal Model
+digraph {
+	1847134172304 [label="user I want to update my preferences
+goal"]
+	1847134015344 [label="
+goal
+140728069287616"]
+	1847134172304 -> 1847134015344
+	1847134015344 [label="
+goal"]
+	1847134019760 [label="Edit preferences
+goal
+1847134013136"]
+	1847134015344 -> 1847134019760
+	1847134019760 [label="Edit preferences
+goal"]
+	1847134027584 [label="I open my preferences
+task
+140728069287616"]
+	1847134019760 -> 1847134027584
+	1847134027584 [label="I open my preferences
+task"]
+	1847134019328 [label="I fill in \"E-mail Address\" with \"my-new-email@example.com\"
+task
+140728069287616"]
+	1847134019760 -> 1847134019328
+	1847134019328 [label="I fill in \"E-mail Address\" with \"my-new-email@example.com\"
+task"]
+	1847134011696 [label="I press \"Save Changes\"
+task
+140728069287616"]
+	1847134019760 -> 1847134011696
+	1847134011696 [label="I press \"Save Changes\"
+task"]
+	1847134027152 [label="Save invalid preferences
+goal
+1847134013472"]
+	1847134015344 -> 1847134027152
+	1847134027152 [label="Save invalid preferences
+goal"]
+	1847134026336 [label="I open my preferences
+task
+140728069287616"]
+	1847134027152 -> 1847134026336
+	1847134026336 [label="I open my preferences
+task"]
+	1847134023696 [label="I fill in \"Username\" with \"\"
+task
+140728069287616"]
+	1847134027152 -> 1847134023696
+	1847134023696 [label="I fill in \"Username\" with \"\"
+task"]
+	1847134013952 [label="I press \"Save Changes\"
+task
+140728069287616"]
+	1847134027152 -> 1847134013952
+	1847134013952 [label="I press \"Save Changes\"
+task"]
+}

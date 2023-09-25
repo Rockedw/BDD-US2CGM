@@ -1,0 +1,46 @@
+{
+    "feature_name": "Valid file names",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "debug a file with any valid system characters",
+        "so_that": "use Vdebug with all file names",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have a file My File.php containing",
+                        "I start the debugger with the PHP script My File.php"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I step over"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the watch window should show $var"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a file A Path/myfile.php containing",
+                        "I start the debugger with the PHP script A Path/myfile.php"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I step over"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the watch window should show $var"
+                    ]
+                ]
+            }
+        ]
+    }
+}

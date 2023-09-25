@@ -1,0 +1,10 @@
+// 1982218091344 Context Model
+digraph {
+	1982199695440 [label=Context1]
+	1982199700768 [label="I am logged in as \"admin\""]
+	1982199695440 -> 1982199700768
+	1982199700768 [label="I am logged in as \"admin\""]
+	1982199702976 [label="I go to the \"users\" admin page"]
+	1982199695440 -> 1982199702976
+	1982199702976 [label="I go to the \"users\" admin page"]
+}

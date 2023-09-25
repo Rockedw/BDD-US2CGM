@@ -1,0 +1,96 @@
+{
+    "feature_name": "Draft Posts",
+    "user_story": {
+        "as_a": "hacker who likes to blog",
+        "i_want": "be able to preview drafts locally",
+        "so_that": "see if they look alright before publishing",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with \"permalink\" set to \"none\"",
+                        "I have a _drafts directory",
+                        "I have the following draft:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build --drafts"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Not baked yet.\" in \"_site/recipe.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with \"permalink\" set to \"none\"",
+                        "I have an \"index.html\" page that contains \"Totally index\"",
+                        "I have a _drafts directory",
+                        "I have the following draft:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "the \"_site/recipe.html\" file should not exist"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with \"permalink\" set to \"none\"",
+                        "I have an \"index.html\" page that contains \"Totally index\"",
+                        "I have a _drafts directory",
+                        "I have the following draft:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build --drafts"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "the \"_site/recipe.html\" file should not exist"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with \"permalink\" set to \"none\"",
+                        "I have a _drafts directory",
+                        "I have the following draft:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build --drafts"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post path: _drafts/recipe.markdown\" in \"_site/recipe.html\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

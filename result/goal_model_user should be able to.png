@@ -1,0 +1,755 @@
+// Goal Model
+digraph {
+	1847124981552 [label="user should be able to
+goal"]
+	1847125227984 [label="start gem
+goal
+140728069287616"]
+	1847124981552 -> 1847125227984
+	1847125227984 [label="start gem
+goal"]
+	1847125495568 [label="generate a directory layout
+goal
+140728069287616"]
+	1847125227984 -> 1847125495568
+	1847125495568 [label="generate a directory layout
+goal"]
+	1847117753856 [label="bacon
+goal
+1847125308800"]
+	1847125495568 -> 1847117753856
+	1847117753856 [label="bacon
+goal"]
+	1847125304624 [label="I generate a bacon project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847117753856 -> 1847125304624
+	1847125304624 [label="I generate a bacon project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847117877392 [label="minitest
+goal
+1847125302992"]
+	1847125495568 -> 1847117877392
+	1847117877392 [label="minitest
+goal"]
+	1847125304336 [label="I generate a minitest project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847117877392 -> 1847125304336
+	1847125304336 [label="I generate a minitest project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847125305200 [label="rspec
+goal
+1847125306304"]
+	1847125495568 -> 1847125305200
+	1847125305200 [label="rspec
+goal"]
+	1847125309952 [label="I generate a rspec project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125305200 -> 1847125309952
+	1847125309952 [label="I generate a rspec project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847125305296 [label="shoulda
+goal
+1847125303184"]
+	1847125495568 -> 1847125305296
+	1847125305296 [label="shoulda
+goal"]
+	1847125306976 [label="I generate a shoulda project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125305296 -> 1847125306976
+	1847125306976 [label="I generate a shoulda project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847125305152 [label="testunit
+goal
+1847125311200"]
+	1847125495568 -> 1847125305152
+	1847125305152 [label="testunit
+goal"]
+	1847125305872 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125305152 -> 1847125305872
+	1847125305872 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847125303088 [label="micronaut
+goal
+1847125302752"]
+	1847125495568 -> 1847125303088
+	1847125303088 [label="micronaut
+goal"]
+	1847125310816 [label="I generate a micronaut project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125303088 -> 1847125310816
+	1847125310816 [label="I generate a micronaut project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847125307072 [label="shindo
+goal
+1847125296944"]
+	1847125495568 -> 1847125307072
+	1847125307072 [label="shindo
+goal"]
+	1847125310912 [label="I generate a shindo project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125307072 -> 1847125310912
+	1847125310912 [label="I generate a shindo project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847125505168 [label="shared
+goal
+1847117747568"]
+	1847125495568 -> 1847125505168
+	1847125505168 [label="shared
+goal"]
+	1847117746032 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125505168 -> 1847117746032
+	1847117746032 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847133484032 [label=" generate gemfile
+goal
+140728069287616"]
+	1847125227984 -> 1847133484032
+	1847133484032 [label=" generate gemfile
+goal"]
+	1847125297088 [label="generate a Gemfile
+goal
+1847125300784"]
+	1847133484032 -> 1847125297088
+	1847125297088 [label="generate a Gemfile
+goal"]
+	1847125304912 [label="default
+goal
+140728069287616"]
+	1847125297088 -> 1847125304912
+	1847125304912 [label="default
+goal"]
+	1847125310576 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125304912 -> 1847125310576
+	1847125310576 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847125301024 [label="bacon
+goal
+140728069287616"]
+	1847125297088 -> 1847125301024
+	1847125301024 [label="bacon
+goal"]
+	1847125308560 [label="I generate a bacon project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125301024 -> 1847125308560
+	1847125308560 [label="I generate a bacon project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847125308896 [label="minitest
+goal
+140728069287616"]
+	1847125297088 -> 1847125308896
+	1847125308896 [label="minitest
+goal"]
+	1847125309184 [label="I generate a minitest project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125308896 -> 1847125309184
+	1847125309184 [label="I generate a minitest project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847125302272 [label="rspec
+goal
+140728069287616"]
+	1847125297088 -> 1847125302272
+	1847125302272 [label="rspec
+goal"]
+	1847125300064 [label="I generate a rspec project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125302272 -> 1847125300064
+	1847125300064 [label="I generate a rspec project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847125306496 [label="shoulda
+goal
+140728069287616"]
+	1847125297088 -> 1847125306496
+	1847125306496 [label="shoulda
+goal"]
+	1847125297232 [label="I generate a shoulda project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125306496 -> 1847125297232
+	1847125297232 [label="I generate a shoulda project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847125307744 [label="micronaut
+goal
+140728069287616"]
+	1847125297088 -> 1847125307744
+	1847125307744 [label="micronaut
+goal"]
+	1847125302080 [label="I generate a micronaut project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125307744 -> 1847125302080
+	1847125302080 [label="I generate a micronaut project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847125306832 [label="cucumber
+goal
+1847125309280"]
+	1847125297088 -> 1847125306832
+	1847125306832 [label="cucumber
+goal"]
+	1847125306016 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125306832 -> 1847125306016
+	1847125306016 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847125307648 [label="reek
+goal
+1847125298000"]
+	1847125297088 -> 1847125307648
+	1847125307648 [label="reek
+goal"]
+	1847125302128 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125307648 -> 1847125302128
+	1847125302128 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847125297856 [label="shindo
+goal
+140728069287616"]
+	1847125297088 -> 1847125297856
+	1847125297856 [label="shindo
+goal"]
+	1847125302896 [label="I generate a shindo project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125297856 -> 1847125302896
+	1847125302896 [label="I generate a shindo project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847134164336 [label=" disabled something
+goal
+140728069287616"]
+	1847125297088 -> 1847134164336
+	1847134164336 [label=" disabled something
+goal"]
+	1847125305248 [label="disabled
+goal
+1847125309712"]
+	1847134164336 -> 1847125305248
+	1847125305248 [label="disabled
+goal"]
+	1847125309232 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125305248 -> 1847125309232
+	1847125309232 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847125303856 [label="enabled
+goal
+1847125297520"]
+	1847134164336 -> 1847125303856
+	1847125303856 [label="enabled
+goal"]
+	1847125296800 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125303856 -> 1847125296800
+	1847125296800 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847125297328 [label="roodi
+goal
+1847125300880"]
+	1847125297088 -> 1847125297328
+	1847125297328 [label="roodi
+goal"]
+	1847125301552 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125297328 -> 1847125301552
+	1847125301552 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847125304768 [label="rdoc
+goal
+1847125310864"]
+	1847125297088 -> 1847125304768
+	1847125304768 [label="rdoc
+goal"]
+	1847125302368 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125304768 -> 1847125302368
+	1847125302368 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847125300448 [label="yard
+goal
+1847125310000"]
+	1847125297088 -> 1847125300448
+	1847125300448 [label="yard
+goal"]
+	1847125301744 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125300448 -> 1847125301744
+	1847125301744 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847134021584 [label="generate a Rakefile
+goal
+1847134004096"]
+	1847133484032 -> 1847134021584
+	1847134021584 [label="generate a Rakefile
+goal"]
+	1847134004864 [label="bacon
+goal
+140728069287616"]
+	1847134021584 -> 1847134004864
+	1847134004864 [label="bacon
+goal"]
+	1847133382176 [label="I generate a bacon project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847134004864 -> 1847133382176
+	1847133382176 [label="I generate a bacon project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847133996944 [label="minitest
+goal
+140728069287616"]
+	1847134021584 -> 1847133996944
+	1847133996944 [label="minitest
+goal"]
+	1847133388416 [label="I generate a minitest project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847133996944 -> 1847133388416
+	1847133388416 [label="I generate a minitest project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847133383040 [label="rspec
+goal
+140728069287616"]
+	1847134021584 -> 1847133383040
+	1847133383040 [label="rspec
+goal"]
+	1847134314864 [label="I generate a rspec project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847133383040 -> 1847134314864
+	1847134314864 [label="I generate a rspec project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847133385200 [label="shoulda
+goal
+140728069287616"]
+	1847134021584 -> 1847133385200
+	1847133385200 [label="shoulda
+goal"]
+	1847134316208 [label="I generate a shoulda project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847133385200 -> 1847134316208
+	1847134316208 [label="I generate a shoulda project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847134313808 [label="micronaut
+goal
+140728069287616"]
+	1847134021584 -> 1847134313808
+	1847134313808 [label="micronaut
+goal"]
+	1847134312896 [label="I generate a micronaut project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847134313808 -> 1847134312896
+	1847134312896 [label="I generate a micronaut project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847134315776 [label="testunit
+goal
+140728069287616"]
+	1847134021584 -> 1847134315776
+	1847134315776 [label="testunit
+goal"]
+	1847134315584 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847134315776 -> 1847134315584
+	1847134315584 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847134311552 [label="no cucumber
+goal
+1847134317984"]
+	1847134021584 -> 1847134311552
+	1847134311552 [label="no cucumber
+goal"]
+	1847134308624 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847134311552 -> 1847134308624
+	1847134308624 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847134311360 [label="cucumber
+goal
+1847134322592"]
+	1847134021584 -> 1847134311360
+	1847134311360 [label="cucumber
+goal"]
+	1847134322112 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847134311360 -> 1847134322112
+	1847134322112 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847134313232 [label="no reek
+goal
+1847134322160"]
+	1847134021584 -> 1847134313232
+	1847134313232 [label="no reek
+goal"]
+	1847134322064 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847134313232 -> 1847134322064
+	1847134322064 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847134321536 [label="reek
+goal
+1847134322448"]
+	1847134021584 -> 1847134321536
+	1847134321536 [label="reek
+goal"]
+	1847134322400 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847134321536 -> 1847134322400
+	1847134322400 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847134322256 [label="no roodi
+goal
+1847134321584"]
+	1847134021584 -> 1847134322256
+	1847134322256 [label="no roodi
+goal"]
+	1847134321488 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847134322256 -> 1847134321488
+	1847134321488 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847134321680 [label="no rubyforge
+goal
+1847134320816"]
+	1847134021584 -> 1847134321680
+	1847134321680 [label="no rubyforge
+goal"]
+	1847134320720 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847134321680 -> 1847134320720
+	1847134320720 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847134321200 [label="shindo
+goal
+140728069287616"]
+	1847134021584 -> 1847134321200
+	1847134321200 [label="shindo
+goal"]
+	1847134320336 [label="I generate a shindo project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847134321200 -> 1847134320336
+	1847134320336 [label="I generate a shindo project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847134320384 [label="'Rakefile' requires 'shindo/rake'
+task
+140728069287616"]
+	1847134321200 -> 1847134320384
+	1847134320384 [label="'Rakefile' requires 'shindo/rake'
+task"]
+	1847134320432 [label="Rakefile instantiates a Shindo::Rake.new
+task
+140728069287616"]
+	1847134321200 -> 1847134320432
+	1847134320432 [label="Rakefile instantiates a Shindo::Rake.new
+task"]
+	1847134320480 [label="Rakefile has \"tests\" as the default task
+task
+140728069287616"]
+	1847134321200 -> 1847134320480
+	1847134320480 [label="Rakefile has \"tests\" as the default task
+task"]
+	1847134320096 [label="bundler
+goal
+1847134320576"]
+	1847134021584 -> 1847134320096
+	1847134320096 [label="bundler
+goal"]
+	1847134320528 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good' and described as 'Descriptive'
+task
+140728069287616"]
+	1847134320096 -> 1847134320528
+	1847134320528 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good' and described as 'Descriptive'
+task"]
+	1847134320288 [label="no bundler
+goal
+1847134319712"]
+	1847134021584 -> 1847134320288
+	1847134320288 [label="no bundler
+goal"]
+	1847134319664 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good' and described as 'Descriptive'
+task
+140728069287616"]
+	1847134320288 -> 1847134319664
+	1847134319664 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good' and described as 'Descriptive'
+task"]
+	1847134005536 [label="shared
+goal
+140728069287616"]
+	1847134021584 -> 1847134005536
+	1847134005536 [label="shared
+goal"]
+	1847134010720 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good' and described as 'Descriptive'
+task
+140728069287616"]
+	1847134005536 -> 1847134010720
+	1847134010720 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good' and described as 'Descriptive'
+task"]
+	1847134320768 [label="roodi
+goal
+1847134321872"]
+	1847134021584 -> 1847134320768
+	1847134320768 [label="roodi
+goal"]
+	1847134321824 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847134320768 -> 1847134321824
+	1847134321824 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847134320192 [label="yard
+goal
+1847134321104"]
+	1847134021584 -> 1847134320192
+	1847134320192 [label="yard
+goal"]
+	1847134321056 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847134320192 -> 1847134321056
+	1847134321056 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847134320912 [label="rdoc
+goal
+1847134319616"]
+	1847134021584 -> 1847134320912
+	1847134320912 [label="rdoc
+goal"]
+	1847134321344 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847134320912 -> 1847134321344
+	1847134321344 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847125298144 [label="generate a project that is setup for git
+goal
+140728069287616"]
+	1847125227984 -> 1847125298144
+	1847125298144 [label="generate a project that is setup for git
+goal"]
+	1847125311056 [label="git remote configuration
+goal
+1847125302320"]
+	1847125298144 -> 1847125311056
+	1847125311056 [label="git remote configuration
+goal"]
+	1847125308848 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125311056 -> 1847125308848
+	1847125308848 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847125302512 [label=".gitignore
+goal
+1847125301840"]
+	1847125298144 -> 1847125302512
+	1847125302512 [label=".gitignore
+goal"]
+	1847125298624 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125302512 -> 1847125298624
+	1847125298624 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847125306880 [label="baseline repository
+goal
+1847125302224"]
+	1847125298144 -> 1847125306880
+	1847125306880 [label="baseline repository
+goal"]
+	1847125309808 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125306880 -> 1847125309808
+	1847125309808 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847125304096 [label="bacon
+goal
+1847125310384"]
+	1847125298144 -> 1847125304096
+	1847125304096 [label="bacon
+goal"]
+	1847125299632 [label="I generate a bacon project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125304096 -> 1847125299632
+	1847125299632 [label="I generate a bacon project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847125301648 [label="minitest
+goal
+1847134125552"]
+	1847125298144 -> 1847125301648
+	1847125301648 [label="minitest
+goal"]
+	1847134114752 [label="I generate a minitest project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125301648 -> 1847134114752
+	1847134114752 [label="I generate a minitest project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847134114560 [label="rspec
+goal
+1847134114272"]
+	1847125298144 -> 1847134114560
+	1847134114560 [label="rspec
+goal"]
+	1847134110288 [label="I generate a rspec project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847134114560 -> 1847134110288
+	1847134110288 [label="I generate a rspec project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847134116768 [label="shoulda
+goal
+1847134114464"]
+	1847125298144 -> 1847134116768
+	1847134116768 [label="shoulda
+goal"]
+	1847134113504 [label="I generate a shoulda project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847134116768 -> 1847134113504
+	1847134113504 [label="I generate a shoulda project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847134124688 [label="testunit
+goal
+1847134110192"]
+	1847125298144 -> 1847134124688
+	1847134124688 [label="testunit
+goal"]
+	1847134112784 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847134124688 -> 1847134112784
+	1847134112784 [label="I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847134113168 [label="micronaut
+goal
+1847134062384"]
+	1847125298144 -> 1847134113168
+	1847134113168 [label="micronaut
+goal"]
+	1847134063536 [label="I generate a micronaut project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847134113168 -> 1847134063536
+	1847134063536 [label="I generate a micronaut project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847134113408 [label="cucumber
+goal
+1847134066032"]
+	1847125298144 -> 1847134113408
+	1847134113408 [label="cucumber
+goal"]
+	1847134066896 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847134113408 -> 1847134066896
+	1847134066896 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847134061808 [label="shindo
+goal
+1847134026864"]
+	1847125298144 -> 1847134061808
+	1847134061808 [label="shindo
+goal"]
+	1847134027632 [label="I generate a shindo project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847134061808 -> 1847134027632
+	1847134027632 [label="I generate a shindo project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847125305968 [label=" generate license
+goal
+140728069287616"]
+	1847125227984 -> 1847125305968
+	1847125305968 [label=" generate license
+goal"]
+	1847125299440 [label="generate a default license
+goal
+1847134068048"]
+	1847125305968 -> 1847125299440
+	1847125299440 [label="generate a default license
+goal"]
+	1847134014528 [label="copyright in the current year
+goal
+1847133998672"]
+	1847125299440 -> 1847134014528
+	1847134014528 [label="copyright in the current year
+goal"]
+	1847133999248 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847134014528 -> 1847133999248
+	1847133999248 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847134017936 [label="crediting user
+goal
+1847134020240"]
+	1847125299440 -> 1847134017936
+	1847134017936 [label="crediting user
+goal"]
+	1847134017408 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847134017936 -> 1847134017408
+	1847134017408 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847134011200 [label="generate a default license
+goal
+140728069287616"]
+	1847125305968 -> 1847134011200
+	1847134011200 [label="generate a default license
+goal"]
+	1847134319808 [label="copyright
+goal
+1847134318656"]
+	1847134011200 -> 1847134319808
+	1847134319808 [label="copyright
+goal"]
+	1847134320000 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847134319808 -> 1847134320000
+	1847134320000 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+	1847125506416 [label="generate reasonable .document file
+goal
+140728069287616"]
+	1847124981552 -> 1847125506416
+	1847125506416 [label="generate reasonable .document file
+goal"]
+	1847125304192 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good'
+task
+140728069287616"]
+	1847125506416 -> 1847125304192
+	1847125304192 [label="I generate a project named 'the-perfect-gem' that is 'zomg, so good'
+task"]
+}

@@ -1,0 +1,40 @@
+{
+    "feature_name": "User can visit custom project landing page",
+    "user_story": {
+        "as_a": "n user (logged in or not)",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am logged in with the username author"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I visit the route /foo-bar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Hello, it is FooBar page!\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I visit the route /foo-bar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Hello, it is FooBar page!\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

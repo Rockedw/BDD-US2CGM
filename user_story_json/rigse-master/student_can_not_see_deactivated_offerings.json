@@ -1,0 +1,47 @@
+{
+    "feature_name": "Student can not see deactivated offerings",
+    "user_story": {
+        "as_a": "student",
+        "i_want": "",
+        "so_that": "only work on active offerings",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I log out",
+                        "I login with username: monty"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Plant reproduction\" in the content"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on the teacher view of the class page for \"class_with_no_students\"",
+                        "I uncheck Active for the external activity \"Plant reproduction\"",
+                        "I log out",
+                        "I login with username: monty"
+                    ],
+                    [
+                        "I am on the class page for \"class_with_no_students\"",
+                        "I should not see \"run Plant reproduction\" in the content",
+                        "I should see \"No offerings available.\" in the content"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on my classes page",
+                        "I should not see \"run Plant reproduction\" in the content",
+                        "I should see \"No offerings available.\" in the content"
+                    ]
+                ]
+            }
+        ]
+    }
+}

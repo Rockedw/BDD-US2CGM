@@ -1,0 +1,16 @@
+// 1847134464768 Context Model
+digraph {
+	1847134462656 [label=Context54]
+	1847134468464 [label="a cash journal in USD exists"]
+	1847134462656 -> 1847134468464
+	1847134468464 [label="a cash journal in USD exists"]
+	1847134463568 [label="a cash journal in CHF exists"]
+	1847134462656 -> 1847134463568
+	1847134463568 [label="a cash journal in CHF exists"]
+	1847134467264 [label="a cash journal in EUR exists"]
+	1847134462656 -> 1847134467264
+	1847134467264 [label="a cash journal in EUR exists"]
+	1847134460352 [label="on all journal entries can be canceled"]
+	1847134462656 -> 1847134460352
+	1847134460352 [label="on all journal entries can be canceled"]
+}

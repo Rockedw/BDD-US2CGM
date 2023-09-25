@@ -1,0 +1,38 @@
+{
+    "feature_name": "Posting from the tag page",
+    "user_story": {
+        "as_a": "",
+        "i_want": "post from the tag page",
+        "so_that": "share my opinion on cats",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I expand the publisher",
+                        "I have turned off jQuery effects",
+                        "I append \"I like cats.\" to the publisher",
+                        "I press \"Share\""
+                    ],
+                    [
+                        "I go to the home page"
+                    ],
+                    [
+                        "I am on the tag page for \"cats\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "\"#cats I like cats.\" should be post 1"
+                    ],
+                    [
+                        "\"#cats I like cats.\" should be post 1"
+                    ],
+                    [
+                        "\"#cats I like cats.\" should be post 1"
+                    ]
+                ]
+            }
+        ]
+    }
+}

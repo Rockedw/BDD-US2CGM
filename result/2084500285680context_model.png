@@ -1,0 +1,13 @@
+// 2084500280496 Context Model
+digraph {
+	2084500285680 [label=Context75]
+	2084500285104 [label="I have the module account installed"]
+	2084500285680 -> 2084500285104
+	2084500285104 [label="I have the module account installed"]
+	2084500285200 [label="no account set for company \"MA SOCIETE FR\""]
+	2084500285680 -> 2084500285200
+	2084500285200 [label="no account set for company \"MA SOCIETE FR\""]
+	2084500284528 [label="I want to generate account chart from chart template named \"Plan Comptable Général (France)\" with \"6\" digits for company \"MA SOCIETE FR\""]
+	2084500285680 -> 2084500284528
+	2084500284528 [label="I want to generate account chart from chart template named \"Plan Comptable Général (France)\" with \"6\" digits for company \"MA SOCIETE FR\""]
+}

@@ -1,0 +1,16 @@
+// 3000816014320 Context Model
+digraph {
+	3000816013936 [label=Context3]
+	3000816013072 [label="I have a configuration file with \"theme\" set to \"test-theme\""]
+	3000816013936 -> 3000816013072
+	3000816013072 [label="I have a configuration file with \"theme\" set to \"test-theme\""]
+	3000816014368 [label="I have an _includes directory"]
+	3000816013936 -> 3000816014368
+	3000816014368 [label="I have an _includes directory"]
+	3000816014464 [label="I have an \"_includes/in_project.html\" file that contains \"I'm in the project.\""]
+	3000816013936 -> 3000816014464
+	3000816014464 [label="I have an \"_includes/in_project.html\" file that contains \"I'm in the project.\""]
+	3000816014560 [label="I have an \"index.html\" page that contains \"{% include in_project.html %} {% include include.html %}\""]
+	3000816013936 -> 3000816014560
+	3000816014560 [label="I have an \"index.html\" page that contains \"{% include in_project.html %} {% include include.html %}\""]
+}

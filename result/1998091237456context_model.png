@@ -1,0 +1,10 @@
+// 1998091236832 Context Model
+digraph {
+	1998091237456 [label=Context28]
+	1998091237840 [label="I expand the publisher"]
+	1998091237456 -> 1998091237840
+	1998091237840 [label="I expand the publisher"]
+	1998091237936 [label="I click on selector \"#poll_creator\""]
+	1998091237456 -> 1998091237936
+	1998091237936 [label="I click on selector \"#poll_creator\""]
+}

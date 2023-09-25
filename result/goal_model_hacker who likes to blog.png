@@ -1,0 +1,1271 @@
+// Goal Model
+digraph {
+	1847124815024 [label="hacker who likes to blog
+goal"]
+	1847133565040 [label="share idea
+goal
+140728069287616"]
+	1847124815024 -> 1847133565040
+	1847133565040 [label="share idea
+goal"]
+	1847133983680 [label="be able to make a static site
+goal
+140728069287616"]
+	1847133565040 -> 1847133983680
+	1847133983680 [label="be able to make a static site
+goal"]
+	1847133984400 [label="Blank site
+goal
+1847133983536"]
+	1847133983680 -> 1847133984400
+	1847133984400 [label="Blank site
+goal"]
+	1847133387888 [label="I run something
+goal
+140728069287616"]
+	1847133984400 -> 1847133387888
+	1847133387888 [label="I run something
+goal"]
+	1847133983440 [label="I run jekyll new test_blank --blank
+task
+140728069287616"]
+	1847133387888 -> 1847133983440
+	1847133983440 [label="I run jekyll new test_blank --blank
+task"]
+	1847133984160 [label="I run jekyll build --source test_blank --destination test_blank/_site
+task
+140728069287616"]
+	1847133387888 -> 1847133984160
+	1847133984160 [label="I run jekyll build --source test_blank --destination test_blank/_site
+task"]
+	1847133983824 [label="Basic site
+goal
+1847133984448"]
+	1847133983680 -> 1847133983824
+	1847133983824 [label="Basic site
+goal"]
+	1847133983392 [label="I run jekyll build
+task
+140728069287616"]
+	1847133983824 -> 1847133983392
+	1847133983392 [label="I run jekyll build
+task"]
+	1847133983632 [label="Basic site with a post
+goal
+1847133984688"]
+	1847133983680 -> 1847133983632
+	1847133983632 [label="Basic site with a post
+goal"]
+	1847133982192 [label="I run jekyll build
+task
+140728069287616"]
+	1847133983632 -> 1847133982192
+	1847133982192 [label="I run jekyll build
+task"]
+	1847133983776 [label="Basic site with layout and a page
+goal
+1847133984064"]
+	1847133983680 -> 1847133983776
+	1847133983776 [label="Basic site with layout and a page
+goal"]
+	1847133983728 [label="I run jekyll build
+task
+140728069287616"]
+	1847133983776 -> 1847133983728
+	1847133983728 [label="I run jekyll build
+task"]
+	1847133984496 [label="Basic site with layout and a post
+goal
+1847133985024"]
+	1847133983680 -> 1847133984496
+	1847133984496 [label="Basic site with layout and a post
+goal"]
+	1847133984976 [label="I run jekyll build
+task
+140728069287616"]
+	1847133984496 -> 1847133984976
+	1847133984976 [label="I run jekyll build
+task"]
+	1847133983584 [label="Basic site with layout inside a subfolder and a post
+goal
+1847133985600"]
+	1847133983680 -> 1847133983584
+	1847133983584 [label="Basic site with layout inside a subfolder and a post
+goal"]
+	1847133985552 [label="I run jekyll build
+task
+140728069287616"]
+	1847133983584 -> 1847133985552
+	1847133985552 [label="I run jekyll build
+task"]
+	1847133985120 [label="Basic site with layouts, pages, posts and files
+goal
+1847133986176"]
+	1847133983680 -> 1847133985120
+	1847133985120 [label="Basic site with layouts, pages, posts and files
+goal"]
+	1847133986128 [label="I run jekyll build
+task
+140728069287616"]
+	1847133985120 -> 1847133986128
+	1847133986128 [label="I run jekyll build
+task"]
+	1847133989824 [label="Basic site with unpublished page
+goal
+1847133990736"]
+	1847133983680 -> 1847133989824
+	1847133989824 [label="Basic site with unpublished page
+goal"]
+	1847133990640 [label="I run jekyll build
+task
+140728069287616"]
+	1847133989824 -> 1847133990640
+	1847133990640 [label="I run jekyll build
+task"]
+	1847133990400 [label="Basic site with page with future date
+goal
+1847133991264"]
+	1847133983680 -> 1847133990400
+	1847133990400 [label="Basic site with page with future date
+goal"]
+	1847133991168 [label="I run jekyll build
+task
+140728069287616"]
+	1847133990400 -> 1847133991168
+	1847133991168 [label="I run jekyll build
+task"]
+	1847133990832 [label="Basic site with layouts, posts and related posts
+goal
+1847133991648"]
+	1847133983680 -> 1847133990832
+	1847133990832 [label="Basic site with layouts, posts and related posts
+goal"]
+	1847133991600 [label="I run jekyll build
+task
+140728069287616"]
+	1847133990832 -> 1847133991600
+	1847133991600 [label="I run jekyll build
+task"]
+	1847133985696 [label="Basic site with include tag
+goal
+1847133987520"]
+	1847133983680 -> 1847133985696
+	1847133985696 [label="Basic site with include tag
+goal"]
+	1847133987472 [label="I run jekyll build
+task
+140728069287616"]
+	1847133985696 -> 1847133987472
+	1847133987472 [label="I run jekyll build
+task"]
+	1847133987616 [label="Basic site with nested include tag
+goal
+1847133988576"]
+	1847133983680 -> 1847133987616
+	1847133987616 [label="Basic site with nested include tag
+goal"]
+	1847133988528 [label="I run jekyll build
+task
+140728069287616"]
+	1847133987616 -> 1847133988528
+	1847133988528 [label="I run jekyll build
+task"]
+	1847133988096 [label="Basic site with internal post linking
+goal
+1847133989152"]
+	1847133983680 -> 1847133988096
+	1847133988096 [label="Basic site with internal post linking
+goal"]
+	1847133989104 [label="I run jekyll build
+task
+140728069287616"]
+	1847133988096 -> 1847133989104
+	1847133989104 [label="I run jekyll build
+task"]
+	1847133988672 [label="Basic site with whitelisted dotfile
+goal
+1847133989728"]
+	1847133983680 -> 1847133988672
+	1847133988672 [label="Basic site with whitelisted dotfile
+goal"]
+	1847133989680 [label="I run jekyll build
+task
+140728069287616"]
+	1847133988672 -> 1847133989680
+	1847133989680 [label="I run jekyll build
+task"]
+	1847133989248 [label="File was replaced by a directory
+goal
+1847133990208"]
+	1847133983680 -> 1847133989248
+	1847133989248 [label="File was replaced by a directory
+goal"]
+	1847134172064 [label="I run something
+goal
+140728069287616"]
+	1847133989248 -> 1847134172064
+	1847134172064 [label="I run something
+goal"]
+	1847133989968 [label="I run jekyll build
+task
+140728069287616"]
+	1847134172064 -> 1847133989968
+	1847133989968 [label="I run jekyll build
+task"]
+	1847133990064 [label="I run jekyll build
+task
+140728069287616"]
+	1847134172064 -> 1847133990064
+	1847133990064 [label="I run jekyll build
+task"]
+	1847133990016 [label="I delete the file \"test\"
+task
+140728069287616"]
+	1847133989248 -> 1847133990016
+	1847133990016 [label="I delete the file \"test\"
+task"]
+	1847133990160 [label="be able to make a static site
+goal
+140728069287616"]
+	1847133565040 -> 1847133990160
+	1847133990160 [label="be able to make a static site
+goal"]
+	1847134007984 [label="Markdown in list on index
+goal
+1847134009088"]
+	1847133990160 -> 1847134007984
+	1847134007984 [label="Markdown in list on index
+goal"]
+	1847134009040 [label="I run jekyll build
+task
+140728069287616"]
+	1847134007984 -> 1847134009040
+	1847134009040 [label="I run jekyll build
+task"]
+	1847134008992 [label="Markdown in pagination on index
+goal
+1847134009664"]
+	1847133990160 -> 1847134008992
+	1847134008992 [label="Markdown in pagination on index
+goal"]
+	1847134009616 [label="I run jekyll build
+task
+140728069287616"]
+	1847134008992 -> 1847134009616
+	1847134009616 [label="I run jekyll build
+task"]
+	1847134016592 [label="be able to make a static site
+goal
+140728069287616"]
+	1847133565040 -> 1847134016592
+	1847134016592 [label="be able to make a static site
+goal"]
+	1847134068768 [label="An excerpt without a layout
+goal
+1847134069392"]
+	1847134016592 -> 1847134068768
+	1847134068768 [label="An excerpt without a layout
+goal"]
+	1847134069344 [label="I run jekyll build
+task
+140728069287616"]
+	1847134068768 -> 1847134069344
+	1847134069344 [label="I run jekyll build
+task"]
+	1847134069296 [label="An excerpt from a post with a layout
+goal
+1847134069872"]
+	1847134016592 -> 1847134069296
+	1847134069296 [label="An excerpt from a post with a layout
+goal"]
+	1847134069824 [label="I run jekyll build
+task
+140728069287616"]
+	1847134069296 -> 1847134069824
+	1847134069824 [label="I run jekyll build
+task"]
+	1847134069488 [label="An excerpt with Liquid constructs from a post with a layout
+goal
+1847134070544"]
+	1847134016592 -> 1847134069488
+	1847134069488 [label="An excerpt with Liquid constructs from a post with a layout
+goal"]
+	1847134070496 [label="I run jekyll build
+task
+140728069287616"]
+	1847134069488 -> 1847134070496
+	1847134070496 [label="I run jekyll build
+task"]
+	1847134071408 [label="Excerpts from posts with reference-style Markdown links
+goal
+1847134072656"]
+	1847134016592 -> 1847134071408
+	1847134071408 [label="Excerpts from posts with reference-style Markdown links
+goal"]
+	1847134072608 [label="I run jekyll build
+task
+140728069287616"]
+	1847134071408 -> 1847134072608
+	1847134072608 [label="I run jekyll build
+task"]
+	1847133385248 [label="which have something
+goal
+140728069287616"]
+	1847134016592 -> 1847133385248
+	1847133385248 [label="which have something
+goal"]
+	1847134070640 [label="Excerpts from posts having 'render_with_liquid' in their front matter
+goal
+1847134071984"]
+	1847133385248 -> 1847134070640
+	1847134070640 [label="Excerpts from posts having 'render_with_liquid' in their front matter
+goal"]
+	1847134071936 [label="I run jekyll build
+task
+140728069287616"]
+	1847134070640 -> 1847134071936
+	1847134071936 [label="I run jekyll build
+task"]
+	1847134069968 [label="An excerpt from a post with a layout which has context
+goal
+1847134071312"]
+	1847133385248 -> 1847134069968
+	1847134069968 [label="An excerpt from a post with a layout which has context
+goal"]
+	1847134071264 [label="I run jekyll build
+task
+140728069287616"]
+	1847134069968 -> 1847134071264
+	1847134071264 [label="I run jekyll build
+task"]
+	1847134068192 [label="be able to make a static site
+goal
+140728069287616"]
+	1847133565040 -> 1847134068192
+	1847134068192 [label="be able to make a static site
+goal"]
+	1847133991216 [label=" render site
+goal
+140728069287616"]
+	1847134068192 -> 1847133991216
+	1847133991216 [label=" render site
+goal"]
+	1847134072752 [label="Rendering a site with parentheses in its path name
+goal
+1847134073472"]
+	1847133991216 -> 1847134072752
+	1847134072752 [label="Rendering a site with parentheses in its path name
+goal"]
+	1847134073424 [label="I run jekyll build --profile
+task
+140728069287616"]
+	1847134072752 -> 1847134073424
+	1847134073424 [label="I run jekyll build --profile
+task"]
+	1847134074816 [label="Rendering a default site containing a file with rogue Liquid constructs
+goal
+1847134075872"]
+	1847133991216 -> 1847134074816
+	1847134074816 [label="Rendering a default site containing a file with rogue Liquid constructs
+goal"]
+	1847134075824 [label="I run jekyll build
+task
+140728069287616"]
+	1847134074816 -> 1847134075824
+	1847134075824 [label="I run jekyll build
+task"]
+	1847134075392 [label="Rendering a default site containing a file with a non-existent Liquid variable
+goal
+1847134076160"]
+	1847133991216 -> 1847134075392
+	1847134075392 [label="Rendering a default site containing a file with a non-existent Liquid variable
+goal"]
+	1847134076112 [label="I run jekyll build
+task
+140728069287616"]
+	1847134075392 -> 1847134076112
+	1847134076112 [label="I run jekyll build
+task"]
+	1847134075968 [label="Rendering a custom site containing a file with a non-existent Liquid variable
+goal
+1847134076544"]
+	1847133991216 -> 1847134075968
+	1847134075968 [label="Rendering a custom site containing a file with a non-existent Liquid variable
+goal"]
+	1847134076496 [label="I run jekyll build
+task
+140728069287616"]
+	1847134075968 -> 1847134076496
+	1847134076496 [label="I run jekyll build
+task"]
+	1847134076256 [label="Rendering a custom site containing a file with a non-existent Liquid filter
+goal
+1847134109760"]
+	1847133991216 -> 1847134076256
+	1847134076256 [label="Rendering a custom site containing a file with a non-existent Liquid filter
+goal"]
+	1847134076880 [label="I run jekyll build
+task
+140728069287616"]
+	1847134076256 -> 1847134076880
+	1847134076880 [label="I run jekyll build
+task"]
+	1847133384240 [label=" receive something
+goal
+140728069287616"]
+	1847134068192 -> 1847133384240
+	1847133384240 [label=" receive something
+goal"]
+	1847134073376 [label="When receiving bad Liquid
+goal
+1847134074336"]
+	1847133384240 -> 1847134073376
+	1847134073376 [label="When receiving bad Liquid
+goal"]
+	1847134074288 [label="I run jekyll build
+task
+140728069287616"]
+	1847134073376 -> 1847134074288
+	1847134074288 [label="I run jekyll build
+task"]
+	1847133562064 [label=" receive error
+goal
+140728069287616"]
+	1847133384240 -> 1847133562064
+	1847133562064 [label=" receive error
+goal"]
+	1847134073568 [label="When receiving a liquid syntax error in included file
+goal
+1847134074720"]
+	1847133562064 -> 1847134073568
+	1847134073568 [label="When receiving a liquid syntax error in included file
+goal"]
+	1847134074672 [label="I run jekyll build
+task
+140728069287616"]
+	1847134073568 -> 1847134074672
+	1847134074672 [label="I run jekyll build
+task"]
+	1847134074432 [label="When receiving a generic liquid error in included file
+goal
+1847134075296"]
+	1847133562064 -> 1847134074432
+	1847134074432 [label="When receiving a generic liquid error in included file
+goal"]
+	1847134075248 [label="I run jekyll build
+task
+140728069287616"]
+	1847134074432 -> 1847134075248
+	1847134075248 [label="I run jekyll build
+task"]
+	1847133283440 [label=" place something
+goal
+140728069287616"]
+	1847134068192 -> 1847133283440
+	1847133283440 [label=" place something
+goal"]
+	1847134109856 [label="Don't place asset files in layout
+goal
+1847134110528"]
+	1847133283440 -> 1847134109856
+	1847134109856 [label="Don't place asset files in layout
+goal"]
+	1847134110480 [label="I run jekyll build
+task
+140728069287616"]
+	1847134109856 -> 1847134110480
+	1847134110480 [label="I run jekyll build
+task"]
+	1847133276192 [label=" place page
+goal
+140728069287616"]
+	1847133283440 -> 1847133276192
+	1847133276192 [label=" place page
+goal"]
+	1847134110240 [label="Ignore defaults and don't place pages and documents with layout set to 'none'
+goal
+1847134111104"]
+	1847133276192 -> 1847134110240
+	1847134110240 [label="Ignore defaults and don't place pages and documents with layout set to 'none'
+goal"]
+	1847134111056 [label="I run jekyll build
+task
+140728069287616"]
+	1847134110240 -> 1847134111056
+	1847134111056 [label="I run jekyll build
+task"]
+	1847134110624 [label="Don't place pages and documents with layout set to 'none'
+goal
+1847134111968"]
+	1847133276192 -> 1847134110624
+	1847134110624 [label="Don't place pages and documents with layout set to 'none'
+goal"]
+	1847134111920 [label="I run jekyll build
+task
+140728069287616"]
+	1847134110624 -> 1847134111920
+	1847134111920 [label="I run jekyll build
+task"]
+	1847133993616 [label="share code snippets in my blog
+goal
+140728069287616"]
+	1847124815024 -> 1847133993616
+	1847133993616 [label="share code snippets in my blog
+goal"]
+	1847133999392 [label="highlighting an apache configuration
+goal
+1847134000304"]
+	1847133993616 -> 1847133999392
+	1847133999392 [label="highlighting an apache configuration
+goal"]
+	1847133384960 [label=" mark line
+goal
+140728069287616"]
+	1847133993616 -> 1847133384960
+	1847133384960 [label=" mark line
+goal"]
+	1847134000208 [label="marking lines 1 and 2 in a Ruby code block with valid syntax
+goal
+1847134000592"]
+	1847133384960 -> 1847134000208
+	1847134000208 [label="marking lines 1 and 2 in a Ruby code block with valid syntax
+goal"]
+	1847134000400 [label="marking a single line in a Ruby code block with invalid syntax
+goal
+1847134000880"]
+	1847133384960 -> 1847134000400
+	1847134000400 [label="marking a single line in a Ruby code block with invalid syntax
+goal"]
+	1847133984544 [label="be able to preview drafts locally
+goal
+140728069287616"]
+	1847124815024 -> 1847133984544
+	1847133984544 [label="be able to preview drafts locally
+goal"]
+	1847133991744 [label="Preview a draft
+goal
+1847133992464"]
+	1847133984544 -> 1847133991744
+	1847133991744 [label="Preview a draft
+goal"]
+	1847133993040 [label="Use page.path variable
+goal
+1847133994096"]
+	1847133984544 -> 1847133993040
+	1847133993040 [label="Use page.path variable
+goal"]
+	1847133991360 [label="be able to transform text inside a post or page
+goal
+140728069287616"]
+	1847124815024 -> 1847133991360
+	1847133991360 [label="be able to transform text inside a post or page
+goal"]
+	1847133994192 [label="Convert date to XML schema
+goal
+1847133994624"]
+	1847133991360 -> 1847133994192
+	1847133994192 [label="Convert date to XML schema
+goal"]
+	1847133996512 [label="Sort by an arbitrary variable
+goal
+1847133997568"]
+	1847133991360 -> 1847133996512
+	1847133996512 [label="Sort by an arbitrary variable
+goal"]
+	1847133997088 [label="Sort pages by the title
+goal
+1847133998144"]
+	1847133991360 -> 1847133997088
+	1847133997088 [label="Sort pages by the title
+goal"]
+	1847133994528 [label="Escape text for XML
+goal
+1847133995264"]
+	1847133991360 -> 1847133994528
+	1847133994528 [label="Escape text for XML
+goal"]
+	1847133994720 [label="Calculate number of words
+goal
+1847133995840"]
+	1847133991360 -> 1847133994720
+	1847133994720 [label="Calculate number of words
+goal"]
+	1847133995360 [label="Convert an array into a sentence
+goal
+1847133996416"]
+	1847133991360 -> 1847133995360
+	1847133995360 [label="Convert an array into a sentence
+goal"]
+	1847133995936 [label="Markdownify a given string
+goal
+1847133996992"]
+	1847133991360 -> 1847133995936
+	1847133995936 [label="Markdownify a given string
+goal"]
+	1847133997664 [label="Sort pages by the title ordering pages without title last
+goal
+1847133998720"]
+	1847133991360 -> 1847133997664
+	1847133997664 [label="Sort pages by the title ordering pages without title last
+goal"]
+	1847133998240 [label="Filter posts by given property and value
+goal
+1847133999296"]
+	1847133991360 -> 1847133998240
+	1847133998240 [label="Filter posts by given property and value
+goal"]
+	1847133481728 [label=" include something
+goal
+140728069287616"]
+	1847124815024 -> 1847133481728
+	1847133481728 [label=" include something
+goal"]
+	1847133998816 [label="be able to include snippets in my site's pages and documents relative to current file
+goal
+140728069287616"]
+	1847133481728 -> 1847133998816
+	1847133998816 [label="be able to include snippets in my site's pages and documents relative to current file
+goal"]
+	1847134000976 [label="Include a file relative to a post
+goal
+1847134001216"]
+	1847133998816 -> 1847134000976
+	1847134000976 [label="Include a file relative to a post
+goal"]
+	1847134001168 [label="I run jekyll build
+task
+140728069287616"]
+	1847134000976 -> 1847134001168
+	1847134001168 [label="I run jekyll build
+task"]
+	1847134001120 [label="Include a nested file relative to a post
+goal
+1847134001792"]
+	1847133998816 -> 1847134001120
+	1847134001120 [label="Include a nested file relative to a post
+goal"]
+	1847134001744 [label="I run jekyll build
+task
+140728069287616"]
+	1847134001120 -> 1847134001744
+	1847134001744 [label="I run jekyll build
+task"]
+	1847134001312 [label="Include a nested file relative to a post as an excerpt
+goal
+1847134002560"]
+	1847133998816 -> 1847134001312
+	1847134001312 [label="Include a nested file relative to a post as an excerpt
+goal"]
+	1847134002512 [label="I run jekyll build
+task
+140728069287616"]
+	1847134001312 -> 1847134002512
+	1847134002512 [label="I run jekyll build
+task"]
+	1847134001888 [label="Include a nested file relative to a page at root
+goal
+1847134003424"]
+	1847133998816 -> 1847134001888
+	1847134001888 [label="Include a nested file relative to a page at root
+goal"]
+	1847134003376 [label="I run jekyll build
+task
+140728069287616"]
+	1847134001888 -> 1847134003376
+	1847134003376 [label="I run jekyll build
+task"]
+	1847134000688 [label="be able to include files in my blog posts
+goal
+140728069287616"]
+	1847133481728 -> 1847134000688
+	1847134000688 [label="be able to include files in my blog posts
+goal"]
+	1847133990688 [label=" include file
+goal
+140728069287616"]
+	1847134000688 -> 1847133990688
+	1847133990688 [label=" include file
+goal"]
+	1847134003520 [label="Include a file with parameters
+goal
+1847134004144"]
+	1847133990688 -> 1847134003520
+	1847134003520 [label="Include a file with parameters
+goal"]
+	1847134004048 [label="Include a file from a variable
+goal
+1847134004912"]
+	1847133990688 -> 1847134004048
+	1847134004048 [label="Include a file from a variable
+goal"]
+	1847134004240 [label="Include a variable file in a loop
+goal
+1847134005584"]
+	1847133990688 -> 1847134004240
+	1847134004240 [label="Include a variable file in a loop
+goal"]
+	1847134005008 [label="Include a file with variables and filters
+goal
+1847134006160"]
+	1847133990688 -> 1847134005008
+	1847134005008 [label="Include a file with variables and filters
+goal"]
+	1847134005680 [label="Include a file with partial variables
+goal
+1847134006736"]
+	1847133990688 -> 1847134005680
+	1847134005680 [label="Include a file with partial variables
+goal"]
+	1847134006832 [label="Include a file with multiple variables
+goal
+1847134007888"]
+	1847133990688 -> 1847134006832
+	1847134006832 [label="Include a file with multiple variables
+goal"]
+	1847134006256 [label="Include a file and rebuild when include content is changed
+goal
+1847134007408"]
+	1847134000688 -> 1847134006256
+	1847134006256 [label="Include a file and rebuild when include content is changed
+goal"]
+	1847125298720 [label="I run something
+goal
+140728069287616"]
+	1847134006256 -> 1847125298720
+	1847125298720 [label="I run something
+goal"]
+	1847134007264 [label="I run jekyll build
+task
+140728069287616"]
+	1847125298720 -> 1847134007264
+	1847134007264 [label="I run jekyll build
+task"]
+	1847134007360 [label="I run jekyll build
+task
+140728069287616"]
+	1847125298720 -> 1847134007360
+	1847134007360 [label="I run jekyll build
+task"]
+	1847134007312 [label="I wait 1 second
+task
+140728069287616"]
+	1847134006256 -> 1847134007312
+	1847134007312 [label="I wait 1 second
+task"]
+	1847134002656 [label="be able to set permalinks
+goal
+140728069287616"]
+	1847124815024 -> 1847134002656
+	1847134002656 [label="be able to set permalinks
+goal"]
+	1847134172016 [label=" use something
+goal
+140728069287616"]
+	1847134002656 -> 1847134172016
+	1847134172016 [label=" use something
+goal"]
+	1847134012944 [label="Use per-post permalink
+goal
+1847134013808"]
+	1847134172016 -> 1847134012944
+	1847134012944 [label="Use per-post permalink
+goal"]
+	1847134009760 [label="Use none permalink schema
+goal
+1847134010288"]
+	1847134172016 -> 1847134009760
+	1847134009760 [label="Use none permalink schema
+goal"]
+	1847133172832 [label=" use schema
+goal
+140728069287616"]
+	1847134172016 -> 1847133172832
+	1847133172832 [label=" use schema
+goal"]
+	1847134010192 [label="Use pretty permalink schema
+goal
+1847134010768"]
+	1847133172832 -> 1847134010192
+	1847134010192 [label="Use pretty permalink schema
+goal"]
+	1847134010384 [label="Use pretty permalink schema for pages
+goal
+1847134011248"]
+	1847133172832 -> 1847134010384
+	1847134010384 [label="Use pretty permalink schema for pages
+goal"]
+	1847134013904 [label="Use pretty permalink schema with cased file name
+goal
+1847134014576"]
+	1847133172832 -> 1847134013904
+	1847134013904 [label="Use pretty permalink schema with cased file name
+goal"]
+	1847134014672 [label="Use pretty permalink schema with title containing underscore
+goal
+1847134015536"]
+	1847133172832 -> 1847134014672
+	1847134014672 [label="Use pretty permalink schema with title containing underscore
+goal"]
+	1847134016112 [label="Redirecting from an existing permalink
+goal
+1847134017456"]
+	1847134002656 -> 1847134016112
+	1847134016112 [label="Redirecting from an existing permalink
+goal"]
+	1847133485712 [label=" embed datum
+goal
+140728069287616"]
+	1847124815024 -> 1847133485712
+	1847133485712 [label=" embed datum
+goal"]
+	1847134009184 [label="be able to embed data into my posts
+goal
+140728069287616"]
+	1847133485712 -> 1847134009184
+	1847134009184 [label="be able to embed data into my posts
+goal"]
+	1847134019808 [label="Invalid date in filename
+goal
+1847134020672"]
+	1847134009184 -> 1847134019808
+	1847134019808 [label="Invalid date in filename
+goal"]
+	1847134020768 [label="Use post.content variable
+goal
+1847134021632"]
+	1847134009184 -> 1847134020768
+	1847134020768 [label="Use post.content variable
+goal"]
+	1847134064256 [label="Use page.render_with_liquid variable
+goal
+1847134065312"]
+	1847134009184 -> 1847134064256
+	1847134064256 [label="Use page.render_with_liquid variable
+goal"]
+	1847134110384 [label=" use something
+goal
+140728069287616"]
+	1847134009184 -> 1847134110384
+	1847134110384 [label=" use something
+goal"]
+	1847133161888 [label=" use variable
+goal
+140728069287616"]
+	1847134110384 -> 1847133161888
+	1847133161888 [label=" use variable
+goal"]
+	1847134017552 [label="Use post.title variable
+goal
+1847134017984"]
+	1847133161888 -> 1847134017552
+	1847134017552 [label="Use post.title variable
+goal"]
+	1847134018080 [label="Use page.name variable
+goal
+1847134019136"]
+	1847133161888 -> 1847134018080
+	1847134018080 [label="Use page.name variable
+goal"]
+	1847134018656 [label="Use post.date variable
+goal
+1847134019712"]
+	1847133161888 -> 1847134018656
+	1847134018656 [label="Use post.date variable
+goal"]
+	1847134019232 [label="Use post.date variable with invalid
+goal
+1847134020288"]
+	1847133161888 -> 1847134019232
+	1847134019232 [label="Use post.date variable with invalid
+goal"]
+	1847134020384 [label="Use post.id variable
+goal
+1847134021056"]
+	1847133161888 -> 1847134020384
+	1847134020384 [label="Use post.id variable
+goal"]
+	1847134021152 [label="Use post.categories variable when category is in a folder
+goal
+1847134022208"]
+	1847133161888 -> 1847134021152
+	1847134021152 [label="Use post.categories variable when category is in a folder
+goal"]
+	1847134021728 [label="Use post.categories variable when category is in a folder and has category in YAML
+goal
+1847134022880"]
+	1847133161888 -> 1847134021728
+	1847134021728 [label="Use post.categories variable when category is in a folder and has category in YAML
+goal"]
+	1847134022304 [label="Use post.categories variable when category is in a folder and has categories in YAML
+goal
+1847134023552"]
+	1847133161888 -> 1847134022304
+	1847134022304 [label="Use post.categories variable when category is in a folder and has categories in YAML
+goal"]
+	1847134022976 [label="Use post.categories variable when category is in a folder and duplicated category is in YAML
+goal
+1847134024224"]
+	1847133161888 -> 1847134022976
+	1847134022976 [label="Use post.categories variable when category is in a folder and duplicated category is in YAML
+goal"]
+	1847134025664 [label="Use post.categories variable when categories are in folders
+goal
+1847134026912"]
+	1847133161888 -> 1847134025664
+	1847134025664 [label="Use post.categories variable when categories are in folders
+goal"]
+	1847134026432 [label="Use post.categories variable when categories are in folders with mixed case
+goal
+1847134027680"]
+	1847133161888 -> 1847134026432
+	1847134026432 [label="Use post.categories variable when categories are in folders with mixed case
+goal"]
+	1847134027008 [label="Use post.categories variable when category is in YAML
+goal
+1847134061280"]
+	1847133161888 -> 1847134027008
+	1847134027008 [label="Use post.categories variable when category is in YAML
+goal"]
+	1847134060608 [label="Use post.categories variable when category is in YAML and is mixed-case
+goal
+1847134061856"]
+	1847133161888 -> 1847134060608
+	1847134060608 [label="Use post.categories variable when category is in YAML and is mixed-case
+goal"]
+	1847134061376 [label="Use post.categories variable when categories are in YAML
+goal
+1847134062432"]
+	1847133161888 -> 1847134061376
+	1847134061376 [label="Use post.categories variable when categories are in YAML
+goal"]
+	1847134063680 [label="Use post.categories variable when categories are in YAML with mixed case
+goal
+1847134064736"]
+	1847133161888 -> 1847134063680
+	1847134063680 [label="Use post.categories variable when categories are in YAML with mixed case
+goal"]
+	1847134064832 [label="Use page.path variable
+goal
+1847134065696"]
+	1847133161888 -> 1847134064832
+	1847134064832 [label="Use page.path variable
+goal"]
+	1847134066176 [label="Use a custom variable
+goal
+1847134066944"]
+	1847133161888 -> 1847134066176
+	1847134066176 [label="Use a custom variable
+goal"]
+	1847134066560 [label="Use a variable which is a reserved keyword in Ruby
+goal
+1847134067520"]
+	1847133161888 -> 1847134066560
+	1847134066560 [label="Use a variable which is a reserved keyword in Ruby
+goal"]
+	1847134076640 [label=" use post.url
+goal
+140728069287616"]
+	1847134110384 -> 1847134076640
+	1847134076640 [label=" use post.url
+goal"]
+	1847134017888 [label="Use post.url variable
+goal
+1847134018560"]
+	1847134076640 -> 1847134017888
+	1847134017888 [label="Use post.url variable
+goal"]
+	1847134024992 [label="Use post.tags variable
+goal
+1847134026336"]
+	1847134076640 -> 1847134024992
+	1847134024992 [label="Use post.tags variable
+goal"]
+	1847134061952 [label="Use post.categories variable when categories are in YAML and are duplicated
+goal
+1847134063008"]
+	1847134009184 -> 1847134061952
+	1847134061952 [label="Use post.categories variable when categories are in YAML and are duplicated
+goal"]
+	1847134114080 [label="superdirectorie
+of
+_
+post apply something
+goal
+140728069287616"]
+	1847134009184 -> 1847134114080
+	1847134114080 [label="superdirectorie
+of
+_
+post apply something
+goal"]
+	1847134062528 [label="Superdirectories of _posts applied to post.categories
+goal
+1847134063584"]
+	1847134114080 -> 1847134062528
+	1847134062528 [label="Superdirectories of _posts applied to post.categories
+goal"]
+	1847134063104 [label="Subdirectories of _posts not applied to post.categories
+goal
+1847134064160"]
+	1847134114080 -> 1847134063104
+	1847134063104 [label="Subdirectories of _posts not applied to post.categories
+goal"]
+	1847134065408 [label="Cannot override page.path variable
+goal
+1847134066080"]
+	1847134009184 -> 1847134065408
+	1847134065408 [label="Cannot override page.path variable
+goal"]
+	1847134065792 [label="Disable a post from being published
+goal
+1847134066464"]
+	1847134009184 -> 1847134065792
+	1847134065792 [label="Disable a post from being published
+goal"]
+	1847134067040 [label="Previous and next posts title
+goal
+1847134068096"]
+	1847134009184 -> 1847134067040
+	1847134067040 [label="Previous and next posts title
+goal"]
+	1847134067616 [label="Deprecate calling data keys directly via Ruby
+goal
+1847134068672"]
+	1847134009184 -> 1847134067616
+	1847134067616 [label="Deprecate calling data keys directly via Ruby
+goal"]
+	1847134113984 [label="be able to embed data into my site
+goal
+140728069287616"]
+	1847133485712 -> 1847134113984
+	1847134113984 [label="be able to embed data into my site
+goal"]
+	1847134160736 [label="Use page variable in a page
+goal
+1847134161072"]
+	1847134113984 -> 1847134160736
+	1847134160736 [label="Use page variable in a page
+goal"]
+	1847134161168 [label="Override page.path
+goal
+1847134161744"]
+	1847134113984 -> 1847134161168
+	1847134161168 [label="Override page.path
+goal"]
+	1847134163376 [label="Order Posts by name when on the same date
+goal
+1847134164240"]
+	1847134113984 -> 1847134163376
+	1847134163376 [label="Order Posts by name when on the same date
+goal"]
+	1847134119504 [label="Access Jekyll version via jekyll.version
+goal
+1847134164432"]
+	1847134113984 -> 1847134119504
+	1847134119504 [label="Access Jekyll version via jekyll.version
+goal"]
+	1847133168560 [label=" use something
+goal
+140728069287616"]
+	1847134113984 -> 1847133168560
+	1847133168560 [label=" use something
+goal"]
+	1847134162416 [label="Use site.categories.code variable
+goal
+1847134163280"]
+	1847133168560 -> 1847134162416
+	1847134162416 [label="Use site.categories.code variable
+goal"]
+	1847125302032 [label=" use variable
+goal
+140728069287616"]
+	1847133168560 -> 1847125302032
+	1847125302032 [label=" use variable
+goal"]
+	1847134160976 [label="Use page.path variable in a page
+goal
+1847134161360"]
+	1847125302032 -> 1847134160976
+	1847134160976 [label="Use page.path variable in a page
+goal"]
+	1847134162896 [label="Use site.tags variable
+goal
+1847134163760"]
+	1847125302032 -> 1847134162896
+	1847134162896 [label="Use site.tags variable
+goal"]
+	1847133283296 [label=" use site.time
+goal
+140728069287616"]
+	1847133168560 -> 1847133283296
+	1847133283296 [label=" use site.time
+goal"]
+	1847134161456 [label="Use site.time variable
+goal
+1847134162032"]
+	1847133283296 -> 1847134161456
+	1847134161456 [label="Use site.time variable
+goal"]
+	1847134161840 [label="Use site.posts variable for latest post
+goal
+1847134162320"]
+	1847133283296 -> 1847134161840
+	1847134161840 [label="Use site.posts variable for latest post
+goal"]
+	1847134162128 [label="Use site.posts variable in a loop
+goal
+1847134162800"]
+	1847133283296 -> 1847134162128
+	1847134162128 [label="Use site.posts variable in a loop
+goal"]
+	1847134072080 [label="be able to configure jekyll
+goal
+140728069287616"]
+	1847124815024 -> 1847134072080
+	1847134072080 [label="be able to configure jekyll
+goal"]
+	1847134120320 [label="Highlight code with rouge
+goal
+1847134121280"]
+	1847134072080 -> 1847134120320
+	1847134120320 [label="Highlight code with rouge
+goal"]
+	1847134114368 [label="Change source directory
+goal
+1847134114800"]
+	1847134072080 -> 1847134114368
+	1847134114368 [label="Change source directory
+goal"]
+	1847134114896 [label="Similarly named source and destination
+goal
+1847134115664"]
+	1847134072080 -> 1847134114896
+	1847134114896 [label="Similarly named source and destination
+goal"]
+	1847134172928 [label=" exclude file
+goal
+140728069287616"]
+	1847134072080 -> 1847134172928
+	1847134172928 [label=" exclude file
+goal"]
+	1847134115376 [label="Exclude files inline
+goal
+1847134116144"]
+	1847134172928 -> 1847134115376
+	1847134115376 [label="Exclude files inline
+goal"]
+	1847134115760 [label="Exclude files with YAML array
+goal
+1847134116816"]
+	1847134172928 -> 1847134115760
+	1847134115760 [label="Exclude files with YAML array
+goal"]
+	1847134118448 [label="Process included files only once
+goal
+1847134120224"]
+	1847134172928 -> 1847134118448
+	1847134118448 [label="Process included files only once
+goal"]
+	1847134174992 [label="I run something
+goal
+140728069287616"]
+	1847134118448 -> 1847134174992
+	1847134174992 [label="I run something
+goal"]
+	1847134120080 [label="I run jekyll build
+task
+140728069287616"]
+	1847134174992 -> 1847134120080
+	1847134120080 [label="I run jekyll build
+task"]
+	1847134120176 [label="I run jekyll build
+task
+140728069287616"]
+	1847134174992 -> 1847134120176
+	1847134120176 [label="I run jekyll build
+task"]
+	1847134120128 [label="I have a configuration file with:
+task
+140728069287616"]
+	1847134118448 -> 1847134120128
+	1847134120128 [label="I have a configuration file with:
+task"]
+	1847133277152 [label=" use something
+goal
+140728069287616"]
+	1847134072080 -> 1847133277152
+	1847133277152 [label=" use something
+goal"]
+	1847134119936 [label="Use Kramdown for markup
+goal
+1847134120896"]
+	1847133277152 -> 1847134119936
+	1847134119936 [label="Use Kramdown for markup
+goal"]
+	1847134125696 [label="Using a different layouts directory
+goal
+1847134159776"]
+	1847133277152 -> 1847134125696
+	1847134125696 [label="Using a different layouts directory
+goal"]
+	1847134120992 [label="Rouge renders code block once
+goal
+1847134121664"]
+	1847134072080 -> 1847134120992
+	1847134120992 [label="Rouge renders code block once
+goal"]
+	1847134112976 [label=" date something
+goal
+140728069287616"]
+	1847134072080 -> 1847134112976
+	1847134112976 [label=" date something
+goal"]
+	1847134121376 [label="Set time and no future dated posts
+goal
+1847134122144"]
+	1847134112976 -> 1847134121376
+	1847134121376 [label="Set time and no future dated posts
+goal"]
+	1847134121760 [label="Set time and future dated posts allowed
+goal
+1847134123008"]
+	1847134112976 -> 1847134121760
+	1847134121760 [label="Set time and future dated posts allowed
+goal"]
+	1847134113072 [label=" generate date
+goal
+140728069287616"]
+	1847134072080 -> 1847134113072
+	1847134113072 [label=" generate date
+goal"]
+	1847134122240 [label="Generate proper dates with explicitly set timezone (same as posts' time)
+goal
+1847134123872"]
+	1847134113072 -> 1847134122240
+	1847134122240 [label="Generate proper dates with explicitly set timezone (same as posts' time)
+goal"]
+	1847134123104 [label="Generate proper dates with explicitly set timezone (different than posts' time)
+goal
+1847134124736"]
+	1847134113072 -> 1847134123104
+	1847134123104 [label="Generate proper dates with explicitly set timezone (different than posts' time)
+goal"]
+	1847134123968 [label="Generate proper dates with explicitly set timezone (using non-half hour offset )
+goal
+1847134125600"]
+	1847134113072 -> 1847134123968
+	1847134123968 [label="Generate proper dates with explicitly set timezone (using non-half hour offset )
+goal"]
+	1847134124832 [label="Limit the number of posts generated by most recent date
+goal
+1847134159296"]
+	1847134072080 -> 1847134124832
+	1847134124832 [label="Limit the number of posts generated by most recent date
+goal"]
+	1847134159392 [label="arbitrary file reads via layouts
+goal
+1847134160640"]
+	1847134072080 -> 1847134159392
+	1847134159392 [label="arbitrary file reads via layouts
+goal"]
+}

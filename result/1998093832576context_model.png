@@ -1,0 +1,10 @@
+// 1998093840592 Context Model
+digraph {
+	1998093832576 [label=Context6]
+	1998093828736 [label="I am logged in with the username teacher"]
+	1998093832576 -> 1998093828736
+	1998093828736 [label="I am logged in with the username teacher"]
+	1998093837904 [label="user \"foobar\" authored unofficial material \"ext act\""]
+	1998093832576 -> 1998093837904
+	1998093837904 [label="user \"foobar\" authored unofficial material \"ext act\""]
+}

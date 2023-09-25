@@ -1,0 +1,16 @@
+// 1982199703216 Context Model
+digraph {
+	1982199695296 [label=Context4]
+	1982199707728 [label="I am the Secretary of the co-op"]
+	1982199695296 -> 1982199707728
+	1982199707728 [label="I am the Secretary of the co-op"]
+	1982199699136 [label="there has been a past meeting"]
+	1982199695296 -> 1982199699136
+	1982199699136 [label="there has been a past meeting"]
+	1982199706048 [label="the meeting has no minutes yet"]
+	1982199695296 -> 1982199706048
+	1982199706048 [label="the meeting has no minutes yet"]
+	1982199693952 [label="there were resolutions attached to the meeting"]
+	1982199695296 -> 1982199693952
+	1982199693952 [label="there were resolutions attached to the meeting"]
+}

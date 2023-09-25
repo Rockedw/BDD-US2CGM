@@ -1,0 +1,161 @@
+{
+    "feature_name": "Change Case",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Curry Chicken\"",
+                        "I select -5 from (0,5)",
+                        "I select menu item \"Edit|Formatting|Convert Text|to Uppercase\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"<c>CURRY<s> Chicken\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Curry Chicken\"",
+                        "I select 5 from (0,0)",
+                        "I select menu item \"Edit|Formatting|Convert Text|to Uppercase\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"<s>CURRY<c> Chicken\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Curry Chicken\"",
+                        "I move the cursor to (0,10)",
+                        "I select menu item \"Edit|Formatting|Convert Text|to Uppercase\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Curry CHIC<c>KEN\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"CURRY CHICKEN\"",
+                        "I select 5 from (0,0)",
+                        "I select menu item \"Edit|Formatting|Convert Text|to Lowercase\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"<s>curry<c> CHICKEN\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"curry chicken\"",
+                        "I select 13 from (0,0)",
+                        "I select menu item \"Edit|Formatting|Convert Text|to Titlecase\""
+                    ],
+                    [
+                        "I replace the contents with \"CURRY CHICKEN\"",
+                        "I select 13 from (0,0)",
+                        "I select menu item \"Edit|Formatting|Convert Text|to Titlecase\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"<s>Curry Chicken<c>\""
+                    ],
+                    [
+                        "the contents should be \"<s>Curry Chicken<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Curry Chicken\"",
+                        "I select 13 from (0,0)",
+                        "I select menu item \"Edit|Formatting|Convert Text|to Opposite Case\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"<s>cURRY cHICKEN<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"curry_chicken\"",
+                        "I move the cursor to (0,13)",
+                        "I select menu item \"Edit|Formatting|Convert Text|to CamelCase\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"CurryChicken<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"CurryChicken\"",
+                        "I move the cursor to (0,12)",
+                        "I select menu item \"Edit|Formatting|Convert Text|to snake_case\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"curry_chicke<c>n\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"CurryChicken\"",
+                        "I move the cursor to (0,12)",
+                        "I select menu item \"Edit|Formatting|Convert Text|Toggle PascalCase-underscore-camelCase\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"curry_chicke<c>n\"",
+                        "I select menu item \"Edit|Formatting|Convert Text|Toggle PascalCase-underscore-camelCase\""
+                    ],
+                    [
+                        "the contents should be \"curryChicken<c>\"",
+                        "I select menu item \"Edit|Formatting|Convert Text|Toggle PascalCase-underscore-camelCase\""
+                    ],
+                    [
+                        "the contents should be \"CurryChicken<c>\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "feature_name": "Viewing submitted co-ops",
+    "user_story": {
+        "as_a": "n administrator",
+        "i_want": "view the co-ops that have been submitted for registration",
+        "so_that": "process co-op registrations",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the co-op review page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a list of the submitted co-ops"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the admin view of a proposed co-op"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the name of the co-op",
+                        "I should see the founder members of the co-op",
+                        "I should see a link to the co-op's rules",
+                        "I should see a link to the co-op's registration form"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the admin view of a proposed co-op",
+                        "I follow \"Download rules\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a \".pdf\" download"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the admin view of a proposed co-op",
+                        "I follow \"Download registration form\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a \".pdf\" download"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the admin view of a proposed co-op",
+                        "I follow \"Download anti-money laundering form\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a \".pdf\" download"
+                    ]
+                ]
+            }
+        ]
+    }
+}

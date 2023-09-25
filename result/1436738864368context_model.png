@@ -1,0 +1,16 @@
+// 1436738863408 Context Model
+digraph {
+	1436738864368 [label=Context40]
+	1436738864512 [label="I expand the publisher"]
+	1436738864368 -> 1436738864512
+	1436738864512 [label="I expand the publisher"]
+	1436738864608 [label="I have turned off jQuery effects"]
+	1436738864368 -> 1436738864608
+	1436738864608 [label="I have turned off jQuery effects"]
+	1436738864704 [label="I attach \"spec/fixtures/button.png\" to the publisher"]
+	1436738864368 -> 1436738864704
+	1436738864704 [label="I attach \"spec/fixtures/button.png\" to the publisher"]
+	1436738864800 [label="I click to delete the first uploaded photo"]
+	1436738864368 -> 1436738864800
+	1436738864800 [label="I click to delete the first uploaded photo"]
+}

@@ -1,0 +1,66 @@
+{
+    "feature_name": "Create the needed product",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a product category named \"Devices\""
+                    ],
+                    [
+                        "there is a product category named \"Missions\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a product named \"Device 1.0\" with the following attributes :",
+                        "product is in category \"Devices\"",
+                        "the supplier of the product is \"Fournisseur Device\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"res.partner\" with name: Pro living and oid: scenario.main_supplier",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"res.partner.address\" with name: Pro living and oid: scenario.main_supplier_add",
+                        "having:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I set on supplier line on all product using supplier \"scenario.main_supplier\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"product.product\" with name: Mission 1.0 and oid: scenario.mission1",
+                        "having:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            }
+        ]
+    }
+}

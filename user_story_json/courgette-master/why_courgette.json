@@ -1,0 +1,28 @@
+{
+    "feature_name": "Why courgette?",
+    "user_story": {
+        "as_a": "Product Owner understanding the value of user acceptance criterias written with cucumber",
+        "i_want": "have a simple read access to the latest version of cucumber features for my application (available on /features)",
+        "so_that": "discuss the features of the application with the developpers",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I enter the address of the features page, e.g. http://staging.myfantasticapp.com/features"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see the source code of the first feature of my application"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": []
+            }
+        ]
+    }
+}

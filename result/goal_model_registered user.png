@@ -1,0 +1,53 @@
+// Goal Model
+digraph {
+	1847125304576 [label="registered user
+goal"]
+	1847132849920 [label="update my account information
+goal
+1847135468560"]
+	1847125304576 -> 1847132849920
+	1847132849920 [label="update my account information
+goal"]
+	1847135487264 [label="Users can not change their usernames
+goal
+140728069287616"]
+	1847132849920 -> 1847135487264
+	1847135487264 [label="Users can not change their usernames
+goal"]
+	1847135494656 [label="I log out
+task
+140728069287616"]
+	1847135487264 -> 1847135494656
+	1847135494656 [label="I log out
+task"]
+	1847135498736 [label="I am logged in with the username <username>
+task
+140728069287616"]
+	1847135487264 -> 1847135498736
+	1847135498736 [label="I am logged in with the username <username>
+task"]
+	1847135496960 [label="I am on the user preferences page for the user \"<username>\"
+task
+140728069287616"]
+	1847135487264 -> 1847135496960
+	1847135496960 [label="I am on the user preferences page for the user \"<username>\"
+task"]
+	1847135492688 [label="Students can not change their email addresses
+goal
+140728069287616"]
+	1847132849920 -> 1847135492688
+	1847135492688 [label="Students can not change their email addresses
+goal"]
+	1847135493792 [label="I am logged in with the username student
+task
+140728069287616"]
+	1847135492688 -> 1847135493792
+	1847135493792 [label="I am logged in with the username student
+task"]
+	1847135498784 [label="I am on the user preferences page for the user \"student\"
+task
+140728069287616"]
+	1847135492688 -> 1847135498784
+	1847135498784 [label="I am on the user preferences page for the user \"student\"
+task"]
+}

@@ -1,0 +1,77 @@
+{
+    "feature_name": "Managing membership issues",
+    "user_story": {
+        "as_a": "As the Secretary",
+        "i_want": "manage issues of membership that arise",
+        "so_that": "respond to the needs of members and applicants",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a membership application has been received"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the dashboard"
+                    ],
+                    [
+                        "I follow the link to process the new membership application",
+                        "I press \"Accept application\""
+                    ],
+                    [
+                        "I go to the dashboard"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a notification of the new membership application"
+                    ],
+                    [
+                        "I should be on the Members page",
+                        "I should see the new member in the list of members",
+                        "the new member should receive an invitation email"
+                    ],
+                    [
+                        "I should no longer see a notification of the new membership application"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a member who has failed to attain the minimum shareholding after 12 months"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "the co-op daily job runs",
+                        "I go to the Members page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a notification that the member has failed to attain the minimum shareholding"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a member has resigned"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Members page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a notification that the member has resigned"
+                    ]
+                ]
+            }
+        ]
+    }
+}

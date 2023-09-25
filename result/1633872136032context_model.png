@@ -1,0 +1,16 @@
+// 1633872134400 Context Model
+digraph {
+	1633872136032 [label=Context6]
+	1633872136176 [label="I have a _posts directory"]
+	1633872136032 -> 1633872136176
+	1633872136176 [label="I have a _posts directory"]
+	1633872136272 [label="I have the following post:"]
+	1633872136032 -> 1633872136272
+	1633872136272 [label="I have the following post:"]
+	1633872136368 [label="I have an \"index.html\" page that contains \"interesting stuff\""]
+	1633872136032 -> 1633872136368
+	1633872136368 [label="I have an \"index.html\" page that contains \"interesting stuff\""]
+	1633872136464 [label="I have a configuration file with \"defaults\" set to \"[{scope: {path: \"\", type: \"post\"}, values: {permalink: \"/post.html\"}}, {scope: {path: \"\", type: \"page\"}, values: {permalink: \"/page.html\"}}, {scope: {path: \"\"}, values: {permalink: \"/perma.html\"}}]\""]
+	1633872136032 -> 1633872136464
+	1633872136464 [label="I have a configuration file with \"defaults\" set to \"[{scope: {path: \"\", type: \"post\"}, values: {permalink: \"/post.html\"}}, {scope: {path: \"\", type: \"page\"}, values: {permalink: \"/page.html\"}}, {scope: {path: \"\"}, values: {permalink: \"/perma.html\"}}]\""]
+}

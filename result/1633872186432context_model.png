@@ -1,0 +1,22 @@
+// 1633872185808 Context Model
+digraph {
+	1633872186432 [label=Context37]
+	1633872186576 [label="I have an _includes directory"]
+	1633872186432 -> 1633872186576
+	1633872186576 [label="I have an _includes directory"]
+	1633872186672 [label="I have an \"_includes/header.html\" file that contains \"<header>My awesome blog header: {{include.param}}</header>\""]
+	1633872186432 -> 1633872186672
+	1633872186672 [label="I have an \"_includes/header.html\" file that contains \"<header>My awesome blog header: {{include.param}}</header>\""]
+	1633872186768 [label="I have an \"_includes/params.html\" file that contains \"Parameters:<ul>{% for param in include %}<li>{{param[0]}} = {{param[1]}}</li>{% endfor %}</ul>\""]
+	1633872186432 -> 1633872186768
+	1633872186768 [label="I have an \"_includes/params.html\" file that contains \"Parameters:<ul>{% for param in include %}<li>{{param[0]}} = {{param[1]}}</li>{% endfor %}</ul>\""]
+	1633872186864 [label="I have an \"_includes/ignore.html\" file that contains \"<footer>My blog footer</footer>\""]
+	1633872186432 -> 1633872186864
+	1633872186864 [label="I have an \"_includes/ignore.html\" file that contains \"<footer>My blog footer</footer>\""]
+	1633872186960 [label="I have a _posts directory"]
+	1633872186432 -> 1633872186960
+	1633872186960 [label="I have a _posts directory"]
+	1633872187056 [label="I have the following posts:"]
+	1633872186432 -> 1633872187056
+	1633872187056 [label="I have the following posts:"]
+}

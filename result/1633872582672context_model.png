@@ -1,0 +1,16 @@
+// 1633872581616 Context Model
+digraph {
+	1633872582672 [label=Context11]
+	1633872582816 [label="I have a configuration file with \"theme\" set to \"test-theme\""]
+	1633872582672 -> 1633872582816
+	1633872582816 [label="I have a configuration file with \"theme\" set to \"test-theme\""]
+	1633872582912 [label="I have a _data directory"]
+	1633872582672 -> 1633872582912
+	1633872582912 [label="I have a _data directory"]
+	1633872583008 [label="I have a \"_data/i18n.yml\" file with content:"]
+	1633872582672 -> 1633872583008
+	1633872583008 [label="I have a \"_data/i18n.yml\" file with content:"]
+	1633872583104 [label="I have an \"index.html\" page that contains \"{% include testimonials.html %}\""]
+	1633872582672 -> 1633872583104
+	1633872583104 [label="I have an \"index.html\" page that contains \"{% include testimonials.html %}\""]
+}

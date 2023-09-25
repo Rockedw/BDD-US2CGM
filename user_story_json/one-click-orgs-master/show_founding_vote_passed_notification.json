@@ -1,0 +1,24 @@
+{
+    "feature_name": "Show 'founding vote passed' notification",
+    "user_story": {
+        "as_a": "founding member",
+        "i_want": "know that the founding vote has passed",
+        "so_that": "know respond to it",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I log in"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"These are the Founding Members\"",
+                        "I should see a list of the members who voted in favour of the founding"
+                    ]
+                ]
+            }
+        ]
+    }
+}

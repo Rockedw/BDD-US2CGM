@@ -1,0 +1,35 @@
+{
+    "feature_name": "Appointing external Director",
+    "user_story": {
+        "as_a": "Secretary",
+        "i_want": "appoint an external Director",
+        "so_that": "bring particular skills or experience to the co-op",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a co-op",
+                        "I am the Secretary of the co-op"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Directors page",
+                        "I press \"Appoint new Director\"",
+                        "I follow \"Appoint a non-member Director\"",
+                        "I fill in \"First name\" with \"Jane\"",
+                        "I fill in \"Last name\" with \"Spencer\"",
+                        "I fill in \"Email address\" with \"jane@example.com\"",
+                        "I press \"Record this appointment\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Directors page",
+                        "I should see \"Jane Spencer\" in the list of Directors"
+                    ]
+                ]
+            }
+        ]
+    }
+}

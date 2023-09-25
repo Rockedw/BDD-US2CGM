@@ -1,0 +1,19 @@
+// 1910798242320 Context Model
+digraph {
+	1910822109488 [label=Context11]
+	1910822118272 [label="I am signed up as a student advisor"]
+	1910822109488 -> 1910822118272
+	1910822118272 [label="I am signed up as a student advisor"]
+	1910822115392 [label="I am on the login page"]
+	1910822109488 -> 1910822115392
+	1910822115392 [label="I am on the login page"]
+	1910822118800 [label="I fill in \"Email\" with \"myemail@nowhere.com\""]
+	1910822109488 -> 1910822118800
+	1910822118800 [label="I fill in \"Email\" with \"myemail@nowhere.com\""]
+	1910822123168 [label="I fill in \"Password\" with \"1234\""]
+	1910822109488 -> 1910822123168
+	1910822123168 [label="I fill in \"Password\" with \"1234\""]
+	1910822118032 [label="I press \"Login\""]
+	1910822109488 -> 1910822118032
+	1910822118032 [label="I press \"Login\""]
+}

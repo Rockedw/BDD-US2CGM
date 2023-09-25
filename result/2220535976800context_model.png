@@ -1,0 +1,13 @@
+// 2220535986064 Context Model
+digraph {
+	2220535976800 [label=Context1]
+	2220536339360 [label="I am a mentor teacher"]
+	2220535976800 -> 2220536339360
+	2220536339360 [label="I am a mentor teacher"]
+	2220536338976 [label="the following semesters exist"]
+	2220535976800 -> 2220536338976
+	2220536338976 [label="the following semesters exist"]
+	2220536338208 [label="the following courses exist:"]
+	2220535976800 -> 2220536338208
+	2220536338208 [label="the following courses exist:"]
+}

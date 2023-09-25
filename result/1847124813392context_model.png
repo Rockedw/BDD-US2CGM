@@ -1,0 +1,10 @@
+// 1847133483696 Context Model
+digraph {
+	1847124813392 [label=Context15]
+	1847124808064 [label="a working directory"]
+	1847124813392 -> 1847124808064
+	1847124808064 [label="a working directory"]
+	1847124665312 [label="I use the existing project \"existing-project-with-version-constant\" as a template"]
+	1847124813392 -> 1847124665312
+	1847124665312 [label="I use the existing project \"existing-project-with-version-constant\" as a template"]
+}

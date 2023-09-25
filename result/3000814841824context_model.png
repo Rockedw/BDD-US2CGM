@@ -1,0 +1,10 @@
+// 3000814836112 Context Model
+digraph {
+	3000814841824 [label=Context11]
+	3000814839376 [label="there has been a General Meeting in the past"]
+	3000814841824 -> 3000814839376
+	3000814839376 [label="there has been a General Meeting in the past"]
+	3000814837312 [label="minutes have been entered for the meeting"]
+	3000814841824 -> 3000814837312
+	3000814837312 [label="minutes have been entered for the meeting"]
+}

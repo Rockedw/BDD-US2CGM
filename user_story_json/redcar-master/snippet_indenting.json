@@ -1,0 +1,151 @@
+{
+    "feature_name": "Snippets should indent correctly",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"if\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are hard",
+                        "I replace the contents with \"if<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"if <c>\\n\\t\\nend\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"if\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are hard",
+                        "I replace the contents with \"\\tif<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"\\tif <c>\\n\\t\\t\\n\\tend\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"if\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are hard",
+                        "I replace the contents with \"\\t\\tif<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"\\t\\tif <c>\\n\\t\\t\\t\\n\\t\\tend\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"if\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"if<c>\"",
+                        "I press the Tab key in the edit tab",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"if \\n    <c>\\nend\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"if\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"    if<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"    if <c>\\n        \\n    end\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"if\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"        if<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"        if <c>\\n            \\n        end\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a snippet with tab trigger \"if\" and scope \"text.plain\" and content"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"  \\tif<c>\"",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"  \\tif <c>\\n        \\n    end\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

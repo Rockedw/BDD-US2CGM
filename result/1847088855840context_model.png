@@ -1,0 +1,19 @@
+// 1847088853152 Context Model
+digraph {
+	1847088855840 [label=Context2]
+	1847088854592 [label="I have an \"index.html\" page that contains \"Collections: output => {{ site.collections[0].output }} label => {{ site.collections[0].label }}\""]
+	1847088855840 -> 1847088854592
+	1847088854592 [label="I have an \"index.html\" page that contains \"Collections: output => {{ site.collections[0].output }} label => {{ site.collections[0].label }}\""]
+	1847088852432 [label="I have an \"collection_metadata.html\" page that contains \"Methods metadata: {{ site.collections[0].foo }} {{ site.collections[0] }}\""]
+	1847088855840 -> 1847088852432
+	1847088852432 [label="I have an \"collection_metadata.html\" page that contains \"Methods metadata: {{ site.collections[0].foo }} {{ site.collections[0] }}\""]
+	1847088853056 [label="I have fixture collections"]
+	1847088855840 -> 1847088853056
+	1847088853056 [label="I have fixture collections"]
+	1847088853104 [label="I have a \"_methods/static-file.txt\" file that contains \"Static Content {{ site.title }}\""]
+	1847088855840 -> 1847088853104
+	1847088853104 [label="I have a \"_methods/static-file.txt\" file that contains \"Static Content {{ site.title }}\""]
+	1847088853488 [label="I have a \"_config.yml\" file with content:"]
+	1847088855840 -> 1847088853488
+	1847088853488 [label="I have a \"_config.yml\" file with content:"]
+}

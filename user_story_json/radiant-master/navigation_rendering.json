@@ -1,0 +1,36 @@
+{
+    "feature_name": "Rendering the navigation tag",
+    "user_story": {
+        "as_a": "As the system",
+        "i_want": "I should parse radius tags",
+        "so_that": "render the website content properly",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"designer\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to layouts",
+                        "I follow \"Main\"",
+                        "I fill in the \"layout_content\" content with the text",
+                        "I press \"Save Changes\"",
+                        "I follow \"Logout\"",
+                        "I go to \"/\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the page should render",
+                        "I go to \"/first\""
+                    ],
+                    [
+                        "the page should render"
+                    ]
+                ]
+            }
+        ]
+    }
+}

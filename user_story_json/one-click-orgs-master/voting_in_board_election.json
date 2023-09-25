@@ -1,0 +1,27 @@
+{
+    "feature_name": "Voting in board election",
+    "user_story": {
+        "as_a": "Member",
+        "i_want": "vote for new Directors electronically",
+        "so_that": "have a say in who runs the co-op",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is an electronic vote for new directors in progress"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I place my vote for the new directors I want"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "my vote should be counted"
+                    ]
+                ]
+            }
+        ]
+    }
+}

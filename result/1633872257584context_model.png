@@ -1,0 +1,16 @@
+// 1633872256720 Context Model
+digraph {
+	1633872257584 [label=Context103]
+	1633872257728 [label="I have a _includes directory"]
+	1633872257584 -> 1633872257728
+	1633872257728 [label="I have a _includes directory"]
+	1633872257824 [label="I have a \"_includes/invalid.html\" file that contains \"{{ site.title | prepend 'Prepended Text' }}\""]
+	1633872257584 -> 1633872257824
+	1633872257824 [label="I have a \"_includes/invalid.html\" file that contains \"{{ site.title | prepend 'Prepended Text' }}\""]
+	1633872257920 [label="I have a \"index.html\" page with layout \"simple\" that contains \"{% include invalid.html %}\""]
+	1633872257584 -> 1633872257920
+	1633872257920 [label="I have a \"index.html\" page with layout \"simple\" that contains \"{% include invalid.html %}\""]
+	1633872258016 [label="I have a simple layout that contains \"{{ content }}\""]
+	1633872257584 -> 1633872258016
+	1633872258016 [label="I have a simple layout that contains \"{{ content }}\""]
+}

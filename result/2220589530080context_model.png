@@ -1,0 +1,13 @@
+// 2220589529360 Context Model
+digraph {
+	2220589530080 [label=Context1]
+	2220589530224 [label="I have a configuration file with \"permalink\" set to \"none\""]
+	2220589530080 -> 2220589530224
+	2220589530224 [label="I have a configuration file with \"permalink\" set to \"none\""]
+	2220589530320 [label="I have a _drafts directory"]
+	2220589530080 -> 2220589530320
+	2220589530320 [label="I have a _drafts directory"]
+	2220589530416 [label="I have the following draft:"]
+	2220589530080 -> 2220589530416
+	2220589530416 [label="I have the following draft:"]
+}

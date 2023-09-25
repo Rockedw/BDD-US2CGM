@@ -1,0 +1,339 @@
+// Goal Model
+digraph {
+	1847134518864 [label="developer and EY admin
+goal"]
+	1847134015056 [label="
+goal
+140728069287616"]
+	1847134518864 -> 1847134015056
+	1847134015056 [label="
+goal"]
+	1847134015920 [label="Seeing a list of endorsements
+goal
+1847134025808"]
+	1847134015056 -> 1847134015920
+	1847134015920 [label="Seeing a list of endorsements
+goal"]
+	1847134018080 [label="Viewing a endorsement
+goal
+1847134011648"]
+	1847134015056 -> 1847134018080
+	1847134018080 [label="Viewing a endorsement
+goal"]
+	1847134024848 [label="Deleting a endorsement
+goal
+1847134012512"]
+	1847134015056 -> 1847134024848
+	1847134024848 [label="Deleting a endorsement
+goal"]
+	1847134022784 [label="I am on the admin dashboard
+task
+140728069287616"]
+	1847134024848 -> 1847134022784
+	1847134022784 [label="I am on the admin dashboard
+task"]
+	1847134073040 [label="I follow something
+goal
+140728069287616"]
+	1847134024848 -> 1847134073040
+	1847134073040 [label="I follow something
+goal"]
+	1847134024560 [label="I follow \"Endorsements\"
+task
+140728069287616"]
+	1847134073040 -> 1847134024560
+	1847134024560 [label="I follow \"Endorsements\"
+task"]
+	1847134012368 [label="I follow \"Steve Martin\"
+task
+140728069287616"]
+	1847134073040 -> 1847134012368
+	1847134012368 [label="I follow \"Steve Martin\"
+task"]
+	1847134017696 [label="I press \"endorsement.admin.delete\" translation
+task
+140728069287616"]
+	1847134024848 -> 1847134017696
+	1847134017696 [label="I press \"endorsement.admin.delete\" translation
+task"]
+	1847134019808 [label="list display state
+goal
+140728069287616"]
+	1847134015056 -> 1847134019808
+	1847134019808 [label="list display state
+goal"]
+	1847134024944 [label="List should display approved state
+goal
+1847134025568"]
+	1847134019808 -> 1847134024944
+	1847134024944 [label="List should display approved state
+goal"]
+	1847134016736 [label="I am on the admin dashboard
+task
+140728069287616"]
+	1847134024944 -> 1847134016736
+	1847134016736 [label="I am on the admin dashboard
+task"]
+	1847134025376 [label="I follow \"navigation.endorsements\" translation
+task
+140728069287616"]
+	1847134024944 -> 1847134025376
+	1847134025376 [label="I follow \"navigation.endorsements\" translation
+task"]
+	1847134016496 [label="List should display rejected state
+goal
+1847134014240"]
+	1847134019808 -> 1847134016496
+	1847134016496 [label="List should display rejected state
+goal"]
+	1847134012608 [label="I am on the admin dashboard
+task
+140728069287616"]
+	1847134016496 -> 1847134012608
+	1847134012608 [label="I am on the admin dashboard
+task"]
+	1847134012416 [label="I follow \"navigation.endorsements\" translation
+task
+140728069287616"]
+	1847134016496 -> 1847134012416
+	1847134012416 [label="I follow \"navigation.endorsements\" translation
+task"]
+	1847134017264 [label="
+goal
+140728069287616"]
+	1847134518864 -> 1847134017264
+	1847134017264 [label="
+goal"]
+	1847134017120 [label="Creating a new provider
+goal
+1847134019856"]
+	1847134017264 -> 1847134017120
+	1847134017120 [label="Creating a new provider
+goal"]
+	1847134002080 [label="I fill
+in something
+goal
+140728069287616"]
+	1847134017120 -> 1847134002080
+	1847134002080 [label="I fill
+in something
+goal"]
+	1847134016064 [label="I fill in \"City\" with \"Dublin\"
+task
+140728069287616"]
+	1847134002080 -> 1847134016064
+	1847134016064 [label="I fill in \"City\" with \"Dublin\"
+task"]
+	1847134014000 [label="I fill in \"Company name\" with \"Pullover\"
+task
+140728069287616"]
+	1847134002080 -> 1847134014000
+	1847134014000 [label="I fill in \"Company name\" with \"Pullover\"
+task"]
+	1847134015776 [label="I press \"Save\"
+task
+140728069287616"]
+	1847134017120 -> 1847134015776
+	1847134015776 [label="I press \"Save\"
+task"]
+	1847134015152 [label="Editing a provider
+goal
+1847134023360"]
+	1847134017264 -> 1847134015152
+	1847134015152 [label="Editing a provider
+goal"]
+	1847134022592 [label="I am on the admin dashboard
+task
+140728069287616"]
+	1847134015152 -> 1847134022592
+	1847134022592 [label="I am on the admin dashboard
+task"]
+	1847134025328 [label="I follow something
+goal
+140728069287616"]
+	1847134015152 -> 1847134025328
+	1847134025328 [label="I follow something
+goal"]
+	1847134013184 [label="I follow developer
+goal
+140728069287616"]
+	1847134025328 -> 1847134013184
+	1847134013184 [label="I follow developer
+goal"]
+	1847134018848 [label="I follow \"Developers\"
+task
+140728069287616"]
+	1847134013184 -> 1847134018848
+	1847134018848 [label="I follow \"Developers\"
+task"]
+	1847134021536 [label="I follow \"Edit developer\"
+task
+140728069287616"]
+	1847134013184 -> 1847134021536
+	1847134021536 [label="I follow \"Edit developer\"
+task"]
+	1847134024704 [label="I follow \"Pullover\"
+task
+140728069287616"]
+	1847134025328 -> 1847134024704
+	1847134024704 [label="I follow \"Pullover\"
+task"]
+	1847134016256 [label="I fill
+in something
+goal
+140728069287616"]
+	1847134015152 -> 1847134016256
+	1847134016256 [label="I fill
+in something
+goal"]
+	1847134019952 [label="I fill in \"Street address\" with \"Market street\"
+task
+140728069287616"]
+	1847134016256 -> 1847134019952
+	1847134019952 [label="I fill in \"Street address\" with \"Market street\"
+task"]
+	1847134017984 [label="I fill in \"Company name\" with \"Gown\"
+task
+140728069287616"]
+	1847134016256 -> 1847134017984
+	1847134017984 [label="I fill in \"Company name\" with \"Gown\"
+task"]
+	1847134027296 [label="I select \"flagged\" from \"Status\"
+task
+140728069287616"]
+	1847134015152 -> 1847134027296
+	1847134027296 [label="I select \"flagged\" from \"Status\"
+task"]
+	1847134001984 [label="I check something
+goal
+140728069287616"]
+	1847134015152 -> 1847134001984
+	1847134001984 [label="I check something
+goal"]
+	1847134021632 [label="I check \"Ruby on Rails\"
+task
+140728069287616"]
+	1847134001984 -> 1847134021632
+	1847134021632 [label="I check \"Ruby on Rails\"
+task"]
+	1847134018608 [label="I check \"Visual design\"
+task
+140728069287616"]
+	1847134001984 -> 1847134018608
+	1847134018608 [label="I check \"Visual design\"
+task"]
+	1847134023600 [label="I press \"Save\"
+task
+140728069287616"]
+	1847134015152 -> 1847134023600
+	1847134023600 [label="I press \"Save\"
+task"]
+	1847134020000 [label="Viewing a provider
+goal
+1847134021200"]
+	1847134017264 -> 1847134020000
+	1847134020000 [label="Viewing a provider
+goal"]
+	1847134018128 [label="Seeing a list of providers
+goal
+1847134027200"]
+	1847134017264 -> 1847134018128
+	1847134018128 [label="Seeing a list of providers
+goal"]
+	1847134017552 [label="Deleting a provider
+goal
+1847134064112"]
+	1847134017264 -> 1847134017552
+	1847134017552 [label="Deleting a provider
+goal"]
+	1847134019472 [label="I follow something
+goal
+140728069287616"]
+	1847134017552 -> 1847134019472
+	1847134019472 [label="I follow something
+goal"]
+	1847134065264 [label="I follow \"Developers\"
+task
+140728069287616"]
+	1847134019472 -> 1847134065264
+	1847134065264 [label="I follow \"Developers\"
+task"]
+	1847134068048 [label="I follow \"HJ\"
+task
+140728069287616"]
+	1847134019472 -> 1847134068048
+	1847134068048 [label="I follow \"HJ\"
+task"]
+	1847134062384 [label="I press \"Delete this provider\"
+task
+140728069287616"]
+	1847134017552 -> 1847134062384
+	1847134062384 [label="I press \"Delete this provider\"
+task"]
+	1847134026720 [label="
+goal
+140728069287616"]
+	1847134518864 -> 1847134026720
+	1847134026720 [label="
+goal"]
+	1847078511680 [label=" see list
+goal
+140728069287616"]
+	1847134026720 -> 1847078511680
+	1847078511680 [label=" see list
+goal"]
+	1847134065648 [label="Seeing a list of rfps
+goal
+1847134066800"]
+	1847078511680 -> 1847134065648
+	1847134065648 [label="Seeing a list of rfps
+goal"]
+	1847134064160 [label="Seeing a list of one rfp
+goal
+1847134072512"]
+	1847078511680 -> 1847134064160
+	1847134064160 [label="Seeing a list of one rfp
+goal"]
+	1847134065456 [label="Viewing an rfp
+goal
+1847134062096"]
+	1847134026720 -> 1847134065456
+	1847134065456 [label="Viewing an rfp
+goal"]
+	1847134064304 [label="Deleting an RFP
+goal
+1847134006256"]
+	1847134026720 -> 1847134064304
+	1847134064304 [label="Deleting an RFP
+goal"]
+	1847134008608 [label="I am on the admin dashboard
+task
+140728069287616"]
+	1847134064304 -> 1847134008608
+	1847134008608 [label="I am on the admin dashboard
+task"]
+	1847134013904 [label="I follow something
+goal
+140728069287616"]
+	1847134064304 -> 1847134013904
+	1847134013904 [label="I follow something
+goal"]
+	1847134010576 [label="I follow \"Requests\"
+task
+140728069287616"]
+	1847134013904 -> 1847134010576
+	1847134010576 [label="I follow \"Requests\"
+task"]
+	1847134008416 [label="I follow \"Unwieldy\"
+task
+140728069287616"]
+	1847134013904 -> 1847134008416
+	1847134008416 [label="I follow \"Unwieldy\"
+task"]
+	1847134004480 [label="I press \"Delete Request\"
+task
+140728069287616"]
+	1847134064304 -> 1847134004480
+	1847134004480 [label="I press \"Delete Request\"
+task"]
+}

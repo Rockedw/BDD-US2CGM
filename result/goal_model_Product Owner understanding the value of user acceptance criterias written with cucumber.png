@@ -1,0 +1,23 @@
+// Goal Model
+digraph {
+	1847117878880 [label="Product Owner understanding the value of user acceptance criterias written with cucumber
+goal"]
+	1847088852720 [label="have a simple read access to the latest version of cucumber features for my application (available on /features)
+goal
+140728069287616"]
+	1847117878880 -> 1847088852720
+	1847088852720 [label="have a simple read access to the latest version of cucumber features for my application (available on /features)
+goal"]
+	1847088855024 [label="Courgette homepage
+goal
+1847088851424"]
+	1847088852720 -> 1847088855024
+	1847088855024 [label="Courgette homepage
+goal"]
+	1847088853200 [label="Not available in production env (I don't know how to test this)
+goal
+140728069287616"]
+	1847088852720 -> 1847088853200
+	1847088853200 [label="Not available in production env (I don't know how to test this)
+goal"]
+}

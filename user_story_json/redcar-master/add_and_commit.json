@@ -1,0 +1,45 @@
+{
+    "feature_name": "Adding and committing files in a working copy",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I checkout a local repository",
+                        "I create a wc file named \"README,foo.rb\"",
+                        "I add \"foo.rb\" to the index",
+                        "I commit my changes with message \"Hark! This is a commit.\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be \"1\" unindexed files and \"0\" indexed files",
+                        "if I checkout to a new working copy, it should have \"1\" files"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I checkout a local repository",
+                        "I create a wc directory named \"lib\"",
+                        "I create a wc file named \"lib/foo.rb\"",
+                        "I add \"lib/foo.rb\" to the index",
+                        "I commit my changes with message \"Hark! This is a commit.\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be \"0\" unindexed files and \"0\" indexed files",
+                        "if I checkout to a new working copy, it should have \"1\" files"
+                    ]
+                ]
+            }
+        ]
+    }
+}

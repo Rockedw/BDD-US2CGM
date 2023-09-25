@@ -1,0 +1,65 @@
+// Goal Model
+digraph {
+	1847134470000 [label="So that I can adapt the system to new tech types as they are required without modifying code
+goal"]
+	1847134162848 [label="be able to add and remove services
+goal
+140728069287616"]
+	1847134470000 -> 1847134162848
+	1847134162848 [label="be able to add and remove services
+goal"]
+	1847134159152 [label="I follow \"Services\"
+task
+140728069287616"]
+	1847134162848 -> 1847134159152
+	1847134159152 [label="I follow \"Services\"
+task"]
+	1847134164720 [label="I follow \"Add a New Service\"
+task
+140728069287616"]
+	1847134162848 -> 1847134164720
+	1847134164720 [label="I follow \"Add a New Service\"
+task"]
+	1847134163520 [label="I fill in \"Name\" with \"Java\"
+task
+140728069287616"]
+	1847134162848 -> 1847134163520
+	1847134163520 [label="I fill in \"Name\" with \"Java\"
+task"]
+	1847134169760 [label="I check \"service[checked]\"
+task
+140728069287616"]
+	1847134162848 -> 1847134169760
+	1847134169760 [label="I check \"service[checked]\"
+task"]
+	1847134167408 [label="I press \"Save\"
+task
+140728069287616"]
+	1847134162848 -> 1847134167408
+	1847134167408 [label="I press \"Save\"
+task"]
+	1847134160688 [label="I follow \"Edit\"
+task
+140728069287616"]
+	1847134162848 -> 1847134160688
+	1847134160688 [label="I follow \"Edit\"
+task"]
+	1847134171008 [label="I fill in \"Name\" with \"Ruby on Rails\"
+task
+140728069287616"]
+	1847134162848 -> 1847134171008
+	1847134171008 [label="I fill in \"Name\" with \"Ruby on Rails\"
+task"]
+	1847134172880 [label="I press \"Save\"
+task
+140728069287616"]
+	1847134162848 -> 1847134172880
+	1847134172880 [label="I press \"Save\"
+task"]
+	1847134174032 [label="I follow \"Delete\"
+task
+140728069287616"]
+	1847134162848 -> 1847134174032
+	1847134174032 [label="I follow \"Delete\"
+task"]
+}

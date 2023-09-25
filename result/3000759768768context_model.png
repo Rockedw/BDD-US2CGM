@@ -1,0 +1,22 @@
+// 3000759776880 Context Model
+digraph {
+	3000759768768 [label=Context4]
+	3000759763296 [label="I am on the login page"]
+	3000759768768 -> 3000759763296
+	3000759763296 [label="I am on the login page"]
+	3000759769872 [label="I fill in \"Email\" with \"calfaculty@berk.edu\""]
+	3000759768768 -> 3000759769872
+	3000759769872 [label="I fill in \"Email\" with \"calfaculty@berk.edu\""]
+	3000759775344 [label="I fill in \"Password\" with \"1234\""]
+	3000759768768 -> 3000759775344
+	3000759775344 [label="I fill in \"Password\" with \"1234\""]
+	3000759770976 [label="I press \"Login\""]
+	3000759768768 -> 3000759770976
+	3000759770976 [label="I press \"Login\""]
+	3000759776256 [label="I follow \"Fall 2012\""]
+	3000759768768 -> 3000759776256
+	3000759776256 [label="I follow \"Fall 2012\""]
+	3000759767232 [label="I follow \"My Mentor Teachers\""]
+	3000759768768 -> 3000759767232
+	3000759767232 [label="I follow \"My Mentor Teachers\""]
+}

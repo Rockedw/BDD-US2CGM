@@ -1,0 +1,67 @@
+{
+    "feature_name": "editing the profile in the mobile view",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am signed in on the mobile website",
+                        "I go to the edit profile page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in the following:",
+                        "I select \"1986\" from \"profile_date_year\"",
+                        "I select \"30\" from \"profile_date_day\"",
+                        "I select \"November\" from \"profile_date_month\"",
+                        "I fill in \"profile[tag_string]\" with \"#starwars\"",
+                        "I press the first \".as-result-item\" within \".as-results\"",
+                        "I press \"Update profile\""
+                    ],
+                    [
+                        "I fill in \"profile[tag_string]\" with \"#kamino\"",
+                        "I press the first \".as-result-item\" within \".as-results\"",
+                        "I press \"Update profile\""
+                    ],
+                    [
+                        "I accept the alert after I attach the file \"spec/fixtures/bad_urls.txt\" to \"qqfile\" within \"#file-upload\"",
+                        "I attach the file \"spec/fixtures/button.png\" to hidden \"qqfile\" within \"#file-upload\""
+                    ],
+                    [
+                        "I go to my edit profile page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on my edit profile page",
+                        "I should see \"Profile updated\"",
+                        "the \"profile_gender\" field should contain \"Fearless\"",
+                        "the \"profile_first_name\" field should contain \"Boba\"",
+                        "the \"profile_last_name\" field should contain \"Fett\"",
+                        "the \"profile_bio\" field should contain \"This is a bio\"",
+                        "the \"profile_date_year\" field should be filled with \"1986\"",
+                        "the \"profile_date_month\" field should be filled with \"11\"",
+                        "the \"profile_date_day\" field should be filled with \"30\"",
+                        "the \"profile_location\" field should be filled with \"Kamino\"",
+                        "I should see \"#starwars\" within \"ul#as-selections-tags\""
+                    ],
+                    [
+                        "I should see \"#kamino\" within \"ul#as-selections-tags\"",
+                        "I should see \"#starwars\" within \"ul#as-selections-tags\""
+                    ],
+                    [
+                        "I should see \"button.png completed\"",
+                        "I should see a \"img\" within \"#profile_photo_upload\""
+                    ],
+                    [
+                        "I should see a \"img\" within \"#profile_photo_upload\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+// 2084500896064 Context Model
+digraph {
+	2084500894240 [label=Context5]
+	2084506422912 [label="The default settings exist using factories"]
+	2084500894240 -> 2084506422912
+	2084506422912 [label="The default settings exist using factories"]
+	2084506421328 [label="the database has been seeded"]
+	2084500894240 -> 2084506421328
+	2084506421328 [label="the database has been seeded"]
+	2084506430352 [label="the default project links exist using factories"]
+	2084500894240 -> 2084506430352
+	2084506430352 [label="the default project links exist using factories"]
+	2084506425888 [label="I am logged in with the username student"]
+	2084500894240 -> 2084506425888
+	2084506425888 [label="I am logged in with the username student"]
+}

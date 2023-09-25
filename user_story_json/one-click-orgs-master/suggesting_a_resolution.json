@@ -1,0 +1,32 @@
+{
+    "feature_name": "Suggesting a resolution",
+    "user_story": {
+        "as_a": "member",
+        "i_want": "suggest a resolution for consideration",
+        "so_that": "bring an issue up with the membership",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a co-op",
+                        "I am a Member of the co-op"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Resolutions page",
+                        "I press \"Create a proposal\"",
+                        "I enter the text for the new resolution",
+                        "I press \"Submit suggestion\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the new proposal",
+                        "the Secretary should receive a notification of the new suggested resolution"
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+// 1633872592320 Context Model
+digraph {
+	1633872589920 [label=Context32]
+	1633872589776 [label="it is the year 2005"]
+	1633872589920 -> 1633872589776
+	1633872589776 [label="it is the year 2005"]
+	1633872583824 [label="I have configured git sanely"]
+	1633872589920 -> 1633872583824
+	1633872583824 [label="I have configured git sanely"]
+}

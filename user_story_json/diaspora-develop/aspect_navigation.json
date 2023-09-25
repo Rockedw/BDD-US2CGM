@@ -1,0 +1,105 @@
+{
+    "feature_name": "Aspect navigation on the left menu",
+    "user_story": {
+        "as_a": "diaspora user",
+        "i_want": "use the aspect navigation menu",
+        "so_that": "filter posts visibility and post targeting",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the aspects page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Besties\" aspect selected"
+                    ],
+                    [
+                        "I should see \"Unicorns\" aspect selected"
+                    ],
+                    [
+                        "I should see \"Others\" aspect selected"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I select only \"Besties\" aspect"
+                    ],
+                    [
+                        "I go to the stream page",
+                        "I go to the aspects page"
+                    ],
+                    [
+                        "I go to the contacts page",
+                        "I go to the aspects page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the aspects page"
+                    ],
+                    [
+                        "I should see \"Besties\" aspect selected",
+                        "I should see \"Unicorns\" aspect unselected",
+                        "I should see \"Others\" aspect unselected"
+                    ],
+                    [
+                        "I should see \"Besties\" aspect selected"
+                    ],
+                    [
+                        "I should see \"Unicorns\" aspect unselected"
+                    ],
+                    [
+                        "I should see \"Others\" aspect unselected"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the aspects page",
+                        "I select only \"Besties\" aspect",
+                        "I select \"Unicorns\" aspect as well"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Besties\" aspect selected"
+                    ],
+                    [
+                        "I should see \"Unicorns\" aspect selected"
+                    ],
+                    [
+                        "I should see \"Others\" aspect unselected"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the aspects page",
+                        "I follow \"Deselect all\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Besties\" aspect unselected"
+                    ],
+                    [
+                        "I should see \"Unicorns\" aspect unselected"
+                    ],
+                    [
+                        "I should see \"Others\" aspect unselected"
+                    ]
+                ]
+            }
+        ]
+    }
+}

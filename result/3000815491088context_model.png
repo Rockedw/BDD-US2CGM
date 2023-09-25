@@ -1,0 +1,16 @@
+// 3000814668192 Context Model
+digraph {
+	3000815491088 [label=Context2]
+	3000815499728 [label="a logged in admin user"]
+	3000815491088 -> 3000815499728
+	3000815499728 [label="a logged in admin user"]
+	3000815495072 [label="I am on the admin dashboard"]
+	3000815491088 -> 3000815495072
+	3000815495072 [label="I am on the admin dashboard"]
+	3000815488976 [label="a provider \"Natalie Haas\""]
+	3000815491088 -> 3000815488976
+	3000815488976 [label="a provider \"Natalie Haas\""]
+	3000815497904 [label="a portfolio item \"Fire and Grace\" belonging to the \"Natalie Haas\" provider"]
+	3000815491088 -> 3000815497904
+	3000815497904 [label="a portfolio item \"Fire and Grace\" belonging to the \"Natalie Haas\" provider"]
+}

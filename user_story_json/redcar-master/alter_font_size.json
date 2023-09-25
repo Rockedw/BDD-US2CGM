@@ -1,0 +1,60 @@
+{
+    "feature_name": "The font size can be increased and decreased within bounds",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I set the font size to 14"
+                    ],
+                    [
+                        "I set the font size to maximum",
+                        "I increase the font size",
+                        "I increase the font size"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the font size should be 14",
+                        "I increase the font size"
+                    ],
+                    [
+                        "the font size should be 15"
+                    ],
+                    [
+                        "the font size should be maximum"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I set the font size to 21"
+                    ],
+                    [
+                        "I set the font size to minimum",
+                        "I decrease the font size",
+                        "I decrease the font size"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the font size should be 21",
+                        "I decrease the font size"
+                    ],
+                    [
+                        "the font size should be 20"
+                    ],
+                    [
+                        "the font size should be minimum"
+                    ]
+                ]
+            }
+        ]
+    }
+}

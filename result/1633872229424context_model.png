@@ -1,0 +1,16 @@
+// 1633872228368 Context Model
+digraph {
+	1633872229424 [label=Context83]
+	1633872229568 [label="I have a movies/_posts directory"]
+	1633872229424 -> 1633872229568
+	1633872229568 [label="I have a movies/_posts directory"]
+	1633872229664 [label="I have a \"movies/_posts/2009-03-27-star-wars.html\" page with layout \"simple\" that contains \"hi\""]
+	1633872229424 -> 1633872229664
+	1633872229664 [label="I have a \"movies/_posts/2009-03-27-star-wars.html\" page with layout \"simple\" that contains \"hi\""]
+	1633872229760 [label="I have a _layouts directory"]
+	1633872229424 -> 1633872229760
+	1633872229760 [label="I have a _layouts directory"]
+	1633872229856 [label="I have a simple layout that contains \"Post category: {{ page.categories }}\""]
+	1633872229424 -> 1633872229856
+	1633872229856 [label="I have a simple layout that contains \"Post category: {{ page.categories }}\""]
+}

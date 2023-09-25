@@ -1,0 +1,413 @@
+{
+    "feature_name": "Create sites",
+    "user_story": {
+        "as_a": "hacker who likes to blog",
+        "i_want": "be able to make a static site",
+        "so_that": "share my awesome ideas with the interwebs",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I do not have a \"test_blank\" directory"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll new test_blank --blank"
+                    ],
+                    [
+                        "I run jekyll build --source test_blank --destination test_blank/_site"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the test_blank/_data directory should exist",
+                        "the test_blank/_drafts directory should exist",
+                        "the test_blank/_includes directory should exist",
+                        "the test_blank/_layouts directory should exist",
+                        "the test_blank/_posts directory should exist",
+                        "the test_blank/_sass directory should exist",
+                        "the test_blank/assets/css directory should exist",
+                        "the \"test_blank/_layouts/default.html\" file should exist",
+                        "the \"test_blank/_sass/base.scss\" file should exist",
+                        "the \"test_blank/assets/css/main.scss\" file should exist",
+                        "the \"test_blank/_config.yml\" file should exist",
+                        "the \"test_blank/index.md\" file should exist"
+                    ],
+                    [
+                        "I should get a zero exit status",
+                        "the test_blank/_site directory should exist",
+                        "I should see \"Start developing\" in \"test_blank/_site/index.html\"",
+                        "I should see \"body {\" in \"test_blank/_site/assets/css/main.css\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.html\" file that contains \"Basic Site\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Basic Site\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have the following post:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"My First Exploit\" in \"_site/2009/03/27/hackers.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _layouts directory",
+                        "I have an \"index.html\" page with layout \"default\" that contains \"Basic Site with Layout\"",
+                        "I have a default layout that contains \"Page Layout: {{ content }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Page Layout: Basic Site with Layout\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _layouts directory",
+                        "I have a _posts directory",
+                        "I have the following posts:",
+                        "I have a default layout that contains \"Post Layout: {{ content }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post Layout: <p>The only winning move is not to play.</p>\" in \"_site/2009/03/27/wargames.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _layouts directory",
+                        "I have a _posts directory",
+                        "I have the following posts:",
+                        "I have a post/simple layout that contains \"Post Layout: {{ content }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post Layout: <p>The only winning move is not to play.</p>\" in \"_site/2009/03/27/wargames.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _layouts directory",
+                        "I have a page layout that contains \"Page {{ page.title }}: {{ content }}\"",
+                        "I have a post layout that contains \"Post {{ page.title }}: {{ content }}\"",
+                        "I have an \"index.html\" page with layout \"page\" that contains \"Site contains {{ site.pages.size }} pages and {{ site.posts.size }} posts\"",
+                        "I have a blog directory",
+                        "I have a \"blog/index.html\" page with layout \"page\" that contains \"blog category index page\"",
+                        "I have an \"about.html\" file that contains \"No replacement {{ site.posts.size }}\"",
+                        "I have an \"another_file\" file that contains \"\"",
+                        "I have a _posts directory",
+                        "I have the following posts:",
+                        "I have a category/_posts directory",
+                        "I have the following posts in \"category\":"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Page : Site contains 2 pages and 4 posts\" in \"_site/index.html\"",
+                        "I should see \"No replacement \\{\\{ site.posts.size \\}\\}\" in \"_site/about.html\"",
+                        "I should see \"\" in \"_site/another_file\"",
+                        "I should see \"Page : blog category index page\" in \"_site/blog/index.html\"",
+                        "I should see \"Post entry1: <p>content for entry1.</p>\" in \"_site/2009/03/27/entry1.html\"",
+                        "I should see \"Post entry2: <p>content for entry2.</p>\" in \"_site/2009/04/27/entry2.html\"",
+                        "I should see \"Post entry3: <p>content for entry3.</p>\" in \"_site/category/2009/05/27/entry3.html\"",
+                        "I should see \"Post entry4: <p>content for entry4.</p>\" in \"_site/category/2009/06/27/entry4.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _includes directory",
+                        "I have an \"index.html\" page that contains \"Basic Site with include tag: {% include about.textile %}\"",
+                        "I have an \"_includes/about.textile\" file that contains \"Generated by Jekyll\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Basic Site with include tag: Generated by Jekyll\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _includes directory",
+                        "I have an \"_includes/about.textile\" file that contains \"Generated by Jekyll\"",
+                        "I have an info directory",
+                        "I have an \"info/index.html\" page that contains \"Basic Site with subdir include tag: {% include about.textile %}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Basic Site with subdir include tag: Generated by Jekyll\" in \"_site/info/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _includes directory",
+                        "I have an \"_includes/about.textile\" file that contains \"Generated by {% include jekyll.textile %}\"",
+                        "I have an \"_includes/jekyll.textile\" file that contains \"Jekyll\"",
+                        "I have an \"index.html\" page that contains \"Basic Site with include tag: {% include about.textile %}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Basic Site with include tag: Generated by Jekyll\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.html\" page that contains \"URL: {% post_url 2008-01-01-entry2 %}\"",
+                        "I have a configuration file with \"permalink\" set to \"pretty\"",
+                        "I have a _posts directory",
+                        "I have the following posts:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"URL: /2008/01/01/entry2/\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \".htaccess\" file that contains \"SomeDirective\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"SomeDirective\" in \"_site/.htaccess\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a \"test\" file that contains \"some stuff\""
+                    ],
+                    [
+                        "I have a test directory",
+                        "I have a \"test/index.html\" file that contains \"some other stuff\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ],
+                    [
+                        "I delete the file \"test\""
+                    ],
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist"
+                    ],
+                    [
+                        "the _site/test directory should exist",
+                        "I should see \"some other stuff\" in \"_site/test/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.html\" page with title \"index\" that contains \"Published page\"",
+                        "I have a \"public.html\" page with published \"true\" that contains \"Explicitly published page\"",
+                        "I have a \"secret.html\" page with published \"false\" that contains \"Unpublished page\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ],
+                    [
+                        "I run jekyll build --unpublished"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "the \"_site/index.html\" file should exist",
+                        "the \"_site/public.html\" file should exist"
+                    ],
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "the \"_site/index.html\" file should exist",
+                        "the \"_site/public.html\" file should exist",
+                        "the \"_site/secret.html\" file should exist"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have the following post:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ],
+                    [
+                        "I run jekyll build --future"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"content for entry2\" in \"_site/2007/12/31/entry2.html\"",
+                        "the \"_site/2040/12/31/entry1.html\" file should not exist"
+                    ],
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "the \"_site/2040/12/31/entry1.html\" file should exist"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _layouts directory",
+                        "I have a page layout that contains \"Page {{ page.title }}: {{ content }}\"",
+                        "I have a post layout that contains \"Post {{ page.title }}: {{ content }}Related posts: {{ site.related_posts | size }}\"",
+                        "I have an \"index.html\" page with layout \"page\" that contains \"Site contains {{ site.pages.size }} pages and {{ site.posts.size }} posts; Related posts: {{ site.related_posts | size }}\"",
+                        "I have a _posts directory",
+                        "I have the following posts:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Page : Site contains 1 pages and 2 posts; Related posts: 0\" in \"_site/index.html\"",
+                        "I should see \"Post entry1: <p>content for entry1.</p>\\nRelated posts: 1\" in \"_site/2009/03/27/entry1.html\"",
+                        "I should see \"Post entry2: <p>content for entry2.</p>\\nRelated posts: 1\" in \"_site/2009/04/27/entry2.html\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

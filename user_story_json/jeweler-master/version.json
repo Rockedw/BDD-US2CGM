@@ -1,0 +1,69 @@
+{
+    "feature_name": "version rake task",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I use the existing project \"existing-project-with-version-yaml\" as a template",
+                        "\"VERSION.yml\" contains hash \"{ :major => 1, :minor => 5, :patch => 3}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run \"rake version\" in \"existing-project-with-version-yaml\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the process should exit cleanly",
+                        "the current version, 1.5.3, is displayed"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I use the existing project \"existing-project-with-version-plaintext\" as a template",
+                        "\"VERSION\" contains \"1.5.3\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run \"rake version\" in \"existing-project-with-version-plaintext\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the process should exit cleanly",
+                        "the current version, 1.5.3, is displayed"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I use the existing project \"existing-project-with-version-constant\" as a template"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run \"rake version\" in \"existing-project-with-version-constant\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the process should exit cleanly",
+                        "the current version, 1.0.0, is displayed"
+                    ]
+                ]
+            }
+        ]
+    }
+}

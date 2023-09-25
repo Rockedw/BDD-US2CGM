@@ -1,0 +1,29 @@
+{
+    "feature_name": "Submitting co-op registration",
+    "user_story": {
+        "as_a": "As the founder",
+        "i_want": "submit the registration for our draft co-op",
+        "so_that": "make our co-op official",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a draft co-op",
+                        "I am the founder of the draft co-op",
+                        "the requirements for registration have been fulfilled"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I submit the registration for our co-op"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see that our registration has been submitted"
+                    ]
+                ]
+            }
+        ]
+    }
+}

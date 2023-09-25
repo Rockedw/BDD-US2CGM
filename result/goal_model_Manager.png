@@ -1,0 +1,143 @@
+// Goal Model
+digraph {
+	1847133482688 [label="Manager
+goal"]
+	1847138470592 [label="update a users account information
+goal
+1847138476160"]
+	1847133482688 -> 1847138470592
+	1847138470592 [label="update a users account information
+goal"]
+	1847138474480 [label="Managers can change a users email address
+goal
+140728069287616"]
+	1847138470592 -> 1847138474480
+	1847138474480 [label="Managers can change a users email address
+goal"]
+	1847138474720 [label="I am logged in with the username mymanager
+task
+140728069287616"]
+	1847138474480 -> 1847138474720
+	1847138474720 [label="I am logged in with the username mymanager
+task"]
+	1847138481440 [label="I am on the user preferences page for the user \"<username>\"
+task
+140728069287616"]
+	1847138474480 -> 1847138481440
+	1847138481440 [label="I am on the user preferences page for the user \"<username>\"
+task"]
+	1847138475584 [label="I fill in \"user_email\" with \"<changed_email>\"
+task
+140728069287616"]
+	1847138474480 -> 1847138475584
+	1847138475584 [label="I fill in \"user_email\" with \"<changed_email>\"
+task"]
+	1847138469056 [label="I press \"Save\"
+task
+140728069287616"]
+	1847138474480 -> 1847138469056
+	1847138469056 [label="I press \"Save\"
+task"]
+	1847138474432 [label="I am on the user preferences page for the user \"<username>\"
+task
+140728069287616"]
+	1847138474480 -> 1847138474432
+	1847138474432 [label="I am on the user preferences page for the user \"<username>\"
+task"]
+	1847138483312 [label="Managers can change a users password
+goal
+140728069287616"]
+	1847138470592 -> 1847138483312
+	1847138483312 [label="Managers can change a users password
+goal"]
+	1847138483744 [label="I am logged in with the username mymanager
+task
+140728069287616"]
+	1847138483312 -> 1847138483744
+	1847138483744 [label="I am logged in with the username mymanager
+task"]
+	1847138482928 [label="I am on the user list page
+task
+140728069287616"]
+	1847138483312 -> 1847138482928
+	1847138482928 [label="I am on the user list page
+task"]
+	1847138472032 [label="I click \"Reset Password\" for user: \"<userlogin>\"
+task
+140728069287616"]
+	1847138483312 -> 1847138472032
+	1847138472032 [label="I click \"Reset Password\" for user: \"<userlogin>\"
+task"]
+	1847138478272 [label="I fill in \"user_reset_password_password\" with \"<new_password>\"
+task
+140728069287616"]
+	1847138483312 -> 1847138478272
+	1847138478272 [label="I fill in \"user_reset_password_password\" with \"<new_password>\"
+task"]
+	1847138473808 [label="I fill in \"user_reset_password_password_confirmation\" with \"<new_password>\"
+task
+140728069287616"]
+	1847138483312 -> 1847138473808
+	1847138473808 [label="I fill in \"user_reset_password_password_confirmation\" with \"<new_password>\"
+task"]
+	1847138474384 [label="I press \"Save\"
+task
+140728069287616"]
+	1847138483312 -> 1847138474384
+	1847138474384 [label="I press \"Save\"
+task"]
+	1847138481200 [label="I log out
+task
+140728069287616"]
+	1847138483312 -> 1847138481200
+	1847138481200 [label="I log out
+task"]
+	1847138483984 [label="I login with username: <userlogin> password: <new_password>
+task
+140728069287616"]
+	1847138483312 -> 1847138483984
+	1847138483984 [label="I login with username: <userlogin> password: <new_password>
+task"]
+	1847138470304 [label="Managers can activate users
+goal
+140728069287616"]
+	1847138470592 -> 1847138470304
+	1847138470304 [label="Managers can activate users
+goal"]
+	1847138469968 [label="there is an unactivated user named \"justsignedup\"
+task
+140728069287616"]
+	1847138470304 -> 1847138469968
+	1847138469968 [label="there is an unactivated user named \"justsignedup\"
+task"]
+	1847138472944 [label="I am logged in with the username mymanager
+task
+140728069287616"]
+	1847138470304 -> 1847138472944
+	1847138472944 [label="I am logged in with the username mymanager
+task"]
+	1847138479568 [label="I am on the user list page
+task
+140728069287616"]
+	1847138470304 -> 1847138479568
+	1847138479568 [label="I am on the user list page
+task"]
+	1847138479808 [label="I look for the user by searching \"justsignedup\"
+task
+140728069287616"]
+	1847138470304 -> 1847138479808
+	1847138479808 [label="I look for the user by searching \"justsignedup\"
+task"]
+	1847138471408 [label="I should see \"justsignedup\"
+task
+140728069287616"]
+	1847138470304 -> 1847138471408
+	1847138471408 [label="I should see \"justsignedup\"
+task"]
+	1847138475536 [label="I activate the user from user list by searching \"justsignedup\"
+task
+140728069287616"]
+	1847138470304 -> 1847138475536
+	1847138475536 [label="I activate the user from user list by searching \"justsignedup\"
+task"]
+}

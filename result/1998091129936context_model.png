@@ -1,0 +1,10 @@
+// 1998091139632 Context Model
+digraph {
+	1998091129936 [label=Context78]
+	1998091132912 [label="I need a \"account.analytic.journal\" with oid: scen.fr_analytic_journal"]
+	1998091129936 -> 1998091132912
+	1998091132912 [label="I need a \"account.analytic.journal\" with oid: scen.fr_analytic_journal"]
+	1998091128976 [label="having:"]
+	1998091129936 -> 1998091128976
+	1998091128976 [label="having:"]
+}

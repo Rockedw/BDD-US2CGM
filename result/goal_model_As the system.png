@@ -1,0 +1,47 @@
+// Goal Model
+digraph {
+	1847134470000 [label="As the system
+goal"]
+	1847134316112 [label="I should parse radius tags
+goal
+140728069287616"]
+	1847134470000 -> 1847134316112
+	1847134316112 [label="I should parse radius tags
+goal"]
+	1847134171104 [label="I go to layouts
+task
+140728069287616"]
+	1847134316112 -> 1847134171104
+	1847134171104 [label="I go to layouts
+task"]
+	1847134174320 [label="I follow \"Main\"
+task
+140728069287616"]
+	1847134316112 -> 1847134174320
+	1847134174320 [label="I follow \"Main\"
+task"]
+	1847134167408 [label="I fill in the \"layout_content\" content with the text
+task
+140728069287616"]
+	1847134316112 -> 1847134167408
+	1847134167408 [label="I fill in the \"layout_content\" content with the text
+task"]
+	1847134174032 [label="I press \"Save Changes\"
+task
+140728069287616"]
+	1847134316112 -> 1847134174032
+	1847134174032 [label="I press \"Save Changes\"
+task"]
+	1847134170960 [label="I follow \"Logout\"
+task
+140728069287616"]
+	1847134316112 -> 1847134170960
+	1847134170960 [label="I follow \"Logout\"
+task"]
+	1847134172784 [label="I go to \"/\"
+task
+140728069287616"]
+	1847134316112 -> 1847134172784
+	1847134172784 [label="I go to \"/\"
+task"]
+}

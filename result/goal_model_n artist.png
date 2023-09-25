@@ -1,0 +1,59 @@
+// Goal Model
+digraph {
+	1847125302896 [label="n artist
+goal"]
+	1847125302944 [label="upload images to a collection on my profile
+goal
+1847125300736"]
+	1847125302896 -> 1847125302944
+	1847125302944 [label="upload images to a collection on my profile
+goal"]
+	1847133174512 [label=" upload something
+goal
+140728069287616"]
+	1847125302944 -> 1847133174512
+	1847133174512 [label=" upload something
+goal"]
+	1847125305248 [label="uploading the first of a category in the right format without specifying group
+goal
+140728069287616"]
+	1847133174512 -> 1847125305248
+	1847125305248 [label="uploading the first of a category in the right format without specifying group
+goal"]
+	1847125304048 [label="I attach an image
+task
+140728069287616"]
+	1847125305248 -> 1847125304048
+	1847125304048 [label="I attach an image
+task"]
+	1847125308944 [label="I give it a title, medium, genre and captions
+task
+140728069287616"]
+	1847125305248 -> 1847125308944
+	1847125308944 [label="I give it a title, medium, genre and captions
+task"]
+	1847125308560 [label="I click submit
+task
+140728069287616"]
+	1847125305248 -> 1847125308560
+	1847125308560 [label="I click submit
+task"]
+	1847125302464 [label="not uploading anything
+goal
+140728069287616"]
+	1847133174512 -> 1847125302464
+	1847125302464 [label="not uploading anything
+goal"]
+	1847125300688 [label="not specifying a title
+goal
+140728069287616"]
+	1847125302944 -> 1847125300688
+	1847125300688 [label="not specifying a title
+goal"]
+	1847125300976 [label="have my three preferred works on my profile cover
+goal
+140728069287616"]
+	1847125302896 -> 1847125300976
+	1847125300976 [label="have my three preferred works on my profile cover
+goal"]
+}

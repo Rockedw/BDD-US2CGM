@@ -1,0 +1,22 @@
+// 1910822279568 Context Model
+digraph {
+	1910822277840 [label=Context6]
+	1910822279136 [label="I am on the login page"]
+	1910822277840 -> 1910822279136
+	1910822279136 [label="I am on the login page"]
+	1910822278416 [label="I fill in \"Email\" with \"calfaculty@berk.edu\""]
+	1910822277840 -> 1910822278416
+	1910822278416 [label="I fill in \"Email\" with \"calfaculty@berk.edu\""]
+	1910822276352 [label="I fill in \"Password\" with \"1234\""]
+	1910822277840 -> 1910822276352
+	1910822276352 [label="I fill in \"Password\" with \"1234\""]
+	1910822278032 [label="I press \"Login\""]
+	1910822277840 -> 1910822278032
+	1910822278032 [label="I press \"Login\""]
+	1910822280768 [label="I follow \"Fall 2012\""]
+	1910822277840 -> 1910822280768
+	1910822280768 [label="I follow \"Fall 2012\""]
+	1910822281584 [label="I follow \"My Students\""]
+	1910822277840 -> 1910822281584
+	1910822281584 [label="I follow \"My Students\""]
+}

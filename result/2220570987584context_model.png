@@ -1,0 +1,13 @@
+// 2220570990224 Context Model
+digraph {
+	2220570987584 [label=Context1]
+	2220570991088 [label="there is a draft co-op"]
+	2220570987584 -> 2220570991088
+	2220570991088 [label="there is a draft co-op"]
+	2220570999632 [label="I am a founder member of the draft co-op"]
+	2220570987584 -> 2220570999632
+	2220570999632 [label="I am a founder member of the draft co-op"]
+	2220570795872 [label="there are at least two directors"]
+	2220570987584 -> 2220570795872
+	2220570795872 [label="there are at least two directors"]
+}

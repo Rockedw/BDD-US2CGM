@@ -1,0 +1,13 @@
+// 1982217792592 Context Model
+digraph {
+	1982217794224 [label=Context134]
+	1982217794368 [label="I have a _posts directory"]
+	1982217794224 -> 1982217794368
+	1982217794368 [label="I have a _posts directory"]
+	1982217794464 [label="I have a configuration file with:"]
+	1982217794224 -> 1982217794464
+	1982217794464 [label="I have a configuration file with:"]
+	1982217794560 [label="I have the following posts:"]
+	1982217794224 -> 1982217794560
+	1982217794560 [label="I have the following posts:"]
+}

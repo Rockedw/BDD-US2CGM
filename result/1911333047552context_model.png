@@ -1,0 +1,10 @@
+// 1911333046688 Context Model
+digraph {
+	1911333047552 [label=Context30]
+	1911333047696 [label="following users exist:"]
+	1911333047552 -> 1911333047696
+	1911333047696 [label="following users exist:"]
+	1911333047792 [label="a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\""]
+	1911333047552 -> 1911333047792
+	1911333047792 [label="a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\""]
+}

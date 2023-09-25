@@ -1,0 +1,13 @@
+// 1998092762368 Context Model
+digraph {
+	1998092762848 [label=Context15]
+	1998092828784 [label="I will choose \"plugins/project/spec/fixtures/myproject\" from the \"open_directory\" dialog"]
+	1998092762848 -> 1998092828784
+	1998092828784 [label="I will choose \"plugins/project/spec/fixtures/myproject\" from the \"open_directory\" dialog"]
+	1998092828880 [label="I open a directory"]
+	1998092762848 -> 1998092828880
+	1998092828880 [label="I open a directory"]
+	1998092828976 [label="I have opened \"README\" from the project"]
+	1998092762848 -> 1998092828976
+	1998092828976 [label="I have opened \"README\" from the project"]
+}

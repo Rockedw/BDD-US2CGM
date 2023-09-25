@@ -1,0 +1,31 @@
+// 3000759768864 Context Model
+digraph {
+	3000759774528 [label=Context2]
+	3000782777760 [label="the following semesters exists:"]
+	3000759774528 -> 3000782777760
+	3000782777760 [label="the following semesters exists:"]
+	3000782777424 [label="the following cal course exists:"]
+	3000759774528 -> 3000782777424
+	3000782777424 [label="the following cal course exists:"]
+	3000782769312 [label="the following timeslots exist:"]
+	3000759774528 -> 3000782769312
+	3000782769312 [label="the following timeslots exist:"]
+	3000782776752 [label="the following courses exist:"]
+	3000759774528 -> 3000782776752
+	3000782776752 [label="the following courses exist:"]
+	3000782770560 [label="the following districts exist:"]
+	3000759774528 -> 3000782770560
+	3000782770560 [label="the following districts exist:"]
+	3000782769888 [label="the following schools exist:"]
+	3000759774528 -> 3000782769888
+	3000782769888 [label="the following schools exist:"]
+	3000782772768 [label="Given the following mentor teachers exist:"]
+	3000759774528 -> 3000782772768
+	3000782772768 [label="Given the following mentor teachers exist:"]
+	3000782773152 [label="I am signed up as a student advisor"]
+	3000759774528 -> 3000782773152
+	3000782773152 [label="I am signed up as a student advisor"]
+	3000782772384 [label="I am logged in as myemail@nowhere.com"]
+	3000759774528 -> 3000782772384
+	3000782772384 [label="I am logged in as myemail@nowhere.com"]
+}

@@ -1,0 +1,92 @@
+{
+    "feature_name": "Download Photos",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am signed in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I click on my name in the header"
+                    ],
+                    [
+                        "I follow \"Settings\""
+                    ],
+                    [
+                        "I follow \"Request my photos\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on my account settings page"
+                    ],
+                    [
+                        "I should see a flash message indicating success",
+                        "I should see a flash message containing \"We are currently processing your photos\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am signed in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I did request my photos",
+                        "I click on my name in the header"
+                    ],
+                    [
+                        "I follow \"Settings\""
+                    ],
+                    [
+                        "I follow \"Refresh my photos\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on my account settings page"
+                    ],
+                    [
+                        "I should see a flash message indicating success",
+                        "I should see a flash message containing \"We are currently processing your photos\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am signed in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I did request my photos",
+                        "I click on my name in the header"
+                    ],
+                    [
+                        "I follow \"Settings\""
+                    ],
+                    [
+                        "I follow \"Download my photos\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on my account settings page"
+                    ],
+                    [
+                        "I should get a zipped file"
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+// 1847088852672 Context Model
+digraph {
+	1847088854784 [label=Context119]
+	1847088851424 [label="I will choose \"no\" from the \"message_box\" dialog"]
+	1847088854784 -> 1847088851424
+	1847088851424 [label="I will choose \"no\" from the \"message_box\" dialog"]
+	1847088855024 [label="I close the focussed tab"]
+	1847088854784 -> 1847088855024
+	1847088855024 [label="I close the focussed tab"]
+	1847088856272 [label="the edit tab updates its contents"]
+	1847088854784 -> 1847088856272
+	1847088856272 [label="the edit tab updates its contents"]
+}

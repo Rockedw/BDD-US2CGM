@@ -1,0 +1,28 @@
+// 1998093066800 Context Model
+digraph {
+	1998093058688 [label=Context1]
+	1998092831136 [label="an external activity named \"Fun Stuff\" with the definition"]
+	1998093058688 -> 1998092831136
+	1998092831136 [label="an external activity named \"Fun Stuff\" with the definition"]
+	1998092838912 [label="a modified version of the external activity named \"Fun Stuff\" with the definition"]
+	1998093058688 -> 1998092838912
+	1998092838912 [label="a modified version of the external activity named \"Fun Stuff\" with the definition"]
+	1998092834688 [label="a sequence named \"Many fun things\" with the definition"]
+	1998093058688 -> 1998092834688
+	1998092834688 [label="a sequence named \"Many fun things\" with the definition"]
+	1998092837904 [label="a modified version of the sequence named \"Many fun things\" with the definition"]
+	1998093058688 -> 1998092837904
+	1998092837904 [label="a modified version of the sequence named \"Many fun things\" with the definition"]
+	1998092833104 [label="an external_report with the URL \"https://reports.concord.org/act\""]
+	1998093058688 -> 1998092833104
+	1998092833104 [label="an external_report with the URL \"https://reports.concord.org/act\""]
+	1998092842224 [label="an external_report with the URL \"https://reports.concord.org/act/changed\""]
+	1998093058688 -> 1998092842224
+	1998092842224 [label="an external_report with the URL \"https://reports.concord.org/act/changed\""]
+	1998092837424 [label="an external_report with the URL \"https://reports.concord.org/seq\""]
+	1998093058688 -> 1998092837424
+	1998092837424 [label="an external_report with the URL \"https://reports.concord.org/seq\""]
+	1998092837040 [label="an external_report with the URL \"https://reports.concord.org/seq/changed\""]
+	1998093058688 -> 1998092837040
+	1998092837040 [label="an external_report with the URL \"https://reports.concord.org/seq/changed\""]
+}

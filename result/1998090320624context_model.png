@@ -1,0 +1,7 @@
+// 1998090308912 Context Model
+digraph {
+	1998090320624 [label=Context1]
+	1998090311216 [label="I create database \"openerp_test_customer\" with admin password \"admin\""]
+	1998090320624 -> 1998090311216
+	1998090311216 [label="I create database \"openerp_test_customer\" with admin password \"admin\""]
+}

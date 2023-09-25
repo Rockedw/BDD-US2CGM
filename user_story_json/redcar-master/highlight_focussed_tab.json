@@ -1,0 +1,94 @@
+{
+    "feature_name": "Highlight the File of the focussed tab in tree",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "there should be one edit tab"
+                    ],
+                    [
+                        "\"README\" should be selected in the project tree"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "\"README\" should be selected in the project tree",
+                        "I have opened \"lib/foo_lib.rb\" from the project",
+                        "I have opened \"spec/foo_spec.rb\" from the project"
+                    ],
+                    [
+                        "there should be 3 edit tabs",
+                        "\"foo_spec.rb\" should be selected in the project tree",
+                        "I switch up a tab"
+                    ],
+                    [
+                        "\"foo_lib.rb\" should be selected in the project tree",
+                        "I switch up a tab"
+                    ],
+                    [
+                        "\"README\" should be selected in the project tree"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "\"vendor/bar.rb\" should be selected in the project tree",
+                        "I switch up a tab"
+                    ],
+                    [
+                        "\"spec/foo_spec.rb\" should be selected in the project tree",
+                        "I switch notebooks"
+                    ],
+                    [
+                        "\"lib/foo_lib.rb\" should be selected in the project tree"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "there should be one edit tab"
+                    ],
+                    [
+                        "\"README\" should be selected in the project tree",
+                        "I open a \"ruby\" repl"
+                    ],
+                    [
+                        "\"README\" should be selected in the project tree"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I <disable highlighting>"
+                    ],
+                    [
+                        "I have opened \"lib/foo_lib.rb\" from the project"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "\"README\" should be selected in the project tree"
+                    ]
+                ]
+            }
+        ]
+    }
+}

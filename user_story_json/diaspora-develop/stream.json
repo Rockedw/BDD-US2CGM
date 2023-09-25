@@ -1,0 +1,25 @@
+{
+    "feature_name": "Viewing the main stream mobile page",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I sign in as \"bob@bob.bob\" on the mobile website",
+                        "I go to the stream page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Hello! I am #newhere\" within \".ltr\"",
+                        "I should see \"less than a minute ago\" within \"#main-stream\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+// 1982200110224 Context Model
+digraph {
+	1982200117856 [label=Context1]
+	1982200115360 [label="following users exist:"]
+	1982200117856 -> 1982200115360
+	1982200115360 [label="following users exist:"]
+	1982200116800 [label="a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\""]
+	1982200117856 -> 1982200116800
+	1982200116800 [label="a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\""]
+	1982200104080 [label="\"bob@bob.bob\" has a public post with text \"I like unicorns\""]
+	1982200117856 -> 1982200104080
+	1982200104080 [label="\"bob@bob.bob\" has a public post with text \"I like unicorns\""]
+	1982200118912 [label="I sign in as \"alice@alice.alice\""]
+	1982200117856 -> 1982200118912
+	1982200118912 [label="I sign in as \"alice@alice.alice\""]
+}

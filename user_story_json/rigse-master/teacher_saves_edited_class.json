@@ -1,0 +1,88 @@
+{
+    "feature_name": "Teacher edits and saves class information",
+    "user_story": {
+        "as_a": "teacher",
+        "i_want": "edit my classes",
+        "so_that": "keep my classes updated",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"Taylor, P. (peterson)\"",
+                        "I should see \"Nash, J. (teacher)\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "\"Fernandez, A. (albert)\" should be a teacher option"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I select \"Fernandez, A. (albert)\" from \"teacher_id_selector\"",
+                        "I press \"Add\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Fernandez, A. (albert)\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I follow remove image for the teacher name \"Taylor, P. (peterson)\"",
+                        "accept the dialog"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see the remove image for the teacher name \"Taylor, P. (peterson)\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I follow remove image for the teacher name \"Nash, J. (teacher)\"",
+                        "accept the dialog"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see the remove image for the teacher name \"Nash, J. (teacher)\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I fill in Class Name with \"Basic Electronics\"",
+                        "I fill Description with \"This is a biology class\"",
+                        "I fill Class Word with \"BETRX\"",
+                        "I press \"Save\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on Instructional Materials page for \"Basic Electronics\"",
+                        "I should see \"Class was successfully updated.\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,344 @@
+{
+    "feature_name": "Fancy permalinks",
+    "user_story": {
+        "as_a": "hacker who likes to blog",
+        "i_want": "be able to set permalinks",
+        "so_that": "make my blog URLs awesome",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have the following post:",
+                        "I have a configuration file with \"permalink\" set to \"none\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Totally nothing.\" in \"_site/none-permalink-schema.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have the following post:",
+                        "I have a configuration file with \"permalink\" set to \"pretty\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Totally wordpress.\" in \"_site/2009/03/27/pretty-permalink-schema/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.html\" page that contains \"Totally index\"",
+                        "I have an \"awesome.html\" page that contains \"Totally awesome\"",
+                        "I have an \"sitemap.xml\" page that contains \"Totally uhm, sitemap\"",
+                        "I have a configuration file with \"permalink\" set to \"pretty\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Totally index\" in \"_site/index.html\"",
+                        "I should see \"Totally awesome\" in \"_site/awesome/index.html\"",
+                        "I should see \"Totally uhm, sitemap\" in \"_site/sitemap.xml\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have the following post:",
+                        "I have a configuration file with \"permalink\" set to \"/blog/:year/:month/:day/:title/\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Totally custom.\" in \"_site/blog/2009/03/27/custom-permalink-schema/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have the following post:",
+                        "I have a configuration file with \"permalink\" set to \"/:categories/:title.html\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Totally custom.\" in \"_site/stuff/custom-permalink-schema.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have the following post:",
+                        "I have a configuration file with \"permalink\" set to \"/:month-:day-:year/:title.html\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Totally custom.\" in \"_site/03-27-2009/custom-permalink-schema.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with:",
+                        "I have a _posts directory",
+                        "I have the following post:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Totally custom.\" in \"_site/20090327223107.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have the following post:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "the _site/custom/posts/1 directory should exist",
+                        "I should see \"bla bla\" in \"_site/custom/posts/1/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have the following post:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "the _site/custom/posts directory should exist",
+                        "I should see \"bla bla\" in \"_site/custom/posts/some.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have an \"_posts/2009-03-27-Pretty-Permalink-Schema.md\" page that contains \"Totally wordpress\"",
+                        "I have a configuration file with \"permalink\" set to \"pretty\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Totally wordpress.\" in \"_site/2009/03/27/Pretty-Permalink-Schema/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have an \"_posts/2009-03-27-Custom-Schema.md\" page with title \"Custom Schema\" that contains \"Totally awesome\"",
+                        "I have a configuration file with \"permalink\" set to \"/:year/:month/:day/:slug/\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Totally awesome\" in \"_site/2009/03/27/custom-schema/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have an \"_posts/2009-03-27-Custom_Schema.md\" page with title \"Custom Schema\" that contains \"Totally awesome\"",
+                        "I have a configuration file with \"permalink\" set to \"pretty\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Totally awesome\" in \"_site/2009/03/27/Custom_Schema/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have an \"_posts/2016-01-18-i-am-php.md\" page with permalink \"/2016/i-am-php.php\" that contains \"I am PHP\"",
+                        "I have a \"i-am-also-php.md\" page with permalink \"/i-am-also-php.php\" that contains \"I am also PHP\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"I am PHP\" in \"_site/2016/i-am-php.php\"",
+                        "I should see \"I am also PHP\" in \"_site/i-am-also-php.php\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a \"cool.md\" page with permalink \"/amazing.html\" that contains \"I am cool\"",
+                        "I have an \"awesome.md\" page with permalink \"/amazing.html\" that contains \"I am also awesome\"",
+                        "I have an \"amazing.html\" file with content:",
+                        "I have a \"_config.yml\" file with content:",
+                        "I have a _puppies directory",
+                        "I have the following documents under the puppies collection:",
+                        "I have a _posts directory",
+                        "I have the following post:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Conflict: The following destination is shared by multiple files.\" in the build output",
+                        "I should see \"_site/amazing.html\" in the build output",
+                        "I should see \"awesome.md\" in the build output",
+                        "I should see \"cool.md\" in the build output",
+                        "I should see \"amazing.html\" in the build output",
+                        "I should see \"_site/puppies/2009/03/27/rover.html\" in the build output",
+                        "I should see \"_posts/2009-03-27-rover.markdown\" in the build output",
+                        "I should see \"_puppies/rover.md\" in the build output"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with \"plugins\" set to \"[jekyll-redirect-from]\"",
+                        "I have a \"deals.html\" file with content:",
+                        "I have a \"offers.html\" page with permalink \"/offers/\" that contains \"Hurry! Limited time only!\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should not see \"Conflict: The following destination is shared by multiple files.\" in the build output",
+                        "I should not see \"_site/offers/index.html\" in the build output",
+                        "I should not see \"offers.html\" in the build output",
+                        "I should not see \"redirect.html\" in the build output"
+                    ]
+                ]
+            }
+        ]
+    }
+}

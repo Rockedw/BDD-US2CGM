@@ -1,0 +1,16 @@
+// 1982200547456 Context Model
+digraph {
+	1982200547696 [label=Context33]
+	1982200547840 [label="I have a _posts directory"]
+	1982200547696 -> 1982200547840
+	1982200547840 [label="I have a _posts directory"]
+	1982200547936 [label="I have a _posts/snippets directory"]
+	1982200547696 -> 1982200547936
+	1982200547936 [label="I have a _posts/snippets directory"]
+	1982200548032 [label="I have the following post:"]
+	1982200547696 -> 1982200548032
+	1982200548032 [label="I have the following post:"]
+	1982200548128 [label="I have an \"_posts/snippets/welcome_para.md\" file that contains \"Welcome back Dear Reader!\""]
+	1982200547696 -> 1982200548128
+	1982200548128 [label="I have an \"_posts/snippets/welcome_para.md\" file that contains \"Welcome back Dear Reader!\""]
+}

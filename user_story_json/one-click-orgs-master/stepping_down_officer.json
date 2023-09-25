@@ -1,0 +1,34 @@
+{
+    "feature_name": "Stepping down officer",
+    "user_story": {
+        "as_a": "As the secretary",
+        "i_want": "record the stepping down of an officer",
+        "so_that": "keep the records of officers up-to-date",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a co-op",
+                        "I am the Secretary of the co-op",
+                        "there is an office \"Treasurer\"",
+                        "the office is occupied by \"Claire Simmons\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Directors page",
+                        "I step down \"Claire Simmons\"",
+                        "I certify the stepping down",
+                        "I save the stepping down"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Directors page",
+                        "I should not see \"Claire Simmons\" listed as the \"Treasurer\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

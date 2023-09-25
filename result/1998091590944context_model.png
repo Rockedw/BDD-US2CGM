@@ -1,0 +1,10 @@
+// 1998091552704 Context Model
+digraph {
+	1998091590944 [label=Context7]
+	1998091591472 [label="I need a \"account.tax.code\" with oid: scen.taxe_code_base_EU_purchases"]
+	1998091590944 -> 1998091591472
+	1998091591472 [label="I need a \"account.tax.code\" with oid: scen.taxe_code_base_EU_purchases"]
+	1998091597808 [label="having:"]
+	1998091590944 -> 1998091597808
+	1998091597808 [label="having:"]
+}

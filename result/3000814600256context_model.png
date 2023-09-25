@@ -1,0 +1,16 @@
+// 3000790416256 Context Model
+digraph {
+	3000814600256 [label=Context32]
+	3000814600496 [label="following users exist:"]
+	3000814600256 -> 3000814600496
+	3000814600496 [label="following users exist:"]
+	3000814600592 [label="a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\""]
+	3000814600256 -> 3000814600592
+	3000814600592 [label="a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\""]
+	3000814600688 [label="\"alice@alice.alice\" has a public post with text \"check this out!\""]
+	3000814600256 -> 3000814600688
+	3000814600688 [label="\"alice@alice.alice\" has a public post with text \"check this out!\""]
+	3000814600784 [label="\"alice@alice.alice\" has commented mentioning \"bob@bob.bob\" on \"check this out!\""]
+	3000814600256 -> 3000814600784
+	3000814600784 [label="\"alice@alice.alice\" has commented mentioning \"bob@bob.bob\" on \"check this out!\""]
+}

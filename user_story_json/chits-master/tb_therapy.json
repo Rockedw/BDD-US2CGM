@@ -1,0 +1,85 @@
+{
+    "feature_name": "TB Therapy",
+    "user_story": {
+        "as_a": "chits user",
+        "i_want": "",
+        "so_that": "efficiently manage patient into a TB Therapy data",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"user\" with password \"user\"",
+                        "I click \"TODAY'S PATIENTS\"",
+                        "I should see \"CONSULTS TODAY\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"last\" with \"garcia\"",
+                        "I press \"Search\"",
+                        "I should see \"SEARCH RESULTS\"",
+                        "I choose \"consult_patient_id\"",
+                        "I press \"Select Patient\"",
+                        "I should see \"VISIT DETAILS\"",
+                        "I check by value \"NTP\"",
+                        "I press \"Save Details\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"TB Therapy\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"user\" with password \"user\"",
+                        "I click \"TODAY'S PATIENTS\"",
+                        "I should see \"CONSULTS TODAY\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"last\" with \"garcia\"",
+                        "I fill in \"first\" with \"andres\"",
+                        "I press \"Search\"",
+                        "I should see \"SEARCH RESULTS\"",
+                        "I choose \"consult_patient_id\"",
+                        "I press \"Select Patient\"",
+                        "I should see \"VISIT DETAILS\"",
+                        "I check by value \"NTP\"",
+                        "I press \"Save Details\"",
+                        "I should see \"TB Therapy\"",
+                        "I click \"TB Therapy\"",
+                        "I should see \"form_ntp_visit1\"",
+                        "I select \"Accountant\" from \"occupation\"",
+                        "I select \"1\" from \"hh_contacts\"",
+                        "I select \"Yes\" from \"bcg_scar\"",
+                        "I select \"Pulmonary\" from \"tb_class\"",
+                        "I select \"Bicol\" from \"region\"",
+                        "I fill in \"contact_person\" with \"09088656911\"",
+                        "I select \"New Patient\" from \"patient_type\"",
+                        "I select \"Regimen 1\" from \"treatment_category\"",
+                        "I select \"Pulmonary\" from \"tb_class\"",
+                        "I select \"Barangay Health Worker\" from \"treatment_partner\"",
+                        "I select \"Cured\" from \"treatment_outcome\"",
+                        "I press \"Save NTP Data\"",
+                        "I click \"CONSULT\"",
+                        "I should see \"form_consult\"",
+                        "I press \"End Consult\"",
+                        "I should see \"Are you sure you want to end this consult?\""
+                    ],
+                    [
+                        "I press \"Yes\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"CONSULTS TODAY\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,174 @@
+{
+    "feature_name": "posting with a poll",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "\"#poll_creator_container\" is hidden"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I expand the publisher"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see an element \"#poll_creator\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "\"#poll_creator_container\" is hidden"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I expand the publisher",
+                        "I click on selector \"#poll_creator\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see an element \"#poll_creator_container\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "\"#poll_creator_container\" is hidden"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I expand the publisher",
+                        "I click on selector \"#poll_creator\"",
+                        "I fill in values for the first two options",
+                        "I lose focus"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see 3 options"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "\"#poll_creator_container\" is hidden"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I expand the publisher",
+                        "I click on selector \"#poll_creator\"",
+                        "I fill in values for the first two options",
+                        "I lose focus",
+                        "I delete the last option"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see 2 options",
+                        "I should not see a remove icon"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I expand the publisher",
+                        "I click on selector \"#poll_creator\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in the following:",
+                        "I fill in the following for the options:",
+                        "I press \"Share\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a \".poll-form\" within \".stream-element\"",
+                        "I should see a \"form\" within \".stream-element\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I expand the publisher",
+                        "I click on selector \"#poll_creator\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in the following:",
+                        "I fill in the following for the options:",
+                        "I press \"Share\"",
+                        "I check the first option",
+                        "I press \"Vote\" within \".stream-element\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see an element \".progress-bar\"",
+                        "I should see an element \".percentage\"",
+                        "I should see \"1 vote so far\" within \".poll-statistic\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I expand the publisher",
+                        "I click on selector \"#poll_creator\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in the following:",
+                        "I fill in the following for the options:",
+                        "I press \"Share\"",
+                        "I click on selector \".toggle-result\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see an element \".percentage\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I expand the publisher",
+                        "I click on selector \"#poll_creator\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in the following:",
+                        "I fill in the following for the options:",
+                        "I click on selector \"#poll_creator_container\"",
+                        "I click on selector \"#publisher button#submit\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see an element \".poll-answer input.error\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,118 @@
+{
+    "feature_name": "Line delimiter",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo\\r\\nbar\\r\\nbaz\\r\\n\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the line delimiter should be \"\\r\\n\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo\\r\\nbar\\r\\nbaz\\r\\n\"",
+                        "I move the cursor to (0,3)",
+                        "I press the Delete key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"foobar\\r\\nbaz\\r\\n\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo\\r\\nbar\\r\\nbaz\\r\\n\"",
+                        "I move the cursor to (1,0)",
+                        "I press the Backspace key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"foobar\\r\\nbaz\\r\\n\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo\\nbar\\nbaz\\n\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the line delimiter should be \"\\n\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo\\nbar\\nbaz\\n\"",
+                        "I move the cursor to (0,3)",
+                        "I press the Delete key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"foobar\\nbaz\\n\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo\\nbar\\nbaz\\n\"",
+                        "I move the cursor to (1,0)",
+                        "I press the Backspace key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"foobar\\nbaz\\n\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo\\r\\nbar\\r\\nbaz\\r\\n\"",
+                        "I move the cursor to (0,0)",
+                        "I select menu item \"Edit|Document Navigation|End\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at (0,3)"
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "feature_name": "mentioning a contact from their profile page",
+    "user_story": {
+        "as_a": "rock star",
+        "i_want": "mention someone more cool than the average bear",
+        "so_that": "enlighten humanity for the good of society",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am on \"alice@alice.alice\"'s page",
+                        "I want to mention her from the profile",
+                        "I append \"I am eating a yogurt\" to the publisher in the mention modal",
+                        "I press \"Share\" in the mention modal"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the aspects page",
+                        "I follow \"PostingTo\" within \"#aspects_list\""
+                    ],
+                    [
+                        "I am on the aspects page",
+                        "I follow \"NotPostingThingsHere\" within \"#aspects_list\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a flash message indicating success"
+                    ],
+                    [
+                        "I should see \"I am eating a yogurt\""
+                    ],
+                    [
+                        "I should see \"I am eating a yogurt\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on \"alice@alice.alice\"'s page",
+                        "I want to mention her from the profile",
+                        "I append \"I am eating a yogurt\" to the publisher in the mention modal",
+                        "I press the aspect dropdown in the mention modal",
+                        "I toggle the aspect \"NotPostingThingsHere\" in the mention modal",
+                        "I press the aspect dropdown in the mention modal",
+                        "I press \"Share\" in the mention modal"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the aspects page",
+                        "I select only \"PostingTo\" aspect"
+                    ],
+                    [
+                        "I am on the aspects page",
+                        "I select all aspects",
+                        "I select only \"NotPostingThingsHere\" aspect"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a flash message indicating success"
+                    ],
+                    [
+                        "I should see \"I am eating a yogurt\""
+                    ],
+                    [
+                        "I should not see \"I am eating a yogurt\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

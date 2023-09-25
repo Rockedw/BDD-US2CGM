@@ -1,0 +1,407 @@
+// Goal Model
+digraph {
+	1847078511680 [label="hacker who likes to structure content
+goal"]
+	1847088852528 [label="be able to create collections of similar information
+goal
+140728069287616"]
+	1847078511680 -> 1847088852528
+	1847088852528 [label="be able to create collections of similar information
+goal"]
+	1847088855360 [label="Unrendered collection
+goal
+1847088856704"]
+	1847088852528 -> 1847088855360
+	1847088855360 [label="Unrendered collection
+goal"]
+	1847088852912 [label="I run jekyll build
+task
+140728069287616"]
+	1847088855360 -> 1847088852912
+	1847088852912 [label="I run jekyll build
+task"]
+	1847088853152 [label="Rendered collection
+goal
+1847088855840"]
+	1847088852528 -> 1847088853152
+	1847088853152 [label="Rendered collection
+goal"]
+	1847088855696 [label="I run jekyll build
+task
+140728069287616"]
+	1847088853152 -> 1847088855696
+	1847088855696 [label="I run jekyll build
+task"]
+	1847088854448 [label="Rendered collection at a custom URL
+goal
+1847133386160"]
+	1847088852528 -> 1847088854448
+	1847088854448 [label="Rendered collection at a custom URL
+goal"]
+	1847133383760 [label="I run jekyll build
+task
+140728069287616"]
+	1847088854448 -> 1847133383760
+	1847133383760 [label="I run jekyll build
+task"]
+	1847088854352 [label="Rendered document in a layout
+goal
+1847133383136"]
+	1847088852528 -> 1847088854352
+	1847088854352 [label="Rendered document in a layout
+goal"]
+	1847133387120 [label="I run jekyll build
+task
+140728069287616"]
+	1847088854352 -> 1847133387120
+	1847133387120 [label="I run jekyll build
+task"]
+	1847133386352 [label="Collections specified as an array
+goal
+1847133388320"]
+	1847088852528 -> 1847133386352
+	1847133386352 [label="Collections specified as an array
+goal"]
+	1847133387216 [label="I run jekyll build
+task
+140728069287616"]
+	1847133386352 -> 1847133387216
+	1847133387216 [label="I run jekyll build
+task"]
+	1847133385920 [label="Collections specified as an hash
+goal
+1847133386064"]
+	1847088852528 -> 1847133385920
+	1847133385920 [label="Collections specified as an hash
+goal"]
+	1847133382992 [label="I run jekyll build
+task
+140728069287616"]
+	1847133385920 -> 1847133382992
+	1847133382992 [label="I run jekyll build
+task"]
+	1847133383712 [label="Rendered collection with document with future date
+goal
+1847133387408"]
+	1847088852528 -> 1847133383712
+	1847133383712 [label="Rendered collection with document with future date
+goal"]
+	1847133383808 [label="I run jekyll build
+task
+140728069287616"]
+	1847133383712 -> 1847133383808
+	1847133383808 [label="I run jekyll build
+task"]
+	1847133387504 [label="I run jekyll build --future
+task
+140728069287616"]
+	1847133383712 -> 1847133387504
+	1847133387504 [label="I run jekyll build --future
+task"]
+	1847133386928 [label="Access rendered collection with future dated document via Liquid
+goal
+1847133388272"]
+	1847088852528 -> 1847133386928
+	1847133386928 [label="Access rendered collection with future dated document via Liquid
+goal"]
+	1847133388080 [label="I run jekyll build
+task
+140728069287616"]
+	1847133386928 -> 1847133388080
+	1847133388080 [label="I run jekyll build
+task"]
+	1847133384432 [label="I run jekyll build --future
+task
+140728069287616"]
+	1847133386928 -> 1847133384432
+	1847133384432 [label="I run jekyll build --future
+task"]
+	1847133383376 [label="Access rendered and published collection documents via Liquid
+goal
+1847133557696"]
+	1847088852528 -> 1847133383376
+	1847133383376 [label="Access rendered and published collection documents via Liquid
+goal"]
+	1847133384576 [label="I run jekyll build
+task
+140728069287616"]
+	1847133383376 -> 1847133384576
+	1847133384576 [label="I run jekyll build
+task"]
+	1847133555536 [label="I run jekyll build --future
+task
+140728069287616"]
+	1847133383376 -> 1847133555536
+	1847133555536 [label="I run jekyll build --future
+task"]
+	1847133385056 [label="Unrendered collection with future dated document
+goal
+1847133553808"]
+	1847088852528 -> 1847133385056
+	1847133385056 [label="Unrendered collection with future dated document
+goal"]
+	1847133553376 [label="I run jekyll build
+task
+140728069287616"]
+	1847133385056 -> 1847133553376
+	1847133553376 [label="I run jekyll build
+task"]
+	1847133562112 [label="I run jekyll build --future
+task
+140728069287616"]
+	1847133385056 -> 1847133562112
+	1847133562112 [label="I run jekyll build --future
+task"]
+	1847133557072 [label="Access unrendered collection with future dated document via Liquid
+goal
+1847133561152"]
+	1847088852528 -> 1847133557072
+	1847133557072 [label="Access unrendered collection with future dated document via Liquid
+goal"]
+	1847133557744 [label="I run jekyll build
+task
+140728069287616"]
+	1847133557072 -> 1847133557744
+	1847133557744 [label="I run jekyll build
+task"]
+	1847133560144 [label="I run jekyll build --future
+task
+140728069287616"]
+	1847133557072 -> 1847133560144
+	1847133560144 [label="I run jekyll build --future
+task"]
+	1847133561296 [label="Access unrendered but publishable collection documents via Liquid
+goal
+1847133553664"]
+	1847088852528 -> 1847133561296
+	1847133561296 [label="Access unrendered but publishable collection documents via Liquid
+goal"]
+	1847133554960 [label="I run jekyll build
+task
+140728069287616"]
+	1847133561296 -> 1847133554960
+	1847133554960 [label="I run jekyll build
+task"]
+	1847133554528 [label="I run jekyll build --future
+task
+140728069287616"]
+	1847133561296 -> 1847133554528
+	1847133554528 [label="I run jekyll build --future
+task"]
+	1847133561488 [label="Access rendered collection with future date and unpublished flag via Liquid
+goal
+1847133558176"]
+	1847088852528 -> 1847133561488
+	1847133561488 [label="Access rendered collection with future date and unpublished flag via Liquid
+goal"]
+	1847133556304 [label="I run jekyll build
+task
+140728069287616"]
+	1847133561488 -> 1847133556304
+	1847133556304 [label="I run jekyll build
+task"]
+	1847133557216 [label="I run jekyll build --unpublished
+task
+140728069287616"]
+	1847133561488 -> 1847133557216
+	1847133557216 [label="I run jekyll build --unpublished
+task"]
+	1847133555872 [label="I run jekyll build --unpublished --future
+task
+140728069287616"]
+	1847133561488 -> 1847133555872
+	1847133555872 [label="I run jekyll build --unpublished --future
+task"]
+	1847133558752 [label="Access unrendered collection with future date and unpublished flag via Liquid
+goal
+1847133552800"]
+	1847088852528 -> 1847133558752
+	1847133558752 [label="Access unrendered collection with future date and unpublished flag via Liquid
+goal"]
+	1847133559376 [label="I run jekyll build
+task
+140728069287616"]
+	1847133558752 -> 1847133559376
+	1847133559376 [label="I run jekyll build
+task"]
+	1847133560624 [label="I run jekyll build --unpublished
+task
+140728069287616"]
+	1847133558752 -> 1847133560624
+	1847133560624 [label="I run jekyll build --unpublished
+task"]
+	1847133560960 [label="I run jekyll build --unpublished --future
+task
+140728069287616"]
+	1847133558752 -> 1847133560960
+	1847133560960 [label="I run jekyll build --unpublished --future
+task"]
+	1847133555056 [label="All the documents
+goal
+1847133555728"]
+	1847088852528 -> 1847133555056
+	1847133555056 [label="All the documents
+goal"]
+	1847133555104 [label="I run jekyll build
+task
+140728069287616"]
+	1847133555056 -> 1847133555104
+	1847133555104 [label="I run jekyll build
+task"]
+	1847133557024 [label="Documents have an output attribute, which is the converted HTML
+goal
+1847133554672"]
+	1847088852528 -> 1847133557024
+	1847133557024 [label="Documents have an output attribute, which is the converted HTML
+goal"]
+	1847133554816 [label="I run jekyll build
+task
+140728069287616"]
+	1847133557024 -> 1847133554816
+	1847133554816 [label="I run jekyll build
+task"]
+	1847133557120 [label="Documents have an output attribute, which is the converted HTML based on site.config
+goal
+1847133552896"]
+	1847088852528 -> 1847133557120
+	1847133557120 [label="Documents have an output attribute, which is the converted HTML based on site.config
+goal"]
+	1847133555968 [label="I run jekyll build
+task
+140728069287616"]
+	1847133557120 -> 1847133555968
+	1847133555968 [label="I run jekyll build
+task"]
+	1847133557504 [label="Filter documents by where
+goal
+1847133554576"]
+	1847088852528 -> 1847133557504
+	1847133557504 [label="Filter documents by where
+goal"]
+	1847133554720 [label="I run jekyll build
+task
+140728069287616"]
+	1847133557504 -> 1847133554720
+	1847133554720 [label="I run jekyll build
+task"]
+	1847133556064 [label="Sort by title
+goal
+1847133553856"]
+	1847088852528 -> 1847133556064
+	1847133556064 [label="Sort by title
+goal"]
+	1847133559136 [label="I run jekyll build
+task
+140728069287616"]
+	1847133556064 -> 1847133559136
+	1847133559136 [label="I run jekyll build
+task"]
+	1847133554336 [label="Sort by relative_path
+goal
+1847133555248"]
+	1847088852528 -> 1847133554336
+	1847133554336 [label="Sort by relative_path
+goal"]
+	1847133552704 [label="I run jekyll build
+task
+140728069287616"]
+	1847133554336 -> 1847133552704
+	1847133552704 [label="I run jekyll build
+task"]
+	1847133557888 [label="Sort all entries by a Front Matter key defined in all entries
+goal
+1847133557264"]
+	1847088852528 -> 1847133557888
+	1847133557888 [label="Sort all entries by a Front Matter key defined in all entries
+goal"]
+	1847133560576 [label="I run jekyll build
+task
+140728069287616"]
+	1847133557888 -> 1847133560576
+	1847133560576 [label="I run jekyll build
+task"]
+	1847133555296 [label="Sort all entries by a Front Matter key defined in only some entries
+goal
+1847133559664"]
+	1847088852528 -> 1847133555296
+	1847133555296 [label="Sort all entries by a Front Matter key defined in only some entries
+goal"]
+	1847133558560 [label="I run jekyll build
+task
+140728069287616"]
+	1847133555296 -> 1847133558560
+	1847133558560 [label="I run jekyll build
+task"]
+	1847133556880 [label="Manually sort entries
+goal
+1847133558512"]
+	1847088852528 -> 1847133556880
+	1847133556880 [label="Manually sort entries
+goal"]
+	1847133554192 [label="I run jekyll build
+task
+140728069287616"]
+	1847133556880 -> 1847133554192
+	1847133554192 [label="I run jekyll build
+task"]
+	1847133557312 [label="Manually sort some entries
+goal
+1847133557552"]
+	1847088852528 -> 1847133557312
+	1847133557312 [label="Manually sort some entries
+goal"]
+	1847133561776 [label="I run jekyll build
+task
+140728069287616"]
+	1847133557312 -> 1847133561776
+	1847133561776 [label="I run jekyll build
+task"]
+	1847133558656 [label="Rendered collection with date/dateless filename
+goal
+1847133561632"]
+	1847088852528 -> 1847133558656
+	1847133558656 [label="Rendered collection with date/dateless filename
+goal"]
+	1847133561968 [label="I run jekyll build
+task
+140728069287616"]
+	1847133558656 -> 1847133561968
+	1847133561968 [label="I run jekyll build
+task"]
+	1847133562256 [label="Rendered collection with custom permalinks and static file contents
+goal
+1847133562640"]
+	1847088852528 -> 1847133562256
+	1847133562256 [label="Rendered collection with custom permalinks and static file contents
+goal"]
+	1847133562592 [label="I run jekyll build
+task
+140728069287616"]
+	1847133562256 -> 1847133562592
+	1847133562592 [label="I run jekyll build
+task"]
+	1847133561728 [label="Rendered collection with an extensionless document
+goal
+1847133563024"]
+	1847088852528 -> 1847133561728
+	1847133561728 [label="Rendered collection with an extensionless document
+goal"]
+	1847133562976 [label="I run jekyll build
+task
+140728069287616"]
+	1847133561728 -> 1847133562976
+	1847133562976 [label="I run jekyll build
+task"]
+	1847133562736 [label="Rendered collection with an extensionless document in a strict site
+goal
+1847133563408"]
+	1847088852528 -> 1847133562736
+	1847133562736 [label="Rendered collection with an extensionless document in a strict site
+goal"]
+	1847133563360 [label="I run jekyll build
+task
+140728069287616"]
+	1847133562736 -> 1847133563360
+	1847133563360 [label="I run jekyll build
+task"]
+}

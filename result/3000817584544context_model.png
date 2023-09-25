@@ -1,0 +1,16 @@
+// 3000838668400 Context Model
+digraph {
+	3000817584544 [label=Context2]
+	3000817586752 [label="I am an anonymous user"]
+	3000817584544 -> 3000817586752
+	3000817586752 [label="I am an anonymous user"]
+	3000817589104 [label="the option to allow default classes is disabled"]
+	3000817584544 -> 3000817589104
+	3000817589104 [label="the option to allow default classes is disabled"]
+	3000817591504 [label="the following classes exist:"]
+	3000817584544 -> 3000817591504
+	3000817591504 [label="the following classes exist:"]
+	3000817587328 [label="the class \"Test Class\" has the class word \"word\""]
+	3000817584544 -> 3000817587328
+	3000817587328 [label="the class \"Test Class\" has the class word \"word\""]
+}

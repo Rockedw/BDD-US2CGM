@@ -1,0 +1,135 @@
+{
+    "feature_name": "Showing commands in a command tree",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the runnables tree"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"fixture_runnables\" in the tree"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the runnables tree",
+                        "I expand the tree row \"fixture_runnables\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"An app\" in the tree"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the runnables tree",
+                        "I expand the tree row \"fixture_runnables\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"first\" in the tree",
+                        "I expand the tree row \"first\""
+                    ],
+                    [
+                        "I should see \"second\" in the tree",
+                        "I expand the tree row \"second\""
+                    ],
+                    [
+                        "I should see \"A nested app\" in the tree"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the runnables tree",
+                        "I change the command to \"A changed app\"",
+                        "I open the runnables tree",
+                        "I expand the tree row \"fixture_runnables\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"A changed app\" in the tree"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the runnables tree",
+                        "I click the project tree tab"
+                    ],
+                    [
+                        "I left-click the \"Runnables\" tree tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"fixture_runnables\" in the tree"
+                    ],
+                    [
+                        "I should see \"fixture_runnables\" in the tree"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the runnables tree",
+                        "I click the project tree tab"
+                    ],
+                    [
+                        "I right-click the \"Runnables\" tree tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"fixture_runnables\" in the tree"
+                    ],
+                    [
+                        "I should not see \"fixture_runnables\" in the tree"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "the tree width should be the minimum size",
+                        "there should not be a tree titled \"Runnables\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "the tree width should be the minimum size",
+                        "there should not be a tree titled \"Runnables\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

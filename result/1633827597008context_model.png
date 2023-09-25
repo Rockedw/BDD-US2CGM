@@ -1,0 +1,10 @@
+// 1633871679584 Context Model
+digraph {
+	1633827597008 [label=Context1]
+	1633827756096 [label="I have an \"index.md\" page that contains \"{{ site.title }}\""]
+	1633827597008 -> 1633827756096
+	1633827756096 [label="I have an \"index.md\" page that contains \"{{ site.title }}\""]
+	1633827755376 [label="I have a configuration file with \"title\" set to \"Hello World\""]
+	1633827597008 -> 1633827755376
+	1633827755376 [label="I have a configuration file with \"title\" set to \"Hello World\""]
+}

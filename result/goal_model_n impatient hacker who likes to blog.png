@@ -1,0 +1,167 @@
+// Goal Model
+digraph {
+	1847134004096 [label="n impatient hacker who likes to blog
+goal"]
+	1847134167312 [label="be able to make a static site
+goal
+140728069287616"]
+	1847134004096 -> 1847134167312
+	1847134167312 [label="be able to make a static site
+goal"]
+	1847134110288 [label="Produce correct output site
+goal
+1847134114272"]
+	1847134167312 -> 1847134110288
+	1847134110288 [label="Produce correct output site
+goal"]
+	1847134114224 [label="I run jekyll build -I
+task
+140728069287616"]
+	1847134110288 -> 1847134114224
+	1847134114224 [label="I run jekyll build -I
+task"]
+	1847134113840 [label="I run jekyll build -I
+task
+140728069287616"]
+	1847134110288 -> 1847134113840
+	1847134113840 [label="I run jekyll build -I
+task"]
+	1847134114464 [label="Generate a metadata file
+goal
+1847134316208"]
+	1847134167312 -> 1847134114464
+	1847134114464 [label="Generate a metadata file
+goal"]
+	1847134312896 [label="I run jekyll build -I
+task
+140728069287616"]
+	1847134114464 -> 1847134312896
+	1847134312896 [label="I run jekyll build -I
+task"]
+	1847134114176 [label="Rebuild when content is changed
+goal
+1847134377760"]
+	1847134167312 -> 1847134114176
+	1847134114176 [label="Rebuild when content is changed
+goal"]
+	1847134377712 [label="I run jekyll build -I
+task
+140728069287616"]
+	1847134114176 -> 1847134377712
+	1847134377712 [label="I run jekyll build -I
+task"]
+	1847134377856 [label="I wait 1 second
+task
+140728069287616"]
+	1847134114176 -> 1847134377856
+	1847134377856 [label="I wait 1 second
+task"]
+	1847134377088 [label="I run jekyll build -I
+task
+140728069287616"]
+	1847134114176 -> 1847134377088
+	1847134377088 [label="I run jekyll build -I
+task"]
+	1847134376416 [label="Rebuild when layout is changed
+goal
+1847134378144"]
+	1847134167312 -> 1847134376416
+	1847134376416 [label="Rebuild when layout is changed
+goal"]
+	1847134378000 [label="I run jekyll build -I
+task
+140728069287616"]
+	1847134376416 -> 1847134378000
+	1847134378000 [label="I run jekyll build -I
+task"]
+	1847134378048 [label="I wait 1 second
+task
+140728069287616"]
+	1847134376416 -> 1847134378048
+	1847134378048 [label="I wait 1 second
+task"]
+	1847134378096 [label="I run jekyll build
+task
+140728069287616"]
+	1847134376416 -> 1847134378096
+	1847134378096 [label="I run jekyll build
+task"]
+	1847134377616 [label="Rebuild when an include is changed
+goal
+1847134378720"]
+	1847134167312 -> 1847134377616
+	1847134377616 [label="Rebuild when an include is changed
+goal"]
+	1847134378576 [label="I run jekyll build -I
+task
+140728069287616"]
+	1847134377616 -> 1847134378576
+	1847134378576 [label="I run jekyll build -I
+task"]
+	1847134378624 [label="I wait 1 second
+task
+140728069287616"]
+	1847134377616 -> 1847134378624
+	1847134378624 [label="I wait 1 second
+task"]
+	1847134378672 [label="I run jekyll build -I
+task
+140728069287616"]
+	1847134377616 -> 1847134378672
+	1847134378672 [label="I run jekyll build -I
+task"]
+	1847134378240 [label="Rebuild when a dependency of document in custom collection_dir is changed
+goal
+1847134379296"]
+	1847134167312 -> 1847134378240
+	1847134378240 [label="Rebuild when a dependency of document in custom collection_dir is changed
+goal"]
+	1847134379152 [label="I run jekyll build -I
+task
+140728069287616"]
+	1847134378240 -> 1847134379152
+	1847134379152 [label="I run jekyll build -I
+task"]
+	1847134379200 [label="I wait 1 second
+task
+140728069287616"]
+	1847134378240 -> 1847134379200
+	1847134379200 [label="I wait 1 second
+task"]
+	1847134379248 [label="I run jekyll build -I
+task
+140728069287616"]
+	1847134378240 -> 1847134379248
+	1847134379248 [label="I run jekyll build -I
+task"]
+	1847134378816 [label="A themed-site and incremental regeneration
+goal
+1847134380112"]
+	1847134167312 -> 1847134378816
+	1847134378816 [label="A themed-site and incremental regeneration
+goal"]
+	1847134379920 [label="I run jekyll build --incremental --verbose
+task
+140728069287616"]
+	1847134378816 -> 1847134379920
+	1847134379920 [label="I run jekyll build --incremental --verbose
+task"]
+	1847134380016 [label="I wait 1 second
+task
+140728069287616"]
+	1847134378816 -> 1847134380016
+	1847134380016 [label="I wait 1 second
+task"]
+	1847134380064 [label="I have an \"about.md\" page that contains \"About Themed site\"
+task
+140728069287616"]
+	1847134378816 -> 1847134380064
+	1847134380064 [label="I have an \"about.md\" page that contains \"About Themed site\"
+task"]
+	1847134379968 [label="I run jekyll build --incremental --verbose
+task
+140728069287616"]
+	1847134378816 -> 1847134379968
+	1847134379968 [label="I run jekyll build --incremental --verbose
+task"]
+}

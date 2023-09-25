@@ -1,0 +1,443 @@
+{
+    "feature_name": "Commenting lines by prefixing a comment string",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"A piece of code\"",
+                        "I switch the language to \"C\"",
+                        "I move the cursor to (0,5)",
+                        "I toggle comment lines"
+                    ],
+                    [
+                        "I toggle comment lines"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"// A pie<c>ce of code\""
+                    ],
+                    [
+                        "the contents should be \"A pie<c>ce of code\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"# A piece of code\"",
+                        "I switch the language to \"Ruby\"",
+                        "I move the cursor to (0,5)",
+                        "I toggle comment lines"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"A p<c>iece of code\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"foo\\nbar\\nbaz\"",
+                        "I switch the language to \"Ruby\"",
+                        "I move the cursor to (0,4)",
+                        "I toggle comment lines"
+                    ],
+                    [
+                        "I toggle comment lines"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"foo\\n<c># bar\\nbaz\""
+                    ],
+                    [
+                        "the contents should be \"foo\\n<c>bar\\nbaz\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"#A piece of code\"",
+                        "I switch the language to \"Ruby\"",
+                        "I move the cursor to (0,5)",
+                        "I toggle comment lines"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"A piece of code\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Two pieces\\nof code\"",
+                        "I switch the language to \"Ruby\"",
+                        "I select from (0,0) to (1,2)",
+                        "I toggle comment lines"
+                    ],
+                    [
+                        "I toggle comment lines"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"<s># Two pieces\\n# of<c> code\""
+                    ],
+                    [
+                        "the contents should be \"<s>Two pieces\\nof<c> code\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"# Two pieces\\n#of code\"",
+                        "I switch the language to \"Ruby\"",
+                        "I select from (0,0) to (1,3)",
+                        "I toggle comment lines"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"<s>Two pieces\\nof<c> code\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"# foo\\n# bar\\nbaz\"",
+                        "I switch the language to \"Ruby\"",
+                        "I select from (0,0) to (2,3)",
+                        "I toggle comment lines"
+                    ],
+                    [
+                        "I toggle comment lines"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"<s># # foo\\n# # bar\\n# baz<c>\""
+                    ],
+                    [
+                        "the contents should be \"# foo\\n# bar\\nbaz\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"# foo\\n# bar\\nbaz\"",
+                        "I switch the language to \"Ruby\"",
+                        "I select from (2,3) to (0,0)",
+                        "I toggle comment lines"
+                    ],
+                    [
+                        "I toggle comment lines"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"<c># # foo\\n# # bar\\n# baz<s>\""
+                    ],
+                    [
+                        "the contents should be \"# foo\\n# bar\\nbaz\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Two pieces\\nof code\"",
+                        "I switch the language to \"Ruby\"",
+                        "I select from (0,0) to (1,0)",
+                        "I toggle comment lines"
+                    ],
+                    [
+                        "I toggle comment lines"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"<s># Two pieces\\n<c>of code\""
+                    ],
+                    [
+                        "the contents should be \"<s>Two pieces\\n<c>of code\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Two pieces\\nof code\"",
+                        "I switch the language to \"Ruby\"",
+                        "I select from (1,0) to (0,0)",
+                        "I toggle comment lines"
+                    ],
+                    [
+                        "I toggle comment lines"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"<c># Two pieces\\n<s>of code\""
+                    ],
+                    [
+                        "the contents should be \"<c>Two pieces\\n<s>of code\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Two pieces\\nof code\"",
+                        "I switch the language to \"Ruby\"",
+                        "I select from (0,3) to (0,0)",
+                        "I toggle comment lines"
+                    ],
+                    [
+                        "I toggle comment lines"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"<c># Two<s> pieces\\nof code\""
+                    ],
+                    [
+                        "the contents should be \"<c>Two<s> pieces\\nof code\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"A few\\nlines\\nof unindented\\ncode\"",
+                        "I switch the language to \"Ruby\"",
+                        "I select from (0,2) to (3,1)",
+                        "I toggle comment lines"
+                    ],
+                    [
+                        "I toggle comment lines"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"A <s># few\\n# lines\\n# of unindented\\n# c<c>ode\""
+                    ],
+                    [
+                        "the contents should be \"A <s>few\\nlines\\nof unindented\\nc<c>ode\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"  A piece of code\"",
+                        "I switch the language to \"C\"",
+                        "I toggle comment lines"
+                    ],
+                    [
+                        "I toggle comment lines"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"  // A piece of code\""
+                    ],
+                    [
+                        "the contents should be \"  A piece of code\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Two pieces\\nof code\"",
+                        "I switch the language to \"Ruby\"",
+                        "I select from (0,2) to (1,2)",
+                        "I toggle comment lines"
+                    ],
+                    [
+                        "I toggle comment lines"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Tw<s># o pieces\\n# of<c> code\""
+                    ],
+                    [
+                        "the contents should be \"Tw<s>o pieces\\nof<c> code\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Two pieces\\nof code\"",
+                        "I switch the language to \"Ruby\"",
+                        "I select from (1,2) to (0,2)",
+                        "I toggle comment lines"
+                    ],
+                    [
+                        "I toggle comment lines"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Tw<c># o pieces\\n# of<s> code\""
+                    ],
+                    [
+                        "the contents should be \"Tw<c>o pieces\\nof<s> code\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"    foo\\n    bar\"",
+                        "I switch the language to \"Ruby\"",
+                        "I select from (0,2) to (1,7)",
+                        "I toggle comment lines"
+                    ],
+                    [
+                        "I toggle comment lines"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"  <s>  # foo\\n    # bar<c>\""
+                    ],
+                    [
+                        "the contents should be \"  <s>  foo\\n    bar<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"    def foo\\n      dfo\\n    sdfj\\n  asdf\\nasdf\"",
+                        "I switch the language to \"Ruby\"",
+                        "I select from (0,0) to (4,2)",
+                        "I toggle comment lines"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"<s>#     def foo\\n#       dfo\\n#     sdfj\\n#   asdf\\n# as<c>df\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the content is:",
+                        "I select from (0,2) to (1,11)",
+                        "I switch the language to \"Ruby\"",
+                        "I toggle comment lines"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "the content should be:"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the content is:",
+                        "I select from (1,11) to (0,2)",
+                        "I switch the language to \"Ruby\"",
+                        "I toggle comment lines"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "the content should be:"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the content is:",
+                        "I select from (0,6) to (1,11)",
+                        "I switch the language to \"Ruby\"",
+                        "I toggle comment lines"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "the content should be:",
+                        "I toggle comment lines"
+                    ],
+                    [
+                        "the content should be:"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the content is:",
+                        "I select from (0,4) to (5,6)",
+                        "I switch the language to \"Ruby\"",
+                        "I toggle comment lines"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "the content should be:"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the content is:",
+                        "I select from (0,4) to (5,6)",
+                        "I switch the language to \"Ruby\"",
+                        "I toggle comment lines"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "the content should be:"
+                    ]
+                ]
+            }
+        ]
+    }
+}

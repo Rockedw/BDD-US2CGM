@@ -1,0 +1,16 @@
+// 3000815688416 Context Model
+digraph {
+	3000815770624 [label=Context2]
+	3000815775808 [label="I have a _posts directory"]
+	3000815770624 -> 3000815775808
+	3000815775808 [label="I have a _posts directory"]
+	3000815770192 [label="I have the following post:"]
+	3000815770624 -> 3000815770192
+	3000815770192 [label="I have the following post:"]
+	3000815769808 [label="I have an \"index.html\" page that contains \"just {{page.custom}} by {{page.author}}\""]
+	3000815770624 -> 3000815769808
+	3000815769808 [label="I have an \"index.html\" page that contains \"just {{page.custom}} by {{page.author}}\""]
+	3000815764720 [label="I have a configuration file with \"defaults\" set to \"[{scope: {path: \"\"}, values: {custom: \"some special data\", author: \"Ben\"}}]\""]
+	3000815770624 -> 3000815764720
+	3000815764720 [label="I have a configuration file with \"defaults\" set to \"[{scope: {path: \"\"}, values: {custom: \"some special data\", author: \"Ben\"}}]\""]
+}

@@ -1,0 +1,54 @@
+{
+    "feature_name": "Resigning from a an association",
+    "user_story": {
+        "as_a": "member",
+        "i_want": "be able to resign from my positions inside it.",
+        "so_that": "leave an association formally",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am on my account page",
+                        "I click on the resign link, and confirm my leaving"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should be logged out, with a message telling me I have resigned."
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "another member has resigned"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should receive an email saying that member has resigned"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "another member has resigned"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the dashboard"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the resignation in the timeline"
+                    ]
+                ]
+            }
+        ]
+    }
+}

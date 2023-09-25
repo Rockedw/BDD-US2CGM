@@ -1,0 +1,19 @@
+// 1982219710768 Context Model
+digraph {
+	1982219711104 [label=Context57]
+	1982219711248 [label="there is 1 existing category like \"fred\""]
+	1982219711104 -> 1982219711248
+	1982219711248 [label="there is 1 existing category like \"fred\""]
+	1982219711344 [label="I am on the edit items page for \"fred0\""]
+	1982219711104 -> 1982219711344
+	1982219711344 [label="I am on the edit items page for \"fred0\""]
+	1982219711440 [label="I fill in \"Name\" with \"itemD\""]
+	1982219711104 -> 1982219711440
+	1982219711440 [label="I fill in \"Name\" with \"itemD\""]
+	1982219711536 [label="I fill in \"Title\" with \"Item D\""]
+	1982219711104 -> 1982219711536
+	1982219711536 [label="I fill in \"Title\" with \"Item D\""]
+	1982219711632 [label="I fill in \"Description\" with \"Description for item D ought to be here\""]
+	1982219711104 -> 1982219711632
+	1982219711632 [label="I fill in \"Description\" with \"Description for item D ought to be here\""]
+}

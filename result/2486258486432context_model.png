@@ -1,0 +1,22 @@
+// 2486258484800 Context Model
+digraph {
+	2486258486432 [label=Context21]
+	2486258486576 [label="there is 1 existing individual like \"myItem\""]
+	2486258486432 -> 2486258486576
+	2486258486576 [label="there is 1 existing individual like \"myItem\""]
+	2486258486672 [label="I am on the new connections page"]
+	2486258486432 -> 2486258486672
+	2486258486672 [label="I am on the new connections page"]
+	2486258486768 [label="I select \"myItem0 : myItem item number 0\" from \"Subject\""]
+	2486258486432 -> 2486258486768
+	2486258486768 [label="I select \"myItem0 : myItem item number 0\" from \"Subject\""]
+	2486258486864 [label="I select \"ordered_relationship : Ordered Relationship (root relationship type)\" from \"Relates to\""]
+	2486258486432 -> 2486258486864
+	2486258486864 [label="I select \"ordered_relationship : Ordered Relationship (root relationship type)\" from \"Relates to\""]
+	2486258486960 [label="I choose \"Item\""]
+	2486258486432 -> 2486258486960
+	2486258486960 [label="I choose \"Item\""]
+	2486258487056 [label="I select \"myItem0 : myItem item number 0\" from \"Object\""]
+	2486258486432 -> 2486258487056
+	2486258487056 [label="I select \"myItem0 : myItem item number 0\" from \"Object\""]
+}

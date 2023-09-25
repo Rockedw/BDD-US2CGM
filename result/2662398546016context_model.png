@@ -1,0 +1,19 @@
+// 2662398545056 Context Model
+digraph {
+	2662398546016 [label=Context7]
+	2662398546160 [label="I have a _layouts directory"]
+	2662398546016 -> 2662398546160
+	2662398546160 [label="I have a _layouts directory"]
+	2662398546256 [label="I have a \"_layouts/page.html\" file with content:"]
+	2662398546016 -> 2662398546256
+	2662398546256 [label="I have a \"_layouts/page.html\" file with content:"]
+	2662398546352 [label="I have a \"page.md\" page with layout \"page\" that contains \"### Heading\""]
+	2662398546016 -> 2662398546352
+	2662398546352 [label="I have a \"page.md\" page with layout \"page\" that contains \"### Heading\""]
+	2662398546448 [label="I have a _plugins directory"]
+	2662398546016 -> 2662398546448
+	2662398546448 [label="I have a _plugins directory"]
+	2662398546544 [label="I have a \"_plugins/ext.rb\" file with content:"]
+	2662398546016 -> 2662398546544
+	2662398546544 [label="I have a \"_plugins/ext.rb\" file with content:"]
+}

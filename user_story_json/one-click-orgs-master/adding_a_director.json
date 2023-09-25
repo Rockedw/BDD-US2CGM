@@ -1,0 +1,46 @@
+{
+    "feature_name": "Adding a director",
+    "user_story": {
+        "as_a": "director",
+        "i_want": "add a new director",
+        "so_that": "reflect changes in directorship",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Directors page",
+                        "I press \"Add a new director\"",
+                        "I fill in \"Email\" with \"bob@example.com\"",
+                        "I fill in \"First name\" with \"Bob\"",
+                        "I fill in \"Last name\" with \"Smith\"",
+                        "I choose yesterday for the date of election",
+                        "I check the certification checkbox",
+                        "I check the age check checkbox",
+                        "I press \"Add this director\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Directors page",
+                        "I should see \"Bob Smith\" within the list of directors",
+                        "a director invitation email should be sent to \"bob@example.com\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I add a new director"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "all the directors should receive a \"new director\" email"
+                    ]
+                ]
+            }
+        ]
+    }
+}

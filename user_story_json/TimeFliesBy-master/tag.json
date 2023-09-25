@@ -1,0 +1,50 @@
+{
+    "feature_name": "Tag",
+    "user_story": {
+        "as_a": "person short on time",
+        "i_want": "tag my tasks",
+        "so_that": "> categorize where I spend my time",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am on the new tag page",
+                        "I fill in \"Education\" for \"tag_name\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Create Tag\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Tag was successfully created.\"",
+                        "I should see \"Education\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have the tags \"Education, Read Book, BDD\"",
+                        "I am on the new task page",
+                        "I check \"Education\"",
+                        "I check \"Read Book\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Create Task\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Education\"",
+                        "I should see \"Read Book\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

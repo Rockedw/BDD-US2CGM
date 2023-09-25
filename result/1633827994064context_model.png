@@ -1,0 +1,16 @@
+// 1633827993344 Context Model
+digraph {
+	1633827994064 [label=Context7]
+	1633827994640 [label="I have the tags \"Education, Read Book, BDD\""]
+	1633827994064 -> 1633827994640
+	1633827994640 [label="I have the tags \"Education, Read Book, BDD\""]
+	1633827983936 [label="I am on the new task page"]
+	1633827994064 -> 1633827983936
+	1633827983936 [label="I am on the new task page"]
+	1633827981344 [label="I check \"Education\""]
+	1633827994064 -> 1633827981344
+	1633827981344 [label="I check \"Education\""]
+	1633827994016 [label="I check \"Read Book\""]
+	1633827994064 -> 1633827994016
+	1633827994016 [label="I check \"Read Book\""]
+}

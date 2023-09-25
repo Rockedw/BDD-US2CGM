@@ -1,0 +1,10 @@
+// 1998091271616 Context Model
+digraph {
+	1998091270224 [label=Context134]
+	1998091261968 [label="I take the first found partner to set @partner variable"]
+	1998091270224 -> 1998091261968
+	1998091261968 [label="I take the first found partner to set @partner variable"]
+	1998091266432 [label="I store it into the memorizer as automatedtest in order to retrieve it in another scenario"]
+	1998091270224 -> 1998091266432
+	1998091266432 [label="I store it into the memorizer as automatedtest in order to retrieve it in another scenario"]
+}

@@ -1,0 +1,57 @@
+{
+    "feature_name": "Unfollowing",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "be able to stop following people",
+        "so_that": "stop seeing updates from self-important rockstars",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on \"alice@alice.alice\"'s page",
+                        "I remove the person from my \"Besties\" aspect",
+                        "I go to the home page"
+                    ],
+                    [
+                        "I sign out",
+                        "I sign in as \"alice@alice.alice\"",
+                        "I am on \"bob@bob.bob\"'s page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should have 0 contacts in \"Besties\""
+                    ],
+                    [
+                        "I should not see \"is sharing with you.\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the contacts page",
+                        "I follow \"Besties\"",
+                        "I remove the first person from the aspect",
+                        "I follow \"My contacts\""
+                    ],
+                    [
+                        "I sign out",
+                        "I sign in as \"alice@alice.alice\"",
+                        "I am on \"bob@bob.bob\"'s page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should have 0 contacts in \"Besties\""
+                    ],
+                    [
+                        "I should not see \"is sharing with you.\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

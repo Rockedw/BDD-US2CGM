@@ -1,0 +1,36 @@
+{
+    "feature_name": "Developer can hook events",
+    "user_story": {
+        "as_a": "developer",
+        "i_want": "clear the cache",
+        "so_that": "setup magento ahead of scenarios",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I run any scenario"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the before hook will call the cache manager and clear the cache"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I run any scenario"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the after hook will clean up and configuration and fixtures"
+                    ]
+                ]
+            }
+        ]
+    }
+}

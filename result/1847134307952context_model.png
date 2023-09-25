@@ -1,0 +1,16 @@
+// 1847134308864 Context Model
+digraph {
+	1847134307952 [label=Context7]
+	1847134311456 [label="I have a _posts directory"]
+	1847134307952 -> 1847134311456
+	1847134311456 [label="I have a _posts directory"]
+	1847134311072 [label="I have the following post:"]
+	1847134307952 -> 1847134311072
+	1847134311072 [label="I have the following post:"]
+	1847134316304 [label="I have an \"index.html\" page with permalink \"override.html\" that contains \"nothing\""]
+	1847134307952 -> 1847134316304
+	1847134316304 [label="I have an \"index.html\" page with permalink \"override.html\" that contains \"nothing\""]
+	1847134317696 [label="I have a configuration file with \"defaults\" set to \"[{scope: {path: \"\"}, values: {permalink: \"/perma.html\", author: \"Chris\"}}]\""]
+	1847134307952 -> 1847134317696
+	1847134317696 [label="I have a configuration file with \"defaults\" set to \"[{scope: {path: \"\"}, values: {permalink: \"/perma.html\", author: \"Chris\"}}]\""]
+}

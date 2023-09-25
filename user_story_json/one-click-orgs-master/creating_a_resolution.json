@@ -1,0 +1,46 @@
+{
+    "feature_name": "Creating a resolution",
+    "user_story": {
+        "as_a": "As the Secretary",
+        "i_want": "create a resolution",
+        "so_that": "bring an issue for decision by the Members",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Resolutions page",
+                        "I press \"Create a proposal\"",
+                        "I select \"Other proposal\" from \"Type of proposal\"",
+                        "I enter the text of the resolution",
+                        "I press \"Open this proposal for electronic voting\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Resolutions page",
+                        "I should see the new resolution in the list of currently-open resolutions"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Resolutions page",
+                        "I press \"Create a proposal\"",
+                        "I select \"Other proposal\" from \"Type of proposal\"",
+                        "I enter the text of the resolution",
+                        "I press \"Save this proposal as a draft\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Resolutions page",
+                        "I should see the new resolution in the list of draft resolutions"
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,209 @@
+// Goal Model
+digraph {
+	1847117888144 [label="adviser
+goal"]
+	1847117879600 [label="allow the webapp to populate the students enrolled in the course and the schools that mentor teachers are associated with
+goal
+1847117889200"]
+	1847117888144 -> 1847117879600
+	1847117879600 [label="allow the webapp to populate the students enrolled in the course and the schools that mentor teachers are associated with
+goal"]
+	1847117887568 [label="I go to /students/1/semesters/1/select_courses
+task
+140728069287616"]
+	1847117879600 -> 1847117887568
+	1847117887568 [label="I go to /students/1/semesters/1/select_courses
+task"]
+	1847117888864 [label="I check \"UGIS 80A\"
+task
+140728069287616"]
+	1847117879600 -> 1847117888864
+	1847117888864 [label="I check \"UGIS 80A\"
+task"]
+	1847117884352 [label="I check \"UGIS 80B\"
+task
+140728069287616"]
+	1847117879600 -> 1847117884352
+	1847117884352 [label="I check \"UGIS 80B\"
+task"]
+	1847117888384 [label="I press \"Save\"
+task
+140728069287616"]
+	1847117879600 -> 1847117888384
+	1847117888384 [label="I press \"Save\"
+task"]
+	1847117888240 [label="I go to /students/1/semesters/1/courses
+task
+140728069287616"]
+	1847117879600 -> 1847117888240
+	1847117888240 [label="I go to /students/1/semesters/1/courses
+task"]
+	1847117886896 [label="specify which Cal courses can teach which subjects/grades
+goal
+1847117879792"]
+	1847117888144 -> 1847117886896
+	1847117886896 [label="specify which Cal courses can teach which subjects/grades
+goal"]
+	1847117889152 [label=" add course
+goal
+140728069287616"]
+	1847117886896 -> 1847117889152
+	1847117889152 [label=" add course
+goal"]
+	1847124494224 [label="Add succesfully a Cal Course
+goal
+140728069287616"]
+	1847117889152 -> 1847124494224
+	1847124494224 [label="Add succesfully a Cal Course
+goal"]
+	1847124492976 [label="I go to /cal_courses
+task
+140728069287616"]
+	1847124494224 -> 1847124492976
+	1847124492976 [label="I go to /cal_courses
+task"]
+	1847124494128 [label="I follow something
+goal
+140728069287616"]
+	1847124494224 -> 1847124494128
+	1847124494128 [label="I follow something
+goal"]
+	1847124499984 [label="I follow \"Fall 2012\"
+task
+140728069287616"]
+	1847124494128 -> 1847124499984
+	1847124499984 [label="I follow \"Fall 2012\"
+task"]
+	1847124497728 [label="I follow \"New Course\"
+task
+140728069287616"]
+	1847124494128 -> 1847124497728
+	1847124497728 [label="I follow \"New Course\"
+task"]
+	1847124497248 [label="I fill in \"Name\" with \"Educ 101\"
+task
+140728069287616"]
+	1847124494224 -> 1847124497248
+	1847124497248 [label="I fill in \"Name\" with \"Educ 101\"
+task"]
+	1847124494560 [label="I check \"timeslots[1]\"
+task
+140728069287616"]
+	1847124494224 -> 1847124494560
+	1847124494560 [label="I check \"timeslots[1]\"
+task"]
+	1847124499600 [label="I press \"Save\"
+task
+140728069287616"]
+	1847124494224 -> 1847124499600
+	1847124499600 [label="I press \"Save\"
+task"]
+	1847124497008 [label="Add a Cal Course with errors
+goal
+140728069287616"]
+	1847117889152 -> 1847124497008
+	1847124497008 [label="Add a Cal Course with errors
+goal"]
+	1847124493120 [label="I go to /cal_courses
+task
+140728069287616"]
+	1847124497008 -> 1847124493120
+	1847124493120 [label="I go to /cal_courses
+task"]
+	1847124495712 [label="I follow something
+goal
+140728069287616"]
+	1847124497008 -> 1847124495712
+	1847124495712 [label="I follow something
+goal"]
+	1847124499168 [label="I follow \"Fall 2012\"
+task
+140728069287616"]
+	1847124495712 -> 1847124499168
+	1847124499168 [label="I follow \"Fall 2012\"
+task"]
+	1847124499504 [label="I follow \"New Course\"
+task
+140728069287616"]
+	1847124495712 -> 1847124499504
+	1847124499504 [label="I follow \"New Course\"
+task"]
+	1847124494320 [label="I fill in \"Name\" with \"\"
+task
+140728069287616"]
+	1847124497008 -> 1847124494320
+	1847124494320 [label="I fill in \"Name\" with \"\"
+task"]
+	1847124493744 [label="I check \"timeslots[1]\"
+task
+140728069287616"]
+	1847124497008 -> 1847124493744
+	1847124493744 [label="I check \"timeslots[1]\"
+task"]
+	1847124498352 [label="I press \"Save\"
+task
+140728069287616"]
+	1847124497008 -> 1847124498352
+	1847124498352 [label="I press \"Save\"
+task"]
+	1847124496096 [label=" check something
+goal
+140728069287616"]
+	1847117886896 -> 1847124496096
+	1847124496096 [label=" check something
+goal"]
+	1847124506464 [label=" check Page
+goal
+140728069287616"]
+	1847124496096 -> 1847124506464
+	1847124506464 [label=" check Page
+goal"]
+	1847124495520 [label="Check the Index Page and delete action
+goal
+140728069287616"]
+	1847124506464 -> 1847124495520
+	1847124495520 [label="Check the Index Page and delete action
+goal"]
+	1847124499120 [label="I go to /cal_courses
+task
+140728069287616"]
+	1847124495520 -> 1847124499120
+	1847124499120 [label="I go to /cal_courses
+task"]
+	1847124496912 [label="I follow \"Fall 2012\"
+task
+140728069287616"]
+	1847124495520 -> 1847124496912
+	1847124496912 [label="I follow \"Fall 2012\"
+task"]
+	1847124497152 [label="Check the Show page
+goal
+1847124498736"]
+	1847124506464 -> 1847124497152
+	1847124497152 [label="Check the Show page
+goal"]
+	1847124494608 [label="Check the Edit Page
+goal
+1847124498544"]
+	1847124506464 -> 1847124494608
+	1847124494608 [label="Check the Edit Page
+goal"]
+	1847124496672 [label="Check the Index Page sorting feature
+goal
+140728069287616"]
+	1847124496096 -> 1847124496672
+	1847124496672 [label="Check the Index Page sorting feature
+goal"]
+	1847124494272 [label="I go to /cal_courses
+task
+140728069287616"]
+	1847124496672 -> 1847124494272
+	1847124494272 [label="I go to /cal_courses
+task"]
+	1847124498256 [label="I follow \"Fall 2012\"
+task
+140728069287616"]
+	1847124496672 -> 1847124498256
+	1847124498256 [label="I follow \"Fall 2012\"
+task"]
+}

@@ -1,0 +1,10 @@
+// 2662398172784 Context Model
+digraph {
+	2662398179888 [label=Context2]
+	2662398172256 [label="I have configured a Bitcoin address"]
+	2662398179888 -> 2662398172256
+	2662398172256 [label="I have configured a Bitcoin address"]
+	2662398179216 [label="I go to the home page"]
+	2662398179888 -> 2662398179216
+	2662398179216 [label="I go to the home page"]
+}

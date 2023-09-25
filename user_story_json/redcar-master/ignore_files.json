@@ -1,0 +1,45 @@
+{
+    "feature_name": "Ignoring external files within a working directory",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I checkout a local repository",
+                        "I create a wc file named \"foo.rb\"",
+                        "I ignore \"foo.rb\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be \"0\" unindexed files and \"0\" indexed files"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I checkout a local repository",
+                        "I create a wc file named \"foo.rb,bar.rb,README\""
+                    ],
+                    [
+                        "I ignore \"rb\" files"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be \"3\" unindexed files and \"0\" indexed files"
+                    ],
+                    [
+                        "there should be \"1\" unindexed files and \"0\" indexed files"
+                    ]
+                ]
+            }
+        ]
+    }
+}

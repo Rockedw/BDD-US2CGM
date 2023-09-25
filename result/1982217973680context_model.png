@@ -1,0 +1,19 @@
+// 1982217972912 Context Model
+digraph {
+	1982217973680 [label=Context7]
+	1982217973824 [label="I have an \"index.md\" page that contains \"[About my projects]({% link about.md %})\""]
+	1982217973680 -> 1982217973824
+	1982217973824 [label="I have an \"index.md\" page that contains \"[About my projects]({% link about.md %})\""]
+	1982217973920 [label="I have an \"about.md\" page that contains \"[Latest Hack]({% link _posts/2018-02-15-metaprogramming.md %})\""]
+	1982217973680 -> 1982217973920
+	1982217973920 [label="I have an \"about.md\" page that contains \"[Latest Hack]({% link _posts/2018-02-15-metaprogramming.md %})\""]
+	1982217974016 [label="I have a _posts directory"]
+	1982217973680 -> 1982217974016
+	1982217974016 [label="I have a _posts directory"]
+	1982217974112 [label="I have an \"_posts/2018-02-15-metaprogramming.md\" page that contains \"[Download This]({% link script.txt %})\""]
+	1982217973680 -> 1982217974112
+	1982217974112 [label="I have an \"_posts/2018-02-15-metaprogramming.md\" page that contains \"[Download This]({% link script.txt %})\""]
+	1982217974208 [label="I have a \"script.txt\" file that contains \"Static Alert!\""]
+	1982217973680 -> 1982217974208
+	1982217974208 [label="I have a \"script.txt\" file that contains \"Static Alert!\""]
+}

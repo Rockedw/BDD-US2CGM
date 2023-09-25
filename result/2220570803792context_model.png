@@ -1,0 +1,10 @@
+// 2220570794048 Context Model
+digraph {
+	2220570803792 [label=Context2]
+	2220570792416 [label="I am an administrator"]
+	2220570803792 -> 2220570792416
+	2220570792416 [label="I am an administrator"]
+	2220570792944 [label="there are some members"]
+	2220570803792 -> 2220570792944
+	2220570792944 [label="there are some members"]
+}

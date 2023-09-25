@@ -1,0 +1,13 @@
+// 1633873007792 Context Model
+digraph {
+	1633873006400 [label=Context7]
+	1633873005872 [label="I have the module account installed"]
+	1633873006400 -> 1633873005872
+	1633873005872 [label="I have the module account installed"]
+	1633873003664 [label="no account set"]
+	1633873006400 -> 1633873003664
+	1633873003664 [label="no account set"]
+	1633873008656 [label="I want to generate account chart from chart template named \"Plan comptable STERCHI\" with \"0\" digits"]
+	1633873006400 -> 1633873008656
+	1633873008656 [label="I want to generate account chart from chart template named \"Plan comptable STERCHI\" with \"0\" digits"]
+}

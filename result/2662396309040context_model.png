@@ -1,0 +1,19 @@
+// 2662396197184 Context Model
+digraph {
+	2662396309040 [label=Context9]
+	2662396298480 [label="a provider \"Pullover\""]
+	2662396309040 -> 2662396298480
+	2662396298480 [label="a provider \"Pullover\""]
+	2662396307600 [label="a logged in admin user"]
+	2662396309040 -> 2662396307600
+	2662396307600 [label="a logged in admin user"]
+	2662396312304 [label="I am on the admin dashboard"]
+	2662396309040 -> 2662396312304
+	2662396312304 [label="I am on the admin dashboard"]
+	2662396299344 [label="I follow \"Developers\""]
+	2662396309040 -> 2662396299344
+	2662396299344 [label="I follow \"Developers\""]
+	2662396299296 [label="I follow \"Pullover\""]
+	2662396309040 -> 2662396299296
+	2662396299296 [label="I follow \"Pullover\""]
+}

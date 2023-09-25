@@ -1,0 +1,19 @@
+// 3000790405696 Context Model
+digraph {
+	3000790412752 [label=Context2]
+	3000790411456 [label="there is a Coop \"The Default Coop\""]
+	3000790412752 -> 3000790411456
+	3000790411456 [label="there is a Coop \"The Default Coop\""]
+	3000790409824 [label="there is a Coop \"The Alternative Coop\""]
+	3000790412752 -> 3000790409824
+	3000790409824 [label="there is a Coop \"The Alternative Coop\""]
+	3000790406896 [label="there is an alternative model Rules document"]
+	3000790412752 -> 3000790406896
+	3000790406896 [label="there is an alternative model Rules document"]
+	3000790401424 [label="I am a Member of the coop \"The Default Coop\""]
+	3000790412752 -> 3000790401424
+	3000790401424 [label="I am a Member of the coop \"The Default Coop\""]
+	3000790412944 [label="the Coop \"The Alternative Coop\" is set to use the alternative model Rules document"]
+	3000790412752 -> 3000790412944
+	3000790412944 [label="the Coop \"The Alternative Coop\" is set to use the alternative model Rules document"]
+}

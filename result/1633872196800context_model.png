@@ -1,0 +1,13 @@
+// 1633872196128 Context Model
+digraph {
+	1633872196800 [label=Context56]
+	1633872196944 [label="I have a _posts directory"]
+	1633872196800 -> 1633872196944
+	1633872196944 [label="I have a _posts directory"]
+	1633872197040 [label="I have an \"_posts/2009-03-27-Pretty-Permalink-Schema.md\" page that contains \"Totally wordpress\""]
+	1633872196800 -> 1633872197040
+	1633872197040 [label="I have an \"_posts/2009-03-27-Pretty-Permalink-Schema.md\" page that contains \"Totally wordpress\""]
+	1633872197136 [label="I have a configuration file with \"permalink\" set to \"pretty\""]
+	1633872196800 -> 1633872197136
+	1633872197136 [label="I have a configuration file with \"permalink\" set to \"pretty\""]
+}

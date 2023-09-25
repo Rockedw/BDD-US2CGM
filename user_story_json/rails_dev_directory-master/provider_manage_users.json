@@ -1,0 +1,117 @@
+{
+    "feature_name": "Managing users on an account",
+    "user_story": {
+        "as_a": "provider",
+        "i_want": "be able to add and remove users on my account",
+        "so_that": "I can share my account with my team members",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Kooky\" belonging to \"paul@joy.com\"",
+                        "I am on the homepage"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I log in as \"paul@joy.com\" with password \"testtest\"",
+                        "I follow \"navigation.users\" translation",
+                        "I follow \"company_profile.users.add_new\" translation",
+                        "I fill in \"First name\" with \"Ciara\"",
+                        "I fill in \"Last name\" with \"McGuire\"",
+                        "I fill in \"Email\" with \"ciara@ciarascakes.com\"",
+                        "I press \"Save\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Ciara McGuire\"",
+                        "\"ciara@ciarascakes.com\" should have a perishable token"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Kooky\" belonging to \"paul@joy.com\"",
+                        "a user \"Billow\" belonging to the \"Kooky\" provider",
+                        "I am on the homepage"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I log in as \"paul@joy.com\" with password \"testtest\"",
+                        "I follow \"navigation.users\" translation"
+                    ],
+                    [
+                        "I fill in \"First name\" with \"Joe\"",
+                        "I fill in \"Last name\" with \"Arnold\"",
+                        "I press \"Save\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"billow\"",
+                        "I follow \"billow\"",
+                        "I follow \"user.edit\" translation"
+                    ],
+                    [
+                        "I should see \"Joe Arnold\"",
+                        "I should see \"company_profile.users.manage_headline\" translation"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Kooky\" belonging to \"paul@joy.com\"",
+                        "a user \"Billow\" belonging to the \"Kooky\" provider",
+                        "I am on the homepage"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I log in as \"paul@joy.com\" with password \"testtest\"",
+                        "I follow \"navigation.users\" translation"
+                    ],
+                    [
+                        "I follow \"billow\"",
+                        "I follow \"user.edit\" translation"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"billow\""
+                    ],
+                    [
+                        "I should see \"company_profile.users.edit_description\" translation",
+                        "I press \"user.delete\" translation"
+                    ],
+                    [
+                        "I should see \"company_profile.users.manage_headline\" translation"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Kooky\" belonging to \"paul@joy.com\"",
+                        "a user \"Billow\" belonging to the \"Kooky\" provider"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the homepage",
+                        "I log in as \"billowlowha@test.com\" with password \"buxtonbuxton\"",
+                        "I follow \"navigation.users\" translation"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"general.edit\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+// 3000790266640 Context Model
+digraph {
+	3000790267792 [label=Context5]
+	3000789742016 [label="The default settings exist using factories"]
+	3000790267792 -> 3000789742016
+	3000789742016 [label="The default settings exist using factories"]
+	3000789735104 [label="I am logged in with the username admin"]
+	3000790267792 -> 3000789735104
+	3000789735104 [label="I am logged in with the username admin"]
+	3000789732416 [label="am on the admin settings page"]
+	3000790267792 -> 3000789732416
+	3000789732416 [label="am on the admin settings page"]
+}

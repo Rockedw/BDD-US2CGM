@@ -1,0 +1,45 @@
+{
+    "feature_name": "managing authorized applications",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I sign in as \"augier@example.org\" on the mobile website",
+                        "I go to the user applications page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see 2 authorized applications",
+                        "I should see 1 authorized applications with no provided image",
+                        "I should see 1 authorized applications with an image"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I sign in as \"augier@example.org\" on the mobile website",
+                        "I go to the user applications page",
+                        "I revoke the first authorization"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see 1 authorized applications",
+                        "I revoke the first authorization"
+                    ],
+                    [
+                        "I should see 0 authorized applications"
+                    ]
+                ]
+            }
+        ]
+    }
+}

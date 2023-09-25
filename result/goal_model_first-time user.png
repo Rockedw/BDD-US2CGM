@@ -1,0 +1,53 @@
+// Goal Model
+digraph {
+	1847124669920 [label="first-time user
+goal"]
+	1847125299488 [label="fill in my details
+goal
+1847125311344"]
+	1847124669920 -> 1847125299488
+	1847125299488 [label="fill in my details
+goal"]
+	1847125303280 [label="Having entered details
+goal
+140728069287616"]
+	1847125299488 -> 1847125303280
+	1847125303280 [label="Having entered details
+goal"]
+	1847125299056 [label="I have finished editing
+goal
+140728069287616"]
+	1847125299488 -> 1847125299056
+	1847125299056 [label="I have finished editing
+goal"]
+	1847125310480 [label="I click the 'Toggle Edit' button
+task
+140728069287616"]
+	1847125299056 -> 1847125310480
+	1847125310480 [label="I click the 'Toggle Edit' button
+task"]
+	1847125307936 [label="My profile is only set to already-editable on first login
+goal
+140728069287616"]
+	1847125299488 -> 1847125307936
+	1847125307936 [label="My profile is only set to already-editable on first login
+goal"]
+	1847125309232 [label="I log out
+task
+140728069287616"]
+	1847125307936 -> 1847125309232
+	1847125309232 [label="I log out
+task"]
+	1847125308608 [label="log back in
+task
+140728069287616"]
+	1847125307936 -> 1847125308608
+	1847125308608 [label="log back in
+task"]
+	1847125311248 [label="I visit my profile
+task
+140728069287616"]
+	1847125307936 -> 1847125311248
+	1847125311248 [label="I visit my profile
+task"]
+}

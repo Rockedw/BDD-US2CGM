@@ -1,0 +1,65 @@
+{
+    "feature_name": "Viewing my activity on the stream mobile page",
+    "user_story": {
+        "as_a": "mobile user",
+        "i_want": "view my activity stream",
+        "so_that": "navigate Diaspora*",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I sign in as \"bob@bob.bob\" on the mobile website"
+                    ],
+                    [
+                        "I go to the activity stream page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"My activity\" within \"#main\"",
+                        "I should not see \"Hello! I am #newhere\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I sign in as \"bob@bob.bob\" on the mobile website"
+                    ],
+                    [
+                        "I click on selector \"a.like-action.inactive\""
+                    ],
+                    [
+                        "I go to the activity stream page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see an element \"a.like-action.active\""
+                    ],
+                    [
+                        "I should see \"My activity\" within \"#main\"",
+                        "I should see \"Hello! I am #newhere\" within \".ltr\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I sign in as \"alice@alice.alice\" on the mobile website",
+                        "I go to the activity stream page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"My activity\" within \"#main\"",
+                        "I should see \"Hello! I am #newhere\" within \".ltr\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

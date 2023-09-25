@@ -1,0 +1,161 @@
+{
+    "feature_name": "Edit individual items through non-Ajax pages",
+    "user_story": {
+        "as_a": "as a contributor, I want",
+        "i_want": "change the information for existing items.",
+        "so_that": "create a wontology,",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is 1 existing category like \"fred\"",
+                        "I am on the edit items page for \"fred0\"",
+                        "I fill in \"Name\" with \"itemD\"",
+                        "I fill in \"Title\" with \"Item D\"",
+                        "I fill in \"Description\" with \"Description for item D ought to be here\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Update\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"itemD\"",
+                        "I should see \"Item D\"",
+                        "I should see \"Description for item D ought to be here\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is 1 existing individual like \"wilma\"",
+                        "I am on the edit items page for \"wilma0\"",
+                        "I fill in \"Name\" with \"reallyBetty\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Update\""
+                    ],
+                    [
+                        "I press \"Update\""
+                    ],
+                    [
+                        "I press \"Update\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see all of \"reallyBetty\", \"wilma item number 0\", \"Lorem ipsum dolor sit wilma amet, consectetur adipiscing elit. Suspendisse 0 tincidunt mauris vitae lorem.\"",
+                        "I follow \"Edit this item\"",
+                        "I fill in \"Title\" with \"Betty Rubble disguised as Wilma\""
+                    ],
+                    [
+                        "I should see all of \"reallyBetty\", \"Betty Rubble disguised as Wilma\", \"Lorem ipsum dolor sit wilma amet, consectetur adipiscing elit. Suspendisse 0 tincidunt mauris vitae lorem.\"",
+                        "I follow \"Edit this item\"",
+                        "I fill in \"Description\" with \"Fred is cheating\""
+                    ],
+                    [
+                        "I should see all of \"reallyBetty\", \"Betty Rubble disguised as Wilma\", \"Fred is cheating\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there are 2 existing qualified-connections like \"someItem\"",
+                        "I am on the edit items page for \"someItem0\"",
+                        "I fill in \"Name\" with \"someItem1\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Update\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"error\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is 1 existing property like \"propFamily\"",
+                        "I am on the show items page for \"propFamily0\"",
+                        "I follow \"Delete this item\", accepting confirmation"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I try to go to the show items page for \"propFamily0\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"doesn't exist\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there are 2 existing properties like \"propFamily\"",
+                        "there is an existing connection \"propFamily1\" \"child_of\" \"propFamily0\"",
+                        "I am on the show items page for \"propFamily0\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Can't delete this item\", accepting confirmation"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see all of \"propFamily0\", \"propFamily item number 0\", \"Lorem ipsum dolor sit propFamily amet, consectetur adipiscing elit. Suspendisse 0 tincidunt mauris vitae lorem.\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is 1 existing individual like \"anItem\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the index items page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be an item container for \"anItem0\" including the tag \"a[href=\"/w/items/?anItem0?\"][onclick*=\"delete\"]\"",
+                        "there should not be an item container for \"sub_property_of\" including the tag \"a[href=\"/w/items/?sub_property_of?\"][onclick*=\"delete\"]\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is 1 existing category like \"aCategory\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the index items page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be an item container for \"aCategory0\" including the tag \"a[href=\"/aCategory0/edit\"]\"",
+                        "there should not be an item container for \"parent_of\" including the tag \"a[href=\"/sub_property_of/edit\"]\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

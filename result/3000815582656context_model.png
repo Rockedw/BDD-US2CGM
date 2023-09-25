@@ -1,0 +1,13 @@
+// 3000815583040 Context Model
+digraph {
+	3000815582656 [label=Context17]
+	3000815582224 [label="there has been a past AGM"]
+	3000815582656 -> 3000815582224
+	3000815582224 [label="there has been a past AGM"]
+	3000815582320 [label="the AGM has no minutes yet"]
+	3000815582656 -> 3000815582320
+	3000815582320 [label="the AGM has no minutes yet"]
+	3000815581408 [label="there were resolutions attached to the AGM"]
+	3000815582656 -> 3000815581408
+	3000815581408 [label="there were resolutions attached to the AGM"]
+}

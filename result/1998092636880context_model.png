@@ -1,0 +1,13 @@
+// 1998092580944 Context Model
+digraph {
+	1998092636880 [label=Context3]
+	1998092638752 [label="I am on the homepage"]
+	1998092636880 -> 1998092638752
+	1998092638752 [label="I am on the homepage"]
+	1998092643840 [label="primary services \"Ruby on Rails, AJAX\""]
+	1998092636880 -> 1998092643840
+	1998092643840 [label="primary services \"Ruby on Rails, AJAX\""]
+	1998092646528 [label="secondary services \"Visual design, UI\""]
+	1998092636880 -> 1998092646528
+	1998092646528 [label="secondary services \"Visual design, UI\""]
+}

@@ -1,0 +1,97 @@
+{
+    "feature_name": "posting",
+    "user_story": {
+        "as_a": "rock star",
+        "i_want": "see what humanity is saying about particular tags",
+        "so_that": "take over humanity for the good of society",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I click the publisher and post \"#boss from the tag page\"",
+                        "I go to the tag page for \"boss\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"#boss \" in the publisher"
+                    ],
+                    [
+                        "I should see \"#boss from the tag page\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the home page",
+                        "I follow \"#boss\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"I am da #boss\" within \"body\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the home page",
+                        "I follow \"#boss\"",
+                        "I click the publisher and post \"#boss from the #boss tag page\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"#boss from the #boss tag page\" within \"body\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I press \"Stop following #boss\"",
+                        "I go to the followed tags stream page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"#boss\" within \"#tags_list\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the followed tags stream page",
+                        "I unfollow the \"boss\" tag"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"#tag-following-boss\" within \"#tags_list\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the tag page for \"NoPosts\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see any posts in my stream"
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+// 1633872255664 Context Model
+digraph {
+	1633872256624 [label=Context101]
+	1633872256768 [label="I have a \"index.html\" page with layout \"simple\" that contains \"{% include invalid.html %}\""]
+	1633872256624 -> 1633872256768
+	1633872256768 [label="I have a \"index.html\" page with layout \"simple\" that contains \"{% include invalid.html %}\""]
+	1633872256864 [label="I have a simple layout that contains \"{{ content }}\""]
+	1633872256624 -> 1633872256864
+	1633872256864 [label="I have a simple layout that contains \"{{ content }}\""]
+}

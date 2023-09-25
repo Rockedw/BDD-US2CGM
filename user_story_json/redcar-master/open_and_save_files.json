@@ -1,0 +1,251 @@
+{
+    "feature_name": "Open and save files",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I will choose \"plugins/project/spec/fixtures/winter.txt\" from the \"open_file\" dialog"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a file"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be one edit tab",
+                        "I should see \"Wintersmith\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I open \"plugins/project/spec/fixtures/winter.txt\" using the redcar command"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "there should be one edit tab",
+                        "my active tab should be \"winter.txt\"",
+                        "I should see \"Wintersmith\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I pipe \"hi\" into redcar"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "there should be one edit tab",
+                        "my active tab should be \"untitled\"",
+                        "I should see \"hi\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I will choose \"plugins/project/spec/fixtures/winter.txt\" from the \"open_file\" dialog"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a file",
+                        "I open a new edit tab",
+                        "I replace the contents with \"Jenny Green Eyes\"",
+                        "I open a file"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be 2 edit tabs",
+                        "I should see \"Wintersmith\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have opened \"plugins/project/spec/fixtures/winter.txt\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Hi!\"",
+                        "I save the tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the file \"plugins/project/spec/fixtures/winter.txt\" should contain \"Hi!\"",
+                        "I should see \"Hi!\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have opened \"plugins/project/spec/fixtures/winter.txt\"",
+                        "I will choose \"plugins/project/spec/fixtures/winter2.txt\" from the \"save_file\" dialog",
+                        "I save the tab as"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "the file \"plugins/project/spec/fixtures/winter2.txt\" should contain \"Wintersmith\"",
+                        "I should see \"Wintersmith\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have opened \"plugins/project/spec/fixtures/winter.txt\""
+                    ],
+                    [
+                        "I have opened \"plugins/project/spec/fixtures/winter2.txt\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Howdy!\""
+                    ],
+                    [
+                        "I replace the contents with \"Howdy again!\"",
+                        "I save all tabs"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the file \"plugins/project/spec/fixtures/winter2.txt\" should contain \"Howdy again!\"",
+                        "the file \"plugins/project/spec/fixtures/winter.txt\" should contain \"Howdy!\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I open \"plugins/project/spec/fixtures/winter.txt\" using the redcar command with \"-w\"",
+                        "I wait \"2\" seconds"
+                    ],
+                    [
+                        "I close the focussed tab"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "there should be one edit tab",
+                        "my active tab should be \"winter.txt\"",
+                        "I should see \"Wintersmith\" in the edit tab",
+                        "the redcar command should not have returned"
+                    ],
+                    [
+                        "the redcar command should have returned"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I pipe \"hi\" into redcar with \"-w\"",
+                        "I wait \"2\" seconds"
+                    ],
+                    [
+                        "I will choose \"no\" from the \"message_box\" dialog",
+                        "I close the focussed tab"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "there should be one edit tab",
+                        "my active tab should be \"untitled\"",
+                        "I should see \"hi\" in the edit tab",
+                        "the redcar command should not have returned"
+                    ],
+                    [
+                        "the redcar command should have returned"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I will choose \"plugins/project/spec\" from the \"open_directory\" dialog"
+                    ],
+                    [
+                        "I will choose \"plugins/project/spec/fixtures\" from the \"open_directory\" dialog"
+                    ],
+                    [
+                        "I will choose \"plugins/project/spec/fixtures/winter.txt\" from the \"open_file\" dialog"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a directory"
+                    ],
+                    [
+                        "I open a directory"
+                    ],
+                    [
+                        "I open a file"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the window \"fixtures\" should have 1 tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I will open a large file from the \"open_file\" dialog",
+                        "I will choose \"yes\" from the \"message_box\" dialog"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a file"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be 1 edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I will open a large file from the \"open_file\" dialog",
+                        "I will choose \"no\" from the \"message_box\" dialog"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a file"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be 0 edit tabs"
+                    ]
+                ]
+            }
+        ]
+    }
+}

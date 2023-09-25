@@ -1,0 +1,43 @@
+{
+    "feature_name": "Teacher can see project specific links",
+    "user_story": {
+        "as_a": "teacher",
+        "i_want": "I should see project specific links",
+        "so_that": "access custom information per project",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on getting started page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see a project link labeled \"Foo Project Link\"",
+                        "I should not see a project link labeled \"Bar Project Link\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the \"teacher\" user is added to the default project"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on getting started page",
+                        "I expand the \"Resources\" section"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a project link labeled \"Foo Project Link\" linking to \"http://foo.com\"",
+                        "I should see a project link labeled \"Bar Project Link\" linking to \"http://bar.com\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

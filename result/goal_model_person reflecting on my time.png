@@ -1,0 +1,71 @@
+// Goal Model
+digraph {
+	1847138471984 [label="person reflecting on my time
+goal"]
+	1847134926496 [label="have a continuous timeline without gaps or overlaps
+goal
+1847134014864"]
+	1847138471984 -> 1847134926496
+	1847134926496 [label="have a continuous timeline without gaps or overlaps
+goal"]
+	1847133884944 [label="I have a task \"New\" that started \"0s\" ago
+task
+140728069287616"]
+	1847134926496 -> 1847133884944
+	1847133884944 [label="I have a task \"New\" that started \"0s\" ago
+task"]
+	1847133886864 [label="I am on the tasks page
+task
+140728069287616"]
+	1847134926496 -> 1847133886864
+	1847133886864 [label="I am on the tasks page
+task"]
+	1847133483696 [label="see the exact start and stop time of the task
+goal
+1847134503696"]
+	1847138471984 -> 1847133483696
+	1847133483696 [label="see the exact start and stop time of the task
+goal"]
+	1847133890704 [label="Create a task
+goal
+1847133895648"]
+	1847133483696 -> 1847133890704
+	1847133890704 [label="Create a task
+goal"]
+	1847133883792 [label="I fill in \"task_start\" with \"12/28/2009 2:30 PM\"
+task
+140728069287616"]
+	1847133890704 -> 1847133883792
+	1847133883792 [label="I fill in \"task_start\" with \"12/28/2009 2:30 PM\"
+task"]
+	1847133882832 [label="I press \"Create\"
+task
+140728069287616"]
+	1847133890704 -> 1847133882832
+	1847133882832 [label="I press \"Create\"
+task"]
+	1847133883744 [label="Require start when using \"Create\"
+goal
+1847134173264"]
+	1847133483696 -> 1847133883744
+	1847133883744 [label="Require start when using \"Create\"
+goal"]
+	1847134162800 [label="I fill in \"task_title\" with \"Bad test\"
+task
+140728069287616"]
+	1847133883744 -> 1847134162800
+	1847134162800 [label="I fill in \"task_title\" with \"Bad test\"
+task"]
+	1847134159728 [label="I press \"Create\"
+task
+140728069287616"]
+	1847133883744 -> 1847134159728
+	1847134159728 [label="I press \"Create\"
+task"]
+	1847134174896 [label="Update a task shows correct US time format
+goal
+1847134160640"]
+	1847133483696 -> 1847134174896
+	1847134174896 [label="Update a task shows correct US time format
+goal"]
+}

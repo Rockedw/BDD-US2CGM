@@ -1,0 +1,28 @@
+// 2662403120608 Context Model
+digraph {
+	2662403121664 [label=Context11]
+	2662403121808 [label="I have a _posts directory"]
+	2662403121664 -> 2662403121808
+	2662403121808 [label="I have a _posts directory"]
+	2662403121904 [label="I have the following posts:"]
+	2662403121664 -> 2662403121904
+	2662403121904 [label="I have the following posts:"]
+	2662403122000 [label="I have a \"string-value.md\" page with content:"]
+	2662403121664 -> 2662403122000
+	2662403122000 [label="I have a \"string-value.md\" page with content:"]
+	2662403122096 [label="I have a \"string-value-array.md\" page with content:"]
+	2662403121664 -> 2662403122096
+	2662403122096 [label="I have a \"string-value-array.md\" page with content:"]
+	2662403122192 [label="I have a \"string-value-hash.md\" page with content:"]
+	2662403121664 -> 2662403122192
+	2662403122192 [label="I have a \"string-value-hash.md\" page with content:"]
+	2662403122288 [label="I have a \"nil-value.md\" page with content:"]
+	2662403121664 -> 2662403122288
+	2662403122288 [label="I have a \"nil-value.md\" page with content:"]
+	2662403122384 [label="I have an \"empty-liquid-literal.md\" page with content:"]
+	2662403121664 -> 2662403122384
+	2662403122384 [label="I have an \"empty-liquid-literal.md\" page with content:"]
+	2662403122480 [label="I have a \"blank-liquid-literal.md\" page with content:"]
+	2662403121664 -> 2662403122480
+	2662403122480 [label="I have a \"blank-liquid-literal.md\" page with content:"]
+}

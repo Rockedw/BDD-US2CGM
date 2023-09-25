@@ -1,0 +1,61 @@
+{
+    "feature_name": "Viewing event presentations",
+    "user_story": {
+        "as_a": "",
+        "i_want": "view the presentations for an event",
+        "so_that": "relive the moments",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am not logged in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I view an events presentations page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I am redirected to the event"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am not logged in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I view an event presentation page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I see the page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am not logged in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I view a mobile event presentation page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I see the page"
+                    ]
+                ]
+            }
+        ]
+    }
+}

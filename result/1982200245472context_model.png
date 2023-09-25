@@ -1,0 +1,13 @@
+// 1982200237264 Context Model
+digraph {
+	1982200245472 [label=Context55]
+	1982200242688 [label="I give all groups right access to admin user"]
+	1982200245472 -> 1982200242688
+	1982200242688 [label="I give all groups right access to admin user"]
+	1982200238224 [label="we select admin user"]
+	1982200245472 -> 1982200238224
+	1982200238224 [label="we select admin user"]
+	1982200236400 [label="we activate the extended view on the users"]
+	1982200245472 -> 1982200236400
+	1982200236400 [label="we activate the extended view on the users"]
+}

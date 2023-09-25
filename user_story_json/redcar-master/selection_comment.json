@@ -1,0 +1,51 @@
+{
+    "feature_name": "Commenting a selected area of text",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"a piece of code\"",
+                        "I switch the language to \"Java\"",
+                        "I toggle block comment"
+                    ],
+                    [
+                        "I toggle block comment"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"/*a piece of code*/\" in the edit tab"
+                    ],
+                    [
+                        "I should see \"a piece of code\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"a piece\\nof code\"",
+                        "I switch the language to \"C++\"",
+                        "I select from (0,4) to (1,1)",
+                        "I toggle block comment"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"a pi/*ece\\no*/f code\" in the edit tab",
+                        "I toggle block comment"
+                    ],
+                    [
+                        "I should see \"a piece\\nof code\" in the edit tab"
+                    ]
+                ]
+            }
+        ]
+    }
+}

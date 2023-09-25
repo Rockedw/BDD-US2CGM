@@ -1,0 +1,91 @@
+{
+    "feature_name": "Indents Ruby code correctly",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I replace the contents with \"def f\"",
+                        "I move the cursor to (0,5)",
+                        "I type \"\\n\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "the contents should be \"def f\\n\\t\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"def f\\n\\t1\\n\\ten\"",
+                        "I move the cursor to (2,3)",
+                        "I type \"d\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"def f\\n\\t1\\nend\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"\\tfoo\"",
+                        "I move the cursor to (0,4)",
+                        "I type \"\\n\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"\\tfoo\\n\\t\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"\\tdef my_awesome_method\\n\\t\\tfoo\\n\\tend\"",
+                        "I select from (0,0) to (2,4)",
+                        "I auto-indent"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"def my_awesome_method\\n\\tfoo\\nend\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"\\tdef my_awesome_method\\n\\t\\tfoo\\n\\tend\"",
+                        "I select from (0,0) to (2,4)",
+                        "I auto-indent"
+                    ],
+                    [
+                        "I undo"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"def my_awesome_method\\n\\tfoo\\nend\""
+                    ],
+                    [
+                        "the contents should be \"\\tdef my_awesome_method\\n\\t\\tfoo\\n\\tend\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

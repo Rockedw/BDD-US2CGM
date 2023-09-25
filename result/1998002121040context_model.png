@@ -1,0 +1,13 @@
+// 1998002112256 Context Model
+digraph {
+	1998002121040 [label=Context6]
+	1998002118928 [label="there are no pages"]
+	1998002121040 -> 1998002118928
+	1998002118928 [label="there are no pages"]
+	1998002112208 [label="I am logged in as \"existing\""]
+	1998002121040 -> 1998002112208
+	1998002112208 [label="I am logged in as \"existing\""]
+	1998002111488 [label="I create a homepage"]
+	1998002121040 -> 1998002111488
+	1998002111488 [label="I create a homepage"]
+}

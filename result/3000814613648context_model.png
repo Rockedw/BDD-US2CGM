@@ -1,0 +1,13 @@
+// 3000814610432 Context Model
+digraph {
+	3000814613648 [label=Context14]
+	3000814614464 [label="following users exist:"]
+	3000814613648 -> 3000814614464
+	3000814614464 [label="following users exist:"]
+	3000814614560 [label="\"robert@grimm.grimm\" has posted a status message with a photo"]
+	3000814613648 -> 3000814614560
+	3000814614560 [label="\"robert@grimm.grimm\" has posted a status message with a photo"]
+	3000814614656 [label="I sign in as \"robert@grimm.grimm\""]
+	3000814613648 -> 3000814614656
+	3000814614656 [label="I sign in as \"robert@grimm.grimm\""]
+}

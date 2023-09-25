@@ -1,0 +1,49 @@
+{
+    "feature_name": "Resolving conflicts",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I checkout a local repository",
+                        "I create a wc file named \"foo.rb\"",
+                        "I replace \"foo.rb\" contents with \"Never gonna make you cry\"",
+                        "I add \"foo.rb\" to the index",
+                        "I commit my changes with message \"Hark! This is a commit.\""
+                    ],
+                    [
+                        "I replace \"foo.rb\" contents with \"Never gonna say goodbye\"",
+                        "I commit my changes with message \"Yarr! This is another commit.\"",
+                        "I replace \"foo.rb\" contents in the new copy with \"Never gonna tell a lie and hurt you\""
+                    ],
+                    [
+                        "I replace \"foo.rb\" contents in the new copy with \"Never gonna tell a lie and hurt you\"",
+                        "and I resolve \"foo.rb\" conflicts in the new copy"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "if I checkout to a new working copy, it should have \"1\" files",
+                        "the contents of wc file \"foo.rb\" in the new copy should be \"Never gonna make you cry\""
+                    ],
+                    [
+                        "if I update my new working copy, it should have \"4\" files",
+                        "there should be \"1\" conflicted files in the new copy"
+                    ],
+                    [
+                        "if I update my new working copy, it should have \"1\" files",
+                        "there should be \"0\" conflicted files in the new copy",
+                        "the contents of wc file \"foo.rb\" in the new copy should be \"Never gonna tell a lie and hurt you\"",
+                        "I commit my changes in the new copy with message \"Commit commit commit again!\"",
+                        "if I update my working copy, it should have \"1\" files",
+                        "the contents of wc file \"foo.rb\" should be \"Never gonna tell a lie and hurt you\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

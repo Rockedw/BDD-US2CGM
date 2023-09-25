@@ -1,0 +1,80 @@
+{
+    "feature_name": "Interacting with tags",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I click on selector \".tag_following_action\""
+                    ],
+                    [
+                        "I am on the home page"
+                    ],
+                    [
+                        "I visit the mobile search page",
+                        "I fill in the following within \"#main\":",
+                        "I press \"Search\""
+                    ],
+                    [
+                        "I click on selector \".tag_following_action\""
+                    ],
+                    [
+                        "I am on the home page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Stop following #newhere\" within \".tag_following_action\""
+                    ],
+                    [
+                        "I should see \"Hello! I am #newhere\""
+                    ],
+                    [
+                        "I should see \"Stop following #newhere\" within \".tag_following_action\""
+                    ],
+                    [
+                        "I should see \"Follow #newhere\" within \".tag_following_action\""
+                    ],
+                    [
+                        "I should not see \"Hello! I am #newhere\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I click on selector \".tag_following_action\""
+                    ],
+                    [
+                        "I am on the manage tag followings page"
+                    ],
+                    [
+                        "I confirm the alert after I click on selector \".tag_following_action.only-delete\""
+                    ],
+                    [
+                        "I am on the home page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Stop following #newhere\" within \".tag_following_action\""
+                    ],
+                    [
+                        "I should see \"#newhere\" within \"ul.followed_tags\""
+                    ],
+                    [
+                        "I should see \"You aren't following any tags.\""
+                    ],
+                    [
+                        "I should not see \"Hello! I am #newhere\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

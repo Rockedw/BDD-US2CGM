@@ -1,0 +1,51 @@
+{
+    "feature_name": "Using alternative rules",
+    "user_story": {
+        "as_a": "sysadmin",
+        "i_want": "set an individual Coop to use a non-default Rules document",
+        "so_that": "allow for new versions of model Rules to be used for new Coops, while keeping old Coops on the original model Rules",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a Coop",
+                        "there is an alternative model Rules document",
+                        "I am a Member of the Coop"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "the Coop is set to use the alternative model Rules document",
+                        "I go to the Rules page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the alternative Rules"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a Coop \"The Default Coop\"",
+                        "there is a Coop \"The Alternative Coop\"",
+                        "there is an alternative model Rules document",
+                        "I am a Member of the coop \"The Default Coop\"",
+                        "the Coop \"The Alternative Coop\" is set to use the alternative model Rules document"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Rules page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the default Rules"
+                    ]
+                ]
+            }
+        ]
+    }
+}

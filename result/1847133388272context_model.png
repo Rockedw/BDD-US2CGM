@@ -1,0 +1,16 @@
+// 1847133386928 Context Model
+digraph {
+	1847133388272 [label=Context8]
+	1847133383472 [label="I have a _puppies directory"]
+	1847133388272 -> 1847133383472
+	1847133383472 [label="I have a _puppies directory"]
+	1847133387168 [label="I have the following documents under the puppies collection:"]
+	1847133388272 -> 1847133387168
+	1847133387168 [label="I have the following documents under the puppies collection:"]
+	1847133384528 [label="I have a \"_config.yml\" file with content:"]
+	1847133388272 -> 1847133384528
+	1847133384528 [label="I have a \"_config.yml\" file with content:"]
+	1847133384912 [label="I have a \"index.html\" page that contains \"Newest puppy: {% assign puppy = site.puppies.last %}{{ puppy.title }}\""]
+	1847133388272 -> 1847133384912
+	1847133384912 [label="I have a \"index.html\" page that contains \"Newest puppy: {% assign puppy = site.puppies.last %}{{ puppy.title }}\""]
+}

@@ -1,0 +1,334 @@
+{
+    "feature_name": "Verify inputs for creation of new item dynamically within the page",
+    "user_story": {
+        "as_a": "as a contributor, I want",
+        "i_want": "tell about bad inputs before I submit a page.",
+        "so_that": "create a wontology,",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on the new items page",
+                        "I pause"
+                    ],
+                    [
+                        "I put the focus on the \"item_class_item_id\" element",
+                        "I type the \"Tab\" special key"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the focus is on the \"item_sti_type\" element"
+                    ],
+                    [
+                        "the focus is on the \"item_sti_type\" element"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on the new items page",
+                        "I pause"
+                    ],
+                    [
+                        "I type the \"Tab\" special key",
+                        "I pause"
+                    ],
+                    [
+                        "I type the \"Tab\" special key",
+                        "I pause"
+                    ],
+                    [
+                        "I type the \"Tab\" special key",
+                        "I pause"
+                    ],
+                    [
+                        "I type the \"Tab\" special key",
+                        "I pause"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the element \"sti_type_required\" has the format \"font-weight=400\"",
+                        "the element \"title_required\" has the format \"font-weight=400\"",
+                        "the element \"name_required\" has the format \"font-weight=400\"",
+                        "the element \"description_recommended\" has the format \"font-weight=400\"",
+                        "the image \"sti_type_error_icon\" is \"blank_error_icon\"",
+                        "the image \"title_error_icon\" is \"blank_error_icon\"",
+                        "the image \"name_error_icon\" is \"blank_error_icon\"",
+                        "the image \"description_error_icon\" is \"blank_error_icon\""
+                    ],
+                    [
+                        "the element \"sti_type_required\" has the format \"font-weight=bold\"",
+                        "the element \"title_required\" has the format \"font-weight=400\"",
+                        "the element \"name_required\" has the format \"font-weight=400\"",
+                        "the element \"description_recommended\" has the format \"font-weight=400\"",
+                        "the image \"sti_type_error_icon\" is \"error_error_icon\"",
+                        "the image \"title_error_icon\" is \"blank_error_icon\"",
+                        "the image \"name_error_icon\" is \"blank_error_icon\"",
+                        "the image \"description_error_icon\" is \"blank_error_icon\""
+                    ],
+                    [
+                        "the element \"sti_type_required\" has the format \"font-weight=bold\"",
+                        "the element \"title_required\" has the format \"font-weight=bold\"",
+                        "the element \"name_required\" has the format \"font-weight=400\"",
+                        "the element \"description_recommended\" has the format \"font-weight=400\"",
+                        "the image \"sti_type_error_icon\" is \"error_error_icon\"",
+                        "the image \"title_error_icon\" is \"error_error_icon\"",
+                        "the image \"name_error_icon\" is \"blank_error_icon\"",
+                        "the image \"description_error_icon\" is \"blank_error_icon\""
+                    ],
+                    [
+                        "the element \"sti_type_required\" has the format \"font-weight=bold\"",
+                        "the element \"title_required\" has the format \"font-weight=bold\"",
+                        "the element \"name_required\" has the format \"font-weight=bold\"",
+                        "the element \"description_recommended\" has the format \"font-weight=400\"",
+                        "the image \"sti_type_error_icon\" is \"error_error_icon\"",
+                        "the image \"title_error_icon\" is \"error_error_icon\"",
+                        "the image \"name_error_icon\" is \"error_error_icon\"",
+                        "the image \"description_error_icon\" is \"blank_error_icon\""
+                    ],
+                    [
+                        "the element \"sti_type_required\" has the format \"font-weight=bold\"",
+                        "the element \"title_required\" has the format \"font-weight=bold\"",
+                        "the element \"name_required\" has the format \"font-weight=bold\"",
+                        "the element \"description_recommended\" has the format \"font-weight=bold\"",
+                        "the image \"sti_type_error_icon\" is \"error_error_icon\"",
+                        "the image \"title_error_icon\" is \"error_error_icon\"",
+                        "the image \"name_error_icon\" is \"error_error_icon\"",
+                        "the image \"description_error_icon\" is \"warn_error_icon\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on the new items page",
+                        "I pause"
+                    ],
+                    [
+                        "I press \"Create\"",
+                        "I pause"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the element \"item_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ],
+                    [
+                        "the element \"sti_type_required\" has the format \"font-weight=bold\"",
+                        "the element \"title_required\" has the format \"font-weight=bold\"",
+                        "the element \"name_required\" has the format \"font-weight=bold\"",
+                        "the element \"description_recommended\" has the format \"font-weight=bold\"",
+                        "the image \"sti_type_error_icon\" is \"error_error_icon\"",
+                        "the image \"title_error_icon\" is \"error_error_icon\"",
+                        "the image \"name_error_icon\" is \"error_error_icon\"",
+                        "the image \"description_error_icon\" is \"warn_error_icon\"",
+                        "the \"MB_content\" element should match \"Type[^\\.]+required\"",
+                        "the \"MB_content\" element should match \"Title[^\\.]+required\"",
+                        "the \"MB_content\" element should match \"Name[^\\.]+required\"",
+                        "the element \"item_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the new items page",
+                        "I put the focus on the \"item_description\" element"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"Name\" with \"aNewItem\"",
+                        "I pause"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the element \"sti_type_required\" has the format \"font-weight=bold\"",
+                        "the element \"title_required\" has the format \"font-weight=bold\"",
+                        "the element \"name_required\" has the format \"font-weight=400\"",
+                        "the element \"description_recommended\" has the format \"font-weight=400\"",
+                        "the image \"sti_type_error_icon\" is \"error_error_icon\"",
+                        "the image \"title_error_icon\" is \"error_error_icon\"",
+                        "the image \"name_error_icon\" is \"blank_error_icon\"",
+                        "the image \"description_error_icon\" is \"blank_error_icon\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the new items page",
+                        "I pause"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I put the focus on the \"item_submit\" element",
+                        "I pause",
+                        "I pause"
+                    ],
+                    [
+                        "I fill in \"Description\" with \"Here's a new item\"",
+                        "I pause"
+                    ],
+                    [
+                        "I fill in \"Title\" with \"Another new item\"",
+                        "I pause"
+                    ],
+                    [
+                        "I select \"Individual\" from \"Type\"",
+                        "I pause"
+                    ],
+                    [
+                        "I fill in \"Name\" with \"aNewItem\"",
+                        "I pause"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the element \"sti_type_required\" has the format \"font-weight=bold\"",
+                        "the element \"title_required\" has the format \"font-weight=bold\"",
+                        "the element \"name_required\" has the format \"font-weight=bold\"",
+                        "the element \"description_recommended\" has the format \"font-weight=bold\"",
+                        "the image \"sti_type_error_icon\" is \"error_error_icon\"",
+                        "the image \"title_error_icon\" is \"error_error_icon\"",
+                        "the image \"name_error_icon\" is \"error_error_icon\"",
+                        "the image \"description_error_icon\" is \"warn_error_icon\""
+                    ],
+                    [
+                        "the element \"description_recommended\" has the format \"font-weight=400\"",
+                        "the image \"description_error_icon\" is \"blank_error_icon\""
+                    ],
+                    [
+                        "the element \"title_required\" has the format \"font-weight=400\"",
+                        "the image \"title_error_icon\" is \"blank_error_icon\""
+                    ],
+                    [
+                        "the element \"sti_type_required\" has the format \"font-weight=400\"",
+                        "the image \"sti_type_error_icon\" is \"blank_error_icon\""
+                    ],
+                    [
+                        "the element \"name_required\" has the format \"font-weight=400\"",
+                        "the image \"name_error_icon\" is \"blank_error_icon\"",
+                        "the element \"item_submit\" has the format \"background-color=$active_button_color;\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on the new items page",
+                        "I pause"
+                    ],
+                    [
+                        "I select \"Category\" from \"Type\"",
+                        "I type the \"Tab\" special key",
+                        "I pause"
+                    ],
+                    [
+                        "I type \"This is a Title\"",
+                        "I type the \"Tab\" special key",
+                        "I pause"
+                    ],
+                    [
+                        "I type \"ItemName\"",
+                        "I type the \"Tab\" special key",
+                        "I pause"
+                    ],
+                    [
+                        "I type the \"Tab\" special key",
+                        "I pause"
+                    ],
+                    [
+                        "I put the focus on the \"item_description\" element",
+                        "I type \"Here is a very simple description.\"",
+                        "I pause"
+                    ],
+                    [
+                        "I fill in \"Name\" with \"\"",
+                        "I pause"
+                    ],
+                    [
+                        "I fill in \"Title\" with \"\"",
+                        "I pause"
+                    ],
+                    [
+                        "I fill in \"Description\" with \"\"",
+                        "I pause"
+                    ],
+                    [
+                        "I select \"- type of item -\" from \"Type\"",
+                        "I pause"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the element \"item_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ],
+                    [
+                        "the element \"sti_type_required\" has the format \"font-weight=400\"",
+                        "the image \"sti_type_error_icon\" is \"blank_error_icon\"",
+                        "the element \"title_required\" has the format \"font-weight=400\"",
+                        "the image \"title_error_icon\" is \"blank_error_icon\""
+                    ],
+                    [
+                        "the element \"title_required\" has the format \"font-weight=400\"",
+                        "the image \"title_error_icon\" is \"blank_error_icon\"",
+                        "the element \"name_required\" has the format \"font-weight=400\"",
+                        "the image \"name_error_icon\" is \"blank_error_icon\"",
+                        "the element \"item_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ],
+                    [
+                        "the element \"name_required\" has the format \"font-weight=400\"",
+                        "the image \"name_error_icon\" is \"blank_error_icon\"",
+                        "the element \"description_recommended\" has the format \"font-weight=400\"",
+                        "the image \"description_error_icon\" is \"blank_error_icon\"",
+                        "the element \"item_submit\" has the format \"background-color=$active_button_color;\""
+                    ],
+                    [
+                        "the element \"item_submit\" has the format \"background-color=$active_button_color;\"",
+                        "the element \"description_recommended\" has the format \"font-weight=bold\"",
+                        "the image \"description_error_icon\" is \"warn_error_icon\""
+                    ],
+                    [
+                        "the element \"item_submit\" has the format \"background-color=$active_button_color;\"",
+                        "the element \"description_recommended\" has the format \"font-weight=400\"",
+                        "the image \"description_error_icon\" is \"blank_error_icon\""
+                    ],
+                    [
+                        "the element \"name_required\" has the format \"font-weight=bold\"",
+                        "the image \"name_error_icon\" is \"error_error_icon\"",
+                        "the element \"item_submit\" has the format \"background-color=$inactive_button_color;\"",
+                        "the element \"title_required\" has the format \"font-weight=400\"",
+                        "the image \"title_error_icon\" is \"blank_error_icon\""
+                    ],
+                    [
+                        "the element \"title_required\" has the format \"font-weight=bold\"",
+                        "the image \"title_error_icon\" is \"error_error_icon\"",
+                        "the element \"description_recommended\" has the format \"font-weight=400\"",
+                        "the image \"description_error_icon\" is \"blank_error_icon\""
+                    ],
+                    [
+                        "the element \"description_recommended\" has the format \"font-weight=bold\"",
+                        "the image \"description_error_icon\" is \"warn_error_icon\"",
+                        "the element \"sti_type_required\" has the format \"font-weight=400\"",
+                        "the image \"sti_type_error_icon\" is \"blank_error_icon\""
+                    ],
+                    [
+                        "the element \"sti_type_required\" has the format \"font-weight=bold\"",
+                        "the image \"sti_type_error_icon\" is \"error_error_icon\"",
+                        "the element \"item_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

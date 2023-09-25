@@ -1,0 +1,288 @@
+{
+    "feature_name": "Insert a tab",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are hard",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents of the edit tab should be \"\\t\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are hard",
+                        "I replace the contents with \"Hacker\"",
+                        "I move the cursor to 6",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents of the edit tab should be \"Hacker\\t\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 2 spaces",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents of the edit tab should be \"  \""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 2 spaces",
+                        "I replace the contents with \"Hacker\"",
+                        "I move the cursor to 6",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents of the edit tab should be \"Hacker  \""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents of the edit tab should be \"    \""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"Hacker\"",
+                        "I move the cursor to 6",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents of the edit tab should be \"Hacker  \""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"Ha\"",
+                        "I move the cursor to 0",
+                        "I press Shift+Right key in the edit tab",
+                        "I press Shift+Right key in the edit tab",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents of the edit tab should be \"    Ha\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are hard",
+                        "I replace the contents with \"Ha\"",
+                        "I move the cursor to 0",
+                        "I press Shift+Right key in the edit tab",
+                        "I press Shift+Right key in the edit tab",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents of the edit tab should be \"\\tHa\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"H\\t\"",
+                        "I move the cursor to 0",
+                        "I press Shift+Right key in the edit tab",
+                        "I press Shift+Right key in the edit tab",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents of the edit tab should be \"    H\\t\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"\\tHacker\"",
+                        "I move the cursor to 7",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents of the edit tab should be \"\\tHacker  \""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"Jim\\nHacker\"",
+                        "I block select from 0 to 0",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents of the edit tab should be \"    Jim\\nHacker\"",
+                        "the selection range should be from 4 to 4"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"Jim\\nHacker\"",
+                        "I block select from 0 to 4",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents of the edit tab should be \"    Jim\\n    Hacker\"",
+                        "the selection range should be from 4 to 12"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"Jim\\nHacker\\nMP\"",
+                        "I block select from 0 to 11",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents of the edit tab should be \"    Jim\\n    Hacker\\n    MP\"",
+                        "the selection range should be from 4 to 23"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"Jim\\nHacker\"",
+                        "I block select from 0 to 2",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents of the edit tab should be \"    Jim\\nHacker\"",
+                        "the selection range should be from 4 to 4"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"Jim\\nHacker\"",
+                        "I block select from 0 to 6",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents of the edit tab should be \"    Jim\\n    Hacker\"",
+                        "the selection range should be from 4 to 10"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"Jim\\nHacker\\nMP\"",
+                        "I block select from 0 to 13",
+                        "I press the Tab key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents of the edit tab should be \"    Jim\\n    Hacker\\n    MP\"",
+                        "the selection range should be from 4 to 19"
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+// 1633872140448 Context Model
+digraph {
+	1633872140736 [label=Context4]
+	1633872140880 [label="I have a _plugins directory"]
+	1633872140736 -> 1633872140880
+	1633872140880 [label="I have a _plugins directory"]
+	1633872140976 [label="I have a \"_plugins/ext.rb\" file with content:"]
+	1633872140736 -> 1633872140976
+	1633872140976 [label="I have a \"_plugins/ext.rb\" file with content:"]
+	1633872141072 [label="I have a \"page1.html\" page that contains \"page1\""]
+	1633872140736 -> 1633872141072
+	1633872141072 [label="I have a \"page1.html\" page that contains \"page1\""]
+}

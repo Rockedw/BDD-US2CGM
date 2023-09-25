@@ -1,0 +1,405 @@
+{
+    "feature_name": "Notifications",
+    "user_story": {
+        "as_a": "User",
+        "i_want": "get notifications",
+        "so_that": "see what is happening",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I sign in as \"bob@bob.bob\"",
+                        "I am on \"alice@alice.alice\"'s page",
+                        "I add the person to my \"Besties\" aspect",
+                        "I sign out"
+                    ],
+                    [
+                        "I sign in as \"alice@alice.alice\"",
+                        "I follow \"Notifications\" in the header"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the notification dropdown should be visible"
+                    ],
+                    [
+                        "I should see \"started sharing with you\"",
+                        "I go to the notifications page"
+                    ],
+                    [
+                        "I should see \"started sharing with you\"",
+                        "I should have 1 email delivery"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\"",
+                        "\"alice@alice.alice\" has a public post with text \"check this out!\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"bob@bob.bob\"",
+                        "I am on \"alice@alice.alice\"'s page",
+                        "I confirm the alert after I follow \"Reshare\"",
+                        "I sign out"
+                    ],
+                    [
+                        "I sign in as \"alice@alice.alice\"",
+                        "I follow \"Notifications\" in the header"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the notification dropdown should be visible"
+                    ],
+                    [
+                        "I should see \"reshared your post\"",
+                        "I should have 1 email delivery"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\"",
+                        "\"alice@alice.alice\" has a public post with text \"check this out!\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"bob@bob.bob\"",
+                        "I am on \"alice@alice.alice\"'s page",
+                        "I follow \"Like\"",
+                        "I sign out"
+                    ],
+                    [
+                        "I sign in as \"alice@alice.alice\"",
+                        "I follow \"Notifications\" in the header"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the notification dropdown should be visible"
+                    ],
+                    [
+                        "I should see \"liked your post\"",
+                        "I should have 1 email delivery"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\"",
+                        "\"alice@alice.alice\" has a public post with text \"check this out!\"",
+                        "\"bob@bob.bob\" has commented \"great post!\" on \"check this out!\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"alice@alice.alice\"",
+                        "I follow \"Notifications\" in the header"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the notification dropdown should be visible"
+                    ],
+                    [
+                        "I should see \"commented on your post\"",
+                        "I should have 1 email delivery"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "\"alice@alice.alice\" has a public post with text \"check this out!\"",
+                        "\"bob@bob.bob\" has commented \"great post, alice!\" on \"check this out!\"",
+                        "\"carol@carol.carol\" has commented \"great comment, bob!\" on \"check this out!\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"bob@bob.bob\"",
+                        "I follow \"Notifications\" in the header"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the notification dropdown should be visible",
+                        "I should see \"also commented on\"",
+                        "I should have 3 email delivery"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "\"alice@alice.alice\" has a public post with text \"check this out!\"",
+                        "\"carol@carol.carol\" has commented \"great post, alice!\" on \"check this out!\"",
+                        "\"alice@alice.alice\" has commented \"great comment, carol!\" on \"check this out!\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"carol@carol.carol\"",
+                        "I follow \"Notifications\" in the header"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the notification dropdown should be visible",
+                        "I should see \"also commented on\"",
+                        "I should have 2 email delivery"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "\"alice@alice.alice\" has a public post with text \"check this out!\"",
+                        "a user with email \"bob@bob.bob\" is connected with \"carol@carol.carol\"",
+                        "\"carol@carol.carol\" has commented \"great post, alice!\" on \"check this out!\"",
+                        "\"bob@bob.bob\" has commented \"great post!\" on \"check this out!\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"carol@carol.carol\"",
+                        "I follow \"Notifications\" in the header"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the notification dropdown should be visible",
+                        "I should see \"also commented on\"",
+                        "I should have 3 email delivery"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\"",
+                        "Alice has a post mentioning Bob"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"bob@bob.bob\"",
+                        "I follow \"Notifications\" in the header"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the notification dropdown should be visible"
+                    ],
+                    [
+                        "I should see \"mentioned you in the post\"",
+                        "I should have 1 email delivery"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "\"alice@alice.alice\" has a public post with text \"check this out!\"",
+                        "\"bob@bob.bob\" has commented mentioning \"alice@alice.alice\" on \"check this out!\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"alice@alice.alice\"",
+                        "I follow \"Notifications\" in the header"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the notification dropdown should be visible",
+                        "I should see \"mentioned you in a comment\"",
+                        "I should have 1 email delivery"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\"",
+                        "Alice has a post mentioning Bob"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"bob@bob.bob\"",
+                        "I follow \"Notifications\" in the header"
+                    ],
+                    [
+                        "I click on selector \".unread .unread-toggle .entypo-eye\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the notification dropdown should be visible",
+                        "I wait for notifications to load",
+                        "I should see a \".unread .unread-toggle .entypo-eye\""
+                    ],
+                    [
+                        "I should see a \".read .unread-toggle\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\"",
+                        "Alice has a post mentioning Bob"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"bob@bob.bob\"",
+                        "I am on the notifications page"
+                    ],
+                    [
+                        "I filter notifications by likes"
+                    ],
+                    [
+                        "I filter notifications by mentions"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"mentioned you in the post\""
+                    ],
+                    [
+                        "I should not see \"mentioned you in the post\""
+                    ],
+                    [
+                        "I should see \"mentioned you in the post\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I sign in as \"bob@bob.bob\"",
+                        "I am on \"alice@alice.alice\"'s page",
+                        "I add the person to my \"Besties\" aspect",
+                        "I sign out"
+                    ],
+                    [
+                        "I sign in as \"alice@alice.alice\"",
+                        "I go to the edit profile page",
+                        "I follow \"Notifications\" in the header"
+                    ],
+                    [
+                        "I wait for notifications to load",
+                        "I activate the first hovercard in the notification dropdown",
+                        "I press the aspect dropdown"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the notification dropdown should be visible"
+                    ],
+                    [
+                        "the aspect dropdown should be visible"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I sign in as \"bob@bob.bob\"",
+                        "I am on \"alice@alice.alice\"'s page",
+                        "I add the person to my \"Besties\" aspect",
+                        "I sign out"
+                    ],
+                    [
+                        "I sign in as \"alice@alice.alice\"",
+                        "I follow \"Notifications\" in the header"
+                    ],
+                    [
+                        "I wait for notifications to load",
+                        "I activate the first hovercard in the notification dropdown",
+                        "I press the aspect dropdown"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the notification dropdown should be visible"
+                    ],
+                    [
+                        "the aspect dropdown should be visible"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\"",
+                        "Alice has 6 posts mentioning Bob"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"bob@bob.bob\"",
+                        "I follow \"Notifications\" in the header"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the notification dropdown should be visible"
+                    ],
+                    [
+                        "the notification dropdown scrollbar should be visible"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\"",
+                        "Alice has 20 posts mentioning Bob"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"bob@bob.bob\"",
+                        "I follow \"Notifications\" in the header"
+                    ],
+                    [
+                        "I wait for notifications to load"
+                    ],
+                    [
+                        "I scroll down on the notifications dropdown"
+                    ],
+                    [
+                        "I wait for notifications to load"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the notification dropdown should be visible"
+                    ],
+                    [
+                        "the notification dropdown scrollbar should be visible"
+                    ],
+                    [
+                        "there should be 10 notifications loaded"
+                    ],
+                    [
+                        "there should be 15 notifications loaded"
+                    ]
+                ]
+            }
+        ]
+    }
+}

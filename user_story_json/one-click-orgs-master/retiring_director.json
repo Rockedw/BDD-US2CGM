@@ -1,0 +1,33 @@
+{
+    "feature_name": "Retiring director",
+    "user_story": {
+        "as_a": "As the secretary",
+        "i_want": "record the retirement of a director",
+        "so_that": "keep the records of directors up-to-date",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a co-op",
+                        "I am the Secretary of the co-op",
+                        "there is a director called \"Claire Simmons\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Directors page",
+                        "I retire \"Claire Simmons\"",
+                        "I certify the retirement",
+                        "I save the retirement"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Directors page",
+                        "I should not see \"Claire Simmons\" in the list of Directors"
+                    ]
+                ]
+            }
+        ]
+    }
+}

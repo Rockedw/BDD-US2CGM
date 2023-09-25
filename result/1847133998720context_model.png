@@ -1,0 +1,16 @@
+// 1847133997664 Context Model
+digraph {
+	1847133998720 [label=Context28]
+	1847133998864 [label="I have a _layouts directory"]
+	1847133998720 -> 1847133998864
+	1847133998864 [label="I have a _layouts directory"]
+	1847133998960 [label="I have the following pages:"]
+	1847133998720 -> 1847133998960
+	1847133998960 [label="I have the following pages:"]
+	1847133999056 [label="I have the following page:"]
+	1847133998720 -> 1847133999056
+	1847133999056 [label="I have the following page:"]
+	1847133999152 [label="I have a default layout that contains \"{% assign sorted_pages = site.pages | sort: 'title', 'last' %}The rule of {{ sorted_pages.size }}: {% for p in sorted_pages %}{{ p.content | strip_html | strip_newlines }}, {% endfor %}\""]
+	1847133998720 -> 1847133999152
+	1847133999152 [label="I have a default layout that contains \"{% assign sorted_pages = site.pages | sort: 'title', 'last' %}The rule of {{ sorted_pages.size }}: {% for p in sorted_pages %}{{ p.content | strip_html | strip_newlines }}, {% endfor %}\""]
+}

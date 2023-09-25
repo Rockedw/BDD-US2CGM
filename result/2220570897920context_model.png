@@ -1,0 +1,13 @@
+// 2220570895760 Context Model
+digraph {
+	2220570897920 [label=Context1]
+	2220570886880 [label="there is a Coop"]
+	2220570897920 -> 2220570886880
+	2220570886880 [label="there is a Coop"]
+	2220570886784 [label="there is an alternative model Rules document"]
+	2220570897920 -> 2220570886784
+	2220570886784 [label="there is an alternative model Rules document"]
+	2220570892592 [label="I am a Member of the Coop"]
+	2220570897920 -> 2220570892592
+	2220570892592 [label="I am a Member of the Coop"]
+}

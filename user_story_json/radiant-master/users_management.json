@@ -1,0 +1,139 @@
+{
+    "feature_name": "Managing users",
+    "user_story": {
+        "as_a": "n administrator I want to manage the set of users",
+        "i_want": "",
+        "so_that": "allow others to edit content and design assets",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"Admin\"",
+                        "I should see \"Designer\"",
+                        "I should see \"Existing\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I view a user"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Edit User\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I follow \"New User\"",
+                        "I fill in \"Name\" with \"New Guy\"",
+                        "I fill in \"E-mail\" with \"newguy@example.com\"",
+                        "I fill in \"Username\" with \"new_guy\"",
+                        "I fill in \"New Password\" with \"password\"",
+                        "I fill in \"Confirm New Password\" with \"password\"",
+                        "I press \"Create User\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the users list",
+                        "I should see \"New Guy\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I follow \"New User\"",
+                        "I fill in \"Name\" with \"New Guy\"",
+                        "I fill in \"E-mail\" with \"newguy@example.com\"",
+                        "I press \"Create User\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see an error message",
+                        "I should see the form"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I follow \"Designer\""
+                    ],
+                    [
+                        "I fill in \"Name\" with \"Old Guy\"",
+                        "I fill in \"Username\" with \"oldguy\"",
+                        "I uncheck \"Designer\"",
+                        "I press \"Save Changes\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the form"
+                    ],
+                    [
+                        "I should see \"Old Guy\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I attempt to remove my own account"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see an error message",
+                        "I should see \"You cannot delete yourself\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I attempt to delete my own account"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see an error message",
+                        "I should see \"You cannot delete yourself\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I follow \"Remove\""
+                    ],
+                    [
+                        "I press \"Delete User\"",
+                        "I should not see \"Another\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"permanently remove\"",
+                        "I should see \"Another\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

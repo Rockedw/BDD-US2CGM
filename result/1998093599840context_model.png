@@ -1,0 +1,16 @@
+// 1998093604688 Context Model
+digraph {
+	1998093599840 [label=Context2]
+	1998093600896 [label="The default settings exist using factories"]
+	1998093599840 -> 1998093600896
+	1998093600896 [label="The default settings exist using factories"]
+	1998093601040 [label="the database has been seeded"]
+	1998093599840 -> 1998093601040
+	1998093601040 [label="the database has been seeded"]
+	1998093601472 [label="I am logged in with the username teacher"]
+	1998093599840 -> 1998093601472
+	1998093601472 [label="I am logged in with the username teacher"]
+	1998093604784 [label="grade levels for classes is enabled"]
+	1998093599840 -> 1998093604784
+	1998093604784 [label="grade levels for classes is enabled"]
+}

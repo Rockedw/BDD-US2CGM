@@ -1,0 +1,98 @@
+{
+    "feature_name": "GENERIC CHART OF TAXES & GENERIC CHART OF TAX CODES",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I need a \"account.tax.code\" with oid: scen.taxe_code_root",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.tax.code\" with oid: scen.taxe_code_vat",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.tax.code\" with oid: scen.taxe_code_purchases_vat",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.tax.code\" with oid: scen.taxe_code_sales_vat_10",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.tax.code\" with oid: scen.taxe_code_sales_vat_20",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.tax.code\" with oid: scen.taxe_code_EU_purchases_vat",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.tax.code\" with oid: scen.taxe_code_EU_purchases_rev_vat",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.tax.code\" with oid: scen.taxe_code_base",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.tax.code\" with oid: scen.taxe_code_sales_base_10",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.tax.code\" with oid: scen.taxe_code_sales_base_20",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.tax.code\" with oid: scen.taxe_code_base_EU_purchases",
+                        "having:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"account.tax\" with oid: scen.purchases_vat_10",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.tax\" with oid: scen.purchases_vat_20",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.tax\" with oid: scen.purchases_vat_incl_20",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.tax\" with oid: scen.sales_vat_10",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.tax\" with oid: scen.sales_vat_20",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.tax\" with oid: scen.sales_vat_incl_20",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.tax\" with oid: scen.EU_purchases",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.tax\" with oid: scen.EU_purchases_rev",
+                        "having:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            }
+        ]
+    }
+}

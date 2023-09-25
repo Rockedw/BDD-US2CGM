@@ -1,0 +1,19 @@
+// 1436756996832 Context Model
+digraph {
+	1436756997600 [label=Context120]
+	1436756997744 [label="I have an \"Rakefile\" file that contains \"I want to be excluded\""]
+	1436756997600 -> 1436756997744
+	1436756997744 [label="I have an \"Rakefile\" file that contains \"I want to be excluded\""]
+	1436756997840 [label="I have an \"README\" file that contains \"I want to be excluded\""]
+	1436756997600 -> 1436756997840
+	1436756997840 [label="I have an \"README\" file that contains \"I want to be excluded\""]
+	1436756997936 [label="I have an \"index.html\" file that contains \"I want to be included\""]
+	1436756997600 -> 1436756997936
+	1436756997936 [label="I have an \"index.html\" file that contains \"I want to be included\""]
+	1436756998032 [label="I have a \"Gemfile\" file that contains \"gem 'include-me'\""]
+	1436756997600 -> 1436756998032
+	1436756998032 [label="I have a \"Gemfile\" file that contains \"gem 'include-me'\""]
+	1436756998128 [label="I have a configuration file with \"exclude\" set to \"['Rakefile', 'README']\""]
+	1436756997600 -> 1436756998128
+	1436756998128 [label="I have a configuration file with \"exclude\" set to \"['Rakefile', 'README']\""]
+}

@@ -1,0 +1,124 @@
+{
+    "feature_name": "Indentation commands",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 2 spaces",
+                        "I select menu item \"Edit|Formatting|Increase Indent\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"  \""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 2 spaces",
+                        "I replace the contents with \"<c>    \"",
+                        "I select menu item \"Edit|Formatting|Decrease Indent\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"  \""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 3 spaces",
+                        "I select menu item \"Edit|Formatting|Increase Indent\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"   \""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 3 spaces",
+                        "I replace the contents with \"<c>      \"",
+                        "I select menu item \"Edit|Formatting|Decrease Indent\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"   \""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are hard",
+                        "I select menu item \"Edit|Formatting|Increase Indent\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"\\t\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are hard",
+                        "I replace the contents with \"<c>\\t\\t\"",
+                        "I select menu item \"Edit|Formatting|Decrease Indent\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"\\t\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the indentation rules are like Ruby's"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 2 spaces",
+                        "I replace the contents with \"def f\\n\\t1\\t\\t\\nend\\t\"",
+                        "I select 13 from (0,0)",
+                        "I select menu item \"Edit|Formatting|Indent\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"def f\\n  1\\nend\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

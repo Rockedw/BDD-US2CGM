@@ -1,0 +1,22 @@
+// 1436758708512 Context Model
+digraph {
+	1436758709952 [label=Context13]
+	1436758710096 [label="there is 1 existing individual like \"someone\""]
+	1436758709952 -> 1436758710096
+	1436758710096 [label="there is 1 existing individual like \"someone\""]
+	1436758710192 [label="I am on the new connections page"]
+	1436758709952 -> 1436758710192
+	1436758710192 [label="I am on the new connections page"]
+	1436758710288 [label="I select \"someone0 : someone item number 0\" from \"Subject\""]
+	1436758709952 -> 1436758710288
+	1436758710288 [label="I select \"someone0 : someone item number 0\" from \"Subject\""]
+	1436758710384 [label="I select \"child_of : Child Of (basic relationship)\" from \"Relates to\""]
+	1436758709952 -> 1436758710384
+	1436758710384 [label="I select \"child_of : Child Of (basic relationship)\" from \"Relates to\""]
+	1436758710480 [label="I choose \"Value\""]
+	1436758709952 -> 1436758710480
+	1436758710480 [label="I choose \"Value\""]
+	1436758710576 [label="I fill in \"connection_scalar_obj\" with \"someone older\""]
+	1436758709952 -> 1436758710576
+	1436758710576 [label="I fill in \"connection_scalar_obj\" with \"someone older\""]
+}

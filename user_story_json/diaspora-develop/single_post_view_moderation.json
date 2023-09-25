@@ -1,0 +1,93 @@
+{
+    "feature_name": "using SPV moderation buttons",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I expand the publisher"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I write the status message \"Here is a post to test with\"",
+                        "I submit the publisher",
+                        "I log out",
+                        "I sign in as \"alice@alice.alice\"",
+                        "I open the show page of the \"Here is a post to test with\" post",
+                        "I confirm the alert after I click to hide the post"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the stream page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I expand the publisher"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I write the status message \"Here is a post to test with\"",
+                        "I submit the publisher",
+                        "I log out",
+                        "I sign in as \"alice@alice.alice\"",
+                        "I open the show page of the \"Here is a post to test with\" post",
+                        "I confirm the alert after I click to block the user"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the stream page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I expand the publisher"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I write the status message \"Here is a post to test with\"",
+                        "I submit the publisher",
+                        "I log out",
+                        "I sign in as \"alice@alice.alice\"",
+                        "I open the show page of the \"Here is a post to test with\" post",
+                        "I confirm the prompt after I click to report the post",
+                        "I should see a flash message containing \"The report has successfully been created\""
+                    ]
+                ],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I expand the publisher"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I write the status message \"Here is a post to test with\"",
+                        "I submit the publisher",
+                        "I open the show page of the \"Here is a post to test with\" post",
+                        "I confirm the alert after I click to delete the post"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the stream page"
+                    ]
+                ]
+            }
+        ]
+    }
+}

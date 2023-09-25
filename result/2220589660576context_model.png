@@ -1,0 +1,13 @@
+// 2220589533984 Context Model
+digraph {
+	2220589660576 [label=Context4]
+	2220589654384 [label="I have a _data directory"]
+	2220589660576 -> 2220589654384
+	2220589654384 [label="I have a _data directory"]
+	2220589698208 [label="I have a \"_data/members.json\" file with content:"]
+	2220589660576 -> 2220589698208
+	2220589698208 [label="I have a \"_data/members.json\" file with content:"]
+	2220589696864 [label="I have an \"index.html\" page that contains \"{% for member in site.data.members %}{{member.name}}{% endfor %}\""]
+	2220589660576 -> 2220589696864
+	2220589696864 [label="I have an \"index.html\" page that contains \"{% for member in site.data.members %}{{member.name}}{% endfor %}\""]
+}

@@ -1,0 +1,50 @@
+{
+    "feature_name": "Edit user preferences",
+    "user_story": {
+        "as_a": "user I want to update my preferences",
+        "i_want": "",
+        "so_that": "keep my credentials secure and information up-to-date",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"<username>\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open my preferences",
+                        "I fill in \"E-mail Address\" with \"my-new-email@example.com\"",
+                        "I press \"Save Changes\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the configuration screen"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"<username>\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open my preferences",
+                        "I fill in \"Username\" with \"\"",
+                        "I press \"Save Changes\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the preferences screen",
+                        "I should see \"this must not be blank\"",
+                        "I should see \"Personal\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

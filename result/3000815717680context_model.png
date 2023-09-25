@@ -1,0 +1,13 @@
+// 3000815717008 Context Model
+digraph {
+	3000815717680 [label=Context116]
+	3000815717824 [label="I have an \"index.md\" page that contains \"__Hello World__\""]
+	3000815717680 -> 3000815717824
+	3000815717824 [label="I have an \"index.md\" page that contains \"__Hello World__\""]
+	3000815717920 [label="I have an \"about.md\" page that contains \"{{ page.name }}\""]
+	3000815717680 -> 3000815717920
+	3000815717920 [label="I have an \"about.md\" page that contains \"{{ page.name }}\""]
+	3000815718016 [label="I have a \"test.json\" file with content:"]
+	3000815717680 -> 3000815718016
+	3000815718016 [label="I have a \"test.json\" file with content:"]
+}

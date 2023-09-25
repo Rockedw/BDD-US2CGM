@@ -1,0 +1,16 @@
+// 2220571417600 Context Model
+digraph {
+	2220571420816 [label=Context2]
+	2220571421632 [label="following users exist:"]
+	2220571420816 -> 2220571421632
+	2220571421632 [label="following users exist:"]
+	2220571421728 [label="a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\""]
+	2220571420816 -> 2220571421728
+	2220571421728 [label="a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\""]
+	2220571421824 [label="\"alice@alice.alice\" has posted a status message with a photo"]
+	2220571420816 -> 2220571421824
+	2220571421824 [label="\"alice@alice.alice\" has posted a status message with a photo"]
+	2220571421920 [label="I sign in as \"bob@bob.bob\" on the mobile website"]
+	2220571420816 -> 2220571421920
+	2220571421920 [label="I sign in as \"bob@bob.bob\" on the mobile website"]
+}

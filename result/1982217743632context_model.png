@@ -1,0 +1,7 @@
+// 1982217742576 Context Model
+digraph {
+	1982217743632 [label=Context104]
+	1982217743776 [label="I have a \"index.html\" page with title \"Simple Test\" that contains \"{{ page.title | foobar }}\n\n{{ page.author }}\""]
+	1982217743632 -> 1982217743776
+	1982217743776 [label="I have a \"index.html\" page with title \"Simple Test\" that contains \"{{ page.title | foobar }}\n\n{{ page.author }}\""]
+}

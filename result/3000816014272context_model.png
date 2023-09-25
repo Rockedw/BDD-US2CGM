@@ -1,0 +1,10 @@
+// 3000816018592 Context Model
+digraph {
+	3000816014272 [label=Context2]
+	3000816017440 [label="I have a configuration file with:"]
+	3000816014272 -> 3000816017440
+	3000816017440 [label="I have a configuration file with:"]
+	3000816015232 [label="I have an \"index.md\" page that contains \"{{ site.test_theme.skin }}\""]
+	3000816014272 -> 3000816015232
+	3000816015232 [label="I have an \"index.md\" page that contains \"{{ site.test_theme.skin }}\""]
+}

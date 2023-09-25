@@ -1,0 +1,10 @@
+// 3000815723728 Context Model
+digraph {
+	3000815724688 [label=Context127]
+	3000815724832 [label="I have an \"index.html\" page that contains \"{% highlight ruby %} puts 'Hello world!' {% endhighlight %}\""]
+	3000815724688 -> 3000815724832
+	3000815724832 [label="I have an \"index.html\" page that contains \"{% highlight ruby %} puts 'Hello world!' {% endhighlight %}\""]
+	3000815724928 [label="I have a configuration file with \"highlighter\" set to \"rouge\""]
+	3000815724688 -> 3000815724928
+	3000815724928 [label="I have a configuration file with \"highlighter\" set to \"rouge\""]
+}

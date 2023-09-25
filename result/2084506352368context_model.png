@@ -1,0 +1,13 @@
+// 2084506351696 Context Model
+digraph {
+	2084506352368 [label=Context33]
+	2084506352512 [label="I have a configuration file with \"highlighter\" set to \"rouge\""]
+	2084506352368 -> 2084506352512
+	2084506352512 [label="I have a configuration file with \"highlighter\" set to \"rouge\""]
+	2084506352608 [label="I have a _posts directory"]
+	2084506352368 -> 2084506352608
+	2084506352608 [label="I have a _posts directory"]
+	2084506352704 [label="I have the following post:"]
+	2084506352368 -> 2084506352704
+	2084506352704 [label="I have the following post:"]
+}

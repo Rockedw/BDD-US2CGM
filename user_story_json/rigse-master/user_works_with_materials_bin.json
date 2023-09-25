@@ -1,0 +1,102 @@
+{
+    "feature_name": "User works with materials bin",
+    "user_story": {
+        "as_a": "n user (logged in or not)",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I visit the route /foo-bar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "category \"Cat A\" with class \"custom-category-class\" should be visible",
+                        "category \"Cat A1\" should be visible",
+                        "category \"Cat A2\" should be visible",
+                        "category \"Cat B\" should be visible"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I visit the route /foo-bar",
+                        "I click category \"Cat B\"",
+                        "I click category \"Cat B1\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "6 materials should be visible"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in with the username author"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I visit the route /foo-bar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "category \"Cat C\" should be visible"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in with the username author"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I visit the route /foo-bar",
+                        "I click category \"Cat C\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"My activities\"",
+                        "some materials should be visible"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in with the username teacher",
+                        "user \"foobar\" authored unofficial material \"ext act\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I visit the route /foo-bar",
+                        "I click category \"Cat D\""
+                    ],
+                    [
+                        "I click \"foobar\" author name"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "authors list should be visible"
+                    ],
+                    [
+                        "\"ext act\" material should be visible"
+                    ]
+                ]
+            }
+        ]
+    }
+}

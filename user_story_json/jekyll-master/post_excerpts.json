@@ -1,0 +1,164 @@
+{
+    "feature_name": "Post excerpts",
+    "user_story": {
+        "as_a": "hacker who likes to blog",
+        "i_want": "be able to make a static site",
+        "so_that": "share my awesome ideas with the interwebs",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.html\" page that contains \"{% for post in site.posts %}{{ post.excerpt }}{% endfor %}\"",
+                        "I have a _posts directory",
+                        "I have the following posts:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see exactly \"<p>content for entry1.</p>\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.html\" page that contains \"{% for post in site.posts %}{{ post.excerpt }}{% endfor %}\"",
+                        "I have a _posts directory",
+                        "I have a _layouts directory",
+                        "I have a post layout that contains \"{{ page.excerpt }}\"",
+                        "I have the following posts:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "the _site/2007 directory should exist",
+                        "the _site/2007/12 directory should exist",
+                        "the _site/2007/12/31 directory should exist",
+                        "the \"_site/2007/12/31/entry1.html\" file should exist",
+                        "I should see exactly \"<p>content for entry1.</p>\" in \"_site/2007/12/31/entry1.html\"",
+                        "I should see exactly \"<p>content for entry1.</p>\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.html\" page that contains \"{% for post in site.posts %}{{ post.excerpt }}{% endfor %}\"",
+                        "I have a configuration file with \"baseurl\" set to \"/blog\"",
+                        "I have a _posts directory",
+                        "I have a _layouts directory",
+                        "I have a post layout that contains \"{{ page.excerpt }}\"",
+                        "I have the following posts:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "the _site/2007 directory should exist",
+                        "the _site/2007/12 directory should exist",
+                        "the _site/2007/12/31 directory should exist",
+                        "the \"_site/2007/12/31/entry1.html\" file should exist",
+                        "I should see exactly \"<p>/blog/assets/style.css</p>\" in \"_site/2007/12/31/entry1.html\"",
+                        "I should see exactly \"<p>/blog/assets/style.css</p>\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.html\" page that contains \"{% for post in site.posts %}{{ post.excerpt }}{% endfor %}\"",
+                        "I have a _posts directory",
+                        "I have a _layouts directory",
+                        "I have a post layout that contains \"<html><head></head><body>{{ page.excerpt }}</body></html>\"",
+                        "I have the following posts:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "the _site/2007 directory should exist",
+                        "the _site/2007/12 directory should exist",
+                        "the _site/2007/12/31 directory should exist",
+                        "the \"_site/2007/12/31/entry1.html\" file should exist",
+                        "I should see \"<p>content for entry1.</p>\" in \"_site/index.html\"",
+                        "I should see \"<html><head></head><body><p>content for entry1.</p>\\n</body></html>\" in \"_site/2007/12/31/entry1.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.html\" page that contains \"{% for post in site.posts %}{{ post.excerpt }}{% endfor %}\"",
+                        "I have a _posts directory",
+                        "I have a _layouts directory",
+                        "I have a post layout that contains \"{{ page.excerpt }}\"",
+                        "I have the following posts:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site/2017/07/06 directory should exist",
+                        "the \"_site/2017/07/06/unrendered-post.html\" file should exist",
+                        "the \"_site/2017/07/06/rendered-post.html\" file should exist",
+                        "I should see \"Liquid is not rendered at {{ page.url }}\" in \"_site/2017/07/06/unrendered-post.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with:",
+                        "I have an \"index.html\" page that contains \"{% for post in site.posts %}{{ post.excerpt }}{% endfor %}\"",
+                        "I have a _layouts directory",
+                        "I have a post layout that contains \"{{ page.excerpt }}\"",
+                        "I have a _posts directory",
+                        "I have the following posts:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "I should not see \"Kramdown warning\" in the build output"
+                    ]
+                ]
+            }
+        ]
+    }
+}

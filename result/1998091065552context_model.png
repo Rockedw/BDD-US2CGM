@@ -1,0 +1,10 @@
+// 1998091059648 Context Model
+digraph {
+	1998091065552 [label=Context101]
+	1998091062384 [label="there is a journal with name \"Purchase Refund Journal\" and company \"MA SOCIETE CH\""]
+	1998091065552 -> 1998091062384
+	1998091062384 [label="there is a journal with name \"Purchase Refund Journal\" and company \"MA SOCIETE CH\""]
+	1998091059600 [label="having:"]
+	1998091065552 -> 1998091059600
+	1998091059600 [label="having:"]
+}

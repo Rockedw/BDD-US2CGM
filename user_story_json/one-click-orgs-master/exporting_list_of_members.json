@@ -1,0 +1,29 @@
+{
+    "feature_name": "Exporting list of members",
+    "user_story": {
+        "as_a": "director",
+        "i_want": "download a PDF version of the list of members",
+        "so_that": "maintain a paper copy of the list of members",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a co-op",
+                        "I am a Director of the co-op"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Members page",
+                        "I follow \"PDF\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a \".pdf\" download with the name of the organisation"
+                    ]
+                ]
+            }
+        ]
+    }
+}

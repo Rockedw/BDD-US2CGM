@@ -1,0 +1,19 @@
+// 1982200602224 Context Model
+digraph {
+	1982200603472 [label=Context73]
+	1982200603616 [label="I have a movies directory"]
+	1982200603472 -> 1982200603616
+	1982200603616 [label="I have a movies directory"]
+	1982200603712 [label="I have a movies/_posts directory"]
+	1982200603472 -> 1982200603712
+	1982200603712 [label="I have a movies/_posts directory"]
+	1982200603808 [label="I have a _layouts directory"]
+	1982200603472 -> 1982200603808
+	1982200603808 [label="I have a _layouts directory"]
+	1982200603904 [label="I have the following post in \"movies\":"]
+	1982200603472 -> 1982200603904
+	1982200603904 [label="I have the following post in \"movies\":"]
+	1982200604000 [label="I have a simple layout that contains \"Post category: {{ page.categories }}\""]
+	1982200603472 -> 1982200604000
+	1982200604000 [label="I have a simple layout that contains \"Post category: {{ page.categories }}\""]
+}

@@ -1,0 +1,168 @@
+{
+    "feature_name": "User manages contacts",
+    "user_story": {
+        "as_a": "User",
+        "i_want": "create new aspects",
+        "so_that": "share with a limited group",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am signed in",
+                        "I am on the contacts page",
+                        "I follow \"Add an aspect\"",
+                        "I fill in \"aspect_name\" with \"Dorm Mates\" in the aspect creation modal",
+                        "I click on selector \".btn-primary\" in the aspect creation modal"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"Dorm Mates\" within \"#aspect_nav\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am signed in",
+                        "I go to the aspects page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Add an aspect\"",
+                        "I fill in \"aspect_name\" with \"losers\" in the aspect creation modal",
+                        "I click on selector \".btn-primary\" in the aspect creation modal"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the contacts page",
+                        "I should see \"losers\" within \"#aspect_nav\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am signed in",
+                        "I have an aspect called \"People\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the contacts page",
+                        "I follow \"People\"",
+                        "I confirm the alert after I click on selector \"#delete_aspect\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the contacts page",
+                        "I should not see \"People\" within \"#aspect_nav\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am signed in",
+                        "I have an aspect called \"People\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the aspects page",
+                        "I click on \"People\" aspect edit icon",
+                        "I confirm the alert after I click on selector \"#delete_aspect\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the contacts page",
+                        "I should not see \"People\" within \"#aspect_nav\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am signed in",
+                        "I have 2 contacts",
+                        "I have an aspect called \"Cat People\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the contacts page",
+                        "I follow \"Cat People\"",
+                        "I add the first person to the aspect"
+                    ],
+                    [
+                        "I remove the first person from the aspect"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should have 1 contact in \"Cat People\""
+                    ],
+                    [
+                        "I should have 0 contacts in \"Cat People\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am signed in",
+                        "I have an aspect called \"Cat People\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the contacts page",
+                        "I follow \"Cat People\"",
+                        "I click on selector \"#change_aspect_name\"",
+                        "I fill in \"aspect_name\" with \"Unicorn People\"",
+                        "I press \"Update\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Unicorn People\" within \"#aspect_name\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am signed in",
+                        "I have an aspect called \"People\"",
+                        "I have an aspect called \"Cat People\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the contacts page",
+                        "I have turned off jQuery effects",
+                        "I drag \"Cat People\" up"
+                    ],
+                    [
+                        "I go to the contacts page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Cat People\" as 2. aspect",
+                        "I should see \"People\" as 3. aspect"
+                    ],
+                    [
+                        "I should see \"Cat People\" as 2. aspect",
+                        "I should see \"People\" as 3. aspect"
+                    ]
+                ]
+            }
+        ]
+    }
+}

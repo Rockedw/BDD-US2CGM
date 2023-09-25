@@ -1,0 +1,10 @@
+// 1982166728320 Context Model
+digraph {
+	1982166722368 [label=Context1]
+	1982166728176 [label="we are currently in a semester"]
+	1982166722368 -> 1982166728176
+	1982166728176 [label="we are currently in a semester"]
+	1982166723904 [label="the following invites exist:"]
+	1982166722368 -> 1982166723904
+	1982166723904 [label="the following invites exist:"]
+}

@@ -1,0 +1,106 @@
+{
+    "feature_name": "Entering minutes for an Annual General Meeting",
+    "user_story": {
+        "as_a": "As the Secretary",
+        "i_want": "enter minutes for the Annual General Meeting",
+        "so_that": "keep records of the business transacted at the Annual General Meeting",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there has been a past AGM",
+                        "no minutes for the past AGM have been entered yet"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Meetings page"
+                    ],
+                    [
+                        "I follow \"Enter minutes for this meeting\" for the past AGM"
+                    ],
+                    [
+                        "I enter minutes for the AGM",
+                        "I choose the Members who were in attendance",
+                        "I press \"Save these minutes\""
+                    ],
+                    [
+                        "I follow \"View minutes\" for the AGM"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Minutes have not been entered for this meeting yet\" for the past AGM"
+                    ],
+                    [
+                        "I should see a field for each of the standard agenda items"
+                    ],
+                    [
+                        "I should be on the Meetings page"
+                    ],
+                    [
+                        "I should see the minutes I entered",
+                        "I should see the participants I chose"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Meetings page",
+                        "I follow \"Enter minutes for a meeting not shown here\"",
+                        "I choose \"Annual General Meeting\" from the list of meeting types",
+                        "I enter the date of the meeting",
+                        "I enter minutes for the meeting",
+                        "I choose the Members who were in attendance",
+                        "I press \"Save these minutes\""
+                    ],
+                    [
+                        "I follow \"View minutes\" for the AGM"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Meetings page",
+                        "I should see the AGM in the list of Past Meetings"
+                    ],
+                    [
+                        "I should see the minutes I entered"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there has been a past AGM",
+                        "the AGM has no minutes yet",
+                        "there were resolutions attached to the AGM"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Meetings page",
+                        "I follow \"Enter minutes for this meeting\" for the past AGM"
+                    ],
+                    [
+                        "I enter that all the resolutions were passed",
+                        "I enter other minutes for the meeting",
+                        "I choose the Members who were in attendance",
+                        "I press \"Save these minutes\"",
+                        "I go to the Proposals page",
+                        "I open the \"Outcomes\" tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a list of the resolutions attached to the meeting"
+                    ],
+                    [
+                        "I should see the resolutions marked as passed"
+                    ]
+                ]
+            }
+        ]
+    }
+}

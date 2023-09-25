@@ -1,0 +1,297 @@
+// Goal Model
+digraph {
+	1847133382560 [label="provider
+goal"]
+	1847133280320 [label="
+goal
+140728069287616"]
+	1847133382560 -> 1847133280320
+	1847133280320 [label="
+goal"]
+	1847133288240 [label="Requesting a password reset
+goal
+1847133289392"]
+	1847133280320 -> 1847133288240
+	1847133288240 [label="Requesting a password reset
+goal"]
+	1847133288672 [label="I am on the homepage
+task
+140728069287616"]
+	1847133288240 -> 1847133288672
+	1847133288672 [label="I am on the homepage
+task"]
+	1847133174704 [label="I follow translation
+goal
+140728069287616"]
+	1847133288240 -> 1847133174704
+	1847133174704 [label="I follow translation
+goal"]
+	1847133279264 [label="I follow \"provider.sign_in\" translation
+task
+140728069287616"]
+	1847133174704 -> 1847133279264
+	1847133279264 [label="I follow \"provider.sign_in\" translation
+task"]
+	1847133283248 [label="I follow \"user.forgot_password\" translation
+task
+140728069287616"]
+	1847133174704 -> 1847133283248
+	1847133283248 [label="I follow \"user.forgot_password\" translation
+task"]
+	1847133163760 [label="I fill
+in something
+goal
+140728069287616"]
+	1847133288240 -> 1847133163760
+	1847133163760 [label="I fill
+in something
+goal"]
+	1847133280224 [label="I fill in \"email\" with \"jo@armstrong.net\"
+task
+140728069287616"]
+	1847133163760 -> 1847133280224
+	1847133280224 [label="I fill in \"email\" with \"jo@armstrong.net\"
+task"]
+	1847133287664 [label="I fill in \"email\" with \"paul@rslw.com\"
+task
+140728069287616"]
+	1847133163760 -> 1847133287664
+	1847133287664 [label="I fill in \"email\" with \"paul@rslw.com\"
+task"]
+	1847133162992 [label="I press translation
+goal
+140728069287616"]
+	1847133288240 -> 1847133162992
+	1847133162992 [label="I press translation
+goal"]
+	1847133282192 [label="I press \"user.send_new_password\" translation
+task
+140728069287616"]
+	1847133162992 -> 1847133282192
+	1847133282192 [label="I press \"user.send_new_password\" translation
+task"]
+	1847133284736 [label="I press \"user.send_new_password\" translation
+task
+140728069287616"]
+	1847133162992 -> 1847133284736
+	1847133284736 [label="I press \"user.send_new_password\" translation
+task"]
+	1847133290112 [label="Creating a new password
+goal
+1847133288336"]
+	1847133280320 -> 1847133290112
+	1847133290112 [label="Creating a new password
+goal"]
+	1847133287424 [label="I follow my reset password link for \"paul@rslw.com\"
+task
+140728069287616"]
+	1847133290112 -> 1847133287424
+	1847133287424 [label="I follow my reset password link for \"paul@rslw.com\"
+task"]
+	1847133286800 [label="I fill in \"user[password]\" with \"bilbo\"
+task
+140728069287616"]
+	1847133290112 -> 1847133286800
+	1847133286800 [label="I fill in \"user[password]\" with \"bilbo\"
+task"]
+	1847133276384 [label="I press \"user.save_new_password\" translation
+task
+140728069287616"]
+	1847133290112 -> 1847133276384
+	1847133276384 [label="I press \"user.save_new_password\" translation
+task"]
+	1847133289680 [label="be able to approve, reject, and view endorsements
+goal
+140728069287616"]
+	1847133382560 -> 1847133289680
+	1847133289680 [label="be able to approve, reject, and view endorsements
+goal"]
+	1847133283680 [label="I log in as \"paul@oi.net\" with password \"testtest\"
+task
+140728069287616"]
+	1847133289680 -> 1847133283680
+	1847133283680 [label="I log in as \"paul@oi.net\" with password \"testtest\"
+task"]
+	1847133276144 [label="I follow \"dashboard.all_endorsements\" translation
+task
+140728069287616"]
+	1847133289680 -> 1847133276144
+	1847133276144 [label="I follow \"dashboard.all_endorsements\" translation
+task"]
+	1847133283824 [label="I follow \"George Tenet\"
+task
+140728069287616"]
+	1847133289680 -> 1847133283824
+	1847133283824 [label="I follow \"George Tenet\"
+task"]
+	1847133279504 [label="I press \"endorsement.approve\" translation
+task
+140728069287616"]
+	1847133289680 -> 1847133279504
+	1847133279504 [label="I press \"endorsement.approve\" translation
+task"]
+	1847133278352 [label="be able to add and remove users on my account
+goal
+140728069287616"]
+	1847133382560 -> 1847133278352
+	1847133278352 [label="be able to add and remove users on my account
+goal"]
+	1847133285888 [label="Adding a new user to a provider
+goal
+1847133280944"]
+	1847133278352 -> 1847133285888
+	1847133285888 [label="Adding a new user to a provider
+goal"]
+	1847133290256 [label="I log in as \"paul@joy.com\" with password \"testtest\"
+task
+140728069287616"]
+	1847133285888 -> 1847133290256
+	1847133290256 [label="I log in as \"paul@joy.com\" with password \"testtest\"
+task"]
+	1847133473856 [label="I follow translation
+goal
+140728069287616"]
+	1847133285888 -> 1847133473856
+	1847133473856 [label="I follow translation
+goal"]
+	1847133274656 [label="I follow \"navigation.users\" translation
+task
+140728069287616"]
+	1847133473856 -> 1847133274656
+	1847133274656 [label="I follow \"navigation.users\" translation
+task"]
+	1847133286416 [label="I follow \"company_profile.users.add_new\" translation
+task
+140728069287616"]
+	1847133473856 -> 1847133286416
+	1847133286416 [label="I follow \"company_profile.users.add_new\" translation
+task"]
+	1847133277248 [label="I fill
+in something
+goal
+140728069287616"]
+	1847133285888 -> 1847133277248
+	1847133277248 [label="I fill
+in something
+goal"]
+	1847133274992 [label="I fill in \"First name\" with \"Ciara\"
+task
+140728069287616"]
+	1847133277248 -> 1847133274992
+	1847133274992 [label="I fill in \"First name\" with \"Ciara\"
+task"]
+	1847133274848 [label="I fill in \"Email\" with \"ciara@ciarascakes.com\"
+task
+140728069287616"]
+	1847133277248 -> 1847133274848
+	1847133274848 [label="I fill in \"Email\" with \"ciara@ciarascakes.com\"
+task"]
+	1847133278976 [label="I press \"Save\"
+task
+140728069287616"]
+	1847133285888 -> 1847133278976
+	1847133278976 [label="I press \"Save\"
+task"]
+	1847134020048 [label=" edit user
+goal
+140728069287616"]
+	1847133278352 -> 1847134020048
+	1847134020048 [label=" edit user
+goal"]
+	1847133280512 [label="Editing a user on a provider
+goal
+1847133288768"]
+	1847134020048 -> 1847133280512
+	1847133280512 [label="Editing a user on a provider
+goal"]
+	1847133277632 [label="I log in as \"paul@joy.com\" with password \"testtest\"
+task
+140728069287616"]
+	1847133280512 -> 1847133277632
+	1847133277632 [label="I log in as \"paul@joy.com\" with password \"testtest\"
+task"]
+	1847133277056 [label="I follow \"navigation.users\" translation
+task
+140728069287616"]
+	1847133280512 -> 1847133277056
+	1847133277056 [label="I follow \"navigation.users\" translation
+task"]
+	1847133281856 [label="I fill in \"First name\" with \"Joe\"
+task
+140728069287616"]
+	1847133280512 -> 1847133281856
+	1847133281856 [label="I fill in \"First name\" with \"Joe\"
+task"]
+	1847133276000 [label="I press \"Save\"
+task
+140728069287616"]
+	1847133280512 -> 1847133276000
+	1847133276000 [label="I press \"Save\"
+task"]
+	1847133286464 [label="Regular user can't edit other users
+goal
+1847133278832"]
+	1847134020048 -> 1847133286464
+	1847133286464 [label="Regular user can't edit other users
+goal"]
+	1847133284400 [label="I am on the homepage
+task
+140728069287616"]
+	1847133286464 -> 1847133284400
+	1847133284400 [label="I am on the homepage
+task"]
+	1847133284688 [label="I log in as \"billowlowha@test.com\" with password \"buxtonbuxton\"
+task
+140728069287616"]
+	1847133286464 -> 1847133284688
+	1847133284688 [label="I log in as \"billowlowha@test.com\" with password \"buxtonbuxton\"
+task"]
+	1847133289200 [label="I follow \"navigation.users\" translation
+task
+140728069287616"]
+	1847133286464 -> 1847133289200
+	1847133289200 [label="I follow \"navigation.users\" translation
+task"]
+	1847133276624 [label="Deleting a user on a provider
+goal
+1847133279888"]
+	1847133278352 -> 1847133276624
+	1847133276624 [label="Deleting a user on a provider
+goal"]
+	1847133280560 [label="I log in as \"paul@joy.com\" with password \"testtest\"
+task
+140728069287616"]
+	1847133276624 -> 1847133280560
+	1847133280560 [label="I log in as \"paul@joy.com\" with password \"testtest\"
+task"]
+	1847134027008 [label="I follow something
+goal
+140728069287616"]
+	1847133276624 -> 1847134027008
+	1847134027008 [label="I follow something
+goal"]
+	1847134023264 [label="I follow translation
+goal
+140728069287616"]
+	1847134027008 -> 1847134023264
+	1847134023264 [label="I follow translation
+goal"]
+	1847133277152 [label="I follow \"navigation.users\" translation
+task
+140728069287616"]
+	1847134023264 -> 1847133277152
+	1847133277152 [label="I follow \"navigation.users\" translation
+task"]
+	1847133283296 [label="I follow \"user.edit\" translation
+task
+140728069287616"]
+	1847134023264 -> 1847133283296
+	1847133283296 [label="I follow \"user.edit\" translation
+task"]
+	1847133276240 [label="I follow \"billow\"
+task
+140728069287616"]
+	1847134027008 -> 1847133276240
+	1847133276240 [label="I follow \"billow\"
+task"]
+}

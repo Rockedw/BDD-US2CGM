@@ -1,0 +1,25 @@
+// 1436757132960 Context Model
+digraph {
+	1436757131904 [label=Context5]
+	1436757139248 [label="I have a _layouts directory"]
+	1436757131904 -> 1436757139248
+	1436757139248 [label="I have a _layouts directory"]
+	1436757131616 [label="I have a main layout that contains \"main: {{ content }}\""]
+	1436757131904 -> 1436757131616
+	1436757131616 [label="I have a main layout that contains \"main: {{ content }}\""]
+	1436757140016 [label="I have a _posts/en directory"]
+	1436757131904 -> 1436757140016
+	1436757140016 [label="I have a _posts/en directory"]
+	1436757147360 [label="I have the following post under \"en\":"]
+	1436757131904 -> 1436757147360
+	1436757147360 [label="I have the following post under \"en\":"]
+	1436757135936 [label="I have a _posts/de directory"]
+	1436757131904 -> 1436757135936
+	1436757135936 [label="I have a _posts/de directory"]
+	1436757134160 [label="I have the following post under \"de\":"]
+	1436757131904 -> 1436757134160
+	1436757134160 [label="I have the following post under \"de\":"]
+	1436757140640 [label="I have a configuration file with \"defaults\" set to \"[{scope: {path: \"_posts/en\"}, values: {layout: \"main\", lang: \"en\"}}, {scope: {path: \"_posts/de\"}, values: {layout: \"main\", lang: \"de\"}}]\""]
+	1436757131904 -> 1436757140640
+	1436757140640 [label="I have a configuration file with \"defaults\" set to \"[{scope: {path: \"_posts/en\"}, values: {layout: \"main\", lang: \"en\"}}, {scope: {path: \"_posts/de\"}, values: {layout: \"main\", lang: \"de\"}}]\""]
+}

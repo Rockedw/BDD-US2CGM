@@ -1,0 +1,25 @@
+// 1982217740512 Context Model
+digraph {
+	1982217741232 [label=Context100]
+	1982217741376 [label="I have a blank site in \"omega(beta)\""]
+	1982217741232 -> 1982217741376
+	1982217741376 [label="I have a blank site in \"omega(beta)\""]
+	1982217741472 [label="I have an \"omega(beta)/test.md\" page with layout \"simple\" that contains \"Hello World\""]
+	1982217741232 -> 1982217741472
+	1982217741472 [label="I have an \"omega(beta)/test.md\" page with layout \"simple\" that contains \"Hello World\""]
+	1982217741568 [label="I have an omega(beta)/_includes directory"]
+	1982217741232 -> 1982217741568
+	1982217741568 [label="I have an omega(beta)/_includes directory"]
+	1982217741664 [label="I have an \"omega(beta)/_includes/head.html\" file that contains \"Snippet\""]
+	1982217741232 -> 1982217741664
+	1982217741664 [label="I have an \"omega(beta)/_includes/head.html\" file that contains \"Snippet\""]
+	1982217741760 [label="I have a configuration file with \"source\" set to \"omega(beta)\""]
+	1982217741232 -> 1982217741760
+	1982217741760 [label="I have a configuration file with \"source\" set to \"omega(beta)\""]
+	1982217741856 [label="I have an omega(beta)/_layouts directory"]
+	1982217741232 -> 1982217741856
+	1982217741856 [label="I have an omega(beta)/_layouts directory"]
+	1982217741952 [label="I have an \"omega(beta)/_layouts/simple.html\" file that contains \"{% include head.html %}: {{ content }}\""]
+	1982217741232 -> 1982217741952
+	1982217741952 [label="I have an \"omega(beta)/_layouts/simple.html\" file that contains \"{% include head.html %}: {{ content }}\""]
+}

@@ -1,0 +1,36 @@
+{
+    "feature_name": "Amending association settings",
+    "user_story": {
+        "as_a": "member",
+        "i_want": "propose amendments to our association's settings",
+        "so_that": "make sure the constitution fits our needs",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the amendments page",
+                        "I fill in the organisation name with \"Tea Club Mark II\"",
+                        "I fill in the objectives with \"REALLY enjoying tea\"",
+                        "I choose \"Absolute majority\" for general decisions",
+                        "I choose \"Unanimous\" for membership decisions",
+                        "I choose \"Simple majority\" for constitution decisions",
+                        "I choose \"5 minutes\"",
+                        "I press \"Propose changes\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the voting and proposals page",
+                        "I should see a proposal \"Change organisation name to 'Tea Club Mark II'\"",
+                        "I should see a proposal \"Change organisation objectives to 'REALLY enjoying tea'\"",
+                        "I should see a proposal \"Change general voting system to Absolute majority: decisions need supporting votes from more than 50% of members\"",
+                        "I should see a proposal \"Change membership voting system to Unanimous: decisions need supporting votes from 100% of members\"",
+                        "I should see a proposal \"Change constitution voting system to Simple majority: decisions need more supporting votes than opposing votes\"",
+                        "I should see a proposal \"Change voting period to 5 minutes\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

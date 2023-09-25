@@ -1,0 +1,155 @@
+// Goal Model
+digraph {
+	1847134015536 [label="user
+goal"]
+	1847134026192 [label="use Vdebug
+goal
+140728069287616"]
+	1847134015536 -> 1847134026192
+	1847134026192 [label="use Vdebug
+goal"]
+	1847134015008 [label="see correct watch, stack and status information
+goal
+140728069287616"]
+	1847134026192 -> 1847134015008
+	1847134015008 [label="see correct watch, stack and status information
+goal"]
+	1847134011552 [label="The status window
+goal
+1847134017360"]
+	1847134015008 -> 1847134011552
+	1847134011552 [label="The status window
+goal"]
+	1847134013424 [label="The watch window
+goal
+1847134121472"]
+	1847134015008 -> 1847134013424
+	1847134013424 [label="The watch window
+goal"]
+	1847133896464 [label="The stack window
+goal
+1847134115616"]
+	1847134015008 -> 1847133896464
+	1847133896464 [label="The stack window
+goal"]
+	1847134113600 [label="Reading the stack window with multiple files
+goal
+1847134113408"]
+	1847134015008 -> 1847134113600
+	1847134113600 [label="Reading the stack window with multiple files
+goal"]
+	1847134708320 [label="debug code that uses Unicode characters
+goal
+140728069287616"]
+	1847134026192 -> 1847134708320
+	1847134708320 [label="debug code that uses Unicode characters
+goal"]
+	1847133161360 [label="I step over
+task
+140728069287616"]
+	1847134708320 -> 1847133161360
+	1847133161360 [label="I step over
+task"]
+	1847133160208 [label="debug a file with any valid system characters
+goal
+140728069287616"]
+	1847134026192 -> 1847133160208
+	1847133160208 [label="debug a file with any valid system characters
+goal"]
+	1847133164864 [label="Debug a PHP file with a space in the directory
+goal
+1847133175376"]
+	1847133160208 -> 1847133164864
+	1847133164864 [label="Debug a PHP file with a space in the directory
+goal"]
+	1847133167504 [label="Debug a PHP file containing spaces
+goal
+1847133161264"]
+	1847133160208 -> 1847133167504
+	1847133167504 [label="Debug a PHP file containing spaces
+goal"]
+	1847135059440 [label=" see something
+goal
+140728069287616"]
+	1847134015536 -> 1847135059440
+	1847135059440 [label=" see something
+goal"]
+	1847134023552 [label="see the evaluated variable in the watch window
+goal
+140728069287616"]
+	1847135059440 -> 1847134023552
+	1847134023552 [label="see the evaluated variable in the watch window
+goal"]
+	1847134114320 [label="Evaluating a PHP expression
+goal
+1847134703760"]
+	1847134023552 -> 1847134114320
+	1847134114320 [label="Evaluating a PHP expression
+goal"]
+	1847134700496 [label="I evaluate \"$var1\"
+task
+140728069287616"]
+	1847134114320 -> 1847134700496
+	1847134700496 [label="I evaluate \"$var1\"
+task"]
+	1847134702992 [label="Evaluating a PHP expression with VdebugEval!
+goal
+1847134703856"]
+	1847134023552 -> 1847134702992
+	1847134702992 [label="Evaluating a PHP expression with VdebugEval!
+goal"]
+	1847134702080 [label="I evaluate \"$var1\" with VdebugEval!
+task
+140728069287616"]
+	1847134702992 -> 1847134702080
+	1847134702080 [label="I evaluate \"$var1\" with VdebugEval!
+task"]
+	1847134707456 [label="I step over
+task
+140728069287616"]
+	1847134702992 -> 1847134707456
+	1847134707456 [label="I step over
+task"]
+	1847134703136 [label="Evaluating a PHP expression and resetting
+goal
+1847133172016"]
+	1847134023552 -> 1847134703136
+	1847134703136 [label="Evaluating a PHP expression and resetting
+goal"]
+	1847134706880 [label="I evaluate \"$var1\" with VdebugEval!
+task
+140728069287616"]
+	1847134703136 -> 1847134706880
+	1847134706880 [label="I evaluate \"$var1\" with VdebugEval!
+task"]
+	1847134706400 [label="I run VdebugEval without any arguments
+task
+140728069287616"]
+	1847134703136 -> 1847134706400
+	1847134706400 [label="I run VdebugEval without any arguments
+task"]
+	1847134112064 [label="see the evaluated expression in the trace window
+goal
+140728069287616"]
+	1847135059440 -> 1847134112064
+	1847134112064 [label="see the evaluated expression in the trace window
+goal"]
+	1847133161456 [label="I trace \"$var1\"
+task
+140728069287616"]
+	1847134112064 -> 1847133161456
+	1847133161456 [label="I trace \"$var1\"
+task"]
+	1847133163808 [label="I step over
+task
+140728069287616"]
+	1847134112064 -> 1847133163808
+	1847133163808 [label="I step over
+task"]
+	1847133168080 [label="I step over
+task
+140728069287616"]
+	1847134112064 -> 1847133168080
+	1847133168080 [label="I step over
+task"]
+}

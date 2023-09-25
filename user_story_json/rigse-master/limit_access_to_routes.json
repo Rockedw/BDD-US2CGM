@@ -1,0 +1,170 @@
+{
+    "feature_name": "Limit access to restricted routes",
+    "user_story": {
+        "as_a": "person concerned about security",
+        "i_want": "",
+        "so_that": "we can protect our users data",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am not logged in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I visit the route <route>"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the signin page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the following users exist:",
+                        "I am logged in with the username admin_login"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I visit the route <route>"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on <route>"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am not logged in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I visit the route <route>"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the signin page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the following users exist:"
+                    ],
+                    [
+                        "I am logged in with the username admin_login"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I visit the route <route>"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on <route>"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am not logged in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I visit the route <route>"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the signin page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the following users exist:",
+                        "I am logged in with the username admin_login"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I visit the route <route>"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on <route>"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am not logged in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I visit the route <route>"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the signin page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the following users exist:",
+                        "I am logged in with the username admin_login"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I visit the route <route>"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on <route>"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the following users exist:",
+                        "I am logged in with the username researcher_login"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I visit the route <route>"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on <route>"
+                    ]
+                ]
+            }
+        ]
+    }
+}

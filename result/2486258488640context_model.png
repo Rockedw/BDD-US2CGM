@@ -1,0 +1,22 @@
+// 2486258488112 Context Model
+digraph {
+	2486258488640 [label=Context26]
+	2486258488784 [label="there are 4 existing individuals like \"indiv\""]
+	2486258488640 -> 2486258488784
+	2486258488784 [label="there are 4 existing individuals like \"indiv\""]
+	2486258488880 [label="there is an existing connection \"indiv0\" \"child_of\" \"indiv1\""]
+	2486258488640 -> 2486258488880
+	2486258488880 [label="there is an existing connection \"indiv0\" \"child_of\" \"indiv1\""]
+	2486258488976 [label="I am on the edit connections page for \"indiv0\" \"child_of\" \"indiv1\""]
+	2486258488640 -> 2486258488976
+	2486258488976 [label="I am on the edit connections page for \"indiv0\" \"child_of\" \"indiv1\""]
+	2486258489072 [label="I select \"indiv2 : indiv item number 2\" from \"Subject\""]
+	2486258488640 -> 2486258489072
+	2486258489072 [label="I select \"indiv2 : indiv item number 2\" from \"Subject\""]
+	2486258489168 [label="I select \"parent_of : Parent Of (basic relationship)\" from \"Relates to\""]
+	2486258488640 -> 2486258489168
+	2486258489168 [label="I select \"parent_of : Parent Of (basic relationship)\" from \"Relates to\""]
+	2486258489264 [label="I select \"indiv3 : indiv item number 3\" from \"Object\""]
+	2486258488640 -> 2486258489264
+	2486258489264 [label="I select \"indiv3 : indiv item number 3\" from \"Object\""]
+}

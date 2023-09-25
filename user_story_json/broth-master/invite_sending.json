@@ -1,0 +1,30 @@
+{
+    "feature_name": "Send an invite",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "send invites",
+        "so_that": "have friends use the site",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am signed up and signed in as \"email@person.com/password\"",
+                        "no invites exist"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the new invite page",
+                        "I fill in \"Email\" with \"joe@myfriend.com\"",
+                        "I press \"Send Invite\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Your invite has been sent\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

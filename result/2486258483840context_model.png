@@ -1,0 +1,25 @@
+// 2486258416608 Context Model
+digraph {
+	2486258483840 [label=Context18]
+	2486258483984 [label="there is 1 existing category like \"myCategory\""]
+	2486258483840 -> 2486258483984
+	2486258483984 [label="there is 1 existing category like \"myCategory\""]
+	2486258484080 [label="there is 1 existing individual like \"myItem\""]
+	2486258483840 -> 2486258484080
+	2486258484080 [label="there is 1 existing individual like \"myItem\""]
+	2486258484176 [label="I am on the new connections page"]
+	2486258483840 -> 2486258484176
+	2486258484176 [label="I am on the new connections page"]
+	2486258484272 [label="I select \"myCategory0 : myCategory item number 0\" from \"Subject\""]
+	2486258483840 -> 2486258484272
+	2486258484272 [label="I select \"myCategory0 : myCategory item number 0\" from \"Subject\""]
+	2486258484368 [label="I select \"child_of : Child Of (basic relationship)\" from \"Relates to\""]
+	2486258483840 -> 2486258484368
+	2486258484368 [label="I select \"child_of : Child Of (basic relationship)\" from \"Relates to\""]
+	2486258484464 [label="I choose \"Item\""]
+	2486258483840 -> 2486258484464
+	2486258484464 [label="I choose \"Item\""]
+	2486258484560 [label="I select \"myItem0 : myItem item number 0\" from \"Object\""]
+	2486258483840 -> 2486258484560
+	2486258484560 [label="I select \"myItem0 : myItem item number 0\" from \"Object\""]
+}

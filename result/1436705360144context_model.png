@@ -1,0 +1,10 @@
+// 1436705361104 Context Model
+digraph {
+	1436705360144 [label=Context2]
+	1436705360048 [label="I set config value for \"contacts/contacts/enabled\" to \"0\" in \"default\" scope"]
+	1436705360144 -> 1436705360048
+	1436705360048 [label="I set config value for \"contacts/contacts/enabled\" to \"0\" in \"default\" scope"]
+	1436705359904 [label="the cache is clean"]
+	1436705360144 -> 1436705359904
+	1436705359904 [label="the cache is clean"]
+}

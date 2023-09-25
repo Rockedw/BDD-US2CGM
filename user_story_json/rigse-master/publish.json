@@ -1,0 +1,91 @@
+{
+    "feature_name": "External Activities can support a REST publishing api",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "the external runtime publishes the activity \"Fun Stuff\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the portal should respond with a \"201\" status and location",
+                        "the portal should create an external activity with the following attributes:",
+                        "the external activity should not have any description set",
+                        "the external activity should have a template",
+                        "the external activity should not have an external report",
+                        "the portal should create an activity with the following attributes:",
+                        "the portal should create a section with the following attributes:",
+                        "the portal should create a page with the following attributes:",
+                        "the portal should create an open response with the following attributes:",
+                        "the portal should create a multiple choice with the following attributes:"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the external runtime published the activity \"Fun Stuff\" before"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "the external runtime publishes the activity \"Fun Stuff\" again"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the portal should create an external activity with the following attributes:",
+                        "the external activity should not have an external report",
+                        "the external activity should not have any description set"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "the external runtime publishes the sequence \"Many fun things\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the portal should respond with a \"201\" status and location",
+                        "the portal should create an external activity with the following attributes:",
+                        "the external activity should have a template",
+                        "the external activity should not have an external report",
+                        "the portal should create an investigation with the following attributes:",
+                        "the portal should create an activity with the following attributes:",
+                        "the portal should create a section with the following attributes:",
+                        "the portal should create a page with the following attributes:",
+                        "the portal should create an open response with the following attributes:",
+                        "the portal should create a multiple choice with the following attributes:"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the external runtime published the sequence \"Many fun things\" before"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "the external runtime publishes the sequence \"Many fun things\" again"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the portal should create an external activity with the following attributes:",
+                        "the external activity should not have an external report"
+                    ]
+                ]
+            }
+        ]
+    }
+}

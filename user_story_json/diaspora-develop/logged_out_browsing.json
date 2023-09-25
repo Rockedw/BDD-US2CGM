@@ -1,0 +1,25 @@
+{
+    "feature_name": "Browsing Diaspora as a logged out user mobile",
+    "user_story": {
+        "as_a": "as a random internet user",
+        "i_want": "view public post and comments",
+        "so_that": "view public diaspora content",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on \"bob@bob.bob\"'s page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"public stuff\" within \".ltr\"",
+                        "I click on selector \"a.show-comments\"",
+                        "I should see \"this also\" within \".comment\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

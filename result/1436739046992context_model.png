@@ -1,0 +1,13 @@
+// 1436739053328 Context Model
+digraph {
+	1436739046992 [label=Context6]
+	1436739049920 [label="a notice \"Notice for admin\""]
+	1436739046992 -> 1436739049920
+	1436739049920 [label="a notice \"Notice for admin\""]
+	1436739056592 [label="am on the site notices index page"]
+	1436739046992 -> 1436739056592
+	1436739056592 [label="am on the site notices index page"]
+	1436739053712 [label="the notices have loaded"]
+	1436739046992 -> 1436739053712
+	1436739053712 [label="the notices have loaded"]
+}

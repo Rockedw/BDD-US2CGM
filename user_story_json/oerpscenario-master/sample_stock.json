@@ -1,0 +1,83 @@
+{
+    "feature_name": "Ensure base data are present for base config and tests as well",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I renamed warehouse named \"Your Company\" to \"real name\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I renamed location named \"Your Company\" to \"real\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "we take the available number of device \"DEV1\" in stock location \"Swisspost\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "we should see the stock in location \"Stock\" of product code \"DEV1\" increase by 20"
+                    ],
+                    [
+                        "we should see the stock in location \"Stock\" of product code \"DEV1\" decrease by 20"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a partner named \"Fournisseur Device\" with the following attribute",
+                        "I set the and address with the following data for \"Fournisseur Device\":"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "we create under \"Partner Locations\" the stock location \"All Customers Locations\" with",
+                        "I affect the company \"My Company\" to the location \"All Customers Locations\""
+                    ],
+                    [
+                        "we move the stock location \"Customers\" under \"All Customers Locations\" and update it with",
+                        "I affect the company \"My Company\" to the location \"Customers\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "we create a warehouse called \"Mission Warehouse/Refurbishment\" with the following attribute",
+                        "the related partner of the warehouse \"Mission Warehouse/Refurbishment\" is \"Fournisseur Mission\"",
+                        "I affect the company \"My Company\" to the warhouse \"Mission Warehouse/Refurbishment\""
+                    ],
+                    [
+                        "the \"property_stock_supplier\" of the partner named \"Fournisseur Device\" is \"Supplier Device Stock\"",
+                        "the \"property_stock_supplier\" of the partner named \"Fournisseur Mission\" is \"Supplier Mission Stock\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            }
+        ]
+    }
+}

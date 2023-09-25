@@ -1,0 +1,25 @@
+{
+    "feature_name": "External Activities can be run as offerings",
+    "user_story": {
+        "as_a": "student",
+        "i_want": "run an External Activity that has been assigned to me",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "the external activity \"My Activity\" is assigned to the class \"Class_with_no_assignment\"",
+                        "I am logged in with the username student"
+                    ],
+                    [
+                        "I go to my classes page",
+                        "I follow \"Class_with_no_assignment\" within left panel for class navigation",
+                        "I should see an external run link to \"mock_html/test-external-activity.html\""
+                    ]
+                ],
+                "thens_list": []
+            }
+        ]
+    }
+}

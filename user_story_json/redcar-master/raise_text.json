@@ -1,0 +1,122 @@
+{
+    "feature_name": "Raise Text",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo\\nbar\\nbaz\\nbonne\"",
+                        "I move the cursor to 5",
+                        "I raise the text"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"bar\\nfoo\\nbaz\\nbonne\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo\\nbar\\nbaz\\nbonne\"",
+                        "I select from 5 to 9",
+                        "I raise the text"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"bar\\nbaz\\nfoo\\nbonne\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo\\nbar\\nbaz\\nbonne\"",
+                        "I move the cursor to 0",
+                        "I raise the text"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"foo\\nbar\\nbaz\\nbonne\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo\\nbar\\nbaz\\nbonne\"",
+                        "I move the cursor to 4",
+                        "I raise the text"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"bar\\nfoo\\nbaz\\nbonne\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo\\nbar\\nbaz\\nbonne\"",
+                        "I move the cursor to 12",
+                        "I raise the text"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"foo\\nbar\\nbonne\\nbaz\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo\\nbar\\nbaz\\nbonne\"",
+                        "I select from 0 to 5",
+                        "I raise the text"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"foo\\nbar\\nbaz\\nbonne\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo\\nbść\\nbaz\\nbonne\"",
+                        "I move the cursor to 5",
+                        "I raise the text"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"bść\\nfoo\\nbaz\\nbonne\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

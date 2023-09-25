@@ -1,0 +1,25 @@
+// 1633873842320 Context Model
+digraph {
+	1633873871584 [label=Context18]
+	1633873883344 [label="there is 1 existing category like \"myCategory\""]
+	1633873871584 -> 1633873883344
+	1633873883344 [label="there is 1 existing category like \"myCategory\""]
+	1633873877152 [label="there is 1 existing individual like \"myItem\""]
+	1633873871584 -> 1633873877152
+	1633873877152 [label="there is 1 existing individual like \"myItem\""]
+	1633873883536 [label="I am on the new connections page"]
+	1633873871584 -> 1633873883536
+	1633873883536 [label="I am on the new connections page"]
+	1633873879312 [label="I select \"myCategory0 : myCategory item number 0\" from \"Subject\""]
+	1633873871584 -> 1633873879312
+	1633873879312 [label="I select \"myCategory0 : myCategory item number 0\" from \"Subject\""]
+	1633873879408 [label="I select \"child_of : Child Of (basic relationship)\" from \"Relates to\""]
+	1633873871584 -> 1633873879408
+	1633873879408 [label="I select \"child_of : Child Of (basic relationship)\" from \"Relates to\""]
+	1633873874176 [label="I choose \"Item\""]
+	1633873871584 -> 1633873874176
+	1633873874176 [label="I choose \"Item\""]
+	1633873883104 [label="I select \"myItem0 : myItem item number 0\" from \"Object\""]
+	1633873871584 -> 1633873883104
+	1633873883104 [label="I select \"myItem0 : myItem item number 0\" from \"Object\""]
+}

@@ -1,0 +1,144 @@
+{
+    "feature_name": "Auto Complete",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Tess\"",
+                        "I move the cursor to (0,4)",
+                        "I auto-complete"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Tess\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Daly Da\"",
+                        "I move the cursor to (0,7)",
+                        "I auto-complete"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Daly Daly\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Daly Da\"",
+                        "I move the cursor to (0,7)",
+                        "I auto-complete",
+                        "I auto-complete"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Daly Da\" in the edit tab",
+                        "I should not see \"Daly Daly\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Dan Daly Da\"",
+                        "I move the cursor to (0,11)",
+                        "I auto-complete"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Dan Daly Daly\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Dan Daly Da\"",
+                        "I move the cursor to (0,11)",
+                        "I auto-complete",
+                        "I auto-complete"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Dan Daly Dan\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Dan Daly Da\"",
+                        "I move the cursor to (0,11)",
+                        "I auto-complete",
+                        "I auto-complete",
+                        "I auto-complete"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Dan Daly Da\" in the edit tab",
+                        "I should not see \"Dan Daly Daly\" in the edit tab",
+                        "I should not see \"Dan Daly Dan\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Da Daly Dan\"",
+                        "I auto-complete"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Da Daly Dan\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Daly Da\\nfoo\"",
+                        "I move the cursor to (0,7)",
+                        "I auto-complete"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Daly Daly\\nfoo\" in the edit tab"
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+// 2220589948144 Context Model
+digraph {
+	2220589947376 [label=Context1]
+	2220589947904 [label="I have a _posts directory"]
+	2220589947376 -> 2220589947904
+	2220589947904 [label="I have a _posts directory"]
+	2220589947952 [label="I have the following post:"]
+	2220589947376 -> 2220589947952
+	2220589947952 [label="I have the following post:"]
+	2220589948000 [label="I have an \"index.md\" page that contains \"[Welcome]({% post_url 2019-02-04-hello-world %})\""]
+	2220589947376 -> 2220589948000
+	2220589948000 [label="I have an \"index.md\" page that contains \"[Welcome]({% post_url 2019-02-04-hello-world %})\""]
+}

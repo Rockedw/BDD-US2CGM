@@ -1,0 +1,153 @@
+{
+    "feature_name": "Users can view notices created by project staff",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "view and dismiss notices created by the project staff",
+        "so_that": "be notified about updates or important information",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am logged in with the username teacher",
+                        "am on getting started page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Notice for all users\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"Notice for all users\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"Notice for all users\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"Notice for all users\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"Notice for all users\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should not see \"Notice for all users\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am logged in with the username manager",
+                        "am on the my home page",
+                        "I follow \"x\"",
+                        "accept the dialog",
+                        "I wait 2 seconds",
+                        "I should not see \"Notice for all users\"",
+                        "am on the my home page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"Notice for all users\"",
+                        "I login as an admin",
+                        "am on the my home page",
+                        "I should see \"Notice for all users\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am logged in with the username manager",
+                        "am on the my home page",
+                        "I follow \"Hide Notices\"",
+                        "I should wait 2 seconds"
+                    ],
+                    [
+                        "I follow \"Show Notices\"",
+                        "I should wait 2 seconds"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Show Notices\""
+                    ],
+                    [
+                        "I should see \"Hide Notices\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am logged in with the username manager",
+                        "am on the my home page",
+                        "I follow \"Hide Notices\"",
+                        "I should wait 2 seconds"
+                    ],
+                    [
+                        "I log out",
+                        "I am logged in with the username manager",
+                        "am on the my home page"
+                    ],
+                    [
+                        "I follow \"Show Notices\"",
+                        "I should wait 2 seconds"
+                    ],
+                    [
+                        "I log out",
+                        "I am logged in with the username manager",
+                        "am on the my home page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Show Notices\""
+                    ],
+                    [
+                        "I should see \"Show Notices\""
+                    ],
+                    [
+                        "I should see \"Hide Notices\""
+                    ],
+                    [
+                        "I should see \"Hide Notices\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

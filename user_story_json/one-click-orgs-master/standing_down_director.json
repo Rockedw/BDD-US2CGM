@@ -1,0 +1,47 @@
+{
+    "feature_name": "Standing down director",
+    "user_story": {
+        "as_a": "director",
+        "i_want": "stand down a director",
+        "so_that": "reflect changes in directorship",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am on the Directors page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Stand down\" for another director"
+                    ],
+                    [
+                        "I submit the form to stand down the director"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a form for standing down the director"
+                    ],
+                    [
+                        "I should be on the Directors page",
+                        "I should not see the director"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I stand down a director"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "all the directors should receive a \"stood down\" email"
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,17 @@
+// Goal Model
+digraph {
+	1847133480000 [label="as a random internet user
+goal"]
+	1847133373296 [label="view public post and comments
+goal
+1847133373488"]
+	1847133480000 -> 1847133373296
+	1847133373296 [label="view public post and comments
+goal"]
+	1847133380784 [label="I am on \"bob@bob.bob\"'s page
+task
+140728069287616"]
+	1847133373296 -> 1847133380784
+	1847133380784 [label="I am on \"bob@bob.bob\"'s page
+task"]
+}

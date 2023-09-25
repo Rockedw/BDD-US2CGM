@@ -1,0 +1,86 @@
+{
+    "feature_name": "Students should be able to change their schedules without approval from student advisor before a specific deadline",
+    "user_story": {
+        "as_a": "Cal Student",
+        "i_want": "be able to change my schedule on the application",
+        "so_that": "I can be scheduled",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a semester with a passed deadline with id 1"
+                    ],
+                    [
+                        "the following cal course exist"
+                    ],
+                    [
+                        "the following courses exist"
+                    ],
+                    [
+                        "the following users exist"
+                    ],
+                    [
+                        "the following timeslots exist"
+                    ],
+                    [
+                        "I am logged in as oski@berkeley.edu"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to /students/1/semesters/1/courses/1/select_timeslots/monday"
+                    ],
+                    [
+                        "I go to /students/1/semesters/1/courses/1/select_timeslots/rank"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"The deadline for registration has already passed.\""
+                    ],
+                    [
+                        "I should see \"The deadline for registration has already passed.\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a semester with a not passed deadline with id 1"
+                    ],
+                    [
+                        "the following cal course exist"
+                    ],
+                    [
+                        "the following courses exist"
+                    ],
+                    [
+                        "the following users exist"
+                    ],
+                    [
+                        "the following timeslots exist"
+                    ],
+                    [
+                        "I am logged in as oski@berkeley.edu"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to /students/1/semesters/1/courses/1/select_timeslots/monday"
+                    ],
+                    [
+                        "I go to /students/1/semesters/1/courses/1/select_timeslots/rank"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"The deadline for registration has already passed.\""
+                    ],
+                    [
+                        "I should not see \"The deadline for registration has already passed.\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

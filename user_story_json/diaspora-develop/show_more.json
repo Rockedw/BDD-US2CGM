@@ -1,0 +1,39 @@
+{
+    "feature_name": "collapsing and expanding long posts",
+    "user_story": {
+        "as_a": "rocket scientist",
+        "i_want": "",
+        "so_that": "tame the lengths of posts in my stream",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I post an extremely long status message",
+                        "I go to the home page"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "the post should be collapsed"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I post an extremely long status message",
+                        "I go to the home page",
+                        "I expand the post"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "the post should be expanded"
+                    ]
+                ]
+            }
+        ]
+    }
+}

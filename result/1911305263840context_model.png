@@ -1,0 +1,10 @@
+// 1911305262448 Context Model
+digraph {
+	1911305263840 [label=Context4]
+	1911305264656 [label="a user with username \"bob\""]
+	1911305263840 -> 1911305264656
+	1911305264656 [label="a user with username \"bob\""]
+	1911305264752 [label="I sign in as \"bob@bob.bob\" on the mobile website"]
+	1911305263840 -> 1911305264752
+	1911305264752 [label="I sign in as \"bob@bob.bob\" on the mobile website"]
+}

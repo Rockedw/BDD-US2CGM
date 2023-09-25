@@ -1,0 +1,275 @@
+// Goal Model
+digraph {
+	1847133994576 [label="plugin author
+goal"]
+	1847134310160 [label="be able to run code during various stages of the build process
+goal
+140728069287616"]
+	1847133994576 -> 1847134310160
+	1847134310160 [label="be able to run code during various stages of the build process
+goal"]
+	1847134311696 [label="Run some code after site reset
+goal
+1847134315344"]
+	1847134310160 -> 1847134311696
+	1847134311696 [label="Run some code after site reset
+goal"]
+	1847134306896 [label="I run jekyll build
+task
+140728069287616"]
+	1847134311696 -> 1847134306896
+	1847134306896 [label="I run jekyll build
+task"]
+	1847134312560 [label="Modify the payload before rendering the site
+goal
+1847134314720"]
+	1847134310160 -> 1847134312560
+	1847134312560 [label="Modify the payload before rendering the site
+goal"]
+	1847134308288 [label="I run jekyll build
+task
+140728069287616"]
+	1847134312560 -> 1847134308288
+	1847134308288 [label="I run jekyll build
+task"]
+	1847134314144 [label="Modify the site contents after reading
+goal
+1847134312080"]
+	1847134310160 -> 1847134314144
+	1847134314144 [label="Modify the site contents after reading
+goal"]
+	1847134308768 [label="I run jekyll build
+task
+140728069287616"]
+	1847134314144 -> 1847134308768
+	1847134308768 [label="I run jekyll build
+task"]
+	1847134309536 [label="Work with the site files after they've been written to disk
+goal
+1847134315200"]
+	1847134310160 -> 1847134309536
+	1847134309536 [label="Work with the site files after they've been written to disk
+goal"]
+	1847134317840 [label="I run jekyll build
+task
+140728069287616"]
+	1847134309536 -> 1847134317840
+	1847134317840 [label="I run jekyll build
+task"]
+	1847134311744 [label="Alter a page right after it is initialized
+goal
+1847134314096"]
+	1847134310160 -> 1847134311744
+	1847134311744 [label="Alter a page right after it is initialized
+goal"]
+	1847134307424 [label="I run jekyll build
+task
+140728069287616"]
+	1847134311744 -> 1847134307424
+	1847134307424 [label="I run jekyll build
+task"]
+	1847134310448 [label="Alter the payload for one page but not another
+goal
+1847134310016"]
+	1847134310160 -> 1847134310448
+	1847134310448 [label="Alter the payload for one page but not another
+goal"]
+	1847134317120 [label="I run jekyll build
+task
+140728069287616"]
+	1847134310448 -> 1847134317120
+	1847134317120 [label="I run jekyll build
+task"]
+	1847134315920 [label="Modify the converted HTML content of a page before rendering layout
+goal
+1847134307856"]
+	1847134310160 -> 1847134315920
+	1847134315920 [label="Modify the converted HTML content of a page before rendering layout
+goal"]
+	1847134316544 [label="I run jekyll build
+task
+140728069287616"]
+	1847134315920 -> 1847134316544
+	1847134316544 [label="I run jekyll build
+task"]
+	1847134316832 [label="Modify page contents before writing to disk
+goal
+1847134318560"]
+	1847134310160 -> 1847134316832
+	1847134316832 [label="Modify page contents before writing to disk
+goal"]
+	1847134318512 [label="I run jekyll build
+task
+140728069287616"]
+	1847134316832 -> 1847134318512
+	1847134318512 [label="I run jekyll build
+task"]
+	1847134315248 [label="Work with a page after writing it to disk
+goal
+1847134319040"]
+	1847134310160 -> 1847134315248
+	1847134315248 [label="Work with a page after writing it to disk
+goal"]
+	1847134318992 [label="I run jekyll build
+task
+140728069287616"]
+	1847134315248 -> 1847134318992
+	1847134318992 [label="I run jekyll build
+task"]
+	1847134318656 [label="Alter a post right after it is initialized
+goal
+1847134319520"]
+	1847134310160 -> 1847134318656
+	1847134318656 [label="Alter a post right after it is initialized
+goal"]
+	1847134319472 [label="I run jekyll build
+task
+140728069287616"]
+	1847134318656 -> 1847134319472
+	1847134319472 [label="I run jekyll build
+task"]
+	1847134319136 [label="Alter the payload for certain posts
+goal
+1847134320096"]
+	1847134310160 -> 1847134319136
+	1847134319136 [label="Alter the payload for certain posts
+goal"]
+	1847134320048 [label="I run jekyll build
+task
+140728069287616"]
+	1847134319136 -> 1847134320048
+	1847134320048 [label="I run jekyll build
+task"]
+	1847134319616 [label="Modify the converted HTML content of a post before rendering layout
+goal
+1847134320672"]
+	1847134310160 -> 1847134319616
+	1847134319616 [label="Modify the converted HTML content of a post before rendering layout
+goal"]
+	1847134320624 [label="I run jekyll build
+task
+140728069287616"]
+	1847134319616 -> 1847134320624
+	1847134320624 [label="I run jekyll build
+task"]
+	1847134320192 [label="Modify post contents before writing to disk
+goal
+1847134321440"]
+	1847134310160 -> 1847134320192
+	1847134320192 [label="Modify post contents before writing to disk
+goal"]
+	1847134321392 [label="I run jekyll build
+task
+140728069287616"]
+	1847134320192 -> 1847134321392
+	1847134321392 [label="I run jekyll build
+task"]
+	1847134320768 [label="Work with a post after writing it to disk
+goal
+1847134322016"]
+	1847134310160 -> 1847134320768
+	1847134320768 [label="Work with a post after writing it to disk
+goal"]
+	1847134321968 [label="I run jekyll build
+task
+140728069287616"]
+	1847134320768 -> 1847134321968
+	1847134321968 [label="I run jekyll build
+task"]
+	1847134321536 [label="Register a hook on multiple owners at the same time
+goal
+1847134322592"]
+	1847134310160 -> 1847134321536
+	1847134321536 [label="Register a hook on multiple owners at the same time
+goal"]
+	1847134322544 [label="I run jekyll build
+task
+140728069287616"]
+	1847134321536 -> 1847134322544
+	1847134322544 [label="I run jekyll build
+task"]
+	1847134322112 [label="Allow hooks to have a named priority
+goal
+1847134372480"]
+	1847134310160 -> 1847134322112
+	1847134322112 [label="Allow hooks to have a named priority
+goal"]
+	1847134372432 [label="I run jekyll build
+task
+140728069287616"]
+	1847134322112 -> 1847134372432
+	1847134372432 [label="I run jekyll build
+task"]
+	1847134371904 [label="Alter a document right after it is initialized
+goal
+1847134372960"]
+	1847134310160 -> 1847134371904
+	1847134371904 [label="Alter a document right after it is initialized
+goal"]
+	1847134372912 [label="I run jekyll build
+task
+140728069287616"]
+	1847134371904 -> 1847134372912
+	1847134372912 [label="I run jekyll build
+task"]
+	1847134372576 [label="Modify the converted HTML content of a document before rendering layout
+goal
+1847134373728"]
+	1847134310160 -> 1847134372576
+	1847134372576 [label="Modify the converted HTML content of a document before rendering layout
+goal"]
+	1847134373680 [label="I run jekyll build
+task
+140728069287616"]
+	1847134372576 -> 1847134373680
+	1847134373680 [label="I run jekyll build
+task"]
+	1847134373056 [label="Modify the converted HTML content of document of a particular collection before rendering layout
+goal
+1847134374592"]
+	1847134310160 -> 1847134373056
+	1847134373056 [label="Modify the converted HTML content of document of a particular collection before rendering layout
+goal"]
+	1847134374544 [label="I run jekyll build
+task
+140728069287616"]
+	1847134373056 -> 1847134374544
+	1847134374544 [label="I run jekyll build
+task"]
+	1847134373824 [label="Update a document after rendering it, but before writing it to disk
+goal
+1847134375648"]
+	1847134310160 -> 1847134373824
+	1847134373824 [label="Update a document after rendering it, but before writing it to disk
+goal"]
+	1847134375600 [label="I run jekyll build
+task
+140728069287616"]
+	1847134373824 -> 1847134375600
+	1847134375600 [label="I run jekyll build
+task"]
+	1847134374688 [label="Perform an action after every document is written
+goal
+1847134376320"]
+	1847134310160 -> 1847134374688
+	1847134374688 [label="Perform an action after every document is written
+goal"]
+	1847134376272 [label="I run jekyll build
+task
+140728069287616"]
+	1847134374688 -> 1847134376272
+	1847134376272 [label="I run jekyll build
+task"]
+	1847134375744 [label="Set a custom payload['page'] property
+goal
+1847134376992"]
+	1847134310160 -> 1847134375744
+	1847134375744 [label="Set a custom payload['page'] property
+goal"]
+	1847134376944 [label="I run jekyll build
+task
+140728069287616"]
+	1847134375744 -> 1847134376944
+	1847134376944 [label="I run jekyll build
+task"]
+}

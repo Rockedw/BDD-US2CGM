@@ -1,0 +1,10 @@
+// 2220590143360 Context Model
+digraph {
+	2220590142208 [label=Context115]
+	2220590140816 [label="I need a \"res.partner\" with oid: scen.partner_1_add_inv"]
+	2220590142208 -> 2220590140816
+	2220590140816 [label="I need a \"res.partner\" with oid: scen.partner_1_add_inv"]
+	2220590140960 [label="having:"]
+	2220590142208 -> 2220590140960
+	2220590140960 [label="having:"]
+}

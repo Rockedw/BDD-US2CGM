@@ -1,0 +1,47 @@
+// Goal Model
+digraph {
+	1847117744400 [label="n artists
+goal"]
+	1847117748096 [label="
+goal
+1847117747040"]
+	1847117744400 -> 1847117748096
+	1847117748096 [label="
+goal"]
+	1847125306832 [label="adding a collection
+goal
+140728069287616"]
+	1847117748096 -> 1847125306832
+	1847125306832 [label="adding a collection
+goal"]
+	1847125311392 [label="I specify that I wish to add a new collection
+task
+140728069287616"]
+	1847125306832 -> 1847125311392
+	1847125311392 [label="I specify that I wish to add a new collection
+task"]
+	1847125300256 [label="I give it a title, description and pick a cover image
+task
+140728069287616"]
+	1847125306832 -> 1847125300256
+	1847125300256 [label="I give it a title, description and pick a cover image
+task"]
+	1847125299872 [label="editing a collection
+goal
+140728069287616"]
+	1847117748096 -> 1847125299872
+	1847125299872 [label="editing a collection
+goal"]
+	1847125300064 [label="I click the 'Toggle Edit' button
+task
+140728069287616"]
+	1847125299872 -> 1847125300064
+	1847125300064 [label="I click the 'Toggle Edit' button
+task"]
+	1847125309856 [label="I have clicked and edited the collection's title and description
+task
+140728069287616"]
+	1847125299872 -> 1847125309856
+	1847125309856 [label="I have clicked and edited the collection's title and description
+task"]
+}

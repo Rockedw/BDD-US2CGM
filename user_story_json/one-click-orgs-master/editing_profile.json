@@ -1,0 +1,30 @@
+{
+    "feature_name": "Editing profile",
+    "user_story": {
+        "as_a": "director",
+        "i_want": "edit my profile",
+        "so_that": "keep my details up to date",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the home page",
+                        "I follow \"Edit your account\"",
+                        "I fill in \"First name\" with \"Nouveau\"",
+                        "I fill in \"Last name\" with \"Atarashii\"",
+                        "I fill in \"Email\" with \"nouveau@example.com\"",
+                        "I press \"Save changes\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Account updated\"",
+                        "I should see \"Nouveau Atarashii\"",
+                        "my email should be \"nouveau@example.com\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

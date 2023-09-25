@@ -1,0 +1,25 @@
+// 1633872147744 Context Model
+digraph {
+	1633872148896 [label=Context18]
+	1633872149040 [label="I have a _layouts directory"]
+	1633872148896 -> 1633872149040
+	1633872149040 [label="I have a _layouts directory"]
+	1633872149136 [label="I have a \"_layouts/meme.html\" file with content:"]
+	1633872148896 -> 1633872149136
+	1633872149136 [label="I have a \"_layouts/meme.html\" file with content:"]
+	1633872149232 [label="I have a \"_config.yml\" file with content:"]
+	1633872148896 -> 1633872149232
+	1633872149232 [label="I have a \"_config.yml\" file with content:"]
+	1633872149328 [label="I have a _memes directory"]
+	1633872148896 -> 1633872149328
+	1633872149328 [label="I have a _memes directory"]
+	1633872149424 [label="I have a \"_memes/doc1.md\" file with content:"]
+	1633872148896 -> 1633872149424
+	1633872149424 [label="I have a \"_memes/doc1.md\" file with content:"]
+	1633872149520 [label="I have a _plugins directory"]
+	1633872148896 -> 1633872149520
+	1633872149520 [label="I have a _plugins directory"]
+	1633872149616 [label="I have a \"_plugins/ext.rb\" file with content:"]
+	1633872148896 -> 1633872149616
+	1633872149616 [label="I have a \"_plugins/ext.rb\" file with content:"]
+}

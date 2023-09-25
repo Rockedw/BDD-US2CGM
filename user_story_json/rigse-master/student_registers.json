@@ -1,0 +1,239 @@
+{
+    "feature_name": "Student registers to use the portal",
+    "user_story": {
+        "as_a": "potential student",
+        "i_want": "register",
+        "so_that": "access my classes",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am an anonymous user",
+                        "the option to allow default classes is disabled",
+                        "the following classes exist:",
+                        "the class \"Test Class\" has the class word \"word\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the pick signup page",
+                        "I press \"Sign up as a student\""
+                    ],
+                    [
+                        "I fill in the following:",
+                        "I press \"Submit\""
+                    ],
+                    [
+                        "I login with username: estudent password: password"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Student Signup\""
+                    ],
+                    [
+                        "I should see \"Success!\"",
+                        "I should see \"Your username is: estudent\"",
+                        "I should not see \"Sorry, there was an error creating your account\""
+                    ],
+                    [
+                        "I should see \"Signed in successfully.\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the pick signup page",
+                        "I press \"Sign up as a student\""
+                    ],
+                    [
+                        "I press \"Submit\""
+                    ],
+                    [
+                        "I fill in the following:",
+                        "I press \"Submit\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Student Signup\""
+                    ],
+                    [
+                        "I should see \"8 errors prohibited this user from being saved\""
+                    ],
+                    [
+                        "I should see \"Success!\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the pick signup page",
+                        "I press \"Sign up as a student\""
+                    ],
+                    [
+                        "I fill in the following:",
+                        "I press \"Submit\""
+                    ],
+                    [
+                        "I login with username: estudent password: password"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Student Signup\""
+                    ],
+                    [
+                        "I should see \"Success!\"",
+                        "I should not see \"Sorry, there was an error creating your account\""
+                    ],
+                    [
+                        "I should see \"Signed in successfully.\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the option to allow default classes is enabled"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the pick signup page",
+                        "I press \"Sign up as a student\""
+                    ],
+                    [
+                        "I fill in the following:",
+                        "I press \"Submit\""
+                    ],
+                    [
+                        "I login with username: estudent password: password",
+                        "I should see \"Signed in successfully.\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Student Signup\"",
+                        "I should not see \"Class Word\""
+                    ],
+                    [
+                        "I should see \"Your username is: estudent\"",
+                        "I should not see \"Sorry, there was an error creating your account\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the default settings has student consent enabled",
+                        "the following classes exist:",
+                        "the class \"Test Class\" has the class word \"word\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the pick signup page",
+                        "I press \"Sign up as a student\""
+                    ],
+                    [
+                        "I fill in the following:",
+                        "I choose \"user_of_consenting_age_false\"",
+                        "I press \"Submit\""
+                    ],
+                    [
+                        "I login with username: estudent password: password"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Student Signup\""
+                    ],
+                    [
+                        "I should see \"Success!\"",
+                        "I should not see \"Sorry, there was an error creating your account\""
+                    ],
+                    [
+                        "I should see \"Signed in successfully.\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the default settings has student consent enabled",
+                        "the following classes exist:",
+                        "the class \"Test Class\" has the class word \"word\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the pick signup page",
+                        "I press \"Sign up as a student\""
+                    ],
+                    [
+                        "I fill in the following:",
+                        "I choose \"user_of_consenting_age_true\"",
+                        "I choose \"user_have_consent_true\"",
+                        "I press \"Submit\""
+                    ],
+                    [
+                        "I login with username: estudent password: password"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Student Signup\""
+                    ],
+                    [
+                        "I should see \"Success!\"",
+                        "I should not see \"Sorry, there was an error creating your account\""
+                    ],
+                    [
+                        "I should see \"Signed in successfully.\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the default settings has student consent enabled",
+                        "the following classes exist:",
+                        "the class \"Test Class\" has the class word \"word\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the pick signup page",
+                        "I press \"Sign up as a student\""
+                    ],
+                    [
+                        "I fill in the following:",
+                        "I choose \"user_of_consenting_age_true\"",
+                        "I choose \"user_have_consent_false\"",
+                        "I press \"Submit\""
+                    ],
+                    [
+                        "I login with username: estudent password: password"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Student Signup\""
+                    ],
+                    [
+                        "I should see \"Success!\"",
+                        "I should not see \"Sorry, there was an error creating your account\""
+                    ],
+                    [
+                        "I should see \"Signed in successfully.\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

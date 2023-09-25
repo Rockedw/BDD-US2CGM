@@ -1,0 +1,13 @@
+// 2220571711984 Context Model
+digraph {
+	2220571709008 [label=Context7]
+	2220571708144 [label="there is a co-op"]
+	2220571709008 -> 2220571708144
+	2220571708144 [label="there is a co-op"]
+	2220571709632 [label="I am the Secretary of the co-op"]
+	2220571709008 -> 2220571709632
+	2220571709632 [label="I am the Secretary of the co-op"]
+	2220571714240 [label="there is a Member whose membership needs to be terminated"]
+	2220571709008 -> 2220571714240
+	2220571714240 [label="there is a Member whose membership needs to be terminated"]
+}

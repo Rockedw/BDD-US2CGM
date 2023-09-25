@@ -1,0 +1,166 @@
+{
+    "feature_name": "Predictive macros",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I type \"abab\"",
+                        "I press predict"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"ababab\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I type \"abab\"",
+                        "I press predict",
+                        "I press predict"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"abababab\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I type \"aba\"",
+                        "I press predict"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"abab\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I type \"abab\"",
+                        "I press predict",
+                        "I press predict",
+                        "I press predict"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"ababababab\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I type \"abab\"",
+                        "I press predict"
+                    ],
+                    [
+                        "I type \"cdcd\"",
+                        "I press predict"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"abababcdcdcd\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I type \"abccabcc\"",
+                        "I press predict"
+                    ],
+                    [
+                        "I press alternate predict"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"abccabccabcc\""
+                    ],
+                    [
+                        "the contents should be \"abccabccc\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I type \"abc\"",
+                        "I press predict"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"abc\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I replace the contents with \"foo\\nbar\\nbaz\\nqux\\nquux\\ncorge\"",
+                        "I move the cursor to 0",
+                        "I type \"# \"",
+                        "I move down",
+                        "I move left",
+                        "I move left",
+                        "I type \"# \"",
+                        "I move down",
+                        "I move left",
+                        "I move left",
+                        "I press predict",
+                        "I press predict"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "the contents should be \"# foo\\n# bar\\n# baz\\n# qux\\n<c>quux\\ncorge\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I replace the contents with \"foo\\nbar\\nbaz\\nqux\\nquux\\ncorge\"",
+                        "I move the cursor to 0",
+                        "I type \"# \"",
+                        "I move down",
+                        "I move left",
+                        "I move left",
+                        "I type \"# \"",
+                        "I press predict",
+                        "I press predict"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "the contents should be \"# foo\\n# bar\\n# baz\\n<c>qux\\nquux\\ncorge\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

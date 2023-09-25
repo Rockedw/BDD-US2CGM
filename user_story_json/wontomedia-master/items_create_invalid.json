@@ -1,0 +1,174 @@
+{
+    "feature_name": "Verify inputs for creation of new item dynamically within the page",
+    "user_story": {
+        "as_a": "as a contributor, I want",
+        "i_want": "tell about bad inputs before I submit a page.",
+        "so_that": "create a wontology,",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on the new items page"
+                    ],
+                    [
+                        "I select \"Property\" from \"Type\"",
+                        "I fill in \"Title\" with \"A property's title\"",
+                        "I fill in \"Name\" with \"temporaryGoodName0-_\""
+                    ],
+                    [
+                        "I fill in \"Name\" with \" badNameStartsWithASpace\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the element \"name_start_char\" has the format \"font-weight=400\"",
+                        "the image \"name_error_icon\" is \"blank_error_icon\""
+                    ],
+                    [
+                        "the element \"item_submit\" has the format \"background-color=$active_button_color;\""
+                    ],
+                    [
+                        "the element \"name_start_char\" has the format \"font-weight=bold\"",
+                        "the element \"name_required\" has the format \"font-weight=400\"",
+                        "the element \"name_nth_char\" has the format \"font-weight=400\"",
+                        "the element \"name_too_long\" has the format \"font-weight=400\"",
+                        "the image \"name_error_icon\" is \"error_error_icon\"",
+                        "the element \"item_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the new items page",
+                        "I select \"Property\" from \"Type\"",
+                        "I fill in \"Title\" with \"A property's title\"",
+                        "I fill in \"Name\" with \"temporaryGoodName0-_\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"Name\" with <badName>"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the element \"name_start_char\" has the format \"font-weight=bold\"",
+                        "the image \"name_error_icon\" is \"error_error_icon\"",
+                        "the element \"item_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I select \"Property\" from \"Type\"",
+                        "I fill in \"Title\" with \"A property's title\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the new items page"
+                    ],
+                    [
+                        "I fill in \"Name\" with <badName>"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the element \"name_start_char\" has the format \"font-weight=400\"",
+                        "the image \"name_error_icon\" is \"blank_error_icon\""
+                    ],
+                    [
+                        "the element \"name_nth_char\" has the format \"font-weight=bold\"",
+                        "the element \"name_start_char\" has the format \"font-weight=400\"",
+                        "the element \"name_required\" has the format \"font-weight=400\"",
+                        "the element \"name_too_long\" has the format \"font-weight=400\"",
+                        "the image \"name_error_icon\" is \"error_error_icon\"",
+                        "the element \"item_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I select \"Property\" from \"Type\"",
+                        "I fill in \"Name\" with \"aProperty\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the new items page"
+                    ],
+                    [
+                        "I fill in \"Title\" with \"a multi-\\012-line title\""
+                    ],
+                    [
+                        "I fill in \"Title\" with \"a different newline\\015 character (CR)\""
+                    ],
+                    [
+                        "I fill in \"Title\" with \"A title that is way, way too long.  A title that is way, way too long.  A title that is way, way too long.  A title that is way, way too long.  A title that is way, way too long.  A title that is way, way too long.  A title that is way, way too long.  A title that is way, way too long.\""
+                    ],
+                    [
+                        "I fill in \"Title\" with \"a classic\\015\\012CR-LF pair\""
+                    ],
+                    [
+                        "I fill in \"Title\" with \"\""
+                    ],
+                    [
+                        "I fill in \"Title\" with \"An acceptable title string\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the element \"title_multi_line\" has the format \"font-weight=400\"",
+                        "the image \"title_error_icon\" is \"blank_error_icon\""
+                    ],
+                    [
+                        "the element \"title_multi_line\" has the format \"font-weight=bold\"",
+                        "the element \"title_too_long\" has the format \"font-weight=400\"",
+                        "the element \"title_required\" has the format \"font-weight=400\"",
+                        "the image \"title_error_icon\" is \"error_error_icon\"",
+                        "the element \"item_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ],
+                    [
+                        "the element \"title_multi_line\" has the format \"font-weight=bold\"",
+                        "the element \"title_too_long\" has the format \"font-weight=400\"",
+                        "the element \"title_required\" has the format \"font-weight=400\"",
+                        "the image \"title_error_icon\" is \"error_error_icon\"",
+                        "the element \"item_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ],
+                    [
+                        "the element \"title_multi_line\" has the format \"font-weight=400\"",
+                        "the element \"title_too_long\" has the format \"font-weight=bold\"",
+                        "the element \"title_required\" has the format \"font-weight=400\"",
+                        "the image \"title_error_icon\" is \"error_error_icon\"",
+                        "the element \"item_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ],
+                    [
+                        "the element \"title_multi_line\" has the format \"font-weight=bold\"",
+                        "the element \"title_too_long\" has the format \"font-weight=400\"",
+                        "the element \"title_required\" has the format \"font-weight=400\"",
+                        "the image \"title_error_icon\" is \"error_error_icon\"",
+                        "the element \"item_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ],
+                    [
+                        "the element \"title_multi_line\" has the format \"font-weight=400\"",
+                        "the element \"title_too_long\" has the format \"font-weight=400\"",
+                        "the element \"title_required\" has the format \"font-weight=bold\"",
+                        "the image \"title_error_icon\" is \"error_error_icon\"",
+                        "the element \"item_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ],
+                    [
+                        "the element \"title_multi_line\" has the format \"font-weight=400\"",
+                        "the element \"title_too_long\" has the format \"font-weight=400\"",
+                        "the element \"title_required\" has the format \"font-weight=400\"",
+                        "the image \"title_error_icon\" is \"error_error_icon\"",
+                        "the element \"item_submit\" has the format \"background-color=$active_button_color;\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

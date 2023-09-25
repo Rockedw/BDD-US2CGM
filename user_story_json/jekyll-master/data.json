@@ -1,0 +1,199 @@
+{
+    "feature_name": "Data",
+    "user_story": {
+        "as_a": "blog's user",
+        "i_want": "use _data directory in my site",
+        "so_that": "use well-formatted data in my blog",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have a _data directory",
+                        "I have a \"_data/products.yaml\" file with content:",
+                        "I have an \"index.html\" page that contains \"{% for product in site.data.products %}{{product.name}}{% endfor %}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"_site/index.html\" file should exist",
+                        "I should see \"sugar\" in \"_site/index.html\"",
+                        "I should see \"salt\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _data directory",
+                        "I have a \"_data/members.yml\" file with content:",
+                        "I have an \"index.html\" page that contains \"{% for member in site.data.members %}{{member.name}}{% endfor %}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"_site/index.html\" file should exist",
+                        "I should see \"Jack\" in \"_site/index.html\"",
+                        "I should see \"Leon\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _data directory",
+                        "I have a \"_data/members.json\" file with content:",
+                        "I have an \"index.html\" page that contains \"{% for member in site.data.members %}{{member.name}}{% endfor %}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"_site/index.html\" file should exist",
+                        "I should see \"Jack\" in \"_site/index.html\"",
+                        "I should see \"Leon\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _data directory",
+                        "I have a \"_data/members.csv\" file with content:",
+                        "I have an \"index.html\" page that contains \"{% for member in site.data.members %}{{member.name}}{% endfor %}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"_site/index.html\" file should exist",
+                        "I should see \"Jack\" in \"_site/index.html\"",
+                        "I should see \"Leon\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _data directory",
+                        "I have a \"_data/members.tsv\" file with content:",
+                        "I have an \"index.html\" page that contains \"{% for member in site.data.members %}{{member.name}}{% endfor %}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"_site/index.html\" file should exist",
+                        "I should see \"Jack\" in \"_site/index.html\"",
+                        "I should see \"Leon\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _data directory",
+                        "I have a \"_data/team members.yml\" file with content:",
+                        "I have an \"index.html\" page that contains \"{% for member in site.data.team_members %}{{member.name}}{% endfor %}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"_site/index.html\" file should exist",
+                        "I should see \"Jack\" in \"_site/index.html\"",
+                        "I should see \"Leon\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _data directory",
+                        "I have a _data/categories directory",
+                        "I have a \"_data/categories/dairy.yaml\" file with content:",
+                        "I have an \"index.html\" page that contains \"{{ site.data.categories.dairy.name }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"_site/index.html\" file should exist",
+                        "I should see \"Dairy Products\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _data directory",
+                        "I have a _data/categories directory",
+                        "I have a \"_data/categories/dairy.yaml\" file with content:",
+                        "I have a \"_data/categories.yaml\" file with content:",
+                        "I have an \"index.html\" page that contains \"{{ site.data.categories.dairy.name }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"_site/index.html\" file should exist",
+                        "I should see \"Dairy Products\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a \"_config.yml\" file with content:",
+                        "I have an \"index.html\" page that contains \"{% for member in site.data %}{{member.name}}{% endfor %}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"_site/index.html\" file should exist",
+                        "I should see \"Jack\" in \"_site/index.html\"",
+                        "I should see \"Leon\" in \"_site/index.html\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

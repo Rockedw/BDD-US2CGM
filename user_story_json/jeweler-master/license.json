@@ -1,0 +1,45 @@
+{
+    "feature_name": "generated license",
+    "user_story": {
+        "as_a": "user should be able to",
+        "i_want": "generate a default license",
+        "so_that": "start a new gem",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "LICENSE.txt credits 'foo'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "it is the year 2005",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "LICENSE.txt has a copyright in the year 2005"
+                    ]
+                ]
+            }
+        ]
+    }
+}

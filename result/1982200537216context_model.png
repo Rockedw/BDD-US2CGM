@@ -1,0 +1,13 @@
+// 1982200536304 Context Model
+digraph {
+	1982200537216 [label=Context14]
+	1982200537360 [label="I have an \"index.html\" page with title \"index\" that contains \"Published page\""]
+	1982200537216 -> 1982200537360
+	1982200537360 [label="I have an \"index.html\" page with title \"index\" that contains \"Published page\""]
+	1982200537456 [label="I have a \"public.html\" page with published \"true\" that contains \"Explicitly published page\""]
+	1982200537216 -> 1982200537456
+	1982200537456 [label="I have a \"public.html\" page with published \"true\" that contains \"Explicitly published page\""]
+	1982200537552 [label="I have a \"secret.html\" page with published \"false\" that contains \"Unpublished page\""]
+	1982200537216 -> 1982200537552
+	1982200537552 [label="I have a \"secret.html\" page with published \"false\" that contains \"Unpublished page\""]
+}

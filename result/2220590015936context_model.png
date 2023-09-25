@@ -1,0 +1,10 @@
+// 2220590020640 Context Model
+digraph {
+	2220590015936 [label=Context3]
+	2220590021552 [label="I set global property named \"property_account_expense\" for model \"product.template\" and field \"property_account_expense\""]
+	2220590015936 -> 2220590021552
+	2220590021552 [label="I set global property named \"property_account_expense\" for model \"product.template\" and field \"property_account_expense\""]
+	2220590012624 [label="the property is related to model \"account.account\" using column \"code\" and value \"690\""]
+	2220590015936 -> 2220590012624
+	2220590012624 [label="the property is related to model \"account.account\" using column \"code\" and value \"690\""]
+}

@@ -1,0 +1,31 @@
+// 2220590540368 Context Model
+digraph {
+	2220590619312 [label=Context7]
+	2220590622576 [label="I replace the contents with \"foo\nbar\nbaz\nqux\nquux\ncorge\""]
+	2220590619312 -> 2220590622576
+	2220590622576 [label="I replace the contents with \"foo\nbar\nbaz\nqux\nquux\ncorge\""]
+	2220590615760 [label="I move the cursor to 0"]
+	2220590619312 -> 2220590615760
+	2220590615760 [label="I move the cursor to 0"]
+	2220590620032 [label="I type \"# \""]
+	2220590619312 -> 2220590620032
+	2220590620032 [label="I type \"# \""]
+	2220590618352 [label="I move down"]
+	2220590619312 -> 2220590618352
+	2220590618352 [label="I move down"]
+	2220590621808 [label="I move left"]
+	2220590619312 -> 2220590621808
+	2220590621808 [label="I move left"]
+	2220590624688 [label="I move left"]
+	2220590619312 -> 2220590624688
+	2220590624688 [label="I move left"]
+	2220590619072 [label="I type \"# \""]
+	2220590619312 -> 2220590619072
+	2220590619072 [label="I type \"# \""]
+	2220590623824 [label="I press predict"]
+	2220590619312 -> 2220590623824
+	2220590623824 [label="I press predict"]
+	2220590620752 [label="I press predict"]
+	2220590619312 -> 2220590620752
+	2220590620752 [label="I press predict"]
+}

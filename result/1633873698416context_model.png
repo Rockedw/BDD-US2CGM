@@ -1,0 +1,19 @@
+// 1633873700000 Context Model
+digraph {
+	1633873698416 [label=Context1]
+	1633873697552 [label="the most basic default settings"]
+	1633873698416 -> 1633873697552
+	1633873697552 [label="the most basic default settings"]
+	1633873699136 [label="the database has been seeded"]
+	1633873698416 -> 1633873699136
+	1633873699136 [label="the database has been seeded"]
+	1633873693760 [label="a simple activity with a multiple choice exists"]
+	1633873698416 -> 1633873693760
+	1633873693760 [label="a simple activity with a multiple choice exists"]
+	1633873692656 [label="the external activity \"simple activity\" is assigned to the class \"Class_with_no_assignment\""]
+	1633873698416 -> 1633873692656
+	1633873692656 [label="the external activity \"simple activity\" is assigned to the class \"Class_with_no_assignment\""]
+	1633873701488 [label="\"http://fake-lara.com/mock_html/test-external-activity25.html\" GET responds with"]
+	1633873698416 -> 1633873701488
+	1633873701488 [label="\"http://fake-lara.com/mock_html/test-external-activity25.html\" GET responds with"]
+}

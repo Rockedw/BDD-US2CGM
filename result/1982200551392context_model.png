@@ -1,0 +1,19 @@
+// 1982200550528 Context Model
+digraph {
+	1982200551392 [label=Context38]
+	1982200551536 [label="I have an _includes directory"]
+	1982200551392 -> 1982200551536
+	1982200551536 [label="I have an _includes directory"]
+	1982200551632 [label="I have an \"_includes/snippet.html\" file that contains \"a snippet\""]
+	1982200551392 -> 1982200551632
+	1982200551632 [label="I have an \"_includes/snippet.html\" file that contains \"a snippet\""]
+	1982200551728 [label="I have an \"_includes/parametrized.html\" file that contains \"works with {{include.what}}\""]
+	1982200551392 -> 1982200551728
+	1982200551728 [label="I have an \"_includes/parametrized.html\" file that contains \"works with {{include.what}}\""]
+	1982200551824 [label="I have a configuration file with:"]
+	1982200551392 -> 1982200551824
+	1982200551824 [label="I have a configuration file with:"]
+	1982200551920 [label="I have an \"index.html\" page that contains \"{% include {{site.include_file1}} %} that {% include {{site.include_file2}} what='parameters' %}\""]
+	1982200551392 -> 1982200551920
+	1982200551920 [label="I have an \"index.html\" page that contains \"{% include {{site.include_file1}} %} that {% include {{site.include_file2}} what='parameters' %}\""]
+}

@@ -1,0 +1,121 @@
+{
+    "feature_name": "Child Care",
+    "user_story": {
+        "as_a": "chits user",
+        "i_want": "",
+        "so_that": "efficiently manage old patient into a child care data",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"user\" with password \"user\"",
+                        "I click \"TODAY'S PATIENTS\"",
+                        "I should see \"CONSULTS TODAY\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"first\" with \"Allan\""
+                    ],
+                    [
+                        "I fill in \"last\" with \"Mendoza\"",
+                        "I press \"Search\"",
+                        "I should see \"SEARCH RESULTS\"",
+                        "I choose \"consult_patient_id\"",
+                        "I press \"Select Patient\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"VISIT DETAILS\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"user\" with password \"user\"",
+                        "I click \"TODAY'S PATIENTS\"",
+                        "I should see \"CONSULTS TODAY\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"first\" with \"Allan\""
+                    ],
+                    [
+                        "I fill in \"last\" with \"Mendoza\"",
+                        "I press \"Search\"",
+                        "I should see \"SEARCH RESULTS\"",
+                        "I choose \"consult_patient_id\"",
+                        "I press \"Select Patient\"",
+                        "I should see \"VISIT DETAILS\"",
+                        "I check \"ptgroup[]\"",
+                        "I press \"Save Details\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"CHILD\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I create a sample patient",
+                        "I click \"TODAY'S PATIENTS\"",
+                        "I should see \"CONSULTS TODAY\""
+                    ],
+                    [
+                        "I fill in \"first\" with \"Allan\""
+                    ],
+                    [
+                        "I fill in \"last\" with \"Mendoza\"",
+                        "I press \"Search\"",
+                        "I should see \"SEARCH RESULTS\"",
+                        "I choose \"consult_patient_id\"",
+                        "I press \"Select Patient\"",
+                        "I should see \"VISIT DETAILS\"",
+                        "I check by value \"FP\"",
+                        "I press \"Save Details\"",
+                        "I should see \"CHILD\"",
+                        "I click \"CHILD\"",
+                        "I should see \"services\"",
+                        "I check \"services[]\"",
+                        "I check \"vaccine[]\""
+                    ],
+                    [
+                        "I press \"Update Record\"",
+                        "I should see \"services[]\"",
+                        "I should see \"vaccine[]\"",
+                        "I click \"SIBLINGS\"",
+                        "I should see \"OTHER FAMILY MEMBERS\"",
+                        "I check \"patients[]\"",
+                        "I press \"Add Sibling\"",
+                        "I should see \"FIRST VISIT DATA\"",
+                        "I click \"BREASTFEEDING\"",
+                        "I should see \"FTITLE_CCDEV_BREASTFEED\"",
+                        "I check \"bfed_month[]\"",
+                        "I fill in \"date_bfed_six\" with \"03/02/2010\"",
+                        "I press \"Save Breastfeeding Status\"",
+                        "I should see \"bfed_month\"",
+                        "I click \"CONSULT\"",
+                        "I should see \"form_consult\"",
+                        "I press \"End Consult\"",
+                        "I should see \"confirm_end\""
+                    ],
+                    [
+                        "I press \"Yes\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"CONSULTS TODAY\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

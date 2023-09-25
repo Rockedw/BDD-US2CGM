@@ -1,0 +1,13 @@
+// 2084552923632 Context Model
+digraph {
+	2084552924688 [label=Context2]
+	2084552922432 [label="there is 1 existing individual like \"indiv\""]
+	2084552924688 -> 2084552922432
+	2084552922432 [label="there is 1 existing individual like \"indiv\""]
+	2084552930016 [label="there is 1 existing property like \"property\""]
+	2084552924688 -> 2084552930016
+	2084552930016 [label="there is 1 existing property like \"property\""]
+	2084552929632 [label="I am on the new connections page"]
+	2084552924688 -> 2084552929632
+	2084552929632 [label="I am on the new connections page"]
+}

@@ -1,0 +1,10 @@
+// 2220536329120 Context Model
+digraph {
+	2220536320672 [label=Context2]
+	2220536325904 [label="site settings have been enabled for \"beta_invites\""]
+	2220536320672 -> 2220536325904
+	2220536325904 [label="site settings have been enabled for \"beta_invites\""]
+	2220536324608 [label="an email template for \"invitation\" exists"]
+	2220536320672 -> 2220536324608
+	2220536324608 [label="an email template for \"invitation\" exists"]
+}

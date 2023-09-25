@@ -1,0 +1,74 @@
+{
+    "feature_name": "Holding the founding vote",
+    "user_story": {
+        "as_a": "founding member",
+        "i_want": "participate in the founding vote",
+        "so_that": "give our group a legal structure",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the members page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Not yet voted\" within the list of founding members"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the home page"
+                    ],
+                    [
+                        "I press \"Support\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Founding vote in progress\""
+                    ],
+                    [
+                        "I should see \"Vote for proposal cast\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "everyone has voted to support the founding"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "the proposal closer runs"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "everyone should receive an email saying the founding vote has passed",
+                        "the organisation should be active"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "one member voted against the founding"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "the email should list the members who voted in favour of the founding",
+                        "the email should not list the member who voted against the founding"
+                    ]
+                ]
+            }
+        ]
+    }
+}

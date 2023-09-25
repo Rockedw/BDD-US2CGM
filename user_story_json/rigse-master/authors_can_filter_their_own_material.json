@@ -1,0 +1,103 @@
+{
+    "feature_name": "Author can filter their own material",
+    "user_story": {
+        "as_a": "n author",
+        "i_want": "create and filter material",
+        "so_that": "find my own material",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I log out",
+                        "I go to the search instructional materials page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"Resources I authored\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on the search instructional materials page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Resources I authored\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the following users exist:",
+                        "the following External Activity exist:",
+                        "I reindex external activity"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am logged in with the username author_1",
+                        "I am on the search instructional materials page",
+                        "I check \"official\" under Authorship"
+                    ],
+                    [
+                        "I uncheck \"official\" under Authorship",
+                        "I check \"contributed\" under Authorship"
+                    ],
+                    [
+                        "I search for my own materials"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"external_activity_1\"",
+                        "I should see \"external_activity_2\""
+                    ],
+                    [
+                        "I should see \"external_activity_2\"",
+                        "I should not see \"external_activity_1\""
+                    ],
+                    [
+                        "I should see \"external_activity_1\"",
+                        "I should see \"external_activity_2\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the following users exist:",
+                        "the following External Activity exist:",
+                        "I reindex external activity"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am logged in with the username author_1",
+                        "I am on the search instructional materials page",
+                        "I search for my own materials",
+                        "I wait 2 seconds",
+                        "I check \"official\" under Authorship",
+                        "I wait 2 seconds"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"include_official\" checkbox should be checked"
+                    ],
+                    [
+                        "I should see \"external_activity_1\"",
+                        "I should not see \"external_activity_2\"",
+                        "I should not see \"external_activity_3\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "feature_name": "Creating a board resolution",
+    "user_story": {
+        "as_a": "Director",
+        "i_want": "create a resolution of the board",
+        "so_that": "initiate a decision of the Board",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Board page",
+                        "I press \"Create a new Board Resolution\"",
+                        "I enter the text of the new resolution",
+                        "I choose to open the resolution for electronic voting",
+                        "I press \"Save this resolution\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Board page",
+                        "I should see the new resolution in the list of currently-open resolutions",
+                        "the new resolution should have voting buttons"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Board page",
+                        "I press \"Create a new Board Resolution\"",
+                        "I enter the text of the new resolution",
+                        "I choose to save the resolution for consideration at a future meeting of the board",
+                        "I press \"Save this resolution\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Board page",
+                        "I should see the new resolution in the list of draft resolutions"
+                    ]
+                ]
+            }
+        ]
+    }
+}

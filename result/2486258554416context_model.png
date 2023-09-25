@@ -1,0 +1,19 @@
+// 2486258549520 Context Model
+digraph {
+	2486258554416 [label=Context50]
+	2486258555040 [label="I am on the new items page"]
+	2486258554416 -> 2486258555040
+	2486258555040 [label="I am on the new items page"]
+	2486258555136 [label="I fill in \"Name\" with \"original\""]
+	2486258554416 -> 2486258555136
+	2486258555136 [label="I fill in \"Name\" with \"original\""]
+	2486258555232 [label="I fill in \"Title\" with \"Second Item\""]
+	2486258554416 -> 2486258555232
+	2486258555232 [label="I fill in \"Title\" with \"Second Item\""]
+	2486258555328 [label="I fill in \"Description\" with \"Actually second item, but bad name\""]
+	2486258554416 -> 2486258555328
+	2486258555328 [label="I fill in \"Description\" with \"Actually second item, but bad name\""]
+	2486258555424 [label="I select \"Individual\" from \"Type\""]
+	2486258554416 -> 2486258555424
+	2486258555424 [label="I select \"Individual\" from \"Type\""]
+}

@@ -1,0 +1,64 @@
+{
+    "feature_name": "In order to finely configure workflows based on payment type used on Magento, I need to configure them on OpenERP",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need an \"account.journal\" with reference \"paypal_journal\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I update it with values:"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I save it"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I delete the \"BaseSalePaymentType\" with reference \"magentoerpconnect.payment_type1\"",
+                        "I delete the \"BaseSalePaymentType\" with reference \"magentoerpconnect.payment_type2\""
+                    ],
+                    [
+                        "I define the global configuration of the payment types with values:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I define a \"AUTOMATIC\" payment type pattern with values:"
+                    ],
+                    [
+                        "I define a \"AUTOMATIC PAYPAL\" payment type pattern with values:",
+                        "the other values of \"AUTOMATIC PAYPAL\" pattern are those of \"AUTOMATIC\"",
+                        "I define a \"CHEQUE\" payment type pattern with values:",
+                        "I define a \"FULL MANUAL\" payment type pattern with values:"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I want to use the following payment codes with the \"AUTOMATIC\" payment type with reference \"direct_total\":"
+                    ],
+                    [
+                        "I want to use the following payment codes with the \"AUTOMATIC PAYPAL\" payment type with reference \"direct_paypal\":",
+                        "I want to use the following payment codes with the \"CHEQUE\" payment type with reference \"cheq_vir\":",
+                        "I want to use the following payment codes with the \"FULL MANUAL\" payment type with reference \"manual\":"
+                    ]
+                ]
+            }
+        ]
+    }
+}

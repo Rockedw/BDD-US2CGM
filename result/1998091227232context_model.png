@@ -1,0 +1,13 @@
+// 1998091226704 Context Model
+digraph {
+	1998091227232 [label=Context25]
+	1998091227376 [label="\"tommy@nsfw.example.com\" has a public post with text \"I love 0bj3ction4bl3 c0nt3nt!\" and a poll"]
+	1998091227232 -> 1998091227376
+	1998091227376 [label="\"tommy@nsfw.example.com\" has a public post with text \"I love 0bj3ction4bl3 c0nt3nt!\" and a poll"]
+	1998091227472 [label="\"tommy@nsfw.example.com\" has a public post with text \"I love 0bj3ction4bl3 c0nt3nt!\" and a location"]
+	1998091227232 -> 1998091227472
+	1998091227472 [label="\"tommy@nsfw.example.com\" has a public post with text \"I love 0bj3ction4bl3 c0nt3nt!\" and a location"]
+	1998091227568 [label="\"tommy@nsfw.example.com\" has a public post with text \"I love 0bj3ction4bl3 c0nt3nt!\" and a picture"]
+	1998091227232 -> 1998091227568
+	1998091227568 [label="\"tommy@nsfw.example.com\" has a public post with text \"I love 0bj3ction4bl3 c0nt3nt!\" and a picture"]
+}

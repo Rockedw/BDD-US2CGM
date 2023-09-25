@@ -1,0 +1,583 @@
+// Goal Model
+digraph {
+	1847134172352 [label="n Engine Yard administrator
+goal"]
+	1847133896176 [label="I see something
+goal
+140728069287616"]
+	1847134172352 -> 1847133896176
+	1847133896176 [label="I see something
+goal"]
+	1847134076784 [label="I see activity
+goal
+140728069287616"]
+	1847133896176 -> 1847134076784
+	1847134076784 [label="I see activity
+goal"]
+	1847134071360 [label="browse and create portfolio items for providers
+goal
+140728069287616"]
+	1847134076784 -> 1847134071360
+	1847134071360 [label="browse and create portfolio items for providers
+goal"]
+	1847134025088 [label="Adding a new portfolio item to a provider
+goal
+1847134002416"]
+	1847134071360 -> 1847134025088
+	1847134025088 [label="Adding a new portfolio item to a provider
+goal"]
+	1847133995408 [label="I follow something
+goal
+140728069287616"]
+	1847134025088 -> 1847133995408
+	1847133995408 [label="I follow something
+goal"]
+	1847133995264 [label="I follow \"Developers\"
+task
+140728069287616"]
+	1847133995408 -> 1847133995264
+	1847133995264 [label="I follow \"Developers\"
+task"]
+	1847134005632 [label="I follow \"Old Grey Mare\"
+task
+140728069287616"]
+	1847133995408 -> 1847134005632
+	1847134005632 [label="I follow \"Old Grey Mare\"
+task"]
+	1847133995984 [label="I follow \"Add a new project to your portfolio\"
+task
+140728069287616"]
+	1847133995408 -> 1847133995984
+	1847133995984 [label="I follow \"Add a new project to your portfolio\"
+task"]
+	1847133996176 [label="I fill something
+goal
+140728069287616"]
+	1847134025088 -> 1847133996176
+	1847133996176 [label="I fill something
+goal"]
+	1847134002320 [label="I fill in \"Name\" with \"Norman Blake\"
+task
+140728069287616"]
+	1847133996176 -> 1847134002320
+	1847134002320 [label="I fill in \"Name\" with \"Norman Blake\"
+task"]
+	1847134011104 [label="I fill in \"Description\" with \"This project was really easy because we are totally professionals.\"
+task
+140728069287616"]
+	1847133996176 -> 1847134011104
+	1847134011104 [label="I fill in \"Description\" with \"This project was really easy because we are totally professionals.\"
+task"]
+	1847134005200 [label="I select \"2007\" from \"portfolio_item[year_completed]\"
+task
+140728069287616"]
+	1847134025088 -> 1847134005200
+	1847134005200 [label="I select \"2007\" from \"portfolio_item[year_completed]\"
+task"]
+	1847134004288 [label="I press \"Save\"
+task
+140728069287616"]
+	1847134025088 -> 1847134004288
+	1847134004288 [label="I press \"Save\"
+task"]
+	1847134027392 [label="Editing a portfolio item on a provider
+goal
+1847134007792"]
+	1847134071360 -> 1847134027392
+	1847134027392 [label="Editing a portfolio item on a provider
+goal"]
+	1847134001792 [label="I follow something
+goal
+140728069287616"]
+	1847134027392 -> 1847134001792
+	1847134001792 [label="I follow something
+goal"]
+	1847134007840 [label="I follow \"Developers\"
+task
+140728069287616"]
+	1847134001792 -> 1847134007840
+	1847134007840 [label="I follow \"Developers\"
+task"]
+	1847134005344 [label="I follow \"Natalie Haas\"
+task
+140728069287616"]
+	1847134001792 -> 1847134005344
+	1847134005344 [label="I follow \"Natalie Haas\"
+task"]
+	1847134001840 [label="I follow \"Fire and Grace\"
+task
+140728069287616"]
+	1847134001792 -> 1847134001840
+	1847134001840 [label="I follow \"Fire and Grace\"
+task"]
+	1847134002464 [label="I fill in \"Name\" with \"In the Moment\"
+task
+140728069287616"]
+	1847134027392 -> 1847134002464
+	1847134002464 [label="I fill in \"Name\" with \"In the Moment\"
+task"]
+	1847134000736 [label="I press \"Save\"
+task
+140728069287616"]
+	1847134027392 -> 1847134000736
+	1847134000736 [label="I press \"Save\"
+task"]
+	1847133996464 [label="Deleting a portfolio item on a provider
+goal
+1847133997664"]
+	1847134071360 -> 1847133996464
+	1847133996464 [label="Deleting a portfolio item on a provider
+goal"]
+	1847134006592 [label="I am on the admin dashboard
+task
+140728069287616"]
+	1847133996464 -> 1847134006592
+	1847134006592 [label="I am on the admin dashboard
+task"]
+	1847134007312 [label="I follow something
+goal
+140728069287616"]
+	1847133996464 -> 1847134007312
+	1847134007312 [label="I follow something
+goal"]
+	1847134005104 [label="I follow \"Developers\"
+task
+140728069287616"]
+	1847134007312 -> 1847134005104
+	1847134005104 [label="I follow \"Developers\"
+task"]
+	1847133996032 [label="I follow \"Vowel Movements\"
+task
+140728069287616"]
+	1847134007312 -> 1847133996032
+	1847133996032 [label="I follow \"Vowel Movements\"
+task"]
+	1847133997952 [label="I follow \"Pure West\"
+task
+140728069287616"]
+	1847134007312 -> 1847133997952
+	1847133997952 [label="I follow \"Pure West\"
+task"]
+	1847133997472 [label="I press \"Delete this portfolio project\"
+task
+140728069287616"]
+	1847133996464 -> 1847133997472
+	1847133997472 [label="I press \"Delete this portfolio project\"
+task"]
+	1847134018368 [label="browse and create users for providers
+goal
+140728069287616"]
+	1847134076784 -> 1847134018368
+	1847134018368 [label="browse and create users for providers
+goal"]
+	1847134002512 [label="Adding a new user to a provider
+goal
+1847134002944"]
+	1847134018368 -> 1847134002512
+	1847134002512 [label="Adding a new user to a provider
+goal"]
+	1847133997424 [label="I follow something
+goal
+140728069287616"]
+	1847134002512 -> 1847133997424
+	1847133997424 [label="I follow something
+goal"]
+	1847133996272 [label="I follow \"Developers\"
+task
+140728069287616"]
+	1847133997424 -> 1847133996272
+	1847133996272 [label="I follow \"Developers\"
+task"]
+	1847133998048 [label="I follow \"Hashrocket\"
+task
+140728069287616"]
+	1847133997424 -> 1847133998048
+	1847133998048 [label="I follow \"Hashrocket\"
+task"]
+	1847134009712 [label="I follow \"Add a new user\"
+task
+140728069287616"]
+	1847133997424 -> 1847134009712
+	1847134009712 [label="I follow \"Add a new user\"
+task"]
+	1847133999584 [label="I follow \"user.take_control\" translation
+task
+140728069287616"]
+	1847133997424 -> 1847133999584
+	1847133999584 [label="I follow \"user.take_control\" translation
+task"]
+	1847134003088 [label="I fill
+in something
+goal
+140728069287616"]
+	1847134002512 -> 1847134003088
+	1847134003088 [label="I fill
+in something
+goal"]
+	1847134010624 [label="I fill in \"First name\" with \"Ciara\"
+task
+140728069287616"]
+	1847134003088 -> 1847134010624
+	1847134010624 [label="I fill in \"First name\" with \"Ciara\"
+task"]
+	1847134009616 [label="I fill in \"Email\" with \"ciara@ciarascakes.com\"
+task
+140728069287616"]
+	1847134003088 -> 1847134009616
+	1847134009616 [label="I fill in \"Email\" with \"ciara@ciarascakes.com\"
+task"]
+	1847134005824 [label="I fill in \"Password\" with \"mcguire\"
+task
+140728069287616"]
+	1847134003088 -> 1847134005824
+	1847134005824 [label="I fill in \"Password\" with \"mcguire\"
+task"]
+	1847134007600 [label="I press \"Save\"
+task
+140728069287616"]
+	1847134002512 -> 1847134007600
+	1847134007600 [label="I press \"Save\"
+task"]
+	1847134003904 [label="Editing a user on a provider
+goal
+1847134004624"]
+	1847134018368 -> 1847134003904
+	1847134003904 [label="Editing a user on a provider
+goal"]
+	1847133997328 [label="I follow something
+goal
+140728069287616"]
+	1847134003904 -> 1847133997328
+	1847133997328 [label="I follow something
+goal"]
+	1847134000016 [label="I follow \"Developers\"
+task
+140728069287616"]
+	1847133997328 -> 1847134000016
+	1847134000016 [label="I follow \"Developers\"
+task"]
+	1847133999200 [label="I follow \"Crushtastic\"
+task
+140728069287616"]
+	1847133997328 -> 1847133999200
+	1847133999200 [label="I follow \"Crushtastic\"
+task"]
+	1847133996224 [label="I follow \"test@test.com\"
+task
+140728069287616"]
+	1847133997328 -> 1847133996224
+	1847133996224 [label="I follow \"test@test.com\"
+task"]
+	1847134000256 [label="I follow \"user.edit\" translation
+task
+140728069287616"]
+	1847133997328 -> 1847134000256
+	1847134000256 [label="I follow \"user.edit\" translation
+task"]
+	1847134011344 [label="I fill in \"First name\" with \"Joe\"
+task
+140728069287616"]
+	1847134003904 -> 1847134011344
+	1847134011344 [label="I fill in \"First name\" with \"Joe\"
+task"]
+	1847133996896 [label="I press \"Save\"
+task
+140728069287616"]
+	1847134003904 -> 1847133996896
+	1847133996896 [label="I press \"Save\"
+task"]
+	1847133997712 [label="Deleting a user on a provider
+goal
+1847134000880"]
+	1847134018368 -> 1847133997712
+	1847133997712 [label="Deleting a user on a provider
+goal"]
+	1847133999920 [label="I am on the admin dashboard
+task
+140728069287616"]
+	1847133997712 -> 1847133999920
+	1847133999920 [label="I am on the admin dashboard
+task"]
+	1847133997904 [label="I follow something
+goal
+140728069287616"]
+	1847133997712 -> 1847133997904
+	1847133997904 [label="I follow something
+goal"]
+	1847134003664 [label="I follow \"Developers\"
+task
+140728069287616"]
+	1847133997904 -> 1847134003664
+	1847134003664 [label="I follow \"Developers\"
+task"]
+	1847134006736 [label="I follow \"Billow\"
+task
+140728069287616"]
+	1847133997904 -> 1847134006736
+	1847134006736 [label="I follow \"Billow\"
+task"]
+	1847134007552 [label="I follow \"test@test.com\"
+task
+140728069287616"]
+	1847133997904 -> 1847134007552
+	1847134007552 [label="I follow \"test@test.com\"
+task"]
+	1847134008560 [label="I follow \"user.edit\" translation
+task
+140728069287616"]
+	1847133997904 -> 1847134008560
+	1847134008560 [label="I follow \"user.edit\" translation
+task"]
+	1847134000640 [label="I press \"Delete this user\"
+task
+140728069287616"]
+	1847133997712 -> 1847134000640
+	1847134000640 [label="I press \"Delete this user\"
+task"]
+	1847134005248 [label="see the RFPs that a provider has generated
+goal
+140728069287616"]
+	1847133896176 -> 1847134005248
+	1847134005248 [label="see the RFPs that a provider has generated
+goal"]
+	1847133997280 [label="Viewing RFPs for a particular provider
+goal
+1847133995888"]
+	1847134005248 -> 1847133997280
+	1847133997280 [label="Viewing RFPs for a particular provider
+goal"]
+	1847134009568 [label="I am on the admin dashboard
+task
+140728069287616"]
+	1847133997280 -> 1847134009568
+	1847134009568 [label="I am on the admin dashboard
+task"]
+	1847133890272 [label="I follow something
+goal
+140728069287616"]
+	1847133997280 -> 1847133890272
+	1847133890272 [label="I follow something
+goal"]
+	1847133996944 [label="I follow \"Developers\"
+task
+140728069287616"]
+	1847133890272 -> 1847133996944
+	1847133996944 [label="I follow \"Developers\"
+task"]
+	1847134007168 [label="I follow \"Jinglicious\"
+task
+140728069287616"]
+	1847133890272 -> 1847134007168
+	1847134007168 [label="I follow \"Jinglicious\"
+task"]
+	1847134000448 [label="I follow \"provider.rfps\" translation
+task
+140728069287616"]
+	1847133890272 -> 1847134000448
+	1847134000448 [label="I follow \"provider.rfps\" translation
+task"]
+	1847133999872 [label="I follow \"Nice work finger\"
+task
+140728069287616"]
+	1847133890272 -> 1847133999872
+	1847133999872 [label="I follow \"Nice work finger\"
+task"]
+	1847134005008 [label="Deleting an RFP
+goal
+1847133999776"]
+	1847134005248 -> 1847134005008
+	1847134005008 [label="Deleting an RFP
+goal"]
+	1847133999296 [label="I am on the admin dashboard
+task
+140728069287616"]
+	1847134005008 -> 1847133999296
+	1847133999296 [label="I am on the admin dashboard
+task"]
+	1847134701600 [label="I follow something
+goal
+140728069287616"]
+	1847134005008 -> 1847134701600
+	1847134701600 [label="I follow something
+goal"]
+	1847134009952 [label="I follow \"Developers\"
+task
+140728069287616"]
+	1847134701600 -> 1847134009952
+	1847134009952 [label="I follow \"Developers\"
+task"]
+	1847134000400 [label="I follow \"Willy Wallow\"
+task
+140728069287616"]
+	1847134701600 -> 1847134000400
+	1847134000400 [label="I follow \"Willy Wallow\"
+task"]
+	1847134007696 [label="I follow \"provider.rfps\" translation
+task
+140728069287616"]
+	1847134701600 -> 1847134007696
+	1847134007696 [label="I follow \"provider.rfps\" translation
+task"]
+	1847134004720 [label="I follow \"Spamtastic\"
+task
+140728069287616"]
+	1847134701600 -> 1847134004720
+	1847134004720 [label="I follow \"Spamtastic\"
+task"]
+	1847134005872 [label="I press \"Delete Request\"
+task
+140728069287616"]
+	1847134005008 -> 1847134005872
+	1847134005872 [label="I press \"Delete Request\"
+task"]
+	1847134171152 [label=" add something
+goal
+140728069287616"]
+	1847134172352 -> 1847134171152
+	1847134171152 [label=" add something
+goal"]
+	1847133996800 [label="add, edit, delete users
+goal
+140728069287616"]
+	1847134171152 -> 1847133996800
+	1847133996800 [label="add, edit, delete users
+goal"]
+	1847133997040 [label="I follow \"navigation.users\" translation
+task
+140728069287616"]
+	1847133996800 -> 1847133997040
+	1847133997040 [label="I follow \"navigation.users\" translation
+task"]
+	1847134010672 [label="I follow \"user.add_new\" translation
+task
+140728069287616"]
+	1847133996800 -> 1847134010672
+	1847134010672 [label="I follow \"user.add_new\" translation
+task"]
+	1847134010864 [label="I fill in \"user[first_name]\" with \"Rodney\"
+task
+140728069287616"]
+	1847133996800 -> 1847134010864
+	1847134010864 [label="I fill in \"user[first_name]\" with \"Rodney\"
+task"]
+	1847133996128 [label="I fill in \"user[last_name]\" with \"Miller\"
+task
+140728069287616"]
+	1847133996800 -> 1847133996128
+	1847133996128 [label="I fill in \"user[last_name]\" with \"Miller\"
+task"]
+	1847134007216 [label="I fill in \"user[email]\" with \"rmiller@rodneymiller.net\"
+task
+140728069287616"]
+	1847133996800 -> 1847134007216
+	1847134007216 [label="I fill in \"user[email]\" with \"rmiller@rodneymiller.net\"
+task"]
+	1847134000064 [label="I fill in \"user[password]\" with \"blank\"
+task
+140728069287616"]
+	1847133996800 -> 1847134000064
+	1847134000064 [label="I fill in \"user[password]\" with \"blank\"
+task"]
+	1847134008896 [label="I press \"forms.save\" translation
+task
+140728069287616"]
+	1847133996800 -> 1847134008896
+	1847134008896 [label="I press \"forms.save\" translation
+task"]
+	1847134001024 [label="I follow \"user.edit\" translation
+task
+140728069287616"]
+	1847133996800 -> 1847134001024
+	1847134001024 [label="I follow \"user.edit\" translation
+task"]
+	1847134010912 [label="I fill in \"user[first_name]\" with \"Elvie\"
+task
+140728069287616"]
+	1847133996800 -> 1847134010912
+	1847134010912 [label="I fill in \"user[first_name]\" with \"Elvie\"
+task"]
+	1847134004528 [label="I press \"forms.save\" translation
+task
+140728069287616"]
+	1847133996800 -> 1847134004528
+	1847134004528 [label="I press \"forms.save\" translation
+task"]
+	1847133995216 [label="I follow \"navigation.users\" translation
+task
+140728069287616"]
+	1847133996800 -> 1847133995216
+	1847133995216 [label="I follow \"navigation.users\" translation
+task"]
+	1847133996320 [label="I follow \"general.delete\" translation
+task
+140728069287616"]
+	1847133996800 -> 1847133996320
+	1847133996320 [label="I follow \"general.delete\" translation
+task"]
+	1847134008368 [label="add pages
+goal
+140728069287616"]
+	1847134171152 -> 1847134008368
+	1847134008368 [label="add pages
+goal"]
+	1847134005440 [label="I follow \"navigation.pages\" translation
+task
+140728069287616"]
+	1847134008368 -> 1847134005440
+	1847134005440 [label="I follow \"navigation.pages\" translation
+task"]
+	1847133999104 [label="I follow \"page.add_new\" translation
+task
+140728069287616"]
+	1847134008368 -> 1847133999104
+	1847133999104 [label="I follow \"page.add_new\" translation
+task"]
+	1847134009136 [label="I fill in \"page[title]\" with \"New page\"
+task
+140728069287616"]
+	1847134008368 -> 1847134009136
+	1847134009136 [label="I fill in \"page[title]\" with \"New page\"
+task"]
+	1847134008320 [label="I fill in \"page[url]\" with \"new_page\"
+task
+140728069287616"]
+	1847134008368 -> 1847134008320
+	1847134008320 [label="I fill in \"page[url]\" with \"new_page\"
+task"]
+	1847133996416 [label="I fill in \"page[content]\" with \"Hello\"
+task
+140728069287616"]
+	1847134008368 -> 1847133996416
+	1847133996416 [label="I fill in \"page[content]\" with \"Hello\"
+task"]
+	1847133999152 [label="I press \"forms.save\" translation
+task
+140728069287616"]
+	1847134008368 -> 1847133999152
+	1847133999152 [label="I press \"forms.save\" translation
+task"]
+	1847134001600 [label="I follow \"New page\"
+task
+140728069287616"]
+	1847134008368 -> 1847134001600
+	1847134001600 [label="I follow \"New page\"
+task"]
+	1847133996560 [label="I fill in \"page[title]\" with \"Page revision\"
+task
+140728069287616"]
+	1847134008368 -> 1847133996560
+	1847133996560 [label="I fill in \"page[title]\" with \"Page revision\"
+task"]
+	1847134004576 [label="I press \"forms.save\" translation
+task
+140728069287616"]
+	1847134008368 -> 1847134004576
+	1847134004576 [label="I press \"forms.save\" translation
+task"]
+	1847133995840 [label="I follow \"general.delete\" translation
+task
+140728069287616"]
+	1847134008368 -> 1847133995840
+	1847133995840 [label="I follow \"general.delete\" translation
+task"]
+}

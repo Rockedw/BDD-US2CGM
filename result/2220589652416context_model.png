@@ -1,0 +1,13 @@
+// 2220589651984 Context Model
+digraph {
+	2220589652416 [label=Context23]
+	2220589652560 [label="I have a blank site in \"_sourcedir\""]
+	2220589652416 -> 2220589652560
+	2220589652560 [label="I have a blank site in \"_sourcedir\""]
+	2220589652656 [label="I have an \"_sourcedir/index.html\" file that contains \"Changing source directory\""]
+	2220589652416 -> 2220589652656
+	2220589652656 [label="I have an \"_sourcedir/index.html\" file that contains \"Changing source directory\""]
+	2220589652752 [label="I have a configuration file with \"source\" set to \"_sourcedir\""]
+	2220589652416 -> 2220589652752
+	2220589652752 [label="I have a configuration file with \"source\" set to \"_sourcedir\""]
+}

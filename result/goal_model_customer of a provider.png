@@ -1,0 +1,179 @@
+// Goal Model
+digraph {
+	1847134008944 [label="customer of a provider
+goal"]
+	1847133482688 [label="be able to submit a endorsement for a company
+goal
+140728069287616"]
+	1847134008944 -> 1847133482688
+	1847133482688 [label="be able to submit a endorsement for a company
+goal"]
+	1847133471984 [label="Leaving a endorsement for a provider
+goal
+1847133286944"]
+	1847133482688 -> 1847133471984
+	1847133471984 [label="Leaving a endorsement for a provider
+goal"]
+	1847133471264 [label="I am on the homepage
+task
+140728069287616"]
+	1847133471984 -> 1847133471264
+	1847133471264 [label="I am on the homepage
+task"]
+	1847133473520 [label="I follow \"home.find_a_provider\" translation
+task
+140728069287616"]
+	1847133471984 -> 1847133473520
+	1847133473520 [label="I follow \"home.find_a_provider\" translation
+task"]
+	1847133484848 [label="I press \"provider.directory.find_providers\" translation
+task
+140728069287616"]
+	1847133471984 -> 1847133484848
+	1847133484848 [label="I press \"provider.directory.find_providers\" translation
+task"]
+	1847133278496 [label="I follow \"Hashrocket\"
+task
+140728069287616"]
+	1847133471984 -> 1847133278496
+	1847133278496 [label="I follow \"Hashrocket\"
+task"]
+	1847133283008 [label="I fill in \"endorsement[name]\" with \"Brian Flanagan\"
+task
+140728069287616"]
+	1847133471984 -> 1847133283008
+	1847133283008 [label="I fill in \"endorsement[name]\" with \"Brian Flanagan\"
+task"]
+	1847133278928 [label="I select \"2007\" from \"endorsement[year_hired]\"
+task
+140728069287616"]
+	1847133471984 -> 1847133278928
+	1847133278928 [label="I select \"2007\" from \"endorsement[year_hired]\"
+task"]
+	1847133278064 [label="I fill in \"endorsement[company]\" with \"Coral Made\"
+task
+140728069287616"]
+	1847133471984 -> 1847133278064
+	1847133278064 [label="I fill in \"endorsement[company]\" with \"Coral Made\"
+task"]
+	1847133285168 [label="I fill in \"endorsement[email]\" with \"btf@coralmade.net\"
+task
+140728069287616"]
+	1847133471984 -> 1847133285168
+	1847133285168 [label="I fill in \"endorsement[email]\" with \"btf@coralmade.net\"
+task"]
+	1847133276288 [label="I fill in \"endorsement[url]\" with \"coralmade.net\"
+task
+140728069287616"]
+	1847133471984 -> 1847133276288
+	1847133276288 [label="I fill in \"endorsement[url]\" with \"coralmade.net\"
+task"]
+	1847133274464 [label="I fill in \"endorsement[position]\" with \"Vice President of Human Resources\"
+task
+140728069287616"]
+	1847133471984 -> 1847133274464
+	1847133274464 [label="I fill in \"endorsement[position]\" with \"Vice President of Human Resources\"
+task"]
+	1847133282816 [label="I fill in \"endorsement[endorsement]\" with \"80% perfect\"
+task
+140728069287616"]
+	1847133471984 -> 1847133282816
+	1847133282816 [label="I fill in \"endorsement[endorsement]\" with \"80% perfect\"
+task"]
+	1847133280752 [label="I press \"endorsement_submit\"
+task
+140728069287616"]
+	1847133471984 -> 1847133280752
+	1847133280752 [label="I press \"endorsement_submit\"
+task"]
+	1847133471120 [label="I follow \"more-endorsements\"
+task
+140728069287616"]
+	1847133471984 -> 1847133471120
+	1847133471120 [label="I follow \"more-endorsements\"
+task"]
+	1847133485616 [label="A provider with lots of endorsements
+goal
+1847133286704"]
+	1847133482688 -> 1847133485616
+	1847133485616 [label="A provider with lots of endorsements
+goal"]
+	1847133285744 [label="I am on the homepage
+task
+140728069287616"]
+	1847133485616 -> 1847133285744
+	1847133285744 [label="I am on the homepage
+task"]
+	1847133275040 [label="I follow \"home.find_a_provider\" translation
+task
+140728069287616"]
+	1847133485616 -> 1847133275040
+	1847133275040 [label="I follow \"home.find_a_provider\" translation
+task"]
+	1847133283872 [label="I press \"provider.directory.find_providers\" translation
+task
+140728069287616"]
+	1847133485616 -> 1847133283872
+	1847133283872 [label="I press \"provider.directory.find_providers\" translation
+task"]
+	1847133275088 [label="I follow \"Hashrocket\"
+task
+140728069287616"]
+	1847133485616 -> 1847133275088
+	1847133275088 [label="I follow \"Hashrocket\"
+task"]
+	1847133288528 [label="I follow \"more-endorsements\"
+task
+140728069287616"]
+	1847133485616 -> 1847133288528
+	1847133288528 [label="I follow \"more-endorsements\"
+task"]
+	1847133282336 [label="Approving a endorsement for display
+goal
+1847133277392"]
+	1847133482688 -> 1847133282336
+	1847133282336 [label="Approving a endorsement for display
+goal"]
+	1847133283344 [label="I log in as \"paul@test.com\" with password \"testtest\"
+task
+140728069287616"]
+	1847133282336 -> 1847133283344
+	1847133283344 [label="I log in as \"paul@test.com\" with password \"testtest\"
+task"]
+	1847133279600 [label="I follow \"Nick Riviera\"
+task
+140728069287616"]
+	1847133282336 -> 1847133279600
+	1847133279600 [label="I follow \"Nick Riviera\"
+task"]
+	1847133290064 [label="I press \"endorsement.approve\" translation
+task
+140728069287616"]
+	1847133282336 -> 1847133290064
+	1847133290064 [label="I press \"endorsement.approve\" translation
+task"]
+	1847133283728 [label="Viewing provider endorsements
+goal
+1847133277440"]
+	1847133482688 -> 1847133283728
+	1847133283728 [label="Viewing provider endorsements
+goal"]
+	1847133290160 [label="I follow \"home.find_a_provider\" translation
+task
+140728069287616"]
+	1847133283728 -> 1847133290160
+	1847133290160 [label="I follow \"home.find_a_provider\" translation
+task"]
+	1847133277488 [label="I press \"provider.directory.find_providers\" translation
+task
+140728069287616"]
+	1847133283728 -> 1847133277488
+	1847133277488 [label="I press \"provider.directory.find_providers\" translation
+task"]
+	1847133278640 [label="I follow \"Hotpocket\"
+task
+140728069287616"]
+	1847133283728 -> 1847133278640
+	1847133278640 [label="I follow \"Hotpocket\"
+task"]
+}

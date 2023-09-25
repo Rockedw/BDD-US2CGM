@@ -1,0 +1,37 @@
+// 2084499013888 Context Model
+digraph {
+	2084499015520 [label=Context6]
+	2084499015664 [label="I am invited and on the signup page"]
+	2084499015520 -> 2084499015664
+	2084499015664 [label="I am invited and on the signup page"]
+	2084499015760 [label="I fill in \"First name\" with \"Sangyoon\""]
+	2084499015520 -> 2084499015760
+	2084499015760 [label="I fill in \"First name\" with \"Sangyoon\""]
+	2084499015856 [label="I fill in \"Last name\" with \"Park\""]
+	2084499015520 -> 2084499015856
+	2084499015856 [label="I fill in \"Last name\" with \"Park\""]
+	2084499015952 [label="I fill in \"Street address\" with \"346 soda UC Berkeley\""]
+	2084499015520 -> 2084499015952
+	2084499015952 [label="I fill in \"Street address\" with \"346 soda UC Berkeley\""]
+	2084499016048 [label="I fill in \"City\" with \"Berkeley\""]
+	2084499015520 -> 2084499016048
+	2084499016048 [label="I fill in \"City\" with \"Berkeley\""]
+	2084499016144 [label="I fill in \"State\" with \"CA\""]
+	2084499015520 -> 2084499016144
+	2084499016144 [label="I fill in \"State\" with \"CA\""]
+	2084499016240 [label="I fill in \"Zipcode\" with \"94000\""]
+	2084499015520 -> 2084499016240
+	2084499016240 [label="I fill in \"Zipcode\" with \"94000\""]
+	2084499016336 [label="I fill in \"Phone number\" with \"123-456-7890\""]
+	2084499015520 -> 2084499016336
+	2084499016336 [label="I fill in \"Phone number\" with \"123-456-7890\""]
+	2084499016432 [label="I fill in \"Password\" with \"123\""]
+	2084499015520 -> 2084499016432
+	2084499016432 [label="I fill in \"Password\" with \"123\""]
+	2084499016528 [label="I fill in \"Password confirmation\" with \"111\""]
+	2084499015520 -> 2084499016528
+	2084499016528 [label="I fill in \"Password confirmation\" with \"111\""]
+	2084499016624 [label="I press \"Register\""]
+	2084499015520 -> 2084499016624
+	2084499016624 [label="I press \"Register\""]
+}

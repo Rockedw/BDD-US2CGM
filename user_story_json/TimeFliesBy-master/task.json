@@ -1,0 +1,67 @@
+{
+    "feature_name": "Task",
+    "user_story": {
+        "as_a": "person short on time",
+        "i_want": "keep track of tasks",
+        "so_that": "> remember what I did",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am on the new task page",
+                        "I fill in all required fields",
+                        "I fill in \"task_title\" with \"My first task title\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Create\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Task was successfully created.\"",
+                        "I should see \"My first task title\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the new task page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in all required fields",
+                        "I fill in \"task_description\" with \"A long task description explaining in more detail what the task is about\"",
+                        "I press \"Create\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Task was successfully created.\"",
+                        "I should see \"A long task description explaining\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have some tasks"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the tasks page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see more recent tasks first"
+                    ]
+                ]
+            }
+        ]
+    }
+}

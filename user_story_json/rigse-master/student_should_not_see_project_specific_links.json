@@ -1,0 +1,42 @@
+{
+    "feature_name": "Student cannot see project specific links",
+    "user_story": {
+        "as_a": "student",
+        "i_want": "I should not see project specific links",
+        "so_that": "keep project specific links available only to teachers",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on my classes page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see a project link labeled \"Foo Project Link\"",
+                        "I should not see a project link labeled \"Bar Project Link\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the \"student\" user is added to the default project"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on my classes page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see a project link labeled \"Foo Project Link\"",
+                        "I should not see a project link labeled \"Bar Project Link\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

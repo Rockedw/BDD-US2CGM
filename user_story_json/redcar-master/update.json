@@ -1,0 +1,38 @@
+{
+    "feature_name": "Updating a working copy from a remote repository",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I checkout a local repository",
+                        "I create a wc file named \"foo.rb\"",
+                        "I replace \"foo.rb\" contents with \"Never gonna make you cry\"",
+                        "I add \"foo.rb\" to the index",
+                        "I commit my changes with message \"Hark! This is a commit.\""
+                    ],
+                    [
+                        "I replace \"foo.rb\" contents with \"Never gonna say goodbye\"",
+                        "I create a wc file named \"bar.rb\"",
+                        "I add \"bar.rb\" to the index",
+                        "I commit my changes with message \"Yarr! This is another commit.\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "if I checkout to a new working copy, it should have \"1\" files",
+                        "the contents of wc file \"foo.rb\" in the new copy should be \"Never gonna make you cry\""
+                    ],
+                    [
+                        "if I update my new working copy, it should have \"2\" files",
+                        "the contents of wc file \"foo.rb\" in the new copy should be \"Never gonna say goodbye\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

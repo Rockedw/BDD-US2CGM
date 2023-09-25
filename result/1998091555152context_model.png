@@ -1,0 +1,25 @@
+// 1998091554384 Context Model
+digraph {
+	1998091555152 [label=Context4]
+	1998091555536 [label="I am on \"alice@alice.alice\"'s page"]
+	1998091555152 -> 1998091555536
+	1998091555536 [label="I am on \"alice@alice.alice\"'s page"]
+	1998091555632 [label="I want to mention her from the profile"]
+	1998091555152 -> 1998091555632
+	1998091555632 [label="I want to mention her from the profile"]
+	1998091555728 [label="I append \"I am eating a yogurt\" to the publisher in the mention modal"]
+	1998091555152 -> 1998091555728
+	1998091555728 [label="I append \"I am eating a yogurt\" to the publisher in the mention modal"]
+	1998091555824 [label="I press the aspect dropdown in the mention modal"]
+	1998091555152 -> 1998091555824
+	1998091555824 [label="I press the aspect dropdown in the mention modal"]
+	1998091555920 [label="I toggle the aspect \"NotPostingThingsHere\" in the mention modal"]
+	1998091555152 -> 1998091555920
+	1998091555920 [label="I toggle the aspect \"NotPostingThingsHere\" in the mention modal"]
+	1998091556016 [label="I press the aspect dropdown in the mention modal"]
+	1998091555152 -> 1998091556016
+	1998091556016 [label="I press the aspect dropdown in the mention modal"]
+	1998091556112 [label="I press \"Share\" in the mention modal"]
+	1998091555152 -> 1998091556112
+	1998091556112 [label="I press \"Share\" in the mention modal"]
+}

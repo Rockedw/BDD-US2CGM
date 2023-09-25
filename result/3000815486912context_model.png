@@ -1,0 +1,13 @@
+// 3000815499440 Context Model
+digraph {
+	3000815486912 [label=Context4]
+	3000815499200 [label="a logged in admin user"]
+	3000815486912 -> 3000815499200
+	3000815499200 [label="a logged in admin user"]
+	3000815487248 [label="I am on the admin dashboard"]
+	3000815486912 -> 3000815487248
+	3000815487248 [label="I am on the admin dashboard"]
+	3000815492336 [label="a provider \"Hashrocket\""]
+	3000815486912 -> 3000815492336
+	3000815492336 [label="a provider \"Hashrocket\""]
+}

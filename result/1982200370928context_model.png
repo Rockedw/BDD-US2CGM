@@ -1,0 +1,13 @@
+// 1982200379472 Context Model
+digraph {
+	1982200370928 [label=Context3]
+	1982200375824 [label="a provider \"Vowel Movements\""]
+	1982200370928 -> 1982200375824
+	1982200375824 [label="a provider \"Vowel Movements\""]
+	1982200371936 [label="a portfolio item \"Pure West\" belonging to the \"Vowel Movements\" provider"]
+	1982200370928 -> 1982200371936
+	1982200371936 [label="a portfolio item \"Pure West\" belonging to the \"Vowel Movements\" provider"]
+	1982200377024 [label="a logged in admin user"]
+	1982200370928 -> 1982200377024
+	1982200377024 [label="a logged in admin user"]
+}

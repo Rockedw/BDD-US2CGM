@@ -1,0 +1,25 @@
+{
+    "feature_name": "Running an alternate file runner",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "run tabs in different ways",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have opened \"plugins/runnables/features/fixtures/alternate.ruby\"",
+                        "I run the command Redcar::Runnables::RunAlternateEditTabCommand"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "my active tab should be \"Running alternate.ruby\"",
+                        "the HTML tab should say \"hello world\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+// 1911333511104 Context Model
+digraph {
+	1911333512496 [label=Context9]
+	1911333512880 [label="following users:"]
+	1911333512496 -> 1911333512880
+	1911333512880 [label="following users:"]
+	1911333512976 [label="I sign in as \"bob@bob.bob\""]
+	1911333512496 -> 1911333512976
+	1911333512976 [label="I sign in as \"bob@bob.bob\""]
+	1911333513072 [label="I am on \"alice@alice.alice\"'s page"]
+	1911333512496 -> 1911333513072
+	1911333513072 [label="I am on \"alice@alice.alice\"'s page"]
+	1911333513168 [label="I add the person to my \"Besties\" aspect"]
+	1911333512496 -> 1911333513168
+	1911333513168 [label="I add the person to my \"Besties\" aspect"]
+}

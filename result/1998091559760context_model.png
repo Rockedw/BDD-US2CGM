@@ -1,0 +1,19 @@
+// 1998091562160 Context Model
+digraph {
+	1998091559760 [label=Context1]
+	1998091566672 [label="following users exist:"]
+	1998091559760 -> 1998091566672
+	1998091566672 [label="following users exist:"]
+	1998091559520 [label="a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\""]
+	1998091559760 -> 1998091559520
+	1998091559520 [label="a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\""]
+	1998091560672 [label="\"bob@bob.bob\" has a public post with text \"this is a test post!\""]
+	1998091559760 -> 1998091560672
+	1998091560672 [label="\"bob@bob.bob\" has a public post with text \"this is a test post!\""]
+	1998091591472 [label="Alice has a post mentioning Bob"]
+	1998091559760 -> 1998091591472
+	1998091591472 [label="Alice has a post mentioning Bob"]
+	1998091594784 [label="\"alice@alice.alice\" has a public post with text \"i am using a #tag\""]
+	1998091559760 -> 1998091594784
+	1998091594784 [label="\"alice@alice.alice\" has a public post with text \"i am using a #tag\""]
+}

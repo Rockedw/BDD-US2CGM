@@ -1,0 +1,368 @@
+{
+    "feature_name": "Collections Directory",
+    "user_story": {
+        "as_a": "hacker who likes to structure content without clutter",
+        "i_want": "be able to organize my collections under a single directory",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Random Content.\" in \"_site/2009/03/27/gathered-post.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a collections/_puppies directory",
+                        "I have the following document under the \"puppies\" collection within the \"collections\" directory:",
+                        "I have a collections/_posts directory",
+                        "I have the following post within the \"collections\" directory:",
+                        "I have a \"_config.yml\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "the \"_site/puppies/rover.html\" file should exist",
+                        "I should see \"Random Content.\" in \"_site/2009/03/27/gathered-post.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a collections/_puppies directory",
+                        "I have the following document under the \"puppies\" collection within the \"collections\" directory:",
+                        "I have a _posts directory",
+                        "I have the following post:",
+                        "I have a \"_config.yml\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "the \"_site/puppies/rover.html\" file should exist",
+                        "the \"_site/2009/03/27/post-at-root.html\" file should not exist",
+                        "the _site/_posts directory should not exist"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a collections/_puppies directory",
+                        "I have the following document under the \"puppies\" collection within the \"collections\" directory:",
+                        "I have a collections/_drafts directory",
+                        "I have the following draft within the \"collections\" directory:",
+                        "I have a \"_config.yml\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build --drafts"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "the \"_site/puppies/rover.html\" file should exist",
+                        "I should see \"Random Content.\" in \"_site/2009/03/27/gathered-draft.html\"",
+                        "the _site/collections directory should not exist"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a collections/_puppies directory",
+                        "I have the following document under the \"puppies\" collection within the \"collections\" directory:",
+                        "I have a _drafts directory",
+                        "I have the following draft:",
+                        "I have a \"_config.yml\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build --drafts"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "the \"_site/puppies/rover.html\" file should exist",
+                        "the \"_site/2009/03/27/draft-at-root.html\" file should not exist"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a gathering/_puppies directory",
+                        "I have a gathering/_posts directory",
+                        "I have a gathering/_drafts directory",
+                        "I have a _puppies directory",
+                        "I have a _posts directory",
+                        "I have a _drafts directory",
+                        "I have the following document under the \"puppies\" collection within the \"gathering\" directory:",
+                        "I have the following document under the puppies collection:",
+                        "I have the following post within the \"gathering\" directory:",
+                        "I have the following post:",
+                        "I have the following draft within the \"gathering\" directory:",
+                        "I have the following draft:",
+                        "I have a \"_config.yml\" file with content:",
+                        "I have a \"gathering/_puppies/static_file.txt\" file that contains \"Static content.\"",
+                        "I have a gathering/_puppies/nested directory",
+                        "I have a \"gathering/_puppies/nested/static_file.txt\" file that contains \"Nested Static content.\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build --drafts"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "the \"_site/puppies/rover-in-gathering.html\" file should exist",
+                        "the \"_site/2009/03/27/post-in-gathering.html\" file should exist",
+                        "the \"_site/2009/03/27/draft-in-gathering.html\" file should exist",
+                        "the \"_site/2009/03/27/draft-at-root.html\" file should not exist",
+                        "the \"_site/puppies/rover-at-root.html\" file should not exist",
+                        "I should see exactly \"Static content.\" in \"_site/puppies/static_file.txt\"",
+                        "I should see exactly \"Nested Static content.\" in \"_site/puppies/nested/static_file.txt\"",
+                        "the _site/gathering directory should not exist",
+                        "the _site/_posts directory should not exist"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _puppies directory",
+                        "I have the following documents under the puppies collection:",
+                        "I have a _posts directory",
+                        "I have the following post:",
+                        "I have a \"_config.yml\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "the \"_site/puppies/rover.html\" file should exist",
+                        "I should see \"excerpt for all docs.\" in \"_site/puppies/rover.html\"",
+                        "I should see \"Random Content.\" in \"_site/2009/03/27/gathered-post.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a collections/_puppies directory",
+                        "I have the following documents under the \"puppies\" collection within the \"collections\" directory:",
+                        "I have a collections/_posts directory",
+                        "I have the following post within the \"collections\" directory:",
+                        "I have a \"_config.yml\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "the \"_site/puppies/rover.html\" file should exist",
+                        "I should see \"excerpt for all docs.\" in \"_site/puppies/rover.html\"",
+                        "I should see \"Random Content.\" in \"_site/2009/03/27/gathered-post.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a gathering/_players/managers directory",
+                        "I have a gathering/_players/recruits directory",
+                        "I have a gathering/_players/standby directory",
+                        "I have the following documents nested inside \"managers\" directory under the \"players\" collection within the \"gathering\" directory:",
+                        "I have the following documents nested inside \"recruits\" directory under the \"players\" collection within the \"gathering\" directory:",
+                        "I have the following documents nested inside \"standby\" directory under the \"players\" collection within the \"gathering\" directory:",
+                        "I have a \"_config.yml\" file with content:",
+                        "I have a \"index.md\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"<p>Tony Stark: Manager: true</p>\" in \"_site/index.html\"",
+                        "I should see \"<p>Tony Stark: Recruit: false</p>\" in \"_site/index.html\"",
+                        "I should see \"<p>Tony Stark: Villain: false</p>\" in \"_site/index.html\"",
+                        "I should see \"<p>Peter Parker: Manager: false</p>\" in \"_site/index.html\"",
+                        "I should see \"<p>Peter Parker: Recruit: true</p>\" in \"_site/index.html\"",
+                        "I should see \"<p>Peter Parker: Villain: false</p>\" in \"_site/index.html\"",
+                        "I should see \"<p>Steve Rogers: Manager: true</p>\" in \"_site/index.html\"",
+                        "I should see \"<p>Steve Rogers: Recruit: false</p>\" in \"_site/index.html\"",
+                        "I should see \"<p>Steve Rogers: Villain: false</p>\" in \"_site/index.html\"",
+                        "I should see \"<p>Wanda Maximoff: Manager: false</p>\" in \"_site/index.html\"",
+                        "I should see \"<p>Wanda Maximoff: Recruit: true</p>\" in \"_site/index.html\"",
+                        "I should see \"<p>Wanda Maximoff: Villain: false</p>\" in \"_site/index.html\"",
+                        "I should see \"<p>Thanos: Manager: false</p>\" in \"_site/index.html\"",
+                        "I should see \"<p>Thanos: Recruit: false</p>\" in \"_site/index.html\"",
+                        "I should see \"<p>Thanos: Villain: true</p>\" in \"_site/index.html\"",
+                        "I should see \"<p>Loki: Manager: false</p>\" in \"_site/index.html\"",
+                        "I should see \"<p>Loki: Recruit: false</p>\" in \"_site/index.html\"",
+                        "I should see \"<p>Loki: Villain: false</p>\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.html\" page that contains \"Collections: {{ site.tutorials | map: 'title' | join: ', ' }}\"",
+                        "I have fixture collections in \"gathering\" directory",
+                        "I have a _layouts directory",
+                        "I have a \"_layouts/tutorial.html\" file with content:",
+                        "I have a \"_config.yml\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status"
+                    ],
+                    [
+                        "the _site directory should exist",
+                        "I should see \"Collections: Getting Started, Let's Roll!, Dive-In and Publish Already!, Tip of the Iceberg, Extending with Plugins, Graduation Day\" in \"_site/index.html\"",
+                        "I should not see \"Previous: Graduation Day\" in \"_site/tutorials/lets-roll.html\"",
+                        "I should not see \"Next: Tip of the Iceberg\" in \"_site/tutorials/lets-roll.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.html\" page that contains \"Collections: {{ site.tutorials | map: 'title' | join: ', ' }}\"",
+                        "I have fixture collections in \"gathering\" directory",
+                        "I have a _layouts directory",
+                        "I have a \"_layouts/tutorial.html\" file with content:",
+                        "I have a \"_config.yml\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status"
+                    ],
+                    [
+                        "the _site directory should exist",
+                        "I should see \"'approx_time' not defined\" in the build output",
+                        "I should see \"Collections: Extending with Plugins, Let's Roll!, Getting Started, Graduation Day, Dive-In and Publish Already!, Tip of the Iceberg\" in \"_site/index.html\"",
+                        "I should see \"Previous: Getting Started\" in \"_site/tutorials/graduation-day.html\"",
+                        "I should see \"Next: Dive-In and Publish Already!\" in \"_site/tutorials/graduation-day.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.html\" page that contains \"Collections: {{ site.tutorials | map: 'title' | join: ', ' }}\"",
+                        "I have fixture collections in \"gathering\" directory",
+                        "I have a _layouts directory",
+                        "I have a \"_layouts/tutorial.html\" file with content:",
+                        "I have a \"_config.yml\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status"
+                    ],
+                    [
+                        "the _site directory should exist",
+                        "I should see \"Collections: Getting Started, Tip of the Iceberg, Let's Roll!, Dive-In and Publish Already!, Graduation Day, Extending with Plugins\" in \"_site/index.html\"",
+                        "I should not see \"Previous: Graduation Day\" in \"_site/tutorials/lets-roll.html\"",
+                        "I should not see \"Next: Tip of the Iceberg\" in \"_site/tutorials/lets-roll.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.html\" page that contains \"Collections: {{ site.tutorials | map: 'title' | join: ', ' }}\"",
+                        "I have fixture collections in \"gathering\" directory",
+                        "I have a _layouts directory",
+                        "I have a \"_layouts/tutorial.html\" file with content:",
+                        "I have a \"_config.yml\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status"
+                    ],
+                    [
+                        "the _site directory should exist",
+                        "I should see \"Collections: Getting Started, Let's Roll!, Dive-In and Publish Already!, Graduation Day, Extending with Plugins, Tip of the Iceberg\" in \"_site/index.html\"",
+                        "I should not see \"Previous: Graduation Day\" in \"_site/tutorials/lets-roll.html\"",
+                        "I should not see \"Previous: Tip of the Iceberg\" in \"_site/tutorials/lets-roll.html\"",
+                        "I should not see \"Next: Tip of the Iceberg\" in \"_site/tutorials/lets-roll.html\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "feature_name": "Accepting a Founder Member invitation",
+    "user_story": {
+        "as_a": "",
+        "i_want": "accept the invitation",
+        "so_that": "become part of a new co-op",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a draft co-op",
+                        "I have received an invitation to become a Founder Member of the draft co-op"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow the link in the email",
+                        "I enter my details",
+                        "I press \"Continue\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Checklist page",
+                        "I should be a Founder Member of the draft co-op"
+                    ]
+                ]
+            }
+        ]
+    }
+}

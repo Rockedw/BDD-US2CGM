@@ -1,0 +1,49 @@
+{
+    "feature_name": "Reading an Request",
+    "user_story": {
+        "as_a": "Provider",
+        "i_want": "be able to see which RFPs I've read and which I haven't",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Hashrocket\" belonging to \"obie@hashrocket.com\"",
+                        "an RFP called \"New site for French Laundry\" for \"Hashrocket\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the homepage",
+                        "I log in as \"obie@hashrocket.com\" with password \"testtest\""
+                    ],
+                    [
+                        "I follow \"New site for French Laundry\""
+                    ],
+                    [
+                        "I follow \"navigation.rfps\" translation"
+                    ],
+                    [
+                        "I follow \"New site for French Laundry\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"New site for French Laundry\""
+                    ],
+                    [
+                        "I should see \"New site for French Laundry\"",
+                        "I should see \"interesting project\""
+                    ],
+                    [
+                        "I should see \"New site for French Laundry\""
+                    ],
+                    [
+                        "I should see \"New site for French Laundry\"",
+                        "I should see \"interesting project\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "feature_name": "SALE ORDERS CREATION",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I need a \"sale.order\" with name: SO1000 and oid: scenario.SO1000",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"sale.order.line\" with oid: scenario.SO1000_line1",
+                        "having:",
+                        "I confirm the SO"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I process the following product moves:",
+                        "I create a customer invoice for the picking on %Y-01-25"
+                    ],
+                    [
+                        "I press the create invoice button from SO"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "1 picking should be created for the SO"
+                    ],
+                    [
+                        "the picking should be in state done"
+                    ],
+                    [
+                        "I should see the sale order SO1008 in progress",
+                        "I should have a related draft invoice created"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"sale.order\" with name: SO1008 and oid: scenario.SO1008",
+                        "having:",
+                        "containing the following sale order lines:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I confirm the SO"
+                    ],
+                    [
+                        "I process all shipments on %Y-01-25"
+                    ],
+                    [
+                        "I press the create invoice button from SO"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "1 picking should be created for the SO"
+                    ],
+                    [
+                        "I should see the sale order SO1008 in progress",
+                        "I should have a related draft invoice created"
+                    ]
+                ]
+            }
+        ]
+    }
+}

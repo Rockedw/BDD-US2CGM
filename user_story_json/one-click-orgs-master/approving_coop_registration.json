@@ -1,0 +1,55 @@
+{
+    "feature_name": "Approving co-op registration",
+    "user_story": {
+        "as_a": "n administrator",
+        "i_want": "",
+        "so_that": "allow a co-op to progress",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "a draft co-op is created"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should receive an email notifying me about the new draft co-op"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "a draft co-op is submitted for registration"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should receive an email notifying me that the co-op has been submitted for registration"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a co-op has been submitted"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the co-op review page",
+                        "I follow \"View full information\" for the co-op",
+                        "I press \"Mark this co-op as fully registered\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see that the co-op is approved"
+                    ]
+                ]
+            }
+        ]
+    }
+}

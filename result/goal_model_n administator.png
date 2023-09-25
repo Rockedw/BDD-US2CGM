@@ -1,0 +1,89 @@
+// Goal Model
+digraph {
+	1847134113744 [label="n administator
+goal"]
+	1847134375120 [label="see if the sales features and workflow work well
+goal
+140728069287616"]
+	1847134113744 -> 1847134375120
+	1847134375120 [label="see if the sales features and workflow work well
+goal"]
+	1847134466352 [label="Create a Sale Order with DSL
+goal
+1847125493456"]
+	1847134375120 -> 1847134466352
+	1847134466352 [label="Create a Sale Order with DSL
+goal"]
+	1847134457040 [label="Validate a confirmed sale order
+goal
+1847133891376"]
+	1847134375120 -> 1847134457040
+	1847134457040 [label="Validate a confirmed sale order
+goal"]
+	1847134512960 [label="I press the confirm button
+task
+140728069287616"]
+	1847134457040 -> 1847134512960
+	1847134512960 [label="I press the confirm button
+task"]
+	1847134170624 [label="I press the create invoice button from SO
+task
+140728069287616"]
+	1847134457040 -> 1847134170624
+	1847134170624 [label="I press the create invoice button from SO
+task"]
+	1847134170336 [label="I press the validate button
+task
+140728069287616"]
+	1847134457040 -> 1847134170336
+	1847134170336 [label="I press the validate button
+task"]
+	1847134506000 [label="Validate exception when cancelling a related invoice
+goal
+1847133891184"]
+	1847134375120 -> 1847134506000
+	1847134506000 [label="Validate exception when cancelling a related invoice
+goal"]
+	1847133883120 [label="I press the confirm button
+task
+140728069287616"]
+	1847134506000 -> 1847133883120
+	1847133883120 [label="I press the confirm button
+task"]
+	1847133894208 [label="I press the create invoice button from SO
+task
+140728069287616"]
+	1847134506000 -> 1847133894208
+	1847133894208 [label="I press the create invoice button from SO
+task"]
+	1847133884176 [label="I press the validate button
+task
+140728069287616"]
+	1847134506000 -> 1847133884176
+	1847133884176 [label="I press the validate button
+task"]
+	1847133891280 [label="I press the cancel button on this invoice
+task
+140728069287616"]
+	1847134506000 -> 1847133891280
+	1847133891280 [label="I press the cancel button on this invoice
+task"]
+	1847133888640 [label="then I press the set to draft button
+task
+140728069287616"]
+	1847134506000 -> 1847133888640
+	1847133888640 [label="then I press the set to draft button
+task"]
+	1847133895552 [label="I press the validate button
+task
+140728069287616"]
+	1847134506000 -> 1847133895552
+	1847133895552 [label="I press the validate button
+task"]
+	1847133895840 [label="then I press the invoice corrected button in the SO
+task
+140728069287616"]
+	1847134506000 -> 1847133895840
+	1847133895840 [label="then I press the invoice corrected button in the SO
+task"]
+}

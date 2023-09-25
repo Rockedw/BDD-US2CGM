@@ -1,0 +1,139 @@
+{
+    "feature_name": "Navigation and editing keys have special behaviour in a REPL",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I press the backspace key"
+                    ],
+                    [
+                        "I press the backspace key"
+                    ],
+                    [
+                        "I press the backspace key"
+                    ],
+                    [
+                        "I press the backspace key"
+                    ],
+                    [
+                        "I press the backspace key"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the current command should be \"x = \""
+                    ],
+                    [
+                        "the current command should be \"x =\""
+                    ],
+                    [
+                        "the current command should be \"x \""
+                    ],
+                    [
+                        "the current command should be \"x\""
+                    ],
+                    [
+                        "the current command should be blank"
+                    ],
+                    [
+                        "the current command should be blank",
+                        "I should see \">> \" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I move the cursor to 0",
+                        "I press the delete key"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the current command should be \"x = 4\"",
+                        "I should see \">> \" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I press the home key"
+                    ],
+                    [
+                        "I replace 3 to 8 with \"x = 4\\ny = 9\"",
+                        "I move the cursor to 11",
+                        "I press the home key"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 3"
+                    ],
+                    [
+                        "the cursor should be at 9"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I press the left arrow key"
+                    ],
+                    [
+                        "I press the left arrow key"
+                    ],
+                    [
+                        "I press the left arrow key"
+                    ],
+                    [
+                        "I press the right arrow key"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 7"
+                    ],
+                    [
+                        "the cursor should be at 6"
+                    ],
+                    [
+                        "the cursor should be at 5"
+                    ],
+                    [
+                        "the cursor should be at 6"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I press the return key",
+                        "I insert \"clear\" at the cursor",
+                        "I press the return key"
+                    ],
+                    [
+                        "I press the left arrow key"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 3"
+                    ],
+                    [
+                        "the cursor should be at 3"
+                    ]
+                ]
+            }
+        ]
+    }
+}

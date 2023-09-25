@@ -1,0 +1,31 @@
+// 2486258409216 Context Model
+digraph {
+	2486258410608 [label=Context9]
+	2486258410752 [label="I am on the new connections page"]
+	2486258410608 -> 2486258410752
+	2486258410752 [label="I am on the new connections page"]
+	2486258410848 [label="I choose \"Item\""]
+	2486258410608 -> 2486258410848
+	2486258410848 [label="I choose \"Item\""]
+	2486258410944 [label="I select \"- create a new item for this object -\" from \"Object\""]
+	2486258410608 -> 2486258410944
+	2486258410944 [label="I select \"- create a new item for this object -\" from \"Object\""]
+	2486258411040 [label="I wait for Ajax requests to complete"]
+	2486258410608 -> 2486258411040
+	2486258411040 [label="I wait for Ajax requests to complete"]
+	2486258411136 [label="I select \"Category\" from \"item_sti_type\""]
+	2486258410608 -> 2486258411136
+	2486258411136 [label="I select \"Category\" from \"item_sti_type\""]
+	2486258411232 [label="I fill in \"Name\" with \"newItem\""]
+	2486258410608 -> 2486258411232
+	2486258411232 [label="I fill in \"Name\" with \"newItem\""]
+	2486258411328 [label="I fill in \"Title\" with \"New item\""]
+	2486258410608 -> 2486258411328
+	2486258411328 [label="I fill in \"Title\" with \"New item\""]
+	2486258411424 [label="I press \"Create\""]
+	2486258410608 -> 2486258411424
+	2486258411424 [label="I press \"Create\""]
+	2486258411520 [label="I wait for Ajax requests to complete"]
+	2486258410608 -> 2486258411520
+	2486258411520 [label="I wait for Ajax requests to complete"]
+}

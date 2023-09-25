@@ -1,0 +1,16 @@
+// 1998092638176 Context Model
+digraph {
+	1998092642832 [label=Context3]
+	1998092636880 [label="I have a configuration file with \"theme\" set to \"test-theme\""]
+	1998092642832 -> 1998092636880
+	1998092636880 [label="I have a configuration file with \"theme\" set to \"test-theme\""]
+	1998092647824 [label="I have an \"index.md\" page that contains \"{{ site.baseurl }}\""]
+	1998092642832 -> 1998092647824
+	1998092647824 [label="I have an \"index.md\" page that contains \"{{ site.baseurl }}\""]
+	1998092645664 [label="I have a node_modules directory"]
+	1998092642832 -> 1998092645664
+	1998092645664 [label="I have a node_modules directory"]
+	1998092648304 [label="I have a \"node_modules/alert.js\" file that contains \"alert('foo');\""]
+	1998092642832 -> 1998092648304
+	1998092648304 [label="I have a \"node_modules/alert.js\" file that contains \"alert('foo');\""]
+}

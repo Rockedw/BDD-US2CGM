@@ -1,0 +1,298 @@
+{
+    "feature_name": "Edit individual connections through non-Ajax pages",
+    "user_story": {
+        "as_a": "as a contributor, I want",
+        "i_want": "",
+        "so_that": "create a wontology,",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there are 4 existing individuals like \"indiv\"",
+                        "there is an existing connection \"indiv0\" \"child_of\" \"indiv1\"",
+                        "I am on the edit connections page for \"indiv0\" \"child_of\" \"indiv1\"",
+                        "I select \"indiv2 : indiv item number 2\" from \"Subject\"",
+                        "I select \"parent_of : Parent Of (basic relationship)\" from \"Relates to\"",
+                        "I select \"indiv3 : indiv item number 3\" from \"Object\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Update\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"successfully updated\"",
+                        "I should see \"indiv2\"",
+                        "I should see \"parent_of\"",
+                        "I should see \"indiv3\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there are 4 existing individuals like \"indiv\"",
+                        "there is an existing connection \"indiv0\" \"child_of\" \"indiv1\"",
+                        "I am on the edit connections page for \"indiv0\" \"child_of\" \"indiv1\"",
+                        "I select \"indiv2 : indiv item number 2\" from \"Subject\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Update\""
+                    ],
+                    [
+                        "I press \"Update\""
+                    ],
+                    [
+                        "I press \"Update\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"successfully updated\"",
+                        "I should see \"indiv2\"",
+                        "I should see \"child_of\"",
+                        "I should see \"indiv1\""
+                    ],
+                    [
+                        "I am on the edit connections page for \"indiv2\" \"child_of\" \"indiv1\"",
+                        "I select \"parent_of : Parent Of (basic relationship)\" from \"Relates to\""
+                    ],
+                    [
+                        "I should see \"successfully updated\"",
+                        "I should see \"indiv2\"",
+                        "I should see \"parent_of\"",
+                        "I should see \"indiv1\""
+                    ],
+                    [
+                        "I am on the edit connections page for \"indiv2\" \"parent_of\" \"indiv1\"",
+                        "I select \"indiv3 : indiv item number 3\" from \"Object\""
+                    ],
+                    [
+                        "I should see \"successfully updated\"",
+                        "I should see \"indiv2\"",
+                        "I should see \"parent_of\"",
+                        "I should see \"indiv3\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there are 2 existing individuals like \"thing\"",
+                        "there are 2 existing individuals like \"indiv\"",
+                        "there is an existing connection \"thing0\" \"contains\" \"thing1\"",
+                        "there is an existing connection \"indiv0\" \"peer_of\" \"indiv1\"",
+                        "I am on the edit connections page for \"indiv0\" \"peer_of\" \"indiv1\"",
+                        "I select \"thing0 : thing item number 0\" from \"Subject\"",
+                        "I select \"contains : Contains (basic relationship)\" from \"Relates to\"",
+                        "I select \"thing1 : thing item number 1\" from \"Object\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Update\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"error\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there are 2 existing individuals like \"thing\"",
+                        "there is an existing connection \"thing0\" \"parent_of\" \"thing1\"",
+                        "there is an existing connection \"thing0\" \"peer_of\" \"thing1\"",
+                        "I am on the edit connections page for \"thing0\" \"parent_of\" \"thing1\"",
+                        "I select \"thing0 : thing item number 0\" from \"Subject\"",
+                        "I select \"contains : Contains (basic relationship)\" from \"Relates to\"",
+                        "I select \"thing1 : thing item number 1\" from \"Object\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Update\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"error\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there are 2 existing individuals like \"thing\"",
+                        "there is an existing connection \"thing0\" \"contains\" \"thing1\"",
+                        "there is an existing connection \"thing0\" \"peer_of\" \"thing1\"",
+                        "I am on the edit connections page for \"thing0\" \"contains\" \"thing1\"",
+                        "I select \"thing1 : thing item number 1\" from \"Subject\"",
+                        "I select \"one_of : One Of (basic relationship)\" from \"Relates to\"",
+                        "I select \"thing0 : thing item number 0\" from \"Object\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Update\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"error\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is 1 existing category like \"myCategory\"",
+                        "there is 1 existing individual like \"myItem\"",
+                        "there is an existing connection \"myItem0\" \"child_of\" \"myCategory0\"",
+                        "I am on the edit connections page for \"myItem0\" \"child_of\" \"myCategory0\"",
+                        "I select \"parent_of : Parent Of (basic relationship)\" from \"Relates to\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Update\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"error\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is 1 existing category like \"myCategory\"",
+                        "there is 1 existing individual like \"myItem\"",
+                        "there is an existing connection \"myCategory0\" \"contains\" \"myItem0\"",
+                        "I am on the edit connections page for \"myCategory0\" \"contains\" \"myItem0\"",
+                        "I select \"one_of : One Of (basic relationship)\" from \"Relates to\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Update\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"error\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there are 3 existing individuals like \"indiv\"",
+                        "there is an existing connection \"indiv0\" \"predecessor_of\" \"indiv1\"",
+                        "there is an existing connection \"indiv1\" \"predecessor_of\" \"indiv2\"",
+                        "there is an existing connection \"indiv2\" \"value_relationship\" \"indiv0\"",
+                        "I am on the edit connections page for \"indiv2\" \"value_relationship\" \"indiv0\"",
+                        "I select \"predecessor_of : Predecessor Of (basic relationship)\" from \"Relates to\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Update\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"error\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is 1 existing individual like \"myItem\"",
+                        "there is an existing connection \"myItem0\" \"value_relationship\" \"myItem0\"",
+                        "I am on the edit connections page for \"myItem0\" \"value_relationship\" \"myItem0\"",
+                        "I select \"hierarchical_relationship : Hierarchical Relationship (root relationship type)\" from \"Relates to\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Update\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"error\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there are 2 existing individuals like \"myItem\"",
+                        "there is an existing connection \"myItem0\" \"hierarchical_relationship\" \"myItem1\"",
+                        "I am on the edit connections page for \"myItem0\" \"hierarchical_relationship\" \"myItem1\"",
+                        "I select \"myItem0 : myItem item number 0\" from \"Object\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Update\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"error\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is 1 existing individual like \"myItem\"",
+                        "there is an existing connection \"myItem0\" \"peer_of\" \"myItem0\"",
+                        "I am on the edit connections page for \"myItem0\" \"peer_of\" \"myItem0\"",
+                        "I select \"ordered_relationship : Ordered Relationship (root relationship type)\" from \"Relates to\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Update\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"error\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there are 2 existing individuals like \"myItem\"",
+                        "there is an existing connection \"myItem0\" \"predecessor_of\" \"myItem1\"",
+                        "I am on the edit connections page for \"myItem0\" \"predecessor_of\" \"myItem1\"",
+                        "I select \"myItem0 : myItem item number 0\" from \"Object\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Update\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"error\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

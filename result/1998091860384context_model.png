@@ -1,0 +1,19 @@
+// 1998091858608 Context Model
+digraph {
+	1998091860384 [label=Context6]
+	1998091846368 [label="The default settings exist using factories"]
+	1998091860384 -> 1998091846368
+	1998091846368 [label="The default settings exist using factories"]
+	1998091850400 [label="the database has been seeded"]
+	1998091860384 -> 1998091850400
+	1998091850400 [label="the database has been seeded"]
+	1998091849824 [label="the default settings has security questions enabled"]
+	1998091860384 -> 1998091849824
+	1998091849824 [label="the default settings has security questions enabled"]
+	1998091857792 [label="the student \"student\" has no security questions set"]
+	1998091860384 -> 1998091857792
+	1998091857792 [label="the student \"student\" has no security questions set"]
+	1998091853664 [label="I am logged in with the username student"]
+	1998091860384 -> 1998091853664
+	1998091853664 [label="I am logged in with the username student"]
+}

@@ -1,0 +1,31 @@
+// 1982217960992 Context Model
+digraph {
+	1982217962592 [label=Context19]
+	1982217962736 [label="I have a _layouts directory"]
+	1982217962592 -> 1982217962736
+	1982217962736 [label="I have a _layouts directory"]
+	1982217962832 [label="I have a \"_layouts/meme.html\" file with content:"]
+	1982217962592 -> 1982217962832
+	1982217962832 [label="I have a \"_layouts/meme.html\" file with content:"]
+	1982217962928 [label="I have a \"_config.yml\" file with content:"]
+	1982217962592 -> 1982217962928
+	1982217962928 [label="I have a \"_config.yml\" file with content:"]
+	1982217963024 [label="I have a _memes directory"]
+	1982217962592 -> 1982217963024
+	1982217963024 [label="I have a _memes directory"]
+	1982217963120 [label="I have a \"_memes/doc1.md\" file with content:"]
+	1982217962592 -> 1982217963120
+	1982217963120 [label="I have a \"_memes/doc1.md\" file with content:"]
+	1982217963216 [label="I have a _posts directory"]
+	1982217962592 -> 1982217963216
+	1982217963216 [label="I have a _posts directory"]
+	1982217963312 [label="I have a \"_posts/2016-01-01-example.md\" file with content:"]
+	1982217962592 -> 1982217963312
+	1982217963312 [label="I have a \"_posts/2016-01-01-example.md\" file with content:"]
+	1982217963408 [label="I have a _plugins directory"]
+	1982217962592 -> 1982217963408
+	1982217963408 [label="I have a _plugins directory"]
+	1982217963504 [label="I have a \"_plugins/ext.rb\" file with content:"]
+	1982217962592 -> 1982217963504
+	1982217963504 [label="I have a \"_plugins/ext.rb\" file with content:"]
+}

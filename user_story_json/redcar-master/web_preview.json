@@ -1,0 +1,55 @@
+{
+    "feature_name": "Previewing how a file will appear in a browser",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"<html>test 1-2-3</html>\"",
+                        "I open a web preview"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "my active tab should be \"Preview\"",
+                        "the HTML tab should say \"test 1-2-3\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I will choose \"plugins/html_view/features/fixtures/sample.html\" from the \"open_file\" dialog"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a file",
+                        "I replace the contents with \"<html>test 1-2-3</html>\"",
+                        "I open a web preview"
+                    ],
+                    [
+                        "I close the focussed tab",
+                        "I save the tab",
+                        "I open a web preview"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "my active tab should be \"Preview: sample.html\"",
+                        "the HTML tab should say \"Hello!!\""
+                    ],
+                    [
+                        "my active tab should be \"Preview: sample.html\"",
+                        "the HTML tab should say \"test 1-2-3\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

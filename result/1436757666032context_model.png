@@ -1,0 +1,10 @@
+// 1436757665936 Context Model
+digraph {
+	1436757666032 [label=Context98]
+	1436757666272 [label="I delete the \"IrMail_server\" with reference \"base.ir_mail_server_localhost0\""]
+	1436757666032 -> 1436757666272
+	1436757666272 [label="I delete the \"IrMail_server\" with reference \"base.ir_mail_server_localhost0\""]
+	1436757666368 [label="I need a \"IrMail_server\" with reference \"openerp_smtp_contact\""]
+	1436757666032 -> 1436757666368
+	1436757666368 [label="I need a \"IrMail_server\" with reference \"openerp_smtp_contact\""]
+}

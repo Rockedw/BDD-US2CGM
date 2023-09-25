@@ -1,0 +1,111 @@
+{
+    "feature_name": "Show existing ontology information in app home and index pages",
+    "user_story": {
+        "as_a": "as a contributor, I want",
+        "i_want": "view lists of the wontologies current contents",
+        "so_that": "work with a wontology,",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to \"the homepage\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see 0 matches of \"peer_of\"",
+                        "I should see 0 matches of \"value_relationship\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there are 2 existing categories like \"kirgagh0\""
+                    ],
+                    [
+                        "there are 3 existing individuals like \"kirgagh1\""
+                    ],
+                    [
+                        "there are 4 existing properties like \"kirgagh2\""
+                    ],
+                    [
+                        "there are 1 existing qualified-connection like \"kirgagh3\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to \"the homepage\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see 10 matches of \"kirgagh\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the index items page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see 1 match of \"child_of\""
+                    ],
+                    [
+                        "I should see 1 match of \"symmetric_relationship\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there are 5 existing categories like \"fufubarfu0\""
+                    ],
+                    [
+                        "there are 3 existing individuals like \"fufubarfu1\""
+                    ],
+                    [
+                        "there are 4 existing properties like \"fufubarfu2\""
+                    ],
+                    [
+                        "there are 1 existing qualified-connection like \"fufubarfu3\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the index items page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see 39 matches of \"fufubarfu\" in \"td\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there are 2 existing individuals like \"indivItems\"",
+                        "there is an existing connection \"indivItems0\" \"parent_of\" \"indivItems1\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the show items page for \"indivItems1\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see 1 match of \"Child Of\"",
+                        "I should see 1 match of \"View source\" in \"a\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

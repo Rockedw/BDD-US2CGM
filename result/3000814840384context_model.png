@@ -1,0 +1,13 @@
+// 3000814835776 Context Model
+digraph {
+	3000814840384 [label=Context6]
+	3000814839280 [label="there is a co-op"]
+	3000814840384 -> 3000814839280
+	3000814839280 [label="there is a co-op"]
+	3000814833664 [label="I am a Member of the co-op"]
+	3000814840384 -> 3000814833664
+	3000814833664 [label="I am a Member of the co-op"]
+	3000814835152 [label="there is a resolution open for electronic voting"]
+	3000814840384 -> 3000814835152
+	3000814835152 [label="there is a resolution open for electronic voting"]
+}

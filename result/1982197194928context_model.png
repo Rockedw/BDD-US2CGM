@@ -1,0 +1,13 @@
+// 1982197199104 Context Model
+digraph {
+	1982197194928 [label=Context4]
+	1982197188640 [label="a provider \"Kooky\" belonging to \"paul@joy.com\""]
+	1982197194928 -> 1982197188640
+	1982197188640 [label="a provider \"Kooky\" belonging to \"paul@joy.com\""]
+	1982197194448 [label="a user \"Billow\" belonging to the \"Kooky\" provider"]
+	1982197194928 -> 1982197194448
+	1982197194448 [label="a user \"Billow\" belonging to the \"Kooky\" provider"]
+	1982197192768 [label="I am on the homepage"]
+	1982197194928 -> 1982197192768
+	1982197192768 [label="I am on the homepage"]
+}

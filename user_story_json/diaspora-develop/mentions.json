@@ -1,0 +1,170 @@
+{
+    "feature_name": "Mentions",
+    "user_story": {
+        "as_a": "",
+        "i_want": "mention another user and have a link to them",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "following users exist:",
+                        "a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\"",
+                        "Alice has a post mentioning Bob"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"alice@alice.alice\"",
+                        "I follow \"Bob Jones\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Bob Jones\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "following users exist:",
+                        "a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"alice@alice.alice\"",
+                        "I expand the publisher",
+                        "I append \"@Bob\" to the publisher",
+                        "I click on the first user in the mentions dropdown list",
+                        "I press \"Share\""
+                    ],
+                    [
+                        "I follow \"Bob Jones\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Bob Jones\" within \".stream-element\""
+                    ],
+                    [
+                        "I should see \"Bob Jones\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "following users exist:",
+                        "a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"alice@alice.alice\"",
+                        "I expand the publisher",
+                        "I append \"@Bob\" to the publisher"
+                    ],
+                    [
+                        "I click on the first user in the mentions dropdown list"
+                    ],
+                    [
+                        "I press the \"A\" key in the publisher",
+                        "I type \"@Bob\" into the publisher"
+                    ],
+                    [
+                        "I press \"Share\""
+                    ],
+                    [
+                        "I expand the publisher",
+                        "I append \"@Bob\" to the publisher",
+                        "I click on the first user in the mentions dropdown list",
+                        "I press \"Share\""
+                    ],
+                    [
+                        "I follow \"Bob Jones\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Bob Jones\" within \".tt-suggestion\""
+                    ],
+                    [
+                        "I should not see the mentions dropdown list"
+                    ],
+                    [
+                        "I should see \"Bob Jones\" within \".stream-element\""
+                    ],
+                    [
+                        "I should see \"Bob Jones\" within \".stream-element\""
+                    ],
+                    [
+                        "I should see \"Bob Jones\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "following users exist:",
+                        "a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\"",
+                        "\"alice@alice.alice\" has a public post with text \"check this out!\"",
+                        "\"alice@alice.alice\" has commented mentioning \"bob@bob.bob\" on \"check this out!\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"alice@alice.alice\"",
+                        "I follow \"Bob Jones\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Bob Jones\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "following users exist:",
+                        "a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\"",
+                        "\"alice@alice.alice\" has a public post with text \"check this out!\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"alice@alice.alice\""
+                    ],
+                    [
+                        "I focus the comment field",
+                        "I enter \"@Bob\" in the comment field"
+                    ],
+                    [
+                        "I click on the first user in the mentions dropdown list",
+                        "I enter \" A \" in the comment field",
+                        "I enter \"@Bob\" in the comment field"
+                    ],
+                    [
+                        "I press \"Comment\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"check this out!\""
+                    ],
+                    [
+                        "I should see \"Bob Jones\" within \".tt-suggestion\""
+                    ],
+                    [
+                        "I should not see the mentions dropdown list"
+                    ],
+                    [
+                        "I should see \"Bob Jones\" within \".comments .comment:last-child\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

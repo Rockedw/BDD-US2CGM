@@ -1,0 +1,19 @@
+// 1847135628848 Context Model
+digraph {
+	1847135629088 [label=Context48]
+	1847135629232 [label="I am on the new items page"]
+	1847135629088 -> 1847135629232
+	1847135629232 [label="I am on the new items page"]
+	1847135629328 [label="I fill in \"Name\" with \"MyCategory\""]
+	1847135629088 -> 1847135629328
+	1847135629328 [label="I fill in \"Name\" with \"MyCategory\""]
+	1847135629424 [label="I fill in \"Title\" with \"A subcategory\""]
+	1847135629088 -> 1847135629424
+	1847135629424 [label="I fill in \"Title\" with \"A subcategory\""]
+	1847135629520 [label="I fill in \"Description\" with \"The root category in the C topic\""]
+	1847135629088 -> 1847135629520
+	1847135629520 [label="I fill in \"Description\" with \"The root category in the C topic\""]
+	1847135629616 [label="I select \"Category\" from \"Type\""]
+	1847135629088 -> 1847135629616
+	1847135629616 [label="I select \"Category\" from \"Type\""]
+}

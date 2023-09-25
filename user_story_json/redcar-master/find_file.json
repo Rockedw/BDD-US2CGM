@@ -1,0 +1,258 @@
+{
+    "feature_name": "Find file",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the find file dialog"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be a filter dialog open",
+                        "the filter dialog should have no entries"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the find file dialog",
+                        "I set the filter to \"xxx\"",
+                        "I wait \"0.4\" seconds"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the filter dialog should have 0 entries"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the find file dialog",
+                        "I set the filter to \"vendor\"",
+                        "I wait \"0.4\" seconds"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the filter dialog should have 0 entries"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the find file dialog",
+                        "I set the filter to \"foo_spec\"",
+                        "I wait \"0.4\" seconds"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the filter dialog should have 1 entry",
+                        "I should see \"foo_spec.rb (myproject/spec)\" at 0 the filter dialog"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the find file dialog",
+                        "I set the filter to \"foo spec\"",
+                        "I wait \"0.4\" seconds"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the filter dialog should have 1 entry",
+                        "I should see \"foo_spec.rb (myproject/spec)\" at 0 the filter dialog"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the find file dialog",
+                        "I set the filter to \"lib_sym/foo\"",
+                        "I wait \"0.4\" seconds"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the filter dialog should have 1 entry",
+                        "I should see \"foo_lib.rb (myproject/lib_symlink)\" at 0 the filter dialog"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the find file dialog",
+                        "I set the filter to \"foo\"",
+                        "I wait \"1.4\" seconds"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the filter dialog should have 3 entries",
+                        "I should see \"foo_lib.rb (myproject/lib)\" at 0 the filter dialog",
+                        "I should see \"foo_lib.rb (myproject/lib_symlink)\" at 1 the filter dialog",
+                        "I should see \"foo_spec.rb (myproject/spec)\" at 2 the filter dialog"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the find file dialog",
+                        "I set the filter to \"foo rb\"",
+                        "I wait \"0.4\" seconds"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the filter dialog should have 3 entries",
+                        "I should see \"foo_lib.rb (myproject/lib)\" at 0 the filter dialog",
+                        "I should see \"foo_lib.rb (myproject/lib_symlink)\" at 1 the filter dialog",
+                        "I should see \"foo_spec.rb (myproject/spec)\" at 2 the filter dialog"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the find file dialog",
+                        "I set the filter to \"ven/bar\"",
+                        "I wait \"0.4\" seconds"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the filter dialog should have 2 entries",
+                        "I should see \"bar.rb (myproject/vendor)\" at 0 the filter dialog",
+                        "I should see \"bar.rb (vendor/plugins)\" at 1 the filter dialog"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the find file dialog",
+                        "I set the filter to \"v/p/bar\"",
+                        "I wait \"0.4\" seconds"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the filter dialog should have 1 entry",
+                        "I should see \"bar.rb (vendor/plugins)\" at 0 the filter dialog"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the find file dialog",
+                        "I set the filter to \"fsc\"",
+                        "I wait \"0.4\" seconds"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the filter dialog should have 1 entry",
+                        "I should see \"foo_spec.rb (myproject/spec)\" at 0 the filter dialog"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the find file dialog",
+                        "I set the filter to \"fsc\"",
+                        "I wait \"0.4\" seconds",
+                        "I select in the filter dialog"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be no filter dialog open",
+                        "I should see \"foo spec\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the find file dialog",
+                        "I set the filter to \"fsc\"",
+                        "I wait \"0.4\" seconds",
+                        "I select in the filter dialog",
+                        "I open the find file dialog"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the filter dialog should have 1 entry",
+                        "I should see \"foo_spec.rb (myproject/spec)\" at 0 the filter dialog"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I have opened \"plugins/project/spec/fixtures/myproject/spec/foo_spec.rb\"",
+                        "I have opened \"plugins/project/spec/fixtures/myproject/lib/foo_lib.rb\"",
+                        "I open the find file dialog"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the filter dialog should have 2 entries",
+                        "I should see \"foo_spec.rb (myproject/spec)\" at 0 the filter dialog",
+                        "I should see \"foo_lib.rb (myproject/lib)\" at 1 the filter dialog"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I have opened \"plugins/project/spec/fixtures/myproject/spec/foo_spec.rb\"",
+                        "I have opened \"plugins/project/spec/fixtures/myproject/lib/foo_lib.rb\"",
+                        "I have opened \"plugins/project/spec/fixtures/myproject/README\"",
+                        "I open the find file dialog"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the filter dialog should have 3 entries",
+                        "I should see \"foo_lib.rb (myproject/lib)\" at 0 the filter dialog",
+                        "I should see \"foo_spec.rb (myproject/spec)\" at 1 the filter dialog",
+                        "I should see \"README (fixtures/myproject)\" at 2 the filter dialog"
+                    ]
+                ]
+            }
+        ]
+    }
+}

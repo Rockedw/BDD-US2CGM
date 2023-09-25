@@ -1,0 +1,31 @@
+// 2220590780080 Context Model
+digraph {
+	2220570638848 [label=Context6]
+	2220570638800 [label="The default settings exist using factories"]
+	2220570638848 -> 2220570638800
+	2220570638800 [label="The default settings exist using factories"]
+	2220570629824 [label="the database has been seeded"]
+	2220570638848 -> 2220570629824
+	2220570629824 [label="the database has been seeded"]
+	2220570625312 [label="\"differential calculus\" has been updated recently"]
+	2220570638848 -> 2220570625312
+	2220570625312 [label="\"differential calculus\" has been updated recently"]
+	2220570632992 [label="\"parallel lines\" has been updated recently"]
+	2220570638848 -> 2220570632992
+	2220570632992 [label="\"parallel lines\" has been updated recently"]
+	2220570627952 [label="The materials have been indexed"]
+	2220570638848 -> 2220570627952
+	2220570627952 [label="The materials have been indexed"]
+	2220570629872 [label="the default settings has include external activities enabled"]
+	2220570638848 -> 2220570629872
+	2220570629872 [label="the default settings has include external activities enabled"]
+	2220570631744 [label="the following external activities exist:"]
+	2220570638848 -> 2220570631744
+	2220570631744 [label="the following external activities exist:"]
+	2220590537968 [label="I am logged in with the username teacher"]
+	2220570638848 -> 2220590537968
+	2220590537968 [label="I am logged in with the username teacher"]
+	2220590538880 [label="I am on the search instructional materials page"]
+	2220570638848 -> 2220590538880
+	2220590538880 [label="I am on the search instructional materials page"]
+}

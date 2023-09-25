@@ -1,0 +1,13 @@
+// 1982219712448 Context Model
+digraph {
+	1982219713312 [label=Context61]
+	1982219615680 [label="there are 2 existing properties like \"propFamily\""]
+	1982219713312 -> 1982219615680
+	1982219615680 [label="there are 2 existing properties like \"propFamily\""]
+	1982219615776 [label="there is an existing connection \"propFamily1\" \"child_of\" \"propFamily0\""]
+	1982219713312 -> 1982219615776
+	1982219615776 [label="there is an existing connection \"propFamily1\" \"child_of\" \"propFamily0\""]
+	1982219710096 [label="I am on the show items page for \"propFamily0\""]
+	1982219713312 -> 1982219710096
+	1982219710096 [label="I am on the show items page for \"propFamily0\""]
+}

@@ -1,0 +1,13 @@
+// 1633872192048 Context Model
+digraph {
+	1633872192576 [label=Context47]
+	1633872192720 [label="I have a _posts directory"]
+	1633872192576 -> 1633872192720
+	1633872192720 [label="I have a _posts directory"]
+	1633872192816 [label="I have the following post:"]
+	1633872192576 -> 1633872192816
+	1633872192816 [label="I have the following post:"]
+	1633872192912 [label="I have a configuration file with \"permalink\" set to \"none\""]
+	1633872192576 -> 1633872192912
+	1633872192912 [label="I have a configuration file with \"permalink\" set to \"none\""]
+}

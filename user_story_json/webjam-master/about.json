@@ -1,0 +1,44 @@
+{
+    "feature_name": "Viewing the about page",
+    "user_story": {
+        "as_a": "",
+        "i_want": "visit the about page",
+        "so_that": "read all about Webjam",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a past event"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I view the mobile about page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I see the page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is an upcoming event"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I view the mobile about page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I see the page"
+                    ]
+                ]
+            }
+        ]
+    }
+}

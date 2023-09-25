@@ -1,0 +1,10 @@
+// 1633872579408 Context Model
+digraph {
+	1633872578160 [label=Context17]
+	1633872580128 [label="I am logged in as \"<username>\""]
+	1633872578160 -> 1633872580128
+	1633872580128 [label="I am logged in as \"<username>\""]
+	1633872582384 [label="I should see \"Settings\""]
+	1633872578160 -> 1633872582384
+	1633872582384 [label="I should see \"Settings\""]
+}

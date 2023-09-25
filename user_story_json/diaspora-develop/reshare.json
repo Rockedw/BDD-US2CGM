@@ -1,0 +1,98 @@
+{
+    "feature_name": "resharing from the mobile",
+    "user_story": {
+        "as_a": "mobile user",
+        "i_want": "reshare my friend's post",
+        "so_that": "make Diaspora more viral",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the stream page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a \".reshare-action.active\""
+                    ],
+                    [
+                        "I should see \"Reshared via\" within \".reshare_via\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the post with text \"reshare this!\" is reshared by \"eve@eve.eve\"",
+                        "a user with email \"alice@alice.alice\" is connected with \"eve@eve.eve\"",
+                        "I confirm the alert after I click on the first selector \".reshare-action.inactive\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the stream page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a \".reshare-action.active\""
+                    ],
+                    [
+                        "I should see \"Reshared via\" within \".reshare_via\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "\"alice@alice.alice\" has a public post with text \"Don't reshare this!\"",
+                        "the post with text \"Don't reshare this!\" is reshared by \"bob@bob.bob\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I toggle the mobile view",
+                        "I am on \"alice@alice.alice\"'s page",
+                        "I click to delete the first post",
+                        "I log out",
+                        "I sign in as \"bob@bob.bob\" on the mobile website"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Original post deleted by author\" within \".reshare\"",
+                        "I log out",
+                        "I sign in as \"eve@eve.eve\" on the mobile website",
+                        "I toggle the mobile view"
+                    ],
+                    [
+                        "I should see \"Original post deleted by author\" within \".reshare\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I sign in as \"bob@bob.bob\" on the mobile website"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the stream page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a \".reshare-action.disabled\"",
+                        "I should not see any alert after I click on selector \".reshare-action\"",
+                        "I should not see a \".reshare-action.active\""
+                    ],
+                    [
+                        "I should not see a \".reshare_via\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+// 1436736435488 Context Model
+digraph {
+	1436736424592 [label=Context1]
+	1436736437936 [label="following users exist:"]
+	1436736424592 -> 1436736437936
+	1436736437936 [label="following users exist:"]
+	1436736437408 [label="I sign in as \"bob@bob.bob\""]
+	1436736424592 -> 1436736437408
+	1436736437408 [label="I sign in as \"bob@bob.bob\""]
+	1436736426896 [label="I have an aspect called \"My main aspect\""]
+	1436736424592 -> 1436736426896
+	1436736426896 [label="I have an aspect called \"My main aspect\""]
+	1436736432272 [label="I have an aspect called \"Others\" with auto follow back"]
+	1436736424592 -> 1436736432272
+	1436736432272 [label="I have an aspect called \"Others\" with auto follow back"]
+	1436736427328 [label="I sign out"]
+	1436736424592 -> 1436736427328
+	1436736427328 [label="I sign out"]
+}

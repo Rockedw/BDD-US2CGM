@@ -1,0 +1,124 @@
+{
+    "feature_name": "Navigation History",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I run the command Redcar::Top::BackwardNavigationCommand"
+                    ],
+                    [
+                        "I run the command Redcar::Top::BackwardNavigationCommand"
+                    ],
+                    [
+                        "I run the command Redcar::Top::BackwardNavigationCommand"
+                    ],
+                    [
+                        "I run the command Redcar::Top::BackwardNavigationCommand"
+                    ],
+                    [
+                        "I run the command Redcar::Top::ForwardNavigationCommand"
+                    ],
+                    [
+                        "I run the command Redcar::Top::ForwardNavigationCommand"
+                    ],
+                    [
+                        "I run the command Redcar::Top::ForwardNavigationCommand"
+                    ],
+                    [
+                        "I run the command Redcar::Top::ForwardNavigationCommand"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the focussed document path is \"plugins/application/lib/application/navigation_history.rb\"",
+                        "the cursor should be on line 5"
+                    ],
+                    [
+                        "the focussed document path is \"plugins/application/spec/application/navigation_history_spec.rb\"",
+                        "the cursor should be on line 16"
+                    ],
+                    [
+                        "the focussed document path is \"plugins/application/spec/application/navigation_history_spec.rb\"",
+                        "the cursor should be on line 3"
+                    ],
+                    [
+                        "the focussed document path is \"plugins/application/spec/application/navigation_history_spec.rb\"",
+                        "the cursor should be on line 2"
+                    ],
+                    [
+                        "the focussed document path is \"plugins/application/spec/application/navigation_history_spec.rb\"",
+                        "the cursor should be on line 3"
+                    ],
+                    [
+                        "the focussed document path is \"plugins/application/spec/application/navigation_history_spec.rb\"",
+                        "the cursor should be on line 16"
+                    ],
+                    [
+                        "the focussed document path is \"plugins/application/lib/application/navigation_history.rb\"",
+                        "the cursor should be on line 5"
+                    ],
+                    [
+                        "the focussed document path is \"plugins/application/lib/application/navigation_history.rb\"",
+                        "the cursor should be on line 0"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I run the command Redcar::Top::BackwardNavigationCommand"
+                    ],
+                    [
+                        "I run the command Redcar::Top::ForwardNavigationCommand"
+                    ],
+                    [
+                        "I run the command Redcar::Top::BackwardNavigationCommand"
+                    ],
+                    [
+                        "I set the outline filter to \"can\"",
+                        "I wait \"2\" seconds",
+                        "I select the outline view"
+                    ],
+                    [
+                        "I run the command Redcar::Top::BackwardNavigationCommand"
+                    ],
+                    [
+                        "I run the command Redcar::Top::ForwardNavigationCommand"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the focussed document path is \"plugins/application/lib/application/navigation_history.rb\"",
+                        "the cursor should be on line 5"
+                    ],
+                    [
+                        "the focussed document path is \"plugins/application/lib/application/navigation_history.rb\"",
+                        "the cursor should be on line 0"
+                    ],
+                    [
+                        "the focussed document path is \"plugins/application/lib/application/navigation_history.rb\"",
+                        "the cursor should be on line 5",
+                        "I run the command Redcar::OutlineView::OpenOutlineViewCommand"
+                    ],
+                    [
+                        "the cursor should be on line 21"
+                    ],
+                    [
+                        "the focussed document path is \"plugins/application/lib/application/navigation_history.rb\"",
+                        "the cursor should be on line 5"
+                    ],
+                    [
+                        "the focussed document path is \"plugins/application/lib/application/navigation_history.rb\"",
+                        "the cursor should be on line 21"
+                    ]
+                ]
+            }
+        ]
+    }
+}

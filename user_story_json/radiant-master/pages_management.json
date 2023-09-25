@@ -1,0 +1,174 @@
+{
+    "feature_name": "Managing pages",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "create, modify, and delete content from the website",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"existing\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the \"pages\" admin page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Pages\"",
+                        "I should see \"Home\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"existing\""
+                    ],
+                    [
+                        "there are no pages"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the \"pages\" admin page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"No Pages\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"existing\"",
+                        "there are no pages",
+                        "I create a homepage"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the homepage"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the sitemap",
+                        "I should see \"My site\""
+                    ],
+                    [
+                        "I should see \"Under Construction\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there are no pages",
+                        "I am logged in as \"existing\"",
+                        "I create a homepage"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the \"pages\" admin page",
+                        "I follow \"Add Child\"",
+                        "I follow \"Normal Page\""
+                    ],
+                    [
+                        "I fill in \"Page Title\" with \"My child\"",
+                        "I fill in \"Slug\" with \"my-child\"",
+                        "I fill in \"Breadcrumb\" with \"My child\"",
+                        "I fill in the \"body\" content with \"Under Construction\"",
+                        "I fill in the \"extended\" content with \"foobar\"",
+                        "I select \"Published\" from \"Status\"",
+                        "I press \"Save and Continue Editing\""
+                    ],
+                    [
+                        "I go to the new child page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"New Page\"",
+                        "there should be a \"body\" part",
+                        "there should be an \"extended\" part"
+                    ],
+                    [
+                        "I should see \"Edit Page\"",
+                        "I should see \"Under Construction\""
+                    ],
+                    [
+                        "I should see \"Under Construction\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"existing\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the \"pages\" admin page",
+                        "I follow \"Remove\""
+                    ],
+                    [
+                        "I press \"Delete Pages\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"permanently remove\""
+                    ],
+                    [
+                        "I should see \"No Pages\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"existing\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I view a page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Edit Page\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"existing\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I edit the \"scheduled\" page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "\"Published\" should be selected for \"Status\"",
+                        "I select \"Draft\" from \"Status\"",
+                        "I press \"Save and Continue Editing\"",
+                        "\"Draft\" should be selected for \"Status\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

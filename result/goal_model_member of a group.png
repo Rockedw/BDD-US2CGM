@@ -1,0 +1,119 @@
+// Goal Model
+digraph {
+	1847134121472 [label="member of a group
+goal"]
+	1847134064400 [label="create a One Click Orgs association
+goal
+1847134071360"]
+	1847134121472 -> 1847134064400
+	1847134064400 [label="create a One Click Orgs association
+goal"]
+	1847134014240 [label="Creating an association
+goal
+140728069287616"]
+	1847134064400 -> 1847134014240
+	1847134014240 [label="Creating an association
+goal"]
+	1847134012608 [label="I go to the new association page
+task
+140728069287616"]
+	1847134014240 -> 1847134012608
+	1847134012608 [label="I go to the new association page
+task"]
+	1847134012416 [label="I fill in \"First name\" with \"Bob\"
+task
+140728069287616"]
+	1847134014240 -> 1847134012416
+	1847134012416 [label="I fill in \"First name\" with \"Bob\"
+task"]
+	1847134021248 [label="I fill in \"Last name\" with \"Smith\"
+task
+140728069287616"]
+	1847134014240 -> 1847134021248
+	1847134021248 [label="I fill in \"Last name\" with \"Smith\"
+task"]
+	1847134017120 [label="I fill in \"Email address\" with \"bob@example.com\"
+task
+140728069287616"]
+	1847134014240 -> 1847134017120
+	1847134017120 [label="I fill in \"Email address\" with \"bob@example.com\"
+task"]
+	1847134020672 [label="I fill in \"Choose password\" with \"letmein\"
+task
+140728069287616"]
+	1847134014240 -> 1847134020672
+	1847134020672 [label="I fill in \"Choose password\" with \"letmein\"
+task"]
+	1847134025616 [label="I fill in \"Confirm password\" with \"letmein\"
+task
+140728069287616"]
+	1847134014240 -> 1847134025616
+	1847134025616 [label="I fill in \"Confirm password\" with \"letmein\"
+task"]
+	1847134015200 [label="I fill in \"Association's official name\" with \"The Tea Club\"
+task
+140728069287616"]
+	1847134014240 -> 1847134015200
+	1847134015200 [label="I fill in \"Association's official name\" with \"The Tea Club\"
+task"]
+	1847134027680 [label="I fill in \"One Click Orgs web address\" with \"tea\"
+task
+140728069287616"]
+	1847134014240 -> 1847134027680
+	1847134027680 [label="I fill in \"One Click Orgs web address\" with \"tea\"
+task"]
+	1847134020096 [label="I fill in \"What the Association exists for\" with \"Enjoying tea\"
+task
+140728069287616"]
+	1847134014240 -> 1847134020096
+	1847134020096 [label="I fill in \"What the Association exists for\" with \"Enjoying tea\"
+task"]
+	1847134024416 [label="I check \"I agree to the Terms and Conditions of One Click Orgs\"
+task
+140728069287616"]
+	1847134014240 -> 1847134024416
+	1847134024416 [label="I check \"I agree to the Terms and Conditions of One Click Orgs\"
+task"]
+	1847134015152 [label="I press \"Create draft constitution\"
+task
+140728069287616"]
+	1847134014240 -> 1847134015152
+	1847134015152 [label="I press \"Create draft constitution\"
+task"]
+	1847134023312 [label="Viewing terms and conditions
+goal
+140728069287616"]
+	1847134064400 -> 1847134023312
+	1847134023312 [label="Viewing terms and conditions
+goal"]
+	1847134022544 [label="I go to the new association page
+task
+140728069287616"]
+	1847134023312 -> 1847134022544
+	1847134022544 [label="I go to the new association page
+task"]
+	1847134023744 [label="I follow \"Terms and Conditions\"
+task
+140728069287616"]
+	1847134023312 -> 1847134023744
+	1847134023744 [label="I follow \"Terms and Conditions\"
+task"]
+	1847134019040 [label="Viewing terms and conditions without JavaScript
+goal
+140728069287616"]
+	1847134064400 -> 1847134019040
+	1847134019040 [label="Viewing terms and conditions without JavaScript
+goal"]
+	1847134014720 [label="I go to the new association page
+task
+140728069287616"]
+	1847134019040 -> 1847134014720
+	1847134014720 [label="I go to the new association page
+task"]
+	1847134021392 [label="I follow \"Terms and Conditions\"
+task
+140728069287616"]
+	1847134019040 -> 1847134021392
+	1847134021392 [label="I follow \"Terms and Conditions\"
+task"]
+}

@@ -1,0 +1,10 @@
+// 1998091064160 Context Model
+digraph {
+	1998091064880 [label=Context14]
+	1998091065120 [label="there are 15 public posts from \"bob@bob.bob\""]
+	1998091064880 -> 1998091065120
+	1998091065120 [label="there are 15 public posts from \"bob@bob.bob\""]
+	1998091065216 [label="\"bob@bob.bob\" has a public post with text \"post 1\""]
+	1998091064880 -> 1998091065216
+	1998091065216 [label="\"bob@bob.bob\" has a public post with text \"post 1\""]
+}

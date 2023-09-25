@@ -1,0 +1,10 @@
+// 1982217971520 Context Model
+digraph {
+	1982217971040 [label=Context2]
+	1982217969744 [label="I have an \"index.md\" page that contains \"[About my projects]({% link about.md %})\""]
+	1982217971040 -> 1982217969744
+	1982217969744 [label="I have an \"index.md\" page that contains \"[About my projects]({% link about.md %})\""]
+	1982217970944 [label="I have an \"about.md\" page with permalink \"/about/\" that contains \"[Home]({% link index.md %})\""]
+	1982217971040 -> 1982217970944
+	1982217970944 [label="I have an \"about.md\" page with permalink \"/about/\" that contains \"[Home]({% link index.md %})\""]
+}

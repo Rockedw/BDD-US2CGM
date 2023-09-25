@@ -1,0 +1,25 @@
+// 1436758709280 Context Model
+digraph {
+	1436758710720 [label=Context14]
+	1436758710864 [label="there are 2 existing individuals like \"thing\""]
+	1436758710720 -> 1436758710864
+	1436758710864 [label="there are 2 existing individuals like \"thing\""]
+	1436758710960 [label="there is an existing connection \"thing0\" \"contains\" \"thing1\""]
+	1436758710720 -> 1436758710960
+	1436758710960 [label="there is an existing connection \"thing0\" \"contains\" \"thing1\""]
+	1436758711056 [label="I am on the new connections page"]
+	1436758710720 -> 1436758711056
+	1436758711056 [label="I am on the new connections page"]
+	1436758711152 [label="I select \"thing0 : thing item number 0\" from \"Subject\""]
+	1436758710720 -> 1436758711152
+	1436758711152 [label="I select \"thing0 : thing item number 0\" from \"Subject\""]
+	1436758711248 [label="I select \"contains : Contains (basic relationship)\" from \"Relates to\""]
+	1436758710720 -> 1436758711248
+	1436758711248 [label="I select \"contains : Contains (basic relationship)\" from \"Relates to\""]
+	1436758711344 [label="I choose \"Item\""]
+	1436758710720 -> 1436758711344
+	1436758711344 [label="I choose \"Item\""]
+	1436758711440 [label="I select \"thing1 : thing item number 1\" from \"Object\""]
+	1436758710720 -> 1436758711440
+	1436758711440 [label="I select \"thing1 : thing item number 1\" from \"Object\""]
+}

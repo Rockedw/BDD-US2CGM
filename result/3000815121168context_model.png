@@ -1,0 +1,16 @@
+// 3000815684480 Context Model
+digraph {
+	3000815121168 [label=Context72]
+	3000815110464 [label="a valid sale pricelist in EUR exists"]
+	3000815121168 -> 3000815110464
+	3000815110464 [label="a valid sale pricelist in EUR exists"]
+	3000815112192 [label="a valid sale pricelist in USD exists"]
+	3000815121168 -> 3000815112192
+	3000815112192 [label="a valid sale pricelist in USD exists"]
+	3000815112096 [label="a valid sale pricelist in GBP exists"]
+	3000815121168 -> 3000815112096
+	3000815112096 [label="a valid sale pricelist in GBP exists"]
+	3000815111232 [label="a valid sale pricelist in CHF exists"]
+	3000815121168 -> 3000815111232
+	3000815111232 [label="a valid sale pricelist in CHF exists"]
+}

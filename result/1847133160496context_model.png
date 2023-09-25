@@ -1,0 +1,10 @@
+// 1847133159536 Context Model
+digraph {
+	1847133160496 [label=Context57]
+	1847133160640 [label="a user with email \"alice@test.com\""]
+	1847133160496 -> 1847133160640
+	1847133160640 [label="a user with email \"alice@test.com\""]
+	1847133160736 [label="2fa is activated for \"alice@test.com\""]
+	1847133160496 -> 1847133160736
+	1847133160736 [label="2fa is activated for \"alice@test.com\""]
+}

@@ -1,0 +1,10 @@
+// 1982196861488 Context Model
+digraph {
+	1982200056320 [label=Context4]
+	1982200057088 [label="many posts from alice for bob"]
+	1982200056320 -> 1982200057088
+	1982200057088 [label="many posts from alice for bob"]
+	1982200057184 [label="I sign in as \"bob@bob.bob\""]
+	1982200056320 -> 1982200057184
+	1982200057184 [label="I sign in as \"bob@bob.bob\""]
+}

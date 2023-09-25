@@ -1,0 +1,19 @@
+// 1982217961088 Context Model
+digraph {
+	1982217955664 [label=Context8]
+	1982217951584 [label="a provider \"Pullover\""]
+	1982217955664 -> 1982217951584
+	1982217951584 [label="a provider \"Pullover\""]
+	1982217959888 [label="a logged in admin user"]
+	1982217955664 -> 1982217959888
+	1982217959888 [label="a logged in admin user"]
+	1982217960080 [label="I am on the admin dashboard"]
+	1982217955664 -> 1982217960080
+	1982217960080 [label="I am on the admin dashboard"]
+	1982217960992 [label="I follow \"Developers\""]
+	1982217955664 -> 1982217960992
+	1982217960992 [label="I follow \"Developers\""]
+	1982217957584 [label="I follow \"Pullover\""]
+	1982217955664 -> 1982217957584
+	1982217957584 [label="I follow \"Pullover\""]
+}

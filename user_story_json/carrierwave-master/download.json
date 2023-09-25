@@ -1,0 +1,39 @@
+{
+    "feature_name": "downloading files",
+    "user_story": {
+        "as_a": "developer using CarrierWave",
+        "i_want": "download files to the filesystem via HTTP",
+        "so_that": "allow users to upload remote files",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I download the file 'http://s3.amazonaws.com/Monkey/testfile.txt'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be a file called 'testfile.txt' somewhere in a subdirectory of 'public/uploads/tmp'",
+                        "the file called 'testfile.txt' in a subdirectory of 'public/uploads/tmp' should contain 'S3 Remote File'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I download the file 'http://s3.amazonaws.com/Monkey/testfile.txt'",
+                        "I store the file"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be a file at 'public/uploads/testfile.txt'",
+                        "the file at 'public/uploads/testfile.txt' should contain 'S3 Remote File'"
+                    ]
+                ]
+            }
+        ]
+    }
+}

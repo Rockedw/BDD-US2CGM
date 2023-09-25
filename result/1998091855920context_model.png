@@ -1,0 +1,13 @@
+// 1998092761936 Context Model
+digraph {
+	1998091855920 [label=Context5]
+	1998091857408 [label="the default settings has student consent enabled"]
+	1998091855920 -> 1998091857408
+	1998091857408 [label="the default settings has student consent enabled"]
+	1998091854528 [label="the following classes exist:"]
+	1998091855920 -> 1998091854528
+	1998091854528 [label="the following classes exist:"]
+	1998091860864 [label="the class \"Test Class\" has the class word \"word\""]
+	1998091855920 -> 1998091860864
+	1998091860864 [label="the class \"Test Class\" has the class word \"word\""]
+}

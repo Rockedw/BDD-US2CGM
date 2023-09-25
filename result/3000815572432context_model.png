@@ -1,0 +1,22 @@
+// 3000815571760 Context Model
+digraph {
+	3000815572432 [label=Context34]
+	3000815572576 [label="I have a _posts directory"]
+	3000815572432 -> 3000815572576
+	3000815572576 [label="I have a _posts directory"]
+	3000815572672 [label="I have a _posts/snippets directory"]
+	3000815572432 -> 3000815572672
+	3000815572672 [label="I have a _posts/snippets directory"]
+	3000815572768 [label="I have a _posts/snippets/welcome_para directory"]
+	3000815572432 -> 3000815572768
+	3000815572768 [label="I have a _posts/snippets/welcome_para directory"]
+	3000815572864 [label="I have the following post:"]
+	3000815572432 -> 3000815572864
+	3000815572864 [label="I have the following post:"]
+	3000815572960 [label="I have an \"_posts/snippets/welcome_para.md\" file that contains \"{% include_relative snippets/welcome_para/greeting.md %} Dear Reader!\""]
+	3000815572432 -> 3000815572960
+	3000815572960 [label="I have an \"_posts/snippets/welcome_para.md\" file that contains \"{% include_relative snippets/welcome_para/greeting.md %} Dear Reader!\""]
+	3000815573056 [label="I have an \"_posts/snippets/welcome_para/greeting.md\" file that contains \"Welcome back\""]
+	3000815572432 -> 3000815573056
+	3000815573056 [label="I have an \"_posts/snippets/welcome_para/greeting.md\" file that contains \"Welcome back\""]
+}

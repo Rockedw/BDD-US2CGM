@@ -1,0 +1,10 @@
+// 1436738876320 Context Model
+digraph {
+	1436738877040 [label=Context55]
+	1436738877424 [label="a user with username \"alice\" and password \"secret\""]
+	1436738877040 -> 1436738877424
+	1436738877424 [label="a user with username \"alice\" and password \"secret\""]
+	1436738877520 [label="2fa is activated for \"alice\""]
+	1436738877040 -> 1436738877520
+	1436738877520 [label="2fa is activated for \"alice\""]
+}

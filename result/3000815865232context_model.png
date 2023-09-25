@@ -1,0 +1,16 @@
+// 3000815864080 Context Model
+digraph {
+	3000815865232 [label=Context9]
+	3000815865424 [label="I have a _slides directory"]
+	3000815865232 -> 3000815865424
+	3000815865424 [label="I have a _slides directory"]
+	3000815863888 [label="I have a \"index.html\" file that contains \"nothing\""]
+	3000815865232 -> 3000815863888
+	3000815863888 [label="I have a \"index.html\" file that contains \"nothing\""]
+	3000815870992 [label="I have a \"_slides/slide1.html\" file with content:"]
+	3000815865232 -> 3000815870992
+	3000815870992 [label="I have a \"_slides/slide1.html\" file with content:"]
+	3000815873248 [label="I have a \"_config.yml\" file with content:"]
+	3000815865232 -> 3000815873248
+	3000815873248 [label="I have a \"_config.yml\" file with content:"]
+}

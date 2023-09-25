@@ -1,0 +1,143 @@
+{
+    "feature_name": "Drafting rules amendments",
+    "user_story": {
+        "as_a": "As the Secretary",
+        "i_want": "record resolutions that change the Rules of the Co-op",
+        "so_that": "change the way the co-op works",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Resolutions page",
+                        "I press \"Create a proposal\"",
+                        "I select \"Change the Name of the organisation\" from \"Type of proposal\"",
+                        "I change the Name to \"The Tea Co-op\"",
+                        "I press \"Save this proposal as a draft\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Resolutions page",
+                        "I should see a draft resolution \"Change organisation name to 'The Tea Co-op'\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Resolutions page",
+                        "I press \"Create a proposal\"",
+                        "I select \"Change the Registered Office of the organisation\" from \"Type of proposal\"",
+                        "I change the Registered office address to \"1 Main Street\"",
+                        "I press \"Save this proposal as a draft\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Resolutions page",
+                        "I should see a draft resolution \"Change registered office address to '1 Main Street'\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Resolutions page",
+                        "I press \"Create a proposal\"",
+                        "I select \"Change the Objects of the organisation\" from \"Type of proposal\"",
+                        "I change the Objects to \"buy all the tea.\"",
+                        "I press \"Save this proposal as a draft\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Resolutions page",
+                        "I should see a draft resolution \"Change objects to 'buy all the tea.'\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Resolutions page",
+                        "I press \"Create a proposal\"",
+                        "I select \"Change the Rules about membership criteria\" from \"Type of proposal\"",
+                        "I choose to allow \"User\" members",
+                        "I choose to allow \"Employee\" members",
+                        "I choose to disallow \"Supporter\" members",
+                        "I choose to disallow \"Producer\" members",
+                        "I choose to disallow \"Consumer\" members",
+                        "I press \"Save this proposal as a draft\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Resolutions page",
+                        "I should see a draft resolution \"Change the Rules to disallow Supporter Members\"",
+                        "I should see a draft resolution \"Change the Rules to disallow Producer Members\"",
+                        "I should see a draft resolution \"Change the Rules to disallow Consumer Members\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Resolutions page",
+                        "I press \"Create a proposal\"",
+                        "I select \"Change the Rules about share capital\" from \"Type of proposal\"",
+                        "I choose that Members hold one share only",
+                        "I press \"Save this proposal as a draft\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Resolutions page",
+                        "I should see a draft resolution \"Change the Rules to permit each Member to hold only one share\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Resolutions page",
+                        "I press \"Create a proposal\"",
+                        "I select \"Change the Rules about the composition of the Board\" from \"Type of proposal\"",
+                        "I enter \"2\" for each of the Board composition fields",
+                        "I press \"Save this proposal as a draft\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Resolutions page",
+                        "I should see a draft resolution \"Allow a maximum of 2 User Members on the Board\"",
+                        "I should see a draft resolution \"Allow a maximum of 2 Employee Members on the Board\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Resolutions page",
+                        "I press \"Create a proposal\"",
+                        "I select \"Change the Rules about dissolution\" from \"Type of proposal\"",
+                        "I choose Common Ownership",
+                        "I press \"Save this proposal as a draft\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Resolutions page",
+                        "I should see a draft resolution \"Change the organisation to be a Common Ownership enterprise\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

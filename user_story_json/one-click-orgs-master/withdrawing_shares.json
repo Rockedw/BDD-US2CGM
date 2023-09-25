@@ -1,0 +1,58 @@
+{
+    "feature_name": "Withdrawing shares",
+    "user_story": {
+        "as_a": "Member",
+        "i_want": "make an application to withdraw some shares",
+        "so_that": "reduce my investment in the co-op",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I hold more shares than the minimum shareholding"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Shares page",
+                        "I press \"Withdraw shares\"",
+                        "I choose to withdraw a number of shares which will still leave me with the minimum shareholding",
+                        "I press \"Apply to withdraw shares\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see that my withdrawal application has been received",
+                        "the Secretary should receive a notification of the share withdrawal application"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I hold only the minimum shareholding"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Shares page",
+                        "I press \"Withdraw shares\"",
+                        "I choose to withdraw all my shares"
+                    ],
+                    [
+                        "I confirm that I want to terminate my membership",
+                        "I press \"Apply to withdraw shares\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a notice that this withdrawal will terminate my membership"
+                    ],
+                    [
+                        "I should see that my withdrawal application has been received",
+                        "the Secretary should receive a notification of the share withdrawal application"
+                    ]
+                ]
+            }
+        ]
+    }
+}

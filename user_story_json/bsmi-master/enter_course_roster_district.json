@@ -1,0 +1,54 @@
+{
+    "feature_name": "Enter/Upload Course List/Roster/School Districts",
+    "user_story": {
+        "as_a": "adviser",
+        "i_want": "allow the webapp to populate the students enrolled in the course and the schools that mentor teachers are associated with",
+        "so_that": "the options can be consistent (i.e. title and names) with choice menus",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as oski@berkeley.edu"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to /students/1/semesters/1/select_courses",
+                        "I check \"UGIS 80A\"",
+                        "I check \"UGIS 80B\"",
+                        "I press \"Save\""
+                    ],
+                    [
+                        "I go to /students/1/semesters/1/courses"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be at url /students/1/semesters/1/courses/1/select_timeslots/monday"
+                    ],
+                    [
+                        "I should see \"UGIS 80A\""
+                    ],
+                    [
+                        "I should see \"UGIS 80B\""
+                    ],
+                    [
+                        "I should not see \"ED 130\""
+                    ],
+                    [
+                        "I should not see \"ED 195C\""
+                    ],
+                    [
+                        "I should not see \"UGIS 187\""
+                    ],
+                    [
+                        "I should not see \"UGIS 81A\""
+                    ],
+                    [
+                        "I should not see \"MATH 197\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "feature_name": "Download (for backup) and upload (for restore) all items in YAML",
+    "user_story": {
+        "as_a": "as an administrator, I want",
+        "i_want": "download and upload the system's items.",
+        "so_that": "safeguard the content of a wontology,",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there are 3 existing individuals like \"anItem\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the path \"/w/items.yaml\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the response should contain 9 matches of \"anItem\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

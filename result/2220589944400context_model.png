@@ -1,0 +1,13 @@
+// 2220589943440 Context Model
+digraph {
+	2220589944400 [label=Context5]
+	2220589944544 [label="I have an \"index.md\" page that contains \"[About my projects]({% link about.md %})\""]
+	2220589944400 -> 2220589944544
+	2220589944544 [label="I have an \"index.md\" page that contains \"[About my projects]({% link about.md %})\""]
+	2220589944640 [label="I have an \"about.md\" page that contains \"[Home]({% link index.md %})\""]
+	2220589944400 -> 2220589944640
+	2220589944640 [label="I have an \"about.md\" page that contains \"[Home]({% link index.md %})\""]
+	2220589944736 [label="I have a \"_config.yml\" file with content:"]
+	2220589944400 -> 2220589944736
+	2220589944736 [label="I have a \"_config.yml\" file with content:"]
+}

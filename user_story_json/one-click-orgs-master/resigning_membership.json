@@ -1,0 +1,31 @@
+{
+    "feature_name": "Resigning membership",
+    "user_story": {
+        "as_a": "Member",
+        "i_want": "resign my membership",
+        "so_that": "end my relationship with the co-op",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a co-op",
+                        "I am a Member of the co-op"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to my account page",
+                        "I press \"Resign my membership\"",
+                        "I confirm that I want to resign"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"You have now resigned\"",
+                        "the Secretary should receive a notification of my resignation"
+                    ]
+                ]
+            }
+        ]
+    }
+}

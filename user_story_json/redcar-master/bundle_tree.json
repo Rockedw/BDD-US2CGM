@@ -1,0 +1,53 @@
+{
+    "feature_name": "Show snippets in a tree",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I click Show Bundles in Tree"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a tree mirror titled \"Bundles\"",
+                        "I should see bundle \"Ruby\" in the tree",
+                        "I should not see bundle \"test_bundle\" in the tree"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I click Show Bundles in Tree",
+                        "I open bundle \"Perl\" in the tree"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see snippet \"Loop\" listed"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I click Show Bundles in Tree",
+                        "I open bundle \"PHP\" in the tree"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see snippet group \"Declarations\" listed"
+                    ]
+                ]
+            }
+        ]
+    }
+}

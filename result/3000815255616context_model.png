@@ -1,0 +1,22 @@
+// 3000815260896 Context Model
+digraph {
+	3000815255616 [label=Context1]
+	3000815258160 [label="following users exist:"]
+	3000815255616 -> 3000815258160
+	3000815258160 [label="following users exist:"]
+	3000815257776 [label="\"bob@bob.bob\" has a public post with text \"I am da #boss\""]
+	3000815255616 -> 3000815257776
+	3000815257776 [label="\"bob@bob.bob\" has a public post with text \"I am da #boss\""]
+	3000815258640 [label="I sign in as \"alice@alice.alice\""]
+	3000815255616 -> 3000815258640
+	3000815258640 [label="I sign in as \"alice@alice.alice\""]
+	3000815265408 [label="I go to the tag page for \"boss\""]
+	3000815255616 -> 3000815265408
+	3000815265408 [label="I go to the tag page for \"boss\""]
+	3000815268000 [label="I press \"Follow #boss\""]
+	3000815255616 -> 3000815268000
+	3000815268000 [label="I press \"Follow #boss\""]
+	3000815261616 [label="I should see a \".tag-following-action .followed\""]
+	3000815255616 -> 3000815261616
+	3000815261616 [label="I should see a \".tag-following-action .followed\""]
+}

@@ -1,0 +1,40 @@
+// 1633872151024 Context Model
+digraph {
+	1633872152080 [label=Context7]
+	1633872152224 [label="I have a _layouts directory"]
+	1633872152080 -> 1633872152224
+	1633872152224 [label="I have a _layouts directory"]
+	1633872152320 [label="I have a page layout that contains \"Page {{ page.title }}: {{ content }}\""]
+	1633872152080 -> 1633872152320
+	1633872152320 [label="I have a page layout that contains \"Page {{ page.title }}: {{ content }}\""]
+	1633872152416 [label="I have a post layout that contains \"Post {{ page.title }}: {{ content }}\""]
+	1633872152080 -> 1633872152416
+	1633872152416 [label="I have a post layout that contains \"Post {{ page.title }}: {{ content }}\""]
+	1633872152512 [label="I have an \"index.html\" page with layout \"page\" that contains \"Site contains {{ site.pages.size }} pages and {{ site.posts.size }} posts\""]
+	1633872152080 -> 1633872152512
+	1633872152512 [label="I have an \"index.html\" page with layout \"page\" that contains \"Site contains {{ site.pages.size }} pages and {{ site.posts.size }} posts\""]
+	1633872152608 [label="I have a blog directory"]
+	1633872152080 -> 1633872152608
+	1633872152608 [label="I have a blog directory"]
+	1633872152704 [label="I have a \"blog/index.html\" page with layout \"page\" that contains \"blog category index page\""]
+	1633872152080 -> 1633872152704
+	1633872152704 [label="I have a \"blog/index.html\" page with layout \"page\" that contains \"blog category index page\""]
+	1633872152800 [label="I have an \"about.html\" file that contains \"No replacement {{ site.posts.size }}\""]
+	1633872152080 -> 1633872152800
+	1633872152800 [label="I have an \"about.html\" file that contains \"No replacement {{ site.posts.size }}\""]
+	1633872152896 [label="I have an \"another_file\" file that contains \"\""]
+	1633872152080 -> 1633872152896
+	1633872152896 [label="I have an \"another_file\" file that contains \"\""]
+	1633872152992 [label="I have a _posts directory"]
+	1633872152080 -> 1633872152992
+	1633872152992 [label="I have a _posts directory"]
+	1633872153088 [label="I have the following posts:"]
+	1633872152080 -> 1633872153088
+	1633872153088 [label="I have the following posts:"]
+	1633872153184 [label="I have a category/_posts directory"]
+	1633872152080 -> 1633872153184
+	1633872153184 [label="I have a category/_posts directory"]
+	1633872153280 [label="I have the following posts in \"category\":"]
+	1633872152080 -> 1633872153280
+	1633872153280 [label="I have the following posts in \"category\":"]
+}

@@ -1,0 +1,10 @@
+// 1998091067568 Context Model
+digraph {
+	1998091060992 [label=Context106]
+	1998091061040 [label="I need a \"sale.config.settings\" with oid: scen.sale_settings"]
+	1998091060992 -> 1998091061040
+	1998091061040 [label="I need a \"sale.config.settings\" with oid: scen.sale_settings"]
+	1998091068000 [label="having:"]
+	1998091060992 -> 1998091068000
+	1998091068000 [label="having:"]
+}

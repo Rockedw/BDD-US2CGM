@@ -1,0 +1,74 @@
+{
+    "feature_name": "Text editing commands",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to 0",
+                        "I run the command Redcar::Top::DeleteCharCommand"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 0",
+                        "the contents should be \"oo\\nBar\\nBaz\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\"",
+                        "I move the cursor to 3",
+                        "I run the command Redcar::Top::DeleteCharCommand"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 3",
+                        "the contents should be \"Foo\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\"",
+                        "I move the cursor to 1",
+                        "I run the command Redcar::Top::BackspaceCommand"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 0",
+                        "the contents should be \"oo\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\"",
+                        "I move the cursor to 0",
+                        "I run the command Redcar::Top::BackspaceCommand"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 0",
+                        "the contents should be \"Foo\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

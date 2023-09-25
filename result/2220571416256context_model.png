@@ -1,0 +1,13 @@
+// 2220571422496 Context Model
+digraph {
+	2220571416256 [label=Context7]
+	2220571425664 [label="there is a co-op"]
+	2220571416256 -> 2220571425664
+	2220571425664 [label="there is a co-op"]
+	2220571411552 [label="I am the secretary of the co-op"]
+	2220571416256 -> 2220571411552
+	2220571411552 [label="I am the secretary of the co-op"]
+	2220571419952 [label="there is a director named \"Bob Smith\""]
+	2220571416256 -> 2220571419952
+	2220571419952 [label="there is a director named \"Bob Smith\""]
+}

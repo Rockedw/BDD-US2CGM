@@ -1,0 +1,107 @@
+{
+    "feature_name": "Manage users",
+    "user_story": {
+        "as_a": "chits administrator",
+        "i_want": "be able to create, update and delete users",
+        "so_that": "handle healthcare workers coming and going",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"admin\" with password \"admin\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I click \"ADMIN\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"SITE USER FORM\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"admin\" with password \"admin\"",
+                        "I am on the admin page",
+                        "I should not see \"Jackson, Michael\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"user_firstname\" with \"Michael\"",
+                        "I fill in \"user_middle\" with \"King of Pop\"",
+                        "I fill in \"user_lastname\" with \"Jackson\"",
+                        "I fill in \"user_dob\" with \"08/08/1968\"",
+                        "I choose \"user_gender\"",
+                        "I fill in \"user_pin\" with \"1234\"",
+                        "I select \"Nurse\" from \"role_id\"",
+                        "I select \"english\" from \"lang_id\"",
+                        "I fill in \"user_login\" with \"jacko\"",
+                        "I fill in \"user_password\" with \"neverland\"",
+                        "I fill in \"confirm_password\" with \"neverland\"",
+                        "I check \"isactive\"",
+                        "I press \"Add User\"",
+                        "I should see \"Jackson, Michael\"",
+                        "I press \"Sign Out\"",
+                        "I am on the home page",
+                        "I fill in \"login\" with \"jacko\"",
+                        "I fill in \"passwd\" with \"neverland\"",
+                        "I press \"Login\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"logged in\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"admin\" with password \"admin\"",
+                        "I am on the admin page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I click \"Perez, Alison\"",
+                        "I should not see \"alison@kung.fu\"",
+                        "I fill in \"user_email\" with \"alison@kung.fu\"",
+                        "I press \"Update User\"",
+                        "I click \"Perez, Alison\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"alison@cm.upm.edu.ph\"",
+                        "I should see \"alison@kung.fu\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"admin\" with password \"admin\"",
+                        "I am on the admin page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I click \"Perez, Alison\"",
+                        "I press \"Delete User\"",
+                        "I press \"Yes\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"Perez, Alison\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

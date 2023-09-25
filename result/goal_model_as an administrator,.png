@@ -1,0 +1,17 @@
+// Goal Model
+digraph {
+	1847135464816 [label="as an administrator,
+goal"]
+	1847133032304 [label="download and upload the system's items.
+goal
+140728069287616"]
+	1847135464816 -> 1847133032304
+	1847133032304 [label="download and upload the system's items.
+goal"]
+	1847133041280 [label="I go to the path \"/w/items.yaml\"
+task
+140728069287616"]
+	1847133032304 -> 1847133041280
+	1847133041280 [label="I go to the path \"/w/items.yaml\"
+task"]
+}

@@ -1,0 +1,19 @@
+// 1982217786208 Context Model
+digraph {
+	1982217787984 [label=Context125]
+	1982217788128 [label="I have a \".foobar\" page that contains \"dotfile with front matter\""]
+	1982217787984 -> 1982217788128
+	1982217788128 [label="I have a \".foobar\" page that contains \"dotfile with front matter\""]
+	1982217788224 [label="I have an \".htaccess\" file that contains \"SomeDirective\""]
+	1982217787984 -> 1982217788224
+	1982217788224 [label="I have an \".htaccess\" file that contains \"SomeDirective\""]
+	1982217788320 [label="I have a \"_redirects\" file that contains \"/foo/* /bar/* 301!\""]
+	1982217787984 -> 1982217788320
+	1982217788320 [label="I have a \"_redirects\" file that contains \"/foo/* /bar/* 301!\""]
+	1982217788416 [label="I have an \"index.md\" file with content:"]
+	1982217787984 -> 1982217788416
+	1982217788416 [label="I have an \"index.md\" file with content:"]
+	1982217788512 [label="I have a configuration file with \"title\" set to \"Hello World\""]
+	1982217787984 -> 1982217788512
+	1982217788512 [label="I have a configuration file with \"title\" set to \"Hello World\""]
+}

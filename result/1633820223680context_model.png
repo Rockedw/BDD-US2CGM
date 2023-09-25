@@ -1,0 +1,13 @@
+// 1633820217440 Context Model
+digraph {
+	1633820223680 [label=Context19]
+	1633820220992 [label="I have an \"index.html\" page that contains \"{% assign items = site.methods | sort: 'title' %}2. of {{ items.size }}: {{ items[2].output }}\""]
+	1633820223680 -> 1633820220992
+	1633820220992 [label="I have an \"index.html\" page that contains \"{% assign items = site.methods | sort: 'title' %}2. of {{ items.size }}: {{ items[2].output }}\""]
+	1633820220224 [label="I have fixture collections"]
+	1633820223680 -> 1633820220224
+	1633820220224 [label="I have fixture collections"]
+	1633820225168 [label="I have a \"_config.yml\" file with content:"]
+	1633820223680 -> 1633820225168
+	1633820225168 [label="I have a \"_config.yml\" file with content:"]
+}

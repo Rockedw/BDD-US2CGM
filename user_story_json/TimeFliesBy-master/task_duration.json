@@ -1,0 +1,27 @@
+{
+    "feature_name": "Task Duration",
+    "user_story": {
+        "as_a": "person short on time",
+        "i_want": "see the duration of each task",
+        "so_that": "> see where I spend a lot of time",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have a \"1m\" task"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the tasks page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"1m\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

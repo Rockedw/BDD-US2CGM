@@ -1,0 +1,99 @@
+{
+    "feature_name": "Admin provider users",
+    "user_story": {
+        "as_a": "n Engine Yard administrator",
+        "i_want": "browse and create users for providers",
+        "so_that": "I can see the activity on the provider account and provide support if necessary",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a logged in admin user",
+                        "I am on the admin dashboard",
+                        "a provider \"Hashrocket\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Developers\"",
+                        "I follow \"Hashrocket\"",
+                        "I follow \"Add a new user\"",
+                        "I fill in \"First name\" with \"Ciara\"",
+                        "I fill in \"Last name\" with \"McGuire\"",
+                        "I fill in \"Email\" with \"ciara@ciarascakes.com\"",
+                        "I fill in \"Password\" with \"mcguire\"",
+                        "I press \"Save\""
+                    ],
+                    [
+                        "I follow \"user.take_control\" translation"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Hashrocket\"",
+                        "I should see \"user.take_control\" translation",
+                        "I should see \"Ciara McGuire\""
+                    ],
+                    [
+                        "I should see \"Ciara\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a logged in admin user",
+                        "I am on the admin dashboard",
+                        "a provider \"Crushtastic\"",
+                        "a user \"paul\" belonging to the \"Crushtastic\" provider"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Developers\"",
+                        "I follow \"Crushtastic\"",
+                        "I follow \"test@test.com\"",
+                        "I follow \"user.edit\" translation"
+                    ],
+                    [
+                        "I fill in \"First name\" with \"Joe\"",
+                        "I fill in \"Last name\" with \"Arnold\"",
+                        "I press \"Save\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Joe Arnold\"",
+                        "I should see \"User saved successfully\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Billow\"",
+                        "a user \"paul\" belonging to the \"Billow\" provider",
+                        "a logged in admin user"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the admin dashboard",
+                        "I follow \"Developers\"",
+                        "I follow \"Billow\"",
+                        "I follow \"test@test.com\"",
+                        "I follow \"user.edit\" translation"
+                    ],
+                    [
+                        "I press \"Delete this user\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"User deleted successfully\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "feature_name": "submitting to opportunities",
+    "user_story": {
+        "as_a": "creative",
+        "i_want": "submit to organisations' opportunities",
+        "so_that": "get my work out there",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I select which work and add a message",
+                        "I click the submit button",
+                        "I go on my homepage"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a thumbnail of my submission along with an acceptance status"
+                    ]
+                ]
+            }
+        ]
+    }
+}

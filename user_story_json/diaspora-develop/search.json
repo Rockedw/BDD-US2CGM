@@ -1,0 +1,123 @@
+{
+    "feature_name": "search for users and hashtags",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "",
+        "so_that": "find my friends on diaspora",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I sign in as \"bob@bob.bob\"",
+                        "I enter \"Alice Sm\" in the search input"
+                    ],
+                    [
+                        "I click on the first search result"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Alice Smith\" within \".tt-menu\""
+                    ],
+                    [
+                        "I should see \"Alice Smith\" within \".profile_header #name\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I sign in as \"bob@bob.bob\"",
+                        "I enter \"Trinity\" in the search input",
+                        "I press enter in the search input"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Users matching Trinity\" within \"#search_title\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I sign in as \"bob@bob.bob\"",
+                        "I search for \"user@pod.tld\"",
+                        "a person with ID \"user@pod.tld\" has been discovered"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"user@pod.tld\" within \".stream .info.diaspora_handle\"",
+                        "I should see a \".aspect-dropdown\" within \".stream\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a user with email \"bob@bob.bob\" is connected with \"carol@example.com\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"carol@example.com\"",
+                        "I go to the edit profile page",
+                        "I mark myself as not searchable",
+                        "I submit the form"
+                    ],
+                    [
+                        "I sign out",
+                        "I sign in as \"bob@bob.bob\"",
+                        "I enter \"Carol Wi\" in the search input"
+                    ],
+                    [
+                        "I go to the home page",
+                        "I enter \"Carol Wi\" in the search input"
+                    ],
+                    [
+                        "I click on the first search result"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the edit profile page",
+                        "the \"profile[searchable]\" checkbox should not be checked"
+                    ],
+                    [
+                        "I should not see any search results"
+                    ],
+                    [
+                        "I should see \"Carol Williams\" within \".tt-menu\""
+                    ],
+                    [
+                        "I should see \"Carol Williams\" within \".profile_header #name\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I sign in as \"bob@bob.bob\"",
+                        "I enter \"#Matrix\" in the search input"
+                    ],
+                    [
+                        "I click on the first search result"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"#Matrix\" within \".tt-menu\""
+                    ],
+                    [
+                        "I should be on the tag page for \"matrix\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

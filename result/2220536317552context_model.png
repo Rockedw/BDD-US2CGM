@@ -1,0 +1,16 @@
+// 2220536347520 Context Model
+digraph {
+	2220536317552 [label=Context7]
+	2220536317792 [label="I am on the login page"]
+	2220536317552 -> 2220536317792
+	2220536317792 [label="I am on the login page"]
+	2220536317888 [label="I fill in \"Email\" with \"myemail@nowhere.com\""]
+	2220536317552 -> 2220536317888
+	2220536317888 [label="I fill in \"Email\" with \"myemail@nowhere.com\""]
+	2220536317984 [label="I fill in \"Password\" with \"1234\""]
+	2220536317552 -> 2220536317984
+	2220536317984 [label="I fill in \"Password\" with \"1234\""]
+	2220536318080 [label="I press \"Login\""]
+	2220536317552 -> 2220536318080
+	2220536318080 [label="I press \"Login\""]
+}

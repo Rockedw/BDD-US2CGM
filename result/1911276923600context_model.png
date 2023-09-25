@@ -1,0 +1,13 @@
+// 1911276915536 Context Model
+digraph {
+	1911276923600 [label=Context13]
+	1911276918944 [label="an uploader class that uses the 'file' storage"]
+	1911276923600 -> 1911276918944
+	1911276918944 [label="an uploader class that uses the 'file' storage"]
+	1911276926336 [label="an instance of that class"]
+	1911276923600 -> 1911276926336
+	1911276926336 [label="an instance of that class"]
+	1911276927392 [label="the file 'fixtures/bork.txt' is cached file at 'public/uploads/tmp/1369894322-345-1234-2255/bork.txt'"]
+	1911276923600 -> 1911276927392
+	1911276927392 [label="the file 'fixtures/bork.txt' is cached file at 'public/uploads/tmp/1369894322-345-1234-2255/bork.txt'"]
+}

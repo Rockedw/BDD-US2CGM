@@ -1,0 +1,10 @@
+// 3000815716336 Context Model
+digraph {
+	3000815716912 [label=Context114]
+	3000815717056 [label="I have an \"index.coffee\" page with animal \"cicada\" that contains \"hey='for {{page.animal}}'\""]
+	3000815716912 -> 3000815717056
+	3000815717056 [label="I have an \"index.coffee\" page with animal \"cicada\" that contains \"hey='for {{page.animal}}'\""]
+	3000815717152 [label="I have a configuration file with \"plugins\" set to \"[jekyll-coffeescript]\""]
+	3000815716912 -> 3000815717152
+	3000815717152 [label="I have a configuration file with \"plugins\" set to \"[jekyll-coffeescript]\""]
+}

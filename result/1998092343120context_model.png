@@ -1,0 +1,13 @@
+// 1998090661568 Context Model
+digraph {
+	1998092343120 [label=Context10]
+	1998092341728 [label="a provider \"Jimbo\""]
+	1998092343120 -> 1998092341728
+	1998092341728 [label="a provider \"Jimbo\""]
+	1998092352528 [label="a logged in admin user"]
+	1998092343120 -> 1998092352528
+	1998092352528 [label="a logged in admin user"]
+	1998092344320 [label="I am on the admin dashboard"]
+	1998092343120 -> 1998092344320
+	1998092344320 [label="I am on the admin dashboard"]
+}

@@ -1,0 +1,16 @@
+// 1911304399712 Context Model
+digraph {
+	1911304397024 [label=Context1]
+	1911304399040 [label="an uploader class that uses the 'file' storage"]
+	1911304397024 -> 1911304399040
+	1911304399040 [label="an uploader class that uses the 'file' storage"]
+	1911304394336 [label="an activerecord class that uses the 'users' table"]
+	1911304397024 -> 1911304394336
+	1911304394336 [label="an activerecord class that uses the 'users' table"]
+	1911304403120 [label="the uploader class is mounted on the 'avatar' column"]
+	1911304397024 -> 1911304403120
+	1911304403120 [label="the uploader class is mounted on the 'avatar' column"]
+	1911304403840 [label="an instance of the activerecord class"]
+	1911304397024 -> 1911304403840
+	1911304403840 [label="an instance of the activerecord class"]
+}

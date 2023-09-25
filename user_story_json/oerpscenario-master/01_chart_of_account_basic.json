@@ -1,0 +1,50 @@
+{
+    "feature_name": "GENERIC CHART OF ACCOUNT CREATION AND PROPERTIES SETTINGS",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I need a \"account.account\" with oid: scen.acc_grni",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.account\" with oid: scen.acc_gdni",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.account\" with oid: scen.acc_cogs",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.account\" with oid: scen.acc_pricediff",
+                        "having:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I set global property named \"property_stock_account_input\" for model \"product.template\" and field \"property_stock_account_input\"",
+                        "the property is related to model \"account.account\" using column \"code\" and value \"405\""
+                    ],
+                    [
+                        "I set global property named \"property_stock_account_output\" for model \"product.template\" and field \"property_stock_account_output\"",
+                        "the property is related to model \"account.account\" using column \"code\" and value \"415\""
+                    ],
+                    [
+                        "I set global property named \"property_account_expense\" for model \"product.template\" and field \"property_account_expense\"",
+                        "the property is related to model \"account.account\" using column \"code\" and value \"690\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            }
+        ]
+    }
+}

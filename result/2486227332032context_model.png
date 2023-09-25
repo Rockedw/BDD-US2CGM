@@ -1,0 +1,10 @@
+// 2486227331552 Context Model
+digraph {
+	2486227332032 [label=Context4]
+	2486227328144 [label="an invite exists for \"joe@fourbeansoup.com\""]
+	2486227332032 -> 2486227328144
+	2486227328144 [label="an invite exists for \"joe@fourbeansoup.com\""]
+	2486227335104 [label="a user exists with an email of \"joe@sixpack.com\""]
+	2486227332032 -> 2486227335104
+	2486227335104 [label="a user exists with an email of \"joe@sixpack.com\""]
+}

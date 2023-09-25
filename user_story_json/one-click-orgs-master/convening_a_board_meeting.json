@@ -1,0 +1,36 @@
+{
+    "feature_name": "Convening a board meeting",
+    "user_story": {
+        "as_a": "director",
+        "i_want": "convene a meeting of the board of directors",
+        "so_that": "discuss matters with the rest of the board of directors",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a co-op",
+                        "I am a Director of the co-op"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Board page",
+                        "I press \"Convene a meeting of the Board\"",
+                        "I choose a date for the meeting",
+                        "I enter a start time for the meeting",
+                        "I enter a venue for the meeting",
+                        "I enter the business to be transacted during the meeting",
+                        "I press \"Convene the Board Meeting\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Board page",
+                        "I should see the meeting details I chose in the list of Upcoming Board Meetings",
+                        "all the Directors should receive a notification of the board meeting"
+                    ]
+                ]
+            }
+        ]
+    }
+}

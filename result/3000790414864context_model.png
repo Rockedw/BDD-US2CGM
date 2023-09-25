@@ -1,0 +1,13 @@
+// 3000790414528 Context Model
+digraph {
+	3000790414864 [label=Context28]
+	3000790415008 [label="I am signed in"]
+	3000790414864 -> 3000790415008
+	3000790415008 [label="I am signed in"]
+	3000790415104 [label="I click on my name in the header"]
+	3000790414864 -> 3000790415104
+	3000790415104 [label="I click on my name in the header"]
+	3000790415200 [label="I follow \"Log out\""]
+	3000790414864 -> 3000790415200
+	3000790415200 [label="I follow \"Log out\""]
+}

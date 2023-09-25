@@ -1,0 +1,37 @@
+{
+    "feature_name": "Provider manage",
+    "user_story": {
+        "as_a": "Provider",
+        "i_want": "be able manage my account",
+        "so_that": "I can make sure my profile is accurate and up-to-date",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Kooky\" belonging to \"paul@dopo.com\"",
+                        "I am on the homepage"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I log in as \"paul@dopo.com\" with password \"testtest\"",
+                        "I follow \"navigation.company\" translation",
+                        "I follow \"company_profile.edit\" translation"
+                    ],
+                    [
+                        "I fill in \"provider.street_address\" translation with \"Market Street\"",
+                        "I press \"forms.save\" translation"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"company_profile.edit_headline\" translation"
+                    ],
+                    [
+                        "I should see \"company_profile.updated_successfully\" translation"
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,116 @@
+{
+    "feature_name": "Admin endorsements",
+    "user_story": {
+        "as_a": "developer and EY admin",
+        "i_want": "",
+        "so_that": "examine all submitted endorsements independent of providers",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Tim Stafford\" with an approved endorsement from \"Steve Martin\"",
+                        "a provider \"Chris Thile\" with a rejected endorsement from \"Jimmy Martin\"",
+                        "a logged in admin user",
+                        "I am on the admin dashboard"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Endorsements\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Steve Martin\""
+                    ],
+                    [
+                        "I should see \"Jimmy Martin\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Tim Stafford\" with an approved endorsement from \"Steve Martin\"",
+                        "a provider \"Chris Thile\" with a rejected endorsement from \"Jimmy Martin\"",
+                        "a logged in admin user",
+                        "I am on the admin dashboard",
+                        "I follow \"Endorsements\"",
+                        "I follow \"Steve Martin\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"Steve Martin\"",
+                        "I should see \"Tim Stafford\"",
+                        "I should not see \"Chris Thile\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Tim Stafford\" with a rejected endorsement from \"Steve Martin\"",
+                        "a logged in admin user"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the admin dashboard",
+                        "I follow \"Endorsements\"",
+                        "I follow \"Steve Martin\"",
+                        "I press \"endorsement.admin.delete\" translation"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Endorsement deleted successfully\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Tim Stafford\" with an approved endorsement from \"Steve Martin\"",
+                        "a provider \"Chris Thile\" with an approved endorsement from \"Jimmy Martin\"",
+                        "a logged in admin user"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the admin dashboard",
+                        "I follow \"navigation.endorsements\" translation"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"endorsement.states.approved\" translation",
+                        "I should see \"endorsement.states.approved\" translation",
+                        "I should not see \"endorsement.states.rejected\" translation"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Tim Stafford\" with a new endorsement from \"Steve Martin\"",
+                        "a provider \"Chris Thile\" with a new endorsement from \"Jimmy Martin\"",
+                        "a logged in admin user"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the admin dashboard",
+                        "I follow \"navigation.endorsements\" translation"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"endorsement.states.new\" translation"
+                    ]
+                ]
+            }
+        ]
+    }
+}

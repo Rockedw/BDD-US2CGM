@@ -1,0 +1,44 @@
+{
+    "feature_name": "Show List of students enrolled in my cal_course",
+    "user_story": {
+        "as_a": "cal faculty",
+        "i_want": "see all students assigned to my course",
+        "so_that": "I can see the contact information of those students",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am on the login page",
+                        "I fill in \"Email\" with \"calfaculty@berk.edu\"",
+                        "I fill in \"Password\" with \"1234\"",
+                        "I press \"Login\"",
+                        "I follow \"Fall 2012\"",
+                        "I follow \"My Students\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the login page",
+                        "I fill in \"Email\" with \"calfaculty@berk.edu\"",
+                        "I fill in \"Password\" with \"1234\"",
+                        "I press \"Login\"",
+                        "I follow \"Fall 2012\"",
+                        "I follow \"My Students\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"stud1\"",
+                        "I should not see \"stud2\"",
+                        "I should see \"stud3\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

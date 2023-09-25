@@ -1,0 +1,66 @@
+{
+    "feature_name": "Proper content negotiation",
+    "user_story": {
+        "as_a": "",
+        "i_want": "access the admin section with multiple content formats",
+        "so_that": "have a more rich and flexible editing and browsing experience",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"admin\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I send an \"Accept\" header of \"image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/x-ms-application, application/vnd.ms-xpsdocument, application/xaml+xml, application/x-ms-xbap, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*\"",
+                        "I go to the \"pages\" admin page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"Missing template\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"admin\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I send an \"Accept\" header of \"image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/x-ms-application, application/vnd.ms-xpsdocument, application/xaml+xml, application/x-ms-xbap, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*\"",
+                        "I go to the \"pages\" admin page as xml"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see an xml document"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"admin\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I send an \"Accept\" header of \"text/javascript, text/html, application/xml, text/xml, */*\"",
+                        "I send an \"X-Requested-With\" header of \"XMLHttpRequest\"",
+                        "I request the children of page \"home\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"Radiant CMS\"",
+                        "I should see \"<tr>\" tags in the page source"
+                    ]
+                ]
+            }
+        ]
+    }
+}

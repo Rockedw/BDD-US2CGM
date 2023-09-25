@@ -1,0 +1,13 @@
+// 2084499428528 Context Model
+digraph {
+	2084499434624 [label=Context2]
+	2084499424016 [label="I need a \"res.users\" with oid: scen.fr_main_user"]
+	2084499434624 -> 2084499424016
+	2084499424016 [label="I need a \"res.users\" with oid: scen.fr_main_user"]
+	2084499433664 [label="having:"]
+	2084499434624 -> 2084499433664
+	2084499433664 [label="having:"]
+	2084499425552 [label="we assign to user the groups bellow:"]
+	2084499434624 -> 2084499425552
+	2084499425552 [label="we assign to user the groups bellow:"]
+}

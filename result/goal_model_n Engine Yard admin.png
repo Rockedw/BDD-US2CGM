@@ -1,0 +1,53 @@
+// Goal Model
+digraph {
+	1847134381984 [label="n Engine Yard admin
+goal"]
+	1847134167984 [label="see statistics on generated content in my dashboard
+goal
+140728069287616"]
+	1847134381984 -> 1847134167984
+	1847134167984 [label="see statistics on generated content in my dashboard
+goal"]
+	1847134018416 [label="Admin dashboard
+goal
+1847134014960"]
+	1847134167984 -> 1847134018416
+	1847134018416 [label="Admin dashboard
+goal"]
+	1847134020912 [label="I am on the admin dashboard
+task
+140728069287616"]
+	1847134018416 -> 1847134020912
+	1847134020912 [label="I am on the admin dashboard
+task"]
+	1847134021152 [label="Change password
+goal
+1847134020288"]
+	1847134167984 -> 1847134021152
+	1847134021152 [label="Change password
+goal"]
+	1847134026624 [label="I am on the admin dashboard
+task
+140728069287616"]
+	1847134021152 -> 1847134026624
+	1847134026624 [label="I am on the admin dashboard
+task"]
+	1847134017648 [label="I follow \"admin.change_password\" translation
+task
+140728069287616"]
+	1847134021152 -> 1847134017648
+	1847134017648 [label="I follow \"admin.change_password\" translation
+task"]
+	1847134022976 [label="I fill in \"user_password\" with \"kablamo\"
+task
+140728069287616"]
+	1847134021152 -> 1847134022976
+	1847134022976 [label="I fill in \"user_password\" with \"kablamo\"
+task"]
+	1847134027056 [label="I press \"Save\"
+task
+140728069287616"]
+	1847134021152 -> 1847134027056
+	1847134027056 [label="I press \"Save\"
+task"]
+}

@@ -1,0 +1,25 @@
+// 1982219520704 Context Model
+digraph {
+	1982219518784 [label=Context15]
+	1982219525408 [label="there are 2 existing individuals like \"thing\""]
+	1982219518784 -> 1982219525408
+	1982219525408 [label="there are 2 existing individuals like \"thing\""]
+	1982219530592 [label="there is an existing connection \"thing0\" \"contains\" \"thing1\""]
+	1982219518784 -> 1982219530592
+	1982219530592 [label="there is an existing connection \"thing0\" \"contains\" \"thing1\""]
+	1982219523776 [label="I am on the new connections page"]
+	1982219518784 -> 1982219523776
+	1982219523776 [label="I am on the new connections page"]
+	1982219520320 [label="I select \"thing0 : thing item number 0\" from \"Subject\""]
+	1982219518784 -> 1982219520320
+	1982219520320 [label="I select \"thing0 : thing item number 0\" from \"Subject\""]
+	1982219524160 [label="I select \"parent_of : Parent Of (basic relationship)\" from \"Relates to\""]
+	1982219518784 -> 1982219524160
+	1982219524160 [label="I select \"parent_of : Parent Of (basic relationship)\" from \"Relates to\""]
+	1982219522864 [label="I choose \"Item\""]
+	1982219518784 -> 1982219522864
+	1982219522864 [label="I choose \"Item\""]
+	1982219528960 [label="I select \"thing1 : thing item number 1\" from \"Object\""]
+	1982219518784 -> 1982219528960
+	1982219528960 [label="I select \"thing1 : thing item number 1\" from \"Object\""]
+}

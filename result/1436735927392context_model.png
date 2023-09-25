@@ -1,0 +1,13 @@
+// 1436735927680 Context Model
+digraph {
+	1436735927392 [label=Context73]
+	1436735928400 [label="I replace the contents with \"def f\""]
+	1436735927392 -> 1436735928400
+	1436735928400 [label="I replace the contents with \"def f\""]
+	1436735919232 [label="I move the cursor to (0,5)"]
+	1436735927392 -> 1436735919232
+	1436735919232 [label="I move the cursor to (0,5)"]
+	1436735929648 [label="I type \"\n\""]
+	1436735927392 -> 1436735929648
+	1436735929648 [label="I type \"\n\""]
+}

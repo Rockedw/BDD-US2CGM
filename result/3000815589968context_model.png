@@ -1,0 +1,13 @@
+// 3000815597168 Context Model
+digraph {
+	3000815589968 [label=Context4]
+	3000815593760 [label="the application is set up"]
+	3000815589968 -> 3000815593760
+	3000815593760 [label="the application is set up"]
+	3000815599184 [label="I have created an association"]
+	3000815589968 -> 3000815599184
+	3000815599184 [label="I have created an association"]
+	3000815597360 [label="there are enough members to start the founding vote"]
+	3000815589968 -> 3000815597360
+	3000815597360 [label="there are enough members to start the founding vote"]
+}

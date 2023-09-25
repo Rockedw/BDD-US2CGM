@@ -1,0 +1,13 @@
+// 3000815765824 Context Model
+digraph {
+	3000815766688 [label=Context143]
+	3000815766832 [label="I have a _posts directory"]
+	3000815766688 -> 3000815766832
+	3000815766832 [label="I have a _posts directory"]
+	3000815766928 [label="I have an \"index.html\" page that contains \"{% for post in site.categories.code %} {{ post.title }} {% endfor %}\""]
+	3000815766688 -> 3000815766928
+	3000815766928 [label="I have an \"index.html\" page that contains \"{% for post in site.categories.code %} {{ post.title }} {% endfor %}\""]
+	3000815767024 [label="I have the following posts:"]
+	3000815766688 -> 3000815767024
+	3000815767024 [label="I have the following posts:"]
+}

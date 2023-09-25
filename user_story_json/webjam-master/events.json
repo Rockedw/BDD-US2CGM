@@ -1,0 +1,79 @@
+{
+    "feature_name": "Event related things",
+    "user_story": {
+        "as_a": "",
+        "i_want": "visit the events pages",
+        "so_that": "see all the cool stuff",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am not logged in",
+                        "there is a past event"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I view the mobile past events page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I see the page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am not logged in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I view the event page for a past event"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I see the page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am not logged in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I view the event page for an upcoming event"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I see the page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am not logged in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I view the event page for an unpublished event"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I receive a 404 not found"
+                    ]
+                ]
+            }
+        ]
+    }
+}

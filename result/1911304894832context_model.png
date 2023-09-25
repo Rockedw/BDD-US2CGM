@@ -1,0 +1,22 @@
+// 1911304882400 Context Model
+digraph {
+	1911304894832 [label=Context5]
+	1911305353248 [label="I am on the login page"]
+	1911304894832 -> 1911305353248
+	1911305353248 [label="I am on the login page"]
+	1911305354112 [label="I follow \"Create account\" within \".navbar\""]
+	1911304894832 -> 1911305354112
+	1911305354112 [label="I follow \"Create account\" within \".navbar\""]
+	1911305353392 [label="I fill in the new user form"]
+	1911304894832 -> 1911305353392
+	1911305353392 [label="I fill in the new user form"]
+	1911305348400 [label="I submit the form"]
+	1911304894832 -> 1911305348400
+	1911305348400 [label="I submit the form"]
+	1911305346624 [label="I should be on the getting started page"]
+	1911304894832 -> 1911305346624
+	1911305346624 [label="I should be on the getting started page"]
+	1911305353008 [label="I should see the 'getting started' contents"]
+	1911304894832 -> 1911305353008
+	1911305353008 [label="I should see the 'getting started' contents"]
+}

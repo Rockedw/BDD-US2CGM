@@ -1,0 +1,76 @@
+{
+    "feature_name": "Evaluating expressions",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "see the evaluated variable in the watch window",
+        "so_that": "evaluate variables in Vdebug",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have a file example.php containing",
+                        "I start the debugger with the PHP script example.php"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I evaluate \"$var1\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the watch window should show Eval of: '$var1'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a file example.php containing",
+                        "I start the debugger with the PHP script example.php"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I evaluate \"$var1\" with VdebugEval!"
+                    ],
+                    [
+                        "I step over"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the watch window should show Eval of: '$var1'"
+                    ],
+                    [
+                        "the watch window should show Eval of: '$var1'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a file example.php containing",
+                        "I start the debugger with the PHP script example.php"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I evaluate \"$var1\" with VdebugEval!"
+                    ],
+                    [
+                        "I run VdebugEval without any arguments"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the watch window should show Eval of: '$var1'"
+                    ],
+                    [
+                        "the watch window should show Locals"
+                    ]
+                ]
+            }
+        ]
+    }
+}

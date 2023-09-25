@@ -1,0 +1,16 @@
+// 3000815166336 Context Model
+digraph {
+	3000815166912 [label=Context31]
+	3000815167056 [label="I expand the publisher"]
+	3000815166912 -> 3000815167056
+	3000815167056 [label="I expand the publisher"]
+	3000815167152 [label="I mention Alice in the publisher"]
+	3000815166912 -> 3000815167152
+	3000815167152 [label="I mention Alice in the publisher"]
+	3000815167248 [label="I preview the post"]
+	3000815166912 -> 3000815167248
+	3000815167248 [label="I preview the post"]
+	3000815167344 [label="I follow \"Alice Smith\""]
+	3000815166912 -> 3000815167344
+	3000815167344 [label="I follow \"Alice Smith\""]
+}

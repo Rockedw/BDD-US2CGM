@@ -1,0 +1,165 @@
+{
+    "feature_name": "Keyboard navigation",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "be able to navigate the stream by keyboard",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I expand the publisher"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press the \"J\" key somewhere"
+                    ],
+                    [
+                        "I press the \"J\" key somewhere"
+                    ],
+                    [
+                        "I press the \"J\" key in the publisher"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "post 1 should be highlighted",
+                        "I should have navigated to the highlighted post"
+                    ],
+                    [
+                        "post 2 should be highlighted",
+                        "I should have navigated to the highlighted post"
+                    ],
+                    [
+                        "post 2 should be highlighted",
+                        "I close the publisher"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the activity stream page",
+                        "I click on selector \"[data-stream='stream'] a\""
+                    ],
+                    [
+                        "I press the \"J\" key somewhere"
+                    ],
+                    [
+                        "I press the \"J\" key somewhere"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Stream\" within \"#stream-selection .selected\""
+                    ],
+                    [
+                        "post 1 should be highlighted",
+                        "I should have navigated to the highlighted post"
+                    ],
+                    [
+                        "post 2 should be highlighted",
+                        "I should have navigated to the highlighted post"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I press the \"J\" key somewhere",
+                        "I press the \"J\" key somewhere",
+                        "I press the \"J\" key somewhere"
+                    ],
+                    [
+                        "I press the \"K\" key somewhere"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "post 3 should be highlighted"
+                    ],
+                    [
+                        "post 2 should be highlighted",
+                        "I should have navigated to the highlighted post"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the first comment field should be closed"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press the \"J\" key somewhere",
+                        "I press the \"C\" key somewhere"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the first comment field should be open"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on \"alice@alice.alice\"'s page",
+                        "I press the \"J\" key somewhere"
+                    ],
+                    [
+                        "I press the \"J\" key somewhere"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "post 1 should be highlighted",
+                        "I should have navigated to the highlighted post"
+                    ],
+                    [
+                        "post 2 should be highlighted",
+                        "I should have navigated to the highlighted post"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I expand the publisher"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I resize my window to 800x600",
+                        "I press the \"J\" key somewhere"
+                    ],
+                    [
+                        "I press the \"J\" key somewhere"
+                    ],
+                    [
+                        "I press the \"J\" key in the publisher"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "post 1 should be highlighted",
+                        "I should have navigated to the highlighted post"
+                    ],
+                    [
+                        "post 2 should be highlighted",
+                        "I should have navigated to the highlighted post"
+                    ],
+                    [
+                        "post 2 should be highlighted",
+                        "I close the publisher"
+                    ]
+                ]
+            }
+        ]
+    }
+}

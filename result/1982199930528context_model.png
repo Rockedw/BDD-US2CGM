@@ -1,0 +1,10 @@
+// 1982199933024 Context Model
+digraph {
+	1982199930528 [label=Context1]
+	1982199937824 [label="that following user exists:"]
+	1982199930528 -> 1982199937824
+	1982199937824 [label="that following user exists:"]
+	1982199926928 [label="I sign in as \"bob@bob.bob\""]
+	1982199930528 -> 1982199926928
+	1982199926928 [label="I sign in as \"bob@bob.bob\""]
+}

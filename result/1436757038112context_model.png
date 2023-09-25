@@ -1,0 +1,16 @@
+// 1436739841344 Context Model
+digraph {
+	1436757038112 [label=Context7]
+	1436757035904 [label="I have a _data directory"]
+	1436757038112 -> 1436757035904
+	1436757035904 [label="I have a _data directory"]
+	1436757035136 [label="I have a _data/categories directory"]
+	1436757038112 -> 1436757035136
+	1436757035136 [label="I have a _data/categories directory"]
+	1436757044208 [label="I have a \"_data/categories/dairy.yaml\" file with content:"]
+	1436757038112 -> 1436757044208
+	1436757044208 [label="I have a \"_data/categories/dairy.yaml\" file with content:"]
+	1436757043440 [label="I have an \"index.html\" page that contains \"{{ site.data.categories.dairy.name }}\""]
+	1436757038112 -> 1436757043440
+	1436757043440 [label="I have an \"index.html\" page that contains \"{{ site.data.categories.dairy.name }}\""]
+}

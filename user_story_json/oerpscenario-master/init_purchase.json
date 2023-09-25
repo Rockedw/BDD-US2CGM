@@ -1,0 +1,29 @@
+{
+    "feature_name": "Initialize the settings for purchase module",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I update the module list"
+                    ],
+                    [
+                        "I install the required modules with dependencies:"
+                    ],
+                    [
+                        "I give all groups right access to admin user"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "my modules should have been installed and models reloaded"
+                    ]
+                ]
+            }
+        ]
+    }
+}

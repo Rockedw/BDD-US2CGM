@@ -1,0 +1,47 @@
+{
+    "feature_name": "Initialize the settings for sale module",
+    "user_story": {
+        "as_a": "",
+        "i_want": "set some parameters and settings",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I update the module list"
+                    ],
+                    [
+                        "I install the required modules with dependencies:"
+                    ],
+                    [
+                        "I give all groups right access to admin user"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "my modules should have been installed and models reloaded"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a cash journal in EUR exists",
+                        "a cash journal in GBP exists",
+                        "a cash journal in USD exists",
+                        "a cash journal in CHF exists"
+                    ],
+                    [
+                        "a valid sale pricelist in EUR exists",
+                        "a valid sale pricelist in USD exists",
+                        "a valid sale pricelist in GBP exists",
+                        "a valid sale pricelist in CHF exists"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            }
+        ]
+    }
+}

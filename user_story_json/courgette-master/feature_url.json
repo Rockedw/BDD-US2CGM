@@ -1,0 +1,27 @@
+{
+    "feature_name": "feature url",
+    "user_story": {
+        "as_a": "developper",
+        "i_want": "send them directly url such as /features/my_great_feature",
+        "so_that": "my customers to save time when browsing cuke features in Courgette",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I enter the address of the features page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"direct link to send by email\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the source code of the first feature of my application"
+                    ]
+                ]
+            }
+        ]
+    }
+}

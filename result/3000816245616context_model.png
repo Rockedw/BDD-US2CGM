@@ -1,0 +1,10 @@
+// 3000816246192 Context Model
+digraph {
+	3000816245616 [label=Context165]
+	3000816245184 [label="I need a \"ir.rule\" with name: \"res_partner: read access on my partner\""]
+	3000816245616 -> 3000816245184
+	3000816245184 [label="I need a \"ir.rule\" with name: \"res_partner: read access on my partner\""]
+	3000816245280 [label="having:"]
+	3000816245616 -> 3000816245280
+	3000816245280 [label="having:"]
+}

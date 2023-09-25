@@ -1,0 +1,78 @@
+{
+    "feature_name": "Show failed proposal notification",
+    "user_story": {
+        "as_a": "founder",
+        "i_want": "know when a founding vote fails",
+        "so_that": "know respond to it",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "the application is set up",
+                        "an association has been created",
+                        "there are enough members to start the founding vote",
+                        "the founding vote has been started",
+                        "I am a founding member",
+                        "the subdomain is the organisation's subdomain",
+                        "everyone has voted against the founding",
+                        "the proposal closer runs",
+                        "I have logged in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "another founding vote has been started",
+                        "everyone has voted against the founding",
+                        "the proposal closer runs",
+                        "I go to the home page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Sorry, the Founding Vote has failed.\""
+                    ],
+                    [
+                        "I should see \"Sorry, the Founding Vote has failed.\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the application is set up",
+                        "an association has been created",
+                        "there are enough members to start the founding vote",
+                        "the founding vote has been started",
+                        "I am a founding member",
+                        "the subdomain is the organisation's subdomain",
+                        "everyone has voted against the founding",
+                        "the proposal closer runs",
+                        "I have logged in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "another founding vote has been started",
+                        "everyone has voted against the founding",
+                        "the proposal closer runs",
+                        "I go to the home page"
+                    ],
+                    [
+                        "I go to the members page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Sorry, the Founding Vote has failed.\""
+                    ],
+                    [
+                        "I should see \"Sorry, the Founding Vote has failed.\""
+                    ],
+                    [
+                        "I should not see \"Sorry, the Founding Vote has failed.\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,99 @@
+{
+    "feature_name": "Viewing the home page",
+    "user_story": {
+        "as_a": "",
+        "i_want": "visit the home page",
+        "so_that": "see all the cool stuff",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am not logged in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I view the home page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I see the page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am not logged in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I view the home page from an iphone"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I am redirected to the mobile page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am not logged in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I view the home page from an iphone specifying redirect-to-mobile=no"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I am not redirected to the mobile page",
+                        "I see the page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am not logged in",
+                        "there is an upcoming event",
+                        "there is a past event",
+                        "there is a post"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I view the mobile version of the home page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I see the page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am not logged in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I view the mobile version of the home page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I see the page"
+                    ]
+                ]
+            }
+        ]
+    }
+}

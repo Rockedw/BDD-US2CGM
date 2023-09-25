@@ -1,0 +1,13 @@
+// 1847135479136 Context Model
+digraph {
+	1847135479808 [label=Context23]
+	1847135480048 [label="there is 1 existing individual like \"apollo\""]
+	1847135479808 -> 1847135480048
+	1847135480048 [label="there is 1 existing individual like \"apollo\""]
+	1847135480144 [label="there is 1 existing individual like \"adama\""]
+	1847135479808 -> 1847135480144
+	1847135480144 [label="there is 1 existing individual like \"adama\""]
+	1847135480240 [label="there is an existing connection \"apollo0\" \"child_of\" \"adama0\""]
+	1847135479808 -> 1847135480240
+	1847135480240 [label="there is an existing connection \"apollo0\" \"child_of\" \"adama0\""]
+}

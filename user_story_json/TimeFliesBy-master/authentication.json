@@ -1,0 +1,107 @@
+{
+    "feature_name": "Authentication",
+    "user_story": {
+        "as_a": "software as a service provider",
+        "i_want": "identify each user",
+        "so_that": "> prevent people from seeing each others data",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am on the home page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Tasks\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"You need to sign in or register before continuing.\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the home page",
+                        "I follow \"Register\"",
+                        "I fill in \"user_email\" with \"test@timefliesby.com\"",
+                        "I fill in \"user_password\" with \"secret\"",
+                        "I fill in \"user_password_confirmation\" with \"secret\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Register\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the home page",
+                        "I should see \"Welcome! You have registered successfully.\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I registered as a new user"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Confirm my account\" in the \"Confirmation instructions\" email"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the home page",
+                        "I should see \"Your account was successfully confirmed. You are now signed in.\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am a registered user",
+                        "I am on the home page",
+                        "I follow \"Sign in\"",
+                        "I fill in \"user_email\" with \"test@timefliesby.com\"",
+                        "I fill in \"user_password\" with \"secret\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Sign in\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Signed in successfully.\"",
+                        "I should see \"Sign out\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am signed in as a new user"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Sign out\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the home page",
+                        "I should see \"Signed out successfully.\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

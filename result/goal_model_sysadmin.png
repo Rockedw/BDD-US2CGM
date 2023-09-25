@@ -1,0 +1,41 @@
+// Goal Model
+digraph {
+	1847134021728 [label="sysadmin
+goal"]
+	1847134162224 [label="set an individual Coop to use a non-default Rules document
+goal
+140728069287616"]
+	1847134021728 -> 1847134162224
+	1847134162224 [label="set an individual Coop to use a non-default Rules document
+goal"]
+	1847134159392 [label="A Coop is set to use an alternative Rules document
+goal
+1847134011344"]
+	1847134162224 -> 1847134159392
+	1847134159392 [label="A Coop is set to use an alternative Rules document
+goal"]
+	1847134003616 [label="the Coop is set to use the alternative model Rules document
+task
+140728069287616"]
+	1847134159392 -> 1847134003616
+	1847134003616 [label="the Coop is set to use the alternative model Rules document
+task"]
+	1847134005008 [label="I go to the Rules page
+task
+140728069287616"]
+	1847134159392 -> 1847134005008
+	1847134005008 [label="I go to the Rules page
+task"]
+	1847134008368 [label="Coops using the default Rules aren't affected by other Coops using alternative Rules
+goal
+1847134008176"]
+	1847134162224 -> 1847134008368
+	1847134008368 [label="Coops using the default Rules aren't affected by other Coops using alternative Rules
+goal"]
+	1847134009472 [label="I go to the Rules page
+task
+140728069287616"]
+	1847134008368 -> 1847134009472
+	1847134009472 [label="I go to the Rules page
+task"]
+}

@@ -1,0 +1,50 @@
+{
+    "feature_name": "Mentor teacher scheduling",
+    "user_story": {
+        "as_a": "mentor teacher",
+        "i_want": "enter the times and classes that I teach, along with how many students  work with me.",
+        "so_that": "I can be matched with students who can help teach my classes.",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to /mentor_teacher/schedule/new",
+                        "I add the following timeslots on Monday:",
+                        "I add the following timeslots on Tuesday:",
+                        "I press \"Save Schedule\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be at url /mentor_teacher/schedule",
+                        "my schedule should look like:"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to /mentor_teacher/schedule/new?semester_id=1",
+                        "I create the following event on the calendar on Monday:"
+                    ],
+                    [
+                        "I select \"Algebra\" from \"class_name\"",
+                        "I select \"12 PM\" from \"timeslot_end_time_4i\"",
+                        "I save the event"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"timeslot[start_time(4i)]\" field should contain \"10\"",
+                        "the \"timeslot[end_time(4i)]\" field should contain \"11\""
+                    ],
+                    [
+                        "I should see \"Algebra\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

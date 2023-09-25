@@ -1,0 +1,131 @@
+// Goal Model
+digraph {
+	1847132858512 [label="n user (logged in or not)
+goal"]
+	1847135492496 [label="
+goal
+1847135497776"]
+	1847132858512 -> 1847135492496
+	1847135492496 [label="
+goal"]
+	1847135493168 [label="Logged in user vists projects landing page
+goal
+1847135497200"]
+	1847135492496 -> 1847135493168
+	1847135493168 [label="Logged in user vists projects landing page
+goal"]
+	1847135487312 [label="Anonymous user vists projects landing page
+goal
+140728069287616"]
+	1847135492496 -> 1847135487312
+	1847135487312 [label="Anonymous user vists projects landing page
+goal"]
+	1847135501520 [label="
+goal
+1847135502096"]
+	1847132858512 -> 1847135501520
+	1847135501520 [label="
+goal"]
+	1847135495472 [label="User changes category
+goal
+140728069287616"]
+	1847135501520 -> 1847135495472
+	1847135495472 [label="User changes category
+goal"]
+	1847135488560 [label="I visit the route /foo-bar
+task
+140728069287616"]
+	1847135495472 -> 1847135488560
+	1847135488560 [label="I visit the route /foo-bar
+task"]
+	1847135498640 [label="I click category
+goal
+140728069287616"]
+	1847135495472 -> 1847135498640
+	1847135498640 [label="I click category
+goal"]
+	1847135497680 [label="I click category \"Cat B\"
+task
+140728069287616"]
+	1847135498640 -> 1847135497680
+	1847135497680 [label="I click category \"Cat B\"
+task"]
+	1847135493936 [label="I click category \"Cat B1\"
+task
+140728069287616"]
+	1847135498640 -> 1847135493936
+	1847135493936 [label="I click category \"Cat B1\"
+task"]
+	1847135496192 [label="user see something
+goal
+140728069287616"]
+	1847135501520 -> 1847135496192
+	1847135496192 [label="user see something
+goal"]
+	1847135489952 [label="User sees materials bin
+goal
+140728069287616"]
+	1847135496192 -> 1847135489952
+	1847135489952 [label="User sees materials bin
+goal"]
+	1847138474048 [label="author see material
+goal
+140728069287616"]
+	1847135496192 -> 1847138474048
+	1847138474048 [label="author see material
+goal"]
+	1847135501136 [label="Author can see his own materials
+goal
+1847135499792"]
+	1847138474048 -> 1847135501136
+	1847135501136 [label="Author can see his own materials
+goal"]
+	1847135498832 [label="I visit the route /foo-bar
+task
+140728069287616"]
+	1847135501136 -> 1847135498832
+	1847135498832 [label="I visit the route /foo-bar
+task"]
+	1847135490720 [label="I click category \"Cat C\"
+task
+140728069287616"]
+	1847135501136 -> 1847135490720
+	1847135490720 [label="I click category \"Cat C\"
+task"]
+	1847135499024 [label="User can see materials grouped by authors
+goal
+1847135490432"]
+	1847138474048 -> 1847135499024
+	1847135499024 [label="User can see materials grouped by authors
+goal"]
+	1847135499888 [label="I visit the route /foo-bar
+task
+140728069287616"]
+	1847135499024 -> 1847135499888
+	1847135499888 [label="I visit the route /foo-bar
+task"]
+	1847138484128 [label="I click something
+goal
+140728069287616"]
+	1847135499024 -> 1847138484128
+	1847138484128 [label="I click something
+goal"]
+	1847135501376 [label="I click category \"Cat D\"
+task
+140728069287616"]
+	1847138484128 -> 1847135501376
+	1847135501376 [label="I click category \"Cat D\"
+task"]
+	1847135491104 [label="I click \"foobar\" author name
+task
+140728069287616"]
+	1847138484128 -> 1847135491104
+	1847135491104 [label="I click \"foobar\" author name
+task"]
+	1847135487360 [label="Logged in user can see special categories
+goal
+1847135488320"]
+	1847135501520 -> 1847135487360
+	1847135487360 [label="Logged in user can see special categories
+goal"]
+}

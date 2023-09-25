@@ -1,0 +1,30 @@
+{
+    "feature_name": "Todays Patients",
+    "user_story": {
+        "as_a": "chits user",
+        "i_want": "be able to manage track taday's patients",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"user\" with password \"user\"",
+                        "I click \"TODAY'S PATIENTS\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I click \"CLICK TO VIEW RECORD\"",
+                        "I check \"ptgroup[]\"",
+                        "I press \"Save Details\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"delete\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

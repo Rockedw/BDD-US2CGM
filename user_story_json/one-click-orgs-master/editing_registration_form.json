@@ -1,0 +1,31 @@
+{
+    "feature_name": "Editing registration form",
+    "user_story": {
+        "as_a": "founder member",
+        "i_want": "edit the registration form",
+        "so_that": "prepare our co-op for registration",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a draft co-op",
+                        "I am the founder of the draft co-op",
+                        "there are at least three founder members"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to edit the registration form",
+                        "I choose three signatories",
+                        "I save the registration form"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the three signatories I chose"
+                    ]
+                ]
+            }
+        ]
+    }
+}

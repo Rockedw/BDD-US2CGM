@@ -1,0 +1,10 @@
+// 3000816121120 Context Model
+digraph {
+	3000816122080 [label=Context126]
+	3000816122224 [label="I need a \"res.company\" with oid: base.main_company"]
+	3000816122080 -> 3000816122224
+	3000816122224 [label="I need a \"res.company\" with oid: base.main_company"]
+	3000816122320 [label="I set the webkit path to \"/srv/openerp/webkit_library/wkhtmltopdf-amd64\""]
+	3000816122080 -> 3000816122320
+	3000816122320 [label="I set the webkit path to \"/srv/openerp/webkit_library/wkhtmltopdf-amd64\""]
+}

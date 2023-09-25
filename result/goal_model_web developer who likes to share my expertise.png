@@ -1,0 +1,47 @@
+// Goal Model
+digraph {
+	1847134383472 [label="web developer who likes to share my expertise
+goal"]
+	1847134164768 [label="be able to pre-configure my gemified theme
+goal
+140728069287616"]
+	1847134383472 -> 1847134164768
+	1847134164768 [label="be able to pre-configure my gemified theme
+goal"]
+	1847134466544 [label="Easy onboarding with a pre-configured theme
+goal
+1847134462368"]
+	1847134164768 -> 1847134466544
+	1847134466544 [label="Easy onboarding with a pre-configured theme
+goal"]
+	1847134460160 [label="I run jekyll build
+task
+140728069287616"]
+	1847134466544 -> 1847134460160
+	1847134460160 [label="I run jekyll build
+task"]
+	1847134469568 [label="Disabling import of theme configuration entirely
+goal
+1847134459488"]
+	1847134164768 -> 1847134469568
+	1847134469568 [label="Disabling import of theme configuration entirely
+goal"]
+	1847134460544 [label="I run jekyll build
+task
+140728069287616"]
+	1847134469568 -> 1847134460544
+	1847134460544 [label="I run jekyll build
+task"]
+	1847134469184 [label="A pre-configured theme with valid config file overriding Jekyll defaults
+goal
+1847134468416"]
+	1847134164768 -> 1847134469184
+	1847134469184 [label="A pre-configured theme with valid config file overriding Jekyll defaults
+goal"]
+	1847134469232 [label="I run jekyll build
+task
+140728069287616"]
+	1847134469184 -> 1847134469232
+	1847134469232 [label="I run jekyll build
+task"]
+}

@@ -1,0 +1,54 @@
+{
+    "feature_name": "Adding parameters to commands",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "see what todo-items remain in my project",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "the HTML tab should say \"a course of action\"",
+                        "the HTML tab should not say \": a course of action\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "the HTML tab should say \"OPTIMIZE_colon.file\"",
+                        "the HTML tab should say \"FIXME.file\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "the HTML tab should say \"OPTIMIZE_colon.file:1\"",
+                        "the HTML tab should say \"FIXME.file:3\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I click \"FIXME.file\" in the HTML tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "my active tab should be \"FIXME.file\"",
+                        "the contents should be \"#\\n#\\n<c># FIXME note\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

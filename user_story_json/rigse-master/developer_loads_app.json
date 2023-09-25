@@ -1,0 +1,23 @@
+{
+    "feature_name": "A developer loads home page without initializing data in database",
+    "user_story": {
+        "as_a": "Developer",
+        "i_want": "load the app before I've finished the setup",
+        "so_that": "I can see what I need to do next",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am on the home page"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"You need to create a settings object\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

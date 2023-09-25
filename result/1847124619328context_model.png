@@ -1,0 +1,16 @@
+// 1847124618944 Context Model
+digraph {
+	1847124619328 [label=Context5]
+	1847124619520 [label="an uploader class that uses the 'file' storage"]
+	1847124619328 -> 1847124619520
+	1847124619520 [label="an uploader class that uses the 'file' storage"]
+	1847124615488 [label="an instance of that class"]
+	1847124619328 -> 1847124615488
+	1847124615488 [label="an instance of that class"]
+	1847124621776 [label="the class has a method called 'reverse' that reverses the contents of a file"]
+	1847124619328 -> 1847124621776
+	1847124621776 [label="the class has a method called 'reverse' that reverses the contents of a file"]
+	1847124619808 [label="the class will process 'reverse'"]
+	1847124619328 -> 1847124619808
+	1847124619808 [label="the class will process 'reverse'"]
+}

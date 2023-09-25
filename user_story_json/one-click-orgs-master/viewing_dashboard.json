@@ -1,0 +1,62 @@
+{
+    "feature_name": "Viewing dashboard",
+    "user_story": {
+        "as_a": "Member",
+        "i_want": "view a dashboard of recent and upcoming events, and things that require my attention",
+        "so_that": "keep track of current happenings in the co-op",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Dashboard page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see notifications of issues that require my attention"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Dashboard page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see details of the upcoming general meeting"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Dashboard page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see that a proposal is open for voting"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Dashboard page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a task in the Membership and Shares widget"
+                    ]
+                ]
+            }
+        ]
+    }
+}

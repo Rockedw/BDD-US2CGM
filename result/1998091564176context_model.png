@@ -1,0 +1,16 @@
+// 1998091557792 Context Model
+digraph {
+	1998091564176 [label=Context6]
+	1998091564128 [label="\"alice@alice.alice\" has a public post with text \"check this out!\""]
+	1998091564176 -> 1998091564128
+	1998091564128 [label="\"alice@alice.alice\" has a public post with text \"check this out!\""]
+	1998091559040 [label="a user with email \"bob@bob.bob\" is connected with \"carol@carol.carol\""]
+	1998091564176 -> 1998091559040
+	1998091559040 [label="a user with email \"bob@bob.bob\" is connected with \"carol@carol.carol\""]
+	1998091560000 [label="\"carol@carol.carol\" has commented \"great post, alice!\" on \"check this out!\""]
+	1998091564176 -> 1998091560000
+	1998091560000 [label="\"carol@carol.carol\" has commented \"great post, alice!\" on \"check this out!\""]
+	1998091562832 [label="\"bob@bob.bob\" has commented \"great post!\" on \"check this out!\""]
+	1998091564176 -> 1998091562832
+	1998091562832 [label="\"bob@bob.bob\" has commented \"great post!\" on \"check this out!\""]
+}

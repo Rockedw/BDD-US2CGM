@@ -1,0 +1,228 @@
+{
+    "feature_name": "git support",
+    "user_story": {
+        "as_a": "user should be able to",
+        "i_want": "generate a project that is setup for git",
+        "so_that": "start a new gem for GitHub",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "git repository has 'origin' remote",
+                        "git repository 'origin' remote should be 'git@github.com:technicalpickles/the-perfect-gem.git'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "a sane '.gitignore' is created"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "a commit with the message 'Initial commit to the-perfect-gem.' is made",
+                        "'README.rdoc' was checked in",
+                        "'Rakefile' was checked in",
+                        "'LICENSE.txt' was checked in",
+                        "'lib/the-perfect-gem.rb' was checked in",
+                        "'.gitignore' was checked in",
+                        "no files are untracked",
+                        "no files are changed",
+                        "no files are added",
+                        "no files are deleted"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a bacon project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'spec/spec_helper.rb' was checked in",
+                        "'spec/the-perfect-gem_spec.rb' was checked in"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a minitest project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'test/helper.rb' was checked in",
+                        "'test/test_the-perfect-gem.rb' was checked in"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a rspec project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'spec/spec_helper.rb' was checked in",
+                        "'spec/the-perfect-gem_spec.rb' was checked in"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a shoulda project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'test/helper.rb' was checked in",
+                        "'test/test_the-perfect-gem.rb' was checked in"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'test/helper.rb' was checked in",
+                        "'test/test_the-perfect-gem.rb' was checked in"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a micronaut project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'examples/example_helper.rb' was checked in",
+                        "'examples/the-perfect-gem_example.rb' was checked in"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely",
+                        "I want cucumber stories"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'features/the-perfect-gem.feature' was checked in",
+                        "'features/support/env.rb' was checked in",
+                        "'features/step_definitions/the-perfect-gem_steps.rb' was checked in"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a shindo project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'tests/tests_helper.rb' was checked in",
+                        "'tests/the-perfect-gem_tests.rb' was checked in"
+                    ]
+                ]
+            }
+        ]
+    }
+}

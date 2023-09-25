@@ -1,0 +1,10 @@
+// 3000815166912 Context Model
+digraph {
+	3000815167344 [label=Context21]
+	3000815166624 [label="there are active members"]
+	3000815167344 -> 3000815166624
+	3000815166624 [label="there are active members"]
+	3000815166768 [label="there are pending members"]
+	3000815167344 -> 3000815166768
+	3000815166768 [label="there are pending members"]
+}

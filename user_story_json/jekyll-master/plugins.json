@@ -1,0 +1,74 @@
+{
+    "feature_name": "Configuring and using plugins",
+    "user_story": {
+        "as_a": "hacker",
+        "i_want": "specify my own plugins that can modify Jekyll's behaviour",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.html\" file that contains \"Whatever\"",
+                        "I have a configuration file with \"plugins\" set to \"[jekyll_test_plugin]\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Whatever\" in \"_site/index.html\"",
+                        "I should see \"this is a test\" in \"_site/test.txt\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.html\" file that contains \"Whatever\"",
+                        "I have a configuration file with:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build --safe"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Whatever\" in \"_site/index.html\"",
+                        "the \"_site/test.txt\" file should not exist"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.html\" file that contains \"Whatever\"",
+                        "I have a configuration file with:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build --safe"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Whatever\" in \"_site/index.html\"",
+                        "the \"_site/test.txt\" file should exist",
+                        "I should see \"this is a test\" in \"_site/test.txt\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

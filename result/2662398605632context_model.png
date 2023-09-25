@@ -1,0 +1,16 @@
+// 2662449754128 Context Model
+digraph {
+	2662398605632 [label=Context6]
+	2662404045840 [label="there is 1 existing category like \"aClass\""]
+	2662398605632 -> 2662404045840
+	2662404045840 [label="there is 1 existing category like \"aClass\""]
+	2662450053376 [label="there is an existing connection \"aClass0\" \"sub_class_of\" \"Item_Class\""]
+	2662398605632 -> 2662450053376
+	2662450053376 [label="there is an existing connection \"aClass0\" \"sub_class_of\" \"Item_Class\""]
+	2662403285504 [label="there is 1 existing individual like \"anInstance\""]
+	2662398605632 -> 2662403285504
+	2662403285504 [label="there is 1 existing individual like \"anInstance\""]
+	2662397624128 [label="there is an existing connection \"anInstance0\" \"is_instance_of\" \"aClass0\""]
+	2662398605632 -> 2662397624128
+	2662397624128 [label="there is an existing connection \"anInstance0\" \"is_instance_of\" \"aClass0\""]
+}

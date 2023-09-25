@@ -1,0 +1,78 @@
+{
+    "feature_name": "Editing submitted co-ops",
+    "user_story": {
+        "as_a": "n administrator",
+        "i_want": "edit the details of submitted co-ops",
+        "so_that": "ensure that co-ops are set up properly for registration",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the admin view of a proposed co-op",
+                        "I follow \"Edit Rules\"",
+                        "I make changes to the rules",
+                        "I save the changes",
+                        "I follow \"View rules\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the changes I made"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the admin view of a proposed co-op",
+                        "I follow \"Edit registration details\"",
+                        "I fill in the close links field with \"There are no close links.\"",
+                        "I save the changes",
+                        "I follow \"Download registration form\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the PDF should contain \"There are no close links.\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the admin view of a proposed co-op",
+                        "I follow \"Edit registration details\"",
+                        "I fill in the finance contact field with \"Milburn Pennybags\"",
+                        "I save the changes",
+                        "I follow \"View anti-money laundering form\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Milburn Pennybags\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the admin view of a proposed co-op",
+                        "I follow the link to edit a member",
+                        "I change the member's name",
+                        "I change the member's address",
+                        "I save the changes"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the member's new details"
+                    ]
+                ]
+            }
+        ]
+    }
+}

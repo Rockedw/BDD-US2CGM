@@ -1,0 +1,61 @@
+{
+    "feature_name": "Investigations can be searched",
+    "user_story": {
+        "as_a": "teacher",
+        "i_want": "sort the investigations list",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am logged in with the username teacher",
+                        "I am on the home page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"RITES\"",
+                        "I should not see \"APP_CONFIG\"",
+                        "I should not see \"Resources\" within \"#nav_top\"",
+                        "I should not see \"Investigation\" within \"#nav_top\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am logged in with the username student",
+                        "I am on the home page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"RITES\"",
+                        "I should not see \"APP_CONFIG\"",
+                        "I should not see \"Resources\" within \"#nav_top\"",
+                        "I should not see \"Investigation\" within \"#nav_top\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am logged in with the username author",
+                        "I am on the home page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"RITES\"",
+                        "I should see \"Investigation\" within \"#nav_top\"",
+                        "I should not see \"APP_CONFIG\"",
+                        "I should not see \"Resources\" within \"#nav_top\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,71 @@
+// Goal Model
+digraph {
+	1847088855600 [label="website visitor
+goal"]
+	1847088853344 [label="see the homepage
+goal
+140728069287616"]
+	1847088855600 -> 1847088853344
+	1847088853344 [label="see the homepage
+goal"]
+	1847088855264 [label="Display Welcome Message
+goal
+1847088855504"]
+	1847088853344 -> 1847088855264
+	1847088855264 [label="Display Welcome Message
+goal"]
+	1847088851280 [label="Contact Us link is shown when active
+goal
+1847088851520"]
+	1847088853344 -> 1847088851280
+	1847088851280 [label="Contact Us link is shown when active
+goal"]
+	1847088855696 [label="Contact Us link is hidden when disabled
+goal
+1847088854160"]
+	1847088853344 -> 1847088855696
+	1847088855696 [label="Contact Us link is hidden when disabled
+goal"]
+	1847088854496 [label="be able to view store information
+goal
+140728069287616"]
+	1847088855600 -> 1847088854496
+	1847088854496 [label="be able to view store information
+goal"]
+	1847117561232 [label=" view something
+goal
+140728069287616"]
+	1847088854496 -> 1847117561232
+	1847117561232 [label=" view something
+goal"]
+	1847088855216 [label="View Store Details
+goal
+1847088856224"]
+	1847117561232 -> 1847088855216
+	1847088855216 [label="View Store Details
+goal"]
+	1847088854544 [label=" view store
+goal
+140728069287616"]
+	1847117561232 -> 1847088854544
+	1847088854544 [label=" view store
+goal"]
+	1847088854784 [label="View All Stores
+goal
+1847088854880"]
+	1847088854544 -> 1847088854784
+	1847088854784 [label="View All Stores
+goal"]
+	1847088853968 [label="View A Store
+goal
+1847088855888"]
+	1847088854544 -> 1847088853968
+	1847088853968 [label="View A Store
+goal"]
+	1847088855984 [label="Search for a store
+goal
+1847088856464"]
+	1847088854496 -> 1847088855984
+	1847088855984 [label="Search for a store
+goal"]
+}

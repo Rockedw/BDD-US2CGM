@@ -1,0 +1,87 @@
+{
+    "feature_name": "Invites",
+    "user_story": {
+        "as_a": "visitor",
+        "i_want": "request and use invites",
+        "so_that": "get access to protected sections of the beta site",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the sign up page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"At this time an invite is required\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "no invites exist",
+                        "a user exists with an email of \"joe@sixpack.com\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the sign up page",
+                        "I fill in \"Email\" with \"joe@fourbeansoup.com\"",
+                        "I fill in \"Password\" with \"passw0rd\"",
+                        "I fill in \"Password confirmation\" with \"passw0rd\"",
+                        "I press \"Sign Up\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"You have signed up successfully\"",
+                        "I should see \"Email doesn't have an invite yet\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "an invite exists for \"joe@fourbeansoup.com\"",
+                        "a user exists with an email of \"joe@sixpack.com\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the sign up page",
+                        "I fill in \"Email\" with \"joe@fourbeansoup.com\"",
+                        "I fill in \"Password\" with \"passw0rd\"",
+                        "I fill in \"Password confirmation\" with \"passw0rd\"",
+                        "I press \"Sign Up\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"You have signed up successfully\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "no invites exist"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the new invite page",
+                        "I fill in \"Email\" with \"joe@fourbeansoup.com\"",
+                        "I press \"Request Invite\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Your invite request has been sent to a site admin\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

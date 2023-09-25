@@ -1,0 +1,10 @@
+// 1982200604048 Context Model
+digraph {
+	1982200602704 [label=Context20]
+	1982200601600 [label="I am a Director of the co-op"]
+	1982200602704 -> 1982200601600
+	1982200601600 [label="I am a Director of the co-op"]
+	1982200601696 [label="no minutes for the past board meeting have been entered yet"]
+	1982200602704 -> 1982200601696
+	1982200601696 [label="no minutes for the past board meeting have been entered yet"]
+}

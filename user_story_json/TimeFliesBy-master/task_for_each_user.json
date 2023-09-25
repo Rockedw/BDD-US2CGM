@@ -1,0 +1,32 @@
+{
+    "feature_name": "Task for each User",
+    "user_story": {
+        "as_a": "software as a service provider",
+        "i_want": "",
+        "so_that": "> support multiple people tracking their time",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am signed in as a new user \"test1@timefliesby.com\"",
+                        "I have a task \"Task 1 from user: test1\"",
+                        "I am on the tasks page",
+                        "I should see \"Task 1 from user: test1\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Sign out\"",
+                        "I am signed in as a new user \"test22@timefliesby.com\"",
+                        "I am on the tasks page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"Task 1 from user: test1\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+// 2084499016480 Context Model
+digraph {
+	2084499017872 [label=Context18]
+	2084499021664 [label="I am logged in as \"user\" with password \"user\""]
+	2084499017872 -> 2084499021664
+	2084499021664 [label="I am logged in as \"user\" with password \"user\""]
+	2084499015760 [label="I click \"APPOINTMENTS\""]
+	2084499017872 -> 2084499015760
+	2084499015760 [label="I click \"APPOINTMENTS\""]
+}

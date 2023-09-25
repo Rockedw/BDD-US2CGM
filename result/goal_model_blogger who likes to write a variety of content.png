@@ -1,0 +1,131 @@
+// Goal Model
+digraph {
+	1847134388176 [label="blogger who likes to write a variety of content
+goal"]
+	1847134387312 [label="be able to link to posts easily
+goal
+140728069287616"]
+	1847134388176 -> 1847134387312
+	1847134387312 [label="be able to link to posts easily
+goal"]
+	1847134387552 [label="A site that is using the defaults for permalink
+goal
+1847134387792"]
+	1847134387312 -> 1847134387552
+	1847134387552 [label="A site that is using the defaults for permalink
+goal"]
+	1847134387696 [label="I run jekyll build
+task
+140728069287616"]
+	1847134387552 -> 1847134387696
+	1847134387696 [label="I run jekyll build
+task"]
+	1847134387744 [label="Site with site-wide custom permalink setting
+goal
+1847134387264"]
+	1847134387312 -> 1847134387744
+	1847134387744 [label="Site with site-wide custom permalink setting
+goal"]
+	1847134388080 [label="I run jekyll build
+task
+140728069287616"]
+	1847134387744 -> 1847134388080
+	1847134388080 [label="I run jekyll build
+task"]
+	1847134387936 [label="Site with custom permalink settings on each post
+goal
+1847134453920"]
+	1847134387312 -> 1847134387936
+	1847134387936 [label="Site with custom permalink settings on each post
+goal"]
+	1847134454208 [label="I run jekyll build
+task
+140728069287616"]
+	1847134387936 -> 1847134454208
+	1847134454208 [label="I run jekyll build
+task"]
+	1847134454256 [label="Site with no posts
+goal
+1847134454928"]
+	1847134387312 -> 1847134454256
+	1847134454256 [label="Site with no posts
+goal"]
+	1847134454880 [label="I run jekyll build
+task
+140728069287616"]
+	1847134454256 -> 1847134454880
+	1847134454880 [label="I run jekyll build
+task"]
+	1847134454304 [label="Site with a future-dated post
+goal
+1847134455216"]
+	1847134387312 -> 1847134454304
+	1847134454304 [label="Site with a future-dated post
+goal"]
+	1847134455168 [label="I run jekyll build --future
+task
+140728069287616"]
+	1847134454304 -> 1847134455168
+	1847134455168 [label="I run jekyll build --future
+task"]
+	1847134455024 [label="Site with configured baseurl
+goal
+1847134455792"]
+	1847134387312 -> 1847134455024
+	1847134455024 [label="Site with configured baseurl
+goal"]
+	1847134455744 [label="I run jekyll build
+task
+140728069287616"]
+	1847134455024 -> 1847134455744
+	1847134455744 [label="I run jekyll build
+task"]
+	1847134455312 [label="Posts with categories
+goal
+1847134456368"]
+	1847134387312 -> 1847134455312
+	1847134455312 [label="Posts with categories
+goal"]
+	1847134456320 [label="I run jekyll build
+task
+140728069287616"]
+	1847134455312 -> 1847134456320
+	1847134456320 [label="I run jekyll build
+task"]
+	1847134455888 [label="Duplicate posts with categories
+goal
+1847134457136"]
+	1847134387312 -> 1847134455888
+	1847134455888 [label="Duplicate posts with categories
+goal"]
+	1847134457088 [label="I run jekyll build
+task
+140728069287616"]
+	1847134455888 -> 1847134457088
+	1847134457088 [label="I run jekyll build
+task"]
+	1847134456464 [label="Deprecated usage to link nested post
+goal
+1847134457808"]
+	1847134387312 -> 1847134456464
+	1847134456464 [label="Deprecated usage to link nested post
+goal"]
+	1847134457760 [label="I run jekyll build
+task
+140728069287616"]
+	1847134456464 -> 1847134457760
+	1847134457760 [label="I run jekyll build
+task"]
+	1847134457232 [label="Nested posts in a directory with name containing spaces
+goal
+1847134458288"]
+	1847134387312 -> 1847134457232
+	1847134457232 [label="Nested posts in a directory with name containing spaces
+goal"]
+	1847134458240 [label="I run jekyll build
+task
+140728069287616"]
+	1847134457232 -> 1847134458240
+	1847134458240 [label="I run jekyll build
+task"]
+}

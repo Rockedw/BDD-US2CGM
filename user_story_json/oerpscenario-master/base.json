@@ -1,0 +1,51 @@
+{
+    "feature_name": "Control the base module",
+    "user_story": {
+        "as_a": "",
+        "i_want": "make some basic tests",
+        "so_that": "test the basic features of the base module",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I check the integrity of ir.property named property_product_pricelist"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I check the value of ir.property and it should not start with a space"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I want to create a partner named automatedtest with default receivable account"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I get a receivable account",
+                        "I should get a partner id"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"res.partner\" with name: Fournisseur Device and oid: scenario.main_device_supplier",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"res.partner.address\" with name: Pro living and oid: scenario.main_device_supplier_add",
+                        "having:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            }
+        ]
+    }
+}

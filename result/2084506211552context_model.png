@@ -1,0 +1,13 @@
+// 2084506209488 Context Model
+digraph {
+	2084506211552 [label=Context3]
+	2084506213808 [label="I open a new edit tab"]
+	2084506211552 -> 2084506213808
+	2084506213808 [label="I open a new edit tab"]
+	2084506213904 [label="the content is:"]
+	2084506211552 -> 2084506213904
+	2084506213904 [label="the content is:"]
+	2084506214000 [label="I move to the start of the text"]
+	2084506211552 -> 2084506214000
+	2084506214000 [label="I move to the start of the text"]
+}

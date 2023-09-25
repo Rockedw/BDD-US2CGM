@@ -1,0 +1,19 @@
+// 1998092387376 Context Model
+digraph {
+	1998092393952 [label=Context1]
+	1998092392752 [label="I have a configuration file with:"]
+	1998092393952 -> 1998092392752
+	1998092392752 [label="I have a configuration file with:"]
+	1998092394816 [label="I have a _layouts directory"]
+	1998092393952 -> 1998092394816
+	1998092394816 [label="I have a _layouts directory"]
+	1998092390160 [label="I have an \"index.html\" page that contains \"{{ paginator.posts.size }}\""]
+	1998092393952 -> 1998092390160
+	1998092390160 [label="I have an \"index.html\" page that contains \"{{ paginator.posts.size }}\""]
+	1998092399280 [label="I have a _posts directory"]
+	1998092393952 -> 1998092399280
+	1998092399280 [label="I have a _posts directory"]
+	1998092388048 [label="I have the following posts:"]
+	1998092393952 -> 1998092388048
+	1998092388048 [label="I have the following posts:"]
+}

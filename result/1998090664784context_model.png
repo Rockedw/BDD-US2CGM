@@ -1,0 +1,10 @@
+// 1998090654080 Context Model
+digraph {
+	1998090664784 [label=Context1]
+	1998090665312 [label="the application is set up"]
+	1998090664784 -> 1998090665312
+	1998090665312 [label="the application is set up"]
+	1998090664496 [label="the domain is the signup domain"]
+	1998090664784 -> 1998090664496
+	1998090664496 [label="the domain is the signup domain"]
+}

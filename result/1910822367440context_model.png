@@ -1,0 +1,13 @@
+// 1910822357024 Context Model
+digraph {
+	1910822367440 [label=Context4]
+	1910822371088 [label="an uploader class that uses the 'file' storage"]
+	1910822367440 -> 1910822371088
+	1910822371088 [label="an uploader class that uses the 'file' storage"]
+	1910822361344 [label="that the uploader has the store_dir overridden to 'public/monkey/llama'"]
+	1910822367440 -> 1910822361344
+	1910822361344 [label="that the uploader has the store_dir overridden to 'public/monkey/llama'"]
+	1910822367536 [label="an instance of that class"]
+	1910822367440 -> 1910822367536
+	1910822367536 [label="an instance of that class"]
+}

@@ -1,0 +1,10 @@
+// 3000838620112 Context Model
+digraph {
+	3000838621312 [label=Context46]
+	3000838621456 [label="I select \"Property\" from \"Type\""]
+	3000838621312 -> 3000838621456
+	3000838621456 [label="I select \"Property\" from \"Type\""]
+	3000838621552 [label="I fill in \"Name\" with \"aProperty\""]
+	3000838621312 -> 3000838621552
+	3000838621552 [label="I fill in \"Name\" with \"aProperty\""]
+}

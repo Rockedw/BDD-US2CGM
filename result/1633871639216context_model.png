@@ -1,0 +1,25 @@
+// 1633871641328 Context Model
+digraph {
+	1633871639216 [label=Context1]
+	1633871641952 [label="a user named \"Bob Jones\" with email \"bob@bob.bob\""]
+	1633871639216 -> 1633871641952
+	1633871641952 [label="a user named \"Bob Jones\" with email \"bob@bob.bob\""]
+	1633871636384 [label="\"bob@bob.bob\" has a public post with text \"public stuff\""]
+	1633871639216 -> 1633871636384
+	1633871636384 [label="\"bob@bob.bob\" has a public post with text \"public stuff\""]
+	1633871638640 [label="I sign in as \"bob@bob.bob\" on the mobile website"]
+	1633871639216 -> 1633871638640
+	1633871638640 [label="I sign in as \"bob@bob.bob\" on the mobile website"]
+	1633871686736 [label="I click on selector \"a.comment-action.inactive\""]
+	1633871639216 -> 1633871686736
+	1633871686736 [label="I click on selector \"a.comment-action.inactive\""]
+	1633871684864 [label="I fill in the following:"]
+	1633871639216 -> 1633871684864
+	1633871684864 [label="I fill in the following:"]
+	1633871691296 [label="I press \"Comment\""]
+	1633871639216 -> 1633871691296
+	1633871691296 [label="I press \"Comment\""]
+	1633871680640 [label="I log out"]
+	1633871639216 -> 1633871680640
+	1633871680640 [label="I log out"]
+}

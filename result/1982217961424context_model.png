@@ -1,0 +1,16 @@
+// 1982217959072 Context Model
+digraph {
+	1982217961424 [label=Context11]
+	1982217956912 [label="a provider \"Tim Stafford\" with an RFP called \"Unwieldy\""]
+	1982217961424 -> 1982217956912
+	1982217956912 [label="a provider \"Tim Stafford\" with an RFP called \"Unwieldy\""]
+	1982217961232 [label="a provider \"Chris Thile\" with an RFP called \"Punch\""]
+	1982217961424 -> 1982217961232
+	1982217961232 [label="a provider \"Chris Thile\" with an RFP called \"Punch\""]
+	1982217959408 [label="a logged in admin user"]
+	1982217961424 -> 1982217959408
+	1982217959408 [label="a logged in admin user"]
+	1982217956528 [label="I am on the admin dashboard"]
+	1982217961424 -> 1982217956528
+	1982217956528 [label="I am on the admin dashboard"]
+}

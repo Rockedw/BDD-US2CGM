@@ -1,0 +1,47 @@
+{
+    "feature_name": "Adding arbitrary content to areas of already existant pages",
+    "user_story": {
+        "as_a": "designer",
+        "i_want": "be able to dynamically change the header of the provider signup form",
+        "so_that": "I try out different designs",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a page \"Home\" with url \"home\"",
+                        "page \"Home\" has content \"Oh, I like that\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the homepage"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Oh, I like that\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a page \"Provider signup\" with url \"providers/new\"",
+                        "page \"Provider signup\" has content \"Oh, I LOVE that\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the homepage",
+                        "I follow \"provider.signup\" translation"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Oh, I LOVE that\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

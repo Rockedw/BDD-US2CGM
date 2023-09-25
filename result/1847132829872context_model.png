@@ -1,0 +1,13 @@
+// 1847132829680 Context Model
+digraph {
+	1847132829872 [label=Context27]
+	1847132830016 [label="the post with text \"reshare this!\" is reshared by \"eve@eve.eve\""]
+	1847132829872 -> 1847132830016
+	1847132830016 [label="the post with text \"reshare this!\" is reshared by \"eve@eve.eve\""]
+	1847132830112 [label="a user with email \"alice@alice.alice\" is connected with \"eve@eve.eve\""]
+	1847132829872 -> 1847132830112
+	1847132830112 [label="a user with email \"alice@alice.alice\" is connected with \"eve@eve.eve\""]
+	1847132830208 [label="I confirm the alert after I click on the first selector \".reshare-action.inactive\""]
+	1847132829872 -> 1847132830208
+	1847132830208 [label="I confirm the alert after I click on the first selector \".reshare-action.inactive\""]
+}

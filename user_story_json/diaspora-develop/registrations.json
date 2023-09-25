@@ -1,0 +1,56 @@
+{
+    "feature_name": "New user registration",
+    "user_story": {
+        "as_a": "mobile user",
+        "i_want": "register an account",
+        "so_that": "use Diaspora*",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I fill in the new user form",
+                        "I press \"Create account\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the getting started page",
+                        "I should see the 'getting started' contents"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I fill in the following:",
+                        "I press \"Create account\""
+                    ],
+                    [
+                        "I fill in the following:",
+                        "I press \"Create account\""
+                    ],
+                    [
+                        "I fill in the following:",
+                        "I press \"Create account\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not be able to sign up",
+                        "I should have a validation error on \"user_username, user_password, user_email\""
+                    ],
+                    [
+                        "I should not be able to sign up",
+                        "I should have a validation error on \"user_password, user_email\""
+                    ],
+                    [
+                        "I should not be able to sign up",
+                        "I should have a validation error on \"user_password, user_password_confirmation\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

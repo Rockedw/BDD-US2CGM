@@ -1,0 +1,13 @@
+// 1847134458384 Context Model
+digraph {
+	1847134459344 [label=Context2]
+	1847134460112 [label="I have a configuration file with \"theme\" set to \"test-theme\""]
+	1847134459344 -> 1847134460112
+	1847134460112 [label="I have a configuration file with \"theme\" set to \"test-theme\""]
+	1847134460016 [label="I have an assets directory"]
+	1847134459344 -> 1847134460016
+	1847134460016 [label="I have an assets directory"]
+	1847134459632 [label="I have an \"assets/style.scss\" page that contains \"@import 'test-theme-black';\""]
+	1847134459344 -> 1847134459632
+	1847134459632 [label="I have an \"assets/style.scss\" page that contains \"@import 'test-theme-black';\""]
+}

@@ -1,0 +1,25 @@
+// 2084506426704 Context Model
+digraph {
+	2084506428816 [label=Context4]
+	2084506431504 [label="I have a _layouts directory"]
+	2084506428816 -> 2084506431504
+	2084506431504 [label="I have a _layouts directory"]
+	2084506428576 [label="I have a main layout that contains \"main: {{ content }}\""]
+	2084506428816 -> 2084506428576
+	2084506428576 [label="I have a main layout that contains \"main: {{ content }}\""]
+	2084506433040 [label="I have a _posts directory"]
+	2084506428816 -> 2084506433040
+	2084506433040 [label="I have a _posts directory"]
+	2084506432944 [label="I have the following post:"]
+	2084506428816 -> 2084506432944
+	2084506432944 [label="I have the following post:"]
+	2084506432464 [label="I have a special/_posts directory"]
+	2084506428816 -> 2084506432464
+	2084506432464 [label="I have a special/_posts directory"]
+	2084506420080 [label="I have the following post in \"special\":"]
+	2084506428816 -> 2084506420080
+	2084506420080 [label="I have the following post in \"special\":"]
+	2084506426128 [label="I have a configuration file with \"defaults\" set to \"[{scope: {path: \"special\"}, values: {layout: \"main\"}}, {scope: {path: \"special/_posts\"}, values: {layout: \"main\"}}, {scope: {path: \"_posts\"}, values: {layout: \"main\"}}]\""]
+	2084506428816 -> 2084506426128
+	2084506426128 [label="I have a configuration file with \"defaults\" set to \"[{scope: {path: \"special\"}, values: {layout: \"main\"}}, {scope: {path: \"special/_posts\"}, values: {layout: \"main\"}}, {scope: {path: \"_posts\"}, values: {layout: \"main\"}}]\""]
+}

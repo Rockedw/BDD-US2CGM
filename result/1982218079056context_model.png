@@ -1,0 +1,19 @@
+// 1982218078000 Context Model
+digraph {
+	1982218079056 [label=Context10]
+	1982218079200 [label="I have a Cats and Dogs/_posts directory"]
+	1982218079056 -> 1982218079200
+	1982218079200 [label="I have a Cats and Dogs/_posts directory"]
+	1982218079296 [label="I have the following post in \"Cats and Dogs\":"]
+	1982218079056 -> 1982218079296
+	1982218079296 [label="I have the following post in \"Cats and Dogs\":"]
+	1982218079392 [label="I have a _posts/Salt and Pepper directory"]
+	1982218079056 -> 1982218079392
+	1982218079392 [label="I have a _posts/Salt and Pepper directory"]
+	1982218079488 [label="I have the following post under \"Salt and Pepper\":"]
+	1982218079056 -> 1982218079488
+	1982218079488 [label="I have the following post under \"Salt and Pepper\":"]
+	1982218079584 [label="I have an \"index.md\" file with content:"]
+	1982218079056 -> 1982218079584
+	1982218079584 [label="I have an \"index.md\" file with content:"]
+}

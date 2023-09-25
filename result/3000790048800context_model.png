@@ -1,0 +1,16 @@
+// 3000790045920 Context Model
+digraph {
+	3000790048800 [label=Context6]
+	3000790051248 [label="an \"active\" provider \"Hyper Tiny\""]
+	3000790048800 -> 3000790051248
+	3000790051248 [label="an \"active\" provider \"Hyper Tiny\""]
+	3000790054272 [label="an \"active\" provider \"Hashrocket\""]
+	3000790048800 -> 3000790054272
+	3000790054272 [label="an \"active\" provider \"Hashrocket\""]
+	3000790052736 [label="\"Hashrocket\" is based in \"FL, US\""]
+	3000790048800 -> 3000790052736
+	3000790052736 [label="\"Hashrocket\" is based in \"FL, US\""]
+	3000790048944 [label="\"Hyper Tiny\" is based in \"NA, IE\""]
+	3000790048800 -> 3000790048944
+	3000790048944 [label="\"Hyper Tiny\" is based in \"NA, IE\""]
+}

@@ -1,0 +1,64 @@
+{
+    "feature_name": "COMPANIES BANK ACCOUNTS",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I need a \"res.partner.bank\" with oid: scen.main_bank1",
+                        "having:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"res.partner.bank\" with oid: scen.CH_bank",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"res.partner.bank\" with oid: scen.CH_bank_dta",
+                        "having:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"res.bank\" with oid: scen.CH_b1",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"res.partner.bank\" with oid: scen.CH_bank1",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"res.bank\" with oid: scen.CH_b4",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"res.partner.bank\" with oid: scen.CH_bank4",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"res.bank\" with oid: scen.CH_b5",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"res.partner.bank\" with oid: scen.CH_bank5",
+                        "having:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            }
+        ]
+    }
+}

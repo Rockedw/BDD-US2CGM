@@ -1,0 +1,29 @@
+{
+    "feature_name": "generated license",
+    "user_story": {
+        "as_a": "user should be able to",
+        "i_want": "generate a default license",
+        "so_that": "start a new gem",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'README.rdoc' contains '= the-perfect-gem'",
+                        "'README.rdoc' mentions copyright belonging to me in the current year"
+                    ]
+                ]
+            }
+        ]
+    }
+}

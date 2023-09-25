@@ -1,0 +1,175 @@
+{
+    "feature_name": "Word Matching",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Don Caballero\"",
+                        "I select the word at 0"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Don\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Don Caballero\"",
+                        "I select the word right of 0"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Don\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Don Caballero\"",
+                        "I select the word at 13"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Caballero\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Don Caballero\"",
+                        "I select the word left of 13"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Caballero\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Don Caballero\"",
+                        "I select the word at 4"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Caballero\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Don Caballero\"",
+                        "I select the word right of 4"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Caballero\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Don Caballero\"",
+                        "I select the word at 3"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Don\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Don Caballero\"",
+                        "I select the word left of 3"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Don\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Don Caballero\"",
+                        "I select the word at 7"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Caballero\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Don Caballero\"",
+                        "I select the word around 7"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Caballero\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Don Caballero\"",
+                        "I select the word at 1"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Don\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

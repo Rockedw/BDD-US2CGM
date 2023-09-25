@@ -1,0 +1,124 @@
+{
+    "feature_name": "Create and view new individual items through non-Ajax pages",
+    "user_story": {
+        "as_a": "as a contributor, I want",
+        "i_want": "create and view items.",
+        "so_that": "create a wontology,",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am on the new items page",
+                        "I fill in \"Name\" with \"MyCategory\"",
+                        "I fill in \"Title\" with \"A subcategory\"",
+                        "I fill in \"Description\" with \"The root category in the C topic\"",
+                        "I select \"Category\" from \"Type\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Create\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"successfully created\"",
+                        "I should see \"MyCategory\"",
+                        "I should see \"A subcategory\"",
+                        "I should see \"The root category in the C topic\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the new items page",
+                        "I fill in \"Name\" with \"0bad\"",
+                        "I fill in \"Title\" with \"A good title /\\?\"",
+                        "I fill in \"Description\" with \"0 And a (good) description, too.\"",
+                        "I select \"Individual\" from \"Type\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Create\""
+                    ],
+                    [
+                        "I press \"Create\""
+                    ],
+                    [
+                        "I press \"Create\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"error\"",
+                        "I fill in \"Name\" with \"bad too\""
+                    ],
+                    [
+                        "I should see \"Could not create\"",
+                        "I fill in \"Name\" with \"BAD>bad\""
+                    ],
+                    [
+                        "I should see \"Could not create\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the new items page",
+                        "I fill in \"Name\" with \"original\"",
+                        "I fill in \"Title\" with \"Original Item\"",
+                        "I fill in \"Description\" with \"description\"",
+                        "I select \"Category\" from \"Type\""
+                    ],
+                    [
+                        "I am on the new items page",
+                        "I fill in \"Name\" with \"original\"",
+                        "I fill in \"Title\" with \"Second Item\"",
+                        "I fill in \"Description\" with \"Actually second item, but bad name\"",
+                        "I select \"Individual\" from \"Type\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Create\""
+                    ],
+                    [
+                        "I press \"Create\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"successfully created\""
+                    ],
+                    [
+                        "I should see \"error\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the new items page",
+                        "I fill in \"Name\" with \"goodName\"",
+                        "I fill in \"Title\" with \"Bad title\\012has two lines\"",
+                        "I fill in \"Description\" with \"good\"",
+                        "I select \"Individual\" from \"Type\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Create\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"error\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

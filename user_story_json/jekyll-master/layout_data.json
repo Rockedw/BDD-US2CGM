@@ -1,0 +1,96 @@
+{
+    "feature_name": "Layout data",
+    "user_story": {
+        "as_a": "hacker who likes to avoid repetition",
+        "i_want": "be able to embed data into my layouts",
+        "so_that": "make the layouts slightly dynamic",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have a _layouts directory",
+                        "I have a \"_layouts/999.html\" file with content:",
+                        "I have an \"index.html\" page with layout \"custom\" that contains \"page content\"",
+                        "I have an \"index.html\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"_site/index.html\" file should exist",
+                        "I should see \"page content layout content\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _layouts directory",
+                        "I have a \"_layouts/custom.html\" file with content:",
+                        "I have an \"index.html\" page with layout \"custom\" that contains \"page content\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"_site/index.html\" file should exist",
+                        "I should see \"page content\\n foo: my custom data\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _layouts directory",
+                        "I have a \"_layouts/custom.html\" file with content:",
+                        "I have a \"_layouts/base.html\" file with content:",
+                        "I have an \"index.html\" page with layout \"custom\" that contains \"page content\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"_site/index.html\" file should exist",
+                        "I should see \"page content\\n foo: my custom data\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _layouts directory",
+                        "I have a \"_layouts/default.html\" file with content:",
+                        "I have a \"_layouts/special.html\" file with content:",
+                        "I have a \"_layouts/page.html\" file with content:",
+                        "I have an \"index.html\" page with layout \"special\" that contains \"page content\"",
+                        "I have an \"jekyll.html\" page with layout \"page\" that contains \"page content\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"_site/index.html\" file should exist",
+                        "I should see \"page content\\n foo: 'my special data' bar: 'im special'\" in \"_site/index.html\"",
+                        "I should see \"page content\\n foo: '' bar: 'im page'\" in \"_site/jekyll.html\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

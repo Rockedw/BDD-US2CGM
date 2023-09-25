@@ -1,0 +1,65 @@
+// Goal Model
+digraph {
+	1847117888288 [label="user(student, mentor teacher, cal faculty)
+goal"]
+	1847124497920 [label="register an account
+goal
+1847124504736"]
+	1847117888288 -> 1847124497920
+	1847124497920 [label="register an account
+goal"]
+	1847124508432 [label="create a student to database
+goal
+1847124500032"]
+	1847124497920 -> 1847124508432
+	1847124508432 [label="create a student to database
+goal"]
+	1847124495136 [label="I can't log in if I'm not registered
+goal
+1847124494848"]
+	1847124497920 -> 1847124495136
+	1847124495136 [label="I can't log in if I'm not registered
+goal"]
+	1847124502480 [label="edit mentor teacher's profile
+goal
+1847124507568"]
+	1847124497920 -> 1847124502480
+	1847124502480 [label="edit mentor teacher's profile
+goal"]
+	1847124506704 [label="I follow \"Edit Profile\"
+task
+140728069287616"]
+	1847124502480 -> 1847124506704
+	1847124506704 [label="I follow \"Edit Profile\"
+task"]
+	1847124499216 [label="can't register if I am not invited
+goal
+1847124501280"]
+	1847124497920 -> 1847124499216
+	1847124499216 [label="can't register if I am not invited
+goal"]
+	1847124500848 [label="can't register password and confirmation do not match
+goal
+1847124502432"]
+	1847124497920 -> 1847124500848
+	1847124500848 [label="can't register password and confirmation do not match
+goal"]
+	1847124504832 [label="Log out of the web application
+goal
+1847124608816"]
+	1847124497920 -> 1847124504832
+	1847124504832 [label="Log out of the web application
+goal"]
+	1847124503344 [label="I can't signup/login when i'm logged in
+goal
+1847124607952"]
+	1847124497920 -> 1847124503344
+	1847124503344 [label="I can't signup/login when i'm logged in
+goal"]
+	1847124610304 [label="I can't logout when i'm not logged in
+goal
+1847124608192"]
+	1847124497920 -> 1847124610304
+	1847124610304 [label="I can't logout when i'm not logged in
+goal"]
+}

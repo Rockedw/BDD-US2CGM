@@ -1,0 +1,68 @@
+{
+    "feature_name": "INSTALL OF LOCALISATION MODULES IN MULTI-COMPANY ENVIRONNEMENT",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I need a \"res.company\" with oid: base.main_company",
+                        "having:",
+                        "I create monthly periods on the fiscal year with reference \"scenario.fy2013\""
+                    ],
+                    [
+                        "I have the module account installed",
+                        "no account set for company \"MA SOCIETE FR\"",
+                        "I want to generate account chart from chart template named \"Plan Comptable Général (France)\" with \"6\" digits for company \"MA SOCIETE FR\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate the chart"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I find a \"account.fiscalyear\" with oid: scenario.fy2013"
+                    ],
+                    [
+                        "accounts should be available for company \"MA SOCIETE FR\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"res.company\" with oid: scen.CH_company",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"account.fiscalyear\" with oid: scenario.CHfy2013",
+                        "having:",
+                        "I create monthly periods on the fiscal year with reference \"scenario.CHfy2013\""
+                    ],
+                    [
+                        "I have the module account installed",
+                        "no account set for company \"MA SOCIETE CH\"",
+                        "I want to generate account chart from chart template named \"Plan comptable STERCHI\" with \"6\" digits for company \"MA SOCIETE CH\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate the chart"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I find a \"account.fiscalyear\" with oid: scenario.CHfy2013"
+                    ],
+                    [
+                        "accounts should be available for company \"MA SOCIETE CH\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

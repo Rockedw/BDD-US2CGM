@@ -1,0 +1,19 @@
+// 2084552756480 Context Model
+digraph {
+	2084552753792 [label=Context5]
+	2084552756192 [label="The default settings exist using factories"]
+	2084552753792 -> 2084552756192
+	2084552756192 [label="The default settings exist using factories"]
+	2084552753312 [label="the database has been seeded"]
+	2084552753792 -> 2084552753312
+	2084552753312 [label="the database has been seeded"]
+	2084552758016 [label="the classes \"Mathematics\" are in a school named \"VJTI\""]
+	2084552753792 -> 2084552758016
+	2084552758016 [label="the classes \"Mathematics\" are in a school named \"VJTI\""]
+	2084552757296 [label="I am logged in with the username teacher"]
+	2084552753792 -> 2084552757296
+	2084552757296 [label="I am logged in with the username teacher"]
+	2084552754944 [label="I am on \"the class edit page for \"Mathematics\"\""]
+	2084552753792 -> 2084552754944
+	2084552754944 [label="I am on \"the class edit page for \"Mathematics\"\""]
+}

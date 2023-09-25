@@ -1,0 +1,10 @@
+// 2084506639312 Context Model
+digraph {
+	2084506639360 [label=Context1]
+	2084506638448 [label="I have an \"index.html\" file that contains \"Whatever\""]
+	2084506639360 -> 2084506638448
+	2084506638448 [label="I have an \"index.html\" file that contains \"Whatever\""]
+	2084506639120 [label="I have a configuration file with \"plugins\" set to \"[jekyll_test_plugin]\""]
+	2084506639360 -> 2084506639120
+	2084506639120 [label="I have a configuration file with \"plugins\" set to \"[jekyll_test_plugin]\""]
+}

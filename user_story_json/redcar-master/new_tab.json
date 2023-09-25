@@ -1,0 +1,38 @@
+{
+    "feature_name": "Open a new tab",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be one edit tab",
+                        "the tab should be focussed within the notebook"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I close the focussed tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be no open tabs"
+                    ]
+                ]
+            }
+        ]
+    }
+}

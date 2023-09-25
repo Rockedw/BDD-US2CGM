@@ -1,0 +1,34 @@
+// 1910798253888 Context Model
+digraph {
+	1910798243136 [label=Context1]
+	1910798242080 [label="the following semesters exist"]
+	1910798243136 -> 1910798242080
+	1910798242080 [label="the following semesters exist"]
+	1910798244096 [label="the following courses exist:"]
+	1910798243136 -> 1910798244096
+	1910798244096 [label="the following courses exist:"]
+	1910798242032 [label="the following districts exist:"]
+	1910798243136 -> 1910798242032
+	1910798242032 [label="the following districts exist:"]
+	1910798253696 [label="the following schools exist:"]
+	1910798243136 -> 1910798253696
+	1910798253696 [label="the following schools exist:"]
+	1910798247552 [label="the following mentor teachers exist:"]
+	1910798243136 -> 1910798247552
+	1910798247552 [label="the following mentor teachers exist:"]
+	1910798244816 [label="the following timeslots exist:"]
+	1910798243136 -> 1910798244816
+	1910798244816 [label="the following timeslots exist:"]
+	1910798243616 [label="the following cal course exist"]
+	1910798243136 -> 1910798243616
+	1910798243616 [label="the following cal course exist"]
+	1910798241456 [label="the following users exist"]
+	1910798243136 -> 1910798241456
+	1910798241456 [label="the following users exist"]
+	1910798252544 [label="the following users exist"]
+	1910798243136 -> 1910798252544
+	1910798252544 [label="the following users exist"]
+	1910798241792 [label="I am logged in as orion@berkeley.edu"]
+	1910798243136 -> 1910798241792
+	1910798241792 [label="I am logged in as orion@berkeley.edu"]
+}

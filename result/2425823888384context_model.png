@@ -1,0 +1,19 @@
+// 2425802212640 Context Model
+digraph {
+	2425823888384 [label=Context2]
+	2425823889104 [label="I am on the home page"]
+	2425823888384 -> 2425823889104
+	2425823889104 [label="I am on the home page"]
+	2425823893616 [label="I follow \"Register\""]
+	2425823888384 -> 2425823893616
+	2425823893616 [label="I follow \"Register\""]
+	2425823899568 [label="I fill in \"user_email\" with \"test@timefliesby.com\""]
+	2425823888384 -> 2425823899568
+	2425823899568 [label="I fill in \"user_email\" with \"test@timefliesby.com\""]
+	2425823896496 [label="I fill in \"user_password\" with \"secret\""]
+	2425823888384 -> 2425823896496
+	2425823896496 [label="I fill in \"user_password\" with \"secret\""]
+	2425823897504 [label="I fill in \"user_password_confirmation\" with \"secret\""]
+	2425823888384 -> 2425823897504
+	2425823897504 [label="I fill in \"user_password_confirmation\" with \"secret\""]
+}

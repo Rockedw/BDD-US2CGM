@@ -1,0 +1,10 @@
+// 2084506639312 Context Model
+digraph {
+	2084506635952 [label=Context1]
+	2084506645168 [label="there is a co-op"]
+	2084506635952 -> 2084506645168
+	2084506645168 [label="there is a co-op"]
+	2084506644688 [label="I am a Director of the co-op"]
+	2084506635952 -> 2084506644688
+	2084506644688 [label="I am a Director of the co-op"]
+}

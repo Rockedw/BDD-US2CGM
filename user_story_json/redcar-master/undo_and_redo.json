@@ -1,0 +1,144 @@
+{
+    "feature_name": "Undo and Redo",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the menu item \"Edit|Undo\" should be inactive",
+                        "the menu item \"Edit|Redo\" should be inactive"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Bolzano\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the menu item \"Edit|Undo\" should be active",
+                        "the menu item \"Edit|Redo\" should be inactive"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Bolzano\"",
+                        "I undo"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"Bolzano\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Bolzano\"",
+                        "I replace the contents with \"Weierstrass\"",
+                        "I undo"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"Weierstrass\" in the edit tab",
+                        "I should see \"Bolzano\" in the edit tab",
+                        "I undo"
+                    ],
+                    [
+                        "I should not see \"Weierstrass\" in the edit tab",
+                        "I should not see \"Bolzano\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Bolzano\"",
+                        "I undo"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the menu item \"Edit|Undo\" should be inactive",
+                        "the menu item \"Edit|Redo\" should be active"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Bolzano\"",
+                        "I undo",
+                        "I redo",
+                        "I should see \"Bolzano\" in the edit tab"
+                    ]
+                ],
+                "thens_list": []
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Bolzano\"",
+                        "I undo",
+                        "I redo"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the menu item \"Edit|Undo\" should be active",
+                        "the menu item \"Edit|Redo\" should be inactive"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are hard",
+                        "I replace the contents with \"Bolzano\\nWeierstrass\"",
+                        "I select from 0 to 19",
+                        "tabs are hard",
+                        "I run the command Redcar::Top::IncreaseIndentCommand"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"\\tBolzano\\n\\tWeierstrass\"",
+                        "I undo"
+                    ],
+                    [
+                        "the contents should be \"Bolzano\\nWeierstrass\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

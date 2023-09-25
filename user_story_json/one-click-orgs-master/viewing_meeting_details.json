@@ -1,0 +1,47 @@
+{
+    "feature_name": "Viewing meeting details",
+    "user_story": {
+        "as_a": "Member",
+        "i_want": "view the agenda and minutes of past and future meetings",
+        "so_that": "keep track of meetings of the co-op",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is an upcoming General Meeting"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Meetings page",
+                        "I follow \"View agenda and details\" for the upcoming meeting"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the agenda for the upcoming meeting"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there has been a General Meeting in the past",
+                        "minutes have been entered for the meeting"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Meetings page",
+                        "I follow \"View minutes\" for the past meeting"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the minutes for the past meeting"
+                    ]
+                ]
+            }
+        ]
+    }
+}

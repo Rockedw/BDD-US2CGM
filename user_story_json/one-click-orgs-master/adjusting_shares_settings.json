@@ -1,0 +1,61 @@
+{
+    "feature_name": "Adjusting shares settings",
+    "user_story": {
+        "as_a": "As the Secretary",
+        "i_want": "adjust the settings to do with shares",
+        "so_that": "record changes to the way shares are handled",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Shares page",
+                        "I press \"Adjust share value\"",
+                        "I enter a new share value",
+                        "I press \"Save\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Shares page",
+                        "I should see the new share value"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Shares page",
+                        "I press \"Adjust minimum shareholding\"",
+                        "I enter a new minimum shareholding",
+                        "I press \"Save\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Shares page",
+                        "I should see the new minimum shareholding"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Shares page",
+                        "I press \"Adjust interest rate\"",
+                        "I enter a new interest rate",
+                        "I press \"Save\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Shares page",
+                        "I should see the new interest rate"
+                    ]
+                ]
+            }
+        ]
+    }
+}

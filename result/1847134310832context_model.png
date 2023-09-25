@@ -1,0 +1,25 @@
+// 1847134308144 Context Model
+digraph {
+	1847134310832 [label=Context5]
+	1847134316928 [label="I have a _layouts directory"]
+	1847134310832 -> 1847134316928
+	1847134316928 [label="I have a _layouts directory"]
+	1847134314960 [label="I have a main layout that contains \"main: {{ content }}\""]
+	1847134310832 -> 1847134314960
+	1847134314960 [label="I have a main layout that contains \"main: {{ content }}\""]
+	1847134311312 [label="I have a _posts/en directory"]
+	1847134310832 -> 1847134311312
+	1847134311312 [label="I have a _posts/en directory"]
+	1847134306416 [label="I have the following post under \"en\":"]
+	1847134310832 -> 1847134306416
+	1847134306416 [label="I have the following post under \"en\":"]
+	1847134315008 [label="I have a _posts/de directory"]
+	1847134310832 -> 1847134315008
+	1847134315008 [label="I have a _posts/de directory"]
+	1847134306752 [label="I have the following post under \"de\":"]
+	1847134310832 -> 1847134306752
+	1847134306752 [label="I have the following post under \"de\":"]
+	1847134315104 [label="I have a configuration file with \"defaults\" set to \"[{scope: {path: \"_posts/en\"}, values: {layout: \"main\", lang: \"en\"}}, {scope: {path: \"_posts/de\"}, values: {layout: \"main\", lang: \"de\"}}]\""]
+	1847134310832 -> 1847134315104
+	1847134315104 [label="I have a configuration file with \"defaults\" set to \"[{scope: {path: \"_posts/en\"}, values: {layout: \"main\", lang: \"en\"}}, {scope: {path: \"_posts/de\"}, values: {layout: \"main\", lang: \"de\"}}]\""]
+}

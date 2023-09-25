@@ -1,0 +1,10 @@
+// 1982196612112 Context Model
+digraph {
+	1982196600592 [label=Context9]
+	1982196608896 [label="I will choose \"plugins/runnables/features/fixtures\" from the \"open_directory\" dialog"]
+	1982196600592 -> 1982196608896
+	1982196608896 [label="I will choose \"plugins/runnables/features/fixtures\" from the \"open_directory\" dialog"]
+	1982196598000 [label="I open a directory"]
+	1982196600592 -> 1982196598000
+	1982196598000 [label="I open a directory"]
+}

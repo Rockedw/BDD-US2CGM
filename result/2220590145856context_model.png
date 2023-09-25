@@ -1,0 +1,10 @@
+// 2220590146768 Context Model
+digraph {
+	2220590145856 [label=Context113]
+	2220590145424 [label="I need a \"ir.rule\" with name: \"Product multi-company\""]
+	2220590145856 -> 2220590145424
+	2220590145424 [label="I need a \"ir.rule\" with name: \"Product multi-company\""]
+	2220590145520 [label="having:"]
+	2220590145856 -> 2220590145520
+	2220590145520 [label="having:"]
+}

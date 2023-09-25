@@ -1,0 +1,19 @@
+// 1982197202272 Context Model
+digraph {
+	1982197194832 [label=Context4]
+	1982197199728 [label="I am a registered user"]
+	1982197194832 -> 1982197199728
+	1982197199728 [label="I am a registered user"]
+	1982197202752 [label="I am on the home page"]
+	1982197194832 -> 1982197202752
+	1982197202752 [label="I am on the home page"]
+	1982197201936 [label="I follow \"Sign in\""]
+	1982197194832 -> 1982197201936
+	1982197201936 [label="I follow \"Sign in\""]
+	1982197192144 [label="I fill in \"user_email\" with \"test@timefliesby.com\""]
+	1982197194832 -> 1982197192144
+	1982197192144 [label="I fill in \"user_email\" with \"test@timefliesby.com\""]
+	1982197197472 [label="I fill in \"user_password\" with \"secret\""]
+	1982197194832 -> 1982197197472
+	1982197197472 [label="I fill in \"user_password\" with \"secret\""]
+}

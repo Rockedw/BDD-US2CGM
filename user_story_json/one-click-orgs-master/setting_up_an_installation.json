@@ -1,0 +1,101 @@
+{
+    "feature_name": "Setting up an installation",
+    "user_story": {
+        "as_a": "n administrator",
+        "i_want": "set up an installation of One Click Orgs",
+        "so_that": "people can use One Click Orgs",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the home page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the domain setup page",
+                        "the \"base domain\" field should contain \"www.example.com\"",
+                        "the \"sign-up domain\" field should contain \"www.example.com\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the domain setup page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"base domain\" with \"example.com\"",
+                        "I fill in \"sign-up domain\" with \"create.example.com\"",
+                        "I press \"Save domains\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the administrator setup page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have chosen and saved the domains"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I enter an email and password for the new administrator account",
+                        "I save the new administrator account"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the organisation types page",
+                        "there should be an administrator"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have chosen and saved the domains",
+                        "I have set up an administrator account"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I choose \"Associations\" and \"Companies Limited by Guarantee\" from the organisation types",
+                        "I do not choose \"Co-operatives\" from the organisation types",
+                        "I submit the organisation types form"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the new organisation page",
+                        "I should see a link to make a new association",
+                        "I should see a link to make a new company"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the domain setup page",
+                        "I choose and save the domains",
+                        "I set up an administrator account",
+                        "I choose and save the organisation types"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the domain should be \"create.example.com\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

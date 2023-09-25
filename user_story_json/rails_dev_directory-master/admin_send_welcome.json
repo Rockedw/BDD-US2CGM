@@ -1,0 +1,34 @@
+{
+    "feature_name": "Sending a custom welcome to users",
+    "user_story": {
+        "as_a": "n EY admin",
+        "i_want": "be able to send a custom welcome message to a user",
+        "so_that": "they don't think it's spam",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Billow\"",
+                        "a user \"paul\" belonging to the \"Billow\" provider",
+                        "a logged in admin user"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the admin dashboard",
+                        "I follow \"Developers\"",
+                        "I follow \"Billow\"",
+                        "I follow \"test@test.com\"",
+                        "I fill in \"message\" with \"It's a nice day\"",
+                        "I press \"user.send_welcome_message\" translation"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"user.welcome_message_sent\" translation"
+                    ]
+                ]
+            }
+        ]
+    }
+}

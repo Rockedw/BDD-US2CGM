@@ -1,0 +1,46 @@
+{
+    "feature_name": "donations",
+    "user_story": {
+        "as_a": "podmin",
+        "i_want": "",
+        "so_that": "accept donation",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have configured a Bitcoin address",
+                        "I go to the home page"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"Donate\" within \".info-bar\"",
+                        "I click on \"Donate\" navbar title"
+                    ],
+                    [
+                        "I should see the Bitcoin address"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have configured a Liberapay username",
+                        "I go to the home page"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"Donate\" within \".info-bar\"",
+                        "I click on \"Donate\" navbar title"
+                    ],
+                    [
+                        "I should see the Liberapay donate button"
+                    ]
+                ]
+            }
+        ]
+    }
+}

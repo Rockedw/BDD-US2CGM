@@ -1,0 +1,343 @@
+{
+    "feature_name": "generated test or spec",
+    "user_story": {
+        "as_a": "user should be able to",
+        "i_want": "generate a test or spec",
+        "so_that": "start a new gem",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely",
+                        "I want bundler"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a bacon project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'spec/spec_helper.rb' requires 'bundler'",
+                        "'spec/spec_helper.rb' sets up bundler using the default and development groups",
+                        "'spec/spec_helper.rb' requires 'bacon'",
+                        "'spec/spec_helper.rb' requires 'the-perfect-gem'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely",
+                        "I do not want bundler"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a bacon project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'spec/spec_helper.rb' does not require 'bundler'",
+                        "'spec/spec_helper.rb' does not setup bundler"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely",
+                        "I want bundler"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a minitest project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'test/helper.rb' requires 'bundler'",
+                        "'test/helper.rb' sets up bundler using the default and development groups",
+                        "'test/helper.rb' requires 'minitest/unit'",
+                        "'test/helper.rb' requires 'the-perfect-gem'",
+                        "'test/helper.rb' should autorun tests"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely",
+                        "I do not want bundler"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a minitest project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'test/helper.rb' does not require 'bundler'",
+                        "'test/helper.rb' does not setup bundler"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely",
+                        "I want bundler"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a rspec project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'spec/spec_helper.rb' requires 'rspec'",
+                        "'spec/spec_helper.rb' requires 'the-perfect-gem'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely",
+                        "I do not want bundler"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a rspec project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'spec/spec_helper.rb' does not require 'bundler'",
+                        "'spec/spec_helper.rb' does not setup bundler"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely",
+                        "I want bundler"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a shoulda project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'test/helper.rb' requires 'bundler'",
+                        "'test/helper.rb' sets up bundler using the default and development groups",
+                        "'test/helper.rb' requires 'test/unit'",
+                        "'test/helper.rb' requires 'shoulda'",
+                        "'test/helper.rb' requires 'the-perfect-gem'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely",
+                        "I do not want bundler"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a shoulda project named 'the-perfect-gem' that is 'zomg, so good'",
+                        "'test/helper.rb' does not require 'bundler'",
+                        "'test/helper.rb' does not setup bundler"
+                    ]
+                ],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely",
+                        "I want bundler"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'test/helper.rb' requires 'test/unit'",
+                        "'test/helper.rb' requires 'the-perfect-gem'",
+                        "'test/helper.rb' requires 'bundler'",
+                        "'test/helper.rb' sets up bundler using the default and development groups"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely",
+                        "I do not want bundler"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'",
+                        "'test/helper.rb' does not require 'bundler'",
+                        "'test/helper.rb' does not setup bundler"
+                    ]
+                ],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely",
+                        "I want bundler"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a micronaut project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'examples/example_helper.rb' requires 'rubygems'"
+                    ],
+                    [
+                        "'examples/example_helper.rb' requires 'micronaut'"
+                    ],
+                    [
+                        "'examples/example_helper.rb' requires 'the-perfect-gem'",
+                        "'examples/example_helper.rb' requires 'bundler'",
+                        "'examples/example_helper.rb' sets up bundler using the default and development groups"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely",
+                        "I do not want bundler"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a micronaut project named 'the-perfect-gem' that is 'zomg, so good'",
+                        "'examples/example_helper.rb' does not require 'bundler'",
+                        "'examples/example_helper.rb' does not setup bundler"
+                    ]
+                ],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely",
+                        "I want bundler"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a riot project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'test/teststrap.rb' requires 'riot'",
+                        "'test/teststrap.rb' requires 'the-perfect-gem'",
+                        "'test/teststrap.rb' requires 'bundler'",
+                        "'test/teststrap.rb' sets up bundler using the default and development groups"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely",
+                        "I do not want bundler"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a riot project named 'the-perfect-gem' that is 'zomg, so good'",
+                        "'test/teststrap.rb' does not require 'bundler'",
+                        "'test/teststrap.rb' does not setup bundler"
+                    ]
+                ],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely",
+                        "I want bundler"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a shindo project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'tests/tests_helper.rb' requires 'the-perfect-gem'"
+                    ],
+                    [
+                        "'tests/tests_helper.rb' requires 'shindo'"
+                    ],
+                    [
+                        "'tests/tests_helper.rb' requires 'bundler'",
+                        "'tests/tests_helper.rb' sets up bundler using the default and development groups"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely",
+                        "I do not want bundler"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a shindo project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'tests/tests_helper.rb' does not require 'bundler'",
+                        "'tests/tests_helper.rb' does not setup bundler"
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+// 2220570893072 Context Model
+digraph {
+	2220570895760 [label=Context6]
+	2220570889856 [label="a provider \"Hashrocket\" belonging to \"Olenska@chicka.net\""]
+	2220570895760 -> 2220570889856
+	2220570889856 [label="a provider \"Hashrocket\" belonging to \"Olenska@chicka.net\""]
+	2220570888608 [label="a portfolio item \"Fire and Grace\" belonging to the \"Hashrocket\" provider"]
+	2220570895760 -> 2220570888608
+	2220570888608 [label="a portfolio item \"Fire and Grace\" belonging to the \"Hashrocket\" provider"]
+	2220570891536 [label="a portfolio item \"Corn Flakes\" belonging to the \"Hashrocket\" provider"]
+	2220570895760 -> 2220570891536
+	2220570891536 [label="a portfolio item \"Corn Flakes\" belonging to the \"Hashrocket\" provider"]
+	2220570895280 [label="a portfolio item \"Sounds True\" belonging to the \"Hashrocket\" provider"]
+	2220570895760 -> 2220570895280
+	2220570895280 [label="a portfolio item \"Sounds True\" belonging to the \"Hashrocket\" provider"]
+}

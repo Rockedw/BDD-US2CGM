@@ -1,0 +1,13 @@
+// 1436758613328 Context Model
+digraph {
+	1436758612368 [label=Context2]
+	1436758620624 [label="The default settings exist using factories"]
+	1436758612368 -> 1436758620624
+	1436758620624 [label="The default settings exist using factories"]
+	1436758610688 [label="the database has been seeded"]
+	1436758612368 -> 1436758610688
+	1436758610688 [label="the database has been seeded"]
+	1436758618800 [label="the project \"FooBar\" has slug \"foo-bar\" and ITSI bin"]
+	1436758612368 -> 1436758618800
+	1436758618800 [label="the project \"FooBar\" has slug \"foo-bar\" and ITSI bin"]
+}

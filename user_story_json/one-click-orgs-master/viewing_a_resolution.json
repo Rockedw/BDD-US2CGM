@@ -1,0 +1,33 @@
+{
+    "feature_name": "Viewing a resolution",
+    "user_story": {
+        "as_a": "member",
+        "i_want": "view resolutions of different kinds",
+        "so_that": "participate in the decision-making process",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have suggested a resolution"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Resolutions page"
+                    ],
+                    [
+                        "I view more details of the suggested resolution"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the suggested resolution in the list of my suggestions"
+                    ],
+                    [
+                        "I should not see voting UI"
+                    ]
+                ]
+            }
+        ]
+    }
+}

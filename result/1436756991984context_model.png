@@ -1,0 +1,16 @@
+// 1436756991312 Context Model
+digraph {
+	1436756991984 [label=Context109]
+	1436756992128 [label="I have an \"index.scss\" page with layout \"simple\" that contains \".foo-bar { color:black; }\""]
+	1436756991984 -> 1436756992128
+	1436756992128 [label="I have an \"index.scss\" page with layout \"simple\" that contains \".foo-bar { color:black; }\""]
+	1436756992224 [label="I have an \"index.coffee\" page with layout \"simple\" that contains \"whatever()\""]
+	1436756991984 -> 1436756992224
+	1436756992224 [label="I have an \"index.coffee\" page with layout \"simple\" that contains \"whatever()\""]
+	1436756992320 [label="I have a configuration file with \"plugins\" set to \"[jekyll-coffeescript]\""]
+	1436756991984 -> 1436756992320
+	1436756992320 [label="I have a configuration file with \"plugins\" set to \"[jekyll-coffeescript]\""]
+	1436756992416 [label="I have a simple layout that contains \"{{ content }}Ahoy, indeed!\""]
+	1436756991984 -> 1436756992416
+	1436756992416 [label="I have a simple layout that contains \"{{ content }}Ahoy, indeed!\""]
+}

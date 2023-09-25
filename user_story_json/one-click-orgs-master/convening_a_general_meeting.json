@@ -1,0 +1,127 @@
+{
+    "feature_name": "Convening a general meeting",
+    "user_story": {
+        "as_a": "As the Secretary",
+        "i_want": "convene a General Meeting",
+        "so_that": "give the Members of the Co-op a change to discuss things",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Meetings page",
+                        "I press \"Convene a General Meeting\""
+                    ],
+                    [
+                        "I choose a date for the meeting",
+                        "I choose a start time for the meeting",
+                        "I enter a venue for the meeting",
+                        "I press \"Confirm and convene the meeting\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see an agenda item \"Apologies for Absence\"",
+                        "I should see an agenda item \"Minutes of Previous Meeting\"",
+                        "I should see an agenda item \"Any Other Business\"",
+                        "I should see an agenda item \"Time and date of next meeting\""
+                    ],
+                    [
+                        "I should be on the Meetings page",
+                        "I should see the new meeting in the list of Upcoming Meetings"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Meetings page",
+                        "I press \"Convene a General Meeting\"",
+                        "I choose a date for the meeting",
+                        "I choose a start time for the meeting",
+                        "I enter a venue for the meeting"
+                    ],
+                    [
+                        "I delete the agenda item \"Time and date of next meeting\"",
+                        "I add a new agenda item \"Discussion about meeting scheduling\"",
+                        "I move the last agenda item up one position"
+                    ],
+                    [
+                        "I press \"Confirm and convene the meeting\"",
+                        "I view the details for the new meeting"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the agenda item \"Apologies for Absence\" in position 1",
+                        "I should see the agenda item \"Minutes of Previous Meeting\" in position 2",
+                        "I should see the agenda item \"Discussion about meeting scheduling\" in position 3",
+                        "I should see the agenda item \"Any Other Business\" in position 4"
+                    ],
+                    [
+                        "I should see the agenda item \"Apologies for Absence\" in position 1",
+                        "I should see the agenda item \"Minutes of Previous Meeting\" in position 2",
+                        "I should see the agenda item \"Discussion about meeting scheduling\" in position 3",
+                        "I should see the agenda item \"Any Other Business\" in position 4"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I convene a General Meeting"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "all the Members should receive a notification of the new meeting"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there are draft resolutions"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to convene a General Meeting",
+                        "I enter details for the meeting",
+                        "I select one of the draft resolutions to be considered at the meeting",
+                        "I convene the meeting"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the meeting should have the draft resolution I selected attached to its agenda"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there are draft resolutions"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to convene a General Meeting",
+                        "I enter details for the meeting",
+                        "I select one of the draft resolutions to be considered at the meeting",
+                        "I select to open the resolution for electronic voting",
+                        "I convene the meeting",
+                        "I go to the Proposals page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the resolution is open for electronic voting"
+                    ]
+                ]
+            }
+        ]
+    }
+}

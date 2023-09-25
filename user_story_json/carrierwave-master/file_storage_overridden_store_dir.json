@@ -1,0 +1,86 @@
+{
+    "feature_name": "uploader with file storage and overridden store dir",
+    "user_story": {
+        "as_a": "developer using CarrierWave",
+        "i_want": "upload files to the filesystem",
+        "so_that": "be awesome",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I store the file 'fixtures/bork.txt'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be a file at 'public/monkey/llama/bork.txt'",
+                        "the file at 'public/monkey/llama/bork.txt' should be identical to the file at 'fixtures/bork.txt'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I store the file 'fixtures/bork.txt'"
+                    ],
+                    [
+                        "I store the file 'fixtures/monkey.txt'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be a file at 'public/monkey/llama/bork.txt'",
+                        "the file at 'public/monkey/llama/bork.txt' should be identical to the file at 'fixtures/bork.txt'"
+                    ],
+                    [
+                        "there should be a file at 'public/monkey/llama/monkey.txt'",
+                        "the file at 'public/monkey/llama/monkey.txt' should be identical to the file at 'fixtures/monkey.txt'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I cache the file 'fixtures/bork.txt'"
+                    ],
+                    [
+                        "I store the file"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be a file called 'bork.txt' somewhere in a subdirectory of 'public/uploads/tmp'",
+                        "the file called 'bork.txt' in a subdirectory of 'public/uploads/tmp' should be identical to the file at 'fixtures/bork.txt'",
+                        "there should not be a file at 'public/monkey/llama/bork.txt'"
+                    ],
+                    [
+                        "there should be a file at 'public/monkey/llama/bork.txt'",
+                        "the file at 'public/monkey/llama/bork.txt' should be identical to the file at 'fixtures/bork.txt'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the file 'fixtures/bork.txt' is cached file at 'public/uploads/tmp/1369894322-345-1234-2255/bork.txt'"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I retrieve the cache name '1369894322-345-1234-2255/bork.txt' from the cache",
+                        "I store the file"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be a file at 'public/monkey/llama/bork.txt'",
+                        "the file at 'public/monkey/llama/bork.txt' should be identical to the file at 'fixtures/bork.txt'"
+                    ]
+                ]
+            }
+        ]
+    }
+}

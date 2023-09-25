@@ -1,0 +1,10 @@
+// 2220590070560 Context Model
+digraph {
+	2220590071520 [label=Context50]
+	2220590137552 [label="the \"property_stock_supplier\" of the partner named \"Fournisseur Device\" is \"Supplier Device Stock\""]
+	2220590071520 -> 2220590137552
+	2220590137552 [label="the \"property_stock_supplier\" of the partner named \"Fournisseur Device\" is \"Supplier Device Stock\""]
+	2220590137648 [label="the \"property_stock_supplier\" of the partner named \"Fournisseur Mission\" is \"Supplier Mission Stock\""]
+	2220590071520 -> 2220590137648
+	2220590137648 [label="the \"property_stock_supplier\" of the partner named \"Fournisseur Mission\" is \"Supplier Mission Stock\""]
+}

@@ -1,0 +1,16 @@
+// 2084499064480 Context Model
+digraph {
+	2084500579920 [label=Context4]
+	2084500577712 [label="I have an \"index.html\" page that contains \"Collections: output => {{ site.collections[0].output }} label => {{ site.collections[0].label }} foo => {{ site.collections[0].foo }}\""]
+	2084500579920 -> 2084500577712
+	2084500577712 [label="I have an \"index.html\" page that contains \"Collections: output => {{ site.collections[0].output }} label => {{ site.collections[0].label }} foo => {{ site.collections[0].foo }}\""]
+	2084500579104 [label="I have a default layout that contains \"<div class='title'>Tom Preston-Werner</div> {{content}}\""]
+	2084500579920 -> 2084500579104
+	2084500579104 [label="I have a default layout that contains \"<div class='title'>Tom Preston-Werner</div> {{content}}\""]
+	2084500577280 [label="I have fixture collections"]
+	2084500579920 -> 2084500577280
+	2084500577280 [label="I have fixture collections"]
+	2084500580880 [label="I have a \"_config.yml\" file with content:"]
+	2084500579920 -> 2084500580880
+	2084500580880 [label="I have a \"_config.yml\" file with content:"]
+}

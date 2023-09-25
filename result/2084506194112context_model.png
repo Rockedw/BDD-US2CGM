@@ -1,0 +1,28 @@
+// 2084506192864 Context Model
+digraph {
+	2084506194112 [label=Context8]
+	2084506194256 [label="I have a gathering/_players/managers directory"]
+	2084506194112 -> 2084506194256
+	2084506194256 [label="I have a gathering/_players/managers directory"]
+	2084506194352 [label="I have a gathering/_players/recruits directory"]
+	2084506194112 -> 2084506194352
+	2084506194352 [label="I have a gathering/_players/recruits directory"]
+	2084506194448 [label="I have a gathering/_players/standby directory"]
+	2084506194112 -> 2084506194448
+	2084506194448 [label="I have a gathering/_players/standby directory"]
+	2084506194544 [label="I have the following documents nested inside \"managers\" directory under the \"players\" collection within the \"gathering\" directory:"]
+	2084506194112 -> 2084506194544
+	2084506194544 [label="I have the following documents nested inside \"managers\" directory under the \"players\" collection within the \"gathering\" directory:"]
+	2084506194640 [label="I have the following documents nested inside \"recruits\" directory under the \"players\" collection within the \"gathering\" directory:"]
+	2084506194112 -> 2084506194640
+	2084506194640 [label="I have the following documents nested inside \"recruits\" directory under the \"players\" collection within the \"gathering\" directory:"]
+	2084506194736 [label="I have the following documents nested inside \"standby\" directory under the \"players\" collection within the \"gathering\" directory:"]
+	2084506194112 -> 2084506194736
+	2084506194736 [label="I have the following documents nested inside \"standby\" directory under the \"players\" collection within the \"gathering\" directory:"]
+	2084506194832 [label="I have a \"_config.yml\" file with content:"]
+	2084506194112 -> 2084506194832
+	2084506194832 [label="I have a \"_config.yml\" file with content:"]
+	2084506194928 [label="I have a \"index.md\" file with content:"]
+	2084506194112 -> 2084506194928
+	2084506194928 [label="I have a \"index.md\" file with content:"]
+}

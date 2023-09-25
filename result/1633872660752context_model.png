@@ -1,0 +1,10 @@
+// 1633872665696 Context Model
+digraph {
+	1633872660752 [label=Context52]
+	1633872660560 [label="there is a bank account named \"XX-XXXX-X\" linked to partner \"Customer_name\""]
+	1633872660752 -> 1633872660560
+	1633872660560 [label="there is a bank account named \"XX-XXXX-X\" linked to partner \"Customer_name\""]
+	1633872662912 [label="I set the bank account with the following data :"]
+	1633872660752 -> 1633872662912
+	1633872662912 [label="I set the bank account with the following data :"]
+}

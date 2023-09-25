@@ -1,0 +1,63 @@
+{
+    "feature_name": "Student views report",
+    "user_story": {
+        "as_a": "n student",
+        "i_want": "",
+        "so_that": "know how I did on material",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I login with username: davy"
+                    ],
+                    [
+                        "I run the external activity"
+                    ],
+                    [
+                        "I visit my classes page"
+                    ],
+                    [
+                        "I should see a link to generate a report of my work"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see a link to generate a report of my work",
+                        "I should not see \"Last run\""
+                    ],
+                    [
+                        "the browser should send a GET to \"http://fake-lara.com/mock_html/test-external-activity25.html\""
+                    ],
+                    [
+                        "I should see \"Last run\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "the student report is disabled for the activity \"simple activity\""
+                    ],
+                    [
+                        "I login with username: davy",
+                        "I run the activity"
+                    ],
+                    [
+                        "I visit my classes page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the browser should send a GET to \"http://fake-lara.com/mock_html/test-external-activity25.html\""
+                    ],
+                    [
+                        "I should see \"Last run\"",
+                        "I should not see a link to generate a report of my work"
+                    ]
+                ]
+            }
+        ]
+    }
+}

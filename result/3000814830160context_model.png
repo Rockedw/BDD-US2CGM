@@ -1,0 +1,19 @@
+// 3000814841968 Context Model
+digraph {
+	3000814830160 [label=Context2]
+	3000814830496 [label="there is a co-op"]
+	3000814830160 -> 3000814830496
+	3000814830496 [label="there is a co-op"]
+	3000814844272 [label="I am a Member of the co-op"]
+	3000814830160 -> 3000814844272
+	3000814844272 [label="I am a Member of the co-op"]
+	3000814835872 [label="I have applied for some shares"]
+	3000814830160 -> 3000814835872
+	3000814835872 [label="I have applied for some shares"]
+	3000814838032 [label="there is an upcoming General Meeting"]
+	3000814830160 -> 3000814838032
+	3000814838032 [label="there is an upcoming General Meeting"]
+	3000814840048 [label="there is a resolution open for electronic voting"]
+	3000814830160 -> 3000814840048
+	3000814840048 [label="there is a resolution open for electronic voting"]
+}

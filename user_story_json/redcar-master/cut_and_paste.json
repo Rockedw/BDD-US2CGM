@@ -1,0 +1,97 @@
+{
+    "feature_name": "Cut and Paste",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Frank\"",
+                        "I select 3 from (0,0)",
+                        "I cut text"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"Fra\" in the edit tab",
+                        "I should see \"nk\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Frank\"",
+                        "I select 3 from (0,0)",
+                        "I copy text"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Frank\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Frank\"",
+                        "I select 3 from (0,0)",
+                        "I cut text",
+                        "I move the cursor to (0,2)",
+                        "I paste text"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"nkFra<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Frank\"",
+                        "I select 3 from (0,0)",
+                        "I copy text",
+                        "I move the cursor to (0,2)",
+                        "I paste text"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"FrFraank\" in the edit tab"
+                    ],
+                    [
+                        "the contents should be \"FrFra<c>ank\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Frank\"",
+                        "I select 3 from (0,0)",
+                        "I copy text",
+                        "I select 2 from (0,3)",
+                        "I copy text",
+                        "I move the cursor to (0,0)",
+                        "I paste text"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"nk<c>Frank\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "feature_name": "uploader with file storage",
+    "user_story": {
+        "as_a": "developer using CarrierWave",
+        "i_want": "cache files",
+        "so_that": "be able to temporarily store files to disk",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "an uploader class that uses the 'file' storage",
+                        "an instance of that class"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I cache the file 'fixtures/bork.txt'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be a file called 'bork.txt' somewhere in a subdirectory of 'public/uploads/tmp'",
+                        "the file called 'bork.txt' in a subdirectory of 'public/uploads/tmp' should be identical to the file at 'fixtures/bork.txt'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "an uploader class that uses the 'file' storage",
+                        "an instance of that class"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I cache the file 'fixtures/bork.txt'"
+                    ],
+                    [
+                        "I cache the file 'fixtures/monkey.txt'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be a file called 'bork.txt' somewhere in a subdirectory of 'public/uploads/tmp'",
+                        "the file called 'bork.txt' in a subdirectory of 'public/uploads/tmp' should be identical to the file at 'fixtures/bork.txt'"
+                    ],
+                    [
+                        "there should be a file called 'monkey.txt' somewhere in a subdirectory of 'public/uploads/tmp'",
+                        "the file called 'monkey.txt' in a subdirectory of 'public/uploads/tmp' should be identical to the file at 'fixtures/monkey.txt'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "an uploader class that uses the 'file' storage",
+                        "an instance of that class",
+                        "the file 'fixtures/bork.txt' is cached file at 'public/uploads/tmp/1369894322-345-1234-2255/bork.txt'"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I retrieve the cache name '1369894322-345-1234-2255/bork.txt' from the cache"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the uploader should have 'public/uploads/tmp/1369894322-345-1234-2255/bork.txt' as its current path"
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+// 1847134172352 Context Model
+digraph {
+	1847134174320 [label=Context4]
+	1847134164624 [label="the application is set up"]
+	1847134174320 -> 1847134164624
+	1847134164624 [label="the application is set up"]
+	1847134172016 [label="an association has been created"]
+	1847134174320 -> 1847134172016
+	1847134172016 [label="an association has been created"]
+	1847134174032 [label="I am a founding member"]
+	1847134174320 -> 1847134174032
+	1847134174032 [label="I am a founding member"]
+	1847134171104 [label="the subdomain is the organisation's subdomain"]
+	1847134174320 -> 1847134171104
+	1847134171104 [label="the subdomain is the organisation's subdomain"]
+	1847134163856 [label="I have logged in"]
+	1847134174320 -> 1847134163856
+	1847134163856 [label="I have logged in"]
+}

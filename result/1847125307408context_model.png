@@ -1,0 +1,19 @@
+// 1847125307936 Context Model
+digraph {
+	1847125307408 [label=Context6]
+	1847125297040 [label="the option to allow default classes is enabled"]
+	1847125307408 -> 1847125297040
+	1847125297040 [label="the option to allow default classes is enabled"]
+	1847125303472 [label="the class \"My Class\" has the class word \"word\""]
+	1847125307408 -> 1847125303472
+	1847125303472 [label="the class \"My Class\" has the class word \"word\""]
+	1847125295312 [label="the student \"student\" belongs to class \"Class_with_no_students\""]
+	1847125307408 -> 1847125295312
+	1847125295312 [label="the student \"student\" belongs to class \"Class_with_no_students\""]
+	1847125295744 [label="I am logged in with the username student"]
+	1847125307408 -> 1847125295744
+	1847125295744 [label="I am logged in with the username student"]
+	1847125297328 [label="I am on my classes page"]
+	1847125307408 -> 1847125297328
+	1847125297328 [label="I am on my classes page"]
+}

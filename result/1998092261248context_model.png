@@ -1,0 +1,13 @@
+// 1998092260720 Context Model
+digraph {
+	1998092261248 [label=Context30]
+	1998092261488 [label="the content is:"]
+	1998092261248 -> 1998092261488
+	1998092261488 [label="the content is:"]
+	1998092261056 [label="I select from (1,2) to (3,9)"]
+	1998092261248 -> 1998092261056
+	1998092261056 [label="I select from (1,2) to (3,9)"]
+	1998092261536 [label="I select menu item \"Edit|Formatting|Align Assignments\""]
+	1998092261248 -> 1998092261536
+	1998092261536 [label="I select menu item \"Edit|Formatting|Align Assignments\""]
+}

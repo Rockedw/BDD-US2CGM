@@ -1,0 +1,28 @@
+{
+    "feature_name": "Viewing list of members",
+    "user_story": {
+        "as_a": "Member",
+        "i_want": "view the list of members",
+        "so_that": "check the records of members",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a co-op",
+                        "I am a Member of the co-op"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Members page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a list of the members"
+                    ]
+                ]
+            }
+        ]
+    }
+}

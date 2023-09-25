@@ -1,0 +1,19 @@
+// 1436757137856 Context Model
+digraph {
+	1436757137712 [label=Context11]
+	1436757138432 [label="I have a configuration file with:"]
+	1436757137712 -> 1436757138432
+	1436757138432 [label="I have a configuration file with:"]
+	1436757146400 [label="I have a blog directory"]
+	1436757137712 -> 1436757146400
+	1436757146400 [label="I have a blog directory"]
+	1436757136752 [label="I have an \"blog/index.html\" page that contains \"{{ paginator.posts.size }}\""]
+	1436757137712 -> 1436757136752
+	1436757136752 [label="I have an \"blog/index.html\" page that contains \"{{ paginator.posts.size }}\""]
+	1436757133104 [label="I have a _posts directory"]
+	1436757137712 -> 1436757133104
+	1436757133104 [label="I have a _posts directory"]
+	1436757145776 [label="I have the following posts:"]
+	1436757137712 -> 1436757145776
+	1436757145776 [label="I have the following posts:"]
+}

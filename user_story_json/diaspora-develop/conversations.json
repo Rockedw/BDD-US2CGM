@@ -1,0 +1,40 @@
+{
+    "feature_name": "private conversations mobile",
+    "user_story": {
+        "as_a": "mobile user",
+        "i_want": "converse with people",
+        "so_that": "be talkative",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I send a mobile message with subject \"Greetings\" and text \"hello, alice!\" to \"Alice Awesome\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"alice@alice.alice\" on the mobile website",
+                        "I reply with \"hey, how you doing?\"",
+                        "I press the first \".ltr\" within \".conversation\""
+                    ],
+                    [
+                        "I confirm the alert after I click on selector \"a.remove\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Greetings\" within \".conversation h3\"",
+                        "\"Alice Awesome\" should be part of active conversation",
+                        "I should see \"hello, alice!\" within \".stream-element\""
+                    ],
+                    [
+                        "I should see \"hey, how you doing?\""
+                    ],
+                    [
+                        "I should not see \"hey, how you doing\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

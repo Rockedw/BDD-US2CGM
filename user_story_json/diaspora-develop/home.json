@@ -1,0 +1,42 @@
+{
+    "feature_name": "Visit the landing page of the pod",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "see the landing page",
+        "so_that": "find out more about the pod",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on the root page"
+                    ],
+                    [
+                        "I toggle the mobile view",
+                        "I go to the root page"
+                    ],
+                    [
+                        "I am on the root page"
+                    ],
+                    [
+                        "I go to the mobile path"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"LOG IN\""
+                    ],
+                    [
+                        "I should see \"Welcome, friend\""
+                    ],
+                    [
+                        "I should see \"Welcome, friend\""
+                    ],
+                    [
+                        "I should see \"LOG IN\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

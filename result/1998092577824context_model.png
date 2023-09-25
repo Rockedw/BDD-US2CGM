@@ -1,0 +1,22 @@
+// 1998092576768 Context Model
+digraph {
+	1998092577824 [label=Context7]
+	1998092577968 [label="I have a _posts directory"]
+	1998092577824 -> 1998092577968
+	1998092577968 [label="I have a _posts directory"]
+	1998092578064 [label="I have the following post:"]
+	1998092577824 -> 1998092578064
+	1998092578064 [label="I have the following post:"]
+	1998092578160 [label="I have a movies/_posts directory"]
+	1998092577824 -> 1998092578160
+	1998092578160 [label="I have a movies/_posts directory"]
+	1998092578256 [label="I have the following post in \"movies\":"]
+	1998092577824 -> 1998092578256
+	1998092578256 [label="I have the following post in \"movies\":"]
+	1998092578352 [label="I have the following post in \"movies\":"]
+	1998092577824 -> 1998092578352
+	1998092578352 [label="I have the following post in \"movies\":"]
+	1998092578448 [label="I have an \"index.md\" page with content:"]
+	1998092577824 -> 1998092578448
+	1998092578448 [label="I have an \"index.md\" page with content:"]
+}

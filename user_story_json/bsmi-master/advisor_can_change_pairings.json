@@ -1,0 +1,154 @@
+{
+    "feature_name": "advisor can change pairings",
+    "user_story": {
+        "as_a": "student advisor",
+        "i_want": "add new placement and remove automated placements for students",
+        "so_that": "I can finalize students placements.",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "the following assignments exist"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to /students/3/semesters/1/edit_placements"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Monday\""
+                    ],
+                    [
+                        "I should see \"8:00 AM to 9:00 AM\""
+                    ],
+                    [
+                        "I should see \"Physics\""
+                    ],
+                    [
+                        "I should see \"High School\""
+                    ],
+                    [
+                        "I should see \"Berkeley High\""
+                    ],
+                    [
+                        "I should see \"Oski Bear\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the following assignments exist"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to /students/3/semesters/1/edit_placements"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Monday\""
+                    ],
+                    [
+                        "I should see \"8:00 AM to 9:00 AM\""
+                    ],
+                    [
+                        "I should see \"Physics\""
+                    ],
+                    [
+                        "I should see \"High School\""
+                    ],
+                    [
+                        "I should see \"Berkeley High\""
+                    ],
+                    [
+                        "I should see \"Oski Bear\""
+                    ],
+                    [
+                        "I should see \"Remove\""
+                    ],
+                    [
+                        "I follow \"Remove\""
+                    ],
+                    [
+                        "I should see \"The selected placement has been removed\""
+                    ],
+                    [
+                        "I should not see \"Monday\""
+                    ],
+                    [
+                        "I should not see \"8:00 AM to 9:00 AM\""
+                    ],
+                    [
+                        "I should not see \"Physics\""
+                    ],
+                    [
+                        "I should not see \"High School\""
+                    ],
+                    [
+                        "I should not see \"Berkeley High\""
+                    ],
+                    [
+                        "I should not see \"Oski Bear\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to /students/3/semesters/1/edit_placements"
+                    ],
+                    [
+                        "I fill in \"new_timeslot\" with \"1\"",
+                        "I press \"Update\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"Monday\""
+                    ],
+                    [
+                        "I should not see \"8:00 AM to 9:00 AM\""
+                    ],
+                    [
+                        "I should not see \"Physics\""
+                    ],
+                    [
+                        "I should not see \"High School\""
+                    ],
+                    [
+                        "I should not see \"Berkeley High\""
+                    ],
+                    [
+                        "I should not see \"Oski Bear\""
+                    ],
+                    [
+                        "I should see \"Monday\""
+                    ],
+                    [
+                        "I should see \"8:00 AM to 9:00 AM\""
+                    ],
+                    [
+                        "I should see \"Physics\""
+                    ],
+                    [
+                        "I should see \"High School\""
+                    ],
+                    [
+                        "I should see \"Berkeley High\""
+                    ],
+                    [
+                        "I should see \"Oski Bear\""
+                    ],
+                    [
+                        "I should see \"Remove\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

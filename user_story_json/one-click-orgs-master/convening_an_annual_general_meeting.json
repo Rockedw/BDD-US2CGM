@@ -1,0 +1,65 @@
+{
+    "feature_name": "Convening an annual general meeting",
+    "user_story": {
+        "as_a": "As the Secretary",
+        "i_want": "convene the Annual General Meeting",
+        "so_that": "deal with annual business of the co-op",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Meetings page",
+                        "I press \"Convene an Annual General Meeting\""
+                    ],
+                    [
+                        "I choose a date for the meeting",
+                        "I choose a start time for the meeting",
+                        "I enter a venue for the meeting",
+                        "I press \"Confirm and convene the meeting\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a list of the Directors who are due for retirement"
+                    ],
+                    [
+                        "I should see the new AGM in the list of Upcoming Meetings"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I begin to convene an AGM",
+                        "I choose to allow electronic nominations for new Directors",
+                        "I choose a closing date for nominations",
+                        "I convene the meeting"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "electronic nominations for new Directors should be opened"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I begin to convene an AGM",
+                        "I choose to allow electronic voting for new Directors",
+                        "I choose a closing date for voting",
+                        "I convene the meeting"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "an electronic vote for the new Directors should be prepared"
+                    ]
+                ]
+            }
+        ]
+    }
+}

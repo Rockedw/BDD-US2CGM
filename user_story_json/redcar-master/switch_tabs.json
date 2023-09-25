@@ -1,0 +1,219 @@
+{
+    "feature_name": "Switch and move tabs within a notebook",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Anne Boleyn\"",
+                        "I open a new edit tab",
+                        "I replace the contents with \"Elizabeth Woodville\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Elizabeth Woodville\" in the edit tab",
+                        "I switch down a tab"
+                    ],
+                    [
+                        "I should see \"Anne Boleyn\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Anne Boleyn\"",
+                        "I open a new edit tab",
+                        "I replace the contents with \"Elizabeth Woodville\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Elizabeth Woodville\" in the edit tab",
+                        "I switch down a tab",
+                        "I switch down a tab"
+                    ],
+                    [
+                        "I should see \"Elizabeth Woodville\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Anne Boleyn\"",
+                        "I open a new edit tab",
+                        "I replace the contents with \"Elizabeth Woodville\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Elizabeth Woodville\" in the edit tab",
+                        "I switch down a tab",
+                        "I switch up a tab"
+                    ],
+                    [
+                        "I should see \"Elizabeth Woodville\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Anne Boleyn\"",
+                        "I open a new edit tab",
+                        "I replace the contents with \"Elizabeth Woodville\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Elizabeth Woodville\" in the edit tab",
+                        "I switch up a tab"
+                    ],
+                    [
+                        "I should see \"Anne Boleyn\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Anne Boleyn\"",
+                        "I make a new notebook"
+                    ],
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Scarlett\"",
+                        "I move the tab to the other notebook"
+                    ],
+                    [
+                        "I switch notebooks"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Anne Boleyn\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Anne Boleyn\"",
+                        "I open a new edit tab",
+                        "I replace the contents with \"Elizabeth Woodville\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Elizabeth Woodville\" in the edit tab",
+                        "I switch down a tab"
+                    ],
+                    [
+                        "I should see \"Anne Boleyn\" in the edit tab",
+                        "I move up a tab"
+                    ],
+                    [
+                        "I should see \"Anne Boleyn\" in the edit tab",
+                        "I switch down a tab"
+                    ],
+                    [
+                        "I should see \"Elizabeth Woodville\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Anne Boleyn\"",
+                        "I open a new edit tab",
+                        "I replace the contents with \"Elizabeth Woodville\"",
+                        "I open a new edit tab",
+                        "I replace the contents with \"Catherine of Aragon\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Catherine of Aragon\" in the edit tab",
+                        "I move up a tab",
+                        "I move up a tab",
+                        "I move up a tab",
+                        "I move up a tab",
+                        "I switch up a tab"
+                    ],
+                    [
+                        "I should see \"Anne Boleyn\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab titled \"Anne\"",
+                        "I replace the contents with \"Anne Boleyn\"",
+                        "I open a new edit tab titled \"Betty\"",
+                        "I replace the contents with \"Elizabeth Woodville\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Elizabeth Woodville\" in the edit tab",
+                        "I move down a tab"
+                    ],
+                    [
+                        "I should see \"Elizabeth Woodville\" in the edit tab",
+                        "I switch up a tab"
+                    ],
+                    [
+                        "I should see \"Anne Boleyn\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Anne Boleyn\"",
+                        "I open a new edit tab",
+                        "I replace the contents with \"Elizabeth Woodville\"",
+                        "I open a new edit tab",
+                        "I replace the contents with \"Catherine of Aragon\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Catherine of Aragon\" in the edit tab",
+                        "I move down a tab",
+                        "I move down a tab",
+                        "I move down a tab",
+                        "I move down a tab",
+                        "I switch down a tab"
+                    ],
+                    [
+                        "I should see \"Anne Boleyn\" in the edit tab"
+                    ]
+                ]
+            }
+        ]
+    }
+}

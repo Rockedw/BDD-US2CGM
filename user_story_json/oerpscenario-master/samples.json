@@ -1,0 +1,160 @@
+{
+    "feature_name": "Make some scenario samples",
+    "user_story": {
+        "as_a": "",
+        "i_want": "illustrate the basics behaviors",
+        "so_that": "show you how to work with OERPScenario",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I want to show you how to use OERPScenario"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I create a partner named automatedtest"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be able to find it by his id",
+                        "the name should be automatedtest"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am still in the same features and not the same scenario"
+                    ],
+                    [
+                        "I take the first found partner to set @partner variable",
+                        "I store it into the memorizer as automatedtest in order to retrieve it in another scenario"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I call the @partner variable I should not retrieve the partner"
+                    ],
+                    [
+                        "I call back the memorizer to retieve the automatedtest variable"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should have the same partner as contained into @partner variable"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I want to show you how to use the Helpers"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "you need to look for a supplier partner with at least one contact"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "you can use one of the ResPartner helper called get_valid_partner",
+                        "get the corresponding partner very easily"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have recorded a supplier invoice of 1000,0 EUR called MySampleSupplierInvoice using Helpers"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I validate the invoice using the validate button"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get the invoice open"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have created a partner named \"Demour SA\" with the following addresses:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I change the partner name to \"Demour sa\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I expect the partner credit to be 0",
+                        "I expect the partner debit to be 0"
+                    ],
+                    [
+                        "the partner name to be \"Demour sa\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I open a database connection with sequel"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I select all the users"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I must have selected users"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"res.partner\" with reference \"partner_rincewind\""
+                    ],
+                    [
+                        "I need a \"res.partner.address\" with reference \"partner_address_rincewind\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I update it with values:"
+                    ],
+                    [
+                        "I update it with values:"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I save it"
+                    ],
+                    [
+                        "I save it"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I execute following sql:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            }
+        ]
+    }
+}

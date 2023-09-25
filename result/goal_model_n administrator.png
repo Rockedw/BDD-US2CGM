@@ -1,0 +1,71 @@
+// Goal Model
+digraph {
+	1847134114032 [label="n administrator
+goal"]
+	1847134021584 [label="change the configuration of the site
+goal
+1847134020624"]
+	1847134114032 -> 1847134021584
+	1847134021584 [label="change the configuration of the site
+goal"]
+	1847133895840 [label="Reviewing configuration
+goal
+140728069287616"]
+	1847134021584 -> 1847133895840
+	1847133895840 [label="Reviewing configuration
+goal"]
+	1847133896416 [label="Editing configuration
+goal
+140728069287616"]
+	1847134021584 -> 1847133896416
+	1847133896416 [label="Editing configuration
+goal"]
+	1847133889936 [label="I press \"Edit Configuration\"
+task
+140728069287616"]
+	1847133896416 -> 1847133889936
+	1847133889936 [label="I press \"Edit Configuration\"
+task"]
+	1847133893584 [label="I fill in \"Site Title\" with \"Something else\"
+task
+140728069287616"]
+	1847133896416 -> 1847133893584
+	1847133893584 [label="I fill in \"Site Title\" with \"Something else\"
+task"]
+	1847133884992 [label="I select \"London\" from \"Local Timezone\"
+task
+140728069287616"]
+	1847133896416 -> 1847133884992
+	1847133884992 [label="I select \"London\" from \"Local Timezone\"
+task"]
+	1847133890176 [label="I press \"Save Changes\"
+task
+140728069287616"]
+	1847133896416 -> 1847133890176
+	1847133890176 [label="I press \"Save Changes\"
+task"]
+	1847133893008 [label="I should see \"Configuration\"
+task
+140728069287616"]
+	1847133896416 -> 1847133893008
+	1847133893008 [label="I should see \"Configuration\"
+task"]
+	1847133886816 [label="I should see \"Something else\"
+task
+140728069287616"]
+	1847133896416 -> 1847133886816
+	1847133886816 [label="I should see \"Something else\"
+task"]
+	1847133896128 [label="Editing preferences
+goal
+140728069287616"]
+	1847134021584 -> 1847133896128
+	1847133896128 [label="Editing preferences
+goal"]
+	1847133889504 [label="I press \"Edit Preferences\"
+task
+140728069287616"]
+	1847133896128 -> 1847133889504
+	1847133889504 [label="I press \"Edit Preferences\"
+task"]
+}

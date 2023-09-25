@@ -1,0 +1,125 @@
+// Goal Model
+digraph {
+	1847117889440 [label="web developer using CarrierWave
+goal"]
+	1847124500800 [label="mount an uploader on an ActiveRecord class
+goal
+1847124503584"]
+	1847117889440 -> 1847124500800
+	1847124500800 [label="mount an uploader on an ActiveRecord class
+goal"]
+	1847124669152 [label="assign a file
+goal
+140728069287616"]
+	1847124500800 -> 1847124669152
+	1847124669152 [label="assign a file
+goal"]
+	1847124671264 [label="I assign the file 'fixtures/bork.txt' to the 'avatar' column
+task
+140728069287616"]
+	1847124669152 -> 1847124671264
+	1847124671264 [label="I assign the file 'fixtures/bork.txt' to the 'avatar' column
+task"]
+	1847124665264 [label="assign a file and save the record
+goal
+140728069287616"]
+	1847124500800 -> 1847124665264
+	1847124665264 [label="assign a file and save the record
+goal"]
+	1847124664832 [label="I assign the file 'fixtures/bork.txt' to the 'avatar' column
+task
+140728069287616"]
+	1847124665264 -> 1847124664832
+	1847124664832 [label="I assign the file 'fixtures/bork.txt' to the 'avatar' column
+task"]
+	1847124665840 [label="I save the active record
+task
+140728069287616"]
+	1847124665264 -> 1847124665840
+	1847124665840 [label="I save the active record
+task"]
+	1847124664400 [label="assign a file and retrieve it from cache
+goal
+140728069287616"]
+	1847124500800 -> 1847124664400
+	1847124664400 [label="assign a file and retrieve it from cache
+goal"]
+	1847124658160 [label="I assign the file 'fixtures/bork.txt' to the 'avatar' column
+task
+140728069287616"]
+	1847124664400 -> 1847124658160
+	1847124658160 [label="I assign the file 'fixtures/bork.txt' to the 'avatar' column
+task"]
+	1847124656624 [label="I retrieve the file later from the cache name for the column 'avatar'
+task
+140728069287616"]
+	1847124664400 -> 1847124656624
+	1847124656624 [label="I retrieve the file later from the cache name for the column 'avatar'
+task"]
+	1847124657392 [label="I save the active record
+task
+140728069287616"]
+	1847124664400 -> 1847124657392
+	1847124657392 [label="I save the active record
+task"]
+	1847124668624 [label="store a file and retrieve it later
+goal
+140728069287616"]
+	1847124500800 -> 1847124668624
+	1847124668624 [label="store a file and retrieve it later
+goal"]
+	1847124669440 [label="I assign the file 'fixtures/bork.txt' to the 'avatar' column
+task
+140728069287616"]
+	1847124668624 -> 1847124669440
+	1847124669440 [label="I assign the file 'fixtures/bork.txt' to the 'avatar' column
+task"]
+	1847124671984 [label="I retrieve the file later from the cache name for the column 'avatar'
+task
+140728069287616"]
+	1847124668624 -> 1847124671984
+	1847124671984 [label="I retrieve the file later from the cache name for the column 'avatar'
+task"]
+	1847124669488 [label="I save the active record
+task
+140728069287616"]
+	1847124668624 -> 1847124669488
+	1847124669488 [label="I save the active record
+task"]
+	1847124667184 [label="I reload the active record
+task
+140728069287616"]
+	1847124668624 -> 1847124667184
+	1847124667184 [label="I reload the active record
+task"]
+	1847124660080 [label="store a file and delete the record
+goal
+140728069287616"]
+	1847124500800 -> 1847124660080
+	1847124660080 [label="store a file and delete the record
+goal"]
+	1847124665888 [label="I assign the file 'fixtures/bork.txt' to the 'avatar' column
+task
+140728069287616"]
+	1847124660080 -> 1847124665888
+	1847124665888 [label="I assign the file 'fixtures/bork.txt' to the 'avatar' column
+task"]
+	1847124660512 [label="I retrieve the file later from the cache name for the column 'avatar'
+task
+140728069287616"]
+	1847124660080 -> 1847124660512
+	1847124660512 [label="I retrieve the file later from the cache name for the column 'avatar'
+task"]
+	1847124664880 [label="I save the active record
+task
+140728069287616"]
+	1847124660080 -> 1847124664880
+	1847124664880 [label="I save the active record
+task"]
+	1847124669968 [label="I delete the active record
+task
+140728069287616"]
+	1847124660080 -> 1847124669968
+	1847124669968 [label="I delete the active record
+task"]
+}

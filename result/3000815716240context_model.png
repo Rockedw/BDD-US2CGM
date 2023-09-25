@@ -1,0 +1,10 @@
+// 3000815714608 Context Model
+digraph {
+	3000815716240 [label=Context112]
+	3000815716384 [label="I have an \"index.scss\" page that contains \".foo-bar { color:{{site.color}}; }\""]
+	3000815716240 -> 3000815716384
+	3000815716384 [label="I have an \"index.scss\" page that contains \".foo-bar { color:{{site.color}}; }\""]
+	3000815716480 [label="I have a configuration file with \"color\" set to \"red\""]
+	3000815716240 -> 3000815716480
+	3000815716480 [label="I have a configuration file with \"color\" set to \"red\""]
+}

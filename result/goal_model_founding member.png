@@ -1,0 +1,137 @@
+// Goal Model
+digraph {
+	1847134321152 [label="founding member
+goal"]
+	1847134073856 [label=" view detail
+goal
+140728069287616"]
+	1847134321152 -> 1847134073856
+	1847134073856 [label=" view detail
+goal"]
+	1847134172352 [label="view details of the draft association
+goal
+1847134174320"]
+	1847134073856 -> 1847134172352
+	1847134172352 [label="view details of the draft association
+goal"]
+	1847134169856 [label="Viewing the draft constitution
+goal
+140728069287616"]
+	1847134172352 -> 1847134169856
+	1847134169856 [label="Viewing the draft constitution
+goal"]
+	1847134164288 [label="I go to the constitution page
+task
+140728069287616"]
+	1847134169856 -> 1847134164288
+	1847134164288 [label="I go to the constitution page
+task"]
+	1847134164240 [label="Viewing the list of founding members
+goal
+140728069287616"]
+	1847134172352 -> 1847134164240
+	1847134164240 [label="Viewing the list of founding members
+goal"]
+	1847134163760 [label="I go to the members page
+task
+140728069287616"]
+	1847134164240 -> 1847134163760
+	1847134163760 [label="I go to the members page
+task"]
+	1847134164720 [label="view the details of the draft co-op
+goal
+1847134164336"]
+	1847134073856 -> 1847134164720
+	1847134164720 [label="view the details of the draft co-op
+goal"]
+	1847134166208 [label="Founding member views the rules of the draft co-op
+goal
+1847134174272"]
+	1847134164720 -> 1847134166208
+	1847134166208 [label="Founding member views the rules of the draft co-op
+goal"]
+	1847134162752 [label="I go to the Rules page
+task
+140728069287616"]
+	1847134166208 -> 1847134162752
+	1847134162752 [label="I go to the Rules page
+task"]
+	1847134170768 [label="Founding member views the members of the draft co-op
+goal
+140728069287616"]
+	1847134164720 -> 1847134170768
+	1847134170768 [label="Founding member views the members of the draft co-op
+goal"]
+	1847134171248 [label="I go to the Members page
+task
+140728069287616"]
+	1847134170768 -> 1847134171248
+	1847134171248 [label="I go to the Members page
+task"]
+	1847134167984 [label="Founding member views the directors and officers of the draft co-op
+goal
+1847134169520"]
+	1847134164720 -> 1847134167984
+	1847134167984 [label="Founding member views the directors and officers of the draft co-op
+goal"]
+	1847134171152 [label="I go to the Directors page
+task
+140728069287616"]
+	1847134167984 -> 1847134171152
+	1847134171152 [label="I go to the Directors page
+task"]
+	1847134017072 [label="participate in the founding vote
+goal
+1847134018704"]
+	1847134321152 -> 1847134017072
+	1847134017072 [label="participate in the founding vote
+goal"]
+	1847134022352 [label="Viewing progress of the founding vote
+goal
+140728069287616"]
+	1847134017072 -> 1847134022352
+	1847134022352 [label="Viewing progress of the founding vote
+goal"]
+	1847134022976 [label="Voting in the founding vote
+goal
+140728069287616"]
+	1847134017072 -> 1847134022976
+	1847134022976 [label="Voting in the founding vote
+goal"]
+	1847134024608 [label="I go to the home page
+task
+140728069287616"]
+	1847134022976 -> 1847134024608
+	1847134024608 [label="I go to the home page
+task"]
+	1847134020144 [label="I press \"Support\"
+task
+140728069287616"]
+	1847134022976 -> 1847134020144
+	1847134020144 [label="I press \"Support\"
+task"]
+	1847134019760 [label="Founding vote passes
+goal
+1847134022736"]
+	1847134017072 -> 1847134019760
+	1847134019760 [label="Founding vote passes
+goal"]
+	1847134026384 [label="Seeing who has joined the new org
+goal
+1847134167888"]
+	1847134017072 -> 1847134026384
+	1847134026384 [label="Seeing who has joined the new org
+goal"]
+	1847134015008 [label="know that the founding vote has passed
+goal
+1847134161696"]
+	1847134321152 -> 1847134015008
+	1847134015008 [label="know that the founding vote has passed
+goal"]
+	1847134174608 [label="I log in
+task
+140728069287616"]
+	1847134015008 -> 1847134174608
+	1847134174608 [label="I log in
+task"]
+}

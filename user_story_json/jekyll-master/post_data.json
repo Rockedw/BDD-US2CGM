@@ -1,0 +1,720 @@
+{
+    "feature_name": "Post data",
+    "user_story": {
+        "as_a": "hacker who likes to blog",
+        "i_want": "be able to embed data into my posts",
+        "so_that": "make the posts slightly dynamic",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have a _layouts directory",
+                        "I have the following post:",
+                        "I have a simple layout that contains \"Post title: {{ page.title }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post title: Star Wars\" in \"_site/2009/03/27/star-wars.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have a _layouts directory",
+                        "I have the following post:",
+                        "I have a simple layout that contains \"Post url: {{ page.url }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post url: /2009/03/27/star-wars.html\" in \"_site/2009/03/27/star-wars.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have a _layouts directory",
+                        "I have the following post:",
+                        "I have a simple layout that contains \"Page name: {{ page.name }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Page name: 2009-03-27-star-wars.markdown\" in \"_site/2009/03/27/star-wars.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have a _layouts directory",
+                        "I have the following post:",
+                        "I have a simple layout that contains \"Post date: {{ page.date | date_to_string }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post date: 27 Mar 2009\" in \"_site/2009/03/27/star-wars.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have a \"_posts/2016-01-01-test.md\" page with date \"tuesday\" that contains \"I have a bad date.\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the _site directory should not exist",
+                        "I should see \"Document '_posts/2016-01-01-test.md' does not have a valid date in the YAML front matter.\" in the build output"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have a \"_posts/2016-22-01-test.md\" page that contains \"I have a bad date.\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the _site directory should not exist",
+                        "I should see \"Document '_posts/2016-22-01-test.md' does not have a valid date in the filename.\" in the build output"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have a _layouts directory",
+                        "I have the following post:",
+                        "I have a simple layout that contains \"Post id: {{ page.id }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post id: /2009/03/27/star-wars\" in \"_site/2009/03/27/star-wars.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have a _layouts directory",
+                        "I have the following post:",
+                        "I have a simple layout that contains \"Post content: {{ content }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post content: <p>Luke, I am your father.</p>\" in \"_site/2009/03/27/star-wars.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a movies directory",
+                        "I have a movies/_posts directory",
+                        "I have a _layouts directory",
+                        "I have the following post in \"movies\":",
+                        "I have a simple layout that contains \"Post category: {{ page.categories }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post category: movies\" in \"_site/movies/2009/03/27/star-wars.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a movies directory",
+                        "I have a movies/_posts directory",
+                        "I have a _layouts directory",
+                        "I have the following post in \"movies\":",
+                        "I have a simple layout that contains \"Post category: {{ page.categories }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post category: movies\" in \"_site/movies/film/2009/03/27/star-wars.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a movies directory",
+                        "I have a movies/_posts directory",
+                        "I have a _layouts directory",
+                        "I have the following post in \"movies\":",
+                        "I have a simple layout that contains \"Post category: {{ page.categories }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post category: movies\" in \"_site/movies/film/scifi/2009/03/27/star-wars.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a movies directory",
+                        "I have a movies/_posts directory",
+                        "I have a _layouts directory",
+                        "I have the following post in \"movies\":",
+                        "I have a simple layout that contains \"Post category: {{ page.categories }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post category: movies\" in \"_site/movies/2009/03/27/star-wars.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a Sci-Fi Movi3s directory",
+                        "I have a Sci-Fi Movi3s/_posts directory",
+                        "I have a _layouts directory",
+                        "I have the following post in \"Sci-Fi Movi3s\":",
+                        "I have a \"_layouts/simple.html\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post categories: Sci-Fi Movi3s, vintage\" in \"_site/sci-fi movi3s/vintage/2020/04/03/star-wars.html\"",
+                        "I should see \"Post URL: /sci-fi%20movi3s/vintage/2020/04/03/star-wars.html\" in \"_site/sci-fi movi3s/vintage/2020/04/03/star-wars.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a Sci-Fi Movi3s directory",
+                        "I have a Sci-Fi Movi3s/_posts directory",
+                        "I have a _layouts directory",
+                        "I have the following post in \"Sci-Fi Movi3s\":",
+                        "I have a \"_layouts/simple.html\" file with content:",
+                        "I have a \"_config.yml\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post categories: Sci-Fi Movi3s, vintage\" in \"_site/sci-fi-movi3s/vintage/2020/04/03/star-wars.html\"",
+                        "I should see \"Post URL: /sci-fi-movi3s/vintage/2020/04/03/star-wars.html\" in \"_site/sci-fi-movi3s/vintage/2020/04/03/star-wars.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have a _layouts directory",
+                        "I have the following post:",
+                        "I have a simple layout that contains \"Post tags: {{ page.tags }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post tags: twist\" in \"_site/2009/05/18/star-wars.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a scifi directory",
+                        "I have a scifi/movies directory",
+                        "I have a scifi/movies/_posts directory",
+                        "I have a _layouts directory",
+                        "I have the following post in \"scifi/movies\":",
+                        "I have a simple layout that contains \"Post categories: {{ page.categories | array_to_sentence_string }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post categories: scifi and movies\" in \"_site/scifi/movies/2009/03/27/star-wars.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a scifi directory",
+                        "I have a scifi/Movies directory",
+                        "I have a scifi/Movies/_posts directory",
+                        "I have a _layouts directory",
+                        "I have the following post in \"scifi/Movies\":",
+                        "I have a simple layout that contains \"Post categories: {{ page.categories | array_to_sentence_string }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post categories: scifi and Movies\" in \"_site/scifi/movies/2009/03/27/star-wars.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have a _layouts directory",
+                        "I have the following post:",
+                        "I have a simple layout that contains \"Post category: {{ page.categories }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post category: movies\" in \"_site/movies/2009/03/27/star-wars.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have a _layouts directory",
+                        "I have the following post:",
+                        "I have a simple layout that contains \"Post category: {{ page.categories }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post category: Movies\" in \"_site/movies/2009/03/27/star-wars.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have a _layouts directory",
+                        "I have the following post:",
+                        "I have a simple layout that contains \"Post categories: {{ page.categories | array_to_sentence_string }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post categories: scifi and movies\" in \"_site/scifi/movies/2009/03/27/star-wars.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have a _layouts directory",
+                        "I have the following post:",
+                        "I have a simple layout that contains \"Post category: {{ page.categories }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post category: movies\" in \"_site/movies/2009/03/27/star-wars.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a movies/_posts directory",
+                        "I have a \"movies/_posts/2009-03-27-star-wars.html\" page with layout \"simple\" that contains \"hi\"",
+                        "I have a _layouts directory",
+                        "I have a simple layout that contains \"Post category: {{ page.categories }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post category: movies\" in \"_site/movies/2009/03/27/star-wars.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a movies/_posts/scifi directory",
+                        "I have a \"movies/_posts/scifi/2009-03-27-star-wars.html\" page with layout \"simple\" that contains \"hi\"",
+                        "I have a _layouts directory",
+                        "I have a simple layout that contains \"Post category: {{ page.categories }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post category: movies\" in \"_site/movies/2009/03/27/star-wars.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have a _layouts directory",
+                        "I have the following posts:",
+                        "I have a simple layout that contains \"Post categories: {{ page.categories | array_to_sentence_string }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post categories: scifi and Movies\" in \"_site/scifi/movies/2009/03/27/star-wars.html\"",
+                        "I should see \"Post categories: SciFi and movies\" in \"_site/scifi/movies/2013/03/17/star-trek.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have the following posts:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should not see \"Hello Unrendered Post\" in \"_site/2017/07/06/unrendered-post.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a <dir>/_posts directory",
+                        "I have the following post in \"<dir>\":"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Source path: <path_prefix>_posts/2013-04-12-my-post.html\" in \"_site/<dir>/2013/04/12/my-post.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have the following post:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Non-custom path: _posts/2013-04-12-override.markdown\" in \"_site/2013/04/12/override.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have an \"index.html\" file that contains \"Published!\"",
+                        "I have the following post:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "the \"_site/2009/03/27/star-wars.html\" file should not exist",
+                        "I should see \"Published!\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have a _layouts directory",
+                        "I have the following post:",
+                        "I have a simple layout that contains \"Post author: {{ page.author }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post author: Darth Vader\" in \"_site/2009/03/27/star-wars.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have a _layouts directory",
+                        "I have the following post:",
+                        "I have a simple layout that contains \"{{page.title}} has class {{page.class}}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"My post has class kewl-post\" in \"_site/2016/01/21/my-post.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have a _layouts directory",
+                        "I have the following posts:",
+                        "I have a ordered layout that contains \"Previous post: {{ page.previous.title }} and next post: {{ page.next.title }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"next post: Some like it hot\" in \"_site/2009/03/27/star-wars.html\"",
+                        "I should see \"Previous post: Some like it hot\" in \"_site/2009/05/27/terminator.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have a _plugins directory",
+                        "I have the following post:",
+                        "I have a \"_plugins/foo.rb\" file with content:",
+                        "I have a \"_plugins/bar.rb\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Deprecation: Document#title\" in the build output",
+                        "I should see \"_plugins/foo.rb:2\" in the build output",
+                        "I should see \"_plugins/bar.rb:3\" in the build output"
+                    ]
+                ]
+            }
+        ]
+    }
+}

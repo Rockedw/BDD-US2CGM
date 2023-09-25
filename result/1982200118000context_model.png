@@ -1,0 +1,10 @@
+// 1982200114592 Context Model
+digraph {
+	1982200118000 [label=Context4]
+	1982200119248 [label="I am signed in"]
+	1982200118000 -> 1982200119248
+	1982200119248 [label="I am signed in"]
+	1982200116752 [label="I have an aspect called \"People\""]
+	1982200118000 -> 1982200116752
+	1982200116752 [label="I have an aspect called \"People\""]
+}

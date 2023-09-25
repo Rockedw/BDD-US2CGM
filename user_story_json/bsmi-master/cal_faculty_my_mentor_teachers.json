@@ -1,0 +1,54 @@
+{
+    "feature_name": "Show List of mentor teachers enrolled in my cal_course",
+    "user_story": {
+        "as_a": "cal faculty",
+        "i_want": "see all mentor teachers assigned to my course",
+        "so_that": "I can see the contact information of those mentor teachers",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am on the login page",
+                        "I fill in \"Email\" with \"calfaculty@berk.edu\"",
+                        "I fill in \"Password\" with \"1234\"",
+                        "I press \"Login\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should be located at \"/cal_faculty/home\"",
+                        "I follow \"Fall 2012\"",
+                        "I follow \"My Mentor Teachers\""
+                    ],
+                    [
+                        "I should be located at \"/cal_faculty/my_mentor_teachers\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the login page",
+                        "I fill in \"Email\" with \"calfaculty@berk.edu\"",
+                        "I fill in \"Password\" with \"1234\"",
+                        "I press \"Login\"",
+                        "I follow \"Fall 2012\"",
+                        "I follow \"My Mentor Teachers\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"mentor1\"",
+                        "I should not see \"mentor2\"",
+                        "I should not see \"mentor3\"",
+                        "I should not see \"stud1\"",
+                        "I should not see \"stud2\"",
+                        "I should not see \"stud3\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

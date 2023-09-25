@@ -1,0 +1,290 @@
+{
+    "feature_name": "Create and view new individual connections through non-Ajax pages",
+    "user_story": {
+        "as_a": "contributor, I want",
+        "i_want": "create and view connections.",
+        "so_that": "create a wontology,",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there are 2 existing categories like \"itemFamily\"",
+                        "I am on the new connections page",
+                        "I select \"itemFamily0 : itemFamily item number 0\" from \"Subject\"",
+                        "I select \"parent_of : Parent Of (basic relationship)\" from \"Relates to\"",
+                        "I choose \"Item\"",
+                        "I select \"itemFamily1 : itemFamily item number 1\" from \"Object\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Create\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"successfully created\"",
+                        "I should see \"itemFamily0\"",
+                        "I should see \"parent_of\"",
+                        "I should see \"itemFamily1\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is 1 existing property like \"newProp\"",
+                        "I am on the new connections page",
+                        "I select \"newProp0 : newProp item number 0\" from \"Subject\"",
+                        "I select \"sub_property_of : SubProperty Of (basic relationship type)\" from \"Relates to\"",
+                        "I choose \"Item\"",
+                        "I select \"predecessor_of : Predecessor Of (basic relationship)\" from \"Object\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Create\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"successfully created\"",
+                        "I should see \"newProp0\"",
+                        "I should see \"sub_property_of\"",
+                        "I should see \"predecessor_of\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is 1 existing individual like \"someone\"",
+                        "I am on the new connections page",
+                        "I select \"someone0 : someone item number 0\" from \"Subject\"",
+                        "I select \"child_of : Child Of (basic relationship)\" from \"Relates to\"",
+                        "I choose \"Value\"",
+                        "I fill in \"connection_scalar_obj\" with \"someone older\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Create\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"successfully created\"",
+                        "I should see \"someone0\"",
+                        "I should see \"child_of\"",
+                        "I should see \"someone older\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there are 2 existing individuals like \"thing\"",
+                        "there is an existing connection \"thing0\" \"contains\" \"thing1\"",
+                        "I am on the new connections page",
+                        "I select \"thing0 : thing item number 0\" from \"Subject\"",
+                        "I select \"contains : Contains (basic relationship)\" from \"Relates to\"",
+                        "I choose \"Item\"",
+                        "I select \"thing1 : thing item number 1\" from \"Object\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Create\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"error\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there are 2 existing individuals like \"thing\"",
+                        "there is an existing connection \"thing0\" \"contains\" \"thing1\"",
+                        "I am on the new connections page",
+                        "I select \"thing0 : thing item number 0\" from \"Subject\"",
+                        "I select \"parent_of : Parent Of (basic relationship)\" from \"Relates to\"",
+                        "I choose \"Item\"",
+                        "I select \"thing1 : thing item number 1\" from \"Object\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Create\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"error\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there are 2 existing individuals like \"thing\"",
+                        "there is an existing connection \"thing0\" \"contains\" \"thing1\"",
+                        "I am on the new connections page",
+                        "I select \"thing1 : thing item number 1\" from \"Subject\"",
+                        "I select \"one_of : One Of (basic relationship)\" from \"Relates to\"",
+                        "I choose \"Item\"",
+                        "I select \"thing0 : thing item number 0\" from \"Object\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Create\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"error\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is 1 existing category like \"myCategory\"",
+                        "there is 1 existing individual like \"myItem\"",
+                        "I am on the new connections page",
+                        "I select \"myItem0 : myItem item number 0\" from \"Subject\"",
+                        "I select \"contains : Contains (basic relationship)\" from \"Relates to\"",
+                        "I choose \"Item\"",
+                        "I select \"myCategory0 : myCategory item number 0\" from \"Object\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Create\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"error\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is 1 existing category like \"myCategory\"",
+                        "there is 1 existing individual like \"myItem\"",
+                        "I am on the new connections page",
+                        "I select \"myCategory0 : myCategory item number 0\" from \"Subject\"",
+                        "I select \"child_of : Child Of (basic relationship)\" from \"Relates to\"",
+                        "I choose \"Item\"",
+                        "I select \"myItem0 : myItem item number 0\" from \"Object\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Create\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"error\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there are 3 existing individuals like \"indiv\"",
+                        "there is an existing connection \"indiv0\" \"predecessor_of\" \"indiv1\"",
+                        "there is an existing connection \"indiv1\" \"predecessor_of\" \"indiv2\"",
+                        "I am on the new connections page",
+                        "I select \"indiv2 : indiv item number 2\" from \"Subject\"",
+                        "I select \"predecessor_of : Predecessor Of (basic relationship)\" from \"Relates to\"",
+                        "I choose \"Item\"",
+                        "I select \"indiv0 : indiv item number 0\" from \"Object\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Create\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"error\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is 1 existing individual like \"myItem\"",
+                        "I am on the new connections page",
+                        "I select \"myItem0 : myItem item number 0\" from \"Subject\"",
+                        "I select \"hierarchical_relationship : Hierarchical Relationship (root relationship type)\" from \"Relates to\"",
+                        "I choose \"Item\"",
+                        "I select \"myItem0 : myItem item number 0\" from \"Object\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Create\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"error\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is 1 existing individual like \"myItem\"",
+                        "I am on the new connections page",
+                        "I select \"myItem0 : myItem item number 0\" from \"Subject\"",
+                        "I select \"ordered_relationship : Ordered Relationship (root relationship type)\" from \"Relates to\"",
+                        "I choose \"Item\"",
+                        "I select \"myItem0 : myItem item number 0\" from \"Object\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Create\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"error\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is 1 existing individual like \"myItem\"",
+                        "I am on the new connections page",
+                        "I select \"myItem0 : myItem item number 0\" from \"Subject\"",
+                        "I select \"one_of : One Of (basic relationship)\" from \"Relates to\"",
+                        "I choose \"Item\"",
+                        "I select \"myItem0 : myItem item number 0\" from \"Object\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Create\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"error\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

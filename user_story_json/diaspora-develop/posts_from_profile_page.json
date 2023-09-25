@@ -1,0 +1,88 @@
+{
+    "feature_name": "posting from own profile page",
+    "user_story": {
+        "as_a": "",
+        "i_want": "post from my profile page",
+        "so_that": "be all cool and stuff",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I expand the publisher",
+                        "I have turned off jQuery effects",
+                        "I append \"I want to understand people\" to the publisher",
+                        "I select \"Family\" on the aspect dropdown",
+                        "I press \"Share\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the home page"
+                    ],
+                    [
+                        "I am on the aspects page",
+                        "I select only \"Family\" aspect"
+                    ],
+                    [
+                        "I select all aspects",
+                        "I select only \"Work\" aspect"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "\"I want to understand people\" should be post 1"
+                    ],
+                    [
+                        "\"I want to understand people\" should be post 1"
+                    ],
+                    [
+                        "\"I want to understand people\" should be post 1"
+                    ],
+                    [
+                        "I should not see \"I want to understand people\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I expand the publisher"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I write the status message \"who am I?\"",
+                        "I attach \"spec/fixtures/button.png\" to the publisher",
+                        "I submit the publisher"
+                    ],
+                    [
+                        "I go to the home page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a \"img\" within \".stream-element div.photo-attachments\"",
+                        "I should see \"who am I?\" within \".stream-element\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I expand the publisher",
+                        "I have turned off jQuery effects",
+                        "I attach \"spec/fixtures/button.png\" to the publisher",
+                        "I click to delete the first uploaded photo"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should not see an uploaded image within the photo drop zone",
+                        "I close the publisher"
+                    ]
+                ]
+            }
+        ]
+    }
+}

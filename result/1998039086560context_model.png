@@ -1,0 +1,37 @@
+// 1998039088240 Context Model
+digraph {
+	1998039086560 [label=Context2]
+	1998039087760 [label="I am invited and on the signup page"]
+	1998039086560 -> 1998039087760
+	1998039087760 [label="I am invited and on the signup page"]
+	1998039074176 [label="I fill in \"First name\" with \"Sangyoon\""]
+	1998039086560 -> 1998039074176
+	1998039074176 [label="I fill in \"First name\" with \"Sangyoon\""]
+	1998039078448 [label="I fill in \"Last name\" with \"Park\""]
+	1998039086560 -> 1998039078448
+	1998039078448 [label="I fill in \"Last name\" with \"Park\""]
+	1998039081856 [label="I fill in \"Street address\" with \"346 soda UC Berkeley\""]
+	1998039086560 -> 1998039081856
+	1998039081856 [label="I fill in \"Street address\" with \"346 soda UC Berkeley\""]
+	1998039079648 [label="I fill in \"City\" with \"Berkeley\""]
+	1998039086560 -> 1998039079648
+	1998039079648 [label="I fill in \"City\" with \"Berkeley\""]
+	1998039086416 [label="I fill in \"State\" with \"CA\""]
+	1998039086560 -> 1998039086416
+	1998039086416 [label="I fill in \"State\" with \"CA\""]
+	1998039084832 [label="I fill in \"Zipcode\" with \"94000\""]
+	1998039086560 -> 1998039084832
+	1998039084832 [label="I fill in \"Zipcode\" with \"94000\""]
+	1998039082240 [label="I fill in \"Phone number\" with \"123-456-7890\""]
+	1998039086560 -> 1998039082240
+	1998039082240 [label="I fill in \"Phone number\" with \"123-456-7890\""]
+	1998039082288 [label="I fill in \"Password\" with \"1234\""]
+	1998039086560 -> 1998039082288
+	1998039082288 [label="I fill in \"Password\" with \"1234\""]
+	1998039085984 [label="I fill in \"Password confirmation\" with \"1234\""]
+	1998039086560 -> 1998039085984
+	1998039085984 [label="I fill in \"Password confirmation\" with \"1234\""]
+	1998039083056 [label="I press \"Register\""]
+	1998039086560 -> 1998039083056
+	1998039083056 [label="I press \"Register\""]
+}

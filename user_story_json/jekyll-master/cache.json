@@ -1,0 +1,90 @@
+{
+    "feature_name": "Cache",
+    "user_story": {
+        "as_a": "developer who likes to create plugins",
+        "i_want": "be able to cache certain aspects across multiple builds",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.md\" page that contains \"{{ site.title }}\"",
+                        "I have a configuration file with \"title\" set to \"Hello World\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the .jekyll-cache directory should exist",
+                        "the .jekyll-cache/Jekyll/Cache/Jekyll--Cache directory should exist",
+                        "the _site directory should exist",
+                        "I should see \"<p>Hello World</p>\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.md\" page that contains \"{{ site.title }}\"",
+                        "I have a configuration file with:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the .foo-cache directory should exist",
+                        "the .foo-cache/Jekyll/Cache/Jekyll--Cache directory should exist"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.md\" page that contains \"{{ site.title }}\"",
+                        "I have a configuration file with \"title\" set to \"Hello World\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build --safe"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.md\" page that contains \"{{ site.title }}\"",
+                        "I have a configuration file with \"title\" set to \"Hello World\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build --disable-disk-cache"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"<p>Hello World</p>\" in \"_site/index.html\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,130 @@
+{
+    "feature_name": "following and being followed",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I sign in as \"bob@bob.bob\"",
+                        "I go to the edit profile page",
+                        "I fill in the following:",
+                        "I press \"update_profile\""
+                    ],
+                    [
+                        "I sign in as \"alice@alice.alice\"",
+                        "I am on \"bob@bob.bob\"'s page",
+                        "I add the person to my \"Besties\" aspect"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on my edit profile page"
+                    ],
+                    [
+                        "I should see a flash message containing \"You have started sharing with <script>alert(0)//!\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I sign in as \"alice@alice.alice\"",
+                        "I am on \"bob@bob.bob\"'s page",
+                        "I press the first \".aspect-membership-dropdown .dropdown-toggle\"",
+                        "I press the first \"a\" within \".add_aspect\"",
+                        "I fill in \"aspect_name\" with \"Super People\" in the aspect creation modal",
+                        "I click on selector \".btn-primary\" in the aspect creation modal",
+                        "I wait until ajax requests finished"
+                    ],
+                    [
+                        "I sign in as \"bob@bob.bob\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should have 1 contact in \"Super People\""
+                    ],
+                    [
+                        "I sign out"
+                    ],
+                    [
+                        "I should have 1 contact in \"Besties\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I sign in as \"bob@bob.bob\"",
+                        "I am on \"alice@alice.alice\"'s page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Besties\""
+                    ],
+                    [
+                        "I should see a \"#mention_button\" within \"#profile_buttons\""
+                    ],
+                    [
+                        "I should not see a \"#message_button\" within \"#profile_buttons\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I sign in as \"alice@alice.alice\"",
+                        "I am on \"bob@bob.bob\"'s page"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"Add contact\""
+                    ],
+                    [
+                        "I should not see a \"#mention_button\" within \"#profile_buttons\""
+                    ],
+                    [
+                        "I should not see a \"#message_button\" within \"#profile_buttons\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I sign in as \"alice@alice.alice\"",
+                        "I am on \"bob@bob.bob\"'s page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I add the person to my \"Besties\" aspect",
+                        "I add the person to my \"Unicorns\" aspect"
+                    ],
+                    [
+                        "I go to \"bob@bob.bob\"'s page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"All aspects\""
+                    ],
+                    [
+                        "I should see a \"#mention_button\" within \"#profile_buttons\""
+                    ],
+                    [
+                        "I should see a \"#message_button\" within \"#profile_buttons\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

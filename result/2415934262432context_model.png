@@ -1,0 +1,22 @@
+// 2415934264592 Context Model
+digraph {
+	2415934262432 [label=Context6]
+	2415934260464 [label="I am on the new task page"]
+	2415934262432 -> 2415934260464
+	2415934260464 [label="I am on the new task page"]
+	2415934274240 [label="I fill in \"task_start\" with \"1/2/2011 2:30 PM\""]
+	2415934262432 -> 2415934274240
+	2415934274240 [label="I fill in \"task_start\" with \"1/2/2011 2:30 PM\""]
+	2415934265072 [label="I fill in \"task_stop\" with \"1/2/2011 2:31 PM\""]
+	2415934262432 -> 2415934265072
+	2415934265072 [label="I fill in \"task_stop\" with \"1/2/2011 2:31 PM\""]
+	2415934274672 [label="I press \"Create\""]
+	2415934262432 -> 2415934274672
+	2415934274672 [label="I press \"Create\""]
+	2415934263008 [label="I should see \"Task was successfully created.\""]
+	2415934262432 -> 2415934263008
+	2415934263008 [label="I should see \"Task was successfully created.\""]
+	2415934264304 [label="I follow \"Edit\""]
+	2415934262432 -> 2415934264304
+	2415934264304 [label="I follow \"Edit\""]
+}

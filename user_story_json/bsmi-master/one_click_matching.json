@@ -1,0 +1,27 @@
+{
+    "feature_name": "One click matching",
+    "user_story": {
+        "as_a": "student advisor",
+        "i_want": "be able to automatically match Cal students to mentor teachers",
+        "so_that": "I do not need to match students and mentor teachers manually",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am on /matching/new"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"match_all\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on /matching"
+                    ]
+                ]
+            }
+        ]
+    }
+}

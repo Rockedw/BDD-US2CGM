@@ -1,0 +1,13 @@
+// 1982218210272 Context Model
+digraph {
+	1982218210368 [label=Context80]
+	1982218210512 [label="I want to configure the following TRUSTED Magento payment mode to AUTOMATICALLY handle related sale orders workflow:"]
+	1982218210368 -> 1982218210512
+	1982218210512 [label="I want to configure the following TRUSTED Magento payment mode to AUTOMATICALLY handle related sale orders workflow:"]
+	1982218210608 [label="I \"allow\" partial picking on TRUSTED payment mode"]
+	1982218210368 -> 1982218210608
+	1982218210608 [label="I \"allow\" partial picking on TRUSTED payment mode"]
+	1982218210704 [label="I demand OpenERP to regulary ask Magento if sale orders are paid"]
+	1982218210368 -> 1982218210704
+	1982218210704 [label="I demand OpenERP to regulary ask Magento if sale orders are paid"]
+}

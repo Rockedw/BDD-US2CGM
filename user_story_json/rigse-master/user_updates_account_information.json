@@ -1,0 +1,41 @@
+{
+    "feature_name": "User updates account information",
+    "user_story": {
+        "as_a": "registered user",
+        "i_want": "update my account information",
+        "so_that": "correct mistakes on my account info",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I log out",
+                        "I am logged in with the username <username>",
+                        "I am on the user preferences page for the user \"<username>\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"User Preferences\"",
+                        "I should see \"FIRST NAME\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am logged in with the username student",
+                        "I am on the user preferences page for the user \"student\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"User Preferences\"",
+                        "I should see \"FIRST NAME\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

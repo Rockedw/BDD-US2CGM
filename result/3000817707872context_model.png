@@ -1,0 +1,16 @@
+// 3000817702880 Context Model
+digraph {
+	3000817707872 [label=Context36]
+	3000817708016 [label="there is 1 existing individual like \"myItem\""]
+	3000817707872 -> 3000817708016
+	3000817708016 [label="there is 1 existing individual like \"myItem\""]
+	3000817708112 [label="there is an existing connection \"myItem0\" \"peer_of\" \"myItem0\""]
+	3000817707872 -> 3000817708112
+	3000817708112 [label="there is an existing connection \"myItem0\" \"peer_of\" \"myItem0\""]
+	3000817708208 [label="I am on the edit connections page for \"myItem0\" \"peer_of\" \"myItem0\""]
+	3000817707872 -> 3000817708208
+	3000817708208 [label="I am on the edit connections page for \"myItem0\" \"peer_of\" \"myItem0\""]
+	3000817708304 [label="I select \"ordered_relationship : Ordered Relationship (root relationship type)\" from \"Relates to\""]
+	3000817707872 -> 3000817708304
+	3000817708304 [label="I select \"ordered_relationship : Ordered Relationship (root relationship type)\" from \"Relates to\""]
+}

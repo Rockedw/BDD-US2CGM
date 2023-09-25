@@ -1,0 +1,38 @@
+{
+    "feature_name": "Teacher can edit their class information",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "the class information can be accurate",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am an anonymous user",
+                        "I try to go to the teacher view of the class page for \"My Class\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on \"the signin page\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am an anonymous user",
+                        "I try to go to the class edit page for \"My Class\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on \"the signin page\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

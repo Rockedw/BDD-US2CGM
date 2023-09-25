@@ -1,0 +1,65 @@
+{
+    "feature_name": "Choosing an organisation type",
+    "user_story": {
+        "as_a": "founder",
+        "i_want": "choose what kind of organisation to create",
+        "so_that": "start the right kind of organisation for my group",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the home page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a list of types of organisation"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the home page",
+                        "I choose to create an association"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the new association page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the home page",
+                        "I choose to create a company"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the new company page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the home page",
+                        "I choose to create a co-op"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the co-op intro page"
+                    ]
+                ]
+            }
+        ]
+    }
+}

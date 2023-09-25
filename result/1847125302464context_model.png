@@ -1,0 +1,28 @@
+// 1847125295264 Context Model
+digraph {
+	1847125302464 [label=Context7]
+	1847125296080 [label="the option to allow default classes is enabled"]
+	1847125302464 -> 1847125296080
+	1847125296080 [label="the option to allow default classes is enabled"]
+	1847125311344 [label="the class \"My Class\" has the class word \"word\""]
+	1847125302464 -> 1847125311344
+	1847125311344 [label="the class \"My Class\" has the class word \"word\""]
+	1847125299920 [label="the student \"student\" belongs to class \"Class_with_no_students\""]
+	1847125302464 -> 1847125299920
+	1847125299920 [label="the student \"student\" belongs to class \"Class_with_no_students\""]
+	1847125295792 [label="I am logged in with the username student"]
+	1847125302464 -> 1847125295792
+	1847125295792 [label="I am logged in with the username student"]
+	1847125311296 [label="I am on my classes page"]
+	1847125302464 -> 1847125311296
+	1847125311296 [label="I am on my classes page"]
+	1847125298576 [label="I fill in \"classWord\" with \"word\""]
+	1847125302464 -> 1847125298576
+	1847125298576 [label="I fill in \"classWord\" with \"word\""]
+	1847125305440 [label="I press \"Submit\""]
+	1847125302464 -> 1847125305440
+	1847125305440 [label="I press \"Submit\""]
+	1847125296128 [label="I wait 1 second"]
+	1847125302464 -> 1847125296128
+	1847125296128 [label="I wait 1 second"]
+}

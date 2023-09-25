@@ -1,0 +1,13 @@
+// 3000815768416 Context Model
+digraph {
+	3000815778064 [label=Context8]
+	3000815771152 [label="I need a \"purchase.order\" with name: PO012"]
+	3000815778064 -> 3000815771152
+	3000815771152 [label="I need a \"purchase.order\" with name: PO012"]
+	3000815777200 [label="having:"]
+	3000815778064 -> 3000815777200
+	3000815777200 [label="having:"]
+	3000815770528 [label="containing the following purchase order lines:"]
+	3000815778064 -> 3000815770528
+	3000815770528 [label="containing the following purchase order lines:"]
+}

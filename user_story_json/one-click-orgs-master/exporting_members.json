@@ -1,0 +1,38 @@
+{
+    "feature_name": "Exporting member data",
+    "user_story": {
+        "as_a": "member",
+        "i_want": "be able to export my member data",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on the members page",
+                        "I follow \"PDF\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a \".pdf\" download with the name of the organisation"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on the members page",
+                        "I follow \"CSV\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a \".csv\" download with the name of the organisation"
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "feature_name": "Sign in",
+    "user_story": {
+        "as_a": "",
+        "i_want": "sign in",
+        "so_that": "get access to protected sections of the site",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "no user exists with an email of \"email@person.com\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the sign in page",
+                        "I sign in as \"email@person.com/password\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Invalid email or password\"",
+                        "I should be signed out"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am signed up and confirmed as \"email@person.com/password\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the sign in page",
+                        "I sign in as \"email@person.com/password\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Signed in successfully\"",
+                        "I should be signed in as \"email@person.com\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

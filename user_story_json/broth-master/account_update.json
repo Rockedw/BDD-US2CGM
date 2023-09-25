@@ -1,0 +1,58 @@
+{
+    "feature_name": "Account Update",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "edit my account",
+        "so_that": "display my most accurate user information",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the account page",
+                        "I follow \"edit your account\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Edit your Account\"",
+                        "I should be on the account edit page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the account edit page",
+                        "I fill in \"user_password\" with \"passw0rd\"",
+                        "I press \"Update\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see error messages"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the account edit page",
+                        "I fill in \"Email\" with \"joe@sixpack.com\"",
+                        "I fill in \"user_current_password\" with \"password\"",
+                        "I press \"Update\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the account page",
+                        "I should see \"joe@sixpack.com\"",
+                        "I should see \"You updated your account successfully.\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

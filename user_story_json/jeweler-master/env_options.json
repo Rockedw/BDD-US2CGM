@@ -1,0 +1,28 @@
+{
+    "feature_name": "Getting options from environment variable",
+    "user_story": {
+        "as_a": "user will need to set up a JEWELER_OPTS environment variable",
+        "i_want": "",
+        "so_that": "avoid having to type --rspec over and over",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I set JEWELER_OPTS env variable to \"--rspec\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'spec/the-perfect-gem_spec.rb' should describe 'ThePerfectGem'"
+                    ]
+                ]
+            }
+        ]
+    }
+}

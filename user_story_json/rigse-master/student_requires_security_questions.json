@@ -1,0 +1,64 @@
+{
+    "feature_name": "Student must specify security questions before using the portal",
+    "user_story": {
+        "as_a": "",
+        "i_want": "I shouldn't be able to do anything until I set my",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I try to go to the root path"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the edit security questions page for the user \"student\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I try to go to my preferences"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the edit security questions page for the user \"student\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "the student \"student\" has security questions set",
+                        "I go to my classes page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on my classes page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "the student \"student\" has security questions set",
+                        "I go to my preferences"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on my preferences"
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "feature_name": "Viewing the constitution",
+    "user_story": {
+        "as_a": "member",
+        "i_want": "view the constitution of my association",
+        "so_that": "understand my association",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the constitution page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the constitution"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the association was founded a week ago",
+                        "the objectives were changed 3 days ago"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the constitution page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see that the constitution was most recently changed 3 days ago"
+                    ]
+                ]
+            }
+        ]
+    }
+}

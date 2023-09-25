@@ -1,0 +1,10 @@
+// 1982218210320 Context Model
+digraph {
+	1982218210800 [label=Context81]
+	1982218210944 [label="I want to configure the following UNTRUSTED Magento payment mode to MANUALLY handle related sale orders workflow:"]
+	1982218210800 -> 1982218210944
+	1982218210944 [label="I want to configure the following UNTRUSTED Magento payment mode to MANUALLY handle related sale orders workflow:"]
+	1982218211040 [label="I \"forbid\" partial picking on UNTRUSTED payment mode"]
+	1982218210800 -> 1982218211040
+	1982218211040 [label="I \"forbid\" partial picking on UNTRUSTED payment mode"]
+}

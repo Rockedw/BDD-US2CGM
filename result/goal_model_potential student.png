@@ -1,0 +1,299 @@
+// Goal Model
+digraph {
+	1847133473520 [label="potential student
+goal"]
+	1847132851840 [label="register
+goal
+1847132857888"]
+	1847133473520 -> 1847132851840
+	1847132851840 [label="register
+goal"]
+	1847138484032 [label="Anonymous user signs up as student
+goal
+1847135462848"]
+	1847132851840 -> 1847138484032
+	1847138484032 [label="Anonymous user signs up as student
+goal"]
+	1847138480096 [label="I go to the pick signup page
+task
+140728069287616"]
+	1847138484032 -> 1847138480096
+	1847138480096 [label="I go to the pick signup page
+task"]
+	1847125305920 [label="I press \"Sign up as a student\"
+task
+140728069287616"]
+	1847138484032 -> 1847125305920
+	1847125305920 [label="I press \"Sign up as a student\"
+task"]
+	1847125302224 [label="I fill in the following:
+task
+140728069287616"]
+	1847138484032 -> 1847125302224
+	1847125302224 [label="I fill in the following:
+task"]
+	1847133284496 [label="I press \"Submit\"
+task
+140728069287616"]
+	1847138484032 -> 1847133284496
+	1847133284496 [label="I press \"Submit\"
+task"]
+	1847138471600 [label="I login with username: estudent password: password
+task
+140728069287616"]
+	1847138484032 -> 1847138471600
+	1847138471600 [label="I login with username: estudent password: password
+task"]
+	1847138475920 [label="Anonymous user signs up as student with form errors
+goal
+140728069287616"]
+	1847132851840 -> 1847138475920
+	1847138475920 [label="Anonymous user signs up as student with form errors
+goal"]
+	1847135453392 [label="I go to the pick signup page
+task
+140728069287616"]
+	1847138475920 -> 1847135453392
+	1847135453392 [label="I go to the pick signup page
+task"]
+	1847135456176 [label="I press \"Sign up as a student\"
+task
+140728069287616"]
+	1847138475920 -> 1847135456176
+	1847135456176 [label="I press \"Sign up as a student\"
+task"]
+	1847135455456 [label="I press \"Submit\"
+task
+140728069287616"]
+	1847138475920 -> 1847135455456
+	1847135455456 [label="I press \"Submit\"
+task"]
+	1847135458720 [label="I fill in the following:
+task
+140728069287616"]
+	1847138475920 -> 1847135458720
+	1847135458720 [label="I fill in the following:
+task"]
+	1847135461216 [label="I press \"Submit\"
+task
+140728069287616"]
+	1847138475920 -> 1847135461216
+	1847135461216 [label="I press \"Submit\"
+task"]
+	1847135454064 [label="Class words are not case sensitive
+goal
+140728069287616"]
+	1847132851840 -> 1847135454064
+	1847135454064 [label="Class words are not case sensitive
+goal"]
+	1847135458768 [label="I go to the pick signup page
+task
+140728069287616"]
+	1847135454064 -> 1847135458768
+	1847135458768 [label="I go to the pick signup page
+task"]
+	1847135458864 [label="I press \"Sign up as a student\"
+task
+140728069287616"]
+	1847135454064 -> 1847135458864
+	1847135458864 [label="I press \"Sign up as a student\"
+task"]
+	1847135455552 [label="I fill in the following:
+task
+140728069287616"]
+	1847135454064 -> 1847135455552
+	1847135455552 [label="I fill in the following:
+task"]
+	1847135456992 [label="I press \"Submit\"
+task
+140728069287616"]
+	1847135454064 -> 1847135456992
+	1847135456992 [label="I press \"Submit\"
+task"]
+	1847135459872 [label="I login with username: estudent password: password
+task
+140728069287616"]
+	1847135454064 -> 1847135459872
+	1847135459872 [label="I login with username: estudent password: password
+task"]
+	1847135459152 [label="Student registered when default classes are enabled
+goal
+1847135455168"]
+	1847132851840 -> 1847135459152
+	1847135459152 [label="Student registered when default classes are enabled
+goal"]
+	1847135453632 [label="I go to the pick signup page
+task
+140728069287616"]
+	1847135459152 -> 1847135453632
+	1847135453632 [label="I go to the pick signup page
+task"]
+	1847135460640 [label="I press \"Sign up as a student\"
+task
+140728069287616"]
+	1847135459152 -> 1847135460640
+	1847135460640 [label="I press \"Sign up as a student\"
+task"]
+	1847135458576 [label="I fill in the following:
+task
+140728069287616"]
+	1847135459152 -> 1847135458576
+	1847135458576 [label="I fill in the following:
+task"]
+	1847135459632 [label="I press \"Submit\"
+task
+140728069287616"]
+	1847135459152 -> 1847135459632
+	1847135459632 [label="I press \"Submit\"
+task"]
+	1847135455600 [label="I login with username: estudent password: password
+task
+140728069287616"]
+	1847135459152 -> 1847135455600
+	1847135455600 [label="I login with username: estudent password: password
+task"]
+	1847135454688 [label="I should see \"Signed in successfully.\"
+task
+140728069287616"]
+	1847135459152 -> 1847135454688
+	1847135454688 [label="I should see \"Signed in successfully.\"
+task"]
+	1847135455072 [label="Student under 18 registered when student consent is enabled
+goal
+1847135458960"]
+	1847132851840 -> 1847135455072
+	1847135455072 [label="Student under 18 registered when student consent is enabled
+goal"]
+	1847135461744 [label="I go to the pick signup page
+task
+140728069287616"]
+	1847135455072 -> 1847135461744
+	1847135461744 [label="I go to the pick signup page
+task"]
+	1847135460400 [label="I press \"Sign up as a student\"
+task
+140728069287616"]
+	1847135455072 -> 1847135460400
+	1847135460400 [label="I press \"Sign up as a student\"
+task"]
+	1847135456944 [label="I fill in the following:
+task
+140728069287616"]
+	1847135455072 -> 1847135456944
+	1847135456944 [label="I fill in the following:
+task"]
+	1847135461408 [label="I choose \"user_of_consenting_age_false\"
+task
+140728069287616"]
+	1847135455072 -> 1847135461408
+	1847135461408 [label="I choose \"user_of_consenting_age_false\"
+task"]
+	1847135457184 [label="I press \"Submit\"
+task
+140728069287616"]
+	1847135455072 -> 1847135457184
+	1847135457184 [label="I press \"Submit\"
+task"]
+	1847135457904 [label="I login with username: estudent password: password
+task
+140728069287616"]
+	1847135455072 -> 1847135457904
+	1847135457904 [label="I login with username: estudent password: password
+task"]
+	1847135459728 [label="Student over 18 registers and gives consent
+goal
+1847135455120"]
+	1847132851840 -> 1847135459728
+	1847135459728 [label="Student over 18 registers and gives consent
+goal"]
+	1847135458240 [label="I go to the pick signup page
+task
+140728069287616"]
+	1847135459728 -> 1847135458240
+	1847135458240 [label="I go to the pick signup page
+task"]
+	1847135456368 [label="I press \"Sign up as a student\"
+task
+140728069287616"]
+	1847135459728 -> 1847135456368
+	1847135456368 [label="I press \"Sign up as a student\"
+task"]
+	1847135454736 [label="I fill in the following:
+task
+140728069287616"]
+	1847135459728 -> 1847135454736
+	1847135454736 [label="I fill in the following:
+task"]
+	1847135456416 [label="I choose \"user_of_consenting_age_true\"
+task
+140728069287616"]
+	1847135459728 -> 1847135456416
+	1847135456416 [label="I choose \"user_of_consenting_age_true\"
+task"]
+	1847135458672 [label="I choose \"user_have_consent_true\"
+task
+140728069287616"]
+	1847135459728 -> 1847135458672
+	1847135458672 [label="I choose \"user_have_consent_true\"
+task"]
+	1847135453296 [label="I press \"Submit\"
+task
+140728069287616"]
+	1847135459728 -> 1847135453296
+	1847135453296 [label="I press \"Submit\"
+task"]
+	1847135457856 [label="I login with username: estudent password: password
+task
+140728069287616"]
+	1847135459728 -> 1847135457856
+	1847135457856 [label="I login with username: estudent password: password
+task"]
+	1847135455984 [label="Student over 18 registered and doesn't give consent
+goal
+1847135453248"]
+	1847132851840 -> 1847135455984
+	1847135455984 [label="Student over 18 registered and doesn't give consent
+goal"]
+	1847135458528 [label="I go to the pick signup page
+task
+140728069287616"]
+	1847135455984 -> 1847135458528
+	1847135458528 [label="I go to the pick signup page
+task"]
+	1847135461984 [label="I press \"Sign up as a student\"
+task
+140728069287616"]
+	1847135455984 -> 1847135461984
+	1847135461984 [label="I press \"Sign up as a student\"
+task"]
+	1847135455696 [label="I fill in the following:
+task
+140728069287616"]
+	1847135455984 -> 1847135455696
+	1847135455696 [label="I fill in the following:
+task"]
+	1847135454784 [label="I choose \"user_of_consenting_age_true\"
+task
+140728069287616"]
+	1847135455984 -> 1847135454784
+	1847135454784 [label="I choose \"user_of_consenting_age_true\"
+task"]
+	1847135457232 [label="I choose \"user_have_consent_false\"
+task
+140728069287616"]
+	1847135455984 -> 1847135457232
+	1847135457232 [label="I choose \"user_have_consent_false\"
+task"]
+	1847135456032 [label="I press \"Submit\"
+task
+140728069287616"]
+	1847135455984 -> 1847135456032
+	1847135456032 [label="I press \"Submit\"
+task"]
+	1847135461552 [label="I login with username: estudent password: password
+task
+140728069287616"]
+	1847135455984 -> 1847135461552
+	1847135461552 [label="I login with username: estudent password: password
+task"]
+}

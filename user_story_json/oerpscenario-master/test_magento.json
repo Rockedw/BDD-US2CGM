@@ -1,0 +1,160 @@
+{
+    "feature_name": "Do the Magento initial synchronisations",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "an instance with absolute id \"base_external.magento\" exists"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I synchronize the referential settings (2 - Synchronize Referential Settings)"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a store view with code \"default\" exists"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I set the store view language on \"en_US\"",
+                        "I save the store view"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "an instance with absolute id \"base_external.magento\" exists"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I import the customer groups (1 - Import Customer Groups (Partner Categories))"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "an instance with absolute id \"base_external.magento\" exists"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I import the product categories (2 - Import Product Categories)"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "an instance with absolute id \"base_external.magento\" exists"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I import the attribute sets (3 - Import Product Attribute Sets)"
+                    ],
+                    [
+                        "I import the attribute groups (4 - Import Attribute Groups)"
+                    ],
+                    [
+                        "I import the attributes (5 - Import Product Attributes)"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a shop with name \"Main Website Store\" exists"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I set the warehouse of the shop on \"stock.warehouse0\"",
+                        "I set the price list of the shop on reference \"product.list0\"",
+                        "I set the following attributes on the shop:",
+                        "I save the shop"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "an instance with absolute id \"base_external.magento\" exists"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I set the instance default product category on category with name \"Root Catalog\"",
+                        "I save the instance"
+                    ],
+                    [
+                        "I import the products (6 - Import Products)",
+                        "I import the product images (7 - Import Images)",
+                        "I import the product links (8 - Import Product Links)"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I the payment type with the name \"Essaie\" exists"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I set the following options:",
+                        "I set the payment journal on \"EUR C\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I save the payment type"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "an instance with absolute id \"base_external.magento\" exists",
+                        "a shop with name \"Main Website Store\" exists"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I import the sale orders (Import Orders)"
+                    ],
+                    [
+                        "the sale orders should have been created"
+                    ],
+                    [
+                        "I should see this sale order order_name open"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": []
+            }
+        ]
+    }
+}

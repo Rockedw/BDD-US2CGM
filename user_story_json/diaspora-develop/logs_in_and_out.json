@@ -1,0 +1,42 @@
+{
+    "feature_name": "user authentication",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a user with username \"ohai\" and password \"secret\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in manually as \"ohai\" with password \"secret\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the stream page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am signed in",
+                        "I click on my name in the header",
+                        "I follow \"Log out\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should be on the new user session page"
+                    ]
+                ]
+            }
+        ]
+    }
+}

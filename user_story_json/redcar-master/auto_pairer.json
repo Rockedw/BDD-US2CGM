@@ -1,0 +1,212 @@
+{
+    "feature_name": "Automatically insert paired characters",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I type \"\\\"\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"\\\"<c>\\\"\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo \\\" bár q\"",
+                        "I move to the end of the line",
+                        "I move left"
+                    ],
+                    [
+                        "I type \"\\\"\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"foo \\\" bár \\\"q\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I type \"(\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"(<c>)\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I type \"\\\"\"",
+                        "I backspace"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I type \"(\"",
+                        "I backspace"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I type \"(\"",
+                        "I type \")\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"()<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I type \"Boris\"",
+                        "I select from (0,0) to (0,5)",
+                        "I type \"(\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"(Boris)<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I type \"\\\"\"",
+                        "I type \"(\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"\\\"(<c>)\\\"\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I type \"\\\"\"",
+                        "I type \"(\"",
+                        "I backspace"
+                    ],
+                    [
+                        "I backspace"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"\\\"<c>\\\"\""
+                    ],
+                    [
+                        "the contents should be \"\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I type \"(\"",
+                        "I type \"\\\"\"",
+                        "I type \"\\\"\"",
+                        "I type \")\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"(\\\"\\\")<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I type \"0123456789\"",
+                        "I move to the start of the line",
+                        "I type \"(\"",
+                        "I move to the end of the line",
+                        "I move to the start of the line",
+                        "I move right",
+                        "I backspace"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"<c>)0123456789\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I type \"0123456789\"",
+                        "I move to the start of the line",
+                        "I type \"(\"",
+                        "I move to the end of the line",
+                        "I move to the start of the line",
+                        "I move right",
+                        "I type \")\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"())0123456789\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "feature_name": "Initialize the settings for sale module",
+    "user_story": {
+        "as_a": "",
+        "i_want": "set some parameters and settings",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "the company currency is set to EUR",
+                        "the following currency rate settings are:",
+                        "a cash journal in USD exists",
+                        "a cash journal in CHF exists",
+                        "a cash journal in EUR exists"
+                    ],
+                    [
+                        "a valid sale pricelist in CHF exists",
+                        "a valid sale pricelist in EUR exists"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            }
+        ]
+    }
+}

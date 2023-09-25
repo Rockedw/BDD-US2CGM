@@ -1,0 +1,19 @@
+// 1633871778224 Context Model
+digraph {
+	1633871783216 [label=Context12]
+	1633871786096 [label="I have an \"index.html\" page that contains \"Collections: {{ site.tutorials | map: 'title' | join: ', ' }}\""]
+	1633871783216 -> 1633871786096
+	1633871786096 [label="I have an \"index.html\" page that contains \"Collections: {{ site.tutorials | map: 'title' | join: ', ' }}\""]
+	1633871785184 [label="I have fixture collections in \"gathering\" directory"]
+	1633871783216 -> 1633871785184
+	1633871785184 [label="I have fixture collections in \"gathering\" directory"]
+	1633871779136 [label="I have a _layouts directory"]
+	1633871783216 -> 1633871779136
+	1633871779136 [label="I have a _layouts directory"]
+	1633871789840 [label="I have a \"_layouts/tutorial.html\" file with content:"]
+	1633871783216 -> 1633871789840
+	1633871789840 [label="I have a \"_layouts/tutorial.html\" file with content:"]
+	1633871775920 [label="I have a \"_config.yml\" file with content:"]
+	1633871783216 -> 1633871775920
+	1633871775920 [label="I have a \"_config.yml\" file with content:"]
+}

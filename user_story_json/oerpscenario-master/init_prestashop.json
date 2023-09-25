@@ -1,0 +1,66 @@
+{
+    "feature_name": "Create the Prestashop Instance and proceed to the initial synchronisations",
+    "user_story": {
+        "as_a": "",
+        "i_want": "autmated the manual steps.",
+        "so_that": "have a coherent installation",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I update the module list"
+                    ],
+                    [
+                        "I install the required modules with dependencies:"
+                    ],
+                    [
+                        "I give all groups right access to admin user"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "my modules should have been installed and models reloaded"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "an instance with absolute id \"base_external.prestashop\" should exist"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I set the following attributes on the instance:",
+                        "I set the instance referential type on \"prestashop1.5\"",
+                        "I set the instance default language on \"en_US\"",
+                        "I set the instance default product category on \"cat0\"",
+                        "I set an absolute id \"base_external.prestashop\" on the instance",
+                        "I save the instance"
+                    ],
+                    [
+                        "an instance with absolute id \"base_external.prestashop\" exists"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "an instance with absolute id \"base_external.prestashop\" exists"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I reload the referential mapping templates (1 - Reload Referential Mapping Templates)"
+                    ],
+                    [
+                        "I reload the referential mapping templates (1 - Reload Referential Mapping Templates)"
+                    ]
+                ]
+            }
+        ]
+    }
+}

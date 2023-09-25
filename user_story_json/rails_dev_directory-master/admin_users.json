@@ -1,0 +1,51 @@
+{
+    "feature_name": "User administration",
+    "user_story": {
+        "as_a": "n Engine Yard administrator",
+        "i_want": "add, edit, delete users",
+        "so_that": "I can have full control over site access",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a logged in admin user",
+                        "I am on the admin dashboard"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"navigation.users\" translation",
+                        "I follow \"user.add_new\" translation",
+                        "I fill in \"user[first_name]\" with \"Rodney\"",
+                        "I fill in \"user[last_name]\" with \"Miller\"",
+                        "I fill in \"user[email]\" with \"rmiller@rodneymiller.net\"",
+                        "I fill in \"user[password]\" with \"blank\"",
+                        "I press \"forms.save\" translation"
+                    ],
+                    [
+                        "I follow \"user.edit\" translation",
+                        "I fill in \"user[first_name]\" with \"Elvie\"",
+                        "I press \"forms.save\" translation"
+                    ],
+                    [
+                        "I follow \"navigation.users\" translation",
+                        "I follow \"general.delete\" translation"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Rodney Miller\"",
+                        "\"rmiller@rodneymiller.net\" should have a perishable token"
+                    ],
+                    [
+                        "I should see \"Elvie Miller\""
+                    ],
+                    [
+                        "I should not see \"Elvie Miller\"",
+                        "I should see \"user.deleted_successfully\" translation"
+                    ]
+                ]
+            }
+        ]
+    }
+}

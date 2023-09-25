@@ -1,0 +1,762 @@
+{
+    "feature_name": "Incremental Search",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to 0",
+                        "I open the incremental search speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the incremental search speedbar"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to 0",
+                        "I open the incremental search speedbar",
+                        "I type \"Bar\" into the \"Find\" field in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Bar\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nFoo\"",
+                        "I move the cursor to 0",
+                        "I open the incremental search speedbar",
+                        "I type \"Foo\" into the \"Find\" field in the speedbar"
+                    ],
+                    [
+                        "I open the incremental search speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selection should be on line 0"
+                    ],
+                    [
+                        "the selected text should be \"Foo\"",
+                        "the selection should be on line 2"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBaar\\nBaaz\"",
+                        "I move the cursor to 0",
+                        "I open the incremental search speedbar",
+                        "I type \"Ba\" into the \"Find\" field in the speedbar"
+                    ],
+                    [
+                        "I type \"Baa\" into the \"Find\" field in the speedbar",
+                        "the selection should be on line 1"
+                    ],
+                    [
+                        "I type \"Baaz\" into the \"Find\" field in the speedbar"
+                    ],
+                    [
+                        "I type \"Baa\" into the \"Find\" field in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Ba\"",
+                        "the selection should be on line 1"
+                    ],
+                    [
+                        "the selected text should be \"Baaz\"",
+                        "the selection should be on line 2"
+                    ],
+                    [
+                        "the selection should be on line 2"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to 0",
+                        "I open the incremental search speedbar",
+                        "I type \"Foo\" into the \"Find\" field in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Foo\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\\nFoo\"",
+                        "I move the cursor to 1",
+                        "I open the incremental search speedbar",
+                        "I type \"Foo\" into the \"Find\" field in the speedbar"
+                    ],
+                    [
+                        "I open the incremental search speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selection should be on line 3",
+                        "the selected text should be \"Foo\""
+                    ],
+                    [
+                        "the selected text should be \"Foo\"",
+                        "the selection should be on line 0"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to 1",
+                        "I open the incremental search speedbar",
+                        "I type \"Foo\" into the \"Find\" field in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Foo\"",
+                        "the selection should be on line 0"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Benedikt Müller\"",
+                        "I move the cursor to 0",
+                        "I open the incremental search speedbar",
+                        "I type \"ler\" into the \"Find\" field in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"ler\"",
+                        "the selection range should be from 12 to 15"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Benedikt Müller\\n foo \"",
+                        "I move the cursor to 0",
+                        "I open the incremental search speedbar",
+                        "I type \"foo\" into the \"Find\" field in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"foo\"",
+                        "the selection range should be from 17 to 20"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"你好, 凯兰\\nYou make my heart super happy.\"",
+                        "I move the cursor to 0",
+                        "I open the incremental search speedbar",
+                        "I type \"you\" into the \"Find\" field in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"You\"",
+                        "the selection range should be from 7 to 10"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\n你好, 凯兰\\nFoo\\nBar\\nFoo\\nBaz\"",
+                        "I move the cursor to 0",
+                        "I open the incremental search speedbar",
+                        "I type \"foo\" into the \"Find\" field in the speedbar"
+                    ],
+                    [
+                        "I open the incremental search speedbar"
+                    ],
+                    [
+                        "I open the incremental search speedbar"
+                    ],
+                    [
+                        "I open the incremental search speedbar"
+                    ],
+                    [
+                        "I open the incremental search speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Foo\"",
+                        "the selection should be on line 0"
+                    ],
+                    [
+                        "the selected text should be \"Foo\"",
+                        "the selection should be on line 2"
+                    ],
+                    [
+                        "the selected text should be \"Foo\"",
+                        "the selection should be on line 4"
+                    ],
+                    [
+                        "the selected text should be \"Foo\"",
+                        "the selection should be on line 0"
+                    ],
+                    [
+                        "the selected text should be \"Foo\"",
+                        "the selection should be on line 2"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Benedikt Müller\"",
+                        "I move the cursor to 0",
+                        "I open the incremental search speedbar",
+                        "I type \"mül\" into the \"Find\" field in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Mül\"",
+                        "the selection range should be from 9 to 12"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Benedikt Müller\"",
+                        "I move the cursor to 0",
+                        "I open the incremental search speedbar",
+                        "I type \"mül\" into the \"Find\" field in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Mül\"",
+                        "the selection range should be from 9 to 12"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"你好, 凯兰\\nYou make my heart super happy.\"",
+                        "I move the cursor to 0",
+                        "I open the incremental search speedbar",
+                        "I type \"凯兰\" into the \"Find\" field in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"凯兰\"",
+                        "the selection range should be from 4 to 6"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to 0",
+                        "I open the incremental search speedbar",
+                        "I type \"Ba.\" into the \"Find\" field in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should not be any text selected"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to 0",
+                        "I open the incremental search speedbar",
+                        "I type \"Ba.\" into the \"Find\" field in the speedbar"
+                    ],
+                    [
+                        "I check \"Regex\" in the speedbar"
+                    ],
+                    [
+                        "I open the incremental search speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should not be any text selected"
+                    ],
+                    [
+                        "the selected text should be \"Bar\""
+                    ],
+                    [
+                        "the selected text should be \"Baz\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to 0",
+                        "I open the incremental search speedbar",
+                        "I type \"Ba.\" into the \"Find\" field in the speedbar"
+                    ],
+                    [
+                        "I check \"Regex\" in the speedbar"
+                    ],
+                    [
+                        "I open the incremental search speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should not be any text selected"
+                    ],
+                    [
+                        "the selected text should be \"Bar\""
+                    ],
+                    [
+                        "the selected text should be \"Baz\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to 0",
+                        "I open the incremental search speedbar",
+                        "I type \"foo\" into the \"Find\" field in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Foo\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to 0",
+                        "I open the incremental search speedbar",
+                        "I type \"fo.\" into the \"Find\" field in the speedbar"
+                    ],
+                    [
+                        "I check \"Regex\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should not be any text selected"
+                    ],
+                    [
+                        "the selected text should be \"Foo\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to 0",
+                        "I open the incremental search speedbar",
+                        "I type \"foo\" into the \"Find\" field in the speedbar"
+                    ],
+                    [
+                        "I check \"Match case\" in the speedbar"
+                    ],
+                    [
+                        "I type \"Foo\" into the \"Find\" field in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Foo\""
+                    ],
+                    [
+                        "there should not be any text selected"
+                    ],
+                    [
+                        "the selected text should be \"Foo\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to 0",
+                        "I open the incremental search speedbar",
+                        "I check \"Regex\" in the speedbar",
+                        "I type \"fo.\" into the \"Find\" field in the speedbar"
+                    ],
+                    [
+                        "I check \"Match case\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Foo\""
+                    ],
+                    [
+                        "there should not be any text selected"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "I move the cursor to 0",
+                        "I open the incremental search speedbar",
+                        "I type \"Foo\" into the \"Find\" field in the speedbar"
+                    ],
+                    [
+                        "I open the incremental search speedbar"
+                    ],
+                    [
+                        "I open the incremental search speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 0 to 3"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 8 to 11"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 0 to 3"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "I move the cursor to 0",
+                        "I open the incremental search speedbar",
+                        "I uncheck \"Wrap around\" in the speedbar",
+                        "I type \"Foo\" into the \"Find\" field in the speedbar"
+                    ],
+                    [
+                        "I open the incremental search speedbar"
+                    ],
+                    [
+                        "I open the incremental search speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 0 to 3"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 8 to 11"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "there should not be any text selected"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "I move the cursor to 0",
+                        "I open the incremental search speedbar",
+                        "I type \"Foo\" into the \"Find\" field in the speedbar"
+                    ],
+                    [
+                        "I run the command Redcar::DocumentSearch::DoFindNextCommand"
+                    ],
+                    [
+                        "I run the command Redcar::DocumentSearch::DoFindNextCommand"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 0 to 3"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 8 to 11"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 0 to 3"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "I move the cursor to 0",
+                        "I open the incremental search speedbar",
+                        "I uncheck \"Wrap around\" in the speedbar",
+                        "I type \"foo\" into the \"Find\" field in the speedbar"
+                    ],
+                    [
+                        "I run the command Redcar::DocumentSearch::DoFindNextCommand"
+                    ],
+                    [
+                        "I run the command Redcar::DocumentSearch::DoFindNextCommand"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 0 to 3"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 8 to 11"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "there should not be any text selected"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "I move the cursor to 18",
+                        "I open the incremental search speedbar",
+                        "I type \"foo\" into the \"Find\" field in the speedbar"
+                    ],
+                    [
+                        "I run the command Redcar::DocumentSearch::DoFindPreviousCommand"
+                    ],
+                    [
+                        "I run the command Redcar::DocumentSearch::DoFindPreviousCommand"
+                    ],
+                    [
+                        "I run the command Redcar::DocumentSearch::DoFindPreviousCommand"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 0 to 3"
+                    ],
+                    [
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 8 to 11"
+                    ],
+                    [
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 0 to 3"
+                    ],
+                    [
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 8 to 11"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "I move the cursor to 18",
+                        "I open the incremental search speedbar",
+                        "I uncheck \"Wrap around\" in the speedbar",
+                        "I type \"Foo\" into the \"Find\" field in the speedbar"
+                    ],
+                    [
+                        "I run the command Redcar::DocumentSearch::DoFindPreviousCommand"
+                    ],
+                    [
+                        "I run the command Redcar::DocumentSearch::DoFindPreviousCommand"
+                    ],
+                    [
+                        "I run the command Redcar::DocumentSearch::DoFindPreviousCommand"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "there should not be any text selected"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 8 to 11"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 0 to 3"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "there should not be any text selected"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with 100 lines of \"xxx\" then \"Foo\"",
+                        "I scroll to the top of the document",
+                        "I move the cursor to 0",
+                        "I open the incremental search speedbar",
+                        "I type \"foo\" into the \"Find\" field in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Foo\"",
+                        "line number 100 should be visible"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with 300 \"x\" then \"Foo\"",
+                        "I move the cursor to 0",
+                        "I open the incremental search speedbar",
+                        "I type \"foo\" into the \"Find\" field in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Foo\"",
+                        "horizontal offset 302 should be visible"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the incremental search speedbar",
+                        "I type \"foo\" into the \"Find\" field in the speedbar",
+                        "I close the speedbar",
+                        "I open the incremental search speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"Find\" field in the speedbar should have text \"\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Flux\\nBar\\nFoo\"",
+                        "I move the cursor to 0",
+                        "I select from 0 to 4",
+                        "I open the incremental search speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"Find\" field in the speedbar should have text \"\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I select from 5 to 8",
+                        "I open the incremental search speedbar",
+                        "I type \"Ba\" into the \"Find\" field in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Ba\"",
+                        "the selection should be on line 2"
+                    ]
+                ]
+            }
+        ]
+    }
+}

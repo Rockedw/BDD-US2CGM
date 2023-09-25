@@ -1,0 +1,30 @@
+{
+    "feature_name": "Run quality tests provided by the editor",
+    "user_story": {
+        "as_a": "",
+        "i_want": "install the module and run the following tests",
+        "so_that": "run the quality tests provided by base_module_quality",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I want to run the quality tests provided by base_module_quality on installed module"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I install the base_module_quality",
+                        "run the quality check on every installed module"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should have a report on every module",
+                        "all module, except base, should have a final score greater than 70.0 percent",
+                        "above is a detailed summary of the results"
+                    ]
+                ]
+            }
+        ]
+    }
+}

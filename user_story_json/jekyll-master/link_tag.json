@@ -1,0 +1,164 @@
+{
+    "feature_name": "Link Tag",
+    "user_story": {
+        "as_a": "hacker who likes to write a variety of content",
+        "i_want": "be able to link to pages and documents",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.md\" page that contains \"[About my projects]({% link about.md %})\"",
+                        "I have an \"about.md\" page that contains \"[Home]({% link index.md %})\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"<p><a href=\\\"/about.html\\\">About my projects</a></p>\" in \"_site/index.html\"",
+                        "I should see \"<p><a href=\\\"/\\\">Home</a></p>\" in \"_site/about.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.md\" page that contains \"[About my projects]({% link about.md %})\"",
+                        "I have an \"about.md\" page with permalink \"/about/\" that contains \"[Home]({% link index.md %})\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"<p><a href=\\\"/about/\\\">About my projects</a></p>\" in \"_site/index.html\"",
+                        "I should see \"<p><a href=\\\"/\\\">Home</a></p>\" in \"_site/about/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.md\" page that contains \"[About my projects]({% link about.md %})\"",
+                        "I have an \"about.md\" page that contains \"[Home]({% link index.md %})\"",
+                        "I have a configuration file with \"permalink\" set to \"pretty\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"<p><a href=\\\"/about/\\\">About my projects</a></p>\" in \"_site/index.html\"",
+                        "I should see \"<p><a href=\\\"/\\\">Home</a></p>\" in \"_site/about/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.md\" page that contains \"[About my projects]({% link about.md %})\"",
+                        "I have an \"about.md\" page that contains \"[Home]({% link index.md %})\"",
+                        "I have a configuration file with \"baseurl\" set to \"/blog\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"<p><a href=\\\"/blog/about.html\\\">About my projects</a></p>\" in \"_site/index.html\"",
+                        "I should see \"<p><a href=\\\"/blog/\\\">Home</a></p>\" in \"_site/about.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.md\" page that contains \"[About my projects]({% link about.md %})\"",
+                        "I have an \"about.md\" page that contains \"[Home]({% link index.md %})\"",
+                        "I have a \"_config.yml\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"<p><a href=\\\"/blog/about/\\\">About my projects</a></p>\" in \"_site/index.html\"",
+                        "I should see \"<p><a href=\\\"/blog/\\\">Home</a></p>\" in \"_site/about/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.md\" page that contains \"[About my projects]({% link about.md %})\"",
+                        "I have an \"about.md\" page that contains \"[Contact]({% link contact.md %})\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a non-zero exit status",
+                        "the _site directory should not exist",
+                        "I should see \"Could not find document 'contact.md' in tag 'link'\" in the build output"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.md\" page that contains \"[About my projects]({% link about.md %})\"",
+                        "I have an \"about.md\" page that contains \"[Latest Hack]({% link _posts/2018-02-15-metaprogramming.md %})\"",
+                        "I have a _posts directory",
+                        "I have an \"_posts/2018-02-15-metaprogramming.md\" page that contains \"[Download This]({% link script.txt %})\"",
+                        "I have a \"script.txt\" file that contains \"Static Alert!\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"<p><a href=\\\"/about.html\\\">About my projects</a></p>\" in \"_site/index.html\"",
+                        "I should see \"<p><a href=\\\"/2018/02/15/metaprogramming.html\\\">Latest Hack</a></p>\" in \"_site/about.html\"",
+                        "I should see \"<p><a href=\\\"/script.txt\\\">Download This</a></p>\" in \"_site/2018/02/15/metaprogramming.html\"",
+                        "I should see \"Static Alert!\" in \"_site/script.txt\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,22 @@
+// 2662403123488 Context Model
+digraph {
+	2662403124160 [label=Context68]
+	2662403124304 [label="I have a _posts directory"]
+	2662403124160 -> 2662403124304
+	2662403124304 [label="I have a _posts directory"]
+	2662403124400 [label="I have a _posts/snippets directory"]
+	2662403124160 -> 2662403124400
+	2662403124400 [label="I have a _posts/snippets directory"]
+	2662403124496 [label="I have a _posts/snippets/welcome_para directory"]
+	2662403124160 -> 2662403124496
+	2662403124496 [label="I have a _posts/snippets/welcome_para directory"]
+	2662403124592 [label="I have the following post:"]
+	2662403124160 -> 2662403124592
+	2662403124592 [label="I have the following post:"]
+	2662403124688 [label="I have an \"_posts/snippets/welcome_para.md\" file that contains \"{% include_relative snippets/welcome_para/greeting.md %} Dear Reader!\""]
+	2662403124160 -> 2662403124688
+	2662403124688 [label="I have an \"_posts/snippets/welcome_para.md\" file that contains \"{% include_relative snippets/welcome_para/greeting.md %} Dear Reader!\""]
+	2662403124784 [label="I have an \"_posts/snippets/welcome_para/greeting.md\" file that contains \"Welcome back\""]
+	2662403124160 -> 2662403124784
+	2662403124784 [label="I have an \"_posts/snippets/welcome_para/greeting.md\" file that contains \"Welcome back\""]
+}

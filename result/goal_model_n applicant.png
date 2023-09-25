@@ -1,0 +1,47 @@
+// Goal Model
+digraph {
+	1847134514688 [label="n applicant
+goal"]
+	1847134467216 [label="apply for membership of the co-op
+goal
+140728069287616"]
+	1847134514688 -> 1847134467216
+	1847134467216 [label="apply for membership of the co-op
+goal"]
+	1847134468848 [label="I go to the home page
+task
+140728069287616"]
+	1847134467216 -> 1847134468848
+	1847134468848 [label="I go to the home page
+task"]
+	1847134469904 [label="I follow \"Apply for membership\"
+task
+140728069287616"]
+	1847134467216 -> 1847134469904
+	1847134469904 [label="I follow \"Apply for membership\"
+task"]
+	1847134454400 [label="I fill in my details
+task
+140728069287616"]
+	1847134467216 -> 1847134454400
+	1847134454400 [label="I fill in my details
+task"]
+	1847134461696 [label="I apply for the necessary number of shares
+task
+140728069287616"]
+	1847134467216 -> 1847134461696
+	1847134461696 [label="I apply for the necessary number of shares
+task"]
+	1847134455888 [label="I certify that I am aged 16 years or over
+task
+140728069287616"]
+	1847134467216 -> 1847134455888
+	1847134455888 [label="I certify that I am aged 16 years or over
+task"]
+	1847134453824 [label="I press \"Send membership application\"
+task
+140728069287616"]
+	1847134467216 -> 1847134453824
+	1847134453824 [label="I press \"Send membership application\"
+task"]
+}

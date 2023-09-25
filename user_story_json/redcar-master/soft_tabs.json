@@ -1,0 +1,521 @@
+{
+    "feature_name": "Soft and hard tabs",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 2 spaces",
+                        "I replace the contents with \"    \"",
+                        "I move the cursor to 4",
+                        "I press the Left key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 2"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 2 spaces",
+                        "I replace the contents with \"    \"",
+                        "I move the cursor to 0",
+                        "I press the Right key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 2"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"Hacker  \"",
+                        "I move the cursor to 8",
+                        "I press the Left key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 6"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"Hacker  \"",
+                        "I move the cursor to 6",
+                        "I press the Right key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 8"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"Hacker    \"",
+                        "I move the cursor to 10",
+                        "I press the Left key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 9"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"Hacker    \"",
+                        "I move the cursor to 8",
+                        "I press the Right key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 9"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"\"",
+                        "I move the cursor to 0",
+                        "I press the Left key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 0"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"\"",
+                        "I move the cursor to 0",
+                        "I press the Right key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 0"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"\\tHa    \"",
+                        "I move the cursor to 1",
+                        "I press the Left key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 0"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"\\tHa    \"",
+                        "I move the cursor to 2",
+                        "I press the Left key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 1"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"\\tHa    \"",
+                        "I move the cursor to 4",
+                        "I press the Left key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 3"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"\\tHa    \"",
+                        "I move the cursor to 5",
+                        "I press the Left key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 3"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"\\tHa    \"",
+                        "I move the cursor to 6",
+                        "I press the Left key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 5"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"\\tHa    \"",
+                        "I move the cursor to 0",
+                        "I press the Right key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 1"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"\\tHa    \"",
+                        "I move the cursor to 1",
+                        "I press the Right key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 2"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"\\tHa    \"",
+                        "I move the cursor to 3",
+                        "I press the Right key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 5"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"\\tHa    \"",
+                        "I move the cursor to 5",
+                        "I press the Right key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 6"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"    Wo\\t\"",
+                        "I move the cursor to 4",
+                        "I press the Left key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 0"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 2 spaces",
+                        "I replace the contents with \"    \"",
+                        "I move the cursor to 4",
+                        "I press Shift+Left key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"  <c>  <s>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 2 spaces",
+                        "I replace the contents with \"    \"",
+                        "I move the cursor to 2",
+                        "I press Shift+Right key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"  <s>  <c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 2 spaces",
+                        "I replace the contents with \"    \"",
+                        "I move the cursor to 4",
+                        "I press Shift+Left key in the edit tab",
+                        "I press Shift+Left key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"<c>    <s>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 2 spaces",
+                        "I replace the contents with \"    \"",
+                        "I move the cursor to 0",
+                        "I press Shift+Right key in the edit tab",
+                        "I press Shift+Right key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"<s>    <c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"\"",
+                        "I move the cursor to 0",
+                        "I press Shift+Left key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 0"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"\"",
+                        "I move the cursor to 0",
+                        "I press Shift+Right key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 0"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"    \"",
+                        "I move the cursor to 4",
+                        "I press the Backspace key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"Ha  \"",
+                        "I move the cursor to 4",
+                        "I press the Backspace key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Ha<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"    \"",
+                        "I move the cursor to 0",
+                        "I press the Delete key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"Ha  \"",
+                        "I move the cursor to 2",
+                        "I press the Delete key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Ha<c>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Hi\\nHo\"",
+                        "I move the cursor to 3",
+                        "I press the Left key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Hi<c>\\nHo\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "tabs are soft, 4 spaces",
+                        "I replace the contents with \"\"",
+                        "I move the cursor to 0",
+                        "I press the Delete key in the edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 0"
+                    ]
+                ]
+            }
+        ]
+    }
+}

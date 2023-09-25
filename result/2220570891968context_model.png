@@ -1,0 +1,19 @@
+// 2220590021168 Context Model
+digraph {
+	2220570891968 [label=Context1]
+	2220570895424 [label="primary services \"Rails, Visual Design\""]
+	2220570891968 -> 2220570895424
+	2220570895424 [label="primary services \"Rails, Visual Design\""]
+	2220570899360 [label="an \"active\" provider \"Hashrock\""]
+	2220570891968 -> 2220570899360
+	2220570899360 [label="an \"active\" provider \"Hashrock\""]
+	2220570894848 [label="an \"active\" provider \"Clearright\""]
+	2220570891968 -> 2220570894848
+	2220570894848 [label="an \"active\" provider \"Clearright\""]
+	2220570894320 [label="\"Hashrock\" provides \"Rails\""]
+	2220570891968 -> 2220570894320
+	2220570894320 [label="\"Hashrock\" provides \"Rails\""]
+	2220570887888 [label="\"Clearright\" provides \"Visual Design\""]
+	2220570891968 -> 2220570887888
+	2220570887888 [label="\"Clearright\" provides \"Visual Design\""]
+}

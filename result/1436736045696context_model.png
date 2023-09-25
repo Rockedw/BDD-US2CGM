@@ -1,0 +1,13 @@
+// 1436736052128 Context Model
+digraph {
+	1436736045696 [label=Context51]
+	1436736054288 [label="I have opened \"plugins/project/spec/fixtures/winter.txt\""]
+	1436736045696 -> 1436736054288
+	1436736054288 [label="I have opened \"plugins/project/spec/fixtures/winter.txt\""]
+	1436736045552 [label="I will choose \"plugins/project/spec/fixtures/winter2.txt\" from the \"save_file\" dialog"]
+	1436736045696 -> 1436736045552
+	1436736045552 [label="I will choose \"plugins/project/spec/fixtures/winter2.txt\" from the \"save_file\" dialog"]
+	1436736047760 [label="I save the tab as"]
+	1436736045696 -> 1436736047760
+	1436736047760 [label="I save the tab as"]
+}

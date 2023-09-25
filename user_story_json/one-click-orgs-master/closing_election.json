@@ -1,0 +1,29 @@
+{
+    "feature_name": "Closing election",
+    "user_story": {
+        "as_a": "member",
+        "i_want": "view the results of an election",
+        "so_that": "see how a board election turned out",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is an election which is due to close",
+                        "ballots have been cast on the election"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "the election closer runs",
+                        "I go to the directors page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the results of the election"
+                    ]
+                ]
+            }
+        ]
+    }
+}

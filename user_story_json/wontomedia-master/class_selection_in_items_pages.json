@@ -1,0 +1,172 @@
+{
+    "feature_name": "Create and edit individual items with implicit creation of",
+    "user_story": {
+        "as_a": "contributor",
+        "i_want": "I should have special support for the manipulation of an item's class",
+        "so_that": "create an expressive wontology,",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is 1 existing category like \"aClass\"",
+                        "there is an existing connection \"aClass0\" \"sub_class_of\" \"Item_Class\"",
+                        "I am on the new items page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I select \"aClass0\" from \"item_class_item_id\"",
+                        "I select \"Individual\" from \"Type\"",
+                        "I fill in \"Name\" with \"myNewItem\"",
+                        "I fill in \"Title\" with \"An item that is an instance of 'aClass'\"",
+                        "I fill in \"Description\" with \"has no description\""
+                    ],
+                    [
+                        "I press \"Create\""
+                    ],
+                    [
+                        "I go to the show connections page for \"myNewItem\" \"is_instance_of\" \"aClass0\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"successfully created\"",
+                        "I should see \"aClass0\"",
+                        "I should see \"myNewItem\"",
+                        "I should see \"An item that is an instance of 'aClass'\"",
+                        "I should see \"has no description\""
+                    ],
+                    [
+                        "I should see \"An item that is an instance of 'aClass'\"",
+                        "I should see \"Is an Instance Of\"",
+                        "I should see \"aClass item number 0\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is 1 existing category like \"aClass\"",
+                        "there is an existing connection \"aClass0\" \"sub_class_of\" \"Item_Class\"",
+                        "there is 1 existing individual like \"anInstance\"",
+                        "there is an existing connection \"anInstance0\" \"is_instance_of\" \"aClass0\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the show items page for \"anInstance0\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see 2 matches of \"aClass0\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is 1 existing category like \"aClass\"",
+                        "there is an existing connection \"aClass0\" \"sub_class_of\" \"Item_Class\"",
+                        "there is 1 existing individual like \"anInstance\"",
+                        "there is an existing connection \"anInstance0\" \"is_instance_of\" \"aClass0\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the index items page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see /Individual:\\s+aClass0:/"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there are 2 existing categories like \"aClass\"",
+                        "there is an existing connection \"aClass0\" \"sub_class_of\" \"Item_Class\"",
+                        "there is an existing connection \"aClass1\" \"sub_class_of\" \"Item_Class\"",
+                        "there is 1 existing individual like \"anInstance\"",
+                        "there is an existing connection \"anInstance0\" \"is_instance_of\" \"aClass0\""
+                    ],
+                    [
+                        "I go to the edit items page for \"anInstance0\"",
+                        "I select \"aClass1\" from \"individual_item_class_item_id\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Update\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"successfully updated\"",
+                        "I should see \"aClass1\"",
+                        "I should not see \"aClass0\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is 1 existing category like \"aClass\"",
+                        "there is an existing connection \"aClass0\" \"sub_class_of\" \"Item_Class\"",
+                        "there is 1 existing individual like \"anInstance\"",
+                        "there is an existing connection \"anInstance0\" \"is_instance_of\" \"aClass0\""
+                    ],
+                    [
+                        "I go to the edit items page for \"anInstance0\"",
+                        "I select \"- class of item -\" from \"individual_item_class_item_id\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Update\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"successfully updated\"",
+                        "I should not see \"aClass0\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is 1 existing category like \"aClass\"",
+                        "there is an existing connection \"aClass0\" \"sub_class_of\" \"Item_Class\"",
+                        "there is 1 existing individual like \"anInstance\""
+                    ],
+                    [
+                        "I go to the edit items page for \"anInstance0\"",
+                        "I select \"aClass0\" from \"individual_item_class_item_id\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Update\""
+                    ],
+                    [
+                        "I go to the show connections page for \"anInstance0\" \"is_instance_of\" \"aClass0\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"successfully updated\"",
+                        "I should see \"aClass0\""
+                    ],
+                    [
+                        "I should see \"anInstance item number 0\"",
+                        "I should see \"Is an Instance Of\"",
+                        "I should see \"aClass item number 0\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

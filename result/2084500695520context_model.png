@@ -1,0 +1,13 @@
+// 2084500685344 Context Model
+digraph {
+	2084500695520 [label=Context18]
+	2084500698544 [label="I have an \"index.html\" page that contains \"{% assign items = site.methods | where: 'whatever','foo.bar' %}Item count: {{ items.size }}\""]
+	2084500695520 -> 2084500698544
+	2084500698544 [label="I have an \"index.html\" page that contains \"{% assign items = site.methods | where: 'whatever','foo.bar' %}Item count: {{ items.size }}\""]
+	2084500686448 [label="I have fixture collections"]
+	2084500695520 -> 2084500686448
+	2084500686448 [label="I have fixture collections"]
+	2084500696816 [label="I have a \"_config.yml\" file with content:"]
+	2084500695520 -> 2084500696816
+	2084500696816 [label="I have a \"_config.yml\" file with content:"]
+}

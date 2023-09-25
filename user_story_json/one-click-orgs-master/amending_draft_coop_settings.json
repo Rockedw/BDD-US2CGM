@@ -1,0 +1,31 @@
+{
+    "feature_name": "Amending draft coop settings",
+    "user_story": {
+        "as_a": "founder",
+        "i_want": "amend the settings of the draft co-op",
+        "so_that": "make our new co-op work the way we want it to",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a draft co-op",
+                        "I am the founder of the draft co-op"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Amendments page",
+                        "I make changes to the rules",
+                        "I save the changes"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Rules page",
+                        "I should see the changes I made"
+                    ]
+                ]
+            }
+        ]
+    }
+}

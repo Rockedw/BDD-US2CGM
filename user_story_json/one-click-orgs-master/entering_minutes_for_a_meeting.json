@@ -1,0 +1,310 @@
+{
+    "feature_name": "Entering minutes for a meeting",
+    "user_story": {
+        "as_a": "As the Secretary or as a Director",
+        "i_want": "enter minutes for past meetings",
+        "so_that": "keep records of the business transacted at meetings",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am the Secretary of the co-op",
+                        "there has been a past meeting",
+                        "no minutes for the past meeting have been entered yet"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Meetings page"
+                    ],
+                    [
+                        "I follow \"Enter minutes for this meeting\" for the past meeting"
+                    ],
+                    [
+                        "I enter minutes for the meeting",
+                        "I choose the Members who were in attendance",
+                        "I press \"Save these minutes\""
+                    ],
+                    [
+                        "I follow \"View minutes\" for the meeting"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Minutes have not been entered for this meeting yet\" for the past meeting"
+                    ],
+                    [
+                        "I should see a field for each of the standard agenda items"
+                    ],
+                    [
+                        "I should be on the Meetings page"
+                    ],
+                    [
+                        "I should see the minutes I entered",
+                        "I should see the participants I chose"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am the Secretary of the co-op"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Meetings page",
+                        "I follow \"Enter minutes for a meeting not shown here\"",
+                        "I choose \"General Meeting\" from the list of meeting types",
+                        "I enter the date of the meeting",
+                        "I enter minutes for the meeting",
+                        "I choose the Members who were in attendance",
+                        "I press \"Save these minutes\""
+                    ],
+                    [
+                        "I follow \"View minutes\" for the meeting"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Meetings page",
+                        "I should see the meeting in the list of Past Meetings"
+                    ],
+                    [
+                        "I should see the minutes I entered"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am the Secretary of the co-op",
+                        "there has been a past meeting",
+                        "the meeting has no minutes yet",
+                        "there were resolutions attached to the meeting"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Meetings page",
+                        "I follow \"Enter minutes for this meeting\" for the past meeting"
+                    ],
+                    [
+                        "I enter that all the resolutions were passed",
+                        "I enter other minutes for the meeting",
+                        "I choose the Members who were in attendance",
+                        "I press \"Save these minutes\"",
+                        "I go to the Proposals page",
+                        "I open the \"Outcomes\" tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a list of the resolutions attached to the meeting"
+                    ],
+                    [
+                        "I should see the resolutions marked as passed"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am the Secretary of the co-op",
+                        "there has been a past meeting",
+                        "the meeting has no minutes yet",
+                        "there were resolutions attached to the meeting",
+                        "the resolutions were open for electronic voting"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Meetings page",
+                        "I follow \"Enter minutes for this meeting\" for the past meeting",
+                        "I enter a passing number of votes in favour for every resolution",
+                        "I enter other minutes for the meeting",
+                        "I choose the Members who were in attendance",
+                        "I press \"Save these minutes\"",
+                        "I go to the Proposals page",
+                        "I open the \"Outcomes\" tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the resolutions marked as passed"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am the Secretary of the co-op",
+                        "there has been a past meeting",
+                        "minutes have been entered for the meeting"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Meetings page",
+                        "I follow \"View minutes\" for the meeting",
+                        "I follow \"Edit these minutes\"",
+                        "I edit the minutes",
+                        "I press \"Save these minutes\"",
+                        "I follow \"View minutes\" for the meeting"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the edited minutes"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am a Director of the co-op",
+                        "there has been a past meeting",
+                        "no minutes for the past meeting have been entered yet"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Meetings page"
+                    ],
+                    [
+                        "I follow \"Enter minutes for this meeting\" for the past meeting"
+                    ],
+                    [
+                        "I enter minutes for the meeting",
+                        "I choose the Members who were in attendance",
+                        "I press \"Save these minutes\""
+                    ],
+                    [
+                        "I follow \"View minutes\" for the meeting"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Minutes have not been entered for this meeting yet\" for the past meeting"
+                    ],
+                    [
+                        "I should see a field for each of the standard agenda items"
+                    ],
+                    [
+                        "I should be on the Meetings page"
+                    ],
+                    [
+                        "I should see the minutes I entered",
+                        "I should see the participants I chose"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am a Director of the co-op"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Meetings page",
+                        "I follow \"Enter minutes for a meeting not shown here\"",
+                        "I choose \"General Meeting\" from the list of meeting types",
+                        "I enter the date of the meeting",
+                        "I enter minutes for the meeting",
+                        "I choose the Members who were in attendance",
+                        "I press \"Save these minutes\""
+                    ],
+                    [
+                        "I follow \"View minutes\" for the meeting"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Meetings page",
+                        "I should see the meeting in the list of Past Meetings"
+                    ],
+                    [
+                        "I should see the minutes I entered"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am a Director of the co-op",
+                        "there has been a past meeting",
+                        "the meeting has no minutes yet",
+                        "there were resolutions attached to the meeting"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Meetings page",
+                        "I follow \"Enter minutes for this meeting\" for the past meeting"
+                    ],
+                    [
+                        "I enter that all the resolutions were passed",
+                        "I enter other minutes for the meeting",
+                        "I choose the Members who were in attendance",
+                        "I press \"Save these minutes\"",
+                        "I go to the Proposals page",
+                        "I open the \"Outcomes\" tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a list of the resolutions attached to the meeting"
+                    ],
+                    [
+                        "I should see the resolutions marked as passed"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am a Director of the co-op",
+                        "there has been a past meeting",
+                        "minutes have been entered for the meeting"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Meetings page",
+                        "I follow \"View minutes\" for the meeting",
+                        "I follow \"Edit these minutes\"",
+                        "I edit the minutes",
+                        "I press \"Save these minutes\"",
+                        "I follow \"View minutes\" for the meeting"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the edited minutes"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am the Secretary of the co-op",
+                        "there has been a past meeting",
+                        "no minutes for the past meeting have been entered yet"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to minute the meeting",
+                        "I click \"Add all members\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see that all the members have been added as participants"
+                    ]
+                ]
+            }
+        ]
+    }
+}

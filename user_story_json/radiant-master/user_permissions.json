@@ -1,0 +1,196 @@
+{
+    "feature_name": "User authentication and permissions",
+    "user_story": {
+        "as_a": "",
+        "i_want": "I should be given different access permissions",
+        "so_that": "protect design assets from unskilled modification and user accounts from hijacking",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the login page",
+                        "I fill in \"Username\" with \"<username>\"",
+                        "I fill in \"Password\" with \"password\"",
+                        "I press \"Login\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Content\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"<username>\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Logout\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the login screen"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"<username>\"",
+                        "I should see \"Content\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the \"pages\" admin page",
+                        "I follow \"Home\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Edit Page\"",
+                        "I should see \"Content\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"<username>\"",
+                        "I should see \"Design\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Design\" within \"#navigation\"",
+                        "I should not see \"You must have designer privileges\"",
+                        "I follow \"Main\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Edit Layout\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"<username>\"",
+                        "I should not see \"Design\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the \"layouts\" admin page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"You must have designer privileges\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"admin\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Settings\"",
+                        "I follow \"Users\"",
+                        "I should not see \"You must have administrative privileges\"",
+                        "I follow \"Another\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Edit User\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"<username>\"",
+                        "I should not see \"Users\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the \"users\" admin page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"You must have administrative privileges\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"<username>\"",
+                        "I should see \"Settings\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Settings\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Personal Preferences\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"admin\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Settings\"",
+                        "I follow \"Extensions\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Basic\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"<username>\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Settings\"",
+                        "I should not see \"Extensions\""
+                    ],
+                    [
+                        "I go to the \"extensions\" admin page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"You must have administrative privileges\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

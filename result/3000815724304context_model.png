@@ -1,0 +1,10 @@
+// 3000815723344 Context Model
+digraph {
+	3000815724304 [label=Context126]
+	3000815724448 [label="I have an \"index.markdown\" page that contains \"[Google](https://www.google.com)\""]
+	3000815724304 -> 3000815724448
+	3000815724448 [label="I have an \"index.markdown\" page that contains \"[Google](https://www.google.com)\""]
+	3000815724544 [label="I have a configuration file with \"markdown\" set to \"kramdown\""]
+	3000815724304 -> 3000815724544
+	3000815724544 [label="I have a configuration file with \"markdown\" set to \"kramdown\""]
+}

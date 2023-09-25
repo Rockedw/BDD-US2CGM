@@ -1,0 +1,52 @@
+{
+    "feature_name": "uploading images",
+    "user_story": {
+        "as_a": "n artist",
+        "i_want": "upload images to a collection on my profile",
+        "so_that": "have a nice portfolio",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I attach an image",
+                        "I give it a title, medium, genre and captions",
+                        "I click submit"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the image in the default group",
+                        "I should see the image in on its collection page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I fail to attach an image"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not be allowed to submit"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I fail to specify a title"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not be allowed to submit"
+                    ]
+                ]
+            }
+        ]
+    }
+}

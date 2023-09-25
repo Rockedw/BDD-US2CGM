@@ -1,0 +1,25 @@
+// 1633872298528 Context Model
+digraph {
+	1633872299776 [label=Context122]
+	1633872299920 [label="I have a \".gitignore\" file that contains \".DS_Store\""]
+	1633872299776 -> 1633872299920
+	1633872299920 [label="I have a \".gitignore\" file that contains \".DS_Store\""]
+	1633872300016 [label="I have an \".htaccess\" file that contains \"SomeDirective\""]
+	1633872299776 -> 1633872300016
+	1633872300016 [label="I have an \".htaccess\" file that contains \"SomeDirective\""]
+	1633872300112 [label="I have a \"Gemfile\" file that contains \"gem 'include-me'\""]
+	1633872299776 -> 1633872300112
+	1633872300112 [label="I have a \"Gemfile\" file that contains \"gem 'include-me'\""]
+	1633872300208 [label="I have a node_modules directory"]
+	1633872299776 -> 1633872300208
+	1633872300208 [label="I have a node_modules directory"]
+	1633872300304 [label="I have a \"node_modules/bazinga.js\" file that contains \"var c = 'Bazinga!';\""]
+	1633872299776 -> 1633872300304
+	1633872300304 [label="I have a \"node_modules/bazinga.js\" file that contains \"var c = 'Bazinga!';\""]
+	1633872300400 [label="I have a \"node_modules/warning.js\" file that contains \"var w = 'Winter is coming!';\""]
+	1633872299776 -> 1633872300400
+	1633872300400 [label="I have a \"node_modules/warning.js\" file that contains \"var w = 'Winter is coming!';\""]
+	1633872300496 [label="I have a configuration file with \"include\" set to:"]
+	1633872299776 -> 1633872300496
+	1633872300496 [label="I have a configuration file with \"include\" set to:"]
+}

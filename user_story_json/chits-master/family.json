@@ -1,0 +1,96 @@
+{
+    "feature_name": "Family Folders",
+    "user_story": {
+        "as_a": "chits user",
+        "i_want": "be able to create, search, update and delete family folders",
+        "so_that": "efficiently manage patients into families and readily access family data",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"user\" with password \"user\"",
+                        "I click \"FAMILY FOLDERS\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"family_address\" with \"1234 ABC Street\"",
+                        "I select \"Brgy 1\" from \"barangay\"",
+                        "I press \"Create Folder\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"No members\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"user\" with password \"user\"",
+                        "I click \"FAMILY FOLDERS\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"family_number\" with \"1\"",
+                        "I press \"Search\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"COUNT\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"user\" with password \"user\"",
+                        "I click \"FAMILY FOLDERS\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"family_number\" with \"1\"",
+                        "I press \"Search\"",
+                        "I should see \"SELECTED FAMILY\"",
+                        "I click \"edit\"",
+                        "I fill in \"family_address\" with \"6789 XYZ Street\"",
+                        "I select \"Brgy 2\" from \"barangay\"",
+                        "I press \"Update Folder\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"6789 XYZ Street\"",
+                        "I should see \"Brgy 2\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"admin\" with password \"admin\"",
+                        "I click \"PATIENTS\"",
+                        "I click \"Family Folders\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I click \"No members\"",
+                        "I should see \"1\"",
+                        "I click \"delete\"",
+                        "I press \"Yes\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"No family records\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

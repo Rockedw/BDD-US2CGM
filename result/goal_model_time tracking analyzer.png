@@ -1,0 +1,29 @@
+// Goal Model
+digraph {
+	1847134172016 [label="time tracking analyzer
+goal"]
+	1847080684608 [label="be certain that the stop is greater than start time
+goal
+1847134375216"]
+	1847134172016 -> 1847080684608
+	1847080684608 [label="be certain that the stop is greater than start time
+goal"]
+	1847134023408 [label="I fill in \"task_start\" with \"1/21/2010 8:38 PM\"
+task
+140728069287616"]
+	1847080684608 -> 1847134023408
+	1847134023408 [label="I fill in \"task_start\" with \"1/21/2010 8:38 PM\"
+task"]
+	1847133377280 [label="I fill in \"task_stop\" with \"1/21/2010 8:30 PM\"
+task
+140728069287616"]
+	1847080684608 -> 1847133377280
+	1847133377280 [label="I fill in \"task_stop\" with \"1/21/2010 8:30 PM\"
+task"]
+	1847133376080 [label="I press \"Create\"
+task
+140728069287616"]
+	1847080684608 -> 1847133376080
+	1847133376080 [label="I press \"Create\"
+task"]
+}

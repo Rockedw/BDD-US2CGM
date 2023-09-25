@@ -1,0 +1,78 @@
+{
+    "feature_name": "Viewing post pages",
+    "user_story": {
+        "as_a": "",
+        "i_want": "visit pages and pages and pages of blog posts",
+        "so_that": "absorb Lachlan's deep insights into man and machine",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am logged in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I view the post page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I see the page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am not logged in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I view the post page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I see the page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I view the mobile post page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I see the page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I view the mobile post page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I see the page"
+                    ]
+                ]
+            }
+        ]
+    }
+}

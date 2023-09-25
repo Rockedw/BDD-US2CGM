@@ -1,0 +1,89 @@
+// Goal Model
+digraph {
+	1847124503920 [label="Cal Student
+goal"]
+	1847124615056 [label="be able to change my schedule on the application
+goal
+140728069287616"]
+	1847124503920 -> 1847124615056
+	1847124615056 [label="be able to change my schedule on the application
+goal"]
+	1847124614576 [label="Students cannot change timeslot preferences after deadline
+goal
+1847124614096"]
+	1847124615056 -> 1847124614576
+	1847124614576 [label="Students cannot change timeslot preferences after deadline
+goal"]
+	1847117746944 [label="I go something
+goal
+140728069287616"]
+	1847124614576 -> 1847117746944
+	1847117746944 [label="I go something
+goal"]
+	1847124613232 [label="I go to /students/1/semesters/1/courses/1/select_timeslots/monday
+task
+140728069287616"]
+	1847117746944 -> 1847124613232
+	1847124613232 [label="I go to /students/1/semesters/1/courses/1/select_timeslots/monday
+task"]
+	1847124615296 [label="I go to /students/1/semesters/1/courses/1/select_timeslots/rank
+task
+140728069287616"]
+	1847117746944 -> 1847124615296
+	1847124615296 [label="I go to /students/1/semesters/1/courses/1/select_timeslots/rank
+task"]
+	1847124614624 [label="Students cannot change timeslot preferences after deadline
+goal
+1847124616592"]
+	1847124615056 -> 1847124614624
+	1847124614624 [label="Students cannot change timeslot preferences after deadline
+goal"]
+	1847117560848 [label="I go something
+goal
+140728069287616"]
+	1847124614624 -> 1847117560848
+	1847117560848 [label="I go something
+goal"]
+	1847124615632 [label="I go to /students/1/semesters/1/courses/1/select_timeslots/monday
+task
+140728069287616"]
+	1847117560848 -> 1847124615632
+	1847124615632 [label="I go to /students/1/semesters/1/courses/1/select_timeslots/monday
+task"]
+	1847124615680 [label="I go to /students/1/semesters/1/courses/1/select_timeslots/rank
+task
+140728069287616"]
+	1847117560848 -> 1847124615680
+	1847124615680 [label="I go to /students/1/semesters/1/courses/1/select_timeslots/rank
+task"]
+	1847124615248 [label="be able to see the school, mentor teacher, grade level, subject matter, and time for my field placements
+goal
+1847124614528"]
+	1847124503920 -> 1847124615248
+	1847124615248 [label="be able to see the school, mentor teacher, grade level, subject matter, and time for my field placements
+goal"]
+	1847124617840 [label="Student should be able to see field placement
+goal
+1847124617984"]
+	1847124615248 -> 1847124617840
+	1847124617840 [label="Student should be able to see field placement
+goal"]
+	1847124617936 [label="I go to /students/1/semesters/1/placements
+task
+140728069287616"]
+	1847124617840 -> 1847124617936
+	1847124617936 [label="I go to /students/1/semesters/1/placements
+task"]
+	1847124617888 [label="Student should be able to see multiple field placements
+goal
+1847124618272"]
+	1847124615248 -> 1847124617888
+	1847124617888 [label="Student should be able to see multiple field placements
+goal"]
+	1847124618224 [label="I go to /students/1/semesters/1/placements
+task
+140728069287616"]
+	1847124617888 -> 1847124618224
+	1847124618224 [label="I go to /students/1/semesters/1/placements
+task"]
+}

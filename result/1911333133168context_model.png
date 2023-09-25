@@ -1,0 +1,25 @@
+// 1911333132784 Context Model
+digraph {
+	1911333133168 [label=Context18]
+	1911333133408 [label="following users exist:"]
+	1911333133168 -> 1911333133408
+	1911333133408 [label="following users exist:"]
+	1911333133504 [label="\"alice@alice.alice\" has a public post with text \"Hello! I am #newhere\""]
+	1911333133168 -> 1911333133504
+	1911333133504 [label="\"alice@alice.alice\" has a public post with text \"Hello! I am #newhere\""]
+	1911333133600 [label="I sign in as \"bob@bob.bob\" on the mobile website"]
+	1911333133168 -> 1911333133600
+	1911333133600 [label="I sign in as \"bob@bob.bob\" on the mobile website"]
+	1911333133696 [label="I visit the mobile search page"]
+	1911333133168 -> 1911333133696
+	1911333133696 [label="I visit the mobile search page"]
+	1911333133792 [label="I fill in the following within \"#main\":"]
+	1911333133168 -> 1911333133792
+	1911333133792 [label="I fill in the following within \"#main\":"]
+	1911333133888 [label="I press \"Search\""]
+	1911333133168 -> 1911333133888
+	1911333133888 [label="I press \"Search\""]
+	1911333133984 [label="I should see \"Follow #newhere\" within \".tag_following_action\""]
+	1911333133168 -> 1911333133984
+	1911333133984 [label="I should see \"Follow #newhere\" within \".tag_following_action\""]
+}

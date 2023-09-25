@@ -1,0 +1,16 @@
+// 1982166723856 Context Model
+digraph {
+	1982196321392 [label=Context9]
+	1982196322448 [label="an uploader class that uses the 'file' storage"]
+	1982196321392 -> 1982196322448
+	1982196322448 [label="an uploader class that uses the 'file' storage"]
+	1982196322544 [label="that the uploader class has a version named 'thumb'"]
+	1982196321392 -> 1982196322544
+	1982196322544 [label="that the uploader class has a version named 'thumb'"]
+	1982196322640 [label="that the uploader has the filename overridden to 'grark.png'"]
+	1982196321392 -> 1982196322640
+	1982196322640 [label="that the uploader has the filename overridden to 'grark.png'"]
+	1982196322736 [label="an instance of that class"]
+	1982196321392 -> 1982196322736
+	1982196322736 [label="an instance of that class"]
+}

@@ -1,0 +1,17 @@
+// Goal Model
+digraph {
+	1847134164432 [label="administrator,
+goal"]
+	1847135622080 [label="I should  download and upload the system's connections.
+goal
+140728069287616"]
+	1847134164432 -> 1847135622080
+	1847135622080 [label="I should  download and upload the system's connections.
+goal"]
+	1847135628128 [label="I go to the path \"/w/connections.n3\"
+task
+140728069287616"]
+	1847135622080 -> 1847135628128
+	1847135628128 [label="I go to the path \"/w/connections.n3\"
+task"]
+}

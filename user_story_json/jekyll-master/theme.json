@@ -1,0 +1,291 @@
+{
+    "feature_name": "Writing themes",
+    "user_story": {
+        "as_a": "hacker who likes to share my expertise",
+        "i_want": "be able to make a gemified theme",
+        "so_that": "share my awesome style skillz with other Jekyllites",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I run jekyll new-theme my-cool-theme"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the my-cool-theme directory should exist"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I run jekyll new-theme my-cool-theme --code-of-conduct"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the my-cool-theme directory should exist",
+                        "the \"my-cool-theme/CODE_OF_CONDUCT.md\" file should exist"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with \"theme\" set to \"test-theme\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \".sample {\\n  color: red;\\n}\\n\\n\\/\\*# sourceMappingURL=style.css.map \\*\\/\" in \"_site/assets/style.css\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with \"theme\" set to \"test-theme\"",
+                        "I have an assets directory",
+                        "I have an \"assets/style.scss\" page that contains \"@import 'test-theme-black';\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \".sample {\\n  color: black;\\n}\\n\\n\\/\\*# sourceMappingURL=style.css.map \\*\\/\" in \"_site/assets/style.css\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with \"theme\" set to \"test-theme\"",
+                        "I have an _includes directory",
+                        "I have an \"_includes/in_project.html\" file that contains \"I'm in the project.\"",
+                        "I have an \"index.html\" page that contains \"{% include in_project.html %} {% include include.html %}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"I'm in the project.\" in \"_site/index.html\"",
+                        "I should see \"<span class=\\\"sample\\\">include.html from test-theme</span>\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with \"theme\" set to \"test-theme-skinny\"",
+                        "I have a _data directory",
+                        "I have a \"_data/greetings.yml\" file with content:",
+                        "I have an \"index.html\" page that contains \"{{ site.data.greetings.foo }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Hello! I’m foo. And who are you?\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with \"theme\" set to \"test-theme\"",
+                        "I have a _data directory",
+                        "I have a \"_data/greetings.yml\" file with content:",
+                        "I have an \"index.html\" page that contains \"{{ site.data.greetings.foo }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Hello! I’m foo. And who are you?\" in \"_site/index.html\"",
+                        "I should not see \"Hello! I’m bar. What’s up so far?\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with \"theme\" set to \"test-theme\"",
+                        "I have an _layouts directory",
+                        "I have an \"_layouts/post.html\" file that contains \"post.html from the project: {{ content }}\"",
+                        "I have an \"index.html\" page with layout \"default\" that contains \"I'm content.\"",
+                        "I have a \"post.html\" page with layout \"post\" that contains \"I'm more content.\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"default.html from test-theme: I'm content.\" in \"_site/index.html\"",
+                        "I should see \"post.html from the project: I'm more content.\" in \"_site/post.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with \"theme\" set to \"test-theme\"",
+                        "I have an assets directory",
+                        "I have an \"assets/application.coffee\" file that contains \"From your site.\"",
+                        "I have an \"assets/base.js\" file that contains \"From your site.\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"From your site.\" in \"_site/assets/application.coffee\"",
+                        "I should see \"From your site.\" in \"_site/assets/base.js\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with \"theme\" set to \"test-theme-skinny\"",
+                        "I have an \"index.html\" page with layout \"home\" that contains \"The quick brown fox.\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Message: The quick brown fox.\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with \"theme\" set to \"test-dependency-theme\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "the \"_site/test.txt\" file should exist"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with \"theme\" set to \"test-theme\"",
+                        "I have a _posts directory",
+                        "I have the following posts:",
+                        "I have a _layouts directory",
+                        "I have a \"_layouts/post.html\" page with layout \"default\" that contains \"I am a post layout! {{ content }}\"",
+                        "I have an _includes directory",
+                        "I have an \"_includes/in_project.html\" file that contains \"I am in the project, not the theme.\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"I am in the project, not the theme.\" in \"_site/2016/04/21/entry2.html\"",
+                        "I should see \"<span class=\\\"sample\\\">include.html from test-theme</span>\" in \"_site/2016/04/21/entry2.html\"",
+                        "I should see \"default.html from test-theme:\" in \"_site/2016/04/21/entry2.html\"",
+                        "I should see \"I am using a themed layout.\" in \"_site/2016/04/21/entry2.html\"",
+                        "I should not see \"I am a post layout!\" in \"_site/2016/04/21/entry2.html\"",
+                        "I should not see \"I am in the project, not the theme.\" in \"_site/2016/04/21/entry1.html\"",
+                        "I should see \"<span class=\\\"sample\\\">include.html from test-theme</span>\" in \"_site/2016/04/21/entry1.html\"",
+                        "I should see \"default.html from test-theme:\" in \"_site/2016/04/21/entry1.html\"",
+                        "I should see \"I am using a local layout.\" in \"_site/2016/04/21/entry1.html\"",
+                        "I should see \"I am a post layout!\" in \"_site/2016/04/21/entry1.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with \"theme\" set to \"test-theme\"",
+                        "I have a _data directory",
+                        "I have a \"_data/i18n.yml\" file with content:",
+                        "I have an \"index.html\" page that contains \"{% include testimonials.html %}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should not see \"Testimonials\" in \"_site/index.html\"",
+                        "I should see \"Kundenstimmen\" in \"_site/index.html\"",
+                        "I should see \"Design by FTC\" in \"_site/index.html\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,23 @@
+// Goal Model
+digraph {
+	1847124804560 [label="Product Owner
+goal"]
+	1847117877920 [label="broswe the features with a treeview file explorer
+goal
+140728069287616"]
+	1847124804560 -> 1847117877920
+	1847117877920 [label="broswe the features with a treeview file explorer
+goal"]
+	1847124660224 [label="I click on the folder \"business\"
+task
+140728069287616"]
+	1847117877920 -> 1847124660224
+	1847124660224 [label="I click on the folder \"business\"
+task"]
+	1847124670496 [label="I click on the feature filename \"visitor_transforms\"
+task
+140728069287616"]
+	1847117877920 -> 1847124670496
+	1847124670496 [label="I click on the feature filename \"visitor_transforms\"
+task"]
+}

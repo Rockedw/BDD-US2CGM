@@ -1,0 +1,10 @@
+// 1998091264512 Context Model
+digraph {
+	1998091263552 [label=Context54]
+	1998091263456 [label="we move the stock location \"Customers\" under \"All Customers Locations\" and update it with"]
+	1998091263552 -> 1998091263456
+	1998091263456 [label="we move the stock location \"Customers\" under \"All Customers Locations\" and update it with"]
+	1998091262976 [label="I affect the company \"My Company\" to the location \"Customers\""]
+	1998091263552 -> 1998091262976
+	1998091262976 [label="I affect the company \"My Company\" to the location \"Customers\""]
+}

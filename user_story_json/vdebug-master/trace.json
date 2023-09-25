@@ -1,0 +1,37 @@
+{
+    "feature_name": "Tracing expressions",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "see the evaluated expression in the trace window",
+        "so_that": "trace variables in Vdebug",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have a file example.php containing",
+                        "I start the debugger with the PHP script example.php"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I trace \"$var1\"",
+                        "I step over"
+                    ],
+                    [
+                        "I step over"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the trace window should show Trace of: '$var1'",
+                        "the trace window should show $var1 = (int) 1"
+                    ],
+                    [
+                        "the trace window should show Trace of: '$var1'",
+                        "the trace window should show $var1 = (int) 1"
+                    ]
+                ]
+            }
+        ]
+    }
+}

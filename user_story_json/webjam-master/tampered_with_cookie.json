@@ -1,0 +1,27 @@
+{
+    "feature_name": "Gracefully handing tampered cookies",
+    "user_story": {
+        "as_a": "",
+        "i_want": "browse webjam with a tampered cookie",
+        "so_that": "join in the webjam fun",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am naughty"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I view the home page with a tampered cookie"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I don't see an exception"
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,22 @@
+// 1633872253696 Context Model
+digraph {
+	1633872254944 [label=Context99]
+	1633872255088 [label="I have a configuration file with:"]
+	1633872254944 -> 1633872255088
+	1633872255088 [label="I have a configuration file with:"]
+	1633872255184 [label="I have an \"index.html\" page that contains \"{% for post in site.posts %}{{ post.excerpt }}{% endfor %}\""]
+	1633872254944 -> 1633872255184
+	1633872255184 [label="I have an \"index.html\" page that contains \"{% for post in site.posts %}{{ post.excerpt }}{% endfor %}\""]
+	1633872255280 [label="I have a _layouts directory"]
+	1633872254944 -> 1633872255280
+	1633872255280 [label="I have a _layouts directory"]
+	1633872255376 [label="I have a post layout that contains \"{{ page.excerpt }}\""]
+	1633872254944 -> 1633872255376
+	1633872255376 [label="I have a post layout that contains \"{{ page.excerpt }}\""]
+	1633872255472 [label="I have a _posts directory"]
+	1633872254944 -> 1633872255472
+	1633872255472 [label="I have a _posts directory"]
+	1633872255568 [label="I have the following posts:"]
+	1633872254944 -> 1633872255568
+	1633872255568 [label="I have the following posts:"]
+}

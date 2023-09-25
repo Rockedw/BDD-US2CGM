@@ -1,0 +1,13 @@
+// 1633872231632 Context Model
+digraph {
+	1633872232304 [label=Context89]
+	1633872248896 [label="I have a _posts directory"]
+	1633872232304 -> 1633872248896
+	1633872248896 [label="I have a _posts directory"]
+	1633872248992 [label="I have an \"index.html\" file that contains \"Published!\""]
+	1633872232304 -> 1633872248992
+	1633872248992 [label="I have an \"index.html\" file that contains \"Published!\""]
+	1633872249088 [label="I have the following post:"]
+	1633872232304 -> 1633872249088
+	1633872249088 [label="I have the following post:"]
+}

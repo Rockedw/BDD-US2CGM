@@ -1,0 +1,39 @@
+{
+    "feature_name": "Top Cities",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "be able to browse the top cities in the directory",
+        "so_that": "see the top cities in the director",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a top city \"Dublin\" in \"IE\"",
+                        "a top city \"Jacksonville\" in \"FL, US\"",
+                        "an \"active\" provider \"Hashrocket\"",
+                        "\"Hashrocket\" is located in \"Jacksonville, FL, US\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the homepage",
+                        "I follow \"Top Cities\"",
+                        "I follow \"Dublin\""
+                    ],
+                    [
+                        "I follow \"Top Cities\"",
+                        "I follow \"Jacksonville\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"Hashrocket\""
+                    ],
+                    [
+                        "I should see \"Hashrocket\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "feature_name": "External Activities can support a REST api",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "a student first runs the external activity \"Cool Thing\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the browser should send a GET to \"activities.com/activity/1\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the student ran the external REST activity \"Cool Thing\" before"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "the student runs the external activity \"Cool Thing\" again"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the browser should send a GET to \"activities.com/activity/1\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the student ran the external REST activity \"Cool Thing\" before"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "the browser returns the following data to the portal"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the portal should create an open response saveable with the answer \"I like this activity\"",
+                        "the portal should create an image question saveable with the answer \"This is my image question answer\"",
+                        "the portal should create a multiple choice saveable with the answer \"blue\"",
+                        "the student's progress bars should be updated"
+                    ]
+                ]
+            }
+        ]
+    }
+}

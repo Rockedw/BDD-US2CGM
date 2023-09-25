@@ -1,0 +1,59 @@
+// Goal Model
+digraph {
+	1847124669920 [label="developer who likes to create plugins
+goal"]
+	1847125505696 [label="be able to cache certain aspects across multiple builds
+goal
+140728069287616"]
+	1847124669920 -> 1847125505696
+	1847125505696 [label="be able to cache certain aspects across multiple builds
+goal"]
+	1847124804560 [label="Default Cache directory
+goal
+1847125310768"]
+	1847125505696 -> 1847124804560
+	1847124804560 [label="Default Cache directory
+goal"]
+	1847124812768 [label="I run jekyll build
+task
+140728069287616"]
+	1847124804560 -> 1847124812768
+	1847124812768 [label="I run jekyll build
+task"]
+	1847124817856 [label="Custom Cache directory
+goal
+1847088853536"]
+	1847125505696 -> 1847124817856
+	1847124817856 [label="Custom Cache directory
+goal"]
+	1847088856752 [label="I run jekyll build
+task
+140728069287616"]
+	1847124817856 -> 1847088856752
+	1847088856752 [label="I run jekyll build
+task"]
+	1847088856944 [label="Disk usage in safe mode
+goal
+1847088855408"]
+	1847125505696 -> 1847088856944
+	1847088856944 [label="Disk usage in safe mode
+goal"]
+	1847088854880 [label="I run jekyll build --safe
+task
+140728069287616"]
+	1847088856944 -> 1847088854880
+	1847088854880 [label="I run jekyll build --safe
+task"]
+	1847088854064 [label="Disabling disk usage in non-safe mode
+goal
+1847088855744"]
+	1847125505696 -> 1847088854064
+	1847088854064 [label="Disabling disk usage in non-safe mode
+goal"]
+	1847088856224 [label="I run jekyll build --disable-disk-cache
+task
+140728069287616"]
+	1847088854064 -> 1847088856224
+	1847088856224 [label="I run jekyll build --disable-disk-cache
+task"]
+}

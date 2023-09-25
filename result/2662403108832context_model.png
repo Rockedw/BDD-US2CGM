@@ -1,0 +1,13 @@
+// 2662403100864 Context Model
+digraph {
+	2662403108832 [label=Context1]
+	2662403103216 [label="The default settings exist using factories"]
+	2662403108832 -> 2662403103216
+	2662403103216 [label="The default settings exist using factories"]
+	2662403101296 [label="I am logged in with the username teacher"]
+	2662403108832 -> 2662403101296
+	2662403101296 [label="I am logged in with the username teacher"]
+	2662403108208 [label="the student \"monty\" belongs to class \"class_with_no_students\""]
+	2662403108832 -> 2662403108208
+	2662403108208 [label="the student \"monty\" belongs to class \"class_with_no_students\""]
+}

@@ -1,0 +1,10 @@
+// 1998091135120 Context Model
+digraph {
+	1998091128592 [label=Context110]
+	1998091130224 [label="I need a \"ir.rule\" with name: \"res.partner company\""]
+	1998091128592 -> 1998091130224
+	1998091130224 [label="I need a \"ir.rule\" with name: \"res.partner company\""]
+	1998091132480 [label="having:"]
+	1998091128592 -> 1998091132480
+	1998091132480 [label="having:"]
+}

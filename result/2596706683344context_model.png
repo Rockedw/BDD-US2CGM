@@ -1,0 +1,10 @@
+// 2596706688864 Context Model
+digraph {
+	2596706683344 [label=Context6]
+	2596706689008 [label="I am on the new tag page"]
+	2596706683344 -> 2596706689008
+	2596706689008 [label="I am on the new tag page"]
+	2596706683776 [label="I fill in \"Education\" for \"tag_name\""]
+	2596706683344 -> 2596706683776
+	2596706683776 [label="I fill in \"Education\" for \"tag_name\""]
+}

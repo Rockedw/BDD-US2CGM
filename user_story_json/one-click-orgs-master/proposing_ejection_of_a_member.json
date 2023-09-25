@@ -1,0 +1,29 @@
+{
+    "feature_name": "Proposing ejection of a member",
+    "user_story": {
+        "as_a": "member",
+        "i_want": "propose the ejection of a member",
+        "so_that": "remove a member who shouldn't be involved anymore",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a member \"bob@example.com\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the member page for \"bob@example.com\"",
+                        "I press \"Create proposal to eject this member\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a proposal to eject \"bob@example.com\"",
+                        "everyone should receive an email notifying them of the proposal"
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+// 1998090310880 Context Model
+digraph {
+	1998090313088 [label=Context4]
+	1998090307568 [label="a provider \"Willy Wallow\" with an RFP called \"Spamtastic\""]
+	1998090313088 -> 1998090307568
+	1998090307568 [label="a provider \"Willy Wallow\" with an RFP called \"Spamtastic\""]
+	1998090318704 [label="a logged in admin user"]
+	1998090313088 -> 1998090318704
+	1998090318704 [label="a logged in admin user"]
+}

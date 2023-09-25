@@ -1,0 +1,36 @@
+{
+    "feature_name": "oembed",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "",
+        "so_that": "make videos easy accessible",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I click the publisher and post \"[title](https://example.com/file.ogv)\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a HTML5 video player"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I click the publisher and post \"[title](https://example.com/file.ogg)\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a HTML5 audio player"
+                    ]
+                ]
+            }
+        ]
+    }
+}

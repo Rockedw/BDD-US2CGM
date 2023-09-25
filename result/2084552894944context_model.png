@@ -1,0 +1,10 @@
+// 2084552893984 Context Model
+digraph {
+	2084552894944 [label=Context3]
+	2084552895088 [label="there are 2 existing individuals like \"indivItems\""]
+	2084552894944 -> 2084552895088
+	2084552895088 [label="there are 2 existing individuals like \"indivItems\""]
+	2084552895184 [label="there is an existing connection \"indivItems0\" \"parent_of\" \"indivItems1\""]
+	2084552894944 -> 2084552895184
+	2084552895184 [label="there is an existing connection \"indivItems0\" \"parent_of\" \"indivItems1\""]
+}

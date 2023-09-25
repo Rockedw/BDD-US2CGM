@@ -1,0 +1,10 @@
+// 3000816258880 Context Model
+digraph {
+	3000816259552 [label=Context179]
+	3000816259888 [label="I need a \"product.category\" with name: Cat_C and oid: scenario.cat_C"]
+	3000816259552 -> 3000816259888
+	3000816259888 [label="I need a \"product.category\" with name: Cat_C and oid: scenario.cat_C"]
+	3000816259984 [label="having:"]
+	3000816259552 -> 3000816259984
+	3000816259984 [label="having:"]
+}

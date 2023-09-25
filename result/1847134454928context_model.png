@@ -1,0 +1,7 @@
+// 1847134454256 Context Model
+digraph {
+	1847134454928 [label=Context4]
+	1847134455072 [label="I have an \"index.md\" page that contains \"[Welcome]({% post_url 2019-02-04-hello-world %})\""]
+	1847134454928 -> 1847134455072
+	1847134455072 [label="I have an \"index.md\" page that contains \"[Welcome]({% post_url 2019-02-04-hello-world %})\""]
+}

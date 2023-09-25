@@ -1,0 +1,70 @@
+{
+    "feature_name": "Text navigation commands",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to 0",
+                        "I run the command Redcar::Top::ForwardCharCommand"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 1"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\"",
+                        "I move the cursor to 3",
+                        "I run the command Redcar::Top::ForwardCharCommand"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 3"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to 3",
+                        "I run the command Redcar::Top::BackwardCharCommand"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 2"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\"",
+                        "I move the cursor to 0",
+                        "I run the command Redcar::Top::BackwardCharCommand"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 0"
+                    ]
+                ]
+            }
+        ]
+    }
+}

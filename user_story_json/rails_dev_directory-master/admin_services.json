@@ -1,0 +1,52 @@
+{
+    "feature_name": "Managing services",
+    "user_story": {
+        "as_a": "So that I can adapt the system to new tech types as they are required without modifying code",
+        "i_want": "be able to add and remove services",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a logged in admin user",
+                        "I am on the admin dashboard",
+                        "there are no services"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Services\""
+                    ],
+                    [
+                        "I follow \"Add a New Service\"",
+                        "I fill in \"Name\" with \"Java\"",
+                        "I check \"service[checked]\"",
+                        "I press \"Save\""
+                    ],
+                    [
+                        "I follow \"Edit\"",
+                        "I fill in \"Name\" with \"Ruby on Rails\"",
+                        "I press \"Save\""
+                    ],
+                    [
+                        "I follow \"Delete\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"No services have been added yet\""
+                    ],
+                    [
+                        "I should see \"Java\""
+                    ],
+                    [
+                        "I should see \"Ruby on Rails\""
+                    ],
+                    [
+                        "I should not see \"Ruby on Rails\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

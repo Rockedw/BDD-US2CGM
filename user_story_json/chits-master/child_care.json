@@ -1,0 +1,370 @@
+{
+    "feature_name": "Child Care",
+    "user_story": {
+        "as_a": "chits user",
+        "i_want": "",
+        "so_that": "efficiently manage new patient into a child care data",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"user\" with password \"user\"",
+                        "I click \"TODAY'S PATIENTS\"",
+                        "I should see \"CONSULTS TODAY\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"last\" with \"Rizal\"",
+                        "I press \"Search\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Rizal, Jose\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"user\" with password \"user\"",
+                        "I click \"TODAY'S PATIENTS\"",
+                        "I should see \"CONSULTS TODAY\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"last\" with \"Gallo\"",
+                        "I press \"Search\"",
+                        "I should see \"NO RECORDS FOUND\""
+                    ],
+                    [
+                        "I fill in \"patient_firstname\" with \"Allan\"",
+                        "I fill in \"patient_middle\" with \"X\"",
+                        "I fill in \"patient_lastname\" with \"Gallo\"",
+                        "I fill in \"patient_dob\" with \"03/04/2007\"",
+                        "I select \"Male\" from \"patient_gender\"",
+                        "I fill in \"patient_mother\" with \"maria\"",
+                        "I press \"Add Patient\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Clear Fields\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"user\" with password \"user\"",
+                        "I click \"TODAY'S PATIENTS\"",
+                        "I should see \"CONSULTS TODAY\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"last\" with \"ledesma\"",
+                        "I press \"Search\"",
+                        "I should see \"SEARCH RESULTS\"",
+                        "I choose \"consult_patient_id\"",
+                        "I press \"Select Patient\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"VISIT DETAILS\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"user\" with password \"user\"",
+                        "I click \"TODAY'S PATIENTS\"",
+                        "I should see \"CONSULTS TODAY\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"last\" with \"ledesma\"",
+                        "I press \"Search\"",
+                        "I should see \"SERACH RESULTS\"",
+                        "I choose \"consult_patient_id\"",
+                        "I press \"Select Patient\"",
+                        "I should see \"VISIT DETAILS\"",
+                        "I check \"ptgroup[]\"",
+                        "I press \"Save Details\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"CHILD\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"user\" with password \"user\"",
+                        "I click \"TODAY'S PATIENTS\"",
+                        "I should see \"CONSULTS TODAY\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"last\" with \"ledesma\"",
+                        "I press \"Search\"",
+                        "I should see \"SERACH RESULTS\"",
+                        "I choose \"consult_patient_id\"",
+                        "I press \"Select Patient\"",
+                        "I should see \"VISIT DETAILS\"",
+                        "I check \"ptgroup[]\"",
+                        "I press \"Save Details\"",
+                        "I should see \"CHILD\"",
+                        "I click \"CHILD\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"NO REGISTRY ID FOR THIS PATIENT\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"user\" with password \"user\"",
+                        "I click \"TODAY'S PATIENTS\"",
+                        "I should see \"CONSULTS TODAY\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"last\" with \"ledesma\"",
+                        "I press \"Search\"",
+                        "I should see \"SEARCH RESULTS\"",
+                        "I choose \"consult_patient_id\"",
+                        "I press \"Select Patient\"",
+                        "I should see \"VISIT DETAILS\"",
+                        "I check \"ptgroup[]\"",
+                        "I press \"Save Details\"",
+                        "I should see \"CHILD\"",
+                        "I click \"CHILD\"",
+                        "I should see \"NO REGISTRY ID FOR THIS PATIENT\"",
+                        "I click \"FIRST VISIT\"",
+                        "I should see \"CHILD CARE DATA FORM\"",
+                        "I should see \"Maya\"",
+                        "I fill in \"ccdev_date_reg\" with \"03/02/2010\"",
+                        "I fill in \"mother_px_id\" with \"0000001\""
+                    ],
+                    [
+                        "I select \"Housewife\" from \"mother_occup\"",
+                        "I select \"College\" from \"mother_educ\"",
+                        "I fill in \"father_name\" with \"Mario\"",
+                        "I select \"Barber\" from \"father_occup\"",
+                        "I select \"College\" from \"father_educ\"",
+                        "I fill in \"birth_weight\" with \"15\"",
+                        "I select \"Home\" from \"delivery_location\""
+                    ],
+                    [
+                        "I press \"Save Data\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"FIRST VISIT DATA\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"user\" with password \"user\"",
+                        "I click \"TODAY'S PATIENTS\"",
+                        "I should see \"CONSULTS TODAY\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"last\" with \"ledesma\"",
+                        "I press \"Search\"",
+                        "I should see \"SEARCH RESULTS\"",
+                        "I choose \"consult_patient_id\"",
+                        "I press \"Select Patient\"",
+                        "I should see \"VISIT DETAILS\"",
+                        "I check \"ptgroup[]\"",
+                        "I press \"Save Details\"",
+                        "I should see \"CHILD\"",
+                        "I click \"CHILD\"",
+                        "I should see \"NO REGISTRY ID FOR THIS PATIENT\"",
+                        "I click \"FIRST VISIT\"",
+                        "I should see \"CHILD CARE DATA FORM\"",
+                        "I should see \"Maya\"",
+                        "I fill in \"ccdev_date_reg\" with \"03/02/2010\"",
+                        "I fill in \"mother_px_id\" with \"0000001\""
+                    ],
+                    [
+                        "I select \"Housewife\" from \"mother_occup\"",
+                        "I select \"College\" from \"mother_educ\"",
+                        "I fill in \"father_name\" with \"Mario\"",
+                        "I select \"Barber\" from \"father_occup\"",
+                        "I select \"College\" from \"father_educ\"",
+                        "I fill in \"birth_weight\" with \"15\"",
+                        "I select \"Home\" from \"delivery_location\""
+                    ],
+                    [
+                        "I press \"Save Data\"",
+                        "I should see \"FIRST VISIT DATA\"",
+                        "I click \"SIBLINGS\"",
+                        "I should see \"OTHER FAMILY MEMBERS\"",
+                        "I check \"patients\"",
+                        "I press \"Add Sibling\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"FIRST VISIT DATA\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"user\" with password \"user\"",
+                        "I click \"TODAY'S PATIENTS\"",
+                        "I should see \"CONSULTS TODAY\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"last\" with \"ledesma\"",
+                        "I press \"Search\"",
+                        "I should see \"SEARCH RESULTS\"",
+                        "I choose \"consult_patient_id\"",
+                        "I press \"Select Patient\"",
+                        "I should see \"VISIT DETAILS\"",
+                        "I check \"ptgroup[]\"",
+                        "I press \"Save Details\"",
+                        "I should see \"CHILD\"",
+                        "I click \"CHILD\"",
+                        "I should see \"NO REGISTRY ID FOR THIS PATIENT\"",
+                        "I click \"FIRST VISIT\"",
+                        "I should see \"CHILD CARE DATA FORM\"",
+                        "I should see \"Maya\"",
+                        "I fill in \"ccdev_date_reg\" with \"03/02/2010\"",
+                        "I fill in \"mother_px_id\" with \"0000001\""
+                    ],
+                    [
+                        "I select \"Housewife\" from \"mother_occup\"",
+                        "I select \"College\" from \"mother_educ\"",
+                        "I fill in \"father_name\" with \"Mario\"",
+                        "I select \"Barber\" from \"father_occup\"",
+                        "I select \"College\" from \"father_educ\"",
+                        "I fill in \"birth_weight\" with \"15\"",
+                        "I select \"Home\" from \"delivery_location\""
+                    ],
+                    [
+                        "I press \"Save Data\"",
+                        "I should see \"FIRST VISIT DATA\"",
+                        "I click \"SIBLINGS\"",
+                        "I should see \"OTHER FAMILY MEMBERS\"",
+                        "I check \"patients\"",
+                        "I press \"Add Sibling\"",
+                        "I should see \"FIRST VISIT DATA\"",
+                        "I click \"SERVICES\"",
+                        "I should see \"services\"",
+                        "I check \"services[]\"",
+                        "I check \"vaccine[]\""
+                    ],
+                    [
+                        "I press \"Update Record\"",
+                        "I should see \"services[]\"",
+                        "I should see \"vaccine[]\"",
+                        "I click \"BREASTFEEDING\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"FTITLE_CCDEV_BREASTFEED\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"user\" with password \"user\"",
+                        "I click \"TODAY'S PATIENTS\"",
+                        "I should see \"CONSULTS TODAY\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"last\" with \"ledesma\"",
+                        "I press \"Search\"",
+                        "I should see \"SEARCH RESULTS\"",
+                        "I choose \"consult_patient_id\"",
+                        "I press \"Select Patient\"",
+                        "I should see \"VISIT DETAILS\"",
+                        "I check \"ptgroup[]\"",
+                        "I press \"Save Details\"",
+                        "I should see \"CHILD\"",
+                        "I click \"CHILD\"",
+                        "I should see \"NO REGISTRY ID FOR THIS PATIENT\"",
+                        "I click \"FIRST VISIT\"",
+                        "I should see \"CHILD CARE DATA FORM\"",
+                        "I should see \"Maya\"",
+                        "I fill in \"ccdev_date_reg\" with \"03/02/2010\"",
+                        "I fill in \"mother_px_id\" with \"0000001\""
+                    ],
+                    [
+                        "I select \"Housewife\" from \"mother_occup\"",
+                        "I select \"College\" from \"mother_educ\"",
+                        "I fill in \"father_name\" with \"Mario\"",
+                        "I select \"Barber\" from \"father_occup\"",
+                        "I select \"College\" from \"father_educ\"",
+                        "I fill in \"birth_weight\" with \"15\"",
+                        "I select \"Home\" from \"delivery_location\""
+                    ],
+                    [
+                        "I press \"Save Data\"",
+                        "I should see \"FIRST VISIT DATA\"",
+                        "I click \"SIBLINGS\"",
+                        "I should see \"OTHER FAMILY MEMBERS\"",
+                        "I check \"patients\"",
+                        "I press \"Add Sibling\"",
+                        "I should see \"FIRST VISIT DATA\"",
+                        "I click \"SERVICES\"",
+                        "I should see \"services\"",
+                        "I check \"services[]\"",
+                        "I check \"vaccine[]\""
+                    ],
+                    [
+                        "I press \"Update Record\"",
+                        "I should see \"services[]\"",
+                        "I should see \"vaccine[]\"",
+                        "I click \"BREASTFEEDING\"",
+                        "I should see \"FTITLE_CCDEV_BREASTFEED\"",
+                        "I check \"bfed_month[]\"",
+                        "I fill in \"date_bfed_six\" with \"03/02/2010\"",
+                        "I press \"Save Breastfeeding Status\"",
+                        "I should see \"bfed_month\"",
+                        "I click \"CONSULT\"",
+                        "I should see \"form_consult\"",
+                        "I press \"End Consult\"",
+                        "I should see \"comfirm_end\""
+                    ],
+                    [
+                        "I press \"Yes\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"CONSULTS TODAY\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

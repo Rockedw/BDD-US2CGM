@@ -1,0 +1,13 @@
+// 1998091341296 Context Model
+digraph {
+	1998091351184 [label=Context43]
+	1998091352000 [label="there is a product named \"Device 1.0\" with the following attributes :"]
+	1998091351184 -> 1998091352000
+	1998091352000 [label="there is a product named \"Device 1.0\" with the following attributes :"]
+	1998091352480 [label="product is in category \"Devices\""]
+	1998091351184 -> 1998091352480
+	1998091352480 [label="product is in category \"Devices\""]
+	1998091340048 [label="the supplier of the product is \"Fournisseur Device\""]
+	1998091351184 -> 1998091340048
+	1998091340048 [label="the supplier of the product is \"Fournisseur Device\""]
+}

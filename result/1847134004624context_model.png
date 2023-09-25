@@ -1,0 +1,16 @@
+// 1847134003904 Context Model
+digraph {
+	1847134004624 [label=Context5]
+	1847134006544 [label="a logged in admin user"]
+	1847134004624 -> 1847134006544
+	1847134006544 [label="a logged in admin user"]
+	1847133996512 [label="I am on the admin dashboard"]
+	1847134004624 -> 1847133996512
+	1847133996512 [label="I am on the admin dashboard"]
+	1847134002800 [label="a provider \"Crushtastic\""]
+	1847134004624 -> 1847134002800
+	1847134002800 [label="a provider \"Crushtastic\""]
+	1847134005536 [label="a user \"paul\" belonging to the \"Crushtastic\" provider"]
+	1847134004624 -> 1847134005536
+	1847134005536 [label="a user \"paul\" belonging to the \"Crushtastic\" provider"]
+}

@@ -1,0 +1,95 @@
+// Goal Model
+digraph {
+	1847134166256 [label="hacker who likes to write a variety of content
+goal"]
+	1847134383184 [label="be able to link to pages and documents
+goal
+140728069287616"]
+	1847134166256 -> 1847134383184
+	1847134383184 [label="be able to link to pages and documents
+goal"]
+	1847134383280 [label="Basic site with two pages
+goal
+1847134383040"]
+	1847134383184 -> 1847134383280
+	1847134383280 [label="Basic site with two pages
+goal"]
+	1847134383088 [label="I run jekyll build
+task
+140728069287616"]
+	1847134383280 -> 1847134383088
+	1847134383088 [label="I run jekyll build
+task"]
+	1847134383520 [label="Basic site with custom page-permalinks
+goal
+1847134383568"]
+	1847134383184 -> 1847134383520
+	1847134383520 [label="Basic site with custom page-permalinks
+goal"]
+	1847134382992 [label="I run jekyll build
+task
+140728069287616"]
+	1847134383520 -> 1847134382992
+	1847134382992 [label="I run jekyll build
+task"]
+	1847134383328 [label="Basic site with custom site-wide-permalinks
+goal
+1847134383376"]
+	1847134383184 -> 1847134383328
+	1847134383328 [label="Basic site with custom site-wide-permalinks
+goal"]
+	1847134384048 [label="I run jekyll build
+task
+140728069287616"]
+	1847134383328 -> 1847134384048
+	1847134384048 [label="I run jekyll build
+task"]
+	1847134383616 [label="Basic site with two pages and custom baseurl
+goal
+1847134384336"]
+	1847134383184 -> 1847134383616
+	1847134383616 [label="Basic site with two pages and custom baseurl
+goal"]
+	1847134384288 [label="I run jekyll build
+task
+140728069287616"]
+	1847134383616 -> 1847134384288
+	1847134384288 [label="I run jekyll build
+task"]
+	1847134383856 [label="Basic site with two pages and custom baseurl and permalinks
+goal
+1847134384816"]
+	1847134383184 -> 1847134383856
+	1847134383856 [label="Basic site with two pages and custom baseurl and permalinks
+goal"]
+	1847134384768 [label="I run jekyll build
+task
+140728069287616"]
+	1847134383856 -> 1847134384768
+	1847134384768 [label="I run jekyll build
+task"]
+	1847134384432 [label="Linking to a ghost file
+goal
+1847134385296"]
+	1847134383184 -> 1847134384432
+	1847134384432 [label="Linking to a ghost file
+goal"]
+	1847134385248 [label="I run jekyll build
+task
+140728069287616"]
+	1847134384432 -> 1847134385248
+	1847134385248 [label="I run jekyll build
+task"]
+	1847134384912 [label="Complex site with a variety of files
+goal
+1847134385680"]
+	1847134383184 -> 1847134384912
+	1847134384912 [label="Complex site with a variety of files
+goal"]
+	1847134385632 [label="I run jekyll build
+task
+140728069287616"]
+	1847134384912 -> 1847134385632
+	1847134385632 [label="I run jekyll build
+task"]
+}

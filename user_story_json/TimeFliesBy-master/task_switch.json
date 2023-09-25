@@ -1,0 +1,94 @@
+{
+    "feature_name": "Task Switch",
+    "user_story": {
+        "as_a": "person short on time",
+        "i_want": "",
+        "so_that": "> make time tracking quick and easy",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "it is \"1/3/2010 8:13:23 AM\"",
+                        "I am on the new task page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Switch Now\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Task was successfully created.\"",
+                        "I should see \"1/3/2010 08:13:23\"",
+                        "I should see \"Active\"",
+                        "I should see \"0s\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "it is \"1/3/2010 8:13:23 AM\"",
+                        "I have a \"1m\" task",
+                        "I am on the new task page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Switch Now\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Task was successfully created.\"",
+                        "I should see \"1/3/2010 08:13:23\"",
+                        "it is \"1/3/2010 8:13:24 AM\"",
+                        "I reload the page",
+                        "I should see \"1s\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "it is \"1/3/2010 8:13:23 AM\"",
+                        "I am on the new task page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Switch Now\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Task was successfully created.\"",
+                        "I should see \"1/3/2010 08:13:23\"",
+                        "I should see \"0s\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "it is \"1/3/2010 8:13:23 AM\"",
+                        "I have a \"1m\" task",
+                        "I am on the new task page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Switch Now\"",
+                        "I follow \"Back\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"1m\" duration in task 2"
+                    ]
+                ]
+            }
+        ]
+    }
+}

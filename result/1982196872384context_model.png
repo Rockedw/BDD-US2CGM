@@ -1,0 +1,19 @@
+// 1982197282320 Context Model
+digraph {
+	1982196872384 [label=Context4]
+	1982199644416 [label="following users exist:"]
+	1982196872384 -> 1982199644416
+	1982199644416 [label="following users exist:"]
+	1982199644512 [label="I sign in as \"bob@bob.bob\""]
+	1982196872384 -> 1982199644512
+	1982199644512 [label="I sign in as \"bob@bob.bob\""]
+	1982199644608 [label="I am on \"alice@alice.alice\"'s page"]
+	1982196872384 -> 1982199644608
+	1982199644608 [label="I am on \"alice@alice.alice\"'s page"]
+	1982199644704 [label="I add the person to my \"Besties\" aspect"]
+	1982196872384 -> 1982199644704
+	1982199644704 [label="I add the person to my \"Besties\" aspect"]
+	1982199644800 [label="I sign out"]
+	1982196872384 -> 1982199644800
+	1982199644800 [label="I sign out"]
+}

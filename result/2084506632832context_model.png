@@ -1,0 +1,13 @@
+// 2084506215680 Context Model
+digraph {
+	2084506632832 [label=Context2]
+	2084500883200 [label="The default settings exist using factories"]
+	2084506632832 -> 2084500883200
+	2084500883200 [label="The default settings exist using factories"]
+	2084500889296 [label="the database has been seeded"]
+	2084506632832 -> 2084500889296
+	2084500889296 [label="the database has been seeded"]
+	2084500884832 [label="the following students exist:"]
+	2084506632832 -> 2084500884832
+	2084500884832 [label="the following students exist:"]
+}

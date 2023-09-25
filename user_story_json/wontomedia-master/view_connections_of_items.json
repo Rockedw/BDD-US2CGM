@@ -1,0 +1,63 @@
+{
+    "feature_name": "View connections related to a item on that item's \"resource\" page",
+    "user_story": {
+        "as_a": "as a contributor, I want",
+        "i_want": "view a item and its connections at the same time.",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am on the show items page for \"parent_of\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Add a new connection\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Make a new connection\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is 1 existing individual like \"lonelyItem\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the show items page for \"lonelyItem0\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see 5 matches of \"lonelyItem\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is 2 existing individuals like \"friendlyItem\"",
+                        "there is an existing connection \"friendlyItem0\" \"peer_of\" \"friendlyItem1\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the show items page for \"friendlyItem0\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see 9 matches of \"friendlyItem\"",
+                        "I should see \"Peer Of\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

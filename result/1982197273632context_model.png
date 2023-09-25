@@ -1,0 +1,25 @@
+// 1982197281936 Context Model
+digraph {
+	1982197273632 [label=Context4]
+	1982197271424 [label="an \"active\" provider \"Trulio\""]
+	1982197273632 -> 1982197271424
+	1982197271424 [label="an \"active\" provider \"Trulio\""]
+	1982197272048 [label="\"Trulio\" has a new endorsement from \"George Tenet\""]
+	1982197273632 -> 1982197272048
+	1982197272048 [label="\"Trulio\" has a new endorsement from \"George Tenet\""]
+	1982197282464 [label="\"Trulio\" has a minimum budget of \"15000\""]
+	1982197273632 -> 1982197282464
+	1982197282464 [label="\"Trulio\" has a minimum budget of \"15000\""]
+	1982197271088 [label="pre checked services \"Ruby on Rails\""]
+	1982197273632 -> 1982197271088
+	1982197271088 [label="pre checked services \"Ruby on Rails\""]
+	1982197268640 [label="primary services \"AJAX, Visual design, UI\""]
+	1982197273632 -> 1982197268640
+	1982197268640 [label="primary services \"AJAX, Visual design, UI\""]
+	1982197272000 [label="\"Trulio\" provides \"AJAX\""]
+	1982197273632 -> 1982197272000
+	1982197272000 [label="\"Trulio\" provides \"AJAX\""]
+	1982197282704 [label="an \"inactive\" provider \"Boolio\""]
+	1982197273632 -> 1982197282704
+	1982197282704 [label="an \"inactive\" provider \"Boolio\""]
+}

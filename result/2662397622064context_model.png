@@ -1,0 +1,19 @@
+// 2662397621824 Context Model
+digraph {
+	2662397622064 [label=Context9]
+	2662397622592 [label="following users exist:"]
+	2662397622064 -> 2662397622592
+	2662397622592 [label="following users exist:"]
+	2662397622688 [label="a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\""]
+	2662397622064 -> 2662397622688
+	2662397622688 [label="a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\""]
+	2662397622784 [label="a user with email \"eve@eve.eve\" is connected with \"bob@bob.bob\""]
+	2662397622064 -> 2662397622784
+	2662397622784 [label="a user with email \"eve@eve.eve\" is connected with \"bob@bob.bob\""]
+	2662397622880 [label="\"bob@bob.bob\" has a public post with text \"reshare this!\""]
+	2662397622064 -> 2662397622880
+	2662397622880 [label="\"bob@bob.bob\" has a public post with text \"reshare this!\""]
+	2662397622976 [label="I sign in as \"alice@alice.alice\" on the mobile website"]
+	2662397622064 -> 2662397622976
+	2662397622976 [label="I sign in as \"alice@alice.alice\" on the mobile website"]
+}

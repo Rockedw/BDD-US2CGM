@@ -1,0 +1,13 @@
+// 2662397900448 Context Model
+digraph {
+	2662397896080 [label=Context4]
+	2662397886768 [label="following user exists:"]
+	2662397896080 -> 2662397886768
+	2662397886768 [label="following user exists:"]
+	2662397901984 [label="I have several oEmbed data in cache"]
+	2662397896080 -> 2662397901984
+	2662397901984 [label="I have several oEmbed data in cache"]
+	2662397891520 [label="I sign in as \"alice@alice.alice\""]
+	2662397896080 -> 2662397891520
+	2662397891520 [label="I sign in as \"alice@alice.alice\""]
+}

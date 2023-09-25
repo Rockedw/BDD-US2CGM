@@ -1,0 +1,16 @@
+// 1436758586032 Context Model
+digraph {
+	1436758586608 [label=Context9]
+	1436758587040 [label="The default settings exist using factories"]
+	1436758586608 -> 1436758587040
+	1436758587040 [label="The default settings exist using factories"]
+	1436758587136 [label="the database has been seeded"]
+	1436758586608 -> 1436758587136
+	1436758587136 [label="the database has been seeded"]
+	1436758587232 [label="I login with username: teacher"]
+	1436758586608 -> 1436758587232
+	1436758587232 [label="I login with username: teacher"]
+	1436758587328 [label="I am on the full status page for \"My Class\""]
+	1436758586608 -> 1436758587328
+	1436758587328 [label="I am on the full status page for \"My Class\""]
+}

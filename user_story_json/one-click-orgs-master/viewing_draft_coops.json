@@ -1,0 +1,40 @@
+{
+    "feature_name": "Viewing draft co-ops",
+    "user_story": {
+        "as_a": "n administrator",
+        "i_want": "view details of draft co-ops",
+        "so_that": "monitor incoming co-op registrations",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the co-op review page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a list of the draft co-ops"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the admin view of a draft co-op"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the name of the co-op",
+                        "I should see the founder members of the co-op",
+                        "I should see a link to the co-op's rules",
+                        "I should see a link to the co-op's registration form",
+                        "I should see a link to the co-op's anti-money laundering form"
+                    ]
+                ]
+            }
+        ]
+    }
+}

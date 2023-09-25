@@ -1,0 +1,26 @@
+{
+    "feature_name": "Admin views default class",
+    "user_story": {
+        "as_a": "n admin",
+        "i_want": "view the default class",
+        "so_that": "setup site wide activities",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "the default class is created",
+                        "the database has been seeded",
+                        "I am logged in with the username admin",
+                        "go to the class page for \"Default Class\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"Default Class\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

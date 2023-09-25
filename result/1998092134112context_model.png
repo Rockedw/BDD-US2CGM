@@ -1,0 +1,22 @@
+// 1998092133440 Context Model
+digraph {
+	1998092134112 [label=Context68]
+	1998092134256 [label="I have a _posts directory"]
+	1998092134112 -> 1998092134256
+	1998092134256 [label="I have a _posts directory"]
+	1998092134352 [label="I have a _posts/snippets directory"]
+	1998092134112 -> 1998092134352
+	1998092134352 [label="I have a _posts/snippets directory"]
+	1998092134448 [label="I have a _posts/snippets/welcome_para directory"]
+	1998092134112 -> 1998092134448
+	1998092134448 [label="I have a _posts/snippets/welcome_para directory"]
+	1998092134544 [label="I have the following post:"]
+	1998092134112 -> 1998092134544
+	1998092134544 [label="I have the following post:"]
+	1998092134640 [label="I have an \"_posts/snippets/welcome_para.md\" file that contains \"{% include_relative snippets/welcome_para/greeting.md %} Dear Reader!\""]
+	1998092134112 -> 1998092134640
+	1998092134640 [label="I have an \"_posts/snippets/welcome_para.md\" file that contains \"{% include_relative snippets/welcome_para/greeting.md %} Dear Reader!\""]
+	1998092134736 [label="I have an \"_posts/snippets/welcome_para/greeting.md\" file that contains \"Welcome back\""]
+	1998092134112 -> 1998092134736
+	1998092134736 [label="I have an \"_posts/snippets/welcome_para/greeting.md\" file that contains \"Welcome back\""]
+}

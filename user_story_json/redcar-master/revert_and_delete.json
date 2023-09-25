@@ -1,0 +1,48 @@
+{
+    "feature_name": "Reverting and deleting files in a working copy",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I checkout a local repository",
+                        "I create a wc file named \"foo.rb\"",
+                        "I replace \"foo.rb\" contents with \"Never gonna give you up\"",
+                        "I add \"foo.rb\" to the index",
+                        "I commit my changes with message \"Hark! This is a commit.\"",
+                        "I replace \"foo.rb\" contents with \"Never gonna let you down\"",
+                        "I revert \"foo.rb\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be \"0\" unindexed files and \"0\" indexed files",
+                        "the contents of wc file \"foo.rb\" should be \"Never gonna give you up\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I checkout a local repository",
+                        "I create a wc file named \"foo.rb,bar.rb\"",
+                        "I add \"foo.rb,bar.rb\" to the index",
+                        "I commit my changes with message \"Hark! This be a commit.\"",
+                        "I wc delete \"foo.rb\"",
+                        "I commit my changes with message \"Yarr! Committin' I be!\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "if I checkout to a new working copy, it should have \"1\" files"
+                    ]
+                ]
+            }
+        ]
+    }
+}

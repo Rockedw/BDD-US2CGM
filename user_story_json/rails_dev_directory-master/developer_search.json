@@ -1,0 +1,62 @@
+{
+    "feature_name": "Searching for a developer",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "narrow my search with skill filters",
+        "so_that": "find developers with specific skills",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on the homepage",
+                        "I fill in \"Your Budget\" with \"50000\"",
+                        "I check \"Rails\"",
+                        "I press \"Find a developer\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Hashrock\"",
+                        "I should not see \"Clearright\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on the homepage",
+                        "I fill in \"Your Budget\" with \"50000\"",
+                        "I check \"Visual Design\"",
+                        "I press \"Find a developer\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Clearright\"",
+                        "I should not see \"Hashrock\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on the homepage",
+                        "I fill in \"Your Budget\" with \"50000\"",
+                        "I check \"Visual Design\"",
+                        "I check \"Rails\"",
+                        "I press \"Find a developer\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"Clearright\"",
+                        "I should not see \"Hashrock\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

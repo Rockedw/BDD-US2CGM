@@ -1,0 +1,22 @@
+// 2662398259648 Context Model
+digraph {
+	2662398248896 [label=Context28]
+	2662398249904 [label="I have fixture collections"]
+	2662398248896 -> 2662398249904
+	2662398249904 [label="I have fixture collections"]
+	2662398262336 [label="I have a _posts directory"]
+	2662398248896 -> 2662398262336
+	2662398262336 [label="I have a _posts directory"]
+	2662398262432 [label="I have an \"_posts/2019-12-26-extensioned.md\" file that contains \"Hello!\""]
+	2662398248896 -> 2662398262432
+	2662398262432 [label="I have an \"_posts/2019-12-26-extensioned.md\" file that contains \"Hello!\""]
+	2662398262528 [label="I have an \"_posts/2019-12-26-extensionless\" file that contains \"Aloha!\""]
+	2662398248896 -> 2662398262528
+	2662398262528 [label="I have an \"_posts/2019-12-26-extensionless\" file that contains \"Aloha!\""]
+	2662398262624 [label="I have an \"index.md\" page that contains \"{{ site.posts | map: 'title' }}\""]
+	2662398248896 -> 2662398262624
+	2662398262624 [label="I have an \"index.md\" page that contains \"{{ site.posts | map: 'title' }}\""]
+	2662398262720 [label="I have a \"_config.yml\" file with content:"]
+	2662398248896 -> 2662398262720
+	2662398262720 [label="I have a \"_config.yml\" file with content:"]
+}

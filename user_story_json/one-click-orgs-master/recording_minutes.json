@@ -1,0 +1,64 @@
+{
+    "feature_name": "Recording minutes",
+    "user_story": {
+        "as_a": "director",
+        "i_want": "",
+        "so_that": "comply with company articles regarding meetings of directors",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am on the Votes & Minutes page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Record minutes\""
+                    ],
+                    [
+                        "I choose the date of discussion",
+                        "I check the first two directors' checkboxes",
+                        "I fill in \"What was discussed\" with \"Preferred coffee suppliers.\"",
+                        "I press \"Submit\""
+                    ],
+                    [
+                        "I follow \"Preferred coffee suppliers\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a form for recording minutes",
+                        "I should see a checkbox for each director"
+                    ],
+                    [
+                        "I should see the minutes for \"Preferred coffee suppliers\" in the timeline"
+                    ],
+                    [
+                        "I should see the first two directors' names as participants"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "another director has recorded some new minutes"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I click the link in the email"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should receive an email notifying me of the new minutes",
+                        "I should see a link to the minutes in the email"
+                    ],
+                    [
+                        "I should see the minutes"
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+// 2220571415920 Context Model
+digraph {
+	2220571424656 [label=Context8]
+	2220571424752 [label="there is a co-op"]
+	2220571424656 -> 2220571424752
+	2220571424752 [label="there is a co-op"]
+	2220571420576 [label="I am the secretary of the co-op"]
+	2220571424656 -> 2220571420576
+	2220571420576 [label="I am the secretary of the co-op"]
+	2220571426432 [label="there is a director named \"Bob Smith\""]
+	2220571424656 -> 2220571426432
+	2220571426432 [label="there is a director named \"Bob Smith\""]
+	2220571419760 [label="a resolution to terminate the directorship of \"Bob Smith\" has been attached to a past General Meeting"]
+	2220571424656 -> 2220571419760
+	2220571419760 [label="a resolution to terminate the directorship of \"Bob Smith\" has been attached to a past General Meeting"]
+}

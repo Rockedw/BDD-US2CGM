@@ -1,0 +1,203 @@
+// Goal Model
+digraph {
+	1847117748336 [label="student advisor
+goal"]
+	1847117743056 [label="link mentor teachers to cal courses
+goal
+140728069287616"]
+	1847117748336 -> 1847117743056
+	1847117743056 [label="link mentor teachers to cal courses
+goal"]
+	1847117752656 [label=" add something
+goal
+140728069287616"]
+	1847117748336 -> 1847117752656
+	1847117752656 [label=" add something
+goal"]
+	1847117743968 [label="add new placement and remove automated placements for students
+goal
+1847117883920"]
+	1847117752656 -> 1847117743968
+	1847117743968 [label="add new placement and remove automated placements for students
+goal"]
+	1847117874560 [label="Student Advisor should be able to see field placement
+goal
+1847117874992"]
+	1847117743968 -> 1847117874560
+	1847117874560 [label="Student Advisor should be able to see field placement
+goal"]
+	1847117878592 [label="Student Advisor should be able to remove old field placement
+goal
+1847117875856"]
+	1847117743968 -> 1847117878592
+	1847117878592 [label="Student Advisor should be able to remove old field placement
+goal"]
+	1847117873840 [label="Student Advisor should be able to add new field placement
+goal
+140728069287616"]
+	1847117743968 -> 1847117873840
+	1847117873840 [label="Student Advisor should be able to add new field placement
+goal"]
+	1847117877056 [label="I go to /students/3/semesters/1/edit_placements
+task
+140728069287616"]
+	1847117873840 -> 1847117877056
+	1847117877056 [label="I go to /students/3/semesters/1/edit_placements
+task"]
+	1847117875952 [label="I fill in \"new_timeslot\" with \"1\"
+task
+140728069287616"]
+	1847117873840 -> 1847117875952
+	1847117875952 [label="I fill in \"new_timeslot\" with \"1\"
+task"]
+	1847117876576 [label="I press \"Update\"
+task
+140728069287616"]
+	1847117873840 -> 1847117876576
+	1847117876576 [label="I press \"Update\"
+task"]
+	1847117879168 [label="invite/add/edit/delete users
+goal
+1847117876960"]
+	1847117752656 -> 1847117879168
+	1847117879168 [label="invite/add/edit/delete users
+goal"]
+	1847117888336 [label="I access page
+goal
+140728069287616"]
+	1847117879168 -> 1847117888336
+	1847117888336 [label="I access page
+goal"]
+	1847117875520 [label="I can't access invite page without login as an advisor
+goal
+1847117874464"]
+	1847117888336 -> 1847117875520
+	1847117875520 [label="I can't access invite page without login as an advisor
+goal"]
+	1847117877152 [label="I can't access add user page without login as an advisor
+goal
+1847117877296"]
+	1847117888336 -> 1847117877152
+	1847117877152 [label="I can't access add user page without login as an advisor
+goal"]
+	1847117887808 [label="I invite something
+goal
+140728069287616"]
+	1847117879168 -> 1847117887808
+	1847117887808 [label="I invite something
+goal"]
+	1847117878112 [label="I can invite a person
+goal
+1847117873744"]
+	1847117887808 -> 1847117878112
+	1847117878112 [label="I can invite a person
+goal"]
+	1847117877968 [label="I can't invite a blank email
+goal
+1847117875136"]
+	1847117887808 -> 1847117877968
+	1847117877968 [label="I can't invite a blank email
+goal"]
+	1847117878784 [label="I can add/edit/delete a user
+goal
+1847117874320"]
+	1847117887808 -> 1847117878784
+	1847117878784 [label="I can add/edit/delete a user
+goal"]
+	1847117880992 [label="I go to /user/adv_new
+task
+140728069287616"]
+	1847117878784 -> 1847117880992
+	1847117880992 [label="I go to /user/adv_new
+task"]
+	1847117880752 [label="I go to /user/2/adv_edit
+task
+140728069287616"]
+	1847117878784 -> 1847117880752
+	1847117880752 [label="I go to /user/2/adv_edit
+task"]
+	1847117878832 [label="be able to automatically match Cal students to mentor teachers
+goal
+1847117876192"]
+	1847117748336 -> 1847117878832
+	1847117878832 [label="be able to automatically match Cal students to mentor teachers
+goal"]
+	1847117880128 [label="I press \"match_all\"
+task
+140728069287616"]
+	1847117878832 -> 1847117880128
+	1847117880128 [label="I press \"match_all\"
+task"]
+	1847117881712 [label="oversee the schedule of the students and teachers
+goal
+1847117878976"]
+	1847117748336 -> 1847117881712
+	1847117881712 [label="oversee the schedule of the students and teachers
+goal"]
+	1847117882336 [label="view list of students with their information
+goal
+140728069287616"]
+	1847117881712 -> 1847117882336
+	1847117882336 [label="view list of students with their information
+goal"]
+	1847117881952 [label="I go to /user
+task
+140728069287616"]
+	1847117882336 -> 1847117881952
+	1847117881952 [label="I go to /user
+task"]
+	1847117880944 [label="I follow \"Students\"
+task
+140728069287616"]
+	1847117882336 -> 1847117880944
+	1847117880944 [label="I follow \"Students\"
+task"]
+	1847117882384 [label="view list of mentor teachers with their information
+goal
+140728069287616"]
+	1847117881712 -> 1847117882384
+	1847117882384 [label="view list of mentor teachers with their information
+goal"]
+	1847117877680 [label="I go to /user
+task
+140728069287616"]
+	1847117882384 -> 1847117877680
+	1847117877680 [label="I go to /user
+task"]
+	1847117873312 [label="I follow \"Teachers\"
+task
+140728069287616"]
+	1847117882384 -> 1847117873312
+	1847117873312 [label="I follow \"Teachers\"
+task"]
+	1847117880368 [label="sort students by last name
+goal
+1847117876384"]
+	1847117881712 -> 1847117880368
+	1847117880368 [label="sort students by last name
+goal"]
+	1847117876864 [label="sort students by first name
+goal
+1847117882288"]
+	1847117881712 -> 1847117876864
+	1847117876864 [label="sort students by first name
+goal"]
+	1847117877248 [label="sort students by course
+goal
+1847117883056"]
+	1847117881712 -> 1847117877248
+	1847117877248 [label="sort students by course
+goal"]
+	1847117882624 [label="sort teachers by last name
+goal
+1847117879072"]
+	1847117881712 -> 1847117882624
+	1847117882624 [label="sort teachers by last name
+goal"]
+	1847117882864 [label="sort teachers by first name
+goal
+1847117881136"]
+	1847117881712 -> 1847117882864
+	1847117882864 [label="sort teachers by first name
+goal"]
+}

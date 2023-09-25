@@ -1,0 +1,2143 @@
+// Goal Model
+digraph {
+	1847088851376 [label="chits user
+goal"]
+	1847124668912 [label=" manage patient
+goal
+140728069287616"]
+	1847088851376 -> 1847124668912
+	1847124668912 [label=" manage patient
+goal"]
+	1847124812240 [label="be able to manage track taday's patients
+goal
+140728069287616"]
+	1847124668912 -> 1847124812240
+	1847124812240 [label="be able to manage track taday's patients
+goal"]
+	1847124818288 [label="I click \"CLICK TO VIEW RECORD\"
+task
+140728069287616"]
+	1847124812240 -> 1847124818288
+	1847124818288 [label="I click \"CLICK TO VIEW RECORD\"
+task"]
+	1847124818336 [label="I check \"ptgroup[]\"
+task
+140728069287616"]
+	1847124812240 -> 1847124818336
+	1847124818336 [label="I check \"ptgroup[]\"
+task"]
+	1847124818384 [label="I press \"Save Details\"
+task
+140728069287616"]
+	1847124812240 -> 1847124818384
+	1847124818384 [label="I press \"Save Details\"
+task"]
+	1847124815936 [label="be able to manage track taday's patients
+goal
+140728069287616"]
+	1847124668912 -> 1847124815936
+	1847124815936 [label="be able to manage track taday's patients
+goal"]
+	1847124811904 [label="Patient Loaded in Family Planning Module
+goal
+1847124814400"]
+	1847124815936 -> 1847124811904
+	1847124811904 [label="Patient Loaded in Family Planning Module
+goal"]
+	1847124811952 [label="I click \"CLICK TO VIEW RECORD\"
+task
+140728069287616"]
+	1847124811904 -> 1847124811952
+	1847124811952 [label="I click \"CLICK TO VIEW RECORD\"
+task"]
+	1847124818432 [label="I check \"ptgroup[]\"
+task
+140728069287616"]
+	1847124811904 -> 1847124818432
+	1847124818432 [label="I check \"ptgroup[]\"
+task"]
+	1847124817808 [label="Patient Loaded in Maternal Care Module
+goal
+1847124817136"]
+	1847124815936 -> 1847124817808
+	1847124817808 [label="Patient Loaded in Maternal Care Module
+goal"]
+	1847124816944 [label="I click \"CLICK TO VIEW RECORD\"
+task
+140728069287616"]
+	1847124817808 -> 1847124816944
+	1847124816944 [label="I click \"CLICK TO VIEW RECORD\"
+task"]
+	1847124817040 [label="I check \"ptgroup[]\"
+task
+140728069287616"]
+	1847124817808 -> 1847124817040
+	1847124817040 [label="I check \"ptgroup[]\"
+task"]
+	1847124815744 [label="Patient Loaded in
+goal
+1847124808256"]
+	1847124815936 -> 1847124815744
+	1847124815744 [label="Patient Loaded in
+goal"]
+	1847124807440 [label="I click \"CLICK TO VIEW RECORD\"
+task
+140728069287616"]
+	1847124815744 -> 1847124807440
+	1847124807440 [label="I click \"CLICK TO VIEW RECORD\"
+task"]
+	1847124810416 [label="I check \"ptgroup[]\"
+task
+140728069287616"]
+	1847124815744 -> 1847124810416
+	1847124810416 [label="I check \"ptgroup[]\"
+task"]
+	1847124818816 [label="manage patient
+goal
+140728069287616"]
+	1847124668912 -> 1847124818816
+	1847124818816 [label="manage patient
+goal"]
+	1847124666032 [label="
+goal
+140728069287616"]
+	1847124818816 -> 1847124666032
+	1847124666032 [label="
+goal"]
+	1847124657392 [label="Search Patient
+goal
+1847124669008"]
+	1847124666032 -> 1847124657392
+	1847124657392 [label="Search Patient
+goal"]
+	1847124659072 [label="I fill in \"last\" with \"Rizal\"
+task
+140728069287616"]
+	1847124657392 -> 1847124659072
+	1847124659072 [label="I fill in \"last\" with \"Rizal\"
+task"]
+	1847124663392 [label="I press \"Search\"
+task
+140728069287616"]
+	1847124657392 -> 1847124663392
+	1847124663392 [label="I press \"Search\"
+task"]
+	1847124658112 [label="Old Patient
+goal
+1847124657200"]
+	1847124666032 -> 1847124658112
+	1847124658112 [label="Old Patient
+goal"]
+	1847124659888 [label="I fill in \"last\" with \"ledesma\"
+task
+140728069287616"]
+	1847124658112 -> 1847124659888
+	1847124659888 [label="I fill in \"last\" with \"ledesma\"
+task"]
+	1847124819296 [label="I press something
+goal
+140728069287616"]
+	1847124658112 -> 1847124819296
+	1847124819296 [label="I press something
+goal"]
+	1847124658016 [label="I press \"Search\"
+task
+140728069287616"]
+	1847124819296 -> 1847124658016
+	1847124658016 [label="I press \"Search\"
+task"]
+	1847124659600 [label="I press \"Select Patient\"
+task
+140728069287616"]
+	1847124819296 -> 1847124659600
+	1847124659600 [label="I press \"Select Patient\"
+task"]
+	1847124665936 [label="I should see \"SEARCH RESULTS\"
+task
+140728069287616"]
+	1847124658112 -> 1847124665936
+	1847124665936 [label="I should see \"SEARCH RESULTS\"
+task"]
+	1847124659216 [label="I choose \"consult_patient_id\"
+task
+140728069287616"]
+	1847124658112 -> 1847124659216
+	1847124659216 [label="I choose \"consult_patient_id\"
+task"]
+	1847124662384 [label="Child Care
+goal
+1847117749104"]
+	1847124666032 -> 1847124662384
+	1847124662384 [label="Child Care
+goal"]
+	1847117746992 [label="I fill in \"last\" with \"ledesma\"
+task
+140728069287616"]
+	1847124662384 -> 1847117746992
+	1847117746992 [label="I fill in \"last\" with \"ledesma\"
+task"]
+	1847124819872 [label="I press something
+goal
+140728069287616"]
+	1847124662384 -> 1847124819872
+	1847124819872 [label="I press something
+goal"]
+	1847117755248 [label="I press \"Search\"
+task
+140728069287616"]
+	1847124819872 -> 1847117755248
+	1847117755248 [label="I press \"Search\"
+task"]
+	1847117753184 [label="I press \"Select Patient\"
+task
+140728069287616"]
+	1847124819872 -> 1847117753184
+	1847117753184 [label="I press \"Select Patient\"
+task"]
+	1847117753952 [label="I press \"Save Details\"
+task
+140728069287616"]
+	1847124819872 -> 1847117753952
+	1847117753952 [label="I press \"Save Details\"
+task"]
+	1847117756304 [label="I click \"CHILD\"
+task
+140728069287616"]
+	1847124819872 -> 1847117756304
+	1847117756304 [label="I click \"CHILD\"
+task"]
+	1847124812144 [label="I see something
+goal
+140728069287616"]
+	1847124662384 -> 1847124812144
+	1847124812144 [label="I see something
+goal"]
+	1847117746512 [label="I should see \"SERACH RESULTS\"
+task
+140728069287616"]
+	1847124812144 -> 1847117746512
+	1847117746512 [label="I should see \"SERACH RESULTS\"
+task"]
+	1847117752848 [label="I should see \"VISIT DETAILS\"
+task
+140728069287616"]
+	1847124812144 -> 1847117752848
+	1847117752848 [label="I should see \"VISIT DETAILS\"
+task"]
+	1847117752080 [label="I should see \"CHILD\"
+task
+140728069287616"]
+	1847124812144 -> 1847117752080
+	1847117752080 [label="I should see \"CHILD\"
+task"]
+	1847117751264 [label="I choose \"consult_patient_id\"
+task
+140728069287616"]
+	1847124662384 -> 1847117751264
+	1847117751264 [label="I choose \"consult_patient_id\"
+task"]
+	1847117746848 [label="I check \"ptgroup[]\"
+task
+140728069287616"]
+	1847124662384 -> 1847117746848
+	1847117746848 [label="I check \"ptgroup[]\"
+task"]
+	1847117748144 [label="First Visit
+goal
+1847124622352"]
+	1847124666032 -> 1847117748144
+	1847117748144 [label="First Visit
+goal"]
+	1847124819440 [label="I fill
+in something
+goal
+140728069287616"]
+	1847117748144 -> 1847124819440
+	1847124819440 [label="I fill
+in something
+goal"]
+	1847124618608 [label="I fill in \"mother_px_id\" with \"0000001\"
+task
+140728069287616"]
+	1847124819440 -> 1847124618608
+	1847124618608 [label="I fill in \"mother_px_id\" with \"0000001\"
+task"]
+	1847124620624 [label="I fill in \"father_name\" with \"Mario\"
+task
+140728069287616"]
+	1847124819440 -> 1847124620624
+	1847124620624 [label="I fill in \"father_name\" with \"Mario\"
+task"]
+	1847124615200 [label="I fill in \"birth_weight\" with \"15\"
+task
+140728069287616"]
+	1847124819440 -> 1847124615200
+	1847124615200 [label="I fill in \"birth_weight\" with \"15\"
+task"]
+	1847117751456 [label="I fill in \"last\" with \"ledesma\"
+task
+140728069287616"]
+	1847124819440 -> 1847117751456
+	1847117751456 [label="I fill in \"last\" with \"ledesma\"
+task"]
+	1847124609872 [label="I fill in \"ccdev_date_reg\" with \"03/02/2010\"
+task
+140728069287616"]
+	1847124819440 -> 1847124609872
+	1847124609872 [label="I fill in \"ccdev_date_reg\" with \"03/02/2010\"
+task"]
+	1847124811472 [label="I press something
+goal
+140728069287616"]
+	1847117748144 -> 1847124811472
+	1847124811472 [label="I press something
+goal"]
+	1847117744304 [label="I press \"Search\"
+task
+140728069287616"]
+	1847124811472 -> 1847117744304
+	1847117744304 [label="I press \"Search\"
+task"]
+	1847117758032 [label="I press \"Select Patient\"
+task
+140728069287616"]
+	1847124811472 -> 1847117758032
+	1847117758032 [label="I press \"Select Patient\"
+task"]
+	1847117746080 [label="I press \"Save Details\"
+task
+140728069287616"]
+	1847124811472 -> 1847117746080
+	1847117746080 [label="I press \"Save Details\"
+task"]
+	1847117751984 [label="I click \"CHILD\"
+task
+140728069287616"]
+	1847124811472 -> 1847117751984
+	1847117751984 [label="I click \"CHILD\"
+task"]
+	1847124505312 [label="I click \"FIRST VISIT\"
+task
+140728069287616"]
+	1847124811472 -> 1847124505312
+	1847124505312 [label="I click \"FIRST VISIT\"
+task"]
+	1847117752272 [label="I press \"Save Data\"
+task
+140728069287616"]
+	1847124811472 -> 1847117752272
+	1847117752272 [label="I press \"Save Data\"
+task"]
+	1847124808784 [label="I see something
+goal
+140728069287616"]
+	1847117748144 -> 1847124808784
+	1847124808784 [label="I see something
+goal"]
+	1847117755968 [label="I should see \"SEARCH RESULTS\"
+task
+140728069287616"]
+	1847124808784 -> 1847117755968
+	1847117755968 [label="I should see \"SEARCH RESULTS\"
+task"]
+	1847117744496 [label="I should see \"VISIT DETAILS\"
+task
+140728069287616"]
+	1847124808784 -> 1847117744496
+	1847117744496 [label="I should see \"VISIT DETAILS\"
+task"]
+	1847117747136 [label="I should see \"CHILD\"
+task
+140728069287616"]
+	1847124808784 -> 1847117747136
+	1847117747136 [label="I should see \"CHILD\"
+task"]
+	1847117752176 [label="I should see \"NO REGISTRY ID FOR THIS PATIENT\"
+task
+140728069287616"]
+	1847124808784 -> 1847117752176
+	1847117752176 [label="I should see \"NO REGISTRY ID FOR THIS PATIENT\"
+task"]
+	1847124618992 [label="I should see \"CHILD CARE DATA FORM\"
+task
+140728069287616"]
+	1847124808784 -> 1847124618992
+	1847124618992 [label="I should see \"CHILD CARE DATA FORM\"
+task"]
+	1847124615920 [label="I should see \"Maya\"
+task
+140728069287616"]
+	1847124808784 -> 1847124615920
+	1847124615920 [label="I should see \"Maya\"
+task"]
+	1847117750400 [label="I choose \"consult_patient_id\"
+task
+140728069287616"]
+	1847117748144 -> 1847117750400
+	1847117750400 [label="I choose \"consult_patient_id\"
+task"]
+	1847117745312 [label="I check \"ptgroup[]\"
+task
+140728069287616"]
+	1847117748144 -> 1847117745312
+	1847117745312 [label="I check \"ptgroup[]\"
+task"]
+	1847124874512 [label="I select something
+goal
+140728069287616"]
+	1847117748144 -> 1847124874512
+	1847124874512 [label="I select something
+goal"]
+	1847124618944 [label="I select \"Housewife\" from \"mother_occup\"
+task
+140728069287616"]
+	1847124874512 -> 1847124618944
+	1847124618944 [label="I select \"Housewife\" from \"mother_occup\"
+task"]
+	1847124871392 [label="I select college
+goal
+140728069287616"]
+	1847124874512 -> 1847124871392
+	1847124871392 [label="I select college
+goal"]
+	1847124622784 [label="I select \"College\" from \"mother_educ\"
+task
+140728069287616"]
+	1847124871392 -> 1847124622784
+	1847124622784 [label="I select \"College\" from \"mother_educ\"
+task"]
+	1847124614672 [label="I select \"College\" from \"father_educ\"
+task
+140728069287616"]
+	1847124871392 -> 1847124614672
+	1847124614672 [label="I select \"College\" from \"father_educ\"
+task"]
+	1847124614768 [label="I select \"Barber\" from \"father_occup\"
+task
+140728069287616"]
+	1847124874512 -> 1847124614768
+	1847124614768 [label="I select \"Barber\" from \"father_occup\"
+task"]
+	1847117750976 [label="Siblings
+goal
+1847124621152"]
+	1847124666032 -> 1847117750976
+	1847117750976 [label="Siblings
+goal"]
+	1847124622736 [label="I fill
+in something
+goal
+140728069287616"]
+	1847117750976 -> 1847124622736
+	1847124622736 [label="I fill
+in something
+goal"]
+	1847124613136 [label="I fill in \"mother_px_id\" with \"0000001\"
+task
+140728069287616"]
+	1847124622736 -> 1847124613136
+	1847124613136 [label="I fill in \"mother_px_id\" with \"0000001\"
+task"]
+	1847124616208 [label="I fill in \"father_name\" with \"Mario\"
+task
+140728069287616"]
+	1847124622736 -> 1847124616208
+	1847124616208 [label="I fill in \"father_name\" with \"Mario\"
+task"]
+	1847124620816 [label="I fill in \"birth_weight\" with \"15\"
+task
+140728069287616"]
+	1847124622736 -> 1847124620816
+	1847124620816 [label="I fill in \"birth_weight\" with \"15\"
+task"]
+	1847124621920 [label="I fill in \"last\" with \"ledesma\"
+task
+140728069287616"]
+	1847124622736 -> 1847124621920
+	1847124621920 [label="I fill in \"last\" with \"ledesma\"
+task"]
+	1847124616352 [label="I fill in \"ccdev_date_reg\" with \"03/02/2010\"
+task
+140728069287616"]
+	1847124622736 -> 1847124616352
+	1847124616352 [label="I fill in \"ccdev_date_reg\" with \"03/02/2010\"
+task"]
+	1847124881712 [label="I press something
+goal
+140728069287616"]
+	1847117750976 -> 1847124881712
+	1847124881712 [label="I press something
+goal"]
+	1847124619568 [label="I press \"Search\"
+task
+140728069287616"]
+	1847124881712 -> 1847124619568
+	1847124619568 [label="I press \"Search\"
+task"]
+	1847124619328 [label="I press \"Select Patient\"
+task
+140728069287616"]
+	1847124881712 -> 1847124619328
+	1847124619328 [label="I press \"Select Patient\"
+task"]
+	1847124621872 [label="I press \"Save Details\"
+task
+140728069287616"]
+	1847124881712 -> 1847124621872
+	1847124621872 [label="I press \"Save Details\"
+task"]
+	1847124616928 [label="I click \"CHILD\"
+task
+140728069287616"]
+	1847124881712 -> 1847124616928
+	1847124616928 [label="I click \"CHILD\"
+task"]
+	1847124615824 [label="I click \"FIRST VISIT\"
+task
+140728069287616"]
+	1847124881712 -> 1847124615824
+	1847124615824 [label="I click \"FIRST VISIT\"
+task"]
+	1847124621536 [label="I press \"Save Data\"
+task
+140728069287616"]
+	1847124881712 -> 1847124621536
+	1847124621536 [label="I press \"Save Data\"
+task"]
+	1847124875328 [label="I press SIBLINGS
+goal
+140728069287616"]
+	1847124881712 -> 1847124875328
+	1847124875328 [label="I press SIBLINGS
+goal"]
+	1847124622112 [label="I click \"SIBLINGS\"
+task
+140728069287616"]
+	1847124875328 -> 1847124622112
+	1847124622112 [label="I click \"SIBLINGS\"
+task"]
+	1847124607280 [label="I press \"Add Sibling\"
+task
+140728069287616"]
+	1847124875328 -> 1847124607280
+	1847124607280 [label="I press \"Add Sibling\"
+task"]
+	1847124872880 [label="I see something
+goal
+140728069287616"]
+	1847117750976 -> 1847124872880
+	1847124872880 [label="I see something
+goal"]
+	1847124619232 [label="I should see \"SEARCH RESULTS\"
+task
+140728069287616"]
+	1847124872880 -> 1847124619232
+	1847124619232 [label="I should see \"SEARCH RESULTS\"
+task"]
+	1847124616448 [label="I should see \"VISIT DETAILS\"
+task
+140728069287616"]
+	1847124872880 -> 1847124616448
+	1847124616448 [label="I should see \"VISIT DETAILS\"
+task"]
+	1847124619472 [label="I should see \"CHILD\"
+task
+140728069287616"]
+	1847124872880 -> 1847124619472
+	1847124619472 [label="I should see \"CHILD\"
+task"]
+	1847124618848 [label="I should see \"NO REGISTRY ID FOR THIS PATIENT\"
+task
+140728069287616"]
+	1847124872880 -> 1847124618848
+	1847124618848 [label="I should see \"NO REGISTRY ID FOR THIS PATIENT\"
+task"]
+	1847124616112 [label="I should see \"CHILD CARE DATA FORM\"
+task
+140728069287616"]
+	1847124872880 -> 1847124616112
+	1847124616112 [label="I should see \"CHILD CARE DATA FORM\"
+task"]
+	1847124615488 [label="I should see \"Maya\"
+task
+140728069287616"]
+	1847124872880 -> 1847124615488
+	1847124615488 [label="I should see \"Maya\"
+task"]
+	1847124620480 [label="I should see \"FIRST VISIT DATA\"
+task
+140728069287616"]
+	1847124872880 -> 1847124620480
+	1847124620480 [label="I should see \"FIRST VISIT DATA\"
+task"]
+	1847124620912 [label="I should see \"OTHER FAMILY MEMBERS\"
+task
+140728069287616"]
+	1847124872880 -> 1847124620912
+	1847124620912 [label="I should see \"OTHER FAMILY MEMBERS\"
+task"]
+	1847124620336 [label="I choose \"consult_patient_id\"
+task
+140728069287616"]
+	1847117750976 -> 1847124620336
+	1847124620336 [label="I choose \"consult_patient_id\"
+task"]
+	1847124869712 [label="I check something
+goal
+140728069287616"]
+	1847117750976 -> 1847124869712
+	1847124869712 [label="I check something
+goal"]
+	1847124623264 [label="I check \"ptgroup[]\"
+task
+140728069287616"]
+	1847124869712 -> 1847124623264
+	1847124623264 [label="I check \"ptgroup[]\"
+task"]
+	1847124621392 [label="I check \"patients\"
+task
+140728069287616"]
+	1847124869712 -> 1847124621392
+	1847124621392 [label="I check \"patients\"
+task"]
+	1847124876144 [label="I select something
+goal
+140728069287616"]
+	1847117750976 -> 1847124876144
+	1847124876144 [label="I select something
+goal"]
+	1847124614432 [label="I select \"Housewife\" from \"mother_occup\"
+task
+140728069287616"]
+	1847124876144 -> 1847124614432
+	1847124614432 [label="I select \"Housewife\" from \"mother_occup\"
+task"]
+	1847124884400 [label="I select college
+goal
+140728069287616"]
+	1847124876144 -> 1847124884400
+	1847124884400 [label="I select college
+goal"]
+	1847124621680 [label="I select \"College\" from \"mother_educ\"
+task
+140728069287616"]
+	1847124884400 -> 1847124621680
+	1847124621680 [label="I select \"College\" from \"mother_educ\"
+task"]
+	1847124614480 [label="I select \"College\" from \"father_educ\"
+task
+140728069287616"]
+	1847124884400 -> 1847124614480
+	1847124614480 [label="I select \"College\" from \"father_educ\"
+task"]
+	1847124621344 [label="I select \"Barber\" from \"father_occup\"
+task
+140728069287616"]
+	1847124876144 -> 1847124621344
+	1847124621344 [label="I select \"Barber\" from \"father_occup\"
+task"]
+	1847124616640 [label="Services
+goal
+1847117749584"]
+	1847124666032 -> 1847124616640
+	1847124616640 [label="Services
+goal"]
+	1847124616256 [label="I fill
+in something
+goal
+140728069287616"]
+	1847124616640 -> 1847124616256
+	1847124616256 [label="I fill
+in something
+goal"]
+	1847124622304 [label="I fill in \"mother_px_id\" with \"0000001\"
+task
+140728069287616"]
+	1847124616256 -> 1847124622304
+	1847124622304 [label="I fill in \"mother_px_id\" with \"0000001\"
+task"]
+	1847124620384 [label="I fill in \"father_name\" with \"Mario\"
+task
+140728069287616"]
+	1847124616256 -> 1847124620384
+	1847124620384 [label="I fill in \"father_name\" with \"Mario\"
+task"]
+	1847124615008 [label="I fill in \"birth_weight\" with \"15\"
+task
+140728069287616"]
+	1847124616256 -> 1847124615008
+	1847124615008 [label="I fill in \"birth_weight\" with \"15\"
+task"]
+	1847124619712 [label="I fill in \"last\" with \"ledesma\"
+task
+140728069287616"]
+	1847124616256 -> 1847124619712
+	1847124619712 [label="I fill in \"last\" with \"ledesma\"
+task"]
+	1847124622160 [label="I fill in \"ccdev_date_reg\" with \"03/02/2010\"
+task
+140728069287616"]
+	1847124616256 -> 1847124622160
+	1847124622160 [label="I fill in \"ccdev_date_reg\" with \"03/02/2010\"
+task"]
+	1847124871728 [label="I press something
+goal
+140728069287616"]
+	1847124616640 -> 1847124871728
+	1847124871728 [label="I press something
+goal"]
+	1847124618752 [label="I press \"Search\"
+task
+140728069287616"]
+	1847124871728 -> 1847124618752
+	1847124618752 [label="I press \"Search\"
+task"]
+	1847124611264 [label="I press \"Select Patient\"
+task
+140728069287616"]
+	1847124871728 -> 1847124611264
+	1847124611264 [label="I press \"Select Patient\"
+task"]
+	1847124620960 [label="I press \"Save Details\"
+task
+140728069287616"]
+	1847124871728 -> 1847124620960
+	1847124620960 [label="I press \"Save Details\"
+task"]
+	1847124621584 [label="I click \"CHILD\"
+task
+140728069287616"]
+	1847124871728 -> 1847124621584
+	1847124621584 [label="I click \"CHILD\"
+task"]
+	1847124619376 [label="I click \"FIRST VISIT\"
+task
+140728069287616"]
+	1847124871728 -> 1847124619376
+	1847124619376 [label="I click \"FIRST VISIT\"
+task"]
+	1847124505024 [label="I press \"Save Data\"
+task
+140728069287616"]
+	1847124871728 -> 1847124505024
+	1847124505024 [label="I press \"Save Data\"
+task"]
+	1847124871296 [label="I press SIBLINGS
+goal
+140728069287616"]
+	1847124871728 -> 1847124871296
+	1847124871296 [label="I press SIBLINGS
+goal"]
+	1847124507856 [label="I click \"SIBLINGS\"
+task
+140728069287616"]
+	1847124871296 -> 1847124507856
+	1847124507856 [label="I click \"SIBLINGS\"
+task"]
+	1847124502912 [label="I press \"Add Sibling\"
+task
+140728069287616"]
+	1847124871296 -> 1847124502912
+	1847124502912 [label="I press \"Add Sibling\"
+task"]
+	1847125038160 [label="I see something
+goal
+140728069287616"]
+	1847124616640 -> 1847125038160
+	1847125038160 [label="I see something
+goal"]
+	1847124613088 [label="I should see \"SEARCH RESULTS\"
+task
+140728069287616"]
+	1847125038160 -> 1847124613088
+	1847124613088 [label="I should see \"SEARCH RESULTS\"
+task"]
+	1847124621440 [label="I should see \"VISIT DETAILS\"
+task
+140728069287616"]
+	1847125038160 -> 1847124621440
+	1847124621440 [label="I should see \"VISIT DETAILS\"
+task"]
+	1847124621728 [label="I should see \"CHILD\"
+task
+140728069287616"]
+	1847125038160 -> 1847124621728
+	1847124621728 [label="I should see \"CHILD\"
+task"]
+	1847124615344 [label="I should see \"NO REGISTRY ID FOR THIS PATIENT\"
+task
+140728069287616"]
+	1847125038160 -> 1847124615344
+	1847124615344 [label="I should see \"NO REGISTRY ID FOR THIS PATIENT\"
+task"]
+	1847124619088 [label="I should see \"CHILD CARE DATA FORM\"
+task
+140728069287616"]
+	1847125038160 -> 1847124619088
+	1847124619088 [label="I should see \"CHILD CARE DATA FORM\"
+task"]
+	1847124614288 [label="I should see \"Maya\"
+task
+140728069287616"]
+	1847125038160 -> 1847124614288
+	1847124614288 [label="I should see \"Maya\"
+task"]
+	1847125037440 [label="I see datum
+goal
+140728069287616"]
+	1847125038160 -> 1847125037440
+	1847125037440 [label="I see datum
+goal"]
+	1847124500512 [label="I should see \"FIRST VISIT DATA\"
+task
+140728069287616"]
+	1847125037440 -> 1847124500512
+	1847124500512 [label="I should see \"FIRST VISIT DATA\"
+task"]
+	1847124495232 [label="I should see \"FIRST VISIT DATA\"
+task
+140728069287616"]
+	1847125037440 -> 1847124495232
+	1847124495232 [label="I should see \"FIRST VISIT DATA\"
+task"]
+	1847124499072 [label="I should see \"OTHER FAMILY MEMBERS\"
+task
+140728069287616"]
+	1847125038160 -> 1847124499072
+	1847124499072 [label="I should see \"OTHER FAMILY MEMBERS\"
+task"]
+	1847124612992 [label="I choose \"consult_patient_id\"
+task
+140728069287616"]
+	1847124616640 -> 1847124612992
+	1847124612992 [label="I choose \"consult_patient_id\"
+task"]
+	1847124884016 [label="I check something
+goal
+140728069287616"]
+	1847124616640 -> 1847124884016
+	1847124884016 [label="I check something
+goal"]
+	1847124614960 [label="I check \"ptgroup[]\"
+task
+140728069287616"]
+	1847124884016 -> 1847124614960
+	1847124614960 [label="I check \"ptgroup[]\"
+task"]
+	1847124508336 [label="I check \"patients\"
+task
+140728069287616"]
+	1847124884016 -> 1847124508336
+	1847124508336 [label="I check \"patients\"
+task"]
+	1847124492928 [label="I check \"services[]\"
+task
+140728069287616"]
+	1847124884016 -> 1847124492928
+	1847124492928 [label="I check \"services[]\"
+task"]
+	1847124501712 [label="I check \"vaccine[]\"
+task
+140728069287616"]
+	1847124884016 -> 1847124501712
+	1847124501712 [label="I check \"vaccine[]\"
+task"]
+	1847125044928 [label="I select something
+goal
+140728069287616"]
+	1847124616640 -> 1847125044928
+	1847125044928 [label="I select something
+goal"]
+	1847124621776 [label="I select \"Housewife\" from \"mother_occup\"
+task
+140728069287616"]
+	1847125044928 -> 1847124621776
+	1847124621776 [label="I select \"Housewife\" from \"mother_occup\"
+task"]
+	1847125041568 [label="I select college
+goal
+140728069287616"]
+	1847125044928 -> 1847125041568
+	1847125041568 [label="I select college
+goal"]
+	1847124619520 [label="I select \"College\" from \"mother_educ\"
+task
+140728069287616"]
+	1847125041568 -> 1847124619520
+	1847124619520 [label="I select \"College\" from \"mother_educ\"
+task"]
+	1847124622928 [label="I select \"College\" from \"father_educ\"
+task
+140728069287616"]
+	1847125041568 -> 1847124622928
+	1847124622928 [label="I select \"College\" from \"father_educ\"
+task"]
+	1847124621824 [label="I select \"Barber\" from \"father_occup\"
+task
+140728069287616"]
+	1847125044928 -> 1847124621824
+	1847124621824 [label="I select \"Barber\" from \"father_occup\"
+task"]
+	1847124659984 [label="Add Patient
+goal
+1847124669728"]
+	1847124666032 -> 1847124659984
+	1847124659984 [label="Add Patient
+goal"]
+	1847124814736 [label="I fill
+in something
+goal
+140728069287616"]
+	1847124659984 -> 1847124814736
+	1847124814736 [label="I fill
+in something
+goal"]
+	1847124659264 [label="I fill in \"patient_middle\" with \"X\"
+task
+140728069287616"]
+	1847124814736 -> 1847124659264
+	1847124659264 [label="I fill in \"patient_middle\" with \"X\"
+task"]
+	1847124656720 [label="I fill in \"patient_dob\" with \"03/04/2007\"
+task
+140728069287616"]
+	1847124814736 -> 1847124656720
+	1847124656720 [label="I fill in \"patient_dob\" with \"03/04/2007\"
+task"]
+	1847124657488 [label="I fill in \"patient_mother\" with \"maria\"
+task
+140728069287616"]
+	1847124814736 -> 1847124657488
+	1847124657488 [label="I fill in \"patient_mother\" with \"maria\"
+task"]
+	1847124659456 [label="I fill in \"last\" with \"Gallo\"
+task
+140728069287616"]
+	1847124814736 -> 1847124659456
+	1847124659456 [label="I fill in \"last\" with \"Gallo\"
+task"]
+	1847124818864 [label="I fill
+in patient_firstname
+goal
+140728069287616"]
+	1847124814736 -> 1847124818864
+	1847124818864 [label="I fill
+in patient_firstname
+goal"]
+	1847124657584 [label="I fill in \"patient_firstname\" with \"Allan\"
+task
+140728069287616"]
+	1847124818864 -> 1847124657584
+	1847124657584 [label="I fill in \"patient_firstname\" with \"Allan\"
+task"]
+	1847124658880 [label="I fill in \"patient_lastname\" with \"Gallo\"
+task
+140728069287616"]
+	1847124818864 -> 1847124658880
+	1847124658880 [label="I fill in \"patient_lastname\" with \"Gallo\"
+task"]
+	1847124819920 [label="I press something
+goal
+140728069287616"]
+	1847124659984 -> 1847124819920
+	1847124819920 [label="I press something
+goal"]
+	1847124656768 [label="I press \"Search\"
+task
+140728069287616"]
+	1847124819920 -> 1847124656768
+	1847124656768 [label="I press \"Search\"
+task"]
+	1847124660128 [label="I press \"Add Patient\"
+task
+140728069287616"]
+	1847124819920 -> 1847124660128
+	1847124660128 [label="I press \"Add Patient\"
+task"]
+	1847124664832 [label="I should see \"NO RECORDS FOUND\"
+task
+140728069287616"]
+	1847124659984 -> 1847124664832
+	1847124664832 [label="I should see \"NO RECORDS FOUND\"
+task"]
+	1847124669968 [label="I select \"Male\" from \"patient_gender\"
+task
+140728069287616"]
+	1847124659984 -> 1847124669968
+	1847124669968 [label="I select \"Male\" from \"patient_gender\"
+task"]
+	1847124659024 [label="Consult
+goal
+1847117742144"]
+	1847124666032 -> 1847124659024
+	1847124659024 [label="Consult
+goal"]
+	1847117752128 [label="I fill in \"last\" with \"ledesma\"
+task
+140728069287616"]
+	1847124659024 -> 1847117752128
+	1847117752128 [label="I fill in \"last\" with \"ledesma\"
+task"]
+	1847124819680 [label="I press something
+goal
+140728069287616"]
+	1847124659024 -> 1847124819680
+	1847124819680 [label="I press something
+goal"]
+	1847117750880 [label="I press \"Search\"
+task
+140728069287616"]
+	1847124819680 -> 1847117750880
+	1847117750880 [label="I press \"Search\"
+task"]
+	1847117755632 [label="I press \"Select Patient\"
+task
+140728069287616"]
+	1847124819680 -> 1847117755632
+	1847117755632 [label="I press \"Select Patient\"
+task"]
+	1847117745648 [label="I press \"Save Details\"
+task
+140728069287616"]
+	1847124819680 -> 1847117745648
+	1847117745648 [label="I press \"Save Details\"
+task"]
+	1847124819536 [label="I see something
+goal
+140728069287616"]
+	1847124659024 -> 1847124819536
+	1847124819536 [label="I see something
+goal"]
+	1847117749632 [label="I should see \"SERACH RESULTS\"
+task
+140728069287616"]
+	1847124819536 -> 1847117749632
+	1847117749632 [label="I should see \"SERACH RESULTS\"
+task"]
+	1847117751024 [label="I should see \"VISIT DETAILS\"
+task
+140728069287616"]
+	1847124819536 -> 1847117751024
+	1847117751024 [label="I should see \"VISIT DETAILS\"
+task"]
+	1847117745360 [label="I choose \"consult_patient_id\"
+task
+140728069287616"]
+	1847124659024 -> 1847117745360
+	1847117745360 [label="I choose \"consult_patient_id\"
+task"]
+	1847117755728 [label="I check \"ptgroup[]\"
+task
+140728069287616"]
+	1847124659024 -> 1847117755728
+	1847117755728 [label="I check \"ptgroup[]\"
+task"]
+	1847124504400 [label="Breastfeeding
+goal
+1847124622976"]
+	1847124666032 -> 1847124504400
+	1847124504400 [label="Breastfeeding
+goal"]
+	1847124818720 [label="I fill
+in something
+goal
+140728069287616"]
+	1847124504400 -> 1847124818720
+	1847124818720 [label="I fill
+in something
+goal"]
+	1847124657008 [label="I fill in \"mother_px_id\" with \"0000001\"
+task
+140728069287616"]
+	1847124818720 -> 1847124657008
+	1847124657008 [label="I fill in \"mother_px_id\" with \"0000001\"
+task"]
+	1847124658928 [label="I fill in \"father_name\" with \"Mario\"
+task
+140728069287616"]
+	1847124818720 -> 1847124658928
+	1847124658928 [label="I fill in \"father_name\" with \"Mario\"
+task"]
+	1847124661664 [label="I fill in \"birth_weight\" with \"15\"
+task
+140728069287616"]
+	1847124818720 -> 1847124661664
+	1847124661664 [label="I fill in \"birth_weight\" with \"15\"
+task"]
+	1847124656672 [label="I fill in \"last\" with \"ledesma\"
+task
+140728069287616"]
+	1847124818720 -> 1847124656672
+	1847124656672 [label="I fill in \"last\" with \"ledesma\"
+task"]
+	1847124656864 [label="I fill in \"ccdev_date_reg\" with \"03/02/2010\"
+task
+140728069287616"]
+	1847124818720 -> 1847124656864
+	1847124656864 [label="I fill in \"ccdev_date_reg\" with \"03/02/2010\"
+task"]
+	1847125041664 [label="I press something
+goal
+140728069287616"]
+	1847124504400 -> 1847125041664
+	1847125041664 [label="I press something
+goal"]
+	1847124662720 [label="I press \"Yes\"
+task
+140728069287616"]
+	1847125041664 -> 1847124662720
+	1847124662720 [label="I press \"Yes\"
+task"]
+	1847124668192 [label="I press \"Search\"
+task
+140728069287616"]
+	1847125041664 -> 1847124668192
+	1847124668192 [label="I press \"Search\"
+task"]
+	1847124657536 [label="I press \"Select Patient\"
+task
+140728069287616"]
+	1847125041664 -> 1847124657536
+	1847124657536 [label="I press \"Select Patient\"
+task"]
+	1847124665456 [label="I press \"Save Details\"
+task
+140728069287616"]
+	1847125041664 -> 1847124665456
+	1847124665456 [label="I press \"Save Details\"
+task"]
+	1847124658736 [label="I click \"CHILD\"
+task
+140728069287616"]
+	1847125041664 -> 1847124658736
+	1847124658736 [label="I click \"CHILD\"
+task"]
+	1847124671744 [label="I click \"FIRST VISIT\"
+task
+140728069287616"]
+	1847125041664 -> 1847124671744
+	1847124671744 [label="I click \"FIRST VISIT\"
+task"]
+	1847124670640 [label="I press \"Save Data\"
+task
+140728069287616"]
+	1847125041664 -> 1847124670640
+	1847124670640 [label="I press \"Save Data\"
+task"]
+	1847124496192 [label="I press SIBLINGS
+goal
+140728069287616"]
+	1847125041664 -> 1847124496192
+	1847124496192 [label="I press SIBLINGS
+goal"]
+	1847124623120 [label="I click \"SIBLINGS\"
+task
+140728069287616"]
+	1847124496192 -> 1847124623120
+	1847124623120 [label="I click \"SIBLINGS\"
+task"]
+	1847124622064 [label="I press \"Add Sibling\"
+task
+140728069287616"]
+	1847124496192 -> 1847124622064
+	1847124622064 [label="I press \"Add Sibling\"
+task"]
+	1847125047472 [label="I see something
+goal
+140728069287616"]
+	1847124504400 -> 1847125047472
+	1847125047472 [label="I see something
+goal"]
+	1847124623072 [label="I should see \"comfirm_end\"
+task
+140728069287616"]
+	1847125047472 -> 1847124623072
+	1847124623072 [label="I should see \"comfirm_end\"
+task"]
+	1847124671312 [label="I should see \"SEARCH RESULTS\"
+task
+140728069287616"]
+	1847125047472 -> 1847124671312
+	1847124671312 [label="I should see \"SEARCH RESULTS\"
+task"]
+	1847124661184 [label="I should see \"VISIT DETAILS\"
+task
+140728069287616"]
+	1847125047472 -> 1847124661184
+	1847124661184 [label="I should see \"VISIT DETAILS\"
+task"]
+	1847124672224 [label="I should see \"CHILD\"
+task
+140728069287616"]
+	1847125047472 -> 1847124672224
+	1847124672224 [label="I should see \"CHILD\"
+task"]
+	1847124657824 [label="I should see \"NO REGISTRY ID FOR THIS PATIENT\"
+task
+140728069287616"]
+	1847125047472 -> 1847124657824
+	1847124657824 [label="I should see \"NO REGISTRY ID FOR THIS PATIENT\"
+task"]
+	1847117751552 [label="I see form
+goal
+140728069287616"]
+	1847125047472 -> 1847117751552
+	1847117751552 [label="I see form
+goal"]
+	1847124660512 [label="I should see \"CHILD CARE DATA FORM\"
+task
+140728069287616"]
+	1847117751552 -> 1847124660512
+	1847124660512 [label="I should see \"CHILD CARE DATA FORM\"
+task"]
+	1847124622496 [label="I should see \"form_consult\"
+task
+140728069287616"]
+	1847117751552 -> 1847124622496
+	1847124622496 [label="I should see \"form_consult\"
+task"]
+	1847124657296 [label="I should see \"Maya\"
+task
+140728069287616"]
+	1847125047472 -> 1847124657296
+	1847124657296 [label="I should see \"Maya\"
+task"]
+	1847117744592 [label="I see datum
+goal
+140728069287616"]
+	1847125047472 -> 1847117744592
+	1847117744592 [label="I see datum
+goal"]
+	1847124661904 [label="I should see \"FIRST VISIT DATA\"
+task
+140728069287616"]
+	1847117744592 -> 1847124661904
+	1847124661904 [label="I should see \"FIRST VISIT DATA\"
+task"]
+	1847124615152 [label="I should see \"FIRST VISIT DATA\"
+task
+140728069287616"]
+	1847117744592 -> 1847124615152
+	1847124615152 [label="I should see \"FIRST VISIT DATA\"
+task"]
+	1847124619664 [label="I should see \"OTHER FAMILY MEMBERS\"
+task
+140728069287616"]
+	1847125047472 -> 1847124619664
+	1847124619664 [label="I should see \"OTHER FAMILY MEMBERS\"
+task"]
+	1847124656480 [label="I choose \"consult_patient_id\"
+task
+140728069287616"]
+	1847124504400 -> 1847124656480
+	1847124656480 [label="I choose \"consult_patient_id\"
+task"]
+	1847125038208 [label="I check something
+goal
+140728069287616"]
+	1847124504400 -> 1847125038208
+	1847125038208 [label="I check something
+goal"]
+	1847124656528 [label="I check \"ptgroup[]\"
+task
+140728069287616"]
+	1847125038208 -> 1847124656528
+	1847124656528 [label="I check \"ptgroup[]\"
+task"]
+	1847124614816 [label="I check \"patients\"
+task
+140728069287616"]
+	1847125038208 -> 1847124614816
+	1847124614816 [label="I check \"patients\"
+task"]
+	1847124619808 [label="I check \"services[]\"
+task
+140728069287616"]
+	1847125038208 -> 1847124619808
+	1847124619808 [label="I check \"services[]\"
+task"]
+	1847124621008 [label="I check \"vaccine[]\"
+task
+140728069287616"]
+	1847125038208 -> 1847124621008
+	1847124621008 [label="I check \"vaccine[]\"
+task"]
+	1847124616304 [label="I check \"bfed_month[]\"
+task
+140728069287616"]
+	1847125038208 -> 1847124616304
+	1847124616304 [label="I check \"bfed_month[]\"
+task"]
+	1847125044496 [label="I select something
+goal
+140728069287616"]
+	1847124504400 -> 1847125044496
+	1847125044496 [label="I select something
+goal"]
+	1847124661136 [label="I select \"Housewife\" from \"mother_occup\"
+task
+140728069287616"]
+	1847125044496 -> 1847124661136
+	1847124661136 [label="I select \"Housewife\" from \"mother_occup\"
+task"]
+	1847125040944 [label="I select college
+goal
+140728069287616"]
+	1847125044496 -> 1847125040944
+	1847125040944 [label="I select college
+goal"]
+	1847124656816 [label="I select \"College\" from \"mother_educ\"
+task
+140728069287616"]
+	1847125040944 -> 1847124656816
+	1847124656816 [label="I select \"College\" from \"mother_educ\"
+task"]
+	1847124658544 [label="I select \"College\" from \"father_educ\"
+task
+140728069287616"]
+	1847125040944 -> 1847124658544
+	1847124658544 [label="I select \"College\" from \"father_educ\"
+task"]
+	1847124656960 [label="I select \"Barber\" from \"father_occup\"
+task
+140728069287616"]
+	1847125044496 -> 1847124656960
+	1847124656960 [label="I select \"Barber\" from \"father_occup\"
+task"]
+	1847124657968 [label="
+goal
+140728069287616"]
+	1847124818816 -> 1847124657968
+	1847124657968 [label="
+goal"]
+	1847124619136 [label="Old Patient
+goal
+1847124620240"]
+	1847124657968 -> 1847124619136
+	1847124619136 [label="Old Patient
+goal"]
+	1847124621296 [label="I fill in \"first\" with \"Allan\"
+task
+140728069287616"]
+	1847124619136 -> 1847124621296
+	1847124621296 [label="I fill in \"first\" with \"Allan\"
+task"]
+	1847124871488 [label="I press something
+goal
+140728069287616"]
+	1847124619136 -> 1847124871488
+	1847124871488 [label="I press something
+goal"]
+	1847124622208 [label="I press \"Search\"
+task
+140728069287616"]
+	1847124871488 -> 1847124622208
+	1847124622208 [label="I press \"Search\"
+task"]
+	1847124618800 [label="I press \"Select Patient\"
+task
+140728069287616"]
+	1847124871488 -> 1847124618800
+	1847124618800 [label="I press \"Select Patient\"
+task"]
+	1847124621968 [label="I should see \"SEARCH RESULTS\"
+task
+140728069287616"]
+	1847124619136 -> 1847124621968
+	1847124621968 [label="I should see \"SEARCH RESULTS\"
+task"]
+	1847124620672 [label="I choose \"consult_patient_id\"
+task
+140728069287616"]
+	1847124619136 -> 1847124620672
+	1847124620672 [label="I choose \"consult_patient_id\"
+task"]
+	1847124612368 [label="Consult
+goal
+1847124614912"]
+	1847124657968 -> 1847124612368
+	1847124612368 [label="Consult
+goal"]
+	1847124615872 [label="I fill in \"first\" with \"Allan\"
+task
+140728069287616"]
+	1847124612368 -> 1847124615872
+	1847124615872 [label="I fill in \"first\" with \"Allan\"
+task"]
+	1847125042576 [label="I press something
+goal
+140728069287616"]
+	1847124612368 -> 1847125042576
+	1847125042576 [label="I press something
+goal"]
+	1847124619616 [label="I press \"Search\"
+task
+140728069287616"]
+	1847125042576 -> 1847124619616
+	1847124619616 [label="I press \"Search\"
+task"]
+	1847124616160 [label="I press \"Select Patient\"
+task
+140728069287616"]
+	1847125042576 -> 1847124616160
+	1847124616160 [label="I press \"Select Patient\"
+task"]
+	1847124620720 [label="I press \"Save Details\"
+task
+140728069287616"]
+	1847125042576 -> 1847124620720
+	1847124620720 [label="I press \"Save Details\"
+task"]
+	1847124614336 [label="I see something
+goal
+140728069287616"]
+	1847124612368 -> 1847124614336
+	1847124614336 [label="I see something
+goal"]
+	1847124615392 [label="I should see \"SEARCH RESULTS\"
+task
+140728069287616"]
+	1847124614336 -> 1847124615392
+	1847124615392 [label="I should see \"SEARCH RESULTS\"
+task"]
+	1847124622448 [label="I should see \"VISIT DETAILS\"
+task
+140728069287616"]
+	1847124614336 -> 1847124622448
+	1847124622448 [label="I should see \"VISIT DETAILS\"
+task"]
+	1847124619184 [label="I choose \"consult_patient_id\"
+task
+140728069287616"]
+	1847124612368 -> 1847124619184
+	1847124619184 [label="I choose \"consult_patient_id\"
+task"]
+	1847124623024 [label="I check \"ptgroup[]\"
+task
+140728069287616"]
+	1847124612368 -> 1847124623024
+	1847124623024 [label="I check \"ptgroup[]\"
+task"]
+	1847124616064 [label="Visit Child Care
+goal
+140728069287616"]
+	1847124657968 -> 1847124616064
+	1847124616064 [label="Visit Child Care
+goal"]
+	1847124618560 [label="I create a sample patient
+task
+140728069287616"]
+	1847124616064 -> 1847124618560
+	1847124618560 [label="I create a sample patient
+task"]
+	1847124614864 [label="I click something
+goal
+140728069287616"]
+	1847124616064 -> 1847124614864
+	1847124614864 [label="I click something
+goal"]
+	1847124616496 [label="I press \"Yes\"
+task
+140728069287616"]
+	1847124614864 -> 1847124616496
+	1847124616496 [label="I press \"Yes\"
+task"]
+	1847124819632 [label="I click patient
+goal
+140728069287616"]
+	1847124614864 -> 1847124819632
+	1847124819632 [label="I click patient
+goal"]
+	1847124623312 [label="I click \"TODAY'S PATIENTS\"
+task
+140728069287616"]
+	1847124819632 -> 1847124623312
+	1847124623312 [label="I click \"TODAY'S PATIENTS\"
+task"]
+	1847124618080 [label="I press \"Select Patient\"
+task
+140728069287616"]
+	1847124819632 -> 1847124618080
+	1847124618080 [label="I press \"Select Patient\"
+task"]
+	1847124616688 [label="I press \"Search\"
+task
+140728069287616"]
+	1847124614864 -> 1847124616688
+	1847124616688 [label="I press \"Search\"
+task"]
+	1847124970656 [label="I see something
+goal
+140728069287616"]
+	1847124616064 -> 1847124970656
+	1847124970656 [label="I see something
+goal"]
+	1847124812624 [label="I should see \"confirm_end\"
+task
+140728069287616"]
+	1847124970656 -> 1847124812624
+	1847124812624 [label="I should see \"confirm_end\"
+task"]
+	1847124620000 [label="I should see \"CONSULTS TODAY\"
+task
+140728069287616"]
+	1847124970656 -> 1847124620000
+	1847124620000 [label="I should see \"CONSULTS TODAY\"
+task"]
+	1847124622592 [label="I should see \"SEARCH RESULTS\"
+task
+140728069287616"]
+	1847124970656 -> 1847124622592
+	1847124622592 [label="I should see \"SEARCH RESULTS\"
+task"]
+	1847124615440 [label="I should see \"VISIT DETAILS\"
+task
+140728069287616"]
+	1847124970656 -> 1847124615440
+	1847124615440 [label="I should see \"VISIT DETAILS\"
+task"]
+	1847117873600 [label="I should see \"CHILD\"
+task
+140728069287616"]
+	1847124970656 -> 1847117873600
+	1847117873600 [label="I should see \"CHILD\"
+task"]
+	1847124982944 [label="I see service
+goal
+140728069287616"]
+	1847124970656 -> 1847124982944
+	1847124982944 [label="I see service
+goal"]
+	1847117873264 [label="I should see \"services\"
+task
+140728069287616"]
+	1847124982944 -> 1847117873264
+	1847117873264 [label="I should see \"services\"
+task"]
+	1847117875664 [label="I should see \"services[]\"
+task
+140728069287616"]
+	1847124982944 -> 1847117875664
+	1847117875664 [label="I should see \"services[]\"
+task"]
+	1847124622256 [label="I fill in \"first\" with \"Allan\"
+task
+140728069287616"]
+	1847124616064 -> 1847124622256
+	1847124622256 [label="I fill in \"first\" with \"Allan\"
+task"]
+	1847124611456 [label="I choose \"consult_patient_id\"
+task
+140728069287616"]
+	1847124616064 -> 1847124611456
+	1847124611456 [label="I choose \"consult_patient_id\"
+task"]
+	1847124980352 [label="I check something
+goal
+140728069287616"]
+	1847124616064 -> 1847124980352
+	1847124980352 [label="I check something
+goal"]
+	1847124618704 [label="I check by value \"FP\"
+task
+140728069287616"]
+	1847124980352 -> 1847124618704
+	1847124618704 [label="I check by value \"FP\"
+task"]
+	1847117879264 [label="I check \"services[]\"
+task
+140728069287616"]
+	1847124980352 -> 1847117879264
+	1847117879264 [label="I check \"services[]\"
+task"]
+	1847117876480 [label="I check \"vaccine[]\"
+task
+140728069287616"]
+	1847124980352 -> 1847117876480
+	1847117876480 [label="I check \"vaccine[]\"
+task"]
+	1847117887136 [label="I check \"patients[]\"
+task
+140728069287616"]
+	1847124980352 -> 1847117887136
+	1847117887136 [label="I check \"patients[]\"
+task"]
+	1847124812912 [label="I check \"bfed_month[]\"
+task
+140728069287616"]
+	1847124980352 -> 1847124812912
+	1847124812912 [label="I check \"bfed_month[]\"
+task"]
+	1847124807872 [label="
+goal
+140728069287616"]
+	1847124818816 -> 1847124807872
+	1847124807872 [label="
+goal"]
+	1847124811856 [label="CONSULT
+goal
+1847124812672"]
+	1847124807872 -> 1847124811856
+	1847124811856 [label="CONSULT
+goal"]
+	1847124816032 [label="I fill in \"last\" with \"garcia\"
+task
+140728069287616"]
+	1847124811856 -> 1847124816032
+	1847124816032 [label="I fill in \"last\" with \"garcia\"
+task"]
+	1847125045600 [label="I press something
+goal
+140728069287616"]
+	1847124811856 -> 1847125045600
+	1847125045600 [label="I press something
+goal"]
+	1847124809792 [label="I press \"Search\"
+task
+140728069287616"]
+	1847125045600 -> 1847124809792
+	1847124809792 [label="I press \"Search\"
+task"]
+	1847124814208 [label="I press \"Select Patient\"
+task
+140728069287616"]
+	1847125045600 -> 1847124814208
+	1847124814208 [label="I press \"Select Patient\"
+task"]
+	1847124813680 [label="I press \"Save Details\"
+task
+140728069287616"]
+	1847125045600 -> 1847124813680
+	1847124813680 [label="I press \"Save Details\"
+task"]
+	1847124803696 [label="I see something
+goal
+140728069287616"]
+	1847124811856 -> 1847124803696
+	1847124803696 [label="I see something
+goal"]
+	1847124809168 [label="I should see \"SEARCH RESULTS\"
+task
+140728069287616"]
+	1847124803696 -> 1847124809168
+	1847124809168 [label="I should see \"SEARCH RESULTS\"
+task"]
+	1847124814592 [label="I should see \"VISIT DETAILS\"
+task
+140728069287616"]
+	1847124803696 -> 1847124814592
+	1847124814592 [label="I should see \"VISIT DETAILS\"
+task"]
+	1847124807392 [label="I choose \"consult_patient_id\"
+task
+140728069287616"]
+	1847124811856 -> 1847124807392
+	1847124807392 [label="I choose \"consult_patient_id\"
+task"]
+	1847124812720 [label="I check by value \"NTP\"
+task
+140728069287616"]
+	1847124811856 -> 1847124812720
+	1847124812720 [label="I check by value \"NTP\"
+task"]
+	1847124814544 [label="First Visit TB Therapy Consult
+goal
+1847124812048"]
+	1847124807872 -> 1847124814544
+	1847124814544 [label="First Visit TB Therapy Consult
+goal"]
+	1847124814976 [label="I fill
+in something
+goal
+140728069287616"]
+	1847124814544 -> 1847124814976
+	1847124814976 [label="I fill
+in something
+goal"]
+	1847124808928 [label="I fill in \"first\" with \"andres\"
+task
+140728069287616"]
+	1847124814976 -> 1847124808928
+	1847124808928 [label="I fill in \"first\" with \"andres\"
+task"]
+	1847124817712 [label="I fill in \"contact_person\" with \"09088656911\"
+task
+140728069287616"]
+	1847124814976 -> 1847124817712
+	1847124817712 [label="I fill in \"contact_person\" with \"09088656911\"
+task"]
+	1847124811712 [label="I fill in \"last\" with \"garcia\"
+task
+140728069287616"]
+	1847124814976 -> 1847124811712
+	1847124811712 [label="I fill in \"last\" with \"garcia\"
+task"]
+	1847125217424 [label="I press something
+goal
+140728069287616"]
+	1847124814544 -> 1847125217424
+	1847125217424 [label="I press something
+goal"]
+	1847124811328 [label="I press \"Yes\"
+task
+140728069287616"]
+	1847125217424 -> 1847124811328
+	1847124811328 [label="I press \"Yes\"
+task"]
+	1847124810752 [label="I press \"Search\"
+task
+140728069287616"]
+	1847125217424 -> 1847124810752
+	1847124810752 [label="I press \"Search\"
+task"]
+	1847124810368 [label="I press \"Select Patient\"
+task
+140728069287616"]
+	1847125217424 -> 1847124810368
+	1847124810368 [label="I press \"Select Patient\"
+task"]
+	1847124813248 [label="I press \"Save Details\"
+task
+140728069287616"]
+	1847125217424 -> 1847124813248
+	1847124813248 [label="I press \"Save Details\"
+task"]
+	1847124806960 [label="I click \"TB Therapy\"
+task
+140728069287616"]
+	1847125217424 -> 1847124806960
+	1847124806960 [label="I click \"TB Therapy\"
+task"]
+	1847124806864 [label="I press \"Save NTP Data\"
+task
+140728069287616"]
+	1847125217424 -> 1847124806864
+	1847124806864 [label="I press \"Save NTP Data\"
+task"]
+	1847124818000 [label="I press CONSULT
+goal
+140728069287616"]
+	1847125217424 -> 1847124818000
+	1847124818000 [label="I press CONSULT
+goal"]
+	1847124814352 [label="I click \"CONSULT\"
+task
+140728069287616"]
+	1847124818000 -> 1847124814352
+	1847124814352 [label="I click \"CONSULT\"
+task"]
+	1847124810704 [label="I press \"End Consult\"
+task
+140728069287616"]
+	1847124818000 -> 1847124810704
+	1847124810704 [label="I press \"End Consult\"
+task"]
+	1847124618512 [label="I see something
+goal
+140728069287616"]
+	1847124814544 -> 1847124618512
+	1847124618512 [label="I see something
+goal"]
+	1847124808640 [label="I should see \"SEARCH RESULTS\"
+task
+140728069287616"]
+	1847124618512 -> 1847124808640
+	1847124808640 [label="I should see \"SEARCH RESULTS\"
+task"]
+	1847124815072 [label="I should see \"VISIT DETAILS\"
+task
+140728069287616"]
+	1847124618512 -> 1847124815072
+	1847124815072 [label="I should see \"VISIT DETAILS\"
+task"]
+	1847124806000 [label="I should see \"TB Therapy\"
+task
+140728069287616"]
+	1847124618512 -> 1847124806000
+	1847124806000 [label="I should see \"TB Therapy\"
+task"]
+	1847124809408 [label="I should see \"form_ntp_visit1\"
+task
+140728069287616"]
+	1847124618512 -> 1847124809408
+	1847124809408 [label="I should see \"form_ntp_visit1\"
+task"]
+	1847124808112 [label="I should see \"form_consult\"
+task
+140728069287616"]
+	1847124618512 -> 1847124808112
+	1847124808112 [label="I should see \"form_consult\"
+task"]
+	1847124808592 [label="I should see \"Are you sure you want to end this consult?\"
+task
+140728069287616"]
+	1847124618512 -> 1847124808592
+	1847124808592 [label="I should see \"Are you sure you want to end this consult?\"
+task"]
+	1847124810272 [label="I choose \"consult_patient_id\"
+task
+140728069287616"]
+	1847124814544 -> 1847124810272
+	1847124810272 [label="I choose \"consult_patient_id\"
+task"]
+	1847124809552 [label="I check by value \"NTP\"
+task
+140728069287616"]
+	1847124814544 -> 1847124809552
+	1847124809552 [label="I check by value \"NTP\"
+task"]
+	1847124620192 [label="I select something
+goal
+140728069287616"]
+	1847124814544 -> 1847124620192
+	1847124620192 [label="I select something
+goal"]
+	1847124816272 [label="I select \"Yes\" from \"bcg_scar\"
+task
+140728069287616"]
+	1847124620192 -> 1847124816272
+	1847124816272 [label="I select \"Yes\" from \"bcg_scar\"
+task"]
+	1847124814688 [label="I select \"Accountant\" from \"occupation\"
+task
+140728069287616"]
+	1847124620192 -> 1847124814688
+	1847124814688 [label="I select \"Accountant\" from \"occupation\"
+task"]
+	1847124813536 [label="I select \"1\" from \"hh_contacts\"
+task
+140728069287616"]
+	1847124620192 -> 1847124813536
+	1847124813536 [label="I select \"1\" from \"hh_contacts\"
+task"]
+	1847124668576 [label="be able to create, search, update and delete family folders
+goal
+140728069287616"]
+	1847124818816 -> 1847124668576
+	1847124668576 [label="be able to create, search, update and delete family folders
+goal"]
+	1847124808016 [label="Delete Family Folder
+goal
+1847124808208"]
+	1847124668576 -> 1847124808016
+	1847124808016 [label="Delete Family Folder
+goal"]
+	1847117881568 [label="I click something
+goal
+140728069287616"]
+	1847124808016 -> 1847117881568
+	1847117881568 [label="I click something
+goal"]
+	1847124806624 [label="I press \"Yes\"
+task
+140728069287616"]
+	1847117881568 -> 1847124806624
+	1847124806624 [label="I press \"Yes\"
+task"]
+	1847124814880 [label="I click \"No members\"
+task
+140728069287616"]
+	1847117881568 -> 1847124814880
+	1847124814880 [label="I click \"No members\"
+task"]
+	1847124806192 [label="I click \"delete\"
+task
+140728069287616"]
+	1847117881568 -> 1847124806192
+	1847124806192 [label="I click \"delete\"
+task"]
+	1847124811136 [label="I should see \"1\"
+task
+140728069287616"]
+	1847124808016 -> 1847124811136
+	1847124811136 [label="I should see \"1\"
+task"]
+	1847124811280 [label="Add A New Family Folder
+goal
+1847124807632"]
+	1847124668576 -> 1847124811280
+	1847124811280 [label="Add A New Family Folder
+goal"]
+	1847124808400 [label="I fill in \"family_address\" with \"1234 ABC Street\"
+task
+140728069287616"]
+	1847124811280 -> 1847124808400
+	1847124808400 [label="I fill in \"family_address\" with \"1234 ABC Street\"
+task"]
+	1847124808352 [label="I select \"Brgy 1\" from \"barangay\"
+task
+140728069287616"]
+	1847124811280 -> 1847124808352
+	1847124808352 [label="I select \"Brgy 1\" from \"barangay\"
+task"]
+	1847124816608 [label="I press \"Create Folder\"
+task
+140728069287616"]
+	1847124811280 -> 1847124816608
+	1847124816608 [label="I press \"Create Folder\"
+task"]
+	1847124811520 [label="Search A Family Folder
+goal
+1847124805952"]
+	1847124668576 -> 1847124811520
+	1847124811520 [label="Search A Family Folder
+goal"]
+	1847124813968 [label="I fill in \"family_number\" with \"1\"
+task
+140728069287616"]
+	1847124811520 -> 1847124813968
+	1847124813968 [label="I fill in \"family_number\" with \"1\"
+task"]
+	1847124813344 [label="I press \"Search\"
+task
+140728069287616"]
+	1847124811520 -> 1847124813344
+	1847124813344 [label="I press \"Search\"
+task"]
+	1847124808976 [label="Update Family Folder Details
+goal
+1847124809216"]
+	1847124668576 -> 1847124808976
+	1847124808976 [label="Update Family Folder Details
+goal"]
+	1847125041808 [label="I fill
+in something
+goal
+140728069287616"]
+	1847124808976 -> 1847125041808
+	1847125041808 [label="I fill
+in something
+goal"]
+	1847124811232 [label="I fill in \"family_address\" with \"6789 XYZ Street\"
+task
+140728069287616"]
+	1847125041808 -> 1847124811232
+	1847124811232 [label="I fill in \"family_address\" with \"6789 XYZ Street\"
+task"]
+	1847124810512 [label="I fill in \"family_number\" with \"1\"
+task
+140728069287616"]
+	1847125041808 -> 1847124810512
+	1847124810512 [label="I fill in \"family_number\" with \"1\"
+task"]
+	1847124969936 [label="I press something
+goal
+140728069287616"]
+	1847124808976 -> 1847124969936
+	1847124969936 [label="I press something
+goal"]
+	1847124813152 [label="I press \"Search\"
+task
+140728069287616"]
+	1847124969936 -> 1847124813152
+	1847124813152 [label="I press \"Search\"
+task"]
+	1847124809840 [label="I click \"edit\"
+task
+140728069287616"]
+	1847124969936 -> 1847124809840
+	1847124809840 [label="I click \"edit\"
+task"]
+	1847124810176 [label="I press \"Update Folder\"
+task
+140728069287616"]
+	1847124969936 -> 1847124810176
+	1847124810176 [label="I press \"Update Folder\"
+task"]
+	1847124807680 [label="I should see \"SELECTED FAMILY\"
+task
+140728069287616"]
+	1847124808976 -> 1847124807680
+	1847124807680 [label="I should see \"SELECTED FAMILY\"
+task"]
+	1847124814928 [label="I select \"Brgy 2\" from \"barangay\"
+task
+140728069287616"]
+	1847124808976 -> 1847124814928
+	1847124814928 [label="I select \"Brgy 2\" from \"barangay\"
+task"]
+	1847124810560 [label="be able to manage patients by searching,creating,updating and deleting patient information
+goal
+140728069287616"]
+	1847124668912 -> 1847124810560
+	1847124810560 [label="be able to manage patients by searching,creating,updating and deleting patient information
+goal"]
+	1847124809600 [label="Delete patient information
+goal
+1847124813056"]
+	1847124810560 -> 1847124809600
+	1847124809600 [label="Delete patient information
+goal"]
+	1847124813824 [label="I fill in \"first\" with \"Jose\"
+task
+140728069287616"]
+	1847124809600 -> 1847124813824
+	1847124813824 [label="I fill in \"first\" with \"Jose\"
+task"]
+	1847124812480 [label="I press \"Search\"
+task
+140728069287616"]
+	1847124809600 -> 1847124812480
+	1847124812480 [label="I press \"Search\"
+task"]
+	1847124817520 [label="Search the patient
+goal
+1847124816368"]
+	1847124810560 -> 1847124817520
+	1847124817520 [label="Search the patient
+goal"]
+	1847124808304 [label="I fill in \"first\" with \"Jose\"
+task
+140728069287616"]
+	1847124817520 -> 1847124808304
+	1847124808304 [label="I fill in \"first\" with \"Jose\"
+task"]
+	1847124813440 [label="I press \"Search\"
+task
+140728069287616"]
+	1847124817520 -> 1847124813440
+	1847124813440 [label="I press \"Search\"
+task"]
+	1847124816656 [label="Add a new patient
+goal
+1847124812864"]
+	1847124810560 -> 1847124816656
+	1847124816656 [label="Add a new patient
+goal"]
+	1847124814160 [label="Debug
+task
+140728069287616"]
+	1847124816656 -> 1847124814160
+	1847124814160 [label="Debug
+task"]
+	1847125222320 [label="I fill
+in something
+goal
+140728069287616"]
+	1847124816656 -> 1847125222320
+	1847125222320 [label="I fill
+in something
+goal"]
+	1847124809744 [label="I fill in \"patient_middle\" with \"Cruz\"
+task
+140728069287616"]
+	1847125222320 -> 1847124809744
+	1847124809744 [label="I fill in \"patient_middle\" with \"Cruz\"
+task"]
+	1847124807200 [label="I fill in \"patient_dob\" with \"02/03/1982\"
+task
+140728069287616"]
+	1847125222320 -> 1847124807200
+	1847124807200 [label="I fill in \"patient_dob\" with \"02/03/1982\"
+task"]
+	1847124811088 [label="I fill in \"patient_mother\" with \"Maria\"
+task
+140728069287616"]
+	1847125222320 -> 1847124811088
+	1847124811088 [label="I fill in \"patient_mother\" with \"Maria\"
+task"]
+	1847124815168 [label="I fill in \"first\" with \"Andres\"
+task
+140728069287616"]
+	1847125222320 -> 1847124815168
+	1847124815168 [label="I fill in \"first\" with \"Andres\"
+task"]
+	1847125215888 [label="I fill
+in patient_firstname
+goal
+140728069287616"]
+	1847125222320 -> 1847125215888
+	1847125215888 [label="I fill
+in patient_firstname
+goal"]
+	1847124809504 [label="I fill in \"patient_firstname\" with \"Andres\"
+task
+140728069287616"]
+	1847125215888 -> 1847124809504
+	1847124809504 [label="I fill in \"patient_firstname\" with \"Andres\"
+task"]
+	1847124806768 [label="I fill in \"patient_lastname\" with \"Bonifacio\"
+task
+140728069287616"]
+	1847125215888 -> 1847124806768
+	1847124806768 [label="I fill in \"patient_lastname\" with \"Bonifacio\"
+task"]
+	1847124811760 [label="I fill in \"patient_cellphone\" with \"09191234567\"
+task
+140728069287616"]
+	1847125215888 -> 1847124811760
+	1847124811760 [label="I fill in \"patient_cellphone\" with \"09191234567\"
+task"]
+	1847124809072 [label="I select \"Male\" from \"patient_gender\"
+task
+140728069287616"]
+	1847124816656 -> 1847124809072
+	1847124809072 [label="I select \"Male\" from \"patient_gender\"
+task"]
+	1847124976176 [label="I press something
+goal
+140728069287616"]
+	1847124816656 -> 1847124976176
+	1847124976176 [label="I press something
+goal"]
+	1847124806240 [label="I press \"Add Patient\"
+task
+140728069287616"]
+	1847124976176 -> 1847124806240
+	1847124806240 [label="I press \"Add Patient\"
+task"]
+	1847124806144 [label="I press \"Search\"
+task
+140728069287616"]
+	1847124976176 -> 1847124806144
+	1847124806144 [label="I press \"Search\"
+task"]
+	1847124816416 [label="Update patient information
+goal
+1847124816560"]
+	1847124810560 -> 1847124816416
+	1847124816416 [label="Update patient information
+goal"]
+	1847124806528 [label="I fill in \"first\" with \"Jose\"
+task
+140728069287616"]
+	1847124816416 -> 1847124806528
+	1847124806528 [label="I fill in \"first\" with \"Jose\"
+task"]
+	1847124814112 [label="I press \"Search\"
+task
+140728069287616"]
+	1847124816416 -> 1847124814112
+	1847124814112 [label="I press \"Search\"
+task"]
+	1847088853392 [label="maximize use
+goal
+140728069287616"]
+	1847088851376 -> 1847088853392
+	1847088853392 [label="maximize use
+goal"]
+	1847124661760 [label="be able to access Appointments Today
+goal
+140728069287616"]
+	1847088853392 -> 1847124661760
+	1847124661760 [label="be able to access Appointments Today
+goal"]
+	1847124657680 [label="Access Appointments Menu
+goal
+1847124658784"]
+	1847124661760 -> 1847124657680
+	1847124657680 [label="Access Appointments Menu
+goal"]
+	1847124619952 [label="be able to access Laboratory Menu
+goal
+140728069287616"]
+	1847088853392 -> 1847124619952
+	1847124619952 [label="be able to access Laboratory Menu
+goal"]
+	1847124806048 [label="Access Laboratory Menu
+goal
+1847124813872"]
+	1847124619952 -> 1847124806048
+	1847124806048 [label="Access Laboratory Menu
+goal"]
+}

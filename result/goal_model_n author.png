@@ -1,0 +1,125 @@
+// Goal Model
+digraph {
+	1847133038496 [label="n author
+goal"]
+	1847132854480 [label="create and filter material
+goal
+1847132864080"]
+	1847133038496 -> 1847132854480
+	1847132854480 [label="create and filter material
+goal"]
+	1847132853904 [label="Anonymous user cannot see authored by me
+goal
+140728069287616"]
+	1847132854480 -> 1847132853904
+	1847132853904 [label="Anonymous user cannot see authored by me
+goal"]
+	1847132858752 [label="I log out
+task
+140728069287616"]
+	1847132853904 -> 1847132858752
+	1847132858752 [label="I log out
+task"]
+	1847132863552 [label="I go to the search instructional materials page
+task
+140728069287616"]
+	1847132853904 -> 1847132863552
+	1847132863552 [label="I go to the search instructional materials page
+task"]
+	1847132860864 [label="Anonymous user cannot see authored by me
+goal
+140728069287616"]
+	1847132854480 -> 1847132860864
+	1847132860864 [label="Anonymous user cannot see authored by me
+goal"]
+	1847132853232 [label="I am on the search instructional materials page
+task
+140728069287616"]
+	1847132860864 -> 1847132853232
+	1847132853232 [label="I am on the search instructional materials page
+task"]
+	1847132863888 [label="Authors can filter External Activity using authored by me
+goal
+1847125296512"]
+	1847132854480 -> 1847132863888
+	1847132863888 [label="Authors can filter External Activity using authored by me
+goal"]
+	1847125307456 [label="I am logged in with the username author_1
+task
+140728069287616"]
+	1847132863888 -> 1847125307456
+	1847125307456 [label="I am logged in with the username author_1
+task"]
+	1847125295360 [label="I am on the search instructional materials page
+task
+140728069287616"]
+	1847132863888 -> 1847125295360
+	1847125295360 [label="I am on the search instructional materials page
+task"]
+	1847125306832 [label="I check \"official\" under Authorship
+task
+140728069287616"]
+	1847132863888 -> 1847125306832
+	1847125306832 [label="I check \"official\" under Authorship
+task"]
+	1847125310384 [label="I uncheck \"official\" under Authorship
+task
+140728069287616"]
+	1847132863888 -> 1847125310384
+	1847125310384 [label="I uncheck \"official\" under Authorship
+task"]
+	1847125307216 [label="I check \"contributed\" under Authorship
+task
+140728069287616"]
+	1847132863888 -> 1847125307216
+	1847125307216 [label="I check \"contributed\" under Authorship
+task"]
+	1847125298768 [label="I search for my own materials
+task
+140728069287616"]
+	1847132863888 -> 1847125298768
+	1847125298768 [label="I search for my own materials
+task"]
+	1847132854288 [label="Authors can filter their own published materials
+goal
+1847125310576"]
+	1847132854480 -> 1847132854288
+	1847132854288 [label="Authors can filter their own published materials
+goal"]
+	1847125298384 [label="I am logged in with the username author_1
+task
+140728069287616"]
+	1847132854288 -> 1847125298384
+	1847125298384 [label="I am logged in with the username author_1
+task"]
+	1847125301840 [label="I am on the search instructional materials page
+task
+140728069287616"]
+	1847132854288 -> 1847125301840
+	1847125301840 [label="I am on the search instructional materials page
+task"]
+	1847125308848 [label="I search for my own materials
+task
+140728069287616"]
+	1847132854288 -> 1847125308848
+	1847125308848 [label="I search for my own materials
+task"]
+	1847125298000 [label="I wait 2 seconds
+task
+140728069287616"]
+	1847132854288 -> 1847125298000
+	1847125298000 [label="I wait 2 seconds
+task"]
+	1847125311200 [label="I check \"official\" under Authorship
+task
+140728069287616"]
+	1847132854288 -> 1847125311200
+	1847125311200 [label="I check \"official\" under Authorship
+task"]
+	1847125300352 [label="I wait 2 seconds
+task
+140728069287616"]
+	1847132854288 -> 1847125300352
+	1847125300352 [label="I wait 2 seconds
+task"]
+}

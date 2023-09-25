@@ -1,0 +1,13 @@
+// 3000759776928 Context Model
+digraph {
+	3000759769248 [label=Context4]
+	3000759771312 [label="we are currently in a semester"]
+	3000759769248 -> 3000759771312
+	3000759771312 [label="we are currently in a semester"]
+	3000759769680 [label="I have students and teachers in system"]
+	3000759769248 -> 3000759769680
+	3000759769680 [label="I have students and teachers in system"]
+	3000759778320 [label="I am logged in as myemail@nowhere.com"]
+	3000759769248 -> 3000759778320
+	3000759778320 [label="I am logged in as myemail@nowhere.com"]
+}

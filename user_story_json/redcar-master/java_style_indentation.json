@@ -1,0 +1,46 @@
+{
+    "feature_name": "Indents Java code correctly",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "the content is:",
+                        "I move the cursor to (2,4)"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I type \"e\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the content should be:"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the content is:",
+                        "I move the cursor to (0,17)"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I type \"\\n\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the content should be:"
+                    ]
+                ]
+            }
+        ]
+    }
+}

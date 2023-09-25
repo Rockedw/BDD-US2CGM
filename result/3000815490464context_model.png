@@ -1,0 +1,13 @@
+// 3000815489984 Context Model
+digraph {
+	3000815490464 [label=Context3]
+	3000815498144 [label="a provider \"Vowel Movements\""]
+	3000815490464 -> 3000815498144
+	3000815498144 [label="a provider \"Vowel Movements\""]
+	3000815494160 [label="a portfolio item \"Pure West\" belonging to the \"Vowel Movements\" provider"]
+	3000815490464 -> 3000815494160
+	3000815494160 [label="a portfolio item \"Pure West\" belonging to the \"Vowel Movements\" provider"]
+	3000815496560 [label="a logged in admin user"]
+	3000815490464 -> 3000815496560
+	3000815496560 [label="a logged in admin user"]
+}

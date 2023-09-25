@@ -1,0 +1,144 @@
+{
+    "feature_name": "Syntax Checking for Java",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "get annotations on syntax errors in Java files",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"class Foo {\\n\\n}\"",
+                        "I save the tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the tab should not have annotations"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"class Foo {\\n    int\\n}\"",
+                        "I save the tab",
+                        "I wait \"2.5\" seconds"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the tab should have annotations",
+                        "the tab should have an annotation on line 2"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"class Foo {\\n    int\\n}\"",
+                        "I save the tab",
+                        "I wait \"2.5\" seconds"
+                    ],
+                    [
+                        "I replace the contents with \"class Foo {\\n\\n}\"",
+                        "I wait \"2.5\" seconds",
+                        "I save the tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the tab should have annotations"
+                    ],
+                    [
+                        "the tab should not have annotations"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I excluded \"java\" files from being checked for syntax errors"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"class Foo {\\n    int\\n}\"",
+                        "I save the tab",
+                        "I wait \"2.5\" seconds"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the tab should not have annotations"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "the tab should have annotations",
+                        "the tab should have an annotation on line 2"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have not suppressed syntax checking message dialogs"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I will choose \"plugins/java/features/fixtures\" from the \"open_directory\" dialog",
+                        "I open a directory",
+                        "I add \"lib2\" to the \"java\" classpath",
+                        "I replace the contents with \"class Foo {\\n    Bar x = new Bar(10);\\n    FooBaz y = new FooBaz();\\n}\"",
+                        "I save the tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a message box containing \"An error occurred while parsing\"",
+                        "the tab should not have annotations"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have suppressed syntax checking message dialogs"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I will choose \"plugins/java/features/fixtures\" from the \"open_directory\" dialog",
+                        "I open a directory",
+                        "I have opened \"plugins/java/features/fixtures/.redcar/classpath.groovy\"",
+                        "I replace the contents with \"sdef\"",
+                        "I save the tab",
+                        "I wait \"2.5\" seconds"
+                    ],
+                    [
+                        "I close the focussed tab",
+                        "I add \"lib2\" to the \"java\" classpath",
+                        "I replace the contents with \"class Foo {\\n    Bar x = new Bar(10);\\n    FooBaz y = new FooBaz();\\n}\"",
+                        "I save the tab",
+                        "I wait \"2.5\" seconds",
+                        "the tab should have annotations"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the tab should not have annotations"
+                    ]
+                ]
+            }
+        ]
+    }
+}

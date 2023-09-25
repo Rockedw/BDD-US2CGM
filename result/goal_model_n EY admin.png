@@ -1,0 +1,47 @@
+// Goal Model
+digraph {
+	1847134120848 [label="n EY admin
+goal"]
+	1847134174416 [label="be able to send a custom welcome message to a user
+goal
+140728069287616"]
+	1847134120848 -> 1847134174416
+	1847134174416 [label="be able to send a custom welcome message to a user
+goal"]
+	1847134166352 [label="I am on the admin dashboard
+task
+140728069287616"]
+	1847134174416 -> 1847134166352
+	1847134166352 [label="I am on the admin dashboard
+task"]
+	1847134162416 [label="I follow \"Developers\"
+task
+140728069287616"]
+	1847134174416 -> 1847134162416
+	1847134162416 [label="I follow \"Developers\"
+task"]
+	1847134160592 [label="I follow \"Billow\"
+task
+140728069287616"]
+	1847134174416 -> 1847134160592
+	1847134160592 [label="I follow \"Billow\"
+task"]
+	1847134169328 [label="I follow \"test@test.com\"
+task
+140728069287616"]
+	1847134174416 -> 1847134169328
+	1847134169328 [label="I follow \"test@test.com\"
+task"]
+	1847134159200 [label="I fill in \"message\" with \"It's a nice day\"
+task
+140728069287616"]
+	1847134174416 -> 1847134159200
+	1847134159200 [label="I fill in \"message\" with \"It's a nice day\"
+task"]
+	1847134162896 [label="I press \"user.send_welcome_message\" translation
+task
+140728069287616"]
+	1847134174416 -> 1847134162896
+	1847134162896 [label="I press \"user.send_welcome_message\" translation
+task"]
+}

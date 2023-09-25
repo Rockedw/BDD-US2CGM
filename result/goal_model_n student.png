@@ -1,0 +1,71 @@
+// Goal Model
+digraph {
+	1847133471264 [label="n student
+goal"]
+	1847135460544 [label="
+goal
+1847135456080"]
+	1847133471264 -> 1847135460544
+	1847135460544 [label="
+goal"]
+	1847135457472 [label="Student sees report link
+goal
+140728069287616"]
+	1847135460544 -> 1847135457472
+	1847135457472 [label="Student sees report link
+goal"]
+	1847135454832 [label="I login with username: davy
+task
+140728069287616"]
+	1847135457472 -> 1847135454832
+	1847135454832 [label="I login with username: davy
+task"]
+	1847135458432 [label="I run the external activity
+task
+140728069287616"]
+	1847135457472 -> 1847135458432
+	1847135458432 [label="I run the external activity
+task"]
+	1847135461888 [label="I visit my classes page
+task
+140728069287616"]
+	1847135457472 -> 1847135461888
+	1847135461888 [label="I visit my classes page
+task"]
+	1847135454400 [label="I should see a link to generate a report of my work
+task
+140728069287616"]
+	1847135457472 -> 1847135454400
+	1847135454400 [label="I should see a link to generate a report of my work
+task"]
+	1847135461072 [label="Student does not see report link if student report is disabled
+goal
+140728069287616"]
+	1847135460544 -> 1847135461072
+	1847135461072 [label="Student does not see report link if student report is disabled
+goal"]
+	1847135457424 [label="the student report is disabled for the activity \"simple activity\"
+task
+140728069287616"]
+	1847135461072 -> 1847135457424
+	1847135457424 [label="the student report is disabled for the activity \"simple activity\"
+task"]
+	1847135456128 [label="I login with username: davy
+task
+140728069287616"]
+	1847135461072 -> 1847135456128
+	1847135456128 [label="I login with username: davy
+task"]
+	1847135456800 [label="I run the activity
+task
+140728069287616"]
+	1847135461072 -> 1847135456800
+	1847135456800 [label="I run the activity
+task"]
+	1847135458144 [label="I visit my classes page
+task
+140728069287616"]
+	1847135461072 -> 1847135458144
+	1847135458144 [label="I visit my classes page
+task"]
+}

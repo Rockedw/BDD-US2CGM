@@ -1,0 +1,16 @@
+// 1847134020384 Context Model
+digraph {
+	1847134021056 [label=Context68]
+	1847134021200 [label="I have a _posts directory"]
+	1847134021056 -> 1847134021200
+	1847134021200 [label="I have a _posts directory"]
+	1847134021296 [label="I have a _layouts directory"]
+	1847134021056 -> 1847134021296
+	1847134021296 [label="I have a _layouts directory"]
+	1847134021392 [label="I have the following post:"]
+	1847134021056 -> 1847134021392
+	1847134021392 [label="I have the following post:"]
+	1847134021488 [label="I have a simple layout that contains \"Post id: {{ page.id }}\""]
+	1847134021056 -> 1847134021488
+	1847134021488 [label="I have a simple layout that contains \"Post id: {{ page.id }}\""]
+}

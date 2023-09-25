@@ -1,0 +1,321 @@
+// Goal Model
+digraph {
+	1847124501088 [label="chits administrator
+goal"]
+	1847117745024 [label="manage module
+goal
+140728069287616"]
+	1847124501088 -> 1847117745024
+	1847117745024 [label="manage module
+goal"]
+	1847117743728 [label="be able to see about page
+goal
+140728069287616"]
+	1847117745024 -> 1847117743728
+	1847117743728 [label="be able to see about page
+goal"]
+	1847088853920 [label="I click \"ABOUT\"
+task
+140728069287616"]
+	1847117743728 -> 1847088853920
+	1847088853920 [label="I click \"ABOUT\"
+task"]
+	1847124670448 [label=" add module
+goal
+140728069287616"]
+	1847117745024 -> 1847124670448
+	1847124670448 [label=" add module
+goal"]
+	1847117561232 [label="be able to add module
+goal
+140728069287616"]
+	1847124670448 -> 1847117561232
+	1847117561232 [label="be able to add module
+goal"]
+	1847124658352 [label="I click \"CREDITS\"
+task
+140728069287616"]
+	1847117561232 -> 1847124658352
+	1847124658352 [label="I click \"CREDITS\"
+task"]
+	1847088855168 [label="be able to add module
+goal
+140728069287616"]
+	1847124670448 -> 1847088855168
+	1847088855168 [label="be able to add module
+goal"]
+	1847124663776 [label="A Module DeActivation
+goal
+1847124665792"]
+	1847088855168 -> 1847124663776
+	1847124663776 [label="A Module DeActivation
+goal"]
+	1847124662336 [label="I click modules
+goal
+140728069287616"]
+	1847124663776 -> 1847124662336
+	1847124662336 [label="I click modules
+goal"]
+	1847124660416 [label="I click \"MODULES\"
+task
+140728069287616"]
+	1847124662336 -> 1847124660416
+	1847124660416 [label="I click \"MODULES\"
+task"]
+	1847124667520 [label="I click \"Activate Modules\"
+task
+140728069287616"]
+	1847124662336 -> 1847124667520
+	1847124667520 [label="I click \"Activate Modules\"
+task"]
+	1847124668336 [label="I check \"initmod[]\"
+task
+140728069287616"]
+	1847124663776 -> 1847124668336
+	1847124668336 [label="I check \"initmod[]\"
+task"]
+	1847124664208 [label="A Module Activation
+goal
+1847124672416"]
+	1847088855168 -> 1847124664208
+	1847124664208 [label="A Module Activation
+goal"]
+	1847124664976 [label="I click modules
+goal
+140728069287616"]
+	1847124664208 -> 1847124664976
+	1847124664976 [label="I click modules
+goal"]
+	1847124663872 [label="I click \"MODULES\"
+task
+140728069287616"]
+	1847124664976 -> 1847124663872
+	1847124663872 [label="I click \"MODULES\"
+task"]
+	1847124658208 [label="I click \"Activate Modules\"
+task
+140728069287616"]
+	1847124664976 -> 1847124658208
+	1847124658208 [label="I click \"Activate Modules\"
+task"]
+	1847124668864 [label="I check by value \"appointment\"
+task
+140728069287616"]
+	1847124664208 -> 1847124668864
+	1847124668864 [label="I check by value \"appointment\"
+task"]
+	1847124664784 [label="Visit admin-module page
+goal
+1847124665552"]
+	1847088855168 -> 1847124664784
+	1847124664784 [label="Visit admin-module page
+goal"]
+	1847124666992 [label="be able to create, update and delete users
+goal
+140728069287616"]
+	1847124501088 -> 1847124666992
+	1847124666992 [label="be able to create, update and delete users
+goal"]
+	1847124803888 [label="Delete a user
+goal
+1847124804800"]
+	1847124666992 -> 1847124803888
+	1847124803888 [label="Delete a user
+goal"]
+	1847124804944 [label="I press \"Yes\"
+task
+140728069287616"]
+	1847124803888 -> 1847124804944
+	1847124804944 [label="I press \"Yes\"
+task"]
+	1847124804848 [label="I click \"Perez, Alison\"
+task
+140728069287616"]
+	1847124803888 -> 1847124804848
+	1847124804848 [label="I click \"Perez, Alison\"
+task"]
+	1847124804896 [label="I press \"Delete User\"
+task
+140728069287616"]
+	1847124803888 -> 1847124804896
+	1847124804896 [label="I press \"Delete User\"
+task"]
+	1847124663680 [label="Visit admin page
+goal
+1847124660560"]
+	1847124666992 -> 1847124663680
+	1847124663680 [label="Visit admin page
+goal"]
+	1847124671168 [label="Create a user
+goal
+1847124670016"]
+	1847124666992 -> 1847124671168
+	1847124671168 [label="Create a user
+goal"]
+	1847124803648 [label="I am on the home page
+task
+140728069287616"]
+	1847124671168 -> 1847124803648
+	1847124803648 [label="I am on the home page
+task"]
+	1847124671264 [label="I fill
+in something
+goal
+140728069287616"]
+	1847124671168 -> 1847124671264
+	1847124671264 [label="I fill
+in something
+goal"]
+	1847124667280 [label="I fill in \"user_middle\" with \"King of Pop\"
+task
+140728069287616"]
+	1847124671264 -> 1847124667280
+	1847124667280 [label="I fill in \"user_middle\" with \"King of Pop\"
+task"]
+	1847124669680 [label="I fill in \"user_lastname\" with \"Jackson\"
+task
+140728069287616"]
+	1847124671264 -> 1847124669680
+	1847124669680 [label="I fill in \"user_lastname\" with \"Jackson\"
+task"]
+	1847124656336 [label="I fill in \"user_dob\" with \"08/08/1968\"
+task
+140728069287616"]
+	1847124671264 -> 1847124656336
+	1847124656336 [label="I fill in \"user_dob\" with \"08/08/1968\"
+task"]
+	1847124662960 [label="I fill in \"user_login\" with \"jacko\"
+task
+140728069287616"]
+	1847124671264 -> 1847124662960
+	1847124662960 [label="I fill in \"user_login\" with \"jacko\"
+task"]
+	1847124803744 [label="I fill in \"passwd\" with \"neverland\"
+task
+140728069287616"]
+	1847124671264 -> 1847124803744
+	1847124803744 [label="I fill in \"passwd\" with \"neverland\"
+task"]
+	1847124502960 [label="I fill
+in user_firstname
+goal
+140728069287616"]
+	1847124671264 -> 1847124502960
+	1847124502960 [label="I fill
+in user_firstname
+goal"]
+	1847124662000 [label="I fill in \"user_firstname\" with \"Michael\"
+task
+140728069287616"]
+	1847124502960 -> 1847124662000
+	1847124662000 [label="I fill in \"user_firstname\" with \"Michael\"
+task"]
+	1847124661376 [label="I fill in \"user_password\" with \"neverland\"
+task
+140728069287616"]
+	1847124502960 -> 1847124661376
+	1847124661376 [label="I fill in \"user_password\" with \"neverland\"
+task"]
+	1847124661088 [label="I choose \"user_gender\"
+task
+140728069287616"]
+	1847124671168 -> 1847124661088
+	1847124661088 [label="I choose \"user_gender\"
+task"]
+	1847124672320 [label="I select something
+goal
+140728069287616"]
+	1847124671168 -> 1847124672320
+	1847124672320 [label="I select something
+goal"]
+	1847124670544 [label="I select \"Nurse\" from \"role_id\"
+task
+140728069287616"]
+	1847124672320 -> 1847124670544
+	1847124670544 [label="I select \"Nurse\" from \"role_id\"
+task"]
+	1847124669104 [label="I select \"english\" from \"lang_id\"
+task
+140728069287616"]
+	1847124672320 -> 1847124669104
+	1847124669104 [label="I select \"english\" from \"lang_id\"
+task"]
+	1847124669584 [label="I check \"isactive\"
+task
+140728069287616"]
+	1847124671168 -> 1847124669584
+	1847124669584 [label="I check \"isactive\"
+task"]
+	1847124668000 [label="I press something
+goal
+140728069287616"]
+	1847124671168 -> 1847124668000
+	1847124668000 [label="I press something
+goal"]
+	1847124663440 [label="I press \"Sign Out\"
+task
+140728069287616"]
+	1847124668000 -> 1847124663440
+	1847124663440 [label="I press \"Sign Out\"
+task"]
+	1847124670736 [label="I press \"Add User\"
+task
+140728069287616"]
+	1847124668000 -> 1847124670736
+	1847124670736 [label="I press \"Add User\"
+task"]
+	1847124666560 [label="I should see \"Jackson, Michael\"
+task
+140728069287616"]
+	1847124671168 -> 1847124666560
+	1847124666560 [label="I should see \"Jackson, Michael\"
+task"]
+	1847124665408 [label="Update a user
+goal
+1847124804224"]
+	1847124666992 -> 1847124665408
+	1847124665408 [label="Update a user
+goal"]
+	1847124658592 [label="I click something
+goal
+140728069287616"]
+	1847124665408 -> 1847124658592
+	1847124658592 [label="I click something
+goal"]
+	1847124668624 [label="I click Perez
+goal
+140728069287616"]
+	1847124658592 -> 1847124668624
+	1847124668624 [label="I click Perez
+goal"]
+	1847124804272 [label="I click \"Perez, Alison\"
+task
+140728069287616"]
+	1847124668624 -> 1847124804272
+	1847124804272 [label="I click \"Perez, Alison\"
+task"]
+	1847124804464 [label="I click \"Perez, Alison\"
+task
+140728069287616"]
+	1847124668624 -> 1847124804464
+	1847124804464 [label="I click \"Perez, Alison\"
+task"]
+	1847124804416 [label="I press \"Update User\"
+task
+140728069287616"]
+	1847124658592 -> 1847124804416
+	1847124804416 [label="I press \"Update User\"
+task"]
+	1847124804320 [label="I should not see \"alison@kung.fu\"
+task
+140728069287616"]
+	1847124665408 -> 1847124804320
+	1847124804320 [label="I should not see \"alison@kung.fu\"
+task"]
+	1847124804368 [label="I fill in \"user_email\" with \"alison@kung.fu\"
+task
+140728069287616"]
+	1847124665408 -> 1847124804368
+	1847124804368 [label="I fill in \"user_email\" with \"alison@kung.fu\"
+task"]
+}

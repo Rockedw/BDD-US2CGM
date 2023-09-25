@@ -1,0 +1,95 @@
+// Goal Model
+digraph {
+	1847088853440 [label="blog's user
+goal"]
+	1847133994048 [label="
+goal
+140728069287616"]
+	1847088853440 -> 1847133994048
+	1847133994048 [label="
+goal"]
+	1847134167744 [label="Paginate with N posts per page
+goal
+1847134170000"]
+	1847133994048 -> 1847134167744
+	1847134167744 [label="Paginate with N posts per page
+goal"]
+	1847134171248 [label=" set path
+goal
+140728069287616"]
+	1847133994048 -> 1847134171248
+	1847134171248 [label=" set path
+goal"]
+	1847134169328 [label="Setting a custom pagination path
+goal
+1847134167600"]
+	1847134171248 -> 1847134169328
+	1847134169328 [label="Setting a custom pagination path
+goal"]
+	1847134167888 [label="Setting a custom pagination path without an index.html in it
+goal
+1847134113648"]
+	1847134171248 -> 1847134167888
+	1847134167888 [label="Setting a custom pagination path without an index.html in it
+goal"]
+	1847133992416 [label="use _data directory in my site
+goal
+140728069287616"]
+	1847088853440 -> 1847133992416
+	1847133992416 [label="use _data directory in my site
+goal"]
+	1847134065648 [label="autoload *.yaml files in _data directory
+goal
+1847134061232"]
+	1847133992416 -> 1847134065648
+	1847134065648 [label="autoload *.yaml files in _data directory
+goal"]
+	1847134064688 [label="autoload *.yml files in _data directory
+goal
+1847134062384"]
+	1847133992416 -> 1847134064688
+	1847134064688 [label="autoload *.yml files in _data directory
+goal"]
+	1847134067472 [label="autoload *.json files in _data directory
+goal
+1847134027632"]
+	1847133992416 -> 1847134067472
+	1847134067472 [label="autoload *.json files in _data directory
+goal"]
+	1847134020240 [label="autoload *.csv files in _data directory
+goal
+1847134013760"]
+	1847133992416 -> 1847134020240
+	1847134020240 [label="autoload *.csv files in _data directory
+goal"]
+	1847134020624 [label="autoload *.tsv files in _data directory
+goal
+1847133999248"]
+	1847133992416 -> 1847134020624
+	1847134020624 [label="autoload *.tsv files in _data directory
+goal"]
+	1847134010720 [label="autoload *.yml files in _data directory with space in file name
+goal
+1847134000544"]
+	1847133992416 -> 1847134010720
+	1847134010720 [label="autoload *.yml files in _data directory with space in file name
+goal"]
+	1847133996944 [label="autoload *.yaml files in subdirectories in _data directory
+goal
+1847134163712"]
+	1847133992416 -> 1847133996944
+	1847133996944 [label="autoload *.yaml files in subdirectories in _data directory
+goal"]
+	1847134163232 [label="should be backward compatible with site.data in _config.yml
+goal
+1847134167552"]
+	1847133992416 -> 1847134163232
+	1847134163232 [label="should be backward compatible with site.data in _config.yml
+goal"]
+	1847133385200 [label="folders should have precedence over files with the same name
+goal
+1847134170624"]
+	1847133992416 -> 1847133385200
+	1847133385200 [label="folders should have precedence over files with the same name
+goal"]
+}

@@ -1,0 +1,10 @@
+// 1436757420752 Context Model
+digraph {
+	1436757419168 [label=Context16]
+	1436757424448 [label="I am on my account page"]
+	1436757419168 -> 1436757424448
+	1436757424448 [label="I am on my account page"]
+	1436757416384 [label="I click on the resign link, and confirm my leaving"]
+	1436757419168 -> 1436757416384
+	1436757416384 [label="I click on the resign link, and confirm my leaving"]
+}

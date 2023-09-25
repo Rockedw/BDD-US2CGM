@@ -1,0 +1,10 @@
+// 1998090224496 Context Model
+digraph {
+	1998090226224 [label=Context1]
+	1998090224736 [label="I am a user"]
+	1998090226224 -> 1998090224736
+	1998090224736 [label="I am a user"]
+	1998039079648 [label="on my collections page"]
+	1998090226224 -> 1998039079648
+	1998039079648 [label="on my collections page"]
+}

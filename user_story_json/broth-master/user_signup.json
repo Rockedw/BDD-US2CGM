@@ -1,0 +1,44 @@
+{
+    "feature_name": "Sign up",
+    "user_story": {
+        "as_a": "visitor",
+        "i_want": "sign up",
+        "so_that": "get access to protected sections of the site",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the sign up page",
+                        "I fill in \"Email\" with \"bogusemail\"",
+                        "I fill in \"Password\" with \"passw0rd\"",
+                        "I fill in \"Password confirmation\" with \"\"",
+                        "I press \"Sign Up\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see error messages"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the sign up page",
+                        "I fill in \"Email\" with \"joe@gethandcrafted.com\"",
+                        "I fill in \"Password\" with \"passw0rd\"",
+                        "I fill in \"Password confirmation\" with \"passw0rd\"",
+                        "I press \"Sign Up\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"You have signed up successfully\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

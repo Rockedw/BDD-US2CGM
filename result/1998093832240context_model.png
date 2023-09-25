@@ -1,0 +1,10 @@
+// 1998091697936 Context Model
+digraph {
+	1998093832240 [label=Context8]
+	1998093838288 [label="I go to the edit items page for \"anInstance0\""]
+	1998093832240 -> 1998093838288
+	1998093838288 [label="I go to the edit items page for \"anInstance0\""]
+	1998093828256 [label="I select \"- class of item -\" from \"individual_item_class_item_id\""]
+	1998093832240 -> 1998093828256
+	1998093828256 [label="I select \"- class of item -\" from \"individual_item_class_item_id\""]
+}

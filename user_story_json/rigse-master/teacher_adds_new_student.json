@@ -1,0 +1,30 @@
+{
+    "feature_name": "Teacher adds a new student",
+    "user_story": {
+        "as_a": "teacher",
+        "i_want": "add a new student",
+        "so_that": "assign students to the class",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "the student \"student\" belongs to class \"Physics\""
+                    ],
+                    [
+                        "I login with username: teacher",
+                        "I am on \"Student Roster\" page for \"Mathematics\"",
+                        "I select \"Robert, Alfred ( student )\" from the select named \"student_id_selector\"",
+                        "I should see \"Robert, Alfred\"",
+                        "I press \"Add\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Robert, Alfred\" within the student list on the student roster page"
+                    ]
+                ]
+            }
+        ]
+    }
+}

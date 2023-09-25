@@ -1,0 +1,19 @@
+// 3000759775440 Context Model
+digraph {
+	3000759776928 [label=Context7]
+	3000759766416 [label="I open a new repl"]
+	3000759776928 -> 3000759766416
+	3000759766416 [label="I open a new repl"]
+	3000759774432 [label="I insert \"clear\" at the cursor"]
+	3000759776928 -> 3000759774432
+	3000759774432 [label="I insert \"clear\" at the cursor"]
+	3000759772176 [label="I press the return key"]
+	3000759776928 -> 3000759772176
+	3000759772176 [label="I press the return key"]
+	3000759768144 [label="I insert \"x = 4\" at the cursor"]
+	3000759776928 -> 3000759768144
+	3000759768144 [label="I insert \"x = 4\" at the cursor"]
+	3000759776160 [label="I move the cursor to the end of the document"]
+	3000759776928 -> 3000759776160
+	3000759776160 [label="I move the cursor to the end of the document"]
+}

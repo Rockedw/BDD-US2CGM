@@ -1,0 +1,30 @@
+{
+    "feature_name": "Site Settings",
+    "user_story": {
+        "as_a": "admin",
+        "i_want": "change site settings",
+        "so_that": "control how pieces of the site function",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "site settings have been disabled for \"beta_invites\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the edit admin site settings page",
+                        "I check \"Enable beta invites?\"",
+                        "I press \"Update\"",
+                        "I follow \"Invites\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Pending invites\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

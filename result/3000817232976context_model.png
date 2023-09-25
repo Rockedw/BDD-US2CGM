@@ -1,0 +1,10 @@
+// 3000789654432 Context Model
+digraph {
+	3000817232976 [label=Context8]
+	3000817230912 [label="I have opened \"plugins/runnables/features/fixtures/name_app.rb\""]
+	3000817232976 -> 3000817230912
+	3000817230912 [label="I have opened \"plugins/runnables/features/fixtures/name_app.rb\""]
+	3000816866912 [label="I run the command Redcar::Runnables::RunEditTabCommand"]
+	3000817232976 -> 3000816866912
+	3000816866912 [label="I run the command Redcar::Runnables::RunEditTabCommand"]
+}

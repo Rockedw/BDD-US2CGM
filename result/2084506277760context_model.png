@@ -1,0 +1,22 @@
+// 2084506276272 Context Model
+digraph {
+	2084506277760 [label=Context8]
+	2084506278096 [label="I open a new repl"]
+	2084506277760 -> 2084506278096
+	2084506278096 [label="I open a new repl"]
+	2084506278192 [label="I insert \"x = 4\" at the cursor"]
+	2084506277760 -> 2084506278192
+	2084506278192 [label="I insert \"x = 4\" at the cursor"]
+	2084506278288 [label="I press the return key"]
+	2084506277760 -> 2084506278288
+	2084506278288 [label="I press the return key"]
+	2084506278384 [label="the current command should be blank"]
+	2084506277760 -> 2084506278384
+	2084506278384 [label="the current command should be blank"]
+	2084506278480 [label="I insert \"y = 5\" at the cursor"]
+	2084506277760 -> 2084506278480
+	2084506278480 [label="I insert \"y = 5\" at the cursor"]
+	2084506278576 [label="I press the return key"]
+	2084506277760 -> 2084506278576
+	2084506278576 [label="I press the return key"]
+}

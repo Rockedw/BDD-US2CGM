@@ -1,0 +1,28 @@
+// 2220590395360 Context Model
+digraph {
+	2220590545936 [label=Context1]
+	2220590535712 [label="an external activity named \"Fun Stuff\" with the definition"]
+	2220590545936 -> 2220590535712
+	2220590535712 [label="an external activity named \"Fun Stuff\" with the definition"]
+	2220590543248 [label="a modified version of the external activity named \"Fun Stuff\" with the definition"]
+	2220590545936 -> 2220590543248
+	2220590543248 [label="a modified version of the external activity named \"Fun Stuff\" with the definition"]
+	2220590534032 [label="a sequence named \"Many fun things\" with the definition"]
+	2220590545936 -> 2220590534032
+	2220590534032 [label="a sequence named \"Many fun things\" with the definition"]
+	2220590539312 [label="a modified version of the sequence named \"Many fun things\" with the definition"]
+	2220590545936 -> 2220590539312
+	2220590539312 [label="a modified version of the sequence named \"Many fun things\" with the definition"]
+	2220590543680 [label="an external_report with the URL \"https://reports.concord.org/act\""]
+	2220590545936 -> 2220590543680
+	2220590543680 [label="an external_report with the URL \"https://reports.concord.org/act\""]
+	2220590530960 [label="an external_report with the URL \"https://reports.concord.org/act/changed\""]
+	2220590545936 -> 2220590530960
+	2220590530960 [label="an external_report with the URL \"https://reports.concord.org/act/changed\""]
+	2220570625024 [label="an external_report with the URL \"https://reports.concord.org/seq\""]
+	2220590545936 -> 2220570625024
+	2220570625024 [label="an external_report with the URL \"https://reports.concord.org/seq\""]
+	2220570639472 [label="an external_report with the URL \"https://reports.concord.org/seq/changed\""]
+	2220590545936 -> 2220570639472
+	2220570639472 [label="an external_report with the URL \"https://reports.concord.org/seq/changed\""]
+}

@@ -1,0 +1,10 @@
+// 1998092267632 Context Model
+digraph {
+	1998092268064 [label=Context4]
+	1998092269024 [label="I will choose \"plugins/web_bookmarks/features/fixtures\" from the \"open_directory\" dialog"]
+	1998092268064 -> 1998092269024
+	1998092269024 [label="I will choose \"plugins/web_bookmarks/features/fixtures\" from the \"open_directory\" dialog"]
+	1998092269120 [label="I open a directory"]
+	1998092268064 -> 1998092269120
+	1998092269120 [label="I open a directory"]
+}

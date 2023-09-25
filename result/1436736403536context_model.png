@@ -1,0 +1,10 @@
+// 1436736403008 Context Model
+digraph {
+	1436736403536 [label=Context28]
+	1436736403920 [label="\"alice@alice.alice\" has a public post with text \"Don't reshare this!\""]
+	1436736403536 -> 1436736403920
+	1436736403920 [label="\"alice@alice.alice\" has a public post with text \"Don't reshare this!\""]
+	1436736404016 [label="the post with text \"Don't reshare this!\" is reshared by \"bob@bob.bob\""]
+	1436736403536 -> 1436736404016
+	1436736404016 [label="the post with text \"Don't reshare this!\" is reshared by \"bob@bob.bob\""]
+}

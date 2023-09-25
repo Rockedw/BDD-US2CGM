@@ -1,0 +1,167 @@
+// Goal Model
+digraph {
+	1847125496288 [label="hacker who likes to structure content without clutter
+goal"]
+	1847133564368 [label="be able to organize my collections under a single directory
+goal
+140728069287616"]
+	1847125496288 -> 1847133564368
+	1847133564368 [label="be able to organize my collections under a single directory
+goal"]
+	1847133564464 [label="Custom collections_dir containing only posts
+goal
+140728069287616"]
+	1847133564368 -> 1847133564464
+	1847133564464 [label="Custom collections_dir containing only posts
+goal"]
+	1847133565328 [label="I run jekyll build
+task
+140728069287616"]
+	1847133564464 -> 1847133565328
+	1847133565328 [label="I run jekyll build
+task"]
+	1847133564512 [label="Rendered collection in custom collections_dir also containing posts
+goal
+1847133564272"]
+	1847133564368 -> 1847133564512
+	1847133564512 [label="Rendered collection in custom collections_dir also containing posts
+goal"]
+	1847133564416 [label="I run jekyll build
+task
+140728069287616"]
+	1847133564512 -> 1847133564416
+	1847133564416 [label="I run jekyll build
+task"]
+	1847133564176 [label="Rendered collection in custom collections_dir with posts at the site root
+goal
+1847133564608"]
+	1847133564368 -> 1847133564176
+	1847133564176 [label="Rendered collection in custom collections_dir with posts at the site root
+goal"]
+	1847133564848 [label="I run jekyll build
+task
+140728069287616"]
+	1847133564176 -> 1847133564848
+	1847133564848 [label="I run jekyll build
+task"]
+	1847133565184 [label="Rendered collection in custom collections_dir also containing drafts
+goal
+1847133565712"]
+	1847133564368 -> 1847133565184
+	1847133565184 [label="Rendered collection in custom collections_dir also containing drafts
+goal"]
+	1847133565664 [label="I run jekyll build --drafts
+task
+140728069287616"]
+	1847133565184 -> 1847133565664
+	1847133565664 [label="I run jekyll build --drafts
+task"]
+	1847133565280 [label="Rendered collection in custom collections_dir with drafts at the site root
+goal
+1847133566384"]
+	1847133564368 -> 1847133565280
+	1847133565280 [label="Rendered collection in custom collections_dir with drafts at the site root
+goal"]
+	1847133566336 [label="I run jekyll build --drafts
+task
+140728069287616"]
+	1847133565280 -> 1847133566336
+	1847133566336 [label="I run jekyll build --drafts
+task"]
+	1847133565808 [label="A complex site with collections posts and drafts at various locations
+goal
+1847133567056"]
+	1847133564368 -> 1847133565808
+	1847133565808 [label="A complex site with collections posts and drafts at various locations
+goal"]
+	1847133567008 [label="I run jekyll build --drafts
+task
+140728069287616"]
+	1847133565808 -> 1847133567008
+	1847133567008 [label="I run jekyll build --drafts
+task"]
+	1847133566480 [label="Rendered collection with a document that includes a relative document
+goal
+1847133568784"]
+	1847133564368 -> 1847133566480
+	1847133566480 [label="Rendered collection with a document that includes a relative document
+goal"]
+	1847133568736 [label="I run jekyll build
+task
+140728069287616"]
+	1847133566480 -> 1847133568736
+	1847133568736 [label="I run jekyll build
+task"]
+	1847133567152 [label="Rendered collection in custom collections_dir with a document that includes a relative document
+goal
+1847133979120"]
+	1847133564368 -> 1847133567152
+	1847133567152 [label="Rendered collection in custom collections_dir with a document that includes a relative document
+goal"]
+	1847133979072 [label="I run jekyll build
+task
+140728069287616"]
+	1847133567152 -> 1847133979072
+	1847133979072 [label="I run jekyll build
+task"]
+	1847133568880 [label="Front matter defaults and custom collections directory
+goal
+1847133979792"]
+	1847133564368 -> 1847133568880
+	1847133568880 [label="Front matter defaults and custom collections directory
+goal"]
+	1847133979744 [label="I run jekyll build
+task
+140728069287616"]
+	1847133568880 -> 1847133979744
+	1847133979744 [label="I run jekyll build
+task"]
+	1847133979216 [label="Sort all entries by a Front Matter key defined in all entries
+goal
+1847133980752"]
+	1847133564368 -> 1847133979216
+	1847133979216 [label="Sort all entries by a Front Matter key defined in all entries
+goal"]
+	1847133980704 [label="I run jekyll build
+task
+140728069287616"]
+	1847133979216 -> 1847133980704
+	1847133980704 [label="I run jekyll build
+task"]
+	1847133979888 [label="Sort all entries by a Front Matter key defined in only some entries
+goal
+1847133981424"]
+	1847133564368 -> 1847133979888
+	1847133979888 [label="Sort all entries by a Front Matter key defined in only some entries
+goal"]
+	1847133981376 [label="I run jekyll build
+task
+140728069287616"]
+	1847133979888 -> 1847133981376
+	1847133981376 [label="I run jekyll build
+task"]
+	1847133980848 [label="Manually sort entries
+goal
+1847133982096"]
+	1847133564368 -> 1847133980848
+	1847133980848 [label="Manually sort entries
+goal"]
+	1847133982048 [label="I run jekyll build
+task
+140728069287616"]
+	1847133980848 -> 1847133982048
+	1847133982048 [label="I run jekyll build
+task"]
+	1847133981520 [label="Manually sort some entries
+goal
+1847133982768"]
+	1847133564368 -> 1847133981520
+	1847133981520 [label="Manually sort some entries
+goal"]
+	1847133982720 [label="I run jekyll build
+task
+140728069287616"]
+	1847133981520 -> 1847133982720
+	1847133982720 [label="I run jekyll build
+task"]
+}

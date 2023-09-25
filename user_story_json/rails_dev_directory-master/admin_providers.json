@@ -1,0 +1,129 @@
+{
+    "feature_name": "Admin providers",
+    "user_story": {
+        "as_a": "developer and EY admin",
+        "i_want": "",
+        "so_that": "I can edit database fields within the UI of the site",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a logged in admin user",
+                        "I am on the admin dashboard",
+                        "I follow \"Developers\"",
+                        "I follow \"Add a new developer\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"Company name\" with \"Pullover\"",
+                        "I fill in \"City\" with \"Dublin\"",
+                        "I fill in \"Company email\" with \"paul@rslw.com\"",
+                        "I fill in \"Company website\" with \"http://www.rslw.com\"",
+                        "I press \"Save\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the translation for \"provider.edit\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Pullover\"",
+                        "primary services \"Ruby on Rails, AJAX\"",
+                        "secondary services \"Visual design, UI\"",
+                        "a user \"paul\" belonging to the \"Pullover\" provider",
+                        "a logged in admin user"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the admin dashboard",
+                        "I follow \"Developers\"",
+                        "I follow \"Pullover\"",
+                        "I follow \"Edit developer\""
+                    ],
+                    [
+                        "I fill in \"Company name\" with \"Gown\"",
+                        "I fill in \"Street address\" with \"Market street\"",
+                        "I fill in \"provider[marketing_description]\" with \"Cheap, Fast, Reliable\"",
+                        "I select \"flagged\" from \"Status\"",
+                        "I select \"Paul Campbell\" from \"Account admin\"",
+                        "I check \"Ruby on Rails\"",
+                        "I check \"Visual design\"",
+                        "I press \"Save\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the translation for \"provider.saved_successfully\"",
+                        "I should see \"flagged\"",
+                        "I should see \"Paul Campbell (Account Admin)\"",
+                        "I should see \"Cheap, Fast, Reliable\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Pullover\"",
+                        "a logged in admin user",
+                        "I am on the admin dashboard",
+                        "I follow \"Developers\"",
+                        "I follow \"Pullover\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"Pullover\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Jimbo\"",
+                        "a logged in admin user",
+                        "I am on the admin dashboard"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Developers\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Jimbo\"",
+                        "I should see \"active\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a provider \"HJ\"",
+                        "a logged in admin user",
+                        "I am on the admin dashboard"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Developers\"",
+                        "I follow \"HJ\"",
+                        "I press \"Delete this provider\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Developer deleted successfully\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,87 @@
+{
+    "feature_name": "Showing and opening bookmarks in a tree",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the web bookmarks tree"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Online\" in the tree",
+                        "I should see \"Sample\" in the tree",
+                        "I should not see \"Other\" in the tree"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the web bookmarks tree",
+                        "I expand the tree row \"Online\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Google\" in the tree",
+                        "I should see \"Github\" in the tree"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the web bookmarks tree",
+                        "I activate the \"Sample\" node in the tree"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "my active tab should be \"Sample\"",
+                        "the HTML tab should say \"Hello!!\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the web bookmarks tree",
+                        "I click the project tree tab",
+                        "I click the close button"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the tree width should be the minimum size",
+                        "there should not be a tree titled \"Web Bookmarks\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the web bookmarks tree",
+                        "I click the project tree tab",
+                        "I close the tree"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the tree width should be the minimum size",
+                        "there should not be a tree titled \"Web Bookmarks\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

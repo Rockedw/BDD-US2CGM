@@ -1,0 +1,16 @@
+// 1633820488992 Context Model
+digraph {
+	1633873691360 [label=Context12]
+	1633873691696 [label="I am on the search instructional materials page"]
+	1633873691360 -> 1633873691696
+	1633873691696 [label="I am on the search instructional materials page"]
+	1633873691792 [label="I uncheck \"Sequence\""]
+	1633873691360 -> 1633873691792
+	1633873691792 [label="I uncheck \"Sequence\""]
+	1633873691888 [label="I check \"Temperature\""]
+	1633873691360 -> 1633873691888
+	1633873691888 [label="I check \"Temperature\""]
+	1633873691984 [label="I wait for the search to be ready"]
+	1633873691360 -> 1633873691984
+	1633873691984 [label="I wait for the search to be ready"]
+}

@@ -1,0 +1,42 @@
+{
+    "feature_name": "View placements",
+    "user_story": {
+        "as_a": "Cal Faculty member",
+        "i_want": "see which placements have been made",
+        "so_that": "I can know what kind of schedule students get assigned.",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "the following assignments exist"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to /students/1/semesters/1/placements"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Monday\""
+                    ],
+                    [
+                        "I should see \"8:00 AM to 9:00 AM\""
+                    ],
+                    [
+                        "I should see \"Physics\""
+                    ],
+                    [
+                        "I should see \"High School\""
+                    ],
+                    [
+                        "I should see \"Berkeley High\""
+                    ],
+                    [
+                        "I should see \"Oski Bear\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

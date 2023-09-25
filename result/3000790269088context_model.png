@@ -1,0 +1,22 @@
+// 3000790268176 Context Model
+digraph {
+	3000790269088 [label=Context23]
+	3000790269232 [label="I visit the mobile publisher page"]
+	3000790269088 -> 3000790269232
+	3000790269232 [label="I visit the mobile publisher page"]
+	3000790269328 [label="I append \"I am selecting my friends\" to the publisher"]
+	3000790269088 -> 3000790269328
+	3000790269328 [label="I append \"I am selecting my friends\" to the publisher"]
+	3000790269424 [label="I press the aspect dropdown"]
+	3000790269088 -> 3000790269424
+	3000790269424 [label="I press the aspect dropdown"]
+	3000790269520 [label="I toggle the aspect \"PostingTo\""]
+	3000790269088 -> 3000790269520
+	3000790269520 [label="I toggle the aspect \"PostingTo\""]
+	3000790269616 [label="I toggle the aspect \"Unicorns\""]
+	3000790269088 -> 3000790269616
+	3000790269616 [label="I toggle the aspect \"Unicorns\""]
+	3000790269712 [label="I press the share button"]
+	3000790269088 -> 3000790269712
+	3000790269712 [label="I press the share button"]
+}

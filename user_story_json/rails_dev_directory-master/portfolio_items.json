@@ -1,0 +1,139 @@
+{
+    "feature_name": "Manage Portfolio Items",
+    "user_story": {
+        "as_a": "Provider",
+        "i_want": "be able to create, read, update, and delete portfolio items",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Hashrocket\" belonging to \"Olenska@chicka.net\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the homepage",
+                        "I log in as \"Olenska@chicka.net\" with password \"testtest\"",
+                        "I follow \"Company\"",
+                        "I follow \"You can add one now\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"portfolio_item.year_completed\" translation"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Hashrocket\" belonging to \"Olenska@chicka.net\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the homepage",
+                        "I log in as \"Olenska@chicka.net\" with password \"testtest\"",
+                        "I follow \"navigation.company\" translation",
+                        "I follow \"portfolio_item.manage\" translation",
+                        "I follow \"Add a new project to your portfolio\"",
+                        "I fill in \"Name\" with \"CF Martin\"",
+                        "I fill in \"portfolio_item_url\" with \"http://www.cfmartin.com\"",
+                        "I fill in \"Description\" with \"We really screwed the pooch on that one.\"",
+                        "I select \"2007\" from \"portfolio_item[year_completed]\"",
+                        "I press \"Save\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the translation for \"portfolio_item.saved_successfully\"",
+                        "I should see \"CF Martin\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Hashrocket\" belonging to \"Olenska@chicka.net\"",
+                        "a portfolio item \"Fire and Grace\" belonging to the \"Hashrocket\" provider"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the homepage",
+                        "I log in as \"Olenska@chicka.net\" with password \"testtest\"",
+                        "I follow \"navigation.company\" translation",
+                        "I follow \"portfolio_item.manage\" translation",
+                        "I follow \"Fire and Grace\"",
+                        "I follow \"Edit this portfolio project\"",
+                        "I fill in \"Name\" with \"Tim Stafford\"",
+                        "I fill in \"portfolio_item_url\" with \"http://www.bluehighwayband.com\"",
+                        "I fill in \"Description\" with \"Through the window of a train\"",
+                        "I select \"2005\" from \"portfolio_item[year_completed]\"",
+                        "I press \"Save\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the translation for \"portfolio_item.saved_successfully\"",
+                        "I should see \"Tim Stafford\"",
+                        "I should not see \"Fire and Grace\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Hashrocket\" belonging to \"Olenska@chicka.net\"",
+                        "a portfolio item \"Fire and Grace\" belonging to the \"Hashrocket\" provider"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the homepage",
+                        "I log in as \"Olenska@chicka.net\" with password \"testtest\"",
+                        "I follow \"navigation.company\" translation",
+                        "I follow \"portfolio_item.manage\" translation",
+                        "I follow \"Fire and Grace\"",
+                        "I follow \"Edit this portfolio project\""
+                    ],
+                    [
+                        "I press \"Delete this portfolio project\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Portfolio project deleted successfully\"",
+                        "I should not see \"Fire and Grace\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Hashrocket\" belonging to \"Olenska@chicka.net\"",
+                        "a portfolio item \"Fire and Grace\" belonging to the \"Hashrocket\" provider",
+                        "a portfolio item \"Corn Flakes\" belonging to the \"Hashrocket\" provider",
+                        "a portfolio item \"Sounds True\" belonging to the \"Hashrocket\" provider"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the homepage",
+                        "I log in as \"Olenska@chicka.net\" with password \"testtest\"",
+                        "I follow \"navigation.company\" translation",
+                        "I follow \"portfolio_item.manage\" translation",
+                        "I follow \"Add a new project to your portfolio\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the translation for \"portfolio_item.validations.too_many\"",
+                        "I should not see \"Add a new portfolio item for Hashrocket\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

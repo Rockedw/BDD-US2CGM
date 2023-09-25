@@ -1,0 +1,16 @@
+// 1982166840320 Context Model
+digraph {
+	1982166841568 [label=Context13]
+	1982166832208 [label="I have a _puppies directory"]
+	1982166841568 -> 1982166832208
+	1982166832208 [label="I have a _puppies directory"]
+	1982166831392 [label="I have the following documents under the puppies collection:"]
+	1982166841568 -> 1982166831392
+	1982166831392 [label="I have the following documents under the puppies collection:"]
+	1982166830336 [label="I have a \"_config.yml\" file with content:"]
+	1982166841568 -> 1982166830336
+	1982166830336 [label="I have a \"_config.yml\" file with content:"]
+	1982166836048 [label="I have a \"index.md\" page that contains \"{% for puppy in site.puppies %}<div>{{ puppy.title }}</div>{% endfor %}\""]
+	1982166841568 -> 1982166836048
+	1982166836048 [label="I have a \"index.md\" page that contains \"{% for puppy in site.puppies %}<div>{{ puppy.title }}</div>{% endfor %}\""]
+}

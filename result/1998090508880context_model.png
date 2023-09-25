@@ -1,0 +1,19 @@
+// 1998090509696 Context Model
+digraph {
+	1998090508880 [label=Context1]
+	1998090510080 [label="the application is set up"]
+	1998090508880 -> 1998090510080
+	1998090510080 [label="the application is set up"]
+	1998090511568 [label="a company has been added"]
+	1998090508880 -> 1998090511568
+	1998090511568 [label="a company has been added"]
+	1998090516032 [label="I am a director of the company"]
+	1998090508880 -> 1998090516032
+	1998090516032 [label="I am a director of the company"]
+	1998090507008 [label="there are two other directors of the company"]
+	1998090508880 -> 1998090507008
+	1998090507008 [label="there are two other directors of the company"]
+	1998090503792 [label="the subdomain is the organisation's subdomain"]
+	1998090508880 -> 1998090503792
+	1998090503792 [label="the subdomain is the organisation's subdomain"]
+}

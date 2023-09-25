@@ -1,0 +1,13 @@
+// 1436757576768 Context Model
+digraph {
+	1436757575520 [label=Context53]
+	1436757574512 [label="I have created a cash account in USD"]
+	1436757575520 -> 1436757574512
+	1436757574512 [label="I have created a cash account in USD"]
+	1436757574848 [label="I have created a cash account in CHF"]
+	1436757575520 -> 1436757574848
+	1436757574848 [label="I have created a cash account in CHF"]
+	1436757574944 [label="I have created a cash account in EUR"]
+	1436757575520 -> 1436757574944
+	1436757574944 [label="I have created a cash account in EUR"]
+}

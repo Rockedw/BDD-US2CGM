@@ -1,0 +1,172 @@
+{
+    "feature_name": "generated directory layout",
+    "user_story": {
+        "as_a": "user should be able to",
+        "i_want": "generate a directory layout",
+        "so_that": "start a new gem",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "a directory named 'the-perfect-gem' is created",
+                        "a directory named 'the-perfect-gem/lib' is created",
+                        "a file named 'the-perfect-gem/README.rdoc' is created",
+                        "a file named 'the-perfect-gem/.document' is created",
+                        "a file named 'the-perfect-gem/lib/the-perfect-gem.rb' is created"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a bacon project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "a directory named 'the-perfect-gem/spec' is created",
+                        "a file named 'the-perfect-gem/spec/spec_helper.rb' is created",
+                        "a file named 'the-perfect-gem/spec/the-perfect-gem_spec.rb' is created"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a minitest project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "a directory named 'the-perfect-gem/test' is created",
+                        "a file named 'the-perfect-gem/test/helper.rb' is created",
+                        "a file named 'the-perfect-gem/test/test_the-perfect-gem.rb' is created"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a rspec project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "a directory named 'the-perfect-gem/spec' is created",
+                        "a file named 'the-perfect-gem/spec/spec_helper.rb' is created",
+                        "a file named 'the-perfect-gem/spec/the-perfect-gem_spec.rb' is created"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a shoulda project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "a directory named 'the-perfect-gem/test' is created",
+                        "a file named 'the-perfect-gem/test/helper.rb' is created",
+                        "a file named 'the-perfect-gem/test/test_the-perfect-gem.rb' is created"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "a directory named 'the-perfect-gem/test' is created",
+                        "a file named 'the-perfect-gem/test/helper.rb' is created",
+                        "a file named 'the-perfect-gem/test/test_the-perfect-gem.rb' is created"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a micronaut project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "a directory named 'the-perfect-gem/examples' is created",
+                        "a file named 'the-perfect-gem/examples/example_helper.rb' is created",
+                        "a file named 'the-perfect-gem/examples/the-perfect-gem_example.rb' is created"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a shindo project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "a directory named 'the-perfect-gem/tests' is created",
+                        "a file named 'the-perfect-gem/tests/tests_helper.rb' is created",
+                        "a file named 'the-perfect-gem/tests/the-perfect-gem_tests.rb' is created"
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+// 1436739874592 Context Model
+digraph {
+	1436739875936 [label=Context61]
+	1436739876080 [label="I have a configuration file with \"plugins\" set to \"[jekyll-redirect-from]\""]
+	1436739875936 -> 1436739876080
+	1436739876080 [label="I have a configuration file with \"plugins\" set to \"[jekyll-redirect-from]\""]
+	1436739876176 [label="I have a \"deals.html\" file with content:"]
+	1436739875936 -> 1436739876176
+	1436739876176 [label="I have a \"deals.html\" file with content:"]
+	1436739876272 [label="I have a \"offers.html\" page with permalink \"/offers/\" that contains \"Hurry! Limited time only!\""]
+	1436739875936 -> 1436739876272
+	1436739876272 [label="I have a \"offers.html\" page with permalink \"/offers/\" that contains \"Hurry! Limited time only!\""]
+}

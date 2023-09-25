@@ -1,0 +1,13 @@
+// 3000815618560 Context Model
+digraph {
+	3000815619424 [label=Context59]
+	3000815619568 [label="I have a _posts directory"]
+	3000815619424 -> 3000815619568
+	3000815619568 [label="I have a _posts directory"]
+	3000815619664 [label="I have an \"_posts/2016-01-18-i-am-php.md\" page with permalink \"/2016/i-am-php.php\" that contains \"I am PHP\""]
+	3000815619424 -> 3000815619664
+	3000815619664 [label="I have an \"_posts/2016-01-18-i-am-php.md\" page with permalink \"/2016/i-am-php.php\" that contains \"I am PHP\""]
+	3000815619760 [label="I have a \"i-am-also-php.md\" page with permalink \"/i-am-also-php.php\" that contains \"I am also PHP\""]
+	3000815619424 -> 3000815619760
+	3000815619760 [label="I have a \"i-am-also-php.md\" page with permalink \"/i-am-also-php.php\" that contains \"I am also PHP\""]
+}

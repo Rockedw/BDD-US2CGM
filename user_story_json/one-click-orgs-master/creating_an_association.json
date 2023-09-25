@@ -1,0 +1,64 @@
+{
+    "feature_name": "Creating an association",
+    "user_story": {
+        "as_a": "member of a group",
+        "i_want": "create a One Click Orgs association",
+        "so_that": "get my group up and running quickly",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the new association page",
+                        "I fill in \"First name\" with \"Bob\"",
+                        "I fill in \"Last name\" with \"Smith\"",
+                        "I fill in \"Email address\" with \"bob@example.com\"",
+                        "I fill in \"Choose password\" with \"letmein\"",
+                        "I fill in \"Confirm password\" with \"letmein\"",
+                        "I fill in \"Association's official name\" with \"The Tea Club\"",
+                        "I fill in \"One Click Orgs web address\" with \"tea\"",
+                        "I fill in \"What the Association exists for\" with \"Enjoying tea\"",
+                        "I check \"I agree to the Terms and Conditions of One Click Orgs\"",
+                        "I press \"Create draft constitution\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the constitution page",
+                        "the subdomain should be \"tea\"",
+                        "I should see a welcome notification",
+                        "I should receive a welcome email"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the new association page",
+                        "I follow \"Terms and Conditions\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the One Click Orgs terms and conditions"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the new association page",
+                        "I follow \"Terms and Conditions\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the One Click Orgs terms and conditions"
+                    ]
+                ]
+            }
+        ]
+    }
+}

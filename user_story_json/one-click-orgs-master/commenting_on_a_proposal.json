@@ -1,0 +1,26 @@
+{
+    "feature_name": "Commenting on a proposal",
+    "user_story": {
+        "as_a": "director",
+        "i_want": "leave a comment on a proposal",
+        "so_that": "share my opinions about a proposal",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the proposal page",
+                        "I enter a comment of \"Sounds good to me.\"",
+                        "I press \"Save comment\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the proposal page",
+                        "I should see a comment by me saying \"Sounds good to me.\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

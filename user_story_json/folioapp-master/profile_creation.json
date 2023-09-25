@@ -1,0 +1,47 @@
+{
+    "feature_name": "profile creation",
+    "user_story": {
+        "as_a": "first-time user",
+        "i_want": "fill in my details",
+        "so_that": "have a full profile",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see them on my newly created profile"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I click the 'Toggle Edit' button"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not be able to edit my profile information"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I log out",
+                        "log back in",
+                        "I visit my profile"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "my profile should be uneditable by default"
+                    ]
+                ]
+            }
+        ]
+    }
+}

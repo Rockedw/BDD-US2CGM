@@ -1,0 +1,13 @@
+// 2662358201680 Context Model
+digraph {
+	2662358199472 [label=Context1]
+	2662403286368 [label="the application is set up"]
+	2662358199472 -> 2662403286368
+	2662403286368 [label="the application is set up"]
+	2662403593200 [label="a company has been added"]
+	2662358199472 -> 2662403593200
+	2662403593200 [label="a company has been added"]
+	2662397623168 [label="I have been invited to sign up as a director"]
+	2662358199472 -> 2662397623168
+	2662397623168 [label="I have been invited to sign up as a director"]
+}

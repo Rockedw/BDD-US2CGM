@@ -1,0 +1,10 @@
+// 1911333596960 Context Model
+digraph {
+	1911333517392 [label=Context10]
+	1911333601680 [label="a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\""]
+	1911333517392 -> 1911333601680
+	1911333601680 [label="a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\""]
+	1911333601776 [label="\"alice@alice.alice\" has a public post with text \"check this out!\""]
+	1911333517392 -> 1911333601776
+	1911333601776 [label="\"alice@alice.alice\" has a public post with text \"check this out!\""]
+}

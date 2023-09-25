@@ -1,0 +1,35 @@
+// Goal Model
+digraph {
+	1847117560848 [label="admin
+goal"]
+	1847117743440 [label="change site settings
+goal
+1847117749584"]
+	1847117560848 -> 1847117743440
+	1847117743440 [label="change site settings
+goal"]
+	1847117748960 [label="I go to the edit admin site settings page
+task
+140728069287616"]
+	1847117743440 -> 1847117748960
+	1847117748960 [label="I go to the edit admin site settings page
+task"]
+	1847117750400 [label="I check \"Enable beta invites?\"
+task
+140728069287616"]
+	1847117743440 -> 1847117750400
+	1847117750400 [label="I check \"Enable beta invites?\"
+task"]
+	1847117750976 [label="I press \"Update\"
+task
+140728069287616"]
+	1847117743440 -> 1847117750976
+	1847117750976 [label="I press \"Update\"
+task"]
+	1847117748144 [label="I follow \"Invites\"
+task
+140728069287616"]
+	1847117743440 -> 1847117748144
+	1847117748144 [label="I follow \"Invites\"
+task"]
+}

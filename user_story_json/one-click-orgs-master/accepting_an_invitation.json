@@ -1,0 +1,31 @@
+{
+    "feature_name": "Accepting an invitation",
+    "user_story": {
+        "as_a": "new director",
+        "i_want": "accept an invitation to sign up",
+        "so_that": "participate in company",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have received an email inviting me to sign up as a director"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow the invitation link in the email",
+                        "I fill in \"Password\" with \"letmein\"",
+                        "I fill in \"Password confirmation\" with \"letmein\"",
+                        "I press \"Continue\"",
+                        "I press \"I accept these terms\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Votes & Minutes page"
+                    ]
+                ]
+            }
+        ]
+    }
+}

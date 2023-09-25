@@ -1,0 +1,211 @@
+{
+    "feature_name": "Two-factor autentication",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a user with email \"alice@test.com\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"alice@test.com\""
+                    ],
+                    [
+                        "I go to the two-factor authentication page",
+                        "I press \"Activate\""
+                    ],
+                    [
+                        "I scan the QR code and fill in a valid TOTP token for \"alice@test.com\"",
+                        "I press \"Confirm and activate\""
+                    ],
+                    [
+                        "I confirm activation"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Confirm activation\""
+                    ],
+                    [
+                        "I should see \"Two-factor authentication activated\"",
+                        "I should see \"Recovery codes\""
+                    ],
+                    [
+                        "I should see \"Two-factor authentication activated\"",
+                        "I should see \"Deactivate\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a user with username \"alice\" and password \"secret\"",
+                        "2fa is activated for \"alice\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the login page",
+                        "I fill in username \"alice\" and password \"secret\"",
+                        "press \"Sign in\""
+                    ],
+                    [
+                        "I fill in a valid TOTP token for \"alice\"",
+                        "I press \"Sign in\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Two-factor authentication\""
+                    ],
+                    [
+                        "I should be on the stream page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a user with username \"alice\" and password \"secret\"",
+                        "2fa is activated for \"alice\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the login page",
+                        "I fill in username \"alice\" and password \"secret\"",
+                        "press \"Sign in\""
+                    ],
+                    [
+                        "I fill in an invalid TOTP token",
+                        "I press \"Sign in\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Two-factor authentication\""
+                    ],
+                    [
+                        "I should see \"Two-factor authentication\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a user with username \"alice\" and password \"secret\"",
+                        "2fa is activated for \"alice\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the login page",
+                        "I fill in username \"alice\" and password \"secret\"",
+                        "press \"Sign in\""
+                    ],
+                    [
+                        "I fill in a recovery code from \"alice\"",
+                        "I press \"Sign in\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Two-factor authentication\""
+                    ],
+                    [
+                        "I should be on the stream page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a user with email \"alice@test.com\"",
+                        "2fa is activated for \"alice@test.com\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"alice@test.com\""
+                    ],
+                    [
+                        "I go to the two-factor authentication page"
+                    ],
+                    [
+                        "I press the recovery code generate button"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Generate new recovery codes\""
+                    ],
+                    [
+                        "I should see a list of recovery codes"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a user with email \"alice@test.com\"",
+                        "2fa is activated for \"alice@test.com\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"alice@test.com\""
+                    ],
+                    [
+                        "I go to the two-factor authentication page"
+                    ],
+                    [
+                        "I put in my password in \"two_factor_authentication_password\"",
+                        "I press \"Deactivate\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Deactivate\""
+                    ],
+                    [
+                        "I should see \"Two-factor authentication not activated\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a user with email \"alice@test.com\"",
+                        "2fa is activated for \"alice@test.com\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"alice@test.com\""
+                    ],
+                    [
+                        "I go to the two-factor authentication page"
+                    ],
+                    [
+                        "I fill in \"two_factor_authentication_password\" with \"incorrect\"",
+                        "I press \"Deactivate\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Deactivate\""
+                    ],
+                    [
+                        "I should see \"Two-factor authentication activated\"",
+                        "I should see \"Deactivate\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

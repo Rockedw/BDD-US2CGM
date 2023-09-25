@@ -1,0 +1,13 @@
+// 1911333045872 Context Model
+digraph {
+	1911333048992 [label=Context7]
+	1911333050240 [label="a nsfw user with email \"tommy@nsfw.example.com\""]
+	1911333048992 -> 1911333050240
+	1911333050240 [label="a nsfw user with email \"tommy@nsfw.example.com\""]
+	1911333050336 [label="a user with email \"laura@office.example.com\""]
+	1911333048992 -> 1911333050336
+	1911333050336 [label="a user with email \"laura@office.example.com\""]
+	1911333050432 [label="a user with email \"laura@office.example.com\" is connected with \"tommy@nsfw.example.com\""]
+	1911333048992 -> 1911333050432
+	1911333050432 [label="a user with email \"laura@office.example.com\" is connected with \"tommy@nsfw.example.com\""]
+}

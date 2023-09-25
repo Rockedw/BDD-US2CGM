@@ -1,0 +1,41 @@
+// Goal Model
+digraph {
+	1847125303232 [label="member of the group
+goal"]
+	1847134712640 [label="accept an invitation to become a founding member
+goal
+1847134712016"]
+	1847125303232 -> 1847134712640
+	1847134712640 [label="accept an invitation to become a founding member
+goal"]
+	1847134710384 [label="I follow the invitation link in the email
+task
+140728069287616"]
+	1847134712640 -> 1847134710384
+	1847134710384 [label="I follow the invitation link in the email
+task"]
+	1847134710192 [label="I fill in \"Password\" with \"letmein\"
+task
+140728069287616"]
+	1847134712640 -> 1847134710192
+	1847134710192 [label="I fill in \"Password\" with \"letmein\"
+task"]
+	1847134712928 [label="I fill in \"Password confirmation\" with \"letmein\"
+task
+140728069287616"]
+	1847134712640 -> 1847134712928
+	1847134712928 [label="I fill in \"Password confirmation\" with \"letmein\"
+task"]
+	1847134709808 [label="I press \"Continue\"
+task
+140728069287616"]
+	1847134712640 -> 1847134709808
+	1847134709808 [label="I press \"Continue\"
+task"]
+	1847134709184 [label="I press \"I accept these terms\"
+task
+140728069287616"]
+	1847134712640 -> 1847134709184
+	1847134709184 [label="I press \"I accept these terms\"
+task"]
+}

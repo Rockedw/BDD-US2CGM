@@ -1,0 +1,160 @@
+{
+    "feature_name": "Param the new database",
+    "user_story": {
+        "as_a": "administrator autmated the manual installation steps.",
+        "i_want": "",
+        "so_that": "have a coherent installation",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I create database \"openerp_test_customer\" with admin password \"admin\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I update the module list"
+                    ],
+                    [
+                        "I install the required modules with dependencies:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "my modules should have been installed and models reloaded"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "we select users below:"
+                    ],
+                    [
+                        "I need a \"res.users\" with oid: scen.fr_main_user",
+                        "having:",
+                        "we assign to user the groups bellow"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "we assign all groups to the users"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I install the following languages:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "the language should be available"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"res.lang\" with code: en_US",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"res.lang\" with code: fr_FR",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"res.lang\" with code: de_DE",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"res.lang\" with code: it_IT",
+                        "having:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"account.fiscalyear\" with oid: scenario.fy2013",
+                        "having:",
+                        "I create monthly periods on the fiscal year with reference \"scenario.fy2013\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I find a \"account.fiscalyear\" with oid: scenario.fy2012"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have the module account installed",
+                        "no account set",
+                        "I want to generate account chart from chart template named \"Plan comptable STERCHI\" with \"0\" digits"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate the chart"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "accounts should be available"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"res.company\" with oid: base.main_company",
+                        "having:"
+                    ],
+                    [
+                        "the company has the \"logo.png\" logo",
+                        "the company currency is \"CHF\" with a rate of \"1.00\""
+                    ],
+                    [
+                        "I need a \"res.partner\" with oid: base.main_partner",
+                        "having:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"res.company\" with oid: base.main_company",
+                        "I set the webkit path to \"/srv/openerp/webkit_library/wkhtmltopdf-amd64\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"res.partner.bank\" with oid: scen.main_bank",
+                        "having:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            }
+        ]
+    }
+}

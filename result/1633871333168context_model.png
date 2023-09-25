@@ -1,0 +1,16 @@
+// 1633871344880 Context Model
+digraph {
+	1633871333168 [label=Context7]
+	1633871278528 [label="following users exist:"]
+	1633871333168 -> 1633871278528
+	1633871278528 [label="following users exist:"]
+	1633827987968 [label="a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\""]
+	1633871333168 -> 1633827987968
+	1633827987968 [label="a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\""]
+	1633827985760 [label="I sign in as \"bob@bob.bob\""]
+	1633871333168 -> 1633827985760
+	1633827985760 [label="I sign in as \"bob@bob.bob\""]
+	1633827987008 [label="I should not see any posts in my stream"]
+	1633871333168 -> 1633827987008
+	1633827987008 [label="I should not see any posts in my stream"]
+}

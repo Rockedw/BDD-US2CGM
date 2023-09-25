@@ -1,0 +1,10 @@
+// 1998091129456 Context Model
+digraph {
+	1998091137616 [label=Context105]
+	1998091140928 [label="I need a \"account.account\" with oid: scen.acc_bank_eur"]
+	1998091137616 -> 1998091140928
+	1998091140928 [label="I need a \"account.account\" with oid: scen.acc_bank_eur"]
+	1998091140352 [label="having:"]
+	1998091137616 -> 1998091140352
+	1998091140352 [label="having:"]
+}

@@ -1,0 +1,49 @@
+{
+    "feature_name": "Request an Endorsement",
+    "user_story": {
+        "as_a": "Provider",
+        "i_want": "be able to request that former customers endorse my services",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Hashrocket\" belonging to \"Olenska@chicka.net\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the homepage",
+                        "I log in as \"Olenska@chicka.net\" with password \"testtest\""
+                    ],
+                    [
+                        "I follow \"Ask a customer for an endorsement\"",
+                        "I fill in \"endorsement_request[recipient_addresses]\" with \"Brian Flanagan <btflanagan@gmail.com>, Walter Sobchak <wsobchak@sobchaksecurity.us>, Ezra Gustafson <ezra.gustafson@gmail.com>\"",
+                        "I fill in \"endorsement_request[message]\" with \"Hi Friends and Loved Ones!\"",
+                        "I press \"endorsement_request_submit\""
+                    ],
+                    [
+                        "I follow \"dashboard.all_endorsements\" translation"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Ask a customer for an endorsement\""
+                    ],
+                    [
+                        "I should see \"endorsement_request.submission.thanks_for_requesting\" translation",
+                        "I should see \"Brian Flanagan\"",
+                        "I should see \"Walter Sobchak\"",
+                        "I should see \"Ezra Gustafson\""
+                    ],
+                    [
+                        "I should see \"Brian Flanagan\"",
+                        "I should see \"Walter Sobchak\"",
+                        "I should see \"Ezra Gustafson\"",
+                        "I should see \"Hi Friends and Loved Ones!\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

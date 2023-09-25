@@ -1,0 +1,22 @@
+// 1911333234256 Context Model
+digraph {
+	1911333225088 [label=Context3]
+	1911333233776 [label="a user named \"Bob Jones\" with email \"bob@bob.bob\""]
+	1911333225088 -> 1911333233776
+	1911333233776 [label="a user named \"Bob Jones\" with email \"bob@bob.bob\""]
+	1911333231136 [label="\"bob@bob.bob\" has a public post with text \"public stuff #hashtag\""]
+	1911333225088 -> 1911333231136
+	1911333231136 [label="\"bob@bob.bob\" has a public post with text \"public stuff #hashtag\""]
+	1911333231040 [label="a user named \"Alice\" with email \"alice@alice.alice\""]
+	1911333225088 -> 1911333231040
+	1911333231040 [label="a user named \"Alice\" with email \"alice@alice.alice\""]
+	1911333233248 [label="\"alice@alice.alice\" has a public post with text \"alice public stuff\""]
+	1911333225088 -> 1911333233248
+	1911333233248 [label="\"alice@alice.alice\" has a public post with text \"alice public stuff\""]
+	1911333229744 [label="the post with text \"public stuff #hashtag\" is reshared by \"alice@alice.alice\""]
+	1911333225088 -> 1911333229744
+	1911333229744 [label="the post with text \"public stuff #hashtag\" is reshared by \"alice@alice.alice\""]
+	1911333226000 [label="the post with text \"alice public stuff\" is reshared by \"bob@bob.bob\""]
+	1911333225088 -> 1911333226000
+	1911333226000 [label="the post with text \"alice public stuff\" is reshared by \"bob@bob.bob\""]
+}

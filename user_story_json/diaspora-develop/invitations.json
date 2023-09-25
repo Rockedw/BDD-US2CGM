@@ -1,0 +1,36 @@
+{
+    "feature_name": "Invitations",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have been invited by \"alice@alice.alice\"",
+                        "I am on my acceptance form page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in the new user form",
+                        "I press \"Create account\""
+                    ],
+                    [
+                        "I select \"Family\" from \"user_aspects\" within \"#hello-there\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the \"welcome to diaspora\" message",
+                        "I should be able to friend \"alice@alice.alice\""
+                    ],
+                    [
+                        "the aspect dropdown within \"#hello-there\" should be labeled \"Family\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

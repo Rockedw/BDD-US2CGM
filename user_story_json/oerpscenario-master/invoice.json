@@ -1,0 +1,165 @@
+{
+    "feature_name": "Test the invoicing process",
+    "user_story": {
+        "as_a": "",
+        "i_want": "see if the features work correctly",
+        "so_that": "test the invoicing process and modules",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have recorded on the 1 jan 2009 an invoice (in_invoice) of 1000,0 CHF without tax called MySupplierInvoice"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press the validate button"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the invoice MySupplierInvoice open",
+                        "the residual amount = 1000,0"
+                    ],
+                    [
+                        "I should have a linked account move with 2 lines and a posted status",
+                        "the associated debit account move line should use the account choosen in the invoice line and have the following values:",
+                        "the associated credit account move line should use the account of the partner account payable property and have the following values:"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I take the created invoice MySupplierInvoice",
+                        "the entries on the invoice related journal can be cancelled"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press the cancel button"
+                    ],
+                    [
+                        "I press the set to draft button"
+                    ],
+                    [
+                        "I change the currency to EUR",
+                        "I press the validate button"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the invoice MySupplierInvoice cancel",
+                        "no more link on an account move"
+                    ],
+                    [
+                        "I should see the invoice MySupplierInvoice draft"
+                    ],
+                    [
+                        "I should see the invoice MySupplierInvoice open",
+                        "the residual amount = 1000,0"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have recorded on the 11 oct 2009 an invoice (in_invoice) of 1144.0 CHF without tax called MySupplierInvoiceRounding",
+                        "I add a line called MyFirstLine on the last created invoice of 91.73",
+                        "I add a line called MySecondLine on the last created invoice of 63.00",
+                        "I correct the total amount of the invoice according to changes"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press the validate button"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the invoice MySupplierInvoiceRounding open",
+                        "the total credit amount must be equal to the total debit amount",
+                        "the total amount convert into company currency must be same amount than the credit line on the payable/receivable account"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have recorded on the 1 jan 2009 an invoice (in_invoice) of 1000,0 CHF without tax called MySupplierInvoicePartialCancel"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press the validate button"
+                    ],
+                    [
+                        "I call the Pay invoice wizard",
+                        "I partially pay 200.0 CHF.- on the 10 jan 2009"
+                    ],
+                    [
+                        "I press the cancel button it should raise a warning",
+                        "because the invoice is partially reconciled the payments lines should be kept",
+                        "I should see the invoice MySupplierInvoice open"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the invoice MySupplierInvoicePartialCancel open",
+                        "the residual amount = 1000,0"
+                    ],
+                    [
+                        "I should see a residual amount of 800.0 CHF.-"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have recorded on the 10 sept 2009 an invoice (in_invoice) of 1000.0 CHF without tax called MySupplierInvoiceTax",
+                        "I add a line with tax called MyTaxLine on the last created invoice of 12156.0 with the tax called 'Buy 19.6%'"
+                    ],
+                    [
+                        "I correct the total amount of the invoice according to changes"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I compute the taxes on invoice"
+                    ],
+                    [
+                        "I modify the tax amount to 2382.55"
+                    ],
+                    [
+                        "I press the validate button"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should have a invoice tax line with a base amount of 12156.0",
+                        "a tax amount of 2382.58"
+                    ],
+                    [
+                        "I should have a invoice tax line with a base amount of 12156.0",
+                        "a tax amount of 2382.55",
+                        "a tax code amount of -1588.37",
+                        "a tax base amount of -8104.0"
+                    ],
+                    [
+                        "I should see the invoice MySupplierInvoiceTax open",
+                        "I should have a linked account move with 4 lines and a posted status"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have recorded recorded on the 10 sept 2009 a list of 10000 an invoice (in_invoice) of 1000.0 EUR"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            }
+        ]
+    }
+}

@@ -1,0 +1,172 @@
+{
+    "feature_name": "Clear Line",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I start recording a macro",
+                        "I type \"hi there \"",
+                        "I stop recording a macro",
+                        "I run the last recorded macro"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"hi there hi there \""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I type \"hello\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 5"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I type \"hello\"",
+                        "I move left",
+                        "I move left",
+                        "I move left"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 2"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"foo bar baz\"",
+                        "I move the cursor to 0",
+                        "I start recording a macro",
+                        "I move right",
+                        "I move right",
+                        "I move right",
+                        "I move right",
+                        "I stop recording a macro",
+                        "I run the last recorded macro"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the cursor should be at 8"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I start recording a macro",
+                        "I type \"foo\"",
+                        "I move left",
+                        "I type \"X\"",
+                        "I move right",
+                        "I stop recording a macro",
+                        "I run the last recorded macro"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"foXofoXo\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"foo\\nbar\\nbaz\\n\"",
+                        "I move the cursor to 1",
+                        "I start recording a macro",
+                        "I trim the line",
+                        "I move down",
+                        "I stop recording a macro",
+                        "I run the last recorded macro"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"f\\nb\\nbaz\\n\"",
+                        "the cursor should be at 5"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"foo\\nbar\\nbaz\\nqux\\nquux\"",
+                        "I move the cursor to 1",
+                        "I start recording a macro",
+                        "I trim the line",
+                        "I move down",
+                        "I stop recording a macro",
+                        "I run the last recorded macro",
+                        "I run the last recorded macro"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"f\\nb\\nb\\nqux\\nquux\"",
+                        "the cursor should be at 7"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "tabs are soft, 4 spaces",
+                        "I start recording a macro",
+                        "I type \"a\\tb\"",
+                        "I stop recording a macro",
+                        "I run the last recorded macro"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"a   ba  b\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"foo\"",
+                        "I move the cursor to 0",
+                        "I start recording a macro",
+                        "I delete",
+                        "I stop recording a macro",
+                        "I run the last recorded macro"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"o\"",
+                        "the cursor should be at 0"
+                    ]
+                ]
+            }
+        ]
+    }
+}

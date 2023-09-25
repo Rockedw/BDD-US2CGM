@@ -1,0 +1,50 @@
+{
+    "feature_name": "uploader with file storage and versions with overridden store dir",
+    "user_story": {
+        "as_a": "developer using CarrierWave",
+        "i_want": "upload files to the filesystem",
+        "so_that": "be awesome",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I cache the file 'fixtures/bork.txt'"
+                    ],
+                    [
+                        "I store the file"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be a file called 'bork.txt' somewhere in a subdirectory of 'public/uploads/tmp'"
+                    ],
+                    [
+                        "there should be a file called 'thumb_bork.txt' somewhere in a subdirectory of 'public/uploads/tmp'"
+                    ],
+                    [
+                        "there should be a file called 'small_thumb_bork.txt' somewhere in a subdirectory of 'public/uploads/tmp'",
+                        "the file called 'bork.txt' in a subdirectory of 'public/uploads/tmp' should be identical to the file at 'fixtures/bork.txt'",
+                        "the file called 'thumb_bork.txt' in a subdirectory of 'public/uploads/tmp' should be identical to the file at 'fixtures/upcased_bork.txt'",
+                        "the file called 'small_thumb_bork.txt' in a subdirectory of 'public/uploads/tmp' should be identical to the file at 'fixtures/upcased_bork.txt'",
+                        "there should not be a file at 'public/uploads/bork.txt'",
+                        "there should not be a file at 'public/monkey/llama/thumb_bork.txt'",
+                        "there should not be a file at 'public/monkey/toro/small_thumb_bork.txt'"
+                    ],
+                    [
+                        "there should be a file at 'public/uploads/bork.txt'"
+                    ],
+                    [
+                        "there should be a file at 'public/monkey/llama/thumb_bork.txt'"
+                    ],
+                    [
+                        "there should be a file at 'public/monkey/toro/small_thumb_bork.txt'",
+                        "the file at 'public/uploads/bork.txt' should be identical to the file at 'fixtures/bork.txt'",
+                        "the file at 'public/monkey/llama/thumb_bork.txt' should be identical to the file at 'fixtures/upcased_bork.txt'",
+                        "the file at 'public/monkey/toro/small_thumb_bork.txt' should be identical to the file at 'fixtures/upcased_bork.txt'"
+                    ]
+                ]
+            }
+        ]
+    }
+}

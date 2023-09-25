@@ -1,0 +1,13 @@
+// 1911276918272 Context Model
+digraph {
+	1911276917648 [label=Context3]
+	1911298715664 [label="I am signed up as a student advisor"]
+	1911276917648 -> 1911298715664
+	1911298715664 [label="I am signed up as a student advisor"]
+	1911298719072 [label="I am logged in as myemail@nowhere.com"]
+	1911276917648 -> 1911298719072
+	1911298719072 [label="I am logged in as myemail@nowhere.com"]
+	1911298709328 [label="the following semesters exist"]
+	1911276917648 -> 1911298709328
+	1911298709328 [label="the following semesters exist"]
+}

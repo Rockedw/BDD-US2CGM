@@ -1,0 +1,47 @@
+// Goal Model
+digraph {
+	1847134113456 [label="hacker
+goal"]
+	1847134386928 [label="specify my own plugins that can modify Jekyll's behaviour
+goal
+140728069287616"]
+	1847134113456 -> 1847134386928
+	1847134386928 [label="specify my own plugins that can modify Jekyll's behaviour
+goal"]
+	1847134386640 [label="Add a gem-based plugin
+goal
+1847134386544"]
+	1847134386928 -> 1847134386640
+	1847134386640 [label="Add a gem-based plugin
+goal"]
+	1847134387120 [label="I run jekyll build
+task
+140728069287616"]
+	1847134386640 -> 1847134387120
+	1847134387120 [label="I run jekyll build
+task"]
+	1847134387216 [label="Add an empty whitelist to restrict all gems
+goal
+1847134386688"]
+	1847134386928 -> 1847134387216
+	1847134387216 [label="Add an empty whitelist to restrict all gems
+goal"]
+	1847134386496 [label="I run jekyll build --safe
+task
+140728069287616"]
+	1847134387216 -> 1847134386496
+	1847134386496 [label="I run jekyll build --safe
+task"]
+	1847134387456 [label="Add a whitelist to restrict some gems but allow others
+goal
+1847134386880"]
+	1847134386928 -> 1847134387456
+	1847134387456 [label="Add a whitelist to restrict some gems but allow others
+goal"]
+	1847134387024 [label="I run jekyll build --safe
+task
+140728069287616"]
+	1847134387456 -> 1847134387024
+	1847134387024 [label="I run jekyll build --safe
+task"]
+}

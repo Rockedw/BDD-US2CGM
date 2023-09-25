@@ -1,0 +1,10 @@
+// 2220571958416 Context Model
+digraph {
+	2220571952272 [label=Context3]
+	2220571958944 [label="I have configured a Liberapay username"]
+	2220571952272 -> 2220571958944
+	2220571958944 [label="I have configured a Liberapay username"]
+	2220571965616 [label="I go to the home page"]
+	2220571952272 -> 2220571965616
+	2220571965616 [label="I go to the home page"]
+}

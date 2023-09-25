@@ -1,0 +1,16 @@
+// 1982166839264 Context Model
+digraph {
+	1982166842912 [label=Context39]
+	1982166841280 [label="the content is:"]
+	1982166842912 -> 1982166841280
+	1982166841280 [label="the content is:"]
+	1982166842768 [label="I select from (1,11) to (0,2)"]
+	1982166842912 -> 1982166842768
+	1982166842768 [label="I select from (1,11) to (0,2)"]
+	1982166842384 [label="I switch the language to \"Ruby\""]
+	1982166842912 -> 1982166842384
+	1982166842384 [label="I switch the language to \"Ruby\""]
+	1982166842288 [label="I toggle comment lines"]
+	1982166842912 -> 1982166842288
+	1982166842288 [label="I toggle comment lines"]
+}

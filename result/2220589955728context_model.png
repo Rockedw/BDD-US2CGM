@@ -1,0 +1,19 @@
+// 2220589954672 Context Model
+digraph {
+	2220589955728 [label=Context5]
+	2220589955872 [label="I have a configuration file with \"theme\" set to \"test-theme\""]
+	2220589955728 -> 2220589955872
+	2220589955872 [label="I have a configuration file with \"theme\" set to \"test-theme\""]
+	2220589955968 [label="I have an _layouts directory"]
+	2220589955728 -> 2220589955968
+	2220589955968 [label="I have an _layouts directory"]
+	2220589956064 [label="I have an \"_layouts/post.html\" file that contains \"post.html from the project: {{ content }}\""]
+	2220589955728 -> 2220589956064
+	2220589956064 [label="I have an \"_layouts/post.html\" file that contains \"post.html from the project: {{ content }}\""]
+	2220589956160 [label="I have an \"index.html\" page with layout \"default\" that contains \"I'm content.\""]
+	2220589955728 -> 2220589956160
+	2220589956160 [label="I have an \"index.html\" page with layout \"default\" that contains \"I'm content.\""]
+	2220589956256 [label="I have a \"post.html\" page with layout \"post\" that contains \"I'm more content.\""]
+	2220589955728 -> 2220589956256
+	2220589956256 [label="I have a \"post.html\" page with layout \"post\" that contains \"I'm more content.\""]
+}

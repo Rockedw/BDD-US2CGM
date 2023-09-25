@@ -1,0 +1,31 @@
+// 1998092476928 Context Model
+digraph {
+	1998092478464 [label=Context19]
+	1998092478608 [label="I have a _layouts directory"]
+	1998092478464 -> 1998092478608
+	1998092478608 [label="I have a _layouts directory"]
+	1998092478704 [label="I have a \"_layouts/meme.html\" file with content:"]
+	1998092478464 -> 1998092478704
+	1998092478704 [label="I have a \"_layouts/meme.html\" file with content:"]
+	1998092478800 [label="I have a \"_config.yml\" file with content:"]
+	1998092478464 -> 1998092478800
+	1998092478800 [label="I have a \"_config.yml\" file with content:"]
+	1998092478896 [label="I have a _memes directory"]
+	1998092478464 -> 1998092478896
+	1998092478896 [label="I have a _memes directory"]
+	1998092478992 [label="I have a \"_memes/doc1.md\" file with content:"]
+	1998092478464 -> 1998092478992
+	1998092478992 [label="I have a \"_memes/doc1.md\" file with content:"]
+	1998092479088 [label="I have a _posts directory"]
+	1998092478464 -> 1998092479088
+	1998092479088 [label="I have a _posts directory"]
+	1998092479184 [label="I have a \"_posts/2016-01-01-example.md\" file with content:"]
+	1998092478464 -> 1998092479184
+	1998092479184 [label="I have a \"_posts/2016-01-01-example.md\" file with content:"]
+	1998092479280 [label="I have a _plugins directory"]
+	1998092478464 -> 1998092479280
+	1998092479280 [label="I have a _plugins directory"]
+	1998092479376 [label="I have a \"_plugins/ext.rb\" file with content:"]
+	1998092478464 -> 1998092479376
+	1998092479376 [label="I have a \"_plugins/ext.rb\" file with content:"]
+}

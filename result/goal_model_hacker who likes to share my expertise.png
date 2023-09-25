@@ -1,0 +1,161 @@
+// Goal Model
+digraph {
+	1847134387600 [label="hacker who likes to share my expertise
+goal"]
+	1847134387888 [label=" make something
+goal
+140728069287616"]
+	1847134387600 -> 1847134387888
+	1847134387888 [label=" make something
+goal"]
+	1847134459680 [label="be able to make a gemified theme
+goal
+140728069287616"]
+	1847134387888 -> 1847134459680
+	1847134459680 [label="be able to make a gemified theme
+goal"]
+	1847134457904 [label="A theme with SCSS
+goal
+1847134459056"]
+	1847134459680 -> 1847134457904
+	1847134457904 [label="A theme with SCSS
+goal"]
+	1847134460208 [label="A theme with an include
+goal
+1847134459152"]
+	1847134459680 -> 1847134460208
+	1847134460208 [label="A theme with an include
+goal"]
+	1847134459584 [label="A theme without data
+goal
+1847134460592"]
+	1847134459680 -> 1847134459584
+	1847134459584 [label="A theme without data
+goal"]
+	1847134459440 [label="A theme with data overridden by data in source directory
+goal
+1847134461168"]
+	1847134459680 -> 1847134459440
+	1847134459440 [label="A theme with data overridden by data in source directory
+goal"]
+	1847134460688 [label="A theme with a layout
+goal
+1847134461744"]
+	1847134459680 -> 1847134460688
+	1847134460688 [label="A theme with a layout
+goal"]
+	1847134461264 [label="A theme with assets
+goal
+1847134462416"]
+	1847134459680 -> 1847134461264
+	1847134461264 [label="A theme with assets
+goal"]
+	1847134461840 [label="A theme with *just* layouts
+goal
+1847134462992"]
+	1847134459680 -> 1847134461840
+	1847134461840 [label="A theme with *just* layouts
+goal"]
+	1847134463760 [label=" generate scaffold
+goal
+140728069287616"]
+	1847134459680 -> 1847134463760
+	1847134463760 [label=" generate scaffold
+goal"]
+	1847134459248 [label="Generating a new theme scaffold
+goal
+140728069287616"]
+	1847134463760 -> 1847134459248
+	1847134459248 [label="Generating a new theme scaffold
+goal"]
+	1847134459872 [label="Generating a new theme scaffold with a code of conduct
+goal
+140728069287616"]
+	1847134463760 -> 1847134459872
+	1847134459872 [label="Generating a new theme scaffold with a code of conduct
+goal"]
+	1847134458384 [label="Overriding a theme with SCSS
+goal
+1847134459344"]
+	1847134459680 -> 1847134458384
+	1847134458384 [label="Overriding a theme with SCSS
+goal"]
+	1847134462512 [label="Requiring dependencies of a theme
+goal
+1847134463376"]
+	1847134459680 -> 1847134462512
+	1847134462512 [label="Requiring dependencies of a theme
+goal"]
+	1847134465536 [label="that put it
+goal
+140728069287616"]
+	1847134459680 -> 1847134465536
+	1847134465536 [label="that put it
+goal"]
+	1847134463088 [label="Complicated site that puts it all together
+goal
+1847134463664"]
+	1847134465536 -> 1847134463088
+	1847134463088 [label="Complicated site that puts it all together
+goal"]
+	1847134463472 [label="Complicated site that puts it all together in respect to data folders
+goal
+1847134464528"]
+	1847134465536 -> 1847134463472
+	1847134463472 [label="Complicated site that puts it all together in respect to data folders
+goal"]
+	1847134459824 [label="be able to make a bonafide rubygem off my theme
+goal
+140728069287616"]
+	1847134387888 -> 1847134459824
+	1847134459824 [label="be able to make a bonafide rubygem off my theme
+goal"]
+	1847134464624 [label="Generating a new Jekyll Theme
+goal
+140728069287616"]
+	1847134459824 -> 1847134464624
+	1847134464624 [label="Generating a new Jekyll Theme
+goal"]
+	1847134465056 [label="Checking if a bonafide Theme gem will be built from generated scaffolding
+goal
+140728069287616"]
+	1847134459824 -> 1847134465056
+	1847134465056 [label="Checking if a bonafide Theme gem will be built from generated scaffolding
+goal"]
+	1847134468320 [label="I run something
+goal
+140728069287616"]
+	1847134465056 -> 1847134468320
+	1847134468320 [label="I run something
+goal"]
+	1847134465200 [label="I run jekyll new-theme my-cool-theme
+task
+140728069287616"]
+	1847134468320 -> 1847134465200
+	1847134465200 [label="I run jekyll new-theme my-cool-theme
+task"]
+	1847134465296 [label="I run git add .
+task
+140728069287616"]
+	1847134468320 -> 1847134465296
+	1847134465296 [label="I run git add .
+task"]
+	1847134465344 [label="I run gem build --force my-cool-theme.gemspec
+task
+140728069287616"]
+	1847134468320 -> 1847134465344
+	1847134465344 [label="I run gem build --force my-cool-theme.gemspec
+task"]
+	1847134465392 [label="I run gem unpack my-cool-theme-0.1.0.gem
+task
+140728069287616"]
+	1847134468320 -> 1847134465392
+	1847134465392 [label="I run gem unpack my-cool-theme-0.1.0.gem
+task"]
+	1847134465248 [label="I decide to build the theme gem
+task
+140728069287616"]
+	1847134465056 -> 1847134465248
+	1847134465248 [label="I decide to build the theme gem
+task"]
+}

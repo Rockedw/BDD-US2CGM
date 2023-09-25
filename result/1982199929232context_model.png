@@ -1,0 +1,10 @@
+// 1982199933744 Context Model
+digraph {
+	1982199929232 [label=Context2]
+	1982199931872 [label="I post an extremely long status message"]
+	1982199929232 -> 1982199931872
+	1982199931872 [label="I post an extremely long status message"]
+	1982199931632 [label="I go to the home page"]
+	1982199929232 -> 1982199931632
+	1982199931632 [label="I go to the home page"]
+}

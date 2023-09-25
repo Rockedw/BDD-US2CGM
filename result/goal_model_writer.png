@@ -1,0 +1,29 @@
+// Goal Model
+digraph {
+	1847133284400 [label="writer
+goal"]
+	1847133167936 [label="upload text to a collection on my profile
+goal
+1847133164432"]
+	1847133284400 -> 1847133167936
+	1847133167936 [label="upload text to a collection on my profile
+goal"]
+	1847125301456 [label="I enter text
+task
+140728069287616"]
+	1847133167936 -> 1847125301456
+	1847125301456 [label="I enter text
+task"]
+	1847125307504 [label="I upload a thumbnail, add a title, genres and a short description
+task
+140728069287616"]
+	1847133167936 -> 1847125307504
+	1847125307504 [label="I upload a thumbnail, add a title, genres and a short description
+task"]
+	1847125306592 [label="I click submit
+task
+140728069287616"]
+	1847133167936 -> 1847125306592
+	1847125306592 [label="I click submit
+task"]
+}

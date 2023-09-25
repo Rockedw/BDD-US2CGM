@@ -1,0 +1,1321 @@
+// Goal Model
+digraph {
+	1847134022496 [label="n admin
+goal"]
+	1847134026384 [label="
+goal
+140728069287616"]
+	1847134022496 -> 1847134026384
+	1847134026384 [label="
+goal"]
+	1847133037392 [label="
+goal
+1847133038544"]
+	1847134026384 -> 1847133037392
+	1847133037392 [label="
+goal"]
+	1847133037104 [label="Admin accesses Materials Collections
+goal
+140728069287616"]
+	1847133037392 -> 1847133037104
+	1847133037104 [label="Admin accesses Materials Collections
+goal"]
+	1847133034944 [label="I am on the home page
+task
+140728069287616"]
+	1847133037104 -> 1847133034944
+	1847133034944 [label="I am on the home page
+task"]
+	1847132859040 [label="I follow something
+goal
+140728069287616"]
+	1847133037104 -> 1847132859040
+	1847132859040 [label="I follow something
+goal"]
+	1847133035808 [label="I follow \"Admin\"
+task
+140728069287616"]
+	1847132859040 -> 1847133035808
+	1847133035808 [label="I follow \"Admin\"
+task"]
+	1847133036336 [label="I follow \"Materials Collections\"
+task
+140728069287616"]
+	1847132859040 -> 1847133036336
+	1847133036336 [label="I follow \"Materials Collections\"
+task"]
+	1847133033024 [label="I wait 1 second
+task
+140728069287616"]
+	1847133037104 -> 1847133033024
+	1847133033024 [label="I wait 1 second
+task"]
+	1847133037584 [label="Admin creates new Materials Collection
+goal
+1847133034704"]
+	1847133037392 -> 1847133037584
+	1847133037584 [label="Admin creates new Materials Collection
+goal"]
+	1847133034608 [label="I am on the materials collection index page
+task
+140728069287616"]
+	1847133037584 -> 1847133034608
+	1847133034608 [label="I am on the materials collection index page
+task"]
+	1847132851504 [label="I click something
+goal
+140728069287616"]
+	1847133037584 -> 1847132851504
+	1847132851504 [label="I click something
+goal"]
+	1847133035568 [label="I click \"create Materials Collection\"
+task
+140728069287616"]
+	1847132851504 -> 1847133035568
+	1847133035568 [label="I click \"create Materials Collection\"
+task"]
+	1847133035616 [label="I press \"Save\"
+task
+140728069287616"]
+	1847132851504 -> 1847133035616
+	1847133035616 [label="I press \"Save\"
+task"]
+	1847132862352 [label="I fill
+in materials_collection[name
+goal
+140728069287616"]
+	1847133037584 -> 1847132862352
+	1847132862352 [label="I fill
+in materials_collection[name
+goal"]
+	1847133035280 [label="I fill in \"materials_collection[name]\" with \"My new Collection\"
+task
+140728069287616"]
+	1847132862352 -> 1847133035280
+	1847133035280 [label="I fill in \"materials_collection[name]\" with \"My new Collection\"
+task"]
+	1847133034320 [label="I fill in \"materials_collection[description]\" with \"My new Description\"
+task
+140728069287616"]
+	1847132862352 -> 1847133034320
+	1847133034320 [label="I fill in \"materials_collection[description]\" with \"My new Description\"
+task"]
+	1847133035328 [label="I select \"My Project\" from \"materials_collection[project_id]\"
+task
+140728069287616"]
+	1847133037584 -> 1847133035328
+	1847133035328 [label="I select \"My Project\" from \"materials_collection[project_id]\"
+task"]
+	1847133036816 [label="Admin views existing Materials Collection via the show link
+goal
+140728069287616"]
+	1847133037392 -> 1847133036816
+	1847133036816 [label="Admin views existing Materials Collection via the show link
+goal"]
+	1847133035664 [label="I am on the materials collection index page
+task
+140728069287616"]
+	1847133036816 -> 1847133035664
+	1847133035664 [label="I am on the materials collection index page
+task"]
+	1847133036720 [label="I click on the id link for materials collection \"Collection 4\"
+task
+140728069287616"]
+	1847133036816 -> 1847133036720
+	1847133036720 [label="I click on the id link for materials collection \"Collection 4\"
+task"]
+	1847133034272 [label="Admin edits existing Materials Collection
+goal
+140728069287616"]
+	1847133037392 -> 1847133034272
+	1847133034272 [label="Admin edits existing Materials Collection
+goal"]
+	1847133034896 [label="I am on the materials collection index page
+task
+140728069287616"]
+	1847133034272 -> 1847133034896
+	1847133034896 [label="I am on the materials collection index page
+task"]
+	1847133034656 [label="I click on the edit link for materials collection \"Collection 4\"
+task
+140728069287616"]
+	1847133034272 -> 1847133034656
+	1847133034656 [label="I click on the edit link for materials collection \"Collection 4\"
+task"]
+	1847133288144 [label="I fill
+in materials_collection[name
+goal
+140728069287616"]
+	1847133034272 -> 1847133288144
+	1847133288144 [label="I fill
+in materials_collection[name
+goal"]
+	1847133035424 [label="I fill in \"materials_collection[name]\" with \"My new Collection edits\"
+task
+140728069287616"]
+	1847133288144 -> 1847133035424
+	1847133035424 [label="I fill in \"materials_collection[name]\" with \"My new Collection edits\"
+task"]
+	1847133035136 [label="I fill in \"materials_collection[description]\" with \"My new Description\"
+task
+140728069287616"]
+	1847133288144 -> 1847133035136
+	1847133035136 [label="I fill in \"materials_collection[description]\" with \"My new Description\"
+task"]
+	1847133034368 [label="Admin adds materials to a Materials Collection
+goal
+1847133035088"]
+	1847133037392 -> 1847133034368
+	1847133034368 [label="Admin adds materials to a Materials Collection
+goal"]
+	1847133034848 [label="I am on the search instructional materials page
+task
+140728069287616"]
+	1847133034368 -> 1847133034848
+	1847133034848 [label="I am on the search instructional materials page
+task"]
+	1847133035232 [label="I search for \"testing fast cars\" on the search instructional materials page
+task
+140728069287616"]
+	1847133034368 -> 1847133035232
+	1847133035232 [label="I search for \"testing fast cars\" on the search instructional materials page
+task"]
+	1847133034752 [label="I follow link
+goal
+140728069287616"]
+	1847133034368 -> 1847133034752
+	1847133034752 [label="I follow link
+goal"]
+	1847133035040 [label="I follow the \"Add to Collection\" link for the material \"testing fast cars\"
+task
+140728069287616"]
+	1847133034752 -> 1847133035040
+	1847133035040 [label="I follow the \"Add to Collection\" link for the material \"testing fast cars\"
+task"]
+	1847133029904 [label="I follow the \"Add to Collection\" link for the investigation \"testing fast cars\"
+task
+140728069287616"]
+	1847133034752 -> 1847133029904
+	1847133029904 [label="I follow the \"Add to Collection\" link for the investigation \"testing fast cars\"
+task"]
+	1847133034800 [label="I check \"Collection 1\"
+task
+140728069287616"]
+	1847133034368 -> 1847133034800
+	1847133034800 [label="I check \"Collection 1\"
+task"]
+	1847133284064 [label="I click something
+goal
+140728069287616"]
+	1847133034368 -> 1847133284064
+	1847133284064 [label="I click something
+goal"]
+	1847133035184 [label="I click \"Save\"
+task
+140728069287616"]
+	1847133284064 -> 1847133035184
+	1847133035184 [label="I click \"Save\"
+task"]
+	1847133035376 [label="I press \"OK\"
+task
+140728069287616"]
+	1847133284064 -> 1847133035376
+	1847133035376 [label="I press \"OK\"
+task"]
+	1847133034128 [label="Admin deletes existing Materials Collection
+goal
+140728069287616"]
+	1847133037392 -> 1847133034128
+	1847133034128 [label="Admin deletes existing Materials Collection
+goal"]
+	1847133034080 [label="I am on the materials collection index page
+task
+140728069287616"]
+	1847133034128 -> 1847133034080
+	1847133034080 [label="I am on the materials collection index page
+task"]
+	1847133033120 [label="I click on the delete link for materials collection \"Collection 2\"
+task
+140728069287616"]
+	1847133034128 -> 1847133033120
+	1847133033120 [label="I click on the delete link for materials collection \"Collection 2\"
+task"]
+	1847133033792 [label="I accept the dialog
+task
+140728069287616"]
+	1847133034128 -> 1847133033792
+	1847133033792 [label="I accept the dialog
+task"]
+	1847133033696 [label="I wait 1 second
+task
+140728069287616"]
+	1847133034128 -> 1847133033696
+	1847133033696 [label="I wait 1 second
+task"]
+	1847133034224 [label="Admin cancels deleting existing Materials Collection
+goal
+140728069287616"]
+	1847133037392 -> 1847133034224
+	1847133034224 [label="Admin cancels deleting existing Materials Collection
+goal"]
+	1847133032160 [label="I am on the materials collection index page
+task
+140728069287616"]
+	1847133034224 -> 1847133032160
+	1847133032160 [label="I am on the materials collection index page
+task"]
+	1847133034416 [label="I click on the delete link for materials collection \"Collection 1\"
+task
+140728069287616"]
+	1847133034224 -> 1847133034416
+	1847133034416 [label="I click on the delete link for materials collection \"Collection 1\"
+task"]
+	1847133031728 [label="I dismiss the dialog
+task
+140728069287616"]
+	1847133034224 -> 1847133031728
+	1847133031728 [label="I dismiss the dialog
+task"]
+	1847133034464 [label="I wait 1 second
+task
+140728069287616"]
+	1847133034224 -> 1847133034464
+	1847133034464 [label="I wait 1 second
+task"]
+	1847133038784 [label="view the default class
+goal
+140728069287616"]
+	1847134026384 -> 1847133038784
+	1847133038784 [label="view the default class
+goal"]
+	1847133034992 [label="
+goal
+1847133034176"]
+	1847134022496 -> 1847133034992
+	1847133034992 [label="
+goal"]
+	1847133031440 [label="Admin accesses projects
+goal
+1847133033744"]
+	1847133034992 -> 1847133031440
+	1847133031440 [label="Admin accesses projects
+goal"]
+	1847133033216 [label="I am on the projects index page
+task
+140728069287616"]
+	1847133031440 -> 1847133033216
+	1847133033216 [label="I am on the projects index page
+task"]
+	1847133277392 [label="I see project
+goal
+140728069287616"]
+	1847133031440 -> 1847133277392
+	1847133277392 [label="I see project
+goal"]
+	1847133033552 [label="I should see \"4 projects\"
+task
+140728069287616"]
+	1847133277392 -> 1847133033552
+	1847133033552 [label="I should see \"4 projects\"
+task"]
+	1847133033264 [label="I should see \"project 1\"
+task
+140728069287616"]
+	1847133277392 -> 1847133033264
+	1847133033264 [label="I should see \"project 1\"
+task"]
+	1847133033936 [label="I should see \"project 2\"
+task
+140728069287616"]
+	1847133277392 -> 1847133033936
+	1847133033936 [label="I should see \"project 2\"
+task"]
+	1847133033840 [label="I should see \"project 3\"
+task
+140728069287616"]
+	1847133277392 -> 1847133033840
+	1847133033840 [label="I should see \"project 3\"
+task"]
+	1847133032976 [label="I should see \"create Project\"
+task
+140728069287616"]
+	1847133277392 -> 1847133032976
+	1847133032976 [label="I should see \"create Project\"
+task"]
+	1847132858944 [label="Admin create project
+goal
+140728069287616"]
+	1847133034992 -> 1847132858944
+	1847132858944 [label="Admin create project
+goal"]
+	1847133033360 [label="Admin creates a new project
+goal
+140728069287616"]
+	1847132858944 -> 1847133033360
+	1847133033360 [label="Admin creates a new project
+goal"]
+	1847133032928 [label="I am on the projects index page
+task
+140728069287616"]
+	1847133033360 -> 1847133032928
+	1847133032928 [label="I am on the projects index page
+task"]
+	1847133275616 [label="I click something
+goal
+140728069287616"]
+	1847133033360 -> 1847133275616
+	1847133275616 [label="I click something
+goal"]
+	1847133283728 [label="I click Project
+goal
+140728069287616"]
+	1847133275616 -> 1847133283728
+	1847133283728 [label="I click Project
+goal"]
+	1847133033888 [label="I click \"create Project\"
+task
+140728069287616"]
+	1847133283728 -> 1847133033888
+	1847133033888 [label="I click \"create Project\"
+task"]
+	1847133032016 [label="I click \"/new-project\"
+task
+140728069287616"]
+	1847133283728 -> 1847133032016
+	1847133032016 [label="I click \"/new-project\"
+task"]
+	1847133032784 [label="I press \"Save\"
+task
+140728069287616"]
+	1847133275616 -> 1847133032784
+	1847133032784 [label="I press \"Save\"
+task"]
+	1847133286272 [label="I fill
+in something
+goal
+140728069287616"]
+	1847133033360 -> 1847133286272
+	1847133286272 [label="I fill
+in something
+goal"]
+	1847133032208 [label="I fill in \"admin_project[landing_page_slug]\" with \"new-project\"
+task
+140728069287616"]
+	1847133286272 -> 1847133032208
+	1847133032208 [label="I fill in \"admin_project[landing_page_slug]\" with \"new-project\"
+task"]
+	1847133033072 [label="I fill in \"admin_project[landing_page_content]\" with \"<h1>New project FooBar!</h1>\"
+task
+140728069287616"]
+	1847133286272 -> 1847133033072
+	1847133033072 [label="I fill in \"admin_project[landing_page_content]\" with \"<h1>New project FooBar!</h1>\"
+task"]
+	1847133032544 [label="I fill in \"admin_project[name]\" with \"My new project\"
+task
+140728069287616"]
+	1847133286272 -> 1847133032544
+	1847133032544 [label="I fill in \"admin_project[name]\" with \"My new project\"
+task"]
+	1847133031968 [label="Admin creates a new project providing invalid params
+goal
+140728069287616"]
+	1847132858944 -> 1847133031968
+	1847133031968 [label="Admin creates a new project providing invalid params
+goal"]
+	1847133032640 [label="I am on the projects index page
+task
+140728069287616"]
+	1847133031968 -> 1847133032640
+	1847133032640 [label="I am on the projects index page
+task"]
+	1847133275040 [label="I click something
+goal
+140728069287616"]
+	1847133031968 -> 1847133275040
+	1847133275040 [label="I click something
+goal"]
+	1847133280368 [label="I click Project
+goal
+140728069287616"]
+	1847133275040 -> 1847133280368
+	1847133280368 [label="I click Project
+goal"]
+	1847133031296 [label="I click \"create Project\"
+task
+140728069287616"]
+	1847133280368 -> 1847133031296
+	1847133031296 [label="I click \"create Project\"
+task"]
+	1847133030672 [label="I click \"create Project\"
+task
+140728069287616"]
+	1847133280368 -> 1847133030672
+	1847133030672 [label="I click \"create Project\"
+task"]
+	1847133280752 [label="I click Save
+goal
+140728069287616"]
+	1847133275040 -> 1847133280752
+	1847133280752 [label="I click Save
+goal"]
+	1847133031488 [label="I press \"Save\"
+task
+140728069287616"]
+	1847133280752 -> 1847133031488
+	1847133031488 [label="I press \"Save\"
+task"]
+	1847133028464 [label="I press \"Save\"
+task
+140728069287616"]
+	1847133280752 -> 1847133028464
+	1847133028464 [label="I press \"Save\"
+task"]
+	1847133030816 [label="I press \"Save\"
+task
+140728069287616"]
+	1847133280752 -> 1847133030816
+	1847133030816 [label="I press \"Save\"
+task"]
+	1847133031536 [label="I press \"Save\"
+task
+140728069287616"]
+	1847133280752 -> 1847133031536
+	1847133031536 [label="I press \"Save\"
+task"]
+	1847133283584 [label="I see something
+goal
+140728069287616"]
+	1847133031968 -> 1847133283584
+	1847133283584 [label="I see something
+goal"]
+	1847133031824 [label="I should see \"there are errors\"
+task
+140728069287616"]
+	1847133283584 -> 1847133031824
+	1847133031824 [label="I should see \"there are errors\"
+task"]
+	1847133031632 [label="I should see \"Name can't be blank\"
+task
+140728069287616"]
+	1847133283584 -> 1847133031632
+	1847133031632 [label="I should see \"Name can't be blank\"
+task"]
+	1847133281232 [label="I fill
+in something
+goal
+140728069287616"]
+	1847133031968 -> 1847133281232
+	1847133281232 [label="I fill
+in something
+goal"]
+	1847133032688 [label="I fill in \"admin_project[landing_page_slug]\" with \"slug\"
+task
+140728069287616"]
+	1847133281232 -> 1847133032688
+	1847133032688 [label="I fill in \"admin_project[landing_page_slug]\" with \"slug\"
+task"]
+	1847133030096 [label="I fill in \"admin_project[landing_page_slug]\" with \"slug\"
+task
+140728069287616"]
+	1847133281232 -> 1847133030096
+	1847133030096 [label="I fill in \"admin_project[landing_page_slug]\" with \"slug\"
+task"]
+	1847133030528 [label="I fill in \"admin_project[landing_page_slug]\" with \"invalid/slug\"
+task
+140728069287616"]
+	1847133281232 -> 1847133030528
+	1847133030528 [label="I fill in \"admin_project[landing_page_slug]\" with \"invalid/slug\"
+task"]
+	1847133030048 [label="I fill in \"admin_project[name]\" with \"My new project\"
+task
+140728069287616"]
+	1847133281232 -> 1847133030048
+	1847133030048 [label="I fill in \"admin_project[name]\" with \"My new project\"
+task"]
+	1847132848336 [label="Admin edit project
+goal
+140728069287616"]
+	1847133034992 -> 1847132848336
+	1847132848336 [label="Admin edit project
+goal"]
+	1847133031584 [label="Admin edits existing project
+goal
+1847133033408"]
+	1847132848336 -> 1847133031584
+	1847133031584 [label="Admin edits existing project
+goal"]
+	1847133028944 [label="I fill in \"admin_project[name]\" with \"New project name\"
+task
+140728069287616"]
+	1847133031584 -> 1847133028944
+	1847133028944 [label="I fill in \"admin_project[name]\" with \"New project name\"
+task"]
+	1847133031776 [label="I press \"Save\"
+task
+140728069287616"]
+	1847133031584 -> 1847133031776
+	1847133031776 [label="I press \"Save\"
+task"]
+	1847133029856 [label="Admin edits existing project providing invalid params
+goal
+1847133028752"]
+	1847132848336 -> 1847133029856
+	1847133029856 [label="Admin edits existing project providing invalid params
+goal"]
+	1847133287136 [label="I click something
+goal
+140728069287616"]
+	1847133029856 -> 1847133287136
+	1847133287136 [label="I click something
+goal"]
+	1847133029520 [label="I click on the edit link for project \"project 2\"
+task
+140728069287616"]
+	1847133287136 -> 1847133029520
+	1847133029520 [label="I click on the edit link for project \"project 2\"
+task"]
+	1847133283488 [label="I click Save
+goal
+140728069287616"]
+	1847133287136 -> 1847133283488
+	1847133283488 [label="I click Save
+goal"]
+	1847133040944 [label="I press \"Save\"
+task
+140728069287616"]
+	1847133283488 -> 1847133040944
+	1847133040944 [label="I press \"Save\"
+task"]
+	1847133039744 [label="I press \"Save\"
+task
+140728069287616"]
+	1847133283488 -> 1847133039744
+	1847133039744 [label="I press \"Save\"
+task"]
+	1847133287040 [label="I fill
+in something
+goal
+140728069287616"]
+	1847133029856 -> 1847133287040
+	1847133287040 [label="I fill
+in something
+goal"]
+	1847133039840 [label="I fill in \"admin_project[landing_page_slug]\" with \"project-1\"
+task
+140728069287616"]
+	1847133287040 -> 1847133039840
+	1847133039840 [label="I fill in \"admin_project[landing_page_slug]\" with \"project-1\"
+task"]
+	1847133285696 [label="I fill
+in admin_project[name
+goal
+140728069287616"]
+	1847133287040 -> 1847133285696
+	1847133285696 [label="I fill
+in admin_project[name
+goal"]
+	1847133036096 [label="I fill in \"admin_project[name]\" with \"\"
+task
+140728069287616"]
+	1847133285696 -> 1847133036096
+	1847133036096 [label="I fill in \"admin_project[name]\" with \"\"
+task"]
+	1847133029808 [label="I fill in \"admin_project[name]\" with \"new project 2\"
+task
+140728069287616"]
+	1847133285696 -> 1847133029808
+	1847133029808 [label="I fill in \"admin_project[name]\" with \"new project 2\"
+task"]
+	1847132863168 [label="Admin add something
+goal
+140728069287616"]
+	1847133034992 -> 1847132863168
+	1847132863168 [label="Admin add something
+goal"]
+	1847133032352 [label="Admin adds a link to an existing project
+goal
+1847133030144"]
+	1847132863168 -> 1847133032352
+	1847133032352 [label="Admin adds a link to an existing project
+goal"]
+	1847132849968 [label="I click something
+goal
+140728069287616"]
+	1847133032352 -> 1847132849968
+	1847132849968 [label="I click something
+goal"]
+	1847133030720 [label="I click \"Add a link\"
+task
+140728069287616"]
+	1847132849968 -> 1847133030720
+	1847133030720 [label="I click \"Add a link\"
+task"]
+	1847133030384 [label="I press \"Save\"
+task
+140728069287616"]
+	1847132849968 -> 1847133030384
+	1847133030384 [label="I press \"Save\"
+task"]
+	1847132859472 [label="I fill
+in something
+goal
+140728069287616"]
+	1847133032352 -> 1847132859472
+	1847132859472 [label="I fill
+in something
+goal"]
+	1847133030288 [label="I fill in \"admin_project_link[link_id]\" with \"new-id\"
+task
+140728069287616"]
+	1847132859472 -> 1847133030288
+	1847133030288 [label="I fill in \"admin_project_link[link_id]\" with \"new-id\"
+task"]
+	1847132853856 [label="I fill
+in admin_project_link[name
+goal
+140728069287616"]
+	1847132859472 -> 1847132853856
+	1847132853856 [label="I fill
+in admin_project_link[name
+goal"]
+	1847133028992 [label="I fill in \"admin_project_link[name]\" with \"New project link\"
+task
+140728069287616"]
+	1847132853856 -> 1847133028992
+	1847133028992 [label="I fill in \"admin_project_link[name]\" with \"New project link\"
+task"]
+	1847133028416 [label="I fill in \"admin_project_link[href]\" with \"http://google.com\"
+task
+140728069287616"]
+	1847132853856 -> 1847133028416
+	1847133028416 [label="I fill in \"admin_project_link[href]\" with \"http://google.com\"
+task"]
+	1847133029760 [label="Admin adds materials to a project
+goal
+1847132855584"]
+	1847132863168 -> 1847133029760
+	1847133029760 [label="Admin adds materials to a project
+goal"]
+	1847132859232 [label="I am on the search instructional materials page
+task
+140728069287616"]
+	1847133029760 -> 1847132859232
+	1847132859232 [label="I am on the search instructional materials page
+task"]
+	1847132852032 [label="I am on the search instructional materials page
+task
+140728069287616"]
+	1847133029760 -> 1847132852032
+	1847132852032 [label="I am on the search instructional materials page
+task"]
+	1847132851408 [label="I search for \"testing fast cars\" on the search instructional materials page
+task
+140728069287616"]
+	1847133029760 -> 1847132851408
+	1847132851408 [label="I search for \"testing fast cars\" on the search instructional materials page
+task"]
+	1847132852752 [label="I follow the \"(portal settings)\" link for the investigation \"testing fast cars\"
+task
+140728069287616"]
+	1847133029760 -> 1847132852752
+	1847132852752 [label="I follow the \"(portal settings)\" link for the investigation \"testing fast cars\"
+task"]
+	1847132862736 [label="I check \"project 1\"
+task
+140728069287616"]
+	1847133029760 -> 1847132862736
+	1847132862736 [label="I check \"project 1\"
+task"]
+	1847132862832 [label="I press \"Save\"
+task
+140728069287616"]
+	1847133029760 -> 1847132862832
+	1847132862832 [label="I press \"Save\"
+task"]
+	1847132858032 [label="Admin filters search results based on projects
+goal
+1847132861680"]
+	1847133034992 -> 1847132858032
+	1847132858032 [label="Admin filters search results based on projects
+goal"]
+	1847132858896 [label="I am on the search instructional materials page
+task
+140728069287616"]
+	1847132858032 -> 1847132858896
+	1847132858896 [label="I am on the search instructional materials page
+task"]
+	1847133285600 [label="I check project
+goal
+140728069287616"]
+	1847132858032 -> 1847133285600
+	1847133285600 [label="I check project
+goal"]
+	1847132856256 [label="I check \"project 1\"
+task
+140728069287616"]
+	1847133285600 -> 1847132856256
+	1847132856256 [label="I check \"project 1\"
+task"]
+	1847132862592 [label="I check \"project 2\"
+task
+140728069287616"]
+	1847133285600 -> 1847132862592
+	1847132862592 [label="I check \"project 2\"
+task"]
+	1847132857648 [label="I uncheck \"project 1\"
+task
+140728069287616"]
+	1847132858032 -> 1847132857648
+	1847132857648 [label="I uncheck \"project 1\"
+task"]
+	1847133031152 [label="
+goal
+1847132859568"]
+	1847134022496 -> 1847133031152
+	1847133031152 [label="
+goal"]
+	1847132851744 [label="Tagging Interactives
+goal
+1847132855248"]
+	1847133031152 -> 1847132851744
+	1847132851744 [label="Tagging Interactives
+goal"]
+	1847133287808 [label="I click something
+goal
+140728069287616"]
+	1847132851744 -> 1847133287808
+	1847133287808 [label="I click something
+goal"]
+	1847132852464 [label="I click \"create interactive\"
+task
+140728069287616"]
+	1847133287808 -> 1847132852464
+	1847132852464 [label="I click \"create interactive\"
+task"]
+	1847132848864 [label="I press \"Save\"
+task
+140728069287616"]
+	1847133287808 -> 1847132848864
+	1847132848864 [label="I press \"Save\"
+task"]
+	1847133279600 [label="I fill
+in interactive[name
+goal
+140728069287616"]
+	1847132851744 -> 1847133279600
+	1847133279600 [label="I fill
+in interactive[name
+goal"]
+	1847132862208 [label="I fill in \"interactive[name]\" with \"New Interactive\"
+task
+140728069287616"]
+	1847133279600 -> 1847132862208
+	1847132862208 [label="I fill in \"interactive[name]\" with \"New Interactive\"
+task"]
+	1847132849872 [label="I fill in \"interactive[description]\" with \"New Description\"
+task
+140728069287616"]
+	1847133279600 -> 1847132849872
+	1847132849872 [label="I fill in \"interactive[description]\" with \"New Description\"
+task"]
+	1847132862640 [label="I fill in \"interactive[url]\" with \"http://www.google.com\"
+task
+140728069287616"]
+	1847133279600 -> 1847132862640
+	1847132862640 [label="I fill in \"interactive[url]\" with \"http://www.google.com\"
+task"]
+	1847133282240 [label="I check something
+goal
+140728069287616"]
+	1847132851744 -> 1847133282240
+	1847133282240 [label="I check something
+goal"]
+	1847132848576 [label="under \"Grade Levels\" I check \"gl_K\"
+task
+140728069287616"]
+	1847133282240 -> 1847132848576
+	1847132848576 [label="under \"Grade Levels\" I check \"gl_K\"
+task"]
+	1847132856928 [label="under \"Subject Areas\" I check \"sa_Math\"
+task
+140728069287616"]
+	1847133282240 -> 1847132856928
+	1847132856928 [label="under \"Subject Areas\" I check \"sa_Math\"
+task"]
+	1847132853808 [label="under \"Model Types\" I choose \"mt_Video\"
+task
+140728069287616"]
+	1847132851744 -> 1847132853808
+	1847132853808 [label="under \"Model Types\" I choose \"mt_Video\"
+task"]
+	1847132857792 [label="Admin accesses Materials Collections
+goal
+140728069287616"]
+	1847133031152 -> 1847132857792
+	1847132857792 [label="Admin accesses Materials Collections
+goal"]
+	1847132849824 [label="I am on the home page
+task
+140728069287616"]
+	1847132857792 -> 1847132849824
+	1847132849824 [label="I am on the home page
+task"]
+	1847132852320 [label="I follow something
+goal
+140728069287616"]
+	1847132857792 -> 1847132852320
+	1847132852320 [label="I follow something
+goal"]
+	1847132859712 [label="I follow \"Admin\"
+task
+140728069287616"]
+	1847132852320 -> 1847132859712
+	1847132859712 [label="I follow \"Admin\"
+task"]
+	1847132852848 [label="I follow \"Interactives\"
+task
+140728069287616"]
+	1847132852320 -> 1847132852848
+	1847132852848 [label="I follow \"Interactives\"
+task"]
+	1847132858800 [label="I wait 2 seconds
+task
+140728069287616"]
+	1847132857792 -> 1847132858800
+	1847132858800 [label="I wait 2 seconds
+task"]
+	1847132852128 [label="Create Valid Article
+goal
+1847132850832"]
+	1847133031152 -> 1847132852128
+	1847132852128 [label="Create Valid Article
+goal"]
+	1847133279456 [label="I click something
+goal
+140728069287616"]
+	1847132852128 -> 1847133279456
+	1847133279456 [label="I click something
+goal"]
+	1847132851984 [label="I click \"create interactive\"
+task
+140728069287616"]
+	1847133279456 -> 1847132851984
+	1847132851984 [label="I click \"create interactive\"
+task"]
+	1847132850256 [label="I press \"Save\"
+task
+140728069287616"]
+	1847133279456 -> 1847132850256
+	1847132850256 [label="I press \"Save\"
+task"]
+	1847133283152 [label="I fill
+in interactive[name
+goal
+140728069287616"]
+	1847132852128 -> 1847133283152
+	1847133283152 [label="I fill
+in interactive[name
+goal"]
+	1847132850064 [label="I fill in \"interactive[name]\" with \"New Interactive\"
+task
+140728069287616"]
+	1847133283152 -> 1847132850064
+	1847132850064 [label="I fill in \"interactive[name]\" with \"New Interactive\"
+task"]
+	1847132854240 [label="I fill in \"interactive[description]\" with \"New Description\"
+task
+140728069287616"]
+	1847133283152 -> 1847132854240
+	1847132854240 [label="I fill in \"interactive[description]\" with \"New Description\"
+task"]
+	1847132859520 [label="I fill in \"interactive[url]\" with \"http://www.google.com\"
+task
+140728069287616"]
+	1847133283152 -> 1847132859520
+	1847132859520 [label="I fill in \"interactive[url]\" with \"http://www.google.com\"
+task"]
+	1847132853712 [label="Removing tags from Interactives
+goal
+1847132860288"]
+	1847133031152 -> 1847132853712
+	1847132853712 [label="Removing tags from Interactives
+goal"]
+	1847132862688 [label="I uncheck something
+goal
+140728069287616"]
+	1847132853712 -> 1847132862688
+	1847132862688 [label="I uncheck something
+goal"]
+	1847132857600 [label="under \"Grade Levels\" I uncheck \"11\"
+task
+140728069287616"]
+	1847132862688 -> 1847132857600
+	1847132857600 [label="under \"Grade Levels\" I uncheck \"11\"
+task"]
+	1847132861296 [label="under \"Subject Areas\" I uncheck \"Biology\"
+task
+140728069287616"]
+	1847132862688 -> 1847132861296
+	1847132861296 [label="under \"Subject Areas\" I uncheck \"Biology\"
+task"]
+	1847132855008 [label="I press \"Save\"
+task
+140728069287616"]
+	1847132853712 -> 1847132855008
+	1847132855008 [label="I press \"Save\"
+task"]
+	1847132853472 [label="Admin should be able to see grouped search results on the basis of material type
+goal
+1847132862256"]
+	1847133031152 -> 1847132853472
+	1847132853472 [label="Admin should be able to see grouped search results on the basis of material type
+goal"]
+	1847133274944 [label="I enter something
+goal
+140728069287616"]
+	1847132853472 -> 1847133274944
+	1847133274944 [label="I enter something
+goal"]
+	1847132862880 [label="I enter search text \"Geometry\" on the search instructional materials page
+task
+140728069287616"]
+	1847133274944 -> 1847132862880
+	1847132862880 [label="I enter search text \"Geometry\" on the search instructional materials page
+task"]
+	1847132849056 [label="I enter search text \"Radioactivity\" on the search instructional materials page
+task
+140728069287616"]
+	1847133274944 -> 1847132849056
+	1847132849056 [label="I enter search text \"Radioactivity\" on the search instructional materials page
+task"]
+	1847132855776 [label="I enter search text \"Interactive\" on the search instructional materials page
+task
+140728069287616"]
+	1847133274944 -> 1847132855776
+	1847132855776 [label="I enter search text \"Interactive\" on the search instructional materials page
+task"]
+	1847133277968 [label="I close suggestion
+goal
+140728069287616"]
+	1847132853472 -> 1847133277968
+	1847133277968 [label="I close suggestion
+goal"]
+	1847132860816 [label="I close the search suggestions
+task
+140728069287616"]
+	1847133277968 -> 1847132860816
+	1847132860816 [label="I close the search suggestions
+task"]
+	1847132848624 [label="I close the search suggestions
+task
+140728069287616"]
+	1847133277968 -> 1847132848624
+	1847132848624 [label="I close the search suggestions
+task"]
+	1847132861776 [label="I close the search suggestions
+task
+140728069287616"]
+	1847133277968 -> 1847132861776
+	1847132861776 [label="I close the search suggestions
+task"]
+	1847133275184 [label="I uncheck something
+goal
+140728069287616"]
+	1847132853472 -> 1847133275184
+	1847133275184 [label="I uncheck something
+goal"]
+	1847133275856 [label="I uncheck sequence
+goal
+140728069287616"]
+	1847133275184 -> 1847133275856
+	1847133275856 [label="I uncheck sequence
+goal"]
+	1847132856976 [label="I uncheck \"Sequence\"
+task
+140728069287616"]
+	1847133275856 -> 1847132856976
+	1847132856976 [label="I uncheck \"Sequence\"
+task"]
+	1847132862544 [label="I uncheck \"Sequence\"
+task
+140728069287616"]
+	1847133275856 -> 1847132862544
+	1847132862544 [label="I uncheck \"Sequence\"
+task"]
+	1847133289008 [label="I uncheck interactive
+goal
+140728069287616"]
+	1847133275184 -> 1847133289008
+	1847133289008 [label="I uncheck interactive
+goal"]
+	1847132860240 [label="I uncheck \"Interactive\"
+task
+140728069287616"]
+	1847133289008 -> 1847132860240
+	1847132860240 [label="I uncheck \"Interactive\"
+task"]
+	1847132854192 [label="I uncheck \"Interactive\"
+task
+140728069287616"]
+	1847133289008 -> 1847132854192
+	1847132854192 [label="I uncheck \"Interactive\"
+task"]
+	1847133282864 [label="I uncheck activity
+goal
+140728069287616"]
+	1847133275184 -> 1847133282864
+	1847133282864 [label="I uncheck activity
+goal"]
+	1847132862112 [label="I uncheck \"Activity\"
+task
+140728069287616"]
+	1847133282864 -> 1847132862112
+	1847132862112 [label="I uncheck \"Activity\"
+task"]
+	1847132861152 [label="I uncheck \"Activity\"
+task
+140728069287616"]
+	1847133282864 -> 1847132861152
+	1847132861152 [label="I uncheck \"Activity\"
+task"]
+	1847133283008 [label="I check something
+goal
+140728069287616"]
+	1847132853472 -> 1847133283008
+	1847133283008 [label="I check something
+goal"]
+	1847132859184 [label="I check \"Activity\"
+task
+140728069287616"]
+	1847133283008 -> 1847132859184
+	1847132859184 [label="I check \"Activity\"
+task"]
+	1847132852992 [label="I check \"Sequence\"
+task
+140728069287616"]
+	1847133283008 -> 1847132852992
+	1847132852992 [label="I check \"Sequence\"
+task"]
+	1847132849296 [label="I check \"Interactive\"
+task
+140728069287616"]
+	1847133283008 -> 1847132849296
+	1847132849296 [label="I check \"Interactive\"
+task"]
+	1847133285744 [label="I press something
+goal
+140728069287616"]
+	1847132853472 -> 1847133285744
+	1847133285744 [label="I press something
+goal"]
+	1847132858704 [label="I press \"Go\"
+task
+140728069287616"]
+	1847133285744 -> 1847132858704
+	1847132858704 [label="I press \"Go\"
+task"]
+	1847132853616 [label="I press \"Go\"
+task
+140728069287616"]
+	1847133285744 -> 1847132853616
+	1847132853616 [label="I press \"Go\"
+task"]
+	1847132849392 [label="I press \"Go\"
+task
+140728069287616"]
+	1847133285744 -> 1847132849392
+	1847132849392 [label="I press \"Go\"
+task"]
+	1847133278400 [label="I wait something
+goal
+140728069287616"]
+	1847132853472 -> 1847133278400
+	1847133278400 [label="I wait something
+goal"]
+	1847132850688 [label="I wait 2 seconds
+task
+140728069287616"]
+	1847133278400 -> 1847132850688
+	1847132850688 [label="I wait 2 seconds
+task"]
+	1847132850640 [label="I wait 2 seconds
+task
+140728069287616"]
+	1847133278400 -> 1847132850640
+	1847132850640 [label="I wait 2 seconds
+task"]
+	1847132852896 [label="I wait 2 seconds
+task
+140728069287616"]
+	1847133278400 -> 1847132852896
+	1847132852896 [label="I wait 2 seconds
+task"]
+	1847134017072 [label="add, edit and remove notices
+goal
+1847133171536"]
+	1847134022496 -> 1847134017072
+	1847134017072 [label="add, edit and remove notices
+goal"]
+	1847133035856 [label="Admin can add a notice
+goal
+140728069287616"]
+	1847134017072 -> 1847133035856
+	1847133035856 [label="Admin can add a notice
+goal"]
+	1847133041472 [label="I create a notice \"Notice for users\"
+task
+140728069287616"]
+	1847133035856 -> 1847133041472
+	1847133041472 [label="I create a notice \"Notice for users\"
+task"]
+	1847133030432 [label="am on the getting started page
+task
+140728069287616"]
+	1847133035856 -> 1847133030432
+	1847133030432 [label="am on the getting started page
+task"]
+	1847133029424 [label="Admin can edit notices
+goal
+1847133036144"]
+	1847134017072 -> 1847133029424
+	1847133029424 [label="Admin can edit notices
+goal"]
+	1847133035904 [label="I follow \"edit\"
+task
+140728069287616"]
+	1847133029424 -> 1847133035904
+	1847133035904 [label="I follow \"edit\"
+task"]
+	1847133039792 [label="I fill \"Edited notice for users\" in the tinyMCE editor with id \"notice_html\"
+task
+140728069287616"]
+	1847133029424 -> 1847133039792
+	1847133039792 [label="I fill \"Edited notice for users\" in the tinyMCE editor with id \"notice_html\"
+task"]
+	1847133040800 [label="I press \"Update Notice\"
+task
+140728069287616"]
+	1847133029424 -> 1847133040800
+	1847133040800 [label="I press \"Update Notice\"
+task"]
+	1847133030768 [label="am on the getting started page
+task
+140728069287616"]
+	1847133029424 -> 1847133030768
+	1847133030768 [label="am on the getting started page
+task"]
+	1847133030912 [label="Admin can remove notices
+goal
+1847133029472"]
+	1847134017072 -> 1847133030912
+	1847133030912 [label="Admin can remove notices
+goal"]
+	1847133040608 [label="am on the my home page
+task
+140728069287616"]
+	1847133030912 -> 1847133040608
+	1847133040608 [label="am on the my home page
+task"]
+	1847133029136 [label="I follow \"Delete Notice\"
+task
+140728069287616"]
+	1847133030912 -> 1847133029136
+	1847133029136 [label="I follow \"Delete Notice\"
+task"]
+	1847133038736 [label="accept the dialog
+task
+140728069287616"]
+	1847133030912 -> 1847133038736
+	1847133038736 [label="accept the dialog
+task"]
+	1847133037536 [label="Admin cannot publish blank notices
+goal
+140728069287616"]
+	1847134017072 -> 1847133037536
+	1847133037536 [label="Admin cannot publish blank notices
+goal"]
+	1847133028704 [label="Admin can cancel notice creation or editing
+goal
+1847133041088"]
+	1847134017072 -> 1847133028704
+	1847133028704 [label="Admin can cancel notice creation or editing
+goal"]
+	1847133040224 [label="I go to the admin create notice page
+task
+140728069287616"]
+	1847133028704 -> 1847133040224
+	1847133040224 [label="I go to the admin create notice page
+task"]
+	1847132858560 [label="I follow something
+goal
+140728069287616"]
+	1847133028704 -> 1847132858560
+	1847132858560 [label="I follow something
+goal"]
+	1847132856064 [label="I follow Cancel
+goal
+140728069287616"]
+	1847132858560 -> 1847132856064
+	1847132856064 [label="I follow Cancel
+goal"]
+	1847133040368 [label="I follow \"Cancel\"
+task
+140728069287616"]
+	1847132856064 -> 1847133040368
+	1847133040368 [label="I follow \"Cancel\"
+task"]
+	1847133040128 [label="I follow \"Cancel\"
+task
+140728069287616"]
+	1847132856064 -> 1847133040128
+	1847133040128 [label="I follow \"Cancel\"
+task"]
+	1847133041232 [label="I follow \"edit\"
+task
+140728069287616"]
+	1847132858560 -> 1847133041232
+	1847133041232 [label="I follow \"edit\"
+task"]
+	1847133040320 [label="Anonymous users cannot create notice page
+goal
+140728069287616"]
+	1847134017072 -> 1847133040320
+	1847133040320 [label="Anonymous users cannot create notice page
+goal"]
+	1847133039120 [label="I am an anonymous user
+task
+140728069287616"]
+	1847133040320 -> 1847133039120
+	1847133039120 [label="I am an anonymous user
+task"]
+	1847133037152 [label="I try to go to the admin create notice page
+task
+140728069287616"]
+	1847133040320 -> 1847133037152
+	1847133037152 [label="I try to go to the admin create notice page
+task"]
+	1847133037872 [label="Admin is shown a message if there are no notices
+goal
+140728069287616"]
+	1847134017072 -> 1847133037872
+	1847133037872 [label="Admin is shown a message if there are no notices
+goal"]
+	1847133381024 [label="switch to a different user
+goal
+1847133040704"]
+	1847134022496 -> 1847133381024
+	1847133381024 [label="switch to a different user
+goal"]
+	1847133038928 [label="Admin switches to student
+goal
+140728069287616"]
+	1847133381024 -> 1847133038928
+	1847133038928 [label="Admin switches to student
+goal"]
+	1847133038976 [label="Admin switches back to admin
+goal
+140728069287616"]
+	1847133381024 -> 1847133038976
+	1847133038976 [label="Admin switches back to admin
+goal"]
+}

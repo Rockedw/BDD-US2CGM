@@ -1,0 +1,22 @@
+// 1847134026432 Context Model
+digraph {
+	1847134027680 [label=Context78]
+	1847134060656 [label="I have a scifi directory"]
+	1847134027680 -> 1847134060656
+	1847134060656 [label="I have a scifi directory"]
+	1847134060752 [label="I have a scifi/Movies directory"]
+	1847134027680 -> 1847134060752
+	1847134060752 [label="I have a scifi/Movies directory"]
+	1847134060848 [label="I have a scifi/Movies/_posts directory"]
+	1847134027680 -> 1847134060848
+	1847134060848 [label="I have a scifi/Movies/_posts directory"]
+	1847134060944 [label="I have a _layouts directory"]
+	1847134027680 -> 1847134060944
+	1847134060944 [label="I have a _layouts directory"]
+	1847134061040 [label="I have the following post in \"scifi/Movies\":"]
+	1847134027680 -> 1847134061040
+	1847134061040 [label="I have the following post in \"scifi/Movies\":"]
+	1847134061136 [label="I have a simple layout that contains \"Post categories: {{ page.categories | array_to_sentence_string }}\""]
+	1847134027680 -> 1847134061136
+	1847134061136 [label="I have a simple layout that contains \"Post categories: {{ page.categories | array_to_sentence_string }}\""]
+}

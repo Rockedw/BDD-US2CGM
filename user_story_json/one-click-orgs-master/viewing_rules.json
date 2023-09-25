@@ -1,0 +1,68 @@
+{
+    "feature_name": "Viewing rules",
+    "user_story": {
+        "as_a": "Member",
+        "i_want": "view the Rules of the co-op",
+        "so_that": "understand the way the co-op works",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Rules page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the rules of the co-op"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Rules page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the custom fields in the Rules filled in appropriately"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Rules page",
+                        "I follow \"PDF\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a \".pdf\" download with the name of the organisation"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the co-op was founded a year ago",
+                        "the objects were changed 6 months ago"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the rules page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see that the Rules were last changed 6 months ago"
+                    ]
+                ]
+            }
+        ]
+    }
+}

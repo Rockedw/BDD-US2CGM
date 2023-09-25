@@ -1,0 +1,16 @@
+// 1436758586992 Context Model
+digraph {
+	1436758588576 [label=Context10]
+	1436758588960 [label="The default settings exist using factories"]
+	1436758588576 -> 1436758588960
+	1436758588960 [label="The default settings exist using factories"]
+	1436758589056 [label="the database has been seeded"]
+	1436758588576 -> 1436758589056
+	1436758589056 [label="the database has been seeded"]
+	1436758589152 [label="The theme is \"rites\""]
+	1436758588576 -> 1436758589152
+	1436758589152 [label="The theme is \"rites\""]
+	1436758589248 [label="the following empty investigations exist:"]
+	1436758588576 -> 1436758589248
+	1436758589248 [label="the following empty investigations exist:"]
+}

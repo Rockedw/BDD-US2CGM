@@ -1,0 +1,47 @@
+// Goal Model
+digraph {
+	1847117884256 [label="cal faculty
+goal"]
+	1847117886128 [label=" see something
+goal
+140728069287616"]
+	1847117884256 -> 1847117886128
+	1847117886128 [label=" see something
+goal"]
+	1847117886848 [label="see all students assigned to my course
+goal
+1847117878688"]
+	1847117886128 -> 1847117886848
+	1847117886848 [label="see all students assigned to my course
+goal"]
+	1847117884784 [label="Login as a cal_faculty and see my menus
+goal
+1847117887664"]
+	1847117886848 -> 1847117884784
+	1847117884784 [label="Login as a cal_faculty and see my menus
+goal"]
+	1847117883296 [label="should see list of my students enrolled in my cal_course
+goal
+1847124494416"]
+	1847117886848 -> 1847117883296
+	1847117883296 [label="should see list of my students enrolled in my cal_course
+goal"]
+	1847117888672 [label="see all mentor teachers assigned to my course
+goal
+1847117888576"]
+	1847117886128 -> 1847117888672
+	1847117888672 [label="see all mentor teachers assigned to my course
+goal"]
+	1847117884496 [label="Login as a cal_faculty and see my menus
+goal
+1847117886464"]
+	1847117888672 -> 1847117884496
+	1847117884496 [label="Login as a cal_faculty and see my menus
+goal"]
+	1847117874512 [label="should see list of my mentor teachers enrolled in my cal_course
+goal
+1847117887472"]
+	1847117888672 -> 1847117874512
+	1847117874512 [label="should see list of my mentor teachers enrolled in my cal_course
+goal"]
+}

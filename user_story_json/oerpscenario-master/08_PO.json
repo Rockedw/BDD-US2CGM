@@ -1,0 +1,220 @@
+{
+    "feature_name": "PURCHASE ORDERS CREATION",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I need a \"purchase.order\" with name: PO1000",
+                        "having:",
+                        "containing the following purchase order lines:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I confirm the PO"
+                    ],
+                    [
+                        "I process the following product moves:",
+                        "I create a supplier invoice for the picking on %Y-01-25"
+                    ],
+                    [
+                        "I open the credit invoice"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "1 picking should be created for the PO"
+                    ],
+                    [
+                        "the picking should be in state done",
+                        "1 draft invoice should be created for the PO"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"purchase.order\" with name: PO1001",
+                        "having:",
+                        "containing the following purchase order lines:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I confirm the PO"
+                    ],
+                    [
+                        "I process all moves on %Y-01-25",
+                        "I create a supplier invoice for the picking on %Y-01-25"
+                    ],
+                    [
+                        "I open the credit invoice"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "1 picking should be created for the PO"
+                    ],
+                    [
+                        "the picking should be in state done",
+                        "1 draft invoice should be created for the PO"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"purchase.order\" with name: PO1002",
+                        "having:",
+                        "containing the following purchase order lines:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I confirm the PO"
+                    ],
+                    [
+                        "I process all moves on %Y-01-17",
+                        "I create a supplier invoice for the picking on %Y-01-17"
+                    ],
+                    [
+                        "I open the credit invoice"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "1 picking should be created for the PO"
+                    ],
+                    [
+                        "the picking should be in state done",
+                        "1 draft invoice should be created for the PO"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"purchase.order\" with name: PO1003",
+                        "having:",
+                        "containing the following purchase order lines:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I confirm the PO"
+                    ],
+                    [
+                        "I process all moves on %Y-01-27",
+                        "I create a supplier invoice for the picking on %Y-01-27"
+                    ],
+                    [
+                        "I open the credit invoice"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "1 picking should be created for the PO"
+                    ],
+                    [
+                        "the picking should be in state done",
+                        "1 draft invoice should be created for the PO"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"purchase.order\" with name: PO1004",
+                        "having:",
+                        "containing the following purchase order lines:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I confirm the PO"
+                    ],
+                    [
+                        "I process all moves on %Y-02-25",
+                        "I create a supplier invoice for the picking on %Y-02-25"
+                    ],
+                    [
+                        "I open the credit invoice"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "1 picking should be created for the PO"
+                    ],
+                    [
+                        "the picking should be in state done",
+                        "1 draft invoice should be created for the PO"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"purchase.order\" with name: PO1005",
+                        "having:",
+                        "containing the following purchase order lines:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I confirm the PO"
+                    ],
+                    [
+                        "I process all moves on %Y-02-17",
+                        "I create a supplier invoice for the picking on %Y-02-17"
+                    ],
+                    [
+                        "I open the credit invoice"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "1 picking should be created for the PO"
+                    ],
+                    [
+                        "the picking should be in state done",
+                        "1 draft invoice should be created for the PO"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"purchase.order\" with name: PO1006",
+                        "having:",
+                        "containing the following purchase order lines:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I confirm the PO"
+                    ],
+                    [
+                        "I process all moves on %Y-02-27",
+                        "I create a supplier invoice for the picking on %Y-02-27"
+                    ],
+                    [
+                        "I open the credit invoice"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "1 picking should be created for the PO"
+                    ],
+                    [
+                        "the picking should be in state done",
+                        "1 draft invoice should be created for the PO"
+                    ]
+                ]
+            }
+        ]
+    }
+}

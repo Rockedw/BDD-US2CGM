@@ -1,0 +1,203 @@
+{
+    "feature_name": "Admin configures settings",
+    "user_story": {
+        "as_a": "As the site administrator",
+        "i_want": "configure settings",
+        "so_that": "customize the portal",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "the most basic default settings",
+                        "the database has been seeded",
+                        "I am logged in with the username admin",
+                        "am on the admin settings page"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see the sites name"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the most basic default settings",
+                        "I am logged in with the username admin",
+                        "am on the admin settings page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"edit settings\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the button \"Save\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "The default settings exist using factories",
+                        "I am logged in with the username admin",
+                        "am on the admin settings page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"edit settings\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the button \"Save\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "The default settings exist using factories",
+                        "I am logged in with the username admin",
+                        "am on the admin settings page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"edit settings\""
+                    ],
+                    [
+                        "I check \"Enable Default Class\"",
+                        "I save the settings"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the sites name",
+                        "I should see \"Default Class: disabled\""
+                    ],
+                    [
+                        "I should see \"ENABLE DEFAULT CLASS\""
+                    ],
+                    [
+                        "I should see \"Default Class: enabled\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "The default settings exist using factories",
+                        "the following teachers exist:",
+                        "I am logged in with the username teacher",
+                        "I am on the clazz create page"
+                    ],
+                    [
+                        "I login as an admin",
+                        "am on the admin settings page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"edit settings\""
+                    ],
+                    [
+                        "I check \"Enable Grade Levels for Classes\"",
+                        "I save the settings"
+                    ],
+                    [
+                        "I am logged in with the username teacher",
+                        "I am on the clazz create page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"Grade Levels:\""
+                    ],
+                    [
+                        "I should see \"Grade Levels for Classes: disabled\""
+                    ],
+                    [
+                        "I should see \"ENABLE GRADE LEVELS FOR CLASSES\""
+                    ],
+                    [
+                        "I should see \"Grade Levels for Classes: enabled\""
+                    ],
+                    [
+                        "I should see \"GRADE LEVELS:\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "The default settings exist using factories",
+                        "I am logged in with the username admin",
+                        "am on the admin settings page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I create new settings with the description \"test settings\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"test settings\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the most basic default settings",
+                        "I am logged in with the username admin",
+                        "am on the admin settings page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"edit settings\"",
+                        "I fill in \"admin_settings[home_page_content]\" with \"Creating Home Page\"",
+                        "I save the settings",
+                        "I log out",
+                        "am on the my home page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Creating Home Page\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the most basic default settings",
+                        "I am logged in with the username admin",
+                        "am on the admin settings page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"edit settings\"",
+                        "I fill in \"admin_settings[home_page_content]\" with \"Creating Home Page\"",
+                        "I save the settings",
+                        "I press \"Preview Home Page\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the newly opened window should have content \"Creating Home Page\"",
+                        "I close the newly opened window"
+                    ]
+                ]
+            }
+        ]
+    }
+}

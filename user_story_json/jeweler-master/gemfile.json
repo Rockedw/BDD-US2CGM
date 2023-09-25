@@ -1,0 +1,231 @@
+{
+    "feature_name": "generated Gemfiel",
+    "user_story": {
+        "as_a": "user should be able to",
+        "i_want": "generate a Gemfile",
+        "so_that": "start a new gem",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I do not want bundler"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "a file named 'the-perfect-gemGemfile' is not created"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I want bundler"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "a file named 'the-perfect-gem/Gemfile' is created"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I generate a project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "a file named 'the-perfect-gem/Gemfile' is created",
+                        "'Gemfile' uses the gemcutter source",
+                        "'Gemfile' has a development dependency on 'bundler'",
+                        "'Gemfile' has a development dependency on the current version of jeweler",
+                        "'Gemfile' has a development dependency on 'simplecov'",
+                        "'Gemfile' has a development dependency on 'rcov'",
+                        "'Gemfile' has a development dependency on 'rdoc'",
+                        "'Gemfile' does not have a development dependency on 'yard'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I generate a bacon project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'Gemfile' has a development dependency on 'bacon'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I generate a minitest project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'Gemfile' has a development dependency on 'minitest'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I generate a rspec project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'Gemfile' has a development dependency on 'rspec'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I generate a shoulda project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'Gemfile' has a development dependency on 'shoulda'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I generate a micronaut project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'Gemfile' has a development dependency on 'micronaut'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I want cucumber stories"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'Gemfile' has a development dependency on 'cucumber'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I want reek"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'Gemfile' has a development dependency on 'reek'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I want roodi"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'Gemfile' has a development dependency on 'roodi'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I want to use rdoc instead of yard"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'Gemfile' has a development dependency on 'rdoc'",
+                        "'Gemfile' does not have a development dependency on 'yard'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I want to use yard instead of rdoc"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'Gemfile' has a development dependency on 'yard'"
+                    ],
+                    [
+                        "'Gemfile' has a development dependency on 'rdoc'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I generate a shindo project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'Gemfile' has a development dependency on 'shindo'"
+                    ]
+                ]
+            }
+        ]
+    }
+}

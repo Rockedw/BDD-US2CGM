@@ -1,0 +1,24 @@
+{
+    "feature_name": "Appointments",
+    "user_story": {
+        "as_a": "chits user",
+        "i_want": "be able to access Laboratory Menu",
+        "so_that": "maximize the use of chits",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"user\" with password \"user\"",
+                        "I click \"LABORATORY\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"No requests available.\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

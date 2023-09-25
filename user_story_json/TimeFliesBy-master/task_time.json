@@ -1,0 +1,73 @@
+{
+    "feature_name": "Task Time",
+    "user_story": {
+        "as_a": "person reflecting on my time",
+        "i_want": "see the exact start and stop time of the task",
+        "so_that": "> reason about tasks performed",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am on the new task page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"task_start\" with \"12/28/2009 2:30 PM\"",
+                        "I fill in \"task_stop\" with \"12/28/2009 2:31 PM\"",
+                        "I press \"Create\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Task was successfully created.\"",
+                        "I should see \"12/28/2009 14:30:00\"",
+                        "I should see \"12/28/2009 14:31:00\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the new task page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"task_title\" with \"Bad test\"",
+                        "I press \"Create\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Start is not a valid datetime\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the new task page",
+                        "I fill in \"task_start\" with \"1/2/2011 2:30 PM\"",
+                        "I fill in \"task_stop\" with \"1/2/2011 2:31 PM\"",
+                        "I press \"Create\"",
+                        "I should see \"Task was successfully created.\"",
+                        "I follow \"Edit\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Update\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Task was successfully updated.\"",
+                        "I should see \"1/2/2011 14:30:00\"",
+                        "I should see \"1/2/2011 14:31:00\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

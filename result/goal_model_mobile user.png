@@ -1,0 +1,977 @@
+// Goal Model
+digraph {
+	1847125310288 [label="mobile user
+goal"]
+	1847117877008 [label="Change my password
+goal
+140728069287616"]
+	1847125310288 -> 1847117877008
+	1847117877008 [label="Change my password
+goal"]
+	1847125507376 [label="Change my password
+goal
+1847132815760"]
+	1847117877008 -> 1847125507376
+	1847125507376 [label="Change my password
+goal"]
+	1847125508048 [label="I go to the edit user page
+task
+140728069287616"]
+	1847125507376 -> 1847125508048
+	1847125508048 [label="I go to the edit user page
+task"]
+	1847132815568 [label="I fill out change password section with my password and \"newsecret\" and \"newsecret\"
+task
+140728069287616"]
+	1847125507376 -> 1847132815568
+	1847132815568 [label="I fill out change password section with my password and \"newsecret\" and \"newsecret\"
+task"]
+	1847132815520 [label="I press \"Change password\"
+task
+140728069287616"]
+	1847125507376 -> 1847132815520
+	1847132815520 [label="I press \"Change password\"
+task"]
+	1847125507664 [label="I sign in with password \"newsecret\" on the mobile website
+task
+140728069287616"]
+	1847125507376 -> 1847125507664
+	1847125507664 [label="I sign in with password \"newsecret\" on the mobile website
+task"]
+	1847088854400 [label=" attempt password
+goal
+140728069287616"]
+	1847117877008 -> 1847088854400
+	1847088854400 [label=" attempt password
+goal"]
+	1847125507760 [label="Attempt to change my password with invalid input
+goal
+1847132815472"]
+	1847088854400 -> 1847125507760
+	1847125507760 [label="Attempt to change my password with invalid input
+goal"]
+	1847132815712 [label="I go to the edit user page
+task
+140728069287616"]
+	1847125507760 -> 1847132815712
+	1847132815712 [label="I go to the edit user page
+task"]
+	1847132815856 [label="I fill out change password section with my password and \"too\" and \"short\"
+task
+140728069287616"]
+	1847125507760 -> 1847132815856
+	1847132815856 [label="I fill out change password section with my password and \"too\" and \"short\"
+task"]
+	1847132815904 [label="I press \"Change password\"
+task
+140728069287616"]
+	1847125507760 -> 1847132815904
+	1847132815904 [label="I press \"Change password\"
+task"]
+	1847132816144 [label="Attempt to reset password with invalid password
+goal
+1847132816816"]
+	1847088854400 -> 1847132816144
+	1847132816144 [label="Attempt to reset password with invalid password
+goal"]
+	1847132829104 [label="I fill
+out form
+goal
+140728069287616"]
+	1847132816144 -> 1847132829104
+	1847132829104 [label="I fill
+out form
+goal"]
+	1847132816864 [label="I fill out forgot password form with \"forgetful@users.net\"
+task
+140728069287616"]
+	1847132829104 -> 1847132816864
+	1847132816864 [label="I fill out forgot password form with \"forgetful@users.net\"
+task"]
+	1847132817008 [label="I fill out the password reset form with \"too\" and \"short\"
+task
+140728069287616"]
+	1847132829104 -> 1847132817008
+	1847132817008 [label="I fill out the password reset form with \"too\" and \"short\"
+task"]
+	1847132816912 [label="I submit forgot password form
+task
+140728069287616"]
+	1847132816144 -> 1847132816912
+	1847132816912 [label="I submit forgot password form
+task"]
+	1847132816960 [label="I follow the \"Change my password\" link from the last sent email
+task
+140728069287616"]
+	1847132816144 -> 1847132816960
+	1847132816960 [label="I follow the \"Change my password\" link from the last sent email
+task"]
+	1847132817056 [label="I press \"Change my password\"
+task
+140728069287616"]
+	1847132816144 -> 1847132817056
+	1847132817056 [label="I press \"Change my password\"
+task"]
+	1847132816576 [label="Attempt to reset password with invalid email
+goal
+1847132817392"]
+	1847088854400 -> 1847132816576
+	1847132816576 [label="Attempt to reset password with invalid email
+goal"]
+	1847132817440 [label="I fill out forgot password form with \"notanemail\"
+task
+140728069287616"]
+	1847132816576 -> 1847132817440
+	1847132817440 [label="I fill out forgot password form with \"notanemail\"
+task"]
+	1847132817488 [label="I submit forgot password form
+task
+140728069287616"]
+	1847132816576 -> 1847132817488
+	1847132817488 [label="I submit forgot password form
+task"]
+	1847132815952 [label="Reset my password
+goal
+1847132815424"]
+	1847117877008 -> 1847132815952
+	1847132815952 [label="Reset my password
+goal"]
+	1847088852720 [label="I fill
+out form
+goal
+140728069287616"]
+	1847132815952 -> 1847088852720
+	1847088852720 [label="I fill
+out form
+goal"]
+	1847132815616 [label="I fill out forgot password form with \"forgetful@users.net\"
+task
+140728069287616"]
+	1847088852720 -> 1847132815616
+	1847132815616 [label="I fill out forgot password form with \"forgetful@users.net\"
+task"]
+	1847132816336 [label="I fill out the password reset form with \"supersecret\" and \"supersecret\"
+task
+140728069287616"]
+	1847088852720 -> 1847132816336
+	1847132816336 [label="I fill out the password reset form with \"supersecret\" and \"supersecret\"
+task"]
+	1847132819792 [label="I submit form
+goal
+140728069287616"]
+	1847132815952 -> 1847132819792
+	1847132819792 [label="I submit form
+goal"]
+	1847132816240 [label="I submit forgot password form
+task
+140728069287616"]
+	1847132819792 -> 1847132816240
+	1847132816240 [label="I submit forgot password form
+task"]
+	1847132816384 [label="I submit the password reset form
+task
+140728069287616"]
+	1847132819792 -> 1847132816384
+	1847132816384 [label="I submit the password reset form
+task"]
+	1847132816288 [label="I follow the \"Change my password\" link from the last sent email
+task
+140728069287616"]
+	1847132815952 -> 1847132816288
+	1847132816288 [label="I follow the \"Change my password\" link from the last sent email
+task"]
+	1847132816432 [label="I go to the login page
+task
+140728069287616"]
+	1847132815952 -> 1847132816432
+	1847132816432 [label="I go to the login page
+task"]
+	1847132816480 [label="I sign in manually as \"georges_abitbol\" with password \"supersecret\" on the mobile website
+task
+140728069287616"]
+	1847132815952 -> 1847132816480
+	1847132816480 [label="I sign in manually as \"georges_abitbol\" with password \"supersecret\" on the mobile website
+task"]
+	1847132817728 [label="And  test the text of the more-button in different environments
+goal
+1847132818208"]
+	1847125310288 -> 1847132817728
+	1847132817728 [label="And  test the text of the more-button in different environments
+goal"]
+	1847132818928 [label="There are no posts
+goal
+1847132819072"]
+	1847132817728 -> 1847132818928
+	1847132818928 [label="There are no posts
+goal"]
+	1847132819024 [label="I go to the stream page
+task
+140728069287616"]
+	1847132818928 -> 1847132819024
+	1847132819024 [label="I go to the stream page
+task"]
+	1847132818976 [label="There are <15 posts
+goal
+1847132819360"]
+	1847132817728 -> 1847132818976
+	1847132818976 [label="There are <15 posts
+goal"]
+	1847132819312 [label="I go to the stream page
+task
+140728069287616"]
+	1847132818976 -> 1847132819312
+	1847132819312 [label="I go to the stream page
+task"]
+	1847132819168 [label="There are 15 posts
+goal
+1847132819888"]
+	1847132817728 -> 1847132819168
+	1847132819168 [label="There are 15 posts
+goal"]
+	1847132819696 [label="I go to the stream page
+task
+140728069287616"]
+	1847132819168 -> 1847132819696
+	1847132819696 [label="I go to the stream page
+task"]
+	1847132819744 [label="I click on selector \".more-link\"
+task
+140728069287616"]
+	1847132819168 -> 1847132819744
+	1847132819744 [label="I click on selector \".more-link\"
+task"]
+	1847132819456 [label="There are 15 +1 posts
+goal
+1847132820512"]
+	1847132817728 -> 1847132819456
+	1847132819456 [label="There are 15 +1 posts
+goal"]
+	1847132820320 [label="I go to the stream page
+task
+140728069287616"]
+	1847132819456 -> 1847132820320
+	1847132820320 [label="I go to the stream page
+task"]
+	1847132820368 [label="I click on selector \".more-link\"
+task
+140728069287616"]
+	1847132819456 -> 1847132820368
+	1847132820368 [label="I click on selector \".more-link\"
+task"]
+	1847117878880 [label="navigate Diaspora
+goal
+140728069287616"]
+	1847125310288 -> 1847117878880
+	1847117878880 [label="navigate Diaspora
+goal"]
+	1847125223712 [label=" view something
+goal
+140728069287616"]
+	1847117878880 -> 1847125223712
+	1847125223712 [label=" view something
+goal"]
+	1847125303040 [label="view my activity stream
+goal
+1847124817760"]
+	1847125223712 -> 1847125303040
+	1847125303040 [label="view my activity stream
+goal"]
+	1847088854160 [label=" show something
+goal
+140728069287616"]
+	1847125303040 -> 1847088854160
+	1847088854160 [label=" show something
+goal"]
+	1847125507568 [label="Show my activity empty
+goal
+140728069287616"]
+	1847088854160 -> 1847125507568
+	1847125507568 [label="Show my activity empty
+goal"]
+	1847125506704 [label="I sign in as \"bob@bob.bob\" on the mobile website
+task
+140728069287616"]
+	1847125507568 -> 1847125506704
+	1847125506704 [label="I sign in as \"bob@bob.bob\" on the mobile website
+task"]
+	1847125507040 [label="I go to the activity stream page
+task
+140728069287616"]
+	1847125507568 -> 1847125507040
+	1847125507040 [label="I go to the activity stream page
+task"]
+	1847125501040 [label="Show own post on my activity
+goal
+140728069287616"]
+	1847088854160 -> 1847125501040
+	1847125501040 [label="Show own post on my activity
+goal"]
+	1847125506896 [label="I sign in as \"alice@alice.alice\" on the mobile website
+task
+140728069287616"]
+	1847125501040 -> 1847125506896
+	1847125506896 [label="I sign in as \"alice@alice.alice\" on the mobile website
+task"]
+	1847125507472 [label="I go to the activity stream page
+task
+140728069287616"]
+	1847125501040 -> 1847125507472
+	1847125507472 [label="I go to the activity stream page
+task"]
+	1847125507952 [label="Show liked post on my activity
+goal
+140728069287616"]
+	1847125303040 -> 1847125507952
+	1847125507952 [label="Show liked post on my activity
+goal"]
+	1847125507520 [label="I sign in as \"bob@bob.bob\" on the mobile website
+task
+140728069287616"]
+	1847125507952 -> 1847125507520
+	1847125507520 [label="I sign in as \"bob@bob.bob\" on the mobile website
+task"]
+	1847125507856 [label="I click on selector \"a.like-action.inactive\"
+task
+140728069287616"]
+	1847125507952 -> 1847125507856
+	1847125507856 [label="I click on selector \"a.like-action.inactive\"
+task"]
+	1847125507904 [label="I go to the activity stream page
+task
+140728069287616"]
+	1847125507952 -> 1847125507904
+	1847125507904 [label="I go to the activity stream page
+task"]
+	1847132818688 [label="view some photos
+goal
+1847132820080"]
+	1847125223712 -> 1847132818688
+	1847132818688 [label="view some photos
+goal"]
+	1847132821088 [label="view full size image
+goal
+1847132821232"]
+	1847132818688 -> 1847132821088
+	1847132821088 [label="view full size image
+goal"]
+	1847132821184 [label="I attach the file \"spec/fixtures/button.png\" to hidden \"qqfile\" within \"#file-upload-publisher\"
+task
+140728069287616"]
+	1847132821088 -> 1847132821184
+	1847132821184 [label="I attach the file \"spec/fixtures/button.png\" to hidden \"qqfile\" within \"#file-upload-publisher\"
+task"]
+	1847125310240 [label="I press something
+goal
+140728069287616"]
+	1847132821088 -> 1847125310240
+	1847125310240 [label="I press something
+goal"]
+	1847132821376 [label="I click on selector \"img.stream-photo\"
+task
+140728069287616"]
+	1847125310240 -> 1847132821376
+	1847132821376 [label="I click on selector \"img.stream-photo\"
+task"]
+	1847132821280 [label="I press \"Share\"
+task
+140728069287616"]
+	1847125310240 -> 1847132821280
+	1847132821280 [label="I press \"Share\"
+task"]
+	1847132821328 [label="I go to the stream page
+task
+140728069287616"]
+	1847132821088 -> 1847132821328
+	1847132821328 [label="I go to the stream page
+task"]
+	1847132821136 [label="view multiphoto post
+goal
+1847132821904"]
+	1847132818688 -> 1847132821136
+	1847132821136 [label="view multiphoto post
+goal"]
+	1847132820608 [label="I attach file
+goal
+140728069287616"]
+	1847132821136 -> 1847132820608
+	1847132820608 [label="I attach file
+goal"]
+	1847132821616 [label="I attach the file \"spec/fixtures/button.png\" to hidden \"qqfile\" within \"#file-upload-publisher\"
+task
+140728069287616"]
+	1847132820608 -> 1847132821616
+	1847132821616 [label="I attach the file \"spec/fixtures/button.png\" to hidden \"qqfile\" within \"#file-upload-publisher\"
+task"]
+	1847132821664 [label="I attach the file \"spec/fixtures/button.gif\" to hidden \"qqfile\" within \"#file-upload-publisher\"
+task
+140728069287616"]
+	1847132820608 -> 1847132821664
+	1847132821664 [label="I attach the file \"spec/fixtures/button.gif\" to hidden \"qqfile\" within \"#file-upload-publisher\"
+task"]
+	1847132830640 [label="I press something
+goal
+140728069287616"]
+	1847132821136 -> 1847132830640
+	1847132830640 [label="I press something
+goal"]
+	1847132821712 [label="I click on selector \"img.stream-photo\"
+task
+140728069287616"]
+	1847132830640 -> 1847132821712
+	1847132821712 [label="I click on selector \"img.stream-photo\"
+task"]
+	1847132821856 [label="I click on selector \"#arrow-right\"
+task
+140728069287616"]
+	1847132830640 -> 1847132821856
+	1847132821856 [label="I click on selector \"#arrow-right\"
+task"]
+	1847132821760 [label="I press \"Share\"
+task
+140728069287616"]
+	1847132830640 -> 1847132821760
+	1847132821760 [label="I press \"Share\"
+task"]
+	1847132821808 [label="I go to the stream page
+task
+140728069287616"]
+	1847132821136 -> 1847132821808
+	1847132821808 [label="I go to the stream page
+task"]
+	1847132822144 [label="tell the world I am eating a yogurt
+goal
+1847132822672"]
+	1847117878880 -> 1847132822144
+	1847132822144 [label="tell the world I am eating a yogurt
+goal"]
+	1847132823824 [label="post in multiple aspects
+goal
+1847132824736"]
+	1847132822144 -> 1847132823824
+	1847132823824 [label="post in multiple aspects
+goal"]
+	1847132824592 [label="I visit the stream with aspect \"PostingTo\"
+task
+140728069287616"]
+	1847132823824 -> 1847132824592
+	1847132824592 [label="I visit the stream with aspect \"PostingTo\"
+task"]
+	1847132824640 [label="I visit the stream with aspect \"Unicorns\"
+task
+140728069287616"]
+	1847132823824 -> 1847132824640
+	1847132824640 [label="I visit the stream with aspect \"Unicorns\"
+task"]
+	1847132824688 [label="I visit the stream with aspect \"NotPostingThingsHere\"
+task
+140728069287616"]
+	1847132823824 -> 1847132824688
+	1847132824688 [label="I visit the stream with aspect \"NotPostingThingsHere\"
+task"]
+	1847132823776 [label="post and delete some text
+goal
+1847132823968"]
+	1847132822144 -> 1847132823776
+	1847132823776 [label="post and delete some text
+goal"]
+	1847132823872 [label="I go to the stream page
+task
+140728069287616"]
+	1847132823776 -> 1847132823872
+	1847132823872 [label="I go to the stream page
+task"]
+	1847132823920 [label="I confirm the alert after I click on selector \"a.remove\"
+task
+140728069287616"]
+	1847132823776 -> 1847132823920
+	1847132823920 [label="I confirm the alert after I click on selector \"a.remove\"
+task"]
+	1847132831696 [label=" post photo
+goal
+140728069287616"]
+	1847132822144 -> 1847132831696
+	1847132831696 [label=" post photo
+goal"]
+	1847132824064 [label="post a photo without text
+goal
+1847132825744"]
+	1847132831696 -> 1847132824064
+	1847132824064 [label="post a photo without text
+goal"]
+	1847132825456 [label="I attach the file \"spec/fixtures/button.png\" to hidden \"qqfile\" within \"#file-upload-publisher\"
+task
+140728069287616"]
+	1847132824064 -> 1847132825456
+	1847132825456 [label="I attach the file \"spec/fixtures/button.png\" to hidden \"qqfile\" within \"#file-upload-publisher\"
+task"]
+	1847132825504 [label="I press \"Share\"
+task
+140728069287616"]
+	1847132824064 -> 1847132825504
+	1847132825504 [label="I press \"Share\"
+task"]
+	1847132819984 [label="I go something
+goal
+140728069287616"]
+	1847132824064 -> 1847132819984
+	1847132819984 [label="I go something
+goal"]
+	1847132825552 [label="I go to the stream page
+task
+140728069287616"]
+	1847132819984 -> 1847132825552
+	1847132825552 [label="I go to the stream page
+task"]
+	1847132825600 [label="I go to the stream page
+task
+140728069287616"]
+	1847132819984 -> 1847132825600
+	1847132825600 [label="I go to the stream page
+task"]
+	1847132825648 [label="I log out
+task
+140728069287616"]
+	1847132824064 -> 1847132825648
+	1847132825648 [label="I log out
+task"]
+	1847132825696 [label="I sign in as \"alice@alice.alice\" on the mobile website
+task
+140728069287616"]
+	1847132824064 -> 1847132825696
+	1847132825696 [label="I sign in as \"alice@alice.alice\" on the mobile website
+task"]
+	1847132824832 [label="back out of posting a photo-only post
+goal
+1847132826032"]
+	1847132831696 -> 1847132824832
+	1847132824832 [label="back out of posting a photo-only post
+goal"]
+	1847132825984 [label="I accept the alert after I attach the file \"spec/fixtures/bad_urls.txt\" to \"qqfile\" within \"#file-upload-publisher\"
+task
+140728069287616"]
+	1847132824832 -> 1847132825984
+	1847132825984 [label="I accept the alert after I attach the file \"spec/fixtures/bad_urls.txt\" to \"qqfile\" within \"#file-upload-publisher\"
+task"]
+	1847132826080 [label="I attach the file \"spec/fixtures/button.png\" to hidden \"qqfile\" within \"#file-upload-publisher\"
+task
+140728069287616"]
+	1847132824832 -> 1847132826080
+	1847132826080 [label="I attach the file \"spec/fixtures/button.png\" to hidden \"qqfile\" within \"#file-upload-publisher\"
+task"]
+	1847132826128 [label="I should see \"button.png completed\"
+task
+140728069287616"]
+	1847132824832 -> 1847132826128
+	1847132826128 [label="I should see \"button.png completed\"
+task"]
+	1847132826176 [label="I click to delete the first uploaded photo
+task
+140728069287616"]
+	1847132824832 -> 1847132826176
+	1847132826176 [label="I click to delete the first uploaded photo
+task"]
+	1847132825840 [label="back out of uploading a picture when another has been attached
+goal
+1847132826416"]
+	1847132822144 -> 1847132825840
+	1847132825840 [label="back out of uploading a picture when another has been attached
+goal"]
+	1847132823056 [label="react to posts
+goal
+1847132826272"]
+	1847117878880 -> 1847132823056
+	1847132823056 [label="react to posts
+goal"]
+	1847132827472 [label="like on a mobile post
+goal
+140728069287616"]
+	1847132823056 -> 1847132827472
+	1847132827472 [label="like on a mobile post
+goal"]
+	1847132827568 [label="I click on selector \"a.like-action.inactive\"
+task
+140728069287616"]
+	1847132827472 -> 1847132827568
+	1847132827568 [label="I click on selector \"a.like-action.inactive\"
+task"]
+	1847132827616 [label="I go to the stream page
+task
+140728069287616"]
+	1847132827472 -> 1847132827616
+	1847132827616 [label="I go to the stream page
+task"]
+	1847132827520 [label="liking from the profile view
+goal
+140728069287616"]
+	1847132823056 -> 1847132827520
+	1847132827520 [label="liking from the profile view
+goal"]
+	1847132827760 [label="I am on \"alice@alice.alice\"'s page
+task
+140728069287616"]
+	1847132827520 -> 1847132827760
+	1847132827760 [label="I am on \"alice@alice.alice\"'s page
+task"]
+	1847132827808 [label="I click on selector \"a.like-action.inactive\"
+task
+140728069287616"]
+	1847132827520 -> 1847132827808
+	1847132827808 [label="I click on selector \"a.like-action.inactive\"
+task"]
+	1847132827712 [label="I go to the stream page
+task
+140728069287616"]
+	1847132827520 -> 1847132827712
+	1847132827712 [label="I go to the stream page
+task"]
+	1847132827664 [label="comment and delete a mobile post
+goal
+140728069287616"]
+	1847132823056 -> 1847132827664
+	1847132827664 [label="comment and delete a mobile post
+goal"]
+	1847132861008 [label="I click something
+goal
+140728069287616"]
+	1847132827664 -> 1847132861008
+	1847132861008 [label="I click something
+goal"]
+	1847132827952 [label="I click on selector \"a.comment-action.inactive\"
+task
+140728069287616"]
+	1847132861008 -> 1847132827952
+	1847132827952 [label="I click on selector \"a.comment-action.inactive\"
+task"]
+	1847132828240 [label="I click on selector \"a.show-comments\"
+task
+140728069287616"]
+	1847132861008 -> 1847132828240
+	1847132828240 [label="I click on selector \"a.show-comments\"
+task"]
+	1847132828288 [label="I click on selector \"a.comment-action\"
+task
+140728069287616"]
+	1847132861008 -> 1847132828288
+	1847132828288 [label="I click on selector \"a.comment-action\"
+task"]
+	1847132828000 [label="I fill in the following:
+task
+140728069287616"]
+	1847132827664 -> 1847132828000
+	1847132828000 [label="I fill in the following:
+task"]
+	1847132828096 [label="I go to the stream page
+task
+140728069287616"]
+	1847132827664 -> 1847132828096
+	1847132828096 [label="I go to the stream page
+task"]
+	1847132853520 [label="I see something
+goal
+140728069287616"]
+	1847132827664 -> 1847132853520
+	1847132853520 [label="I see something
+goal"]
+	1847132828144 [label="I should see \"1 comment\" within \".show-comments\"
+task
+140728069287616"]
+	1847132853520 -> 1847132828144
+	1847132828144 [label="I should see \"1 comment\" within \".show-comments\"
+task"]
+	1847132828192 [label="I should see \"1\" within \".comment-count\"
+task
+140728069287616"]
+	1847132853520 -> 1847132828192
+	1847132828192 [label="I should see \"1\" within \".comment-count\"
+task"]
+	1847132828336 [label="I confirm the alert after I click on selector \"a.remove\"
+task
+140728069287616"]
+	1847132827664 -> 1847132828336
+	1847132828336 [label="I confirm the alert after I click on selector \"a.remove\"
+task"]
+	1847132827040 [label="register an account
+goal
+1847132827856"]
+	1847117878880 -> 1847132827040
+	1847132827040 [label="register an account
+goal"]
+	1847132828528 [label="user signs up and goes to getting started
+goal
+140728069287616"]
+	1847132827040 -> 1847132828528
+	1847132828528 [label="user signs up and goes to getting started
+goal"]
+	1847132828672 [label="I fill in the new user form
+task
+140728069287616"]
+	1847132828528 -> 1847132828672
+	1847132828672 [label="I fill in the new user form
+task"]
+	1847132828720 [label="I press \"Create account\"
+task
+140728069287616"]
+	1847132828528 -> 1847132828720
+	1847132828720 [label="I press \"Create account\"
+task"]
+	1847132828576 [label="user fills in bogus data - client side validation
+goal
+140728069287616"]
+	1847132827040 -> 1847132828576
+	1847132828576 [label="user fills in bogus data - client side validation
+goal"]
+	1847132828048 [label="I fill
+in following
+goal
+140728069287616"]
+	1847132828576 -> 1847132828048
+	1847132828048 [label="I fill
+in following
+goal"]
+	1847132828816 [label="I fill in the following:
+task
+140728069287616"]
+	1847132828048 -> 1847132828816
+	1847132828816 [label="I fill in the following:
+task"]
+	1847132828912 [label="I fill in the following:
+task
+140728069287616"]
+	1847132828048 -> 1847132828912
+	1847132828912 [label="I fill in the following:
+task"]
+	1847132829008 [label="I fill in the following:
+task
+140728069287616"]
+	1847132828048 -> 1847132829008
+	1847132829008 [label="I fill in the following:
+task"]
+	1847132862592 [label="I press account
+goal
+140728069287616"]
+	1847132828576 -> 1847132862592
+	1847132862592 [label="I press account
+goal"]
+	1847132828864 [label="I press \"Create account\"
+task
+140728069287616"]
+	1847132862592 -> 1847132828864
+	1847132828864 [label="I press \"Create account\"
+task"]
+	1847132828960 [label="I press \"Create account\"
+task
+140728069287616"]
+	1847132862592 -> 1847132828960
+	1847132828960 [label="I press \"Create account\"
+task"]
+	1847132829056 [label="I press \"Create account\"
+task
+140728069287616"]
+	1847132862592 -> 1847132829056
+	1847132829056 [label="I press \"Create account\"
+task"]
+	1847125507808 [label="converse with people
+goal
+1847132817152"]
+	1847125310288 -> 1847125507808
+	1847125507808 [label="converse with people
+goal"]
+	1847132818304 [label="I sign in as \"alice@alice.alice\" on the mobile website
+task
+140728069287616"]
+	1847125507808 -> 1847132818304
+	1847132818304 [label="I sign in as \"alice@alice.alice\" on the mobile website
+task"]
+	1847132818352 [label="I reply with \"hey, how you doing?\"
+task
+140728069287616"]
+	1847125507808 -> 1847132818352
+	1847132818352 [label="I reply with \"hey, how you doing?\"
+task"]
+	1847132818400 [label="I press the first \".ltr\" within \".conversation\"
+task
+140728069287616"]
+	1847125507808 -> 1847132818400
+	1847132818400 [label="I press the first \".ltr\" within \".conversation\"
+task"]
+	1847132818256 [label="I confirm the alert after I click on selector \"a.remove\"
+task
+140728069287616"]
+	1847125507808 -> 1847132818256
+	1847132818256 [label="I confirm the alert after I click on selector \"a.remove\"
+task"]
+	1847132820848 [label="add and remove people from my contacts
+goal
+1847132821472"]
+	1847125310288 -> 1847132820848
+	1847132820848 [label="add and remove people from my contacts
+goal"]
+	1847132822384 [label="verify different states of the cover button
+goal
+140728069287616"]
+	1847132820848 -> 1847132822384
+	1847132822384 [label="verify different states of the cover button
+goal"]
+	1847132822480 [label="I am on \"alice@alice.alice\"'s page
+task
+140728069287616"]
+	1847132822384 -> 1847132822480
+	1847132822480 [label="I am on \"alice@alice.alice\"'s page
+task"]
+	1847132857648 [label="I select something
+goal
+140728069287616"]
+	1847132822384 -> 1847132857648
+	1847132857648 [label="I select something
+goal"]
+	1847132822528 [label="I select \"Unicorns\" from \"user_aspects\" within \"#author_info\"
+task
+140728069287616"]
+	1847132857648 -> 1847132822528
+	1847132822528 [label="I select \"Unicorns\" from \"user_aspects\" within \"#author_info\"
+task"]
+	1847132822576 [label="I select \"Besties\" from \"user_aspects\" within \"#author_info\"
+task
+140728069287616"]
+	1847132857648 -> 1847132822576
+	1847132822576 [label="I select \"Besties\" from \"user_aspects\" within \"#author_info\"
+task"]
+	1847132822432 [label="add contact to aspect
+goal
+140728069287616"]
+	1847132820848 -> 1847132822432
+	1847132822432 [label="add contact to aspect
+goal"]
+	1847132822720 [label="I am on \"alice@alice.alice\"'s page
+task
+140728069287616"]
+	1847132822432 -> 1847132822720
+	1847132822720 [label="I am on \"alice@alice.alice\"'s page
+task"]
+	1847132822768 [label="I select \"Unicorns\" from \"user_aspects\" within \"#author_info\"
+task
+140728069287616"]
+	1847132822432 -> 1847132822768
+	1847132822768 [label="I select \"Unicorns\" from \"user_aspects\" within \"#author_info\"
+task"]
+	1847132822624 [label="remove contact to aspect
+goal
+140728069287616"]
+	1847132820848 -> 1847132822624
+	1847132822624 [label="remove contact to aspect
+goal"]
+	1847132822864 [label="I am on \"alice@alice.alice\"'s page
+task
+140728069287616"]
+	1847132822624 -> 1847132822864
+	1847132822864 [label="I am on \"alice@alice.alice\"'s page
+task"]
+	1847132822960 [label="I am on \"alice@alice.alice\"'s page
+task
+140728069287616"]
+	1847132822624 -> 1847132822960
+	1847132822960 [label="I am on \"alice@alice.alice\"'s page
+task"]
+	1847132853664 [label="I select Unicorns
+goal
+140728069287616"]
+	1847132822624 -> 1847132853664
+	1847132853664 [label="I select Unicorns
+goal"]
+	1847132822912 [label="I select \"Unicorns\" from \"user_aspects\" within \"#author_info\"
+task
+140728069287616"]
+	1847132853664 -> 1847132822912
+	1847132822912 [label="I select \"Unicorns\" from \"user_aspects\" within \"#author_info\"
+task"]
+	1847132823008 [label="I select \"Unicorns\" from \"user_aspects\" within \"#author_info\"
+task
+140728069287616"]
+	1847132853664 -> 1847132823008
+	1847132823008 [label="I select \"Unicorns\" from \"user_aspects\" within \"#author_info\"
+task"]
+	1847132828384 [label="reshare my friend's post
+goal
+1847132828624"]
+	1847125310288 -> 1847132828384
+	1847132828384 [label="reshare my friend's post
+goal"]
+	1847132829776 [label="Delete original reshared post
+goal
+1847132830304"]
+	1847132828384 -> 1847132829776
+	1847132829776 [label="Delete original reshared post
+goal"]
+	1847132830400 [label="I am on \"alice@alice.alice\"'s page
+task
+140728069287616"]
+	1847132829776 -> 1847132830400
+	1847132830400 [label="I am on \"alice@alice.alice\"'s page
+task"]
+	1847132830352 [label="I toggle the mobile view
+task
+140728069287616"]
+	1847132829776 -> 1847132830352
+	1847132830352 [label="I toggle the mobile view
+task"]
+	1847132830448 [label="I click to delete the first post
+task
+140728069287616"]
+	1847132829776 -> 1847132830448
+	1847132830448 [label="I click to delete the first post
+task"]
+	1847132830496 [label="I log out
+task
+140728069287616"]
+	1847132829776 -> 1847132830496
+	1847132830496 [label="I log out
+task"]
+	1847132830544 [label="I sign in as \"bob@bob.bob\" on the mobile website
+task
+140728069287616"]
+	1847132829776 -> 1847132830544
+	1847132830544 [label="I sign in as \"bob@bob.bob\" on the mobile website
+task"]
+	1847125301936 [label=" reshare post
+goal
+140728069287616"]
+	1847132828384 -> 1847125301936
+	1847125301936 [label=" reshare post
+goal"]
+	1847132829632 [label="Resharing a post from a single post page
+goal
+140728069287616"]
+	1847125301936 -> 1847132829632
+	1847132829632 [label="Resharing a post from a single post page
+goal"]
+	1847132829728 [label="I go to the stream page
+task
+140728069287616"]
+	1847132829632 -> 1847132829728
+	1847132829728 [label="I go to the stream page
+task"]
+	1847132829968 [label="Not resharing own post
+goal
+1847132830928"]
+	1847125301936 -> 1847132829968
+	1847132829968 [label="Not resharing own post
+goal"]
+	1847132830880 [label="I go to the stream page
+task
+140728069287616"]
+	1847132829968 -> 1847132830880
+	1847132830880 [label="I go to the stream page
+task"]
+	1847132829680 [label="Resharing a post from a single post page that is reshared
+goal
+1847132829872"]
+	1847132828384 -> 1847132829680
+	1847132829680 [label="Resharing a post from a single post page that is reshared
+goal"]
+	1847132829824 [label="I go to the stream page
+task
+140728069287616"]
+	1847132829680 -> 1847132829824
+	1847132829824 [label="I go to the stream page
+task"]
+}

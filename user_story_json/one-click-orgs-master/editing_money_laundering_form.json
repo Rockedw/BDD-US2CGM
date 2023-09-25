@@ -1,0 +1,70 @@
+{
+    "feature_name": "Editing money laundering form",
+    "user_story": {
+        "as_a": "founder member",
+        "i_want": "edit the money laundering form",
+        "so_that": "prepare our co-op for registration",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to edit the registration details",
+                        "I enter the main contact info",
+                        "I save the registration details"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the main contact info"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to edit the registration details",
+                        "I enter the financial contact info",
+                        "I save the registration details"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the financial contact info"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to edit the registration details",
+                        "I enter details for the two money laundering contacts",
+                        "I save the registration details"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the details for the two money laundering contacts"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to edit the registration details",
+                        "I check \"I have read and agree to the Letter of Engagement and Anti-Money Laundering requirements.\"",
+                        "I save the registration details"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the agreement checkbox is checked"
+                    ]
+                ]
+            }
+        ]
+    }
+}

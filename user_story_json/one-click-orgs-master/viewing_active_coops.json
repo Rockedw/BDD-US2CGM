@@ -1,0 +1,39 @@
+{
+    "feature_name": "Viewing active co-ops",
+    "user_story": {
+        "as_a": "n administrator",
+        "i_want": "view details of active co-ops",
+        "so_that": "monitor use of the app",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the co-op review page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a list of the active co-ops"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the admin view of an active co-op"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the name of the co-op",
+                        "I should see the directors of the co-op",
+                        "I should see the members of the co-op",
+                        "I should see a link to the co-op's rules"
+                    ]
+                ]
+            }
+        ]
+    }
+}

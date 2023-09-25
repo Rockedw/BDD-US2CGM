@@ -1,0 +1,85 @@
+{
+    "feature_name": "show photos",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on \"robert@grimm.grimm\"'s page",
+                        "I press the first \"#photos_link\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on person_photos page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I sign in as \"alice@alice.alice\"",
+                        "I am on \"robert@grimm.grimm\"'s page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"Photos\" within \"#profile-horizontal-bar\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "\"robert@grimm.grimm\" has posted a public status message with a photo",
+                        "I sign in as \"alice@alice.alice\"",
+                        "I am on \"robert@grimm.grimm\"'s page"
+                    ],
+                    [
+                        "I press the first \"#photos_link\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Photos\" within \"#profile-horizontal-bar\""
+                    ],
+                    [
+                        "I should be on \"robert@grimm.grimm\"'s photos page",
+                        "I should see \"Photos\" within \"#profile-horizontal-bar\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on \"robert@grimm.grimm\"'s photos page"
+                    ],
+                    [
+                        "I confirm the alert after I delete a photo"
+                    ],
+                    [
+                        "I am on \"robert@grimm.grimm\"'s page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a \".thumbnail\" within \"#main-stream\""
+                    ],
+                    [
+                        "I should not see a \".thumbnail\" within \"#main-stream\""
+                    ],
+                    [
+                        "I should not see \"Photos\" within \"#profile-horizontal-bar\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

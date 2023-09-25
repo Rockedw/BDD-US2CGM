@@ -1,0 +1,98 @@
+{
+    "feature_name": "using the more button on mobile stream",
+    "user_story": {
+        "as_a": "mobile user",
+        "i_want": "And  test the text of the more-button in different environments",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am on the home page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the stream page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"There are no posts yet.\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the home page",
+                        "\"bob@bob.bob\" has a public post with text \"post 1\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the stream page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"You have reached the end of the stream.\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the home page"
+                    ],
+                    [
+                        "there are 15 public posts from \"bob@bob.bob\"",
+                        "\"bob@bob.bob\" has a public post with text \"post 1\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the stream page"
+                    ],
+                    [
+                        "I click on selector \".more-link\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"More\""
+                    ],
+                    [
+                        "I should see \"You have reached the end of the stream.\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the home page"
+                    ],
+                    [
+                        "there are 16 public posts from \"bob@bob.bob\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the stream page"
+                    ],
+                    [
+                        "I click on selector \".more-link\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"More\""
+                    ],
+                    [
+                        "I should see \"You have reached the end of the stream.\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

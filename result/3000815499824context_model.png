@@ -1,0 +1,13 @@
+// 3000815498960 Context Model
+digraph {
+	3000815499824 [label=Context68]
+	3000815499968 [label="a working directory"]
+	3000815499824 -> 3000815499968
+	3000815499968 [label="a working directory"]
+	3000815500064 [label="I have configured git sanely"]
+	3000815499824 -> 3000815500064
+	3000815500064 [label="I have configured git sanely"]
+	3000815500160 [label="I do not want bundler"]
+	3000815499824 -> 3000815500160
+	3000815500160 [label="I do not want bundler"]
+}

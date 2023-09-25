@@ -1,0 +1,13 @@
+// 2084506646512 Context Model
+digraph {
+	2084506645456 [label=Context8]
+	2084506646656 [label="I have a configuration file with \"theme\" set to \"test-theme\""]
+	2084506645456 -> 2084506646656
+	2084506646656 [label="I have a configuration file with \"theme\" set to \"test-theme\""]
+	2084506647088 [label="I have an assets directory"]
+	2084506645456 -> 2084506647088
+	2084506647088 [label="I have an assets directory"]
+	2084506646704 [label="I have an \"assets/style.scss\" page that contains \"@import 'test-theme-black';\""]
+	2084506645456 -> 2084506646704
+	2084506646704 [label="I have an \"assets/style.scss\" page that contains \"@import 'test-theme-black';\""]
+}

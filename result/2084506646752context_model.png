@@ -1,0 +1,19 @@
+// 2084506640176 Context Model
+digraph {
+	2084506646752 [label=Context8]
+	2084464785104 [label="a provider \"Pullover\""]
+	2084506646752 -> 2084464785104
+	2084464785104 [label="a provider \"Pullover\""]
+	2084464783232 [label="primary services \"Ruby on Rails, AJAX\""]
+	2084506646752 -> 2084464783232
+	2084464783232 [label="primary services \"Ruby on Rails, AJAX\""]
+	2084464782656 [label="secondary services \"Visual design, UI\""]
+	2084506646752 -> 2084464782656
+	2084464782656 [label="secondary services \"Visual design, UI\""]
+	2084464785920 [label="a user \"paul\" belonging to the \"Pullover\" provider"]
+	2084506646752 -> 2084464785920
+	2084464785920 [label="a user \"paul\" belonging to the \"Pullover\" provider"]
+	2084464785872 [label="a logged in admin user"]
+	2084506646752 -> 2084464785872
+	2084464785872 [label="a logged in admin user"]
+}

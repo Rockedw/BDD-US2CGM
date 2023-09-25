@@ -1,0 +1,10 @@
+// 2084500700368 Context Model
+digraph {
+	2084500688080 [label=Context1]
+	2084500688944 [label="a provider \"Tim Stafford\" with an RFP called \"Unwieldy\""]
+	2084500688080 -> 2084500688944
+	2084500688944 [label="a provider \"Tim Stafford\" with an RFP called \"Unwieldy\""]
+	2084500692976 [label="a logged in admin user"]
+	2084500688080 -> 2084500692976
+	2084500692976 [label="a logged in admin user"]
+}

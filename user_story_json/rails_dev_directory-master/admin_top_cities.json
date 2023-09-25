@@ -1,0 +1,48 @@
+{
+    "feature_name": "Admin Top Cities",
+    "user_story": {
+        "as_a": "n admin",
+        "i_want": "be able to add top cities",
+        "so_that": "choose what top cities appear in the top cities section",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a logged in admin user"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the admin dashboard",
+                        "I follow \"Top Cities\"",
+                        "I follow \"Add Top City\"",
+                        "I fill in \"City\" with \"Dublin\"",
+                        "I select \"Ireland\" from \"Country\"",
+                        "I press \"Save\""
+                    ],
+                    [
+                        "I follow \"Edit\"",
+                        "I fill in \"City\" with \"Jacksonville\"",
+                        "I select \"Florida\" from \"State\"",
+                        "I select \"United States\" from \"Country\"",
+                        "I press \"Save\""
+                    ],
+                    [
+                        "I follow \"Delete\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Dublin, Ireland\""
+                    ],
+                    [
+                        "I should see \"Jacksonville, Florida, United States\""
+                    ],
+                    [
+                        "I should not see \"Galway, Ireland\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

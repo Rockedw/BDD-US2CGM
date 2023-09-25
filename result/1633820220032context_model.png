@@ -1,0 +1,13 @@
+// 1633827031744 Context Model
+digraph {
+	1633820220032 [label=Context1]
+	1633819696128 [label="following users exist:"]
+	1633820220032 -> 1633819696128
+	1633819696128 [label="following users exist:"]
+	1633827601328 [label="a user with username \"bob\" is connected with \"alice\""]
+	1633820220032 -> 1633827601328
+	1633827601328 [label="a user with username \"bob\" is connected with \"alice\""]
+	1633827763824 [label="\"alice@alice.alice\" has a public post with text \"Hello! I am #newhere\""]
+	1633820220032 -> 1633827763824
+	1633827763824 [label="\"alice@alice.alice\" has a public post with text \"Hello! I am #newhere\""]
+}

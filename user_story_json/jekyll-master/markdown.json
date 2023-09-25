@@ -1,0 +1,57 @@
+{
+    "feature_name": "Markdown",
+    "user_story": {
+        "as_a": "hacker who likes to blog",
+        "i_want": "be able to make a static site",
+        "so_that": "share my awesome ideas with the interwebs",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with \"paginate\" set to \"5\"",
+                        "I have an \"index.html\" page that contains \"Index - {% for post in site.posts %} {{ post.content }} {% endfor %}\"",
+                        "I have a _posts directory",
+                        "I have the following post:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Index\" in \"_site/index.html\"",
+                        "I should see \"<h1 id=\\\"my-title\\\">My Title</h1>\" in \"_site/2009/03/27/hackers.html\"",
+                        "I should see \"<h1 id=\\\"my-title\\\">My Title</h1>\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with:",
+                        "I have an \"index.html\" page that contains \"Index - {% for post in paginator.posts %} {{ post.content }} {% endfor %}\"",
+                        "I have a _posts directory",
+                        "I have the following post:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Index\" in \"_site/index.html\"",
+                        "I should see \"<h1 id=\\\"my-title\\\">My Title</h1>\" in \"_site/index.html\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

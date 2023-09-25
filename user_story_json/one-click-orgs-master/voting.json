@@ -1,0 +1,29 @@
+{
+    "feature_name": "Voting",
+    "user_story": {
+        "as_a": "director",
+        "i_want": "vote on proposals that have been made",
+        "so_that": "participate in group decisions",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a proposal \"Buy more tea\" has been made"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Votes & Minutes page",
+                        "I press \"Support\" within the \"Buy more tea\" proposal"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Vote for proposal cast\"",
+                        "I should see \"You voted to support this proposal\" within the \"Buy more tea\" proposal"
+                    ]
+                ]
+            }
+        ]
+    }
+}

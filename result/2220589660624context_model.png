@@ -1,0 +1,25 @@
+// 2220589659376 Context Model
+digraph {
+	2220589660624 [label=Context27]
+	2220589660768 [label="I have a _layouts directory"]
+	2220589660624 -> 2220589660768
+	2220589660768 [label="I have a _layouts directory"]
+	2220589660864 [label="I have a page layout that contains \"Page Layout: {{ site.posts.size }} on {{ site.time | date: \"%Y-%m-%d\" }}\""]
+	2220589660624 -> 2220589660864
+	2220589660864 [label="I have a page layout that contains \"Page Layout: {{ site.posts.size }} on {{ site.time | date: \"%Y-%m-%d\" }}\""]
+	2220589660960 [label="I have a post layout that contains \"Post Layout: {{ content }}\""]
+	2220589660624 -> 2220589660960
+	2220589660960 [label="I have a post layout that contains \"Post Layout: {{ content }}\""]
+	2220589661056 [label="I have an \"index.html\" page with layout \"page\" that contains \"site index page\""]
+	2220589660624 -> 2220589661056
+	2220589661056 [label="I have an \"index.html\" page with layout \"page\" that contains \"site index page\""]
+	2220589661152 [label="I have a configuration file with:"]
+	2220589660624 -> 2220589661152
+	2220589661152 [label="I have a configuration file with:"]
+	2220589661248 [label="I have a _posts directory"]
+	2220589660624 -> 2220589661248
+	2220589661248 [label="I have a _posts directory"]
+	2220589661344 [label="I have the following posts:"]
+	2220589660624 -> 2220589661344
+	2220589661344 [label="I have the following posts:"]
+}

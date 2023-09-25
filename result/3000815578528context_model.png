@@ -1,0 +1,13 @@
+// 3000815577472 Context Model
+digraph {
+	3000815578528 [label=Context43]
+	3000815578672 [label="I have an _includes directory"]
+	3000815578528 -> 3000815578672
+	3000815578672 [label="I have an _includes directory"]
+	3000815578768 [label="I have an \"_includes/header-en.html\" file that contains \"include\""]
+	3000815578528 -> 3000815578768
+	3000815578768 [label="I have an \"_includes/header-en.html\" file that contains \"include\""]
+	3000815578864 [label="I have an \"index.html\" page that contains \"{% assign name = 'header' %}{% assign locale = 'en' %}{% include {{name}}-{{locale}}.html %}\""]
+	3000815578528 -> 3000815578864
+	3000815578864 [label="I have an \"index.html\" page that contains \"{% assign name = 'header' %}{% assign locale = 'en' %}{% include {{name}}-{{locale}}.html %}\""]
+}

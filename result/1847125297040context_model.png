@@ -1,0 +1,13 @@
+// 1847125303088 Context Model
+digraph {
+	1847125297040 [label=Context1]
+	1847125310624 [label="I am a user"]
+	1847125297040 -> 1847125310624
+	1847125310624 [label="I am a user"]
+	1847125306928 [label="I click 'Create Organisation'"]
+	1847125297040 -> 1847125306928
+	1847125306928 [label="I click 'Create Organisation'"]
+	1847125301984 [label="I specify its name, profile-image, network and organisation type"]
+	1847125297040 -> 1847125301984
+	1847125301984 [label="I specify its name, profile-image, network and organisation type"]
+}

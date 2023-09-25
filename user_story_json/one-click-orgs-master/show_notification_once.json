@@ -1,0 +1,33 @@
+{
+    "feature_name": "Show notification once",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "the application is set up"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I create an association"
+                    ],
+                    [
+                        "I go to the members page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Now you can read the constitution\""
+                    ],
+                    [
+                        "I should not see \"Now you can read the constitution\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

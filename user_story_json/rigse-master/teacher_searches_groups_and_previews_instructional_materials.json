@@ -1,0 +1,198 @@
+{
+    "feature_name": "Teacher can search instructional materials grouped by material type, sort and preview them.",
+    "user_story": {
+        "as_a": "teacher",
+        "i_want": "search instructional materials grouped by material type, sort and preview materials",
+        "so_that": "find suitable study materials for the class",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I search for \"differential calculus\" on the search instructional materials page",
+                        "I follow the \"Assign or Share\" link for the activity \"differential calculus\""
+                    ],
+                    [
+                        "I press \"Cancel\" within the modal",
+                        "I wait 2 seconds",
+                        "I follow activity link \"differential calculus\" on the search instructional materials page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Select the class(es) you want to assign this resource to below.\"",
+                        "I should be on the search instructional materials page",
+                        "I should see \"Your Classes\""
+                    ],
+                    [
+                        "I should be on the browse materials page for \"differential calculus\"",
+                        "I should see \"differential calculus\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "the external activity \"differential calculus\" is assigned to the class \"Physics\"",
+                        "I search for \"differential calculus\" on the search instructional materials page"
+                    ],
+                    [
+                        "the external activity \"Fluid Mechanics\" is assigned to the class \"Physics\"",
+                        "I search for \"Fluid Mechanics\" on the search instructional materials page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Assigned to Physics\""
+                    ],
+                    [
+                        "I should see \"Assigned to Physics\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I log out",
+                        "I am on the search instructional materials page",
+                        "I search for \"differential calculus\" on the search instructional materials page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"differential calculus\"",
+                        "I follow activity link \"differential calculus\" on the search instructional materials page"
+                    ],
+                    [
+                        "I should be on the browse materials page for \"differential calculus\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I enter search text \"Radioactivity\" on the search instructional materials page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see search suggestions for \"Radioactivity\" on the search instructional materials page"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I search for \"lines\" on the search instructional materials page",
+                        "I follow \"Alphabetical\" in Sort By on the search instructional materials page"
+                    ],
+                    [
+                        "I search for \"calculus\" on the search instructional materials page",
+                        "I follow \"Alphabetical\" in Sort By on the search instructional materials page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "\"graphs and lines\" should appear before \"intersecting lines\"",
+                        "\"intersecting lines\" should appear before \"parallel lines\""
+                    ],
+                    [
+                        "\"differential calculus\" should appear before \"integral calculus\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I create investigations \"differential calculus\" before \"integral calculus\" by date",
+                        "I search for \"calculus\" on the search instructional materials page",
+                        "I follow \"Oldest\" in Sort By on the search instructional materials page",
+                        "I wait 2 seconds"
+                    ],
+                    [
+                        "I follow \"Newest\" in Sort By on the search instructional materials page",
+                        "I wait 2 seconds"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "\"integral calculus\" should appear before \"differential calculus\""
+                    ],
+                    [
+                        "\"differential calculus\" should appear before \"integral calculus\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I create activities \"parallel lines\" before \"graphs and lines\" by date",
+                        "I search for \"lines\" on the search instructional materials page",
+                        "I follow \"Oldest\" in Sort By on the search instructional materials page",
+                        "I wait 2 seconds"
+                    ],
+                    [
+                        "I follow \"Newest\" in Sort By on the search instructional materials page",
+                        "I wait 2 seconds"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "\"graphs and lines\" should appear before \"parallel lines\""
+                    ],
+                    [
+                        "\"parallel lines\" should appear before \"graphs and lines\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I enter search text \"Geometry\" on the search instructional materials page",
+                        "I press \"Go\""
+                    ],
+                    [
+                        "I enter search text \"Radioactivity\" on the search instructional materials page",
+                        "I press \"Go\"",
+                        "I wait 2 seconds"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Geometry\"",
+                        "I should not see \"Radioactivity\"",
+                        "I should not see \"Geometry sequence\"",
+                        "I check \"Sequence\"",
+                        "I uncheck \"Activity\"",
+                        "I wait 1 second"
+                    ],
+                    [
+                        "I should see \"Radioactivity sequence\"",
+                        "I should not see \"smaller radioactive activity\"",
+                        "I should not see \"Geometry\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I search for \"is a great\" on the search instructional materials page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the search results should be paginated on the search instructional materials page"
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+// 2662397785568 Context Model
+digraph {
+	2662397786384 [label=Context32]
+	2662397786720 [label="I expand the publisher"]
+	2662397786384 -> 2662397786720
+	2662397786720 [label="I expand the publisher"]
+	2662397786816 [label="I click on selector \"#poll_creator\""]
+	2662397786384 -> 2662397786816
+	2662397786816 [label="I click on selector \"#poll_creator\""]
+}

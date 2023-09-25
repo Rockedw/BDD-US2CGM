@@ -1,0 +1,128 @@
+{
+    "feature_name": "Refresh directory tree",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I will choose \"plugins/project/spec/fixtures/myproject\" from the \"open_directory\" dialog"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a directory"
+                    ],
+                    [
+                        "I touch the file \"plugins/project/spec/fixtures/myproject/testyfile.txt\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"lib,spec,README\" in the tree",
+                        "I should not see \"testyfile.txt\" in the tree"
+                    ],
+                    [
+                        "I should not see \"testyfile.txt\" in the tree"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I will choose \"plugins/project/spec/fixtures/myproject\" from the \"open_directory\" dialog"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a directory"
+                    ],
+                    [
+                        "I touch the file \"plugins/project/spec/fixtures/myproject/testyfile.txt\"",
+                        "I refresh the directory tree"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"lib,spec,README\" in the tree",
+                        "I should not see \"testyfile.txt\" in the tree"
+                    ],
+                    [
+                        "I should see \"lib,spec,README,testyfile.txt\" in the tree"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I will choose \"plugins/project/spec/fixtures/myproject\" from the \"open_directory\" dialog"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a directory"
+                    ],
+                    [
+                        "I touch the file \"plugins/project/spec/fixtures/myproject/testyfile.txt\""
+                    ],
+                    [
+                        "I open a new window",
+                        "I focus the window \"myproject\" with a command"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"lib,spec,README\" in the tree",
+                        "I should not see \"testyfile.txt\" in the tree"
+                    ],
+                    [
+                        "I should see \"lib,spec,README,testyfile.txt\" in the tree"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I will choose \"plugins/project/spec/fixtures/myproject\" from the \"open_directory\" dialog"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a directory",
+                        "I expand the tree row \"lib\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"lib,foo_lib.rb,vendor\" in the tree",
+                        "I refresh the directory tree"
+                    ],
+                    [
+                        "I should see \"lib,foo_lib.rb,vendor\" in the tree"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I will choose \"plugins/project/spec/fixtures/myproject\" from the \"open_directory\" dialog"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a directory",
+                        "I move the myproject fixture away",
+                        "I refresh the directory tree"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"lib\" in the tree"
+                    ]
+                ]
+            }
+        ]
+    }
+}

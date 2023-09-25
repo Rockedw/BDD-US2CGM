@@ -1,0 +1,413 @@
+// Goal Model
+digraph {
+	1847133887968 [label="Member
+goal"]
+	1847134123200 [label="vote for new Directors electronically
+goal
+1847134124640"]
+	1847133887968 -> 1847134123200
+	1847134123200 [label="vote for new Directors electronically
+goal"]
+	1847134124976 [label="I place my vote for the new directors I want
+task
+140728069287616"]
+	1847134123200 -> 1847134124976
+	1847134124976 [label="I place my vote for the new directors I want
+task"]
+	1847134465008 [label="increase investment
+goal
+140728069287616"]
+	1847133887968 -> 1847134465008
+	1847134465008 [label="increase investment
+goal"]
+	1847134464576 [label="apply for more shares
+goal
+1847134454976"]
+	1847134465008 -> 1847134464576
+	1847134464576 [label="apply for more shares
+goal"]
+	1847134307520 [label="I go to the Shares page
+task
+140728069287616"]
+	1847134464576 -> 1847134307520
+	1847134307520 [label="I go to the Shares page
+task"]
+	1847134315632 [label="I press something
+goal
+140728069287616"]
+	1847134464576 -> 1847134315632
+	1847134315632 [label="I press something
+goal"]
+	1847134315008 [label="I press \"Apply for more shares\"
+task
+140728069287616"]
+	1847134315632 -> 1847134315008
+	1847134315008 [label="I press \"Apply for more shares\"
+task"]
+	1847134322112 [label="I press \"Apply for more shares\"
+task
+140728069287616"]
+	1847134315632 -> 1847134322112
+	1847134322112 [label="I press \"Apply for more shares\"
+task"]
+	1847134315728 [label="I enter the number of additional shares I want
+task
+140728069287616"]
+	1847134464576 -> 1847134315728
+	1847134315728 [label="I enter the number of additional shares I want
+task"]
+	1847134112208 [label="make an application to withdraw some shares
+goal
+1847134121376"]
+	1847134465008 -> 1847134112208
+	1847134112208 [label="make an application to withdraw some shares
+goal"]
+	1847134119120 [label="Member withdraws some of their shares
+goal
+1847134119216"]
+	1847134112208 -> 1847134119120
+	1847134119120 [label="Member withdraws some of their shares
+goal"]
+	1847134124736 [label="I go to the Shares page
+task
+140728069287616"]
+	1847134119120 -> 1847134124736
+	1847134124736 [label="I go to the Shares page
+task"]
+	1847134115184 [label="I press share
+goal
+140728069287616"]
+	1847134119120 -> 1847134115184
+	1847134115184 [label="I press share
+goal"]
+	1847134123344 [label="I press \"Withdraw shares\"
+task
+140728069287616"]
+	1847134115184 -> 1847134123344
+	1847134123344 [label="I press \"Withdraw shares\"
+task"]
+	1847134123728 [label="I press \"Apply to withdraw shares\"
+task
+140728069287616"]
+	1847134115184 -> 1847134123728
+	1847134123728 [label="I press \"Apply to withdraw shares\"
+task"]
+	1847134123392 [label="I choose to withdraw a number of shares which will still leave me with the minimum shareholding
+task
+140728069287616"]
+	1847134119120 -> 1847134123392
+	1847134123392 [label="I choose to withdraw a number of shares which will still leave me with the minimum shareholding
+task"]
+	1847134118448 [label="Member withdraws all of their shares
+goal
+1847134125312"]
+	1847134112208 -> 1847134118448
+	1847134118448 [label="Member withdraws all of their shares
+goal"]
+	1847134112256 [label="I go to the Shares page
+task
+140728069287616"]
+	1847134118448 -> 1847134112256
+	1847134112256 [label="I go to the Shares page
+task"]
+	1847134115088 [label="I press share
+goal
+140728069287616"]
+	1847134118448 -> 1847134115088
+	1847134115088 [label="I press share
+goal"]
+	1847134123536 [label="I press \"Withdraw shares\"
+task
+140728069287616"]
+	1847134115088 -> 1847134123536
+	1847134123536 [label="I press \"Withdraw shares\"
+task"]
+	1847134122336 [label="I press \"Apply to withdraw shares\"
+task
+140728069287616"]
+	1847134115088 -> 1847134122336
+	1847134122336 [label="I press \"Apply to withdraw shares\"
+task"]
+	1847134111920 [label="I choose to withdraw all my shares
+task
+140728069287616"]
+	1847134118448 -> 1847134111920
+	1847134111920 [label="I choose to withdraw all my shares
+task"]
+	1847134123968 [label="I confirm that I want to terminate my membership
+task
+140728069287616"]
+	1847134118448 -> 1847134123968
+	1847134123968 [label="I confirm that I want to terminate my membership
+task"]
+	1847134320672 [label="resign my membership
+goal
+140728069287616"]
+	1847133887968 -> 1847134320672
+	1847134320672 [label="resign my membership
+goal"]
+	1847134112592 [label="I go to my account page
+task
+140728069287616"]
+	1847134320672 -> 1847134112592
+	1847134112592 [label="I go to my account page
+task"]
+	1847134110672 [label="I press \"Resign my membership\"
+task
+140728069287616"]
+	1847134320672 -> 1847134110672
+	1847134110672 [label="I press \"Resign my membership\"
+task"]
+	1847134112688 [label="I confirm that I want to resign
+task
+140728069287616"]
+	1847134320672 -> 1847134112688
+	1847134112688 [label="I confirm that I want to resign
+task"]
+	1847134124832 [label="keep track
+goal
+140728069287616"]
+	1847133887968 -> 1847134124832
+	1847134124832 [label="keep track
+goal"]
+	1847134318128 [label="view a dashboard of recent and upcoming events, and things that require my attention
+goal
+1847134124592"]
+	1847134124832 -> 1847134318128
+	1847134318128 [label="view a dashboard of recent and upcoming events, and things that require my attention
+goal"]
+	1847134109808 [label="Member views list of upcoming meetings
+goal
+140728069287616"]
+	1847134318128 -> 1847134109808
+	1847134109808 [label="Member views list of upcoming meetings
+goal"]
+	1847134111344 [label="I go to the Dashboard page
+task
+140728069287616"]
+	1847134109808 -> 1847134111344
+	1847134111344 [label="I go to the Dashboard page
+task"]
+	1847134124448 [label="Member views list of open proposals
+goal
+140728069287616"]
+	1847134318128 -> 1847134124448
+	1847134124448 [label="Member views list of open proposals
+goal"]
+	1847134112640 [label="I go to the Dashboard page
+task
+140728069287616"]
+	1847134124448 -> 1847134112640
+	1847134112640 [label="I go to the Dashboard page
+task"]
+	1847134119552 [label="Member views list of membership and shares tasks
+goal
+140728069287616"]
+	1847134318128 -> 1847134119552
+	1847134119552 [label="Member views list of membership and shares tasks
+goal"]
+	1847134124304 [label="I go to the Dashboard page
+task
+140728069287616"]
+	1847134119552 -> 1847134124304
+	1847134124304 [label="I go to the Dashboard page
+task"]
+	1847134122720 [label="Member views tasks that require their attention
+goal
+140728069287616"]
+	1847134318128 -> 1847134122720
+	1847134122720 [label="Member views tasks that require their attention
+goal"]
+	1847134110624 [label="I go to the Dashboard page
+task
+140728069287616"]
+	1847134122720 -> 1847134110624
+	1847134110624 [label="I go to the Dashboard page
+task"]
+	1847134125456 [label="view the agenda and minutes of past and future meetings
+goal
+1847134119408"]
+	1847134124832 -> 1847134125456
+	1847134125456 [label="view the agenda and minutes of past and future meetings
+goal"]
+	1847134120464 [label="Member view detail
+goal
+140728069287616"]
+	1847134125456 -> 1847134120464
+	1847134120464 [label="Member view detail
+goal"]
+	1847134124880 [label="Member views details of an upcoming meeting
+goal
+1847134122192"]
+	1847134120464 -> 1847134124880
+	1847134124880 [label="Member views details of an upcoming meeting
+goal"]
+	1847134111728 [label="I go to the Meetings page
+task
+140728069287616"]
+	1847134124880 -> 1847134111728
+	1847134111728 [label="I go to the Meetings page
+task"]
+	1847134122432 [label="I follow \"View agenda and details\" for the upcoming meeting
+task
+140728069287616"]
+	1847134124880 -> 1847134122432
+	1847134122432 [label="I follow \"View agenda and details\" for the upcoming meeting
+task"]
+	1847134124208 [label="Member views details of a past meeting
+goal
+1847134125984"]
+	1847134120464 -> 1847134124208
+	1847134124208 [label="Member views details of a past meeting
+goal"]
+	1847134111392 [label="I go to the Meetings page
+task
+140728069287616"]
+	1847134124208 -> 1847134111392
+	1847134111392 [label="I go to the Meetings page
+task"]
+	1847134110528 [label="I follow \"View minutes\" for the past meeting
+task
+140728069287616"]
+	1847134124208 -> 1847134110528
+	1847134110528 [label="I follow \"View minutes\" for the past meeting
+task"]
+	1847134112112 [label="view a timeline of events in the co-op
+goal
+140728069287616"]
+	1847134124832 -> 1847134112112
+	1847134112112 [label="view a timeline of events in the co-op
+goal"]
+	1847134117344 [label="check record
+goal
+140728069287616"]
+	1847133887968 -> 1847134117344
+	1847134117344 [label="check record
+goal"]
+	1847134111776 [label="view the list of members
+goal
+140728069287616"]
+	1847134117344 -> 1847134111776
+	1847134111776 [label="view the list of members
+goal"]
+	1847134123584 [label="Member views the list of members
+goal
+1847134122672"]
+	1847134111776 -> 1847134123584
+	1847134123584 [label="Member views the list of members
+goal"]
+	1847134110720 [label="I go to the Members page
+task
+140728069287616"]
+	1847134123584 -> 1847134110720
+	1847134110720 [label="I go to the Members page
+task"]
+	1847134110768 [label="view the details of a particular member
+goal
+140728069287616"]
+	1847134117344 -> 1847134110768
+	1847134110768 [label="view the details of a particular member
+goal"]
+	1847134126032 [label="Member views another member's details
+goal
+1847134119072"]
+	1847134110768 -> 1847134126032
+	1847134126032 [label="Member views another member's details
+goal"]
+	1847134112400 [label="I go to another member's profile page
+task
+140728069287616"]
+	1847134126032 -> 1847134112400
+	1847134112400 [label="I go to another member's profile page
+task"]
+	1847134109952 [label="view the Rules of the co-op
+goal
+1847134111440"]
+	1847133887968 -> 1847134109952
+	1847134109952 [label="view the Rules of the co-op
+goal"]
+	1847134116816 [label="Member view something
+goal
+140728069287616"]
+	1847134109952 -> 1847134116816
+	1847134116816 [label="Member view something
+goal"]
+	1847134317168 [label="Member view rule
+goal
+140728069287616"]
+	1847134116816 -> 1847134317168
+	1847134317168 [label="Member view rule
+goal"]
+	1847134110240 [label="Member views the Rules
+goal
+140728069287616"]
+	1847134317168 -> 1847134110240
+	1847134110240 [label="Member views the Rules
+goal"]
+	1847134119744 [label="Member views the date the Rules were last changed
+goal
+1847134122528"]
+	1847134317168 -> 1847134119744
+	1847134119744 [label="Member views the date the Rules were last changed
+goal"]
+	1847134110816 [label="Member views custom fields in the Rules
+goal
+140728069287616"]
+	1847134116816 -> 1847134110816
+	1847134110816 [label="Member views custom fields in the Rules
+goal"]
+	1847134110576 [label="Member downloads a PDF of the Rules
+goal
+140728069287616"]
+	1847134109952 -> 1847134110576
+	1847134110576 [label="Member downloads a PDF of the Rules
+goal"]
+	1847134125408 [label="I go to the Rules page
+task
+140728069287616"]
+	1847134110576 -> 1847134125408
+	1847134125408 [label="I go to the Rules page
+task"]
+	1847134119168 [label="I follow \"PDF\"
+task
+140728069287616"]
+	1847134110576 -> 1847134119168
+	1847134119168 [label="I follow \"PDF\"
+task"]
+	1847134120176 [label="vote on a resolution
+goal
+1847134125504"]
+	1847133887968 -> 1847134120176
+	1847134120176 [label="vote on a resolution
+goal"]
+	1847134122576 [label="Member votes on a resolution
+goal
+140728069287616"]
+	1847134120176 -> 1847134122576
+	1847134122576 [label="Member votes on a resolution
+goal"]
+	1847134125552 [label="I go to the Resolutions page
+task
+140728069287616"]
+	1847134122576 -> 1847134125552
+	1847134125552 [label="I go to the Resolutions page
+task"]
+	1847134110960 [label="I vote to support the resolution
+task
+140728069287616"]
+	1847134122576 -> 1847134110960
+	1847134110960 [label="I vote to support the resolution
+task"]
+	1847134119312 [label="Member receives a task when a resolution is opened for voting
+goal
+140728069287616"]
+	1847134120176 -> 1847134119312
+	1847134119312 [label="Member receives a task when a resolution is opened for voting
+goal"]
+	1847134111968 [label="Member's 'vote' task is dismissed once they have voted
+goal
+1847134111008"]
+	1847134120176 -> 1847134111968
+	1847134111968 [label="Member's 'vote' task is dismissed once they have voted
+goal"]
+}

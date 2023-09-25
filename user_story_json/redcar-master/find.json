@@ -1,0 +1,1067 @@
+{
+    "feature_name": "Find",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to (0,0)",
+                        "I select menu item \"Edit|Find|Find...\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the find speedbar"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to (0,0)",
+                        "I select menu item \"Edit|Find|Find...\"",
+                        "I type \"Bar\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Bar\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nFoo\"",
+                        "I move the cursor to (0,0)",
+                        "I open the find speedbar",
+                        "I type \"Foo\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Next\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selection should be on line 0"
+                    ],
+                    [
+                        "the selected text should be \"Foo\"",
+                        "the selection should be on line 2"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to (0,0)",
+                        "I open the find speedbar",
+                        "I type \"Foo\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Foo\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\\nFoo\"",
+                        "I move the cursor to (0,1)",
+                        "I open the find speedbar",
+                        "I type \"Foo\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Next\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selection should be on line 3",
+                        "the selected text should be \"Foo\""
+                    ],
+                    [
+                        "the selected text should be \"Foo\"",
+                        "the selection should be on line 0"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to (0,3)",
+                        "I open the find speedbar",
+                        "I type \"Foo\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Foo\"",
+                        "the selection should be on line 0"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foobar\\nBarfoo\\nBazhmm\\nFoobar\"",
+                        "I select from (0,0) to (0,6)",
+                        "I open the find speedbar",
+                        "I type \"Foobar\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Foobar\"",
+                        "the selection should be on line 3"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foobar\\nBarfoo\\nBazhmm\\nFoobar\"",
+                        "I select from (0,0) to (0,3)",
+                        "I open the find speedbar",
+                        "I type \"Foobar\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Foobar\"",
+                        "the selection range should be from 0 to 6"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foobar\\nBarfoo\\nBazhmm\\nFoobar\"",
+                        "I select from (0,0) to (0,6)",
+                        "I open the find speedbar",
+                        "I type \"Foo\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 0 to 3"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Benedikt Müller\"",
+                        "I move the cursor to (0,0)",
+                        "I open the find speedbar",
+                        "I type \"ler\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"ler\"",
+                        "the selection range should be from 12 to 15"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Benedikt Müller\\n foo \"",
+                        "I move the cursor to (0,0)",
+                        "I open the find speedbar",
+                        "I type \"foo\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"foo\"",
+                        "the selection range should be from 17 to 20"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"你好, 凯兰\\nYou make my heart super happy.\"",
+                        "I move the cursor to (0,0)",
+                        "I open the find speedbar",
+                        "I type \"you\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"You\"",
+                        "the selection range should be from 7 to 10"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\n你好, 凯兰\\nFoo\\nBar\\nFoo\\nBaz\"",
+                        "I move the cursor to (0,0)",
+                        "I open the find speedbar",
+                        "I type \"foo\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Next\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Next\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Next\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Next\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Foo\"",
+                        "the selection should be on line 0"
+                    ],
+                    [
+                        "the selected text should be \"Foo\"",
+                        "the selection should be on line 2"
+                    ],
+                    [
+                        "the selected text should be \"Foo\"",
+                        "the selection should be on line 4"
+                    ],
+                    [
+                        "the selected text should be \"Foo\"",
+                        "the selection should be on line 0"
+                    ],
+                    [
+                        "the selected text should be \"Foo\"",
+                        "the selection should be on line 2"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Benedikt Müller\"",
+                        "I move the cursor to (0,0)",
+                        "I open the find speedbar",
+                        "I type \"mül\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Mül\"",
+                        "the selection range should be from 9 to 12"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Benedikt Müller\"",
+                        "I move the cursor to (0,0)",
+                        "I open the find speedbar",
+                        "I type \"mül\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Mül\"",
+                        "the selection range should be from 9 to 12"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"你好, 凯兰\\nYou make my heart super happy.\"",
+                        "I move the cursor to (0,0)",
+                        "I open the find speedbar",
+                        "I type \"凯兰\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"凯兰\"",
+                        "the selection range should be from 4 to 6"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to (0,0)",
+                        "I open the find speedbar",
+                        "I type \"Ba.\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should not be any text selected"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to (0,0)",
+                        "I open the find speedbar",
+                        "I type \"Ba.\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ],
+                    [
+                        "I check \"Regex\" in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Next\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should not be any text selected"
+                    ],
+                    [
+                        "the selected text should be \"Bar\""
+                    ],
+                    [
+                        "the selected text should be \"Baz\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to (0,0)",
+                        "I open the find speedbar",
+                        "I type \"foo\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Foo\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to (0,0)",
+                        "I open the find speedbar",
+                        "I type \"fo.\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ],
+                    [
+                        "I check \"Regex\" in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should not be any text selected"
+                    ],
+                    [
+                        "the selected text should be \"Foo\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to (0,0)",
+                        "I open the find speedbar",
+                        "I type \"foo\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ],
+                    [
+                        "I check \"Match case\" in the speedbar",
+                        "I move the cursor to (0,0)",
+                        "I press \"Next\" in the speedbar"
+                    ],
+                    [
+                        "I type \"Foo\" into the \"Find\" field in the speedbar",
+                        "I move the cursor to (0,0)",
+                        "I press \"Next\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Foo\""
+                    ],
+                    [
+                        "there should not be any text selected"
+                    ],
+                    [
+                        "the selected text should be \"Foo\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to (0,0)",
+                        "I open the find speedbar",
+                        "I check \"Regex\" in the speedbar",
+                        "I type \"fo.\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ],
+                    [
+                        "I check \"Match case\" in the speedbar",
+                        "I move the cursor to (0,0)",
+                        "I press \"Next\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Foo\""
+                    ],
+                    [
+                        "there should not be any text selected"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "I move the cursor to (0,0)",
+                        "I open the find speedbar",
+                        "I type \"Foo\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Next\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Next\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 0 to 3"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 8 to 11"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 0 to 3"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "I move the cursor to (0,0)",
+                        "I open the find speedbar",
+                        "I uncheck \"Wrap around\" in the speedbar",
+                        "I type \"foo\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Next\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Next\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 0 to 3"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 8 to 11"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "there should not be any text selected"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "I move the cursor to (3,2)",
+                        "I open the find speedbar",
+                        "I type \"foo\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Previous\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Previous\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Previous\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 0 to 3"
+                    ],
+                    [
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 8 to 11"
+                    ],
+                    [
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 0 to 3"
+                    ],
+                    [
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 8 to 11"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "I move the cursor to (3,2)",
+                        "I open the find speedbar",
+                        "I uncheck \"Wrap around\" in the speedbar",
+                        "I type \"Foo\" into the \"Find\" field in the speedbar"
+                    ],
+                    [
+                        "I press \"Previous\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Previous\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Previous\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "there should not be any text selected"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 8 to 11"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "the selected text should be \"Foo\"",
+                        "the selection range should be from 0 to 3"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo\\nHmm\\nBaz\"",
+                        "there should not be any text selected"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with 100 lines of \"xxx\" then \"Foo\"",
+                        "I scroll to the top of the document",
+                        "I move the cursor to (0,0)",
+                        "I open the find speedbar",
+                        "I type \"foo\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Foo\"",
+                        "line number 100 should be visible"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with 300 \"x\" then \"Foo\"",
+                        "I move the cursor to (0,0)",
+                        "I open the find speedbar",
+                        "I type \"foo\" into the \"Find\" field in the speedbar",
+                        "I press \"Next\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"Foo\"",
+                        "horizontal offset 302 should be visible"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the find speedbar",
+                        "I type \"foo\" into the \"Find\" field in the speedbar",
+                        "I close the speedbar",
+                        "I open the find speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"Find\" field in the speedbar should have text \"foo\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Flux\\nBar\\nFoo\"",
+                        "I move the cursor to (0,0)",
+                        "I select from (0,0) to (0,4)",
+                        "I open the find speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"Find\" field in the speedbar should have text \"Flux\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar Foo Rab Rab\\nHmm\\nRab\\nFoo\\nBaz\"",
+                        "I move the cursor to (0,0)",
+                        "I open the find speedbar",
+                        "I type \"Rab\" into the \"Find\" field in the speedbar",
+                        "I type \"RABBIT\" into the \"Replace\" field in the speedbar",
+                        "I press \"Replace && Find\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Replace && Find\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Replace && Find\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Replace && Find\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Replace && Find\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Foo\\nBar Foo Rab Rab\\nHmm\\nRab\\nFoo\\nBaz\"",
+                        "the selected text should be \"Rab\"",
+                        "the selection range should be from 12 to 15"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo RABBIT Rab\\nHmm\\nRab\\nFoo\\nBaz\"",
+                        "the selected text should be \"Rab\"",
+                        "the selection range should be from 19 to 22"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo RABBIT RABBIT\\nHmm\\nRab\\nFoo\\nBaz\"",
+                        "the selected text should be \"Rab\"",
+                        "the selection range should be from 30 to 33"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo RABBIT RABBIT\\nHmm\\nRABBIT\\nFoo\\nBaz\"",
+                        "the selected text should be \"RAB\"",
+                        "the selection range should be from 12 to 15"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo RABBITBIT RABBIT\\nHmm\\nRABBIT\\nFoo\\nBaz\"",
+                        "the selected text should be \"RAB\"",
+                        "the selection range should be from 22 to 25"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar Foo Rab Rab\\nHmm\\nRab\\nFoo\\nBaz\"",
+                        "I select from 12 to 15",
+                        "I open the find speedbar",
+                        "I type \"Rab\" into the \"Find\" field in the speedbar",
+                        "I type \"RABBIT\" into the \"Replace\" field in the speedbar",
+                        "I press \"Replace && Find\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Replace && Find\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Replace && Find\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Replace && Find\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Foo\\nBar Foo RABBIT Rab\\nHmm\\nRab\\nFoo\\nBaz\"",
+                        "the selected text should be \"Rab\"",
+                        "the selection range should be from 19 to 22"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo RABBIT RABBIT\\nHmm\\nRab\\nFoo\\nBaz\"",
+                        "the selected text should be \"Rab\"",
+                        "the selection range should be from 30 to 33"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo RABBIT RABBIT\\nHmm\\nRABBIT\\nFoo\\nBaz\"",
+                        "the selected text should be \"RAB\"",
+                        "the selection range should be from 12 to 15"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo RABBITBIT RABBIT\\nHmm\\nRABBIT\\nFoo\\nBaz\"",
+                        "the selected text should be \"RAB\"",
+                        "the selection range should be from 22 to 25"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar Foo Rab Rab\\nHmm\\nRab\\nFoo\\nBaz\"",
+                        "I select from 4 to 7",
+                        "I open the find speedbar",
+                        "I type \"Rab\" into the \"Find\" field in the speedbar",
+                        "I type \"RABBIT\" into the \"Replace\" field in the speedbar",
+                        "I press \"Replace && Find\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Replace && Find\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Replace && Find\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Replace && Find\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Replace && Find\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Foo\\nBar Foo Rab Rab\\nHmm\\nRab\\nFoo\\nBaz\"",
+                        "the selected text should be \"Rab\"",
+                        "the selection range should be from 12 to 15"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo RABBIT Rab\\nHmm\\nRab\\nFoo\\nBaz\"",
+                        "the selected text should be \"Rab\"",
+                        "the selection range should be from 19 to 22"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo RABBIT RABBIT\\nHmm\\nRab\\nFoo\\nBaz\"",
+                        "the selected text should be \"Rab\"",
+                        "the selection range should be from 30 to 33"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo RABBIT RABBIT\\nHmm\\nRABBIT\\nFoo\\nBaz\"",
+                        "the selected text should be \"RAB\"",
+                        "the selection range should be from 12 to 15"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo RABBITBIT RABBIT\\nHmm\\nRABBIT\\nFoo\\nBaz\"",
+                        "the selected text should be \"RAB\"",
+                        "the selection range should be from 22 to 25"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar Foo Rab Rab\\nHmm\\nRab\\nFoo\\nBaz\"",
+                        "I select from 28 to 31",
+                        "I open the find speedbar",
+                        "I type \"Rab\" into the \"Find\" field in the speedbar",
+                        "I type \"RABBIT\" into the \"Replace\" field in the speedbar",
+                        "I press \"Replace && Find\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Replace && Find\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Replace && Find\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Replace && Find\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Replace && Find\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Foo\\nBar Foo Rab Rab\\nHmm\\nRab\\nFoo\\nBaz\"",
+                        "the selected text should be \"Rab\"",
+                        "the selection range should be from 12 to 15"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo RABBIT Rab\\nHmm\\nRab\\nFoo\\nBaz\"",
+                        "the selected text should be \"Rab\"",
+                        "the selection range should be from 19 to 22"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo RABBIT RABBIT\\nHmm\\nRab\\nFoo\\nBaz\"",
+                        "the selected text should be \"Rab\"",
+                        "the selection range should be from 30 to 33"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo RABBIT RABBIT\\nHmm\\nRABBIT\\nFoo\\nBaz\"",
+                        "the selected text should be \"RAB\"",
+                        "the selection range should be from 12 to 15"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo RABBITBIT RABBIT\\nHmm\\nRABBIT\\nFoo\\nBaz\"",
+                        "the selected text should be \"RAB\"",
+                        "the selection range should be from 22 to 25"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar Foo Rab Rab\\nHmm\\nRab\\nFoo\\nBaz\"",
+                        "I select from 28 to 31",
+                        "I open the find speedbar",
+                        "I type \"Rab\" into the \"Find\" field in the speedbar",
+                        "I type \"RABBIT\" into the \"Replace\" field in the speedbar",
+                        "I uncheck \"Wrap around\" in the speedbar",
+                        "I press \"Replace && Find\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Replace && Find\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Foo\\nBar Foo Rab Rab\\nHmm\\nRab\\nFoo\\nBaz\"",
+                        "the selected text should be \"\"",
+                        "the selection range should be from 31 to 31"
+                    ],
+                    [
+                        "the contents should be \"Foo\\nBar Foo Rab Rab\\nHmm\\nRab\\nFoo\\nBaz\"",
+                        "the selected text should be \"\"",
+                        "the selection range should be from 31 to 31"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\"",
+                        "I move the cursor to (0,0)",
+                        "I open the find speedbar",
+                        "I type \"Bar\" into the \"Find\" field in the speedbar",
+                        "I type \"Rab\" into the \"Replace\" field in the speedbar",
+                        "I uncheck \"Wrap around\" in the speedbar",
+                        "I press \"Replace All\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Foo\\nRab\\nBaz\"",
+                        "the selected text should be \"Rab\"",
+                        "the selection range should be from 4 to 7"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\nBar\\nBaz\\nBar\\nQux\"",
+                        "I move the cursor to (0,0)",
+                        "I open the find speedbar",
+                        "I type \"Bar\" into the \"Find\" field in the speedbar",
+                        "I type \"Rab\" into the \"Replace\" field in the speedbar",
+                        "I uncheck \"Wrap around\" in the speedbar",
+                        "I press \"Replace All\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Foo\\nRab\\nBaz\\nRab\\nQux\"",
+                        "the selected text should be \"Rab\"",
+                        "the selection range should be from 12 to 15"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"abcabc\"",
+                        "I open the find speedbar",
+                        "I type \"bc\" into the \"Find\" field in the speedbar",
+                        "I type \"xx\" into the \"Replace\" field in the speedbar",
+                        "I uncheck \"Wrap around\" in the speedbar",
+                        "I press \"Replace All\" in the speedbar"
+                    ],
+                    [
+                        "I press \"Replace All\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"axxaxx\"",
+                        "the selected text should be \"xx\"",
+                        "the selection range should be from 4 to 6"
+                    ],
+                    [
+                        "the contents should be \"axxaxx\"",
+                        "the selected text should be \"xx\"",
+                        "the selection range should be from 4 to 6"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"deedeedeed\"",
+                        "I open the find speedbar",
+                        "I type \"deed\" into the \"Find\" field in the speedbar",
+                        "I type \"misdeed\" into the \"Replace\" field in the speedbar",
+                        "I uncheck \"Wrap around\" in the speedbar",
+                        "I press \"Replace All\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"misdeedeemisdeed\"",
+                        "the selected text should be \"misdeed\"",
+                        "the selection range should be from 9 to 16"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Foo\\n\\nabcabc\\n\\nBar\"",
+                        "I open the find speedbar",
+                        "I type \"bc\" into the \"Find\" field in the speedbar",
+                        "I type \"xx\" into the \"Replace\" field in the speedbar",
+                        "I uncheck \"Wrap around\" in the speedbar",
+                        "I press \"Replace All\" in the speedbar"
+                    ],
+                    [
+                        "I undo"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"Foo\\n\\naxxaxx\\n\\nBar\"",
+                        "the selected text should be \"xx\"",
+                        "the selection range should be from 9 to 11"
+                    ],
+                    [
+                        "the contents should be \"Foo\\n\\nabcabc\\n\\nBar\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"One fish\\ntwo fish\\nred fish\\nblue fish\"",
+                        "I move the cursor to (0,0)",
+                        "I open the find speedbar",
+                        "I type \"(\\w+) fish\" into the \"Find\" field in the speedbar",
+                        "I type \"\\1 car\" into the \"Replace\" field in the speedbar",
+                        "I check \"Regex\" in the speedbar",
+                        "I uncheck \"Wrap around\" in the speedbar",
+                        "I press \"Replace All\" in the speedbar"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"One car\\ntwo car\\nred car\\nblue car\"",
+                        "the selected text should be \"blue car\"",
+                        "the selection range should be from 24 to 32"
+                    ]
+                ]
+            }
+        ]
+    }
+}

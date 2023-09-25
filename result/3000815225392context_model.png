@@ -1,0 +1,10 @@
+// 3000815224288 Context Model
+digraph {
+	3000815225392 [label=Context7]
+	3000815227888 [label="I am signed in"]
+	3000815225392 -> 3000815227888
+	3000815227888 [label="I am signed in"]
+	3000815224432 [label="I have an aspect called \"Cat People\""]
+	3000815225392 -> 3000815224432
+	3000815224432 [label="I have an aspect called \"Cat People\""]
+}

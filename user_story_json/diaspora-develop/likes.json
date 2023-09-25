@@ -1,0 +1,79 @@
+{
+    "feature_name": "Liking posts",
+    "user_story": {
+        "as_a": "friendly person",
+        "i_want": "like their posts",
+        "so_that": "show my appreciation",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I like the post \"I like unicorns\" in the stream"
+                    ],
+                    [
+                        "I unlike the post \"I like unicorns\" in the stream"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not have activated notifications for the post"
+                    ],
+                    [
+                        "the post \"I like unicorns\" should have the \"Unlike\" action available",
+                        "the post \"I like unicorns\" should have 1 like",
+                        "the post \"I like unicorns\" should have a like from \"Alice Smith\"",
+                        "I should have activated notifications for the post"
+                    ],
+                    [
+                        "the post \"I like unicorns\" should have the \"Like\" action available",
+                        "the post \"I like unicorns\" shouldn't have any likes"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open the show page of the \"I like unicorns\" post"
+                    ],
+                    [
+                        "I click to like the post"
+                    ],
+                    [
+                        "I click to unlike the post"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not have activated notifications for the post in the single post view"
+                    ],
+                    [
+                        "I should see a \".count\" within \"#single-post-interactions\"",
+                        "I should have activated notifications for the post in the single post view"
+                    ],
+                    [
+                        "I should not see a \".count\" within \"#single-post-interactions\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I like the post \"I like unicorns\" in the stream",
+                        "I sign out",
+                        "I sign in as \"bob@bob.bob\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the post \"I like unicorns\" should have the \"Like\" action available",
+                        "the post \"I like unicorns\" should have 1 like",
+                        "the post \"I like unicorns\" should have a like from \"Alice Smith\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

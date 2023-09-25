@@ -1,0 +1,85 @@
+{
+    "feature_name": "Merging two branches together",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I will open \"trunk\" branch as a new project"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I checkout a local repository",
+                        "I create a wc directory named \"trunk,branches,branches/version1,branches/version2\"",
+                        "I create a wc file named \"trunk/a.txt,branches/version1/b.txt,branches/version2/c.txt\"",
+                        "I add \"trunk/a.txt,branches/version1/b.txt,branches/version2/c.txt\" to the index",
+                        "I commit my changes with message \"Initial commit\""
+                    ],
+                    [
+                        "I open a directory",
+                        "I merge the \"version1\" branch"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"b.txt\" in \"trunk\" branch"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I will open \"version1\" branch as a new project"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I checkout a local repository",
+                        "I create a wc directory named \"trunk,branches,branches/version1,branches/version2\"",
+                        "I create a wc file named \"trunk/a.txt,branches/version1/b.txt,branches/version2/c.txt\"",
+                        "I add \"trunk/a.txt,branches/version1/b.txt,branches/version2/c.txt\" to the index",
+                        "I commit my changes with message \"Initial commit\""
+                    ],
+                    [
+                        "I open a directory",
+                        "I merge the \"version2\" branch"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"c.txt\" in \"version1\" branch"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I will open \"version2\" branch as a new project"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I checkout a local repository",
+                        "I create a wc directory named \"trunk,branches,branches/version1,branches/version2\"",
+                        "I create a wc file named \"trunk/a.txt,branches/version1/b.txt,branches/version2/c.txt\"",
+                        "I add \"trunk/a.txt,branches/version1/b.txt,branches/version2/c.txt\" to the index",
+                        "I commit my changes with message \"Initial commit\""
+                    ],
+                    [
+                        "I open a directory",
+                        "I merge the \"trunk\" branch"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"a.txt\" in \"version2\" branch"
+                    ]
+                ]
+            }
+        ]
+    }
+}

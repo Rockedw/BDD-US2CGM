@@ -1,0 +1,67 @@
+{
+    "feature_name": "Upload Modules",
+    "user_story": {
+        "as_a": "chits administrator",
+        "i_want": "be able to add module",
+        "so_that": "manage modules and plug-ins",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"admin\" with password \"admin\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I click \"MODULES\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"MODULE DATABASE\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"admin\" with password \"admin\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I click \"MODULES\"",
+                        "I click \"Activate Modules\"",
+                        "I check \"initmod[]\"",
+                        "I press \"Update Activation Status\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Permission denied\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"admin\" with password \"admin\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I click \"MODULES\"",
+                        "I click \"Activate Modules\"",
+                        "I check by value \"appointment\"",
+                        "I press \"Update Activation Status\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Permission denied\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

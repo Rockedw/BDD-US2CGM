@@ -1,0 +1,19 @@
+// 1911333599120 Context Model
+digraph {
+	1911333594896 [label=Context2]
+	1911333589904 [label="I am signed in"]
+	1911333594896 -> 1911333589904
+	1911333589904 [label="I am signed in"]
+	1911333598496 [label="I am on the contacts page"]
+	1911333594896 -> 1911333598496
+	1911333598496 [label="I am on the contacts page"]
+	1911333598640 [label="I follow \"Add an aspect\""]
+	1911333594896 -> 1911333598640
+	1911333598640 [label="I follow \"Add an aspect\""]
+	1911333599072 [label="I fill in \"aspect_name\" with \"Dorm Mates\" in the aspect creation modal"]
+	1911333594896 -> 1911333599072
+	1911333599072 [label="I fill in \"aspect_name\" with \"Dorm Mates\" in the aspect creation modal"]
+	1911333596768 [label="I click on selector \".btn-primary\" in the aspect creation modal"]
+	1911333594896 -> 1911333596768
+	1911333596768 [label="I click on selector \".btn-primary\" in the aspect creation modal"]
+}

@@ -1,0 +1,19 @@
+// 1998039144848 Context Model
+digraph {
+	1998039144032 [label=Context1]
+	1998039144896 [label="the following semesters exist"]
+	1998039144032 -> 1998039144896
+	1998039144896 [label="the following semesters exist"]
+	1998039143696 [label="the following cal course exist"]
+	1998039144032 -> 1998039143696
+	1998039143696 [label="the following cal course exist"]
+	1998039144224 [label="the following courses exist"]
+	1998039144032 -> 1998039144224
+	1998039144224 [label="the following courses exist"]
+	1998039144608 [label="the following users exist"]
+	1998039144032 -> 1998039144608
+	1998039144608 [label="the following users exist"]
+	1998039144704 [label="I am logged in as oski@berkeley.edu"]
+	1998039144032 -> 1998039144704
+	1998039144704 [label="I am logged in as oski@berkeley.edu"]
+}

@@ -1,0 +1,13 @@
+// 1982200607600 Context Model
+digraph {
+	1982200606496 [label=Context17]
+	1982200604384 [label="there has been a past AGM"]
+	1982200606496 -> 1982200604384
+	1982200604384 [label="there has been a past AGM"]
+	1982200604480 [label="the AGM has no minutes yet"]
+	1982200606496 -> 1982200604480
+	1982200604480 [label="the AGM has no minutes yet"]
+	1982200604576 [label="there were resolutions attached to the AGM"]
+	1982200606496 -> 1982200604576
+	1982200604576 [label="there were resolutions attached to the AGM"]
+}

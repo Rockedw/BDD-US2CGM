@@ -1,0 +1,366 @@
+{
+    "feature_name": "Rendering",
+    "user_story": {
+        "as_a": "hacker who likes to blog",
+        "i_want": "be able to make a static site",
+        "so_that": "share my awesome ideas with the interwebs",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have a blank site in \"omega(beta)\"",
+                        "I have an \"omega(beta)/test.md\" page with layout \"simple\" that contains \"Hello World\"",
+                        "I have an omega(beta)/_includes directory",
+                        "I have an \"omega(beta)/_includes/head.html\" file that contains \"Snippet\"",
+                        "I have a configuration file with \"source\" set to \"omega(beta)\"",
+                        "I have an omega(beta)/_layouts directory",
+                        "I have an \"omega(beta)/_layouts/simple.html\" file that contains \"{% include head.html %}: {{ content }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build --profile"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "I should see \"Snippet: <p>Hello World</p>\" in \"_site/test.html\"",
+                        "I should see \"_layouts/simple.html\" in the build output"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a \"index.html\" page with layout \"simple\" that contains \"{% include invalid.html %}\"",
+                        "I have a simple layout that contains \"{{ content }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a non-zero exit-status",
+                        "I should see \"Liquid Exception\" in the build output"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _includes directory",
+                        "I have a \"_includes/invalid.html\" file that contains \"{% INVALID %}\"",
+                        "I have a \"index.html\" page with layout \"simple\" that contains \"{% include invalid.html %}\"",
+                        "I have a simple layout that contains \"{{ content }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a non-zero exit-status",
+                        "I should see \"Liquid Exception: Liquid syntax error \\(.+/invalid\\.html line 1\\): Unknown tag 'INVALID' included in index\\.html\" in the build output"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _includes directory",
+                        "I have a \"_includes/invalid.html\" file that contains \"{{ site.title | prepend 'Prepended Text' }}\"",
+                        "I have a \"index.html\" page with layout \"simple\" that contains \"{% include invalid.html %}\"",
+                        "I have a simple layout that contains \"{{ content }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a non-zero exit-status",
+                        "I should see \"Liquid Exception: Liquid error \\(.+/_includes/invalid\\.html line 1\\): wrong number of arguments (\\(given 1, expected 2\\)|\\(1 for 2\\)) included in index\\.html\" in the build output"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a \"index.html\" page with title \"Simple Test\" that contains \"{{ page.title | foobar }}\\n\\n{{ page.author }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit-status",
+                        "I should not see \"Liquid Exception:\" in the build output"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a \"index.html\" file with content:",
+                        "I have a configuration file with \"title\" set to \"Hello World\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit-status",
+                        "the _site directory should exist"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a \"index.html\" file with content:",
+                        "I have a \"_config.yml\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a non-zero exit-status",
+                        "I should see \"Liquid error \\(line 3\\): undefined variable author in index.html\" in the build output"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a \"index.html\" file with content:",
+                        "I have a \"_config.yml\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a non-zero exit-status",
+                        "I should see \"Liquid error \\(line 3\\): undefined filter foobar in index.html\" in the build output"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a \"index.html\" page with layout \"simple\" that contains \"Hi there, Jekyll {{ jekyll.environment }}!\"",
+                        "I have a simple layout that contains \"{{ content }}Ahoy, indeed!\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Hi there, Jekyll development!\\nAhoy, indeed\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.scss\" page with layout \"simple\" that contains \".foo-bar { color:black; }\"",
+                        "I have an \"index.coffee\" page with layout \"simple\" that contains \"whatever()\"",
+                        "I have a configuration file with \"plugins\" set to \"[jekyll-coffeescript]\"",
+                        "I have a simple layout that contains \"{{ content }}Ahoy, indeed!\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should not see \"Ahoy, indeed!\" in \"_site/index.css\"",
+                        "I should not see \"Ahoy, indeed!\" in \"_site/index.js\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a \"index.md\" page with layout \"none\" that contains \"Hi there, {{ site.author }}!\"",
+                        "I have a _trials directory",
+                        "I have a \"_trials/no-layout.md\" page with layout \"none\" that contains \"Hi there, {{ site.author }}!\"",
+                        "I have a \"_trials/test.md\" page with layout \"null\" that contains \"Hi there, {{ site.author }}!\"",
+                        "I have a none layout that contains \"{{ content }}Welcome!\"",
+                        "I have a page layout that contains \"{{ content }}Check this out!\"",
+                        "I have a configuration file with:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should not see \"Welcome!\" in \"_site/trials/no-layout.html\"",
+                        "I should not see \"Check this out!\" in \"_site/trials/no-layout.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a \"index.md\" page with layout \"none\" that contains \"Hi there, {{ site.author }}!\"",
+                        "I have a _trials directory",
+                        "I have a \"_trials/no-layout.md\" page with layout \"none\" that contains \"Hi there, {{ site.author }}!\"",
+                        "I have a \"_trials/test.md\" page with layout \"page\" that contains \"Hi there, {{ site.author }}!\"",
+                        "I have a none layout that contains \"{{ content }}Welcome!\"",
+                        "I have a page layout that contains \"{{ content }}Check this out!\"",
+                        "I have a configuration file with:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should not see \"Welcome!\" in \"_site/trials/no-layout.html\"",
+                        "I should not see \"Welcome!\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.scss\" page that contains \".foo-bar { color:{{site.color}}; }\"",
+                        "I have a configuration file with \"color\" set to \"red\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \".foo-bar {\\n  color: red;\\n}\\n\\n\\/\\*# sourceMappingURL=index.css.map \\*\\/\" in \"_site/index.css\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.coffee\" page with animal \"cicada\" that contains \"hey='for {{page.animal}}'\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "the \"_site/index.js\" file should not exist"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.coffee\" page with animal \"cicada\" that contains \"hey='for {{page.animal}}'\"",
+                        "I have a configuration file with \"plugins\" set to \"[jekyll-coffeescript]\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"hey = 'for cicada';\" in \"_site/index.js\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.md\" file with content:",
+                        "I have a configuration file with \"novel\" set to \"'{{ site.title }}'\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "I should see \"series named {{ site.title }}\" in \"_site/index.html\"",
+                        "I should see \"{% link series/first-part.md %}\" in \"_site/index.html\"",
+                        "I should see \"{% link series/last-part.md %}\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.md\" page that contains \"__Hello World__\"",
+                        "I have an \"about.md\" page that contains \"{{ page.name }}\"",
+                        "I have a \"test.json\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist"
+                    ]
+                ]
+            }
+        ]
+    }
+}

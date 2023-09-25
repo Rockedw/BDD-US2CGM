@@ -1,0 +1,25 @@
+// 1982218083856 Context Model
+digraph {
+	1982218084432 [label=Context10]
+	1982218084576 [label="I have a configuration file with \"theme\" set to \"test-theme\""]
+	1982218084432 -> 1982218084576
+	1982218084576 [label="I have a configuration file with \"theme\" set to \"test-theme\""]
+	1982218084672 [label="I have a _posts directory"]
+	1982218084432 -> 1982218084672
+	1982218084672 [label="I have a _posts directory"]
+	1982218084768 [label="I have the following posts:"]
+	1982218084432 -> 1982218084768
+	1982218084768 [label="I have the following posts:"]
+	1982218084864 [label="I have a _layouts directory"]
+	1982218084432 -> 1982218084864
+	1982218084864 [label="I have a _layouts directory"]
+	1982218084960 [label="I have a \"_layouts/post.html\" page with layout \"default\" that contains \"I am a post layout! {{ content }}\""]
+	1982218084432 -> 1982218084960
+	1982218084960 [label="I have a \"_layouts/post.html\" page with layout \"default\" that contains \"I am a post layout! {{ content }}\""]
+	1982218085056 [label="I have an _includes directory"]
+	1982218084432 -> 1982218085056
+	1982218085056 [label="I have an _includes directory"]
+	1982218085152 [label="I have an \"_includes/in_project.html\" file that contains \"I am in the project, not the theme.\""]
+	1982218084432 -> 1982218085152
+	1982218085152 [label="I have an \"_includes/in_project.html\" file that contains \"I am in the project, not the theme.\""]
+}

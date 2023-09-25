@@ -1,0 +1,16 @@
+// 1982197192432 Context Model
+digraph {
+	1982197194400 [label=Context2]
+	1982197195024 [label="a user with username \"bob\""]
+	1982197194400 -> 1982197195024
+	1982197195024 [label="a user with username \"bob\""]
+	1982197195120 [label="a user named \"Alice Awesome\" with email \"alice@alice.alice\""]
+	1982197194400 -> 1982197195120
+	1982197195120 [label="a user named \"Alice Awesome\" with email \"alice@alice.alice\""]
+	1982197195216 [label="a user with username \"bob\" is connected with \"alice_awesome\""]
+	1982197194400 -> 1982197195216
+	1982197195216 [label="a user with username \"bob\" is connected with \"alice_awesome\""]
+	1982197195312 [label="I sign in as \"bob@bob.bob\" on the mobile website"]
+	1982197194400 -> 1982197195312
+	1982197195312 [label="I sign in as \"bob@bob.bob\" on the mobile website"]
+}

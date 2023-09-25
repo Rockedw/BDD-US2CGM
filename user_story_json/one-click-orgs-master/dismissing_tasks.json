@@ -1,0 +1,36 @@
+{
+    "feature_name": "Dismissing tasks",
+    "user_story": {
+        "as_a": "As the Secretary",
+        "i_want": "dismiss non-essential tasks from the Dashboard",
+        "so_that": "keep on top of my tasks",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a co-op",
+                        "I am the Secretary of the co-op",
+                        "I have a current task"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Dashboard"
+                    ],
+                    [
+                        "I dismiss the task"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the task"
+                    ],
+                    [
+                        "I should be on the Dashboard",
+                        "I should not see the task"
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,49 @@
+// 2220590328864 Context Model
+digraph {
+	2220590330496 [label=Context19]
+	2220590330928 [label="I have opened \"plugins/application/spec/application/navigation_history_spec.rb\""]
+	2220590330496 -> 2220590330928
+	2220590330928 [label="I have opened \"plugins/application/spec/application/navigation_history_spec.rb\""]
+	2220590331024 [label="I move to line 2"]
+	2220590330496 -> 2220590331024
+	2220590331024 [label="I move to line 2"]
+	2220590331120 [label="I run the command Redcar::OutlineView::OpenOutlineViewCommand"]
+	2220590330496 -> 2220590331120
+	2220590331120 [label="I run the command Redcar::OutlineView::OpenOutlineViewCommand"]
+	2220590331216 [label="I select the outline view"]
+	2220590330496 -> 2220590331216
+	2220590331216 [label="I select the outline view"]
+	2220590331312 [label="the cursor should be on line 3"]
+	2220590330496 -> 2220590331312
+	2220590331312 [label="the cursor should be on line 3"]
+	2220590331408 [label="I run the command Redcar::OutlineView::OpenOutlineViewCommand"]
+	2220590330496 -> 2220590331408
+	2220590331408 [label="I run the command Redcar::OutlineView::OpenOutlineViewCommand"]
+	2220590331504 [label="I set the outline filter to \"con\""]
+	2220590330496 -> 2220590331504
+	2220590331504 [label="I set the outline filter to \"con\""]
+	2220590331600 [label="I wait \"2\" seconds"]
+	2220590330496 -> 2220590331600
+	2220590331600 [label="I wait \"2\" seconds"]
+	2220590331696 [label="I select the outline view"]
+	2220590330496 -> 2220590331696
+	2220590331696 [label="I select the outline view"]
+	2220590331792 [label="the cursor should be on line 16"]
+	2220590330496 -> 2220590331792
+	2220590331792 [label="the cursor should be on line 16"]
+	2220590331888 [label="I have opened \"plugins/application/lib/application/navigation_history.rb\""]
+	2220590330496 -> 2220590331888
+	2220590331888 [label="I have opened \"plugins/application/lib/application/navigation_history.rb\""]
+	2220590331984 [label="I move to line 5"]
+	2220590330496 -> 2220590331984
+	2220590331984 [label="I move to line 5"]
+	2220590332080 [label="I run the command Redcar::OutlineView::OpenOutlineViewCommand"]
+	2220590330496 -> 2220590332080
+	2220590332080 [label="I run the command Redcar::OutlineView::OpenOutlineViewCommand"]
+	2220590332176 [label="I select the outline view"]
+	2220590330496 -> 2220590332176
+	2220590332176 [label="I select the outline view"]
+	2220590332272 [label="the cursor should be on line 0"]
+	2220590330496 -> 2220590332272
+	2220590332272 [label="the cursor should be on line 0"]
+}

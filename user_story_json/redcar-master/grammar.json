@@ -1,0 +1,31 @@
+{
+    "feature_name": "Grammar",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Who let the dogs out?\"",
+                        "I switch the language to \"C++\"",
+                        "I select the word at 18"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the selected text should be \"out\"",
+                        "I switch the language to \"Ruby\"",
+                        "I select the word at 18"
+                    ],
+                    [
+                        "the selected text should be \"out?\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

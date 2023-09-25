@@ -1,0 +1,13 @@
+// 3000759768816 Context Model
+digraph {
+	3000759769536 [label=Context2]
+	3000759766848 [label="the following semesters exist"]
+	3000759769536 -> 3000759766848
+	3000759766848 [label="the following semesters exist"]
+	3000759771360 [label="the following cal course exists:"]
+	3000759769536 -> 3000759771360
+	3000759771360 [label="the following cal course exists:"]
+	3000759772560 [label="the following users exist:"]
+	3000759769536 -> 3000759772560
+	3000759772560 [label="the following users exist:"]
+}

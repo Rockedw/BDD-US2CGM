@@ -1,0 +1,22 @@
+// 1436739171520 Context Model
+digraph {
+	1436739170224 [label=Context1]
+	1436756954848 [label="I have a _layouts directory"]
+	1436739170224 -> 1436756954848
+	1436756954848 [label="I have a _layouts directory"]
+	1436756954176 [label="I have a pretty layout that contains \"THIS IS THE LAYOUT: {{content}}\""]
+	1436739170224 -> 1436756954176
+	1436756954176 [label="I have a pretty layout that contains \"THIS IS THE LAYOUT: {{content}}\""]
+	1436757136272 [label="I have a _posts directory"]
+	1436739170224 -> 1436757136272
+	1436757136272 [label="I have a _posts directory"]
+	1436757137424 [label="I have the following post:"]
+	1436739170224 -> 1436757137424
+	1436757137424 [label="I have the following post:"]
+	1436757147120 [label="I have an \"index.html\" page with title \"some title\" that contains \"just some page\""]
+	1436739170224 -> 1436757147120
+	1436757147120 [label="I have an \"index.html\" page with title \"some title\" that contains \"just some page\""]
+	1436757132096 [label="I have a configuration file with \"defaults\" set to \"[{scope: {path: \"\"}, values: {layout: \"pretty\"}}]\""]
+	1436739170224 -> 1436757132096
+	1436757132096 [label="I have a configuration file with \"defaults\" set to \"[{scope: {path: \"\"}, values: {layout: \"pretty\"}}]\""]
+}

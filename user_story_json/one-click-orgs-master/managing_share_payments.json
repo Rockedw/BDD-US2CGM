@@ -1,0 +1,42 @@
+{
+    "feature_name": "Managing share payments",
+    "user_story": {
+        "as_a": "As the Secretary",
+        "i_want": "process new share applications",
+        "so_that": "respond to members' requests for new shares",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a co-op",
+                        "members of the co-op can hold more than one share",
+                        "I am the Secretary of the co-op",
+                        "a member has made an application for more shares"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Shares page"
+                    ],
+                    [
+                        "I mark the share application as paid"
+                    ],
+                    [
+                        "I go to the dashboard"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the share application"
+                    ],
+                    [
+                        "I should see that the member's new shares have been allotted"
+                    ],
+                    [
+                        "I should no longer see a notification about the member's share application"
+                    ]
+                ]
+            }
+        ]
+    }
+}

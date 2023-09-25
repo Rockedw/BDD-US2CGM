@@ -1,0 +1,16 @@
+// 3000815875600 Context Model
+digraph {
+	3000815874352 [label=Context1]
+	3000815866528 [label="a provider \"Lehman Bros\""]
+	3000815874352 -> 3000815866528
+	3000815866528 [label="a provider \"Lehman Bros\""]
+	3000815868544 [label="a provider \"AIG\""]
+	3000815874352 -> 3000815868544
+	3000815868544 [label="a provider \"AIG\""]
+	3000815873728 [label="a provider \"Wachovia\""]
+	3000815874352 -> 3000815873728
+	3000815873728 [label="a provider \"Wachovia\""]
+	3000815865184 [label="a logged in admin user"]
+	3000815874352 -> 3000815865184
+	3000815865184 [label="a logged in admin user"]
+}

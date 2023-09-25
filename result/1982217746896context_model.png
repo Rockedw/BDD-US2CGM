@@ -1,0 +1,25 @@
+// 1982217745552 Context Model
+digraph {
+	1982217746896 [label=Context111]
+	1982217747040 [label="I have a \"index.md\" page with layout \"none\" that contains \"Hi there, {{ site.author }}!\""]
+	1982217746896 -> 1982217747040
+	1982217747040 [label="I have a \"index.md\" page with layout \"none\" that contains \"Hi there, {{ site.author }}!\""]
+	1982217747136 [label="I have a _trials directory"]
+	1982217746896 -> 1982217747136
+	1982217747136 [label="I have a _trials directory"]
+	1982217747232 [label="I have a \"_trials/no-layout.md\" page with layout \"none\" that contains \"Hi there, {{ site.author }}!\""]
+	1982217746896 -> 1982217747232
+	1982217747232 [label="I have a \"_trials/no-layout.md\" page with layout \"none\" that contains \"Hi there, {{ site.author }}!\""]
+	1982217747328 [label="I have a \"_trials/test.md\" page with layout \"page\" that contains \"Hi there, {{ site.author }}!\""]
+	1982217746896 -> 1982217747328
+	1982217747328 [label="I have a \"_trials/test.md\" page with layout \"page\" that contains \"Hi there, {{ site.author }}!\""]
+	1982217747424 [label="I have a none layout that contains \"{{ content }}Welcome!\""]
+	1982217746896 -> 1982217747424
+	1982217747424 [label="I have a none layout that contains \"{{ content }}Welcome!\""]
+	1982217747520 [label="I have a page layout that contains \"{{ content }}Check this out!\""]
+	1982217746896 -> 1982217747520
+	1982217747520 [label="I have a page layout that contains \"{{ content }}Check this out!\""]
+	1982217747616 [label="I have a configuration file with:"]
+	1982217746896 -> 1982217747616
+	1982217747616 [label="I have a configuration file with:"]
+}

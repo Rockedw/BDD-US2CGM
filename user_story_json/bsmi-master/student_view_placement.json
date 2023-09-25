@@ -1,0 +1,92 @@
+{
+    "feature_name": "Students should be able to view the options",
+    "user_story": {
+        "as_a": "Cal Student",
+        "i_want": "be able to see the school, mentor teacher, grade level, subject matter, and time for my field placements",
+        "so_that": "I can select my field placement",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "the following assignments exist"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to /students/1/semesters/1/placements"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Monday\""
+                    ],
+                    [
+                        "I should see \"8:00 AM to 9:00 AM\""
+                    ],
+                    [
+                        "I should see \"Physics\""
+                    ],
+                    [
+                        "I should see \"High School\""
+                    ],
+                    [
+                        "I should see \"Berkeley High\""
+                    ],
+                    [
+                        "I should see \"Oski Bear\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the following assignments exist"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to /students/1/semesters/1/placements"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Monday\""
+                    ],
+                    [
+                        "I should see \"8:00 AM to 9:00 AM\""
+                    ],
+                    [
+                        "I should see \"Physics\""
+                    ],
+                    [
+                        "I should see \"High School\""
+                    ],
+                    [
+                        "I should see \"Berkeley High\""
+                    ],
+                    [
+                        "I should see \"Oski Bear\""
+                    ],
+                    [
+                        "I should see \"Tuesday\""
+                    ],
+                    [
+                        "I should see \"11:00 AM to 12:00 PM\""
+                    ],
+                    [
+                        "I should see \"Geometry\""
+                    ],
+                    [
+                        "I should see \"High School\""
+                    ],
+                    [
+                        "I should see \"Berkeley High\""
+                    ],
+                    [
+                        "I should see \"Oski Bear\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

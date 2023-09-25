@@ -1,0 +1,19 @@
+// 1847133566480 Context Model
+digraph {
+	1847133568784 [label=Context6]
+	1847133568928 [label="I have a _puppies directory"]
+	1847133568784 -> 1847133568928
+	1847133568928 [label="I have a _puppies directory"]
+	1847133978688 [label="I have the following documents under the puppies collection:"]
+	1847133568784 -> 1847133978688
+	1847133978688 [label="I have the following documents under the puppies collection:"]
+	1847133978784 [label="I have a _posts directory"]
+	1847133568784 -> 1847133978784
+	1847133978784 [label="I have a _posts directory"]
+	1847133978880 [label="I have the following post:"]
+	1847133568784 -> 1847133978880
+	1847133978880 [label="I have the following post:"]
+	1847133978976 [label="I have a \"_config.yml\" file with content:"]
+	1847133568784 -> 1847133978976
+	1847133978976 [label="I have a \"_config.yml\" file with content:"]
+}

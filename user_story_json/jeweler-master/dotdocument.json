@@ -1,0 +1,31 @@
+{
+    "feature_name": "generated .document",
+    "user_story": {
+        "as_a": "user should be able to",
+        "i_want": "generate reasonable .document file",
+        "so_that": "easily generate RDoc",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a working directory",
+                        "I have configured git sanely"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'.document' contains 'lib/**/*.rb'",
+                        "'.document' contains 'bin/*'",
+                        "'.document' contains 'features/**/*.feature'",
+                        "'.document' contains 'LICENSE.txt'"
+                    ]
+                ]
+            }
+        ]
+    }
+}

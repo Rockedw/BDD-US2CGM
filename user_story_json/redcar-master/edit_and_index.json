@@ -1,0 +1,39 @@
+{
+    "feature_name": "Editing and indexing files in a working copy",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I checkout a local repository",
+                        "I create a wc file named \"README\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be \"1\" unindexed files and \"0\" indexed files"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I checkout a local repository",
+                        "I create a wc file named \"README,foo.rb\"",
+                        "I add \"foo.rb\" to the index"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be \"1\" unindexed files and \"1\" indexed files"
+                    ]
+                ]
+            }
+        ]
+    }
+}

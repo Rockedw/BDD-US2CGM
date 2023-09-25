@@ -1,0 +1,148 @@
+{
+    "feature_name": "Not safe for work",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I sign in as \"tommy@nsfw.example.com\" on the mobile website",
+                        "I go to the edit profile page",
+                        "I mark myself as not safe for work",
+                        "I submit the form"
+                    ],
+                    [
+                        "I go to the edit profile page",
+                        "I mark myself as safe for work",
+                        "I submit the form"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the edit profile page",
+                        "the \"profile[nsfw]\" checkbox should be checked"
+                    ],
+                    [
+                        "I should be on the edit profile page",
+                        "the \"profile[nsfw]\" checkbox should not be checked"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "\"tommy@nsfw.example.com\" has a public post with text \"I love 0bj3ction4bl3 c0nt3nt!\" and a poll",
+                        "\"tommy@nsfw.example.com\" has a public post with text \"I love 0bj3ction4bl3 c0nt3nt!\" and a location",
+                        "\"tommy@nsfw.example.com\" has a public post with text \"I love 0bj3ction4bl3 c0nt3nt!\" and a picture"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"laura@office.example.com\" on the mobile website"
+                    ],
+                    [
+                        "I toggle all nsfw posts"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"I love 0bj3ction4bl3 c0nt3nt!\"",
+                        "I should not see \"What do you think about 1 ninjas?\"",
+                        "I should not see \"Posted from:\"",
+                        "I should not see any picture in my stream"
+                    ],
+                    [
+                        "I should see \"I love 0bj3ction4bl3 c0nt3nt!\"",
+                        "I should see \"What do you think about 1 ninjas?\"",
+                        "I should see \"Posted from:\"",
+                        "I should see 1 pictures in my stream"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "\"tommy@nsfw.example.com\" has a public post with text \"Sexy Senators Gone Wild!\" and a poll"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"laura@office.example.com\" on the mobile website",
+                        "I toggle all nsfw posts",
+                        "I confirm the alert after I follow \"Reshare\""
+                    ],
+                    [
+                        "I go to the home page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a \"a.reshare-action.active\""
+                    ],
+                    [
+                        "I should not see \"Sexy Senators Gone Wild!\"",
+                        "I should not see \"What do you think about 1 ninjas?\"",
+                        "I should have 2 nsfw posts"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "\"tommy@nsfw.example.com\" has a public post with text \"Sexy Senators Gone Wild!\" and a location"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"laura@office.example.com\" on the mobile website",
+                        "I toggle all nsfw posts",
+                        "I confirm the alert after I follow \"Reshare\""
+                    ],
+                    [
+                        "I go to the home page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a \"a.reshare-action.active\""
+                    ],
+                    [
+                        "I should not see \"Sexy Senators Gone Wild!\"",
+                        "I should not see \"Posted from:\"",
+                        "I should have 2 nsfw posts"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "\"tommy@nsfw.example.com\" has a public post with text \"Sexy Senators Gone Wild!\" and a picture"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I sign in as \"laura@office.example.com\" on the mobile website",
+                        "I toggle all nsfw posts",
+                        "I confirm the alert after I follow \"Reshare\""
+                    ],
+                    [
+                        "I go to the home page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a \"a.reshare-action.active\""
+                    ],
+                    [
+                        "I should not see \"Sexy Senators Gone Wild!\"",
+                        "I should not see any picture in my stream",
+                        "I should have 2 nsfw posts"
+                    ]
+                ]
+            }
+        ]
+    }
+}

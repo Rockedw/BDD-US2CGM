@@ -1,0 +1,10 @@
+// 1633871267392 Context Model
+digraph {
+	1633871268304 [label=Context15]
+	1633871268592 [label="following users exist:"]
+	1633871268304 -> 1633871268592
+	1633871268592 [label="following users exist:"]
+	1633871268688 [label="\"bob@bob.bob\" has a public post with text \"Bob’s public post\""]
+	1633871268304 -> 1633871268688
+	1633871268688 [label="\"bob@bob.bob\" has a public post with text \"Bob’s public post\""]
+}

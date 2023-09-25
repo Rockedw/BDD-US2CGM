@@ -1,0 +1,38 @@
+{
+    "feature_name": "Managing endorsements on an account",
+    "user_story": {
+        "as_a": "provider",
+        "i_want": "be able to approve, reject, and view endorsements",
+        "so_that": "I can control which endorsements appear on my directory entry",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Hotpocket\" belonging to \"paul@oi.net\"",
+                        "\"Hotpocket\" has a new endorsement from \"George Tenet\"",
+                        "I am on the homepage"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I log in as \"paul@oi.net\" with password \"testtest\"",
+                        "I follow \"dashboard.all_endorsements\" translation"
+                    ],
+                    [
+                        "I follow \"George Tenet\"",
+                        "I press \"endorsement.approve\" translation"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"George Tenet\"",
+                        "I should see \"endorsement.states.new\" translation"
+                    ],
+                    [
+                        "I should see \"endorsement.saved_successfully\" translation"
+                    ]
+                ]
+            }
+        ]
+    }
+}

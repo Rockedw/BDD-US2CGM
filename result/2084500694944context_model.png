@@ -1,0 +1,10 @@
+// 2084500691152 Context Model
+digraph {
+	2084500694944 [label=Context26]
+	2084500694512 [label="I have fixture collections"]
+	2084500694944 -> 2084500694512
+	2084500694512 [label="I have fixture collections"]
+	2084500689520 [label="I have a \"_config.yml\" file with content:"]
+	2084500694944 -> 2084500689520
+	2084500689520 [label="I have a \"_config.yml\" file with content:"]
+}

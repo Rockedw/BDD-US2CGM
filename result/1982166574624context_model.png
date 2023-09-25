@@ -1,0 +1,22 @@
+// 1982166579472 Context Model
+digraph {
+	1982166574624 [label=Context1]
+	1982166570976 [label="the following semesters exist"]
+	1982166574624 -> 1982166570976
+	1982166570976 [label="the following semesters exist"]
+	1982166580432 [label="the following cal course exists:"]
+	1982166574624 -> 1982166580432
+	1982166580432 [label="the following cal course exists:"]
+	1982166574480 [label="the following timeslots exist:"]
+	1982166574624 -> 1982166574480
+	1982166574480 [label="the following timeslots exist:"]
+	1982166568672 [label="the following users exist:"]
+	1982166574624 -> 1982166568672
+	1982166568672 [label="the following users exist:"]
+	1982166573616 [label="the students_timeslots exists:"]
+	1982166574624 -> 1982166573616
+	1982166573616 [label="the students_timeslots exists:"]
+	1982166568816 [label="the matchings exists:"]
+	1982166574624 -> 1982166568816
+	1982166568816 [label="the matchings exists:"]
+}

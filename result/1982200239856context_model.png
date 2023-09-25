@@ -1,0 +1,16 @@
+// 1982200234528 Context Model
+digraph {
+	1982200239856 [label=Context54]
+	1982200244320 [label="a cash journal in USD exists"]
+	1982200239856 -> 1982200244320
+	1982200244320 [label="a cash journal in USD exists"]
+	1982200246096 [label="a cash journal in CHF exists"]
+	1982200239856 -> 1982200246096
+	1982200246096 [label="a cash journal in CHF exists"]
+	1982200240240 [label="a cash journal in EUR exists"]
+	1982200239856 -> 1982200240240
+	1982200240240 [label="a cash journal in EUR exists"]
+	1982200243504 [label="on all journal entries can be canceled"]
+	1982200239856 -> 1982200243504
+	1982200243504 [label="on all journal entries can be canceled"]
+}

@@ -1,0 +1,83 @@
+{
+    "feature_name": "adding and removing people from aspects",
+    "user_story": {
+        "as_a": "mobile user",
+        "i_want": "add and remove people from my contacts",
+        "so_that": "add people to my contacts",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on \"alice@alice.alice\"'s page"
+                    ],
+                    [
+                        "I select \"Unicorns\" from \"user_aspects\" within \"#author_info\""
+                    ],
+                    [
+                        "I select \"Besties\" from \"user_aspects\" within \"#author_info\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the aspect dropdown within \"#author_info\" should be labeled \"Add contact\""
+                    ],
+                    [
+                        "the aspect dropdown within \"#author_info\" should be labeled \"Unicorns\""
+                    ],
+                    [
+                        "the aspect dropdown within \"#author_info\" should be labeled \"In 2 aspects\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on \"alice@alice.alice\"'s page",
+                        "I select \"Unicorns\" from \"user_aspects\" within \"#author_info\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the aspect dropdown within \"#author_info\" should be labeled \"Unicorns\""
+                    ],
+                    [
+                        "I should have 1 contacts in \"Unicorns\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on \"alice@alice.alice\"'s page",
+                        "I select \"Unicorns\" from \"user_aspects\" within \"#author_info\""
+                    ],
+                    [
+                        "I am on \"alice@alice.alice\"'s page",
+                        "I select \"Unicorns\" from \"user_aspects\" within \"#author_info\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the aspect dropdown within \"#author_info\" should be labeled \"Unicorns\"",
+                        "I select \"Besties\" from \"user_aspects\" within \"#author_info\""
+                    ],
+                    [
+                        "the aspect dropdown within \"#author_info\" should be labeled \"In 2 aspects\""
+                    ],
+                    [
+                        "I should have 1 contacts in \"Unicorns\""
+                    ],
+                    [
+                        "the aspect dropdown within \"#author_info\" should be labeled \"Besties\""
+                    ],
+                    [
+                        "I should have 0 contacts in \"Unicorns\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

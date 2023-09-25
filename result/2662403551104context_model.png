@@ -1,0 +1,16 @@
+// 2662403550336 Context Model
+digraph {
+	2662403551104 [label=Context6]
+	2662403551248 [label="I have a _posts directory"]
+	2662403551104 -> 2662403551248
+	2662403551248 [label="I have a _posts directory"]
+	2662403551344 [label="I have the following posts:"]
+	2662403551104 -> 2662403551344
+	2662403551344 [label="I have the following posts:"]
+	2662403551440 [label="I have a configuration file with \"baseurl\" set to \"blog\""]
+	2662403551104 -> 2662403551440
+	2662403551440 [label="I have a configuration file with \"baseurl\" set to \"blog\""]
+	2662403551536 [label="I have an \"index.md\" page that contains \"[Welcome]({% post_url 2019-02-04-hello-world %})\""]
+	2662403551104 -> 2662403551536
+	2662403551536 [label="I have an \"index.md\" page that contains \"[Welcome]({% post_url 2019-02-04-hello-world %})\""]
+}

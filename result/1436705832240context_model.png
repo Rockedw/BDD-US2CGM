@@ -1,0 +1,13 @@
+// 1436705824992 Context Model
+digraph {
+	1436705832240 [label=Context11]
+	1436705816880 [label="a working directory"]
+	1436705832240 -> 1436705816880
+	1436705816880 [label="a working directory"]
+	1436705830272 [label="I have configured git sanely"]
+	1436705832240 -> 1436705830272
+	1436705830272 [label="I have configured git sanely"]
+	1436705823264 [label="I want cucumber stories"]
+	1436705832240 -> 1436705823264
+	1436705823264 [label="I want cucumber stories"]
+}

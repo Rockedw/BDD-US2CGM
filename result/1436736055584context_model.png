@@ -1,0 +1,10 @@
+// 1436736056640 Context Model
+digraph {
+	1436736055584 [label=Context56]
+	1436736059232 [label="I will open a large file from the \"open_file\" dialog"]
+	1436736055584 -> 1436736059232
+	1436736059232 [label="I will open a large file from the \"open_file\" dialog"]
+	1436736058176 [label="I will choose \"yes\" from the \"message_box\" dialog"]
+	1436736055584 -> 1436736058176
+	1436736058176 [label="I will choose \"yes\" from the \"message_box\" dialog"]
+}

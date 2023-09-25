@@ -1,0 +1,13 @@
+// 1847135639376 Context Model
+digraph {
+	1847135640240 [label=Context60]
+	1847135640384 [label="there is 1 existing property like \"propFamily\""]
+	1847135640240 -> 1847135640384
+	1847135640384 [label="there is 1 existing property like \"propFamily\""]
+	1847135640480 [label="I am on the show items page for \"propFamily0\""]
+	1847135640240 -> 1847135640480
+	1847135640480 [label="I am on the show items page for \"propFamily0\""]
+	1847135640576 [label="I follow \"Delete this item\", accepting confirmation"]
+	1847135640240 -> 1847135640576
+	1847135640576 [label="I follow \"Delete this item\", accepting confirmation"]
+}

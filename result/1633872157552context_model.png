@@ -1,0 +1,22 @@
+// 1633872156736 Context Model
+digraph {
+	1633872157552 [label=Context16]
+	1633872157696 [label="I have a _layouts directory"]
+	1633872157552 -> 1633872157696
+	1633872157696 [label="I have a _layouts directory"]
+	1633872157792 [label="I have a page layout that contains \"Page {{ page.title }}: {{ content }}\""]
+	1633872157552 -> 1633872157792
+	1633872157792 [label="I have a page layout that contains \"Page {{ page.title }}: {{ content }}\""]
+	1633872157888 [label="I have a post layout that contains \"Post {{ page.title }}: {{ content }}Related posts: {{ site.related_posts | size }}\""]
+	1633872157552 -> 1633872157888
+	1633872157888 [label="I have a post layout that contains \"Post {{ page.title }}: {{ content }}Related posts: {{ site.related_posts | size }}\""]
+	1633872157984 [label="I have an \"index.html\" page with layout \"page\" that contains \"Site contains {{ site.pages.size }} pages and {{ site.posts.size }} posts; Related posts: {{ site.related_posts | size }}\""]
+	1633872157552 -> 1633872157984
+	1633872157984 [label="I have an \"index.html\" page with layout \"page\" that contains \"Site contains {{ site.pages.size }} pages and {{ site.posts.size }} posts; Related posts: {{ site.related_posts | size }}\""]
+	1633872158080 [label="I have a _posts directory"]
+	1633872157552 -> 1633872158080
+	1633872158080 [label="I have a _posts directory"]
+	1633872158176 [label="I have the following posts:"]
+	1633872157552 -> 1633872158176
+	1633872158176 [label="I have the following posts:"]
+}

@@ -1,0 +1,10 @@
+// 1847125299488 Context Model
+digraph {
+	1847125311344 [label=Context1]
+	1847125300640 [label="I have just signed up"]
+	1847125311344 -> 1847125300640
+	1847125300640 [label="I have just signed up"]
+	1847125297664 [label="I have filled in my name, type of creative, network, and attached a profile picture"]
+	1847125311344 -> 1847125297664
+	1847125297664 [label="I have filled in my name, type of creative, network, and attached a profile picture"]
+}

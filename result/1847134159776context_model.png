@@ -1,0 +1,25 @@
+// 1847134125696 Context Model
+digraph {
+	1847134159776 [label=Context135]
+	1847134159920 [label="I have a _theme directory"]
+	1847134159776 -> 1847134159920
+	1847134159920 [label="I have a _theme directory"]
+	1847134160016 [label="I have a page theme that contains \"Page Layout: {{ site.posts.size }} on {{ site.time | date: \"%Y-%m-%d\" }}\""]
+	1847134159776 -> 1847134160016
+	1847134160016 [label="I have a page theme that contains \"Page Layout: {{ site.posts.size }} on {{ site.time | date: \"%Y-%m-%d\" }}\""]
+	1847134160112 [label="I have a post theme that contains \"Post Layout: {{ content }}\""]
+	1847134159776 -> 1847134160112
+	1847134160112 [label="I have a post theme that contains \"Post Layout: {{ content }}\""]
+	1847134160208 [label="I have an \"index.html\" page with layout \"page\" that contains \"site index page\""]
+	1847134159776 -> 1847134160208
+	1847134160208 [label="I have an \"index.html\" page with layout \"page\" that contains \"site index page\""]
+	1847134160304 [label="I have a configuration file with:"]
+	1847134159776 -> 1847134160304
+	1847134160304 [label="I have a configuration file with:"]
+	1847134160400 [label="I have a _posts directory"]
+	1847134159776 -> 1847134160400
+	1847134160400 [label="I have a _posts directory"]
+	1847134160496 [label="I have the following posts:"]
+	1847134159776 -> 1847134160496
+	1847134160496 [label="I have the following posts:"]
+}

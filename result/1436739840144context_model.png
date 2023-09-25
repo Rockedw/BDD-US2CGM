@@ -1,0 +1,13 @@
+// 1436739832704 Context Model
+digraph {
+	1436739840144 [label=Context6]
+	1436739839280 [label="a provider \"Billow\""]
+	1436739840144 -> 1436739839280
+	1436739839280 [label="a provider \"Billow\""]
+	1436739845760 [label="a user \"paul\" belonging to the \"Billow\" provider"]
+	1436739840144 -> 1436739845760
+	1436739845760 [label="a user \"paul\" belonging to the \"Billow\" provider"]
+	1436739840576 [label="a logged in admin user"]
+	1436739840144 -> 1436739840576
+	1436739840576 [label="a logged in admin user"]
+}

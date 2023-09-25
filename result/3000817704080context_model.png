@@ -1,0 +1,28 @@
+// 3000817698992 Context Model
+digraph {
+	3000817704080 [label=Context28]
+	3000817702736 [label="there are 2 existing individuals like \"thing\""]
+	3000817704080 -> 3000817702736
+	3000817702736 [label="there are 2 existing individuals like \"thing\""]
+	3000817697072 [label="there are 2 existing individuals like \"indiv\""]
+	3000817704080 -> 3000817697072
+	3000817697072 [label="there are 2 existing individuals like \"indiv\""]
+	3000817705472 [label="there is an existing connection \"thing0\" \"contains\" \"thing1\""]
+	3000817704080 -> 3000817705472
+	3000817705472 [label="there is an existing connection \"thing0\" \"contains\" \"thing1\""]
+	3000817697456 [label="there is an existing connection \"indiv0\" \"peer_of\" \"indiv1\""]
+	3000817704080 -> 3000817697456
+	3000817697456 [label="there is an existing connection \"indiv0\" \"peer_of\" \"indiv1\""]
+	3000817703696 [label="I am on the edit connections page for \"indiv0\" \"peer_of\" \"indiv1\""]
+	3000817704080 -> 3000817703696
+	3000817703696 [label="I am on the edit connections page for \"indiv0\" \"peer_of\" \"indiv1\""]
+	3000817696880 [label="I select \"thing0 : thing item number 0\" from \"Subject\""]
+	3000817704080 -> 3000817696880
+	3000817696880 [label="I select \"thing0 : thing item number 0\" from \"Subject\""]
+	3000817702448 [label="I select \"contains : Contains (basic relationship)\" from \"Relates to\""]
+	3000817704080 -> 3000817702448
+	3000817702448 [label="I select \"contains : Contains (basic relationship)\" from \"Relates to\""]
+	3000817707344 [label="I select \"thing1 : thing item number 1\" from \"Object\""]
+	3000817704080 -> 3000817707344
+	3000817707344 [label="I select \"thing1 : thing item number 1\" from \"Object\""]
+}

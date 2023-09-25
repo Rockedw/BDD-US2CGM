@@ -1,0 +1,13 @@
+// 1847124807296 Context Model
+digraph {
+	1847124660224 [label=Context16]
+	1847124660896 [label="a working directory"]
+	1847124660224 -> 1847124660896
+	1847124660896 [label="a working directory"]
+	1847124660176 [label="I use the existing project \"existing-project-with-version-yaml\" as a template"]
+	1847124660224 -> 1847124660176
+	1847124660176 [label="I use the existing project \"existing-project-with-version-yaml\" as a template"]
+	1847124667040 [label="\"VERSION.yml\" contains hash \"{ :major => 1, :minor => 5, :patch => 3}\""]
+	1847124660224 -> 1847124667040
+	1847124667040 [label="\"VERSION.yml\" contains hash \"{ :major => 1, :minor => 5, :patch => 3}\""]
+}

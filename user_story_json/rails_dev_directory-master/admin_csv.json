@@ -1,0 +1,38 @@
+{
+    "feature_name": "CSV Dumps",
+    "user_story": {
+        "as_a": "n adminstrator",
+        "i_want": "",
+        "so_that": "I can export to salesforce",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Hyper tiny\" with an RFP called \"Help me\"",
+                        "a logged in admin user"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the admin dashboard",
+                        "I follow \"navigation.csvs\" translation",
+                        "I follow \"csvs.rfps\" translation"
+                    ],
+                    [
+                        "I am on the admin dashboard",
+                        "I follow \"navigation.csvs\" translation",
+                        "I follow \"csvs.providers\" translation"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Help me\""
+                    ],
+                    [
+                        "I should see \"Hyper tiny\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

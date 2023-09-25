@@ -1,0 +1,19 @@
+// 3000815572528 Context Model
+digraph {
+	3000815574064 [label=Context36]
+	3000815574208 [label="I have a snippets directory"]
+	3000815574064 -> 3000815574208
+	3000815574208 [label="I have a snippets directory"]
+	3000815574304 [label="I have a snippets/welcome_para directory"]
+	3000815574064 -> 3000815574304
+	3000815574304 [label="I have a snippets/welcome_para directory"]
+	3000815574400 [label="I have a \"index.md\" page that contains \"{% include_relative snippets/welcome_para.md %}\""]
+	3000815574064 -> 3000815574400
+	3000815574400 [label="I have a \"index.md\" page that contains \"{% include_relative snippets/welcome_para.md %}\""]
+	3000815574496 [label="I have a \"snippets/welcome_para.md\" file that contains \"{% include_relative snippets/welcome_para/greeting.md %} Dear Reader!\""]
+	3000815574064 -> 3000815574496
+	3000815574496 [label="I have a \"snippets/welcome_para.md\" file that contains \"{% include_relative snippets/welcome_para/greeting.md %} Dear Reader!\""]
+	3000815574592 [label="I have a \"snippets/welcome_para/greeting.md\" file that contains \"Welcome back\""]
+	3000815574064 -> 3000815574592
+	3000815574592 [label="I have a \"snippets/welcome_para/greeting.md\" file that contains \"Welcome back\""]
+}

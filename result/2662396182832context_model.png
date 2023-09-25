@@ -1,0 +1,13 @@
+// 2662367674128 Context Model
+digraph {
+	2662396182832 [label=Context3]
+	2662396182976 [label="I am on \"store locator\""]
+	2662396182832 -> 2662396182976
+	2662396182976 [label="I am on \"store locator\""]
+	2662396183072 [label="there is \"a postcode search box\""]
+	2662396182832 -> 2662396183072
+	2662396183072 [label="there is \"a postcode search box\""]
+	2662396183168 [label="I enter \"EC1Y 2AA\""]
+	2662396182832 -> 2662396183168
+	2662396183168 [label="I enter \"EC1Y 2AA\""]
+}

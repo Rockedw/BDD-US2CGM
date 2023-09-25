@@ -1,0 +1,162 @@
+{
+    "feature_name": "Hovercards",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "use hovercards",
+        "so_that": "not having to leave the page to view a persons profile",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I sign in as \"alice@alice.alice\"",
+                        "I am on \"bob@bob.bob\"'s page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I activate the first hovercard"
+                    ],
+                    [
+                        "I deactivate the first hovercard"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"public stuff\" within \".stream-element\""
+                    ],
+                    [
+                        "I should see a hovercard"
+                    ],
+                    [
+                        "I should not see a hovercard"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I sign in as \"alice@alice.alice\"",
+                        "I am on \"bob@bob.bob\"'s page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I hover \"Alice\" within \"#main-stream\""
+                    ],
+                    [
+                        "I am on \"alice@alice.alice\"'s page"
+                    ],
+                    [
+                        "I hover \"Bob Jones\" within \"#main-stream\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Alice\" within \"#main-stream\""
+                    ],
+                    [
+                        "I should not see a hovercard"
+                    ],
+                    [
+                        "I should see \"Bob Jones\" within \"#main-stream\""
+                    ],
+                    [
+                        "I should see a hovercard"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the tag page for \"hashtag\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I activate the first hovercard"
+                    ],
+                    [
+                        "I deactivate the first hovercard"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"public stuff\" within \".stream-element\""
+                    ],
+                    [
+                        "I should see a hovercard"
+                    ],
+                    [
+                        "I should not see a hovercard"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a user with email \"bob@bob.bob\" is tagged \"#first #second\"",
+                        "I sign in as \"alice@alice.alice\"",
+                        "I am on \"bob@bob.bob\"'s page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I activate the first hovercard"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"public stuff\" within \".stream-element\""
+                    ],
+                    [
+                        "I should see a hovercard",
+                        "I should see \"#first\" hashtag in the hovercard",
+                        "I should see \"#second\" hashtag in the hovercard"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a user with email \"alice@alice.alice\" is connected with \"bob@bob.bob\"",
+                        "I sign in as \"alice@alice.alice\"",
+                        "I am on \"bob@bob.bob\"'s page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I activate the first hovercard"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a hovercard",
+                        "I should see \"Besties\" within \".aspect-membership-dropdown\"",
+                        "I should see a \"[title='Bob Jones is sharing with you']\" within \".status-container\"",
+                        "I should see a \".entypo-check\" within \".sharing_message_container\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I sign in as \"alice@alice.alice\"",
+                        "I am on \"bob@bob.bob\"'s page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I activate the first hovercard"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a hovercard",
+                        "I should see a \"[title='Bob Jones is not sharing with you']\" within \".status-container\"",
+                        "I should see a \".entypo-record\" within \".sharing_message_container\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

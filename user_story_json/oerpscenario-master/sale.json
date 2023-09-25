@@ -1,0 +1,133 @@
+{
+    "feature_name": "Test sales process",
+    "user_story": {
+        "as_a": "n administator",
+        "i_want": "see if the sales features and workflow work well",
+        "so_that": "test the sale process and modules",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I need a \"sale.order\" with name: SO Device Reseller and oid: scenario.so_reseller",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"sale.order.line\" with name: SO Line 1 Device Reseller and oid: scenario.so_reseller_line1",
+                        "having:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have recorded on the 1 jan 2009 a sale order of 1000,0 CHF without tax called MySimpleSO",
+                        "change the shipping policy to 'Shipping & Manual Invoice'"
+                    ],
+                    [
+                        "I take the related invoice",
+                        "change the description for SORelatedAccountCheck and the date to 1 jan 2009"
+                    ],
+                    [
+                        "I take the related invoice"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press the confirm button"
+                    ],
+                    [
+                        "I press the create invoice button from SO"
+                    ],
+                    [
+                        "I press the validate button"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the sale order MySimpleSO manual in progress",
+                        "the total amount = 1000,0"
+                    ],
+                    [
+                        "I should see the sale order MySimpleSO in progress",
+                        "I should have a related draft invoice created"
+                    ],
+                    [
+                        "I should see the invoice SORelatedAccountCheck open"
+                    ],
+                    [
+                        "I should have a linked account move with 2 lines and a posted status",
+                        "the associated credit account move line should use the account choosen in the invoice line and have the following values:",
+                        "the associated debit account move line should use the account of the partner account payable property and have the following values:"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have recorded on the 1 jan 2009 a sale order of 1000,0 CHF without tax called MyCanceledInvoiceSO",
+                        "change the shipping policy to 'Shipping & Manual Invoice'"
+                    ],
+                    [
+                        "I take the related invoice",
+                        "change the description for GeneratedBySO and the date to 1 jan 2009"
+                    ],
+                    [
+                        "I take the related invoice"
+                    ],
+                    [
+                        "I take the related invoice"
+                    ],
+                    [
+                        "I take the related invoice"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press the confirm button"
+                    ],
+                    [
+                        "I press the create invoice button from SO"
+                    ],
+                    [
+                        "I press the validate button"
+                    ],
+                    [
+                        "I press the cancel button on this invoice"
+                    ],
+                    [
+                        "then I press the set to draft button"
+                    ],
+                    [
+                        "I press the validate button",
+                        "then I press the invoice corrected button in the SO"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the sale order MyCanceledInvoiceSO manual in progress",
+                        "the total amount = 1000,0"
+                    ],
+                    [
+                        "I should see the sale order MyCanceledInvoiceSO in progress",
+                        "I should have a related draft invoice created"
+                    ],
+                    [
+                        "I should see the invoice GeneratedBySO open"
+                    ],
+                    [
+                        "I should see the invoice GeneratedBySO cancel"
+                    ],
+                    [
+                        "I should see the invoice GeneratedBySO draft",
+                        "the SO should be in invoice exception"
+                    ],
+                    [
+                        "I should see the sale order MyCanceledInvoiceSO in progress"
+                    ]
+                ]
+            }
+        ]
+    }
+}

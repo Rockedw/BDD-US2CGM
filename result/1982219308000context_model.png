@@ -1,0 +1,22 @@
+// 1982197194400 Context Model
+digraph {
+	1982219308000 [label=Context12]
+	1982219530400 [label="there is 1 existing property like \"newProp\""]
+	1982219308000 -> 1982219530400
+	1982219530400 [label="there is 1 existing property like \"newProp\""]
+	1982219519648 [label="I am on the new connections page"]
+	1982219308000 -> 1982219519648
+	1982219519648 [label="I am on the new connections page"]
+	1982219519456 [label="I select \"newProp0 : newProp item number 0\" from \"Subject\""]
+	1982219308000 -> 1982219519456
+	1982219519456 [label="I select \"newProp0 : newProp item number 0\" from \"Subject\""]
+	1982219523296 [label="I select \"sub_property_of : SubProperty Of (basic relationship type)\" from \"Relates to\""]
+	1982219308000 -> 1982219523296
+	1982219523296 [label="I select \"sub_property_of : SubProperty Of (basic relationship type)\" from \"Relates to\""]
+	1982219520896 [label="I choose \"Item\""]
+	1982219308000 -> 1982219520896
+	1982219520896 [label="I choose \"Item\""]
+	1982219523056 [label="I select \"predecessor_of : Predecessor Of (basic relationship)\" from \"Object\""]
+	1982219308000 -> 1982219523056
+	1982219523056 [label="I select \"predecessor_of : Predecessor Of (basic relationship)\" from \"Object\""]
+}

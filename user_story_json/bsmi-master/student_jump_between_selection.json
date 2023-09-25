@@ -1,0 +1,89 @@
+{
+    "feature_name": "Students should be able to jump between steps when picking their time slots",
+    "user_story": {
+        "as_a": "Student",
+        "i_want": "be able to jump between steps when picking my timeslots",
+        "so_that": "I can see which step I'm on and how many steps are left.",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to /students/1/semesters/1/courses/1/select_timeslots"
+                    ],
+                    [
+                        "I follow \"Monday\""
+                    ],
+                    [
+                        "I follow \"Friday\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Monday\""
+                    ],
+                    [
+                        "I should see \"Tuesday\""
+                    ],
+                    [
+                        "I should see \"Wednesday\""
+                    ],
+                    [
+                        "I should see \"Thursday\""
+                    ],
+                    [
+                        "I should see \"Friday\""
+                    ],
+                    [
+                        "I should see \"Rank\""
+                    ],
+                    [
+                        "I should see \"Summary\""
+                    ],
+                    [
+                        "I should see \"Monday\""
+                    ],
+                    [
+                        "I should see \"Tuesday\""
+                    ],
+                    [
+                        "I should see \"Wednesday\""
+                    ],
+                    [
+                        "I should see \"Thursday\""
+                    ],
+                    [
+                        "I should see \"Friday\""
+                    ],
+                    [
+                        "I should see \"Rank\""
+                    ],
+                    [
+                        "I should see \"Summary\""
+                    ],
+                    [
+                        "I should see \"Monday\""
+                    ],
+                    [
+                        "I should see \"Tuesday\""
+                    ],
+                    [
+                        "I should see \"Wednesday\""
+                    ],
+                    [
+                        "I should see \"Thursday\""
+                    ],
+                    [
+                        "I should see \"Friday\""
+                    ],
+                    [
+                        "I should see \"Rank\""
+                    ],
+                    [
+                        "I should see \"Summary\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

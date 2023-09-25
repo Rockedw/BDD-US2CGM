@@ -1,0 +1,31 @@
+{
+    "feature_name": "Teacher creates new portal class",
+    "user_story": {
+        "as_a": "teacher",
+        "i_want": "create a portal class",
+        "so_that": "teach students a lesson",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am on the clazz create page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"portal_clazz[name]\" with \"My New Class\"",
+                        "I fill in \"portal_clazz[class_word]\" with \"WINSTON\"",
+                        "I check \"portal_clazz[grade_levels][9]\"",
+                        "I press \"Save\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the portal class \"My New Class\" should have been created",
+                        "the class word for the portal class \"My New Class\" should be \"winston\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

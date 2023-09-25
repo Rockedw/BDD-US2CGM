@@ -1,0 +1,500 @@
+{
+    "feature_name": "Hooks",
+    "user_story": {
+        "as_a": "plugin author",
+        "i_want": "be able to run code during various stages of the build process",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have a _plugins directory",
+                        "I have a \"_plugins/ext.rb\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"mytinypage\" in \"_site/foo.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _plugins directory",
+                        "I have a \"index.html\" page that contains \"{{ site.injected }}!\"",
+                        "I have a \"_plugins/ext.rb\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"myparam!\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _plugins directory",
+                        "I have a \"page1.html\" page that contains \"page1\"",
+                        "I have a \"page2.html\" page that contains \"page2\"",
+                        "I have a \"_plugins/ext.rb\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "the \"_site/page1.html\" file should not exist",
+                        "I should see \"page2\" in \"_site/page2.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _plugins directory",
+                        "I have a \"_plugins/ext.rb\" file with content:",
+                        "I have a \"page1.html\" page that contains \"page1\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"page1\" in \"_site/firstpage.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _plugins directory",
+                        "I have a \"_plugins/ext.rb\" file with content:",
+                        "I have a \"page1.html\" page that contains \"page1\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"page1\" in \"_site/renamed.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _plugins directory",
+                        "I have a \"_plugins/ext.rb\" file with content:",
+                        "I have a \"page1.html\" page that contains \"{{ page.myparam }}\"",
+                        "I have a \"page2.html\" page that contains \"{{ page.myparam }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"special\" in \"_site/page1.html\"",
+                        "I should not see \"special\" in \"_site/page2.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _layouts directory",
+                        "I have a \"_layouts/page.html\" file with content:",
+                        "I have a \"page.md\" page with layout \"page\" that contains \"### Heading\"",
+                        "I have a _plugins directory",
+                        "I have a \"_plugins/ext.rb\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"<h3>Page heading</h3>\" in \"_site/page.html\"",
+                        "I should see \"<h4 id=\\\"heading\\\">Heading</h4>\" in \"_site/page.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _plugins directory",
+                        "I have a \"index.html\" page that contains \"WRAP ME\"",
+                        "I have a \"_plugins/ext.rb\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"{{{{{ WRAP ME }}}}}\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _plugins directory",
+                        "I have a \"index.html\" page that contains \"HELLO FROM A PAGE\"",
+                        "I have a \"_plugins/ext.rb\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"HELLO FROM A PAGE\" in \"_site/index.html.moved\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _plugins directory",
+                        "I have a \"_plugins/ext.rb\" file with content:",
+                        "I have a _posts directory",
+                        "I have the following posts:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"pbagrag sbe ragel1.\" in \"_site/2015/03/14/entry1.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _plugins directory",
+                        "I have a \"_plugins/ext.rb\" file with content:",
+                        "I have a _posts directory",
+                        "I have the following posts:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"old post\" in \"_site/2015/03/14/entry1.html\"",
+                        "I should see \"new post\" in \"_site/2015/03/15/entry2.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _layouts directory",
+                        "I have a \"_layouts/post.html\" file with content:",
+                        "I have a _posts directory",
+                        "I have a \"_posts/2016-01-01-example.md\" file with content:",
+                        "I have a _plugins directory",
+                        "I have a \"_plugins/ext.rb\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"<h3>Page heading</h3>\" in \"_site/2016/01/01/example.html\"",
+                        "I should see \"<h4 id=\\\"heading\\\">Heading</h4>\" in \"_site/2016/01/01/example.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _plugins directory",
+                        "I have a \"_plugins/ext.rb\" file with content:",
+                        "I have a _posts directory",
+                        "I have the following posts:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"the answer to life, the universe and everything\" in \"_site/2015/03/14/entry1.html\"",
+                        "I should see \"48\" in \"_site/2015/03/15/entry2.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _plugins directory",
+                        "I have a \"_plugins/ext.rb\" file with content:",
+                        "I have a _posts directory",
+                        "I have the following posts:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"_site/2015/03/14/entry1.html at\" in \"_site/post-build.log\""
+                    ],
+                    [
+                        "I should see \"_site/2015/03/15/entry2.html at\" in \"_site/post-build.log\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _plugins directory",
+                        "I have a \"_plugins/ext.rb\" file with content:",
+                        "I have a \"index.html\" page that contains \"WRAP ME\"",
+                        "I have a _posts directory",
+                        "I have the following posts:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"{{{{{ WRAP ME }}}}}\" in \"_site/index.html\"",
+                        "I should see \"{{{{{ <p>entry one</p> }}}}}\" in \"_site/2015/03/14/entry1.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _plugins directory",
+                        "I have a \"_plugins/ext.rb\" file with content:",
+                        "I have a \"index.html\" page that contains \"WRAP ME\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"4 3 1 2 WRAP ME\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _plugins directory",
+                        "I have a \"_plugins/ext.rb\" file with content:",
+                        "I have a \"_config.yml\" file that contains \"collections: [ memes ]\"",
+                        "I have a _memes directory",
+                        "I have a \"_memes/doc1.md\" file with content:",
+                        "I have an \"index.md\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"all your base are belong to us\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _layouts directory",
+                        "I have a \"_layouts/meme.html\" file with content:",
+                        "I have a \"_config.yml\" file with content:",
+                        "I have a _memes directory",
+                        "I have a \"_memes/doc1.md\" file with content:",
+                        "I have a _plugins directory",
+                        "I have a \"_plugins/ext.rb\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"<h3>Page heading</h3>\" in \"_site/memes/doc1.html\"",
+                        "I should see \"<h4 id=\\\"all-your-base\\\">all your base</h4>\" in \"_site/memes/doc1.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _layouts directory",
+                        "I have a \"_layouts/meme.html\" file with content:",
+                        "I have a \"_config.yml\" file with content:",
+                        "I have a _memes directory",
+                        "I have a \"_memes/doc1.md\" file with content:",
+                        "I have a _posts directory",
+                        "I have a \"_posts/2016-01-01-example.md\" file with content:",
+                        "I have a _plugins directory",
+                        "I have a \"_plugins/ext.rb\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"<h3>Page heading</h3>\" in \"_site/memes/doc1.html\"",
+                        "I should see \"<h4 id=\\\"all-your-base\\\">all your base</h4>\" in \"_site/memes/doc1.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _plugins directory",
+                        "I have a \"_plugins/ext.rb\" file with content:",
+                        "I have a \"_config.yml\" file with content:",
+                        "I have a _memes directory",
+                        "I have a \"_memes/doc1.md\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"<p class=\\\"meme\\\">all your base are belong to us\" in \"_site/memes/doc1.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _plugins directory",
+                        "I have a \"_plugins/ext.rb\" file with content:",
+                        "I have a \"_config.yml\" file with content:",
+                        "I have a _memes directory",
+                        "I have a \"_memes/doc1.md\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Wrote document 0\" in \"_site/document-build.log\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _plugins directory",
+                        "I have a \"_plugins/ext.rb\" file with content:",
+                        "I have a _layouts directory",
+                        "I have a \"_layouts/custom.html\" file with content:",
+                        "I have a _includes directory",
+                        "I have a \"_includes/foo.html\" file with content:",
+                        "I have an \"index.html\" page with layout \"custom\" that contains \"page content\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"_site/index.html\" file should exist",
+                        "I should see \"page content\\n hello world\" in \"_site/index.html\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

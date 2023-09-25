@@ -1,0 +1,32 @@
+{
+    "feature_name": "Adding a co-op",
+    "user_story": {
+        "as_a": "founder",
+        "i_want": "create a co-op in the system",
+        "so_that": "start running a co-op virtually",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "the domain is the signup domain"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the new co-op page",
+                        "I follow \"Proceed to sign up\"",
+                        "I enter my details",
+                        "I enter the new co-op's details",
+                        "I accept the Terms of Use",
+                        "I press \"Create draft co-op\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Checklist page"
+                    ]
+                ]
+            }
+        ]
+    }
+}

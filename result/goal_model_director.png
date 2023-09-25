@@ -1,0 +1,113 @@
+// Goal Model
+digraph {
+	1847134115664 [label="Director
+goal"]
+	1847134016496 [label="create a resolution of the board
+goal
+1847134015728"]
+	1847134115664 -> 1847134016496
+	1847134016496 [label="create a resolution of the board
+goal"]
+	1847134017264 [label="Director creates a board resolution to be voted on electronically
+goal
+140728069287616"]
+	1847134016496 -> 1847134017264
+	1847134017264 [label="Director creates a board resolution to be voted on electronically
+goal"]
+	1847134024128 [label="I go to the Board page
+task
+140728069287616"]
+	1847134017264 -> 1847134024128
+	1847134024128 [label="I go to the Board page
+task"]
+	1847134062336 [label="I press Resolution
+goal
+140728069287616"]
+	1847134017264 -> 1847134062336
+	1847134062336 [label="I press Resolution
+goal"]
+	1847134012896 [label="I press \"Create a new Board Resolution\"
+task
+140728069287616"]
+	1847134062336 -> 1847134012896
+	1847134012896 [label="I press \"Create a new Board Resolution\"
+task"]
+	1847134015920 [label="I press \"Save this resolution\"
+task
+140728069287616"]
+	1847134062336 -> 1847134015920
+	1847134015920 [label="I press \"Save this resolution\"
+task"]
+	1847134012464 [label="I enter the text of the new resolution
+task
+140728069287616"]
+	1847134017264 -> 1847134012464
+	1847134012464 [label="I enter the text of the new resolution
+task"]
+	1847134013616 [label="I choose to open the resolution for electronic voting
+task
+140728069287616"]
+	1847134017264 -> 1847134013616
+	1847134013616 [label="I choose to open the resolution for electronic voting
+task"]
+	1847134018272 [label="Director creates a board resolution to be be considered at a future meeting
+goal
+140728069287616"]
+	1847134016496 -> 1847134018272
+	1847134018272 [label="Director creates a board resolution to be be considered at a future meeting
+goal"]
+	1847134012368 [label="I go to the Board page
+task
+140728069287616"]
+	1847134018272 -> 1847134012368
+	1847134012368 [label="I go to the Board page
+task"]
+	1847134015968 [label="I press Resolution
+goal
+140728069287616"]
+	1847134018272 -> 1847134015968
+	1847134015968 [label="I press Resolution
+goal"]
+	1847134016352 [label="I press \"Create a new Board Resolution\"
+task
+140728069287616"]
+	1847134015968 -> 1847134016352
+	1847134016352 [label="I press \"Create a new Board Resolution\"
+task"]
+	1847134018080 [label="I press \"Save this resolution\"
+task
+140728069287616"]
+	1847134015968 -> 1847134018080
+	1847134018080 [label="I press \"Save this resolution\"
+task"]
+	1847134017696 [label="I enter the text of the new resolution
+task
+140728069287616"]
+	1847134018272 -> 1847134017696
+	1847134017696 [label="I enter the text of the new resolution
+task"]
+	1847134026960 [label="I choose to save the resolution for consideration at a future meeting of the board
+task
+140728069287616"]
+	1847134018272 -> 1847134026960
+	1847134026960 [label="I choose to save the resolution for consideration at a future meeting of the board
+task"]
+	1847134012512 [label="download a PDF version of the list of Directors
+goal
+140728069287616"]
+	1847134115664 -> 1847134012512
+	1847134012512 [label="download a PDF version of the list of Directors
+goal"]
+	1847134022784 [label="I go to the Directors page
+task
+140728069287616"]
+	1847134012512 -> 1847134022784
+	1847134022784 [label="I go to the Directors page
+task"]
+	1847134024560 [label="I follow \"PDF\"
+task
+140728069287616"]
+	1847134012512 -> 1847134024560
+	1847134024560 [label="I follow \"PDF\"
+task"]
+}

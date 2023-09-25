@@ -1,0 +1,222 @@
+{
+    "feature_name": "A user can signup and login to the web application",
+    "user_story": {
+        "as_a": "user(student, mentor teacher, cal faculty)",
+        "i_want": "register an account",
+        "so_that": "I can use the webapp",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am invited and on the signup page",
+                        "I fill in \"First name\" with \"Sangyoon\"",
+                        "I fill in \"Last name\" with \"Park\"",
+                        "I fill in \"Street address\" with \"346 soda UC Berkeley\"",
+                        "I fill in \"City\" with \"Berkeley\"",
+                        "I fill in \"State\" with \"CA\"",
+                        "I fill in \"Zipcode\" with \"94000\"",
+                        "I fill in \"Phone number\" with \"123-456-7890\"",
+                        "I fill in \"Password\" with \"1234\"",
+                        "I fill in \"Password confirmation\" with \"1234\"",
+                        "I press \"Register\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should be located at \"/users/1\"",
+                        "I should see \"myemail@nowhere.com\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am signed up as a student advisor"
+                    ],
+                    [
+                        "I am on the login page",
+                        "I fill in \"Email\" with \"wrong_email@email.com\"",
+                        "I fill in \"Password\" with \"1234\"",
+                        "I press \"Login\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should be located at \"/user_sessions\"",
+                        "I should see \"Email is not valid\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am signed up as a student advisor"
+                    ],
+                    [
+                        "I am on the login page",
+                        "I fill in \"Email\" with \"myemail@nowhere.com\"",
+                        "I fill in \"Password\" with \"1234\"",
+                        "I press \"Login\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Edit Profile\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be located at \"/settings\""
+                    ],
+                    [
+                        "I should be located at \"/users/1/edit\"",
+                        "the \"user_first_name\" field should contain \"Sangyoon\"",
+                        "the \"user_last_name\" field should contain \"Park\"",
+                        "the \"user_street_address\" field should contain \"346 soda UC Berkeley\"",
+                        "the \"user_city\" field should contain \"Berkeley\"",
+                        "the \"user_state\" field should contain \"CA\"",
+                        "the \"user_zipcode\" field should contain \"94000\"",
+                        "the \"user_phone_number\" field should contain \"123-456-7890\"",
+                        "the \"user_email\" field should contain \"myemail@nowhere.com\"",
+                        "the \"user_password\" field should not contain \"1234\""
+                    ],
+                    [
+                        "I fill in \"user_first_name\" with \"Edited User\"",
+                        "I fill in \"user_street_address\" with \"people's park\"",
+                        "I fill in \"user_phone_number\" with \"111-111-1111\"",
+                        "I fill in \"user_email\" with \"changed@email.com\"",
+                        "I press \"Update\""
+                    ],
+                    [
+                        "I should be located at \"/users/1\""
+                    ],
+                    [
+                        "I follow \"Edit Profile\""
+                    ],
+                    [
+                        "I should be located at \"/users/1/edit\"",
+                        "the \"user_first_name\" field should contain \"Edited User\"",
+                        "the \"user_street_address\" field should contain \"people's park\"",
+                        "the \"user_phone_number\" field should contain \"111-111-1111\"",
+                        "the \"user_email\" field should contain \"changed@email.com\"",
+                        "the \"user_password\" field should not contain \"1234\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the signup page",
+                        "I fill in \"First name\" with \"Sangyoon\"",
+                        "I fill in \"Last name\" with \"Park\"",
+                        "I fill in \"Street address\" with \"346 soda UC Berkeley\"",
+                        "I fill in \"City\" with \"Berkeley\"",
+                        "I fill in \"State\" with \"CA\"",
+                        "I fill in \"Zipcode\" with \"94000\"",
+                        "I fill in \"Phone number\" with \"123-456-7890\"",
+                        "I fill in \"Password\" with \"1234\"",
+                        "I fill in \"Password confirmation\" with \"1234\"",
+                        "I press \"Register\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should be located at \"/users\"",
+                        "I should see \"There was a problem creating you\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am invited and on the signup page",
+                        "I fill in \"First name\" with \"Sangyoon\"",
+                        "I fill in \"Last name\" with \"Park\"",
+                        "I fill in \"Street address\" with \"346 soda UC Berkeley\"",
+                        "I fill in \"City\" with \"Berkeley\"",
+                        "I fill in \"State\" with \"CA\"",
+                        "I fill in \"Zipcode\" with \"94000\"",
+                        "I fill in \"Phone number\" with \"123-456-7890\"",
+                        "I fill in \"Password\" with \"123\"",
+                        "I fill in \"Password confirmation\" with \"111\"",
+                        "I press \"Register\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should be located at \"/users\"",
+                        "I should see \"Password doesn't match confirmation\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am signed up as a student advisor"
+                    ],
+                    [
+                        "I am on the login page",
+                        "I fill in \"Email\" with \"myemail@nowhere.com\"",
+                        "I fill in \"Password\" with \"1234\"",
+                        "I press \"Login\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should be located at \"/settings\"",
+                        "I should see \"myemail@nowhere.com\"",
+                        "I follow \"Logout\""
+                    ],
+                    [
+                        "I should be located at \"/\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am signed up as a student advisor"
+                    ],
+                    [
+                        "I am on the login page",
+                        "I fill in \"Email\" with \"myemail@nowhere.com\"",
+                        "I fill in \"Password\" with \"1234\"",
+                        "I press \"Login\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should be located at \"/settings\"",
+                        "I am on the signup page"
+                    ],
+                    [
+                        "I should see \"You must be logged out to access this page\"",
+                        "I am on the login page"
+                    ],
+                    [
+                        "I should see \"You must be logged out to access this page\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the logout page"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"You must be logged in to access this page\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

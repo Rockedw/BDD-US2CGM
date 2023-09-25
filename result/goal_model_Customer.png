@@ -1,0 +1,23 @@
+// Goal Model
+digraph {
+	1847078510288 [label="Customer
+goal"]
+	1847088854112 [label="be able to see Product details
+goal
+140728069287616"]
+	1847078510288 -> 1847088854112
+	1847088854112 [label="be able to see Product details
+goal"]
+	1847117561328 [label="I am on \"<url>\"
+task
+140728069287616"]
+	1847088854112 -> 1847117561328
+	1847117561328 [label="I am on \"<url>\"
+task"]
+	1847088857040 [label="be able to search for Products
+goal
+140728069287616"]
+	1847078510288 -> 1847088857040
+	1847088857040 [label="be able to search for Products
+goal"]
+}

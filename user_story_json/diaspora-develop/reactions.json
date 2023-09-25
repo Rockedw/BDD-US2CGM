@@ -1,0 +1,81 @@
+{
+    "feature_name": "reactions mobile post",
+    "user_story": {
+        "as_a": "mobile user",
+        "i_want": "react to posts",
+        "so_that": "navigate Diaspora*",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I click on selector \"a.like-action.inactive\""
+                    ],
+                    [
+                        "I go to the stream page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a \"a.like-action.active\"",
+                        "I should see \"1\" within \".like-count\""
+                    ],
+                    [
+                        "I should see a \"a.like-action.active\"",
+                        "I should see \"1\" within \".like-count\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on \"alice@alice.alice\"'s page",
+                        "I click on selector \"a.like-action.inactive\""
+                    ],
+                    [
+                        "I go to the stream page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a \"a.like-action.active\"",
+                        "I should see \"1\" within \".like-count\""
+                    ],
+                    [
+                        "I should see a \"a.like-action.active\"",
+                        "I should see \"1\" within \".like-count\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I click on selector \"a.comment-action.inactive\"",
+                        "I fill in the following:",
+                        "I press \"Comment\""
+                    ],
+                    [
+                        "I go to the stream page",
+                        "I should see \"1 comment\" within \".show-comments\"",
+                        "I should see \"1\" within \".comment-count\""
+                    ],
+                    [
+                        "I click on selector \"a.show-comments\"",
+                        "I click on selector \"a.comment-action\"",
+                        "I confirm the alert after I click on selector \"a.remove\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"is that a poodle?\" within \".comment-container\""
+                    ],
+                    [
+                        "I should see \"0 comments\" within \".show-comments\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,92 @@
+{
+    "feature_name": "Test the Bank statement",
+    "user_story": {
+        "as_a": "",
+        "i_want": "see if the basic bank statement features works",
+        "so_that": "test the invoicing process and modules",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have recorded on the 1 jan 2009 an invoice (in_invoice) of 1000,0 CHF without tax called MySupplierInvoiceBankStatement2"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press the validate button"
+                    ],
+                    [
+                        "I create a new bank statement with a CHF account journal",
+                        "import on the 10 jan 2009 the invoice called MySupplierInvoiceBankStatement2",
+                        "confirm the statement and see it confirmed"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the invoice MySupplierInvoiceBankStatement2 open",
+                        "the residual amount = 1000,0"
+                    ],
+                    [
+                        "I should see the invoice MySupplierInvoiceBankStatement2 paid",
+                        "the residual amount = 0,0",
+                        "the invoice should appear as paid invoice (checkbox tic)"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have recorded on the 1 jan 2009 an invoice (in_invoice) of 1000,0 CHF without tax called MyFirstSupplierInvoiceBankStatement"
+                    ],
+                    [
+                        "I have recorded on the 1 jan 2009 an invoice (in_invoice) of 1000,0 CHF without tax called MySecondSupplierInvoiceBankStatement"
+                    ],
+                    [
+                        "I create a new bank statement called MyBankStatement with a CHF account journal",
+                        "I import on the 1 jan 2009, the following invoice (order matters) : MySecondSupplierInvoiceBankStatement, MyFirstSupplierInvoiceBankStatement"
+                    ],
+                    [
+                        "I take the created invoice MyFirstSupplierInvoiceBankStatement"
+                    ],
+                    [
+                        "I take the bank statement called MyBankStatement"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press the validate button"
+                    ],
+                    [
+                        "I press the validate button"
+                    ],
+                    [
+                        "I call the Pay invoice wizard",
+                        "I completely pay the residual amount in CHF on the 13 sep 2009"
+                    ],
+                    [
+                        "push the confirm button of the statement it should raise a warning because one invoice is already reconciled",
+                        "no entries should be created by the bank statement"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the invoice MyFirstSupplierInvoiceBankStatement open",
+                        "the residual amount = 1000,0"
+                    ],
+                    [
+                        "I should see the invoice MySecondSupplierInvoiceBankStatement open",
+                        "the residual amount = 1000,0"
+                    ],
+                    [
+                        "I should see an draft bank statement with 2 lines"
+                    ],
+                    [
+                        "I should see a residual amount of 0.0 CHF.-",
+                        "I should see the invoice MyFirstSupplierInvoiceBankStatement paid",
+                        "the invoice should appear as paid invoice (checkbox tic)"
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,59 @@
+// Goal Model
+digraph {
+	1847134313808 [label="hacker who likes to avoid repetition
+goal"]
+	1847134381408 [label="be able to embed data into my layouts
+goal
+140728069287616"]
+	1847134313808 -> 1847134381408
+	1847134381408 [label="be able to embed data into my layouts
+goal"]
+	1847134380784 [label="Use custom layout data
+goal
+1847134381744"]
+	1847134381408 -> 1847134380784
+	1847134380784 [label="Use custom layout data
+goal"]
+	1847134380688 [label="I run jekyll build
+task
+140728069287616"]
+	1847134380784 -> 1847134380688
+	1847134380688 [label="I run jekyll build
+task"]
+	1847134380640 [label="Use custom layout data
+goal
+1847134381600"]
+	1847134381408 -> 1847134380640
+	1847134380640 [label="Use custom layout data
+goal"]
+	1847134381264 [label="I run jekyll build
+task
+140728069287616"]
+	1847134380640 -> 1847134381264
+	1847134381264 [label="I run jekyll build
+task"]
+	1847134381360 [label="Inherit custom layout data
+goal
+1847134380496"]
+	1847134381408 -> 1847134381360
+	1847134381360 [label="Inherit custom layout data
+goal"]
+	1847134381504 [label="I run jekyll build
+task
+140728069287616"]
+	1847134381360 -> 1847134381504
+	1847134381504 [label="I run jekyll build
+task"]
+	1847134381312 [label="Inherit custom layout data and clear when not present
+goal
+1847134382224"]
+	1847134381408 -> 1847134381312
+	1847134381312 [label="Inherit custom layout data and clear when not present
+goal"]
+	1847134382176 [label="I run jekyll build
+task
+140728069287616"]
+	1847134381312 -> 1847134382176
+	1847134382176 [label="I run jekyll build
+task"]
+}

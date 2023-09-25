@@ -1,0 +1,34 @@
+// 2662357957840 Context Model
+digraph {
+	2662357958080 [label=Context1]
+	2662396309568 [label="the following semesters exist"]
+	2662357958080 -> 2662396309568
+	2662396309568 [label="the following semesters exist"]
+	2662396309472 [label="the following courses exist:"]
+	2662357958080 -> 2662396309472
+	2662396309472 [label="the following courses exist:"]
+	2662396299248 [label="the following districts exist:"]
+	2662357958080 -> 2662396299248
+	2662396299248 [label="the following districts exist:"]
+	2662396309616 [label="the following schools exist:"]
+	2662357958080 -> 2662396309616
+	2662396309616 [label="the following schools exist:"]
+	2662396309520 [label="the following mentor teachers exist:"]
+	2662357958080 -> 2662396309520
+	2662396309520 [label="the following mentor teachers exist:"]
+	2662396307504 [label="the following timeslots exist:"]
+	2662357958080 -> 2662396307504
+	2662396307504 [label="the following timeslots exist:"]
+	2662396304048 [label="the following cal course exist"]
+	2662357958080 -> 2662396304048
+	2662396304048 [label="the following cal course exist"]
+	2662396306016 [label="the following users exist"]
+	2662357958080 -> 2662396306016
+	2662396306016 [label="the following users exist"]
+	2662396297856 [label="the following users exist"]
+	2662357958080 -> 2662396297856
+	2662396297856 [label="the following users exist"]
+	2662396304096 [label="I am logged in as orion@berkeley.edu"]
+	2662357958080 -> 2662396304096
+	2662396304096 [label="I am logged in as orion@berkeley.edu"]
+}

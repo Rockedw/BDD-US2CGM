@@ -1,0 +1,165 @@
+{
+    "feature_name": "Admin can work with interactives",
+    "user_story": {
+        "as_a": "n admin",
+        "i_want": "",
+        "so_that": "work with interactives",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on the home page",
+                        "I follow \"Admin\"",
+                        "I wait 2 seconds",
+                        "I follow \"Interactives\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the interactives index page",
+                        "I should see \"Displaying all 15 models\"",
+                        "I should see \"Create Interactive\"",
+                        "I should see \"Export Interactives\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the interactives index page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I click \"create interactive\""
+                    ],
+                    [
+                        "I fill in \"interactive[name]\" with \"New Interactive\"",
+                        "I fill in \"interactive[description]\" with \"New Description\"",
+                        "I fill in \"interactive[url]\" with \"http://www.google.com\"",
+                        "I press \"Save\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"(new) /interactives\""
+                    ],
+                    [
+                        "I should be on the show page for interactive \"New Interactive\"",
+                        "I should see \"Interactive was successfully created.\"",
+                        "I should see \"Run Interactive\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the following Admin::tag records exist:",
+                        "I am on the interactives index page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I click \"create interactive\""
+                    ],
+                    [
+                        "I fill in \"interactive[name]\" with \"New Interactive\"",
+                        "I fill in \"interactive[description]\" with \"New Description\"",
+                        "I fill in \"interactive[url]\" with \"http://www.google.com\"",
+                        "under \"Grade Levels\" I check \"gl_K\"",
+                        "under \"Subject Areas\" I check \"sa_Math\"",
+                        "under \"Model Types\" I choose \"mt_Video\"",
+                        "I press \"Save\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"(new) /interactives\""
+                    ],
+                    [
+                        "I should be on the show page for interactive \"New Interactive\"",
+                        "I should see \"Interactive was successfully created.\"",
+                        "I should see \"Run Interactive\"",
+                        "I should see \"Model type: mt_Video\"",
+                        "I should see \"Grade Levels: gl_K\"",
+                        "I should see \"Subject Areas: sa_Math\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the edit page of interactive \"Interactive 1\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "under \"Grade Levels\" I uncheck \"11\"",
+                        "under \"Subject Areas\" I uncheck \"Biology\"",
+                        "I press \"Save\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"11\" within #primary"
+                    ],
+                    [
+                        "I should not see \"11\" within #primary",
+                        "I should not see \"Biology\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the search instructional materials page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I enter search text \"Geometry\" on the search instructional materials page",
+                        "I close the search suggestions",
+                        "I uncheck \"Sequence\"",
+                        "I uncheck \"Interactive\"",
+                        "I check \"Activity\"",
+                        "I press \"Go\"",
+                        "I wait 2 seconds"
+                    ],
+                    [
+                        "I enter search text \"Radioactivity\" on the search instructional materials page",
+                        "I close the search suggestions",
+                        "I check \"Sequence\"",
+                        "I uncheck \"Activity\"",
+                        "I uncheck \"Interactive\"",
+                        "I press \"Go\"",
+                        "I wait 2 seconds"
+                    ],
+                    [
+                        "I enter search text \"Interactive\" on the search instructional materials page",
+                        "I close the search suggestions",
+                        "I uncheck \"Sequence\"",
+                        "I uncheck \"Activity\"",
+                        "I check \"Interactive\"",
+                        "I press \"Go\"",
+                        "I wait 2 seconds"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Geometry\"",
+                        "I should not see \"Radioactivity\""
+                    ],
+                    [
+                        "I should see \"Radioactivity\"",
+                        "I should not see \"Geometry\""
+                    ],
+                    [
+                        "I should see \"Interactive\"",
+                        "I should not see \"Geometry\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

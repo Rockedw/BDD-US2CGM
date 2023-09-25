@@ -1,0 +1,126 @@
+{
+    "feature_name": "Change settings",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I fill in the following:",
+                        "I press \"Change email\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Email changed\"",
+                        "I follow the \"confirm_email\" link from the last sent email"
+                    ],
+                    [
+                        "I should see \"activated\"",
+                        "my \"email\" should be \"new_email@newplac.es\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I uncheck \"user_email_preferences_mentioned\"",
+                        "I scroll to \"change_email_preferences\"",
+                        "I press \"change_email_preferences\""
+                    ],
+                    [
+                        "I uncheck \"user_email_preferences_mentioned_in_comment\"",
+                        "I scroll to \"change_email_preferences\"",
+                        "I press \"change_email_preferences\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Email notifications changed\"",
+                        "the \"user_email_preferences_mentioned\" checkbox should not be checked"
+                    ],
+                    [
+                        "I should see \"Email notifications changed\"",
+                        "the \"user_email_preferences_mentioned_in_comment\" checkbox should not be checked"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I select \"polski\" from \"user_language\"",
+                        "I press \"Change language\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Język został zmieniony\"",
+                        "\"polski\" should be selected from \"user_language\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the stream page",
+                        "I expand the publisher"
+                    ],
+                    [
+                        "I go to the edit user page",
+                        "I press the aspect dropdown",
+                        "I toggle the aspect \"Family\"",
+                        "I press the aspect dropdown",
+                        "I press \"Change\" within \"#post-default-aspects\"",
+                        "I go to the stream page",
+                        "I expand the publisher"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"All aspects\" within \".aspect-dropdown\""
+                    ],
+                    [
+                        "I should see \"Family\" within \".aspect-dropdown\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I press the aspect dropdown",
+                        "I toggle the aspect \"Public\"",
+                        "I press \"Change\" within \"#post-default-aspects\"",
+                        "I go to the stream page",
+                        "I expand the publisher"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Public\" within \".aspect-dropdown\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I click on the first selector \".account-data a\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Download my profile\"",
+                        "I should have 1 email delivery"
+                    ]
+                ]
+            }
+        ]
+    }
+}

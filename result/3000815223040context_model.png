@@ -1,0 +1,13 @@
+// 3000815227840 Context Model
+digraph {
+	3000815223040 [label=Context12]
+	3000815223568 [label="\"alice@alice.alice\" has a public post with text \"check this out!\""]
+	3000815223040 -> 3000815223568
+	3000815223568 [label="\"alice@alice.alice\" has a public post with text \"check this out!\""]
+	3000815225008 [label="\"bob@bob.bob\" has commented \"great post, alice!\" on \"check this out!\""]
+	3000815223040 -> 3000815225008
+	3000815225008 [label="\"bob@bob.bob\" has commented \"great post, alice!\" on \"check this out!\""]
+	3000815225344 [label="\"carol@carol.carol\" has commented \"great comment, bob!\" on \"check this out!\""]
+	3000815223040 -> 3000815225344
+	3000815225344 [label="\"carol@carol.carol\" has commented \"great comment, bob!\" on \"check this out!\""]
+}

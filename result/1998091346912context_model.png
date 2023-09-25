@@ -1,0 +1,10 @@
+// 1998091266624 Context Model
+digraph {
+	1998091346912 [label=Context2]
+	1998091348256 [label="a user with email \"alice@alice.alice\""]
+	1998091346912 -> 1998091348256
+	1998091348256 [label="a user with email \"alice@alice.alice\""]
+	1998091341632 [label="I sign in as \"alice@alice.alice\" on the mobile website"]
+	1998091346912 -> 1998091341632
+	1998091341632 [label="I sign in as \"alice@alice.alice\" on the mobile website"]
+}

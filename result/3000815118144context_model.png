@@ -1,0 +1,10 @@
+// 3000815112048 Context Model
+digraph {
+	3000815118144 [label=Context51]
+	3000815119152 [label="a purchase tax called 'Buy 19.6%' with a rate of 0.196 exists"]
+	3000815118144 -> 3000815119152
+	3000815119152 [label="a purchase tax called 'Buy 19.6%' with a rate of 0.196 exists"]
+	3000815113872 [label="a sale tax called 'Sale 19.6%' with a rate of 0.196 exists"]
+	3000815118144 -> 3000815113872
+	3000815113872 [label="a sale tax called 'Sale 19.6%' with a rate of 0.196 exists"]
+}

@@ -1,0 +1,102 @@
+{
+    "feature_name": "Create new items in the process of creating a connection",
+    "user_story": {
+        "as_a": "as a contributor, I want",
+        "i_want": "",
+        "so_that": "create a wontology,",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am on the new connections page"
+                    ],
+                    [
+                        "I select \"Individual\" from \"item_sti_type\"",
+                        "I fill in \"Name\" with \"aNewSubject\"",
+                        "I fill in \"Title\" with \"A new item for a new connection's Subject\"",
+                        "I fill in \"Description\" with \"New subject item: test test test\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I select \"- create a new item for this object -\" from \"Subject\"",
+                        "I pause",
+                        "I wait for Ajax requests to complete"
+                    ],
+                    [
+                        "I press \"Create\"",
+                        "I wait for Ajax requests to complete"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"MB_content\" element should match \"Selection of a type is required\"",
+                        "the \"MB_content\" element should match \"No more than 255 characters\""
+                    ],
+                    [
+                        "there should not be an element \"MB_content\"",
+                        "\"aNewSubject : A new item for a new connection's Subject\" is selected from \"connection_subject_id\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the new connections page",
+                        "I select \"peer_of : Peer Of (basic relationship)\" from \"Relates to\""
+                    ],
+                    [
+                        "I fill in \"Name\" with \"congruent_with\"",
+                        "I fill in \"Title\" with \"Congruent With\"",
+                        "I fill in \"Description\" with \"Too lazy to write one\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I select \"- create a new property for this relationship -\" from \"Relates to\"",
+                        "I wait for Ajax requests to complete",
+                        "I pause"
+                    ],
+                    [
+                        "I follow \"Cancel item creation\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"MB_content\" element should match \"Describe what this item\""
+                    ],
+                    [
+                        "there should not be an element \"MB_content\"",
+                        "\"peer_of : Peer Of (basic relationship)\" is selected from \"connection_predicate_id\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the new connections page",
+                        "I choose \"Item\"",
+                        "I select \"- create a new item for this object -\" from \"Object\"",
+                        "I wait for Ajax requests to complete",
+                        "I select \"Category\" from \"item_sti_type\"",
+                        "I fill in \"Name\" with \"newItem\"",
+                        "I fill in \"Title\" with \"New item\"",
+                        "I press \"Create\"",
+                        "I wait for Ajax requests to complete"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Cancel, show item list\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see 1 match of \"newItem\"",
+                        "I should see 1 match of \"New item\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

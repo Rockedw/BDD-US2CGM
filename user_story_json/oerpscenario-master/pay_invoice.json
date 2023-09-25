@@ -1,0 +1,56 @@
+{
+    "feature_name": "Test the pay invoice wizard",
+    "user_story": {
+        "as_a": "",
+        "i_want": "see if the wizard take care of complex cases",
+        "so_that": "test the pay invoice wizard",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have recorded on the 1 jan 2009 an invoice (in_invoice) of 1000,0 CHF without tax called MySupplierInvoicePayWizard"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press the validate button"
+                    ],
+                    [
+                        "I call the Pay invoice wizard",
+                        "I partially pay 200.0 CHF.- on the 10 jan 2009"
+                    ],
+                    [
+                        "I call the Pay invoice wizard",
+                        "I partially pay 200.0 USD.- on the 11 jan 2009"
+                    ],
+                    [
+                        "I call the Pay invoice wizard",
+                        "I partially pay 200.0 EUR.- on the 12 jan 2009"
+                    ],
+                    [
+                        "I call the Pay invoice wizard",
+                        "I completely pay the residual amount in CHF on the 13 sep 2009"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the invoice MySupplierInvoicePayWizard open"
+                    ],
+                    [
+                        "I should see a residual amount of 800.0 CHF.-"
+                    ],
+                    [
+                        "I should see a residual amount of 561.48 CHF.-"
+                    ],
+                    [
+                        "I should see a residual amount of 232.68 CHF.-"
+                    ],
+                    [
+                        "I should see a residual amount of 0.0 CHF.-",
+                        "I should see the invoice MySupplierInvoicePayWizard paid"
+                    ]
+                ]
+            }
+        ]
+    }
+}

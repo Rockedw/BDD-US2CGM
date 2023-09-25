@@ -1,0 +1,10 @@
+// 1998092255680 Context Model
+digraph {
+	1998092257312 [label=Context1]
+	1998092255392 [label="the database has been seeded"]
+	1998092257312 -> 1998092255392
+	1998092255392 [label="the database has been seeded"]
+	1998092259568 [label="I am logged in with the username author"]
+	1998092257312 -> 1998092259568
+	1998092259568 [label="I am logged in with the username author"]
+}

@@ -1,0 +1,10 @@
+// 1633871688560 Context Model
+digraph {
+	1633871686016 [label=Context18]
+	1633871689760 [label="a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\""]
+	1633871686016 -> 1633871689760
+	1633871689760 [label="a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\""]
+	1633871689808 [label="Alice has a post mentioning Bob"]
+	1633871686016 -> 1633871689808
+	1633871689808 [label="Alice has a post mentioning Bob"]
+}

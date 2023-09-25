@@ -1,0 +1,105 @@
+{
+    "feature_name": "include_relative Tag",
+    "user_story": {
+        "as_a": "hacker who likes to blog",
+        "i_want": "be able to include snippets in my site's pages and documents relative to current file",
+        "so_that": "share content across several closely related pages",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have a _posts/snippets directory",
+                        "I have the following post:",
+                        "I have an \"_posts/snippets/welcome_para.md\" file that contains \"Welcome back Dear Reader!\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Welcome back Dear Reader!\" in \"_site/2018/09/02/star-wars.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have a _posts/snippets directory",
+                        "I have a _posts/snippets/welcome_para directory",
+                        "I have the following post:",
+                        "I have an \"_posts/snippets/welcome_para.md\" file that contains \"{% include_relative snippets/welcome_para/greeting.md %} Dear Reader!\"",
+                        "I have an \"_posts/snippets/welcome_para/greeting.md\" file that contains \"Welcome back\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Welcome back Dear Reader!\" in \"_site/2018/09/02/star-wars.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have a _posts/snippets directory",
+                        "I have a _posts/snippets/welcome_para directory",
+                        "I have a \"_posts/2018-09-02-star-wars.md\" file with content:",
+                        "I have an \"_posts/snippets/welcome_para.md\" file that contains \"{% include_relative snippets/welcome_para/greeting.md %} Dear Reader!\"",
+                        "I have an \"_posts/snippets/welcome_para/greeting.md\" file that contains \"Welcome back\"",
+                        "I have an \"index.md\" page that contains \"{% for post in site.posts %}{{ post.excerpt }}{% endfor %}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Welcome back Dear Reader!\" in \"_site/2018/09/02/star-wars.html\"",
+                        "I should see \"Welcome back Dear Reader!\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a snippets directory",
+                        "I have a snippets/welcome_para directory",
+                        "I have a \"index.md\" page that contains \"{% include_relative snippets/welcome_para.md %}\"",
+                        "I have a \"snippets/welcome_para.md\" file that contains \"{% include_relative snippets/welcome_para/greeting.md %} Dear Reader!\"",
+                        "I have a \"snippets/welcome_para/greeting.md\" file that contains \"Welcome back\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Welcome back Dear Reader!\" in \"_site/index.html\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

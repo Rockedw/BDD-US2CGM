@@ -1,0 +1,10 @@
+// 2220571416112 Context Model
+digraph {
+	2220571415584 [label=Context9]
+	2220571423552 [label="I am on my account page"]
+	2220571415584 -> 2220571423552
+	2220571423552 [label="I am on my account page"]
+	2220571423216 [label="I click on the resign link, and confirm my leaving"]
+	2220571415584 -> 2220571423216
+	2220571423216 [label="I click on the resign link, and confirm my leaving"]
+}

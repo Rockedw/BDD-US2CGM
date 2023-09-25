@@ -1,0 +1,264 @@
+{
+    "feature_name": "frontmatter defaults",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have a _layouts directory",
+                        "I have a pretty layout that contains \"THIS IS THE LAYOUT: {{content}}\"",
+                        "I have a _posts directory",
+                        "I have the following post:",
+                        "I have an \"index.html\" page with title \"some title\" that contains \"just some page\"",
+                        "I have a configuration file with \"defaults\" set to \"[{scope: {path: \"\"}, values: {layout: \"pretty\"}}]\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"THIS IS THE LAYOUT: <p>just some post</p>\" in \"_site/2013/09/11/default-layout.html\"",
+                        "I should see \"THIS IS THE LAYOUT: just some page\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have the following post:",
+                        "I have an \"index.html\" page that contains \"just {{page.custom}} by {{page.author}}\"",
+                        "I have a configuration file with \"defaults\" set to \"[{scope: {path: \"\"}, values: {custom: \"some special data\", author: \"Ben\"}}]\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"<p>some special data</p>\\n<div>Ben</div>\" in \"_site/2013/09/11/default-data.html\"",
+                        "I should see \"just some special data by Ben\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _layouts directory",
+                        "I have a root layout that contains \"root: {{ content }}\"",
+                        "I have a subfolder layout that contains \"subfolder: {{ content }}\"",
+                        "I have a _posts directory",
+                        "I have the following post:",
+                        "I have a special/_posts directory",
+                        "I have the following post in \"special\":",
+                        "I have an \"index.html\" page with title \"overview\" that contains \"Overview for {{page.description}}\"",
+                        "I have an \"special/index.html\" page with title \"section overview\" that contains \"Overview for {{page.description}}\"",
+                        "I have a configuration file with \"defaults\" set to \"[{scope: {path: \"special\"}, values: {layout: \"subfolder\", description: \"the special section\"}}, {scope: {path: \"\"}, values: {layout: \"root\", description: \"the webpage\"}}]\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"root: <p>info on the webpage</p>\" in \"_site/2013/10/14/about.html\"",
+                        "I should see \"subfolder: <p>info on the special section</p>\" in \"_site/special/2013/10/14/about.html\"",
+                        "I should see \"root: Overview for the webpage\" in \"_site/index.html\"",
+                        "I should see \"subfolder: Overview for the special section\" in \"_site/special/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _layouts directory",
+                        "I have a main layout that contains \"main: {{ content }}\"",
+                        "I have a _posts directory",
+                        "I have the following post:",
+                        "I have a special/_posts directory",
+                        "I have the following post in \"special\":",
+                        "I have a configuration file with \"defaults\" set to \"[{scope: {path: \"special\"}, values: {layout: \"main\"}}, {scope: {path: \"special/_posts\"}, values: {layout: \"main\"}}, {scope: {path: \"_posts\"}, values: {layout: \"main\"}}]\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"main: <p>content of site/2013/10/14/about.html</p>\" in \"_site/2013/10/14/about.html\"",
+                        "I should see \"main: <p>content of site/special/2013/10/14/about1.html</p>\" in \"_site/special/2013/10/14/about1.html\"",
+                        "I should see \"main: <p>content of site/special/2013/10/14/about2.html</p>\" in \"_site/special/2013/10/14/about2.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _layouts directory",
+                        "I have a main layout that contains \"main: {{ content }}\"",
+                        "I have a _posts/en directory",
+                        "I have the following post under \"en\":",
+                        "I have a _posts/de directory",
+                        "I have the following post under \"de\":",
+                        "I have a configuration file with \"defaults\" set to \"[{scope: {path: \"_posts/en\"}, values: {layout: \"main\", lang: \"en\"}}, {scope: {path: \"_posts/de\"}, values: {layout: \"main\", lang: \"de\"}}]\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the _site directory should exist",
+                        "I should see \"main: <p>en is the current language</p>\" in \"_site/2014/09/01/helloworld.html\"",
+                        "I should see \"main: <p>de is the current language</p>\" in \"_site/2014/09/01/hallowelt.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have the following post:",
+                        "I have an \"index.html\" page that contains \"interesting stuff\"",
+                        "I have a configuration file with \"defaults\" set to \"[{scope: {path: \"\", type: \"post\"}, values: {permalink: \"/post.html\"}}, {scope: {path: \"\", type: \"page\"}, values: {permalink: \"/page.html\"}}, {scope: {path: \"\"}, values: {permalink: \"/perma.html\"}}]\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"blabla\" in \"_site/post.html\"",
+                        "I should see \"interesting stuff\" in \"_site/page.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have the following post:",
+                        "I have an \"index.html\" page with permalink \"override.html\" that contains \"nothing\"",
+                        "I have a configuration file with \"defaults\" set to \"[{scope: {path: \"\"}, values: {permalink: \"/perma.html\", author: \"Chris\"}}]\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"a blog by some guy\" in \"_site/frontmatter.html\"",
+                        "I should see \"nothing\" in \"_site/override.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _posts directory",
+                        "I have the following post:",
+                        "I have a configuration file with \"defaults\" set to \"[{scope: {path: \"\", type: \"posts\"}, values: {permalink: \"/:categories/:title/\"}}]\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"blabla\" in \"_site/blog/testpost/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _slides directory",
+                        "I have a \"index.html\" file that contains \"nothing\"",
+                        "I have a \"_slides/slide1.html\" file with content:",
+                        "I have a \"_config.yml\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Value: Test\" in \"_site/slides/slide1.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _slides directory",
+                        "I have a \"index.html\" file that contains \"nothing\"",
+                        "I have a \"_slides/slide2.html\" file with content:",
+                        "I have a \"_config.yml\" file with content:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Value: Override\" in \"_site/slides/slide2.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.html\" page with fruit \"{orange: 1}\" that contains \"Fruits: {{ page.fruit.orange | plus: page.fruit.apple }}\"",
+                        "I have a configuration file with \"defaults\" set to \"[{scope: {path: \"\"}, values: {fruit: {apple: 2}}}]\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Fruits: 3\" in \"_site/index.html\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

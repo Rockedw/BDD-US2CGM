@@ -1,0 +1,59 @@
+{
+    "feature_name": "Home Page",
+    "user_story": {
+        "as_a": "website visitor",
+        "i_want": "see the homepage",
+        "so_that": "I can understand what the website offers and how it can benefit me",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I set config value for \"contacts/contacts/enabled\" to \"1\" in \"default\" scope",
+                        "the cache is clean"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on \"/\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see text \"Contact Us\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I set config value for \"contacts/contacts/enabled\" to \"0\" in \"default\" scope",
+                        "the cache is clean"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on \"/\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see text \"Contact Us\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on \"/\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see text \"Default welcome msg! \""
+                    ]
+                ]
+            }
+        ]
+    }
+}

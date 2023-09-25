@@ -1,0 +1,13 @@
+// 1998038802848 Context Model
+digraph {
+	1998001571344 [label=Context7]
+	1998001585840 [label="there is a co-op"]
+	1998001571344 -> 1998001585840
+	1998001585840 [label="there is a co-op"]
+	1998001569904 [label="members of the co-op can hold more than one share"]
+	1998001571344 -> 1998001569904
+	1998001569904 [label="members of the co-op can hold more than one share"]
+	1998001582336 [label="I am a Member of the co-op"]
+	1998001571344 -> 1998001582336
+	1998001582336 [label="I am a Member of the co-op"]
+}

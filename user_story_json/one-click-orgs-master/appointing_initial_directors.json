@@ -1,0 +1,49 @@
+{
+    "feature_name": "Appointing initial directors",
+    "user_story": {
+        "as_a": "As the founder of a new co-op",
+        "i_want": "appoint the initial directors and officers",
+        "so_that": "make our new co-op have the necessary directors and officers",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Directors page",
+                        "I press \"Appoint new Director\"",
+                        "I choose a member from the list",
+                        "I press \"Record this appointment\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see that member in the list of directors",
+                        "that member should receive a notification of their new directorship"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a Director"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Directors page",
+                        "I press \"Appoint new Officer\"",
+                        "I choose a director from the list of directors",
+                        "I choose 'Secretary' from the list of offices",
+                        "I press \"Record this appointment\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see that director listed as \"Secretary\" in the list of Officers",
+                        "that member should receive a notification of their new office"
+                    ]
+                ]
+            }
+        ]
+    }
+}

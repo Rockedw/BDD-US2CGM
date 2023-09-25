@@ -1,0 +1,215 @@
+// Goal Model
+digraph {
+	1847133038880 [label="As the site administrator
+goal"]
+	1847133284544 [label="configure settings
+goal
+140728069287616"]
+	1847133038880 -> 1847133284544
+	1847133284544 [label="configure settings
+goal"]
+	1847133280800 [label="Admin views settings
+goal
+1847133275328"]
+	1847133284544 -> 1847133280800
+	1847133280800 [label="Admin views settings
+goal"]
+	1847133484992 [label="Admin edit setting
+goal
+140728069287616"]
+	1847133284544 -> 1847133484992
+	1847133484992 [label="Admin edit setting
+goal"]
+	1847133287616 [label="Admin edits settings
+goal
+1847133283920"]
+	1847133484992 -> 1847133287616
+	1847133287616 [label="Admin edits settings
+goal"]
+	1847133279792 [label="Admin edits settings using factories
+goal
+1847133278304"]
+	1847133484992 -> 1847133279792
+	1847133279792 [label="Admin edits settings using factories
+goal"]
+	1847133280704 [label="Admin enable something
+goal
+140728069287616"]
+	1847133284544 -> 1847133280704
+	1847133280704 [label="Admin enable something
+goal"]
+	1847133278064 [label="Admin enables default class
+goal
+1847132863504"]
+	1847133280704 -> 1847133278064
+	1847133278064 [label="Admin enables default class
+goal"]
+	1847133274752 [label="I follow \"edit settings\"
+task
+140728069287616"]
+	1847133278064 -> 1847133274752
+	1847133274752 [label="I follow \"edit settings\"
+task"]
+	1847132854912 [label="I check \"Enable Default Class\"
+task
+140728069287616"]
+	1847133278064 -> 1847132854912
+	1847132854912 [label="I check \"Enable Default Class\"
+task"]
+	1847132861632 [label="I save the settings
+task
+140728069287616"]
+	1847133278064 -> 1847132861632
+	1847132861632 [label="I save the settings
+task"]
+	1847133277584 [label="Admin enables grade levels for classes
+goal
+1847132858992"]
+	1847133280704 -> 1847133277584
+	1847133277584 [label="Admin enables grade levels for classes
+goal"]
+	1847132851600 [label="I am on the clazz create page
+task
+140728069287616"]
+	1847133277584 -> 1847132851600
+	1847132851600 [label="I am on the clazz create page
+task"]
+	1847132860624 [label="I follow \"edit settings\"
+task
+140728069287616"]
+	1847133277584 -> 1847132860624
+	1847132860624 [label="I follow \"edit settings\"
+task"]
+	1847132848288 [label="I check \"Enable Grade Levels for Classes\"
+task
+140728069287616"]
+	1847133277584 -> 1847132848288
+	1847132848288 [label="I check \"Enable Grade Levels for Classes\"
+task"]
+	1847132853184 [label="I save the settings
+task
+140728069287616"]
+	1847133277584 -> 1847132853184
+	1847132853184 [label="I save the settings
+task"]
+	1847132853568 [label="I am logged in with the username teacher
+task
+140728069287616"]
+	1847133277584 -> 1847132853568
+	1847132853568 [label="I am logged in with the username teacher
+task"]
+	1847132849488 [label="Admin creates a new settings
+goal
+1847132855056"]
+	1847133284544 -> 1847132849488
+	1847132849488 [label="Admin creates a new settings
+goal"]
+	1847132863696 [label="Admin can preview edited home page
+goal
+1847132861344"]
+	1847133284544 -> 1847132863696
+	1847132863696 [label="Admin can preview edited home page
+goal"]
+	1847132852800 [label="I follow \"edit settings\"
+task
+140728069287616"]
+	1847132863696 -> 1847132852800
+	1847132852800 [label="I follow \"edit settings\"
+task"]
+	1847132860384 [label="I fill in \"admin_settings[home_page_content]\" with \"Creating Home Page\"
+task
+140728069287616"]
+	1847132863696 -> 1847132860384
+	1847132860384 [label="I fill in \"admin_settings[home_page_content]\" with \"Creating Home Page\"
+task"]
+	1847132862928 [label="I save the settings
+task
+140728069287616"]
+	1847132863696 -> 1847132862928
+	1847132862928 [label="I save the settings
+task"]
+	1847132862784 [label="I press \"Preview Home Page\"
+task
+140728069287616"]
+	1847132863696 -> 1847132862784
+	1847132862784 [label="I press \"Preview Home Page\"
+task"]
+	1847133281184 [label="view the districts
+goal
+1847132850112"]
+	1847133038880 -> 1847133281184
+	1847133281184 [label="view the districts
+goal"]
+	1847125309184 [label="admin see something
+goal
+140728069287616"]
+	1847133281184 -> 1847125309184
+	1847125309184 [label="admin see something
+goal"]
+	1847132851264 [label="admin see a list of districts
+goal
+140728069287616"]
+	1847125309184 -> 1847132851264
+	1847132851264 [label="admin see a list of districts
+goal"]
+	1847132848432 [label="admin does not see the classes inside the district because doing that clobbers the server
+goal
+1847125299632"]
+	1847125309184 -> 1847132848432
+	1847132848432 [label="admin does not see the classes inside the district because doing that clobbers the server
+goal"]
+	1847132855152 [label="admin creates a new district
+goal
+140728069287616"]
+	1847133281184 -> 1847132855152
+	1847132855152 [label="admin creates a new district
+goal"]
+	1847132856400 [label="I am on the districts page
+task
+140728069287616"]
+	1847132855152 -> 1847132856400
+	1847132856400 [label="I am on the districts page
+task"]
+	1847125309040 [label="press \"Save\"
+task
+140728069287616"]
+	1847132855152 -> 1847125309040
+	1847125309040 [label="press \"Save\"
+task"]
+	1847132855392 [label="I follow something
+goal
+140728069287616"]
+	1847132855152 -> 1847132855392
+	1847132855392 [label="I follow something
+goal"]
+	1847132855632 [label="I follow \"create District\"
+task
+140728069287616"]
+	1847132855392 -> 1847132855632
+	1847132855632 [label="I follow \"create District\"
+task"]
+	1847125307120 [label="I follow \"Admin\"
+task
+140728069287616"]
+	1847132855392 -> 1847125307120
+	1847125307120 [label="I follow \"Admin\"
+task"]
+	1847125305680 [label="I follow \"Districts\"
+task
+140728069287616"]
+	1847132855392 -> 1847125305680
+	1847125305680 [label="I follow \"Districts\"
+task"]
+	1847132852080 [label="I fill in \"portal_district_name\" with \"Test District\"
+task
+140728069287616"]
+	1847132855152 -> 1847132852080
+	1847132852080 [label="I fill in \"portal_district_name\" with \"Test District\"
+task"]
+	1847132858320 [label="I select \"WY\" from \"portal_district[state]\"
+task
+140728069287616"]
+	1847132855152 -> 1847132858320
+	1847132858320 [label="I select \"WY\" from \"portal_district[state]\"
+task"]
+}

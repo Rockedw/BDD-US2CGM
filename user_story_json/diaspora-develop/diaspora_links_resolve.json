@@ -1,0 +1,23 @@
+{
+    "feature_name": "(web+)diaspora:// links resolve",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "",
+        "so_that": "open diaspora posts on my pod from external websites",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open an external link to the first post of \"alice@alice.alice\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"This is a post accessed by an external link\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

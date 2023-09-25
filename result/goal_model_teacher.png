@@ -1,0 +1,997 @@
+// Goal Model
+digraph {
+	1847133471120 [label="teacher
+goal"]
+	1847135465248 [label="sort the investigations list
+goal
+1847135466832"]
+	1847133471120 -> 1847135465248
+	1847135465248 [label="sort the investigations list
+goal"]
+	1847135467840 [label="teacher hide link
+goal
+140728069287616"]
+	1847135465248 -> 1847135467840
+	1847135467840 [label="teacher hide link
+goal"]
+	1847135467600 [label="Investigation and resource links are hidden from teachers
+goal
+140728069287616"]
+	1847135467840 -> 1847135467600
+	1847135467600 [label="Investigation and resource links are hidden from teachers
+goal"]
+	1847135467792 [label="I am on the home page
+task
+140728069287616"]
+	1847135467600 -> 1847135467792
+	1847135467792 [label="I am on the home page
+task"]
+	1847135467744 [label="I am logged in with the username teacher
+task
+140728069287616"]
+	1847135467600 -> 1847135467744
+	1847135467744 [label="I am logged in with the username teacher
+task"]
+	1847135467648 [label="Investigation and resource links are hidden from students
+goal
+140728069287616"]
+	1847135467840 -> 1847135467648
+	1847135467648 [label="Investigation and resource links are hidden from students
+goal"]
+	1847135467936 [label="I am on the home page
+task
+140728069287616"]
+	1847135467648 -> 1847135467936
+	1847135467936 [label="I am on the home page
+task"]
+	1847135467888 [label="I am logged in with the username student
+task
+140728069287616"]
+	1847135467648 -> 1847135467888
+	1847135467888 [label="I am logged in with the username student
+task"]
+	1847135467696 [label="Investigation links are shown to authors
+goal
+140728069287616"]
+	1847135465248 -> 1847135467696
+	1847135467696 [label="Investigation links are shown to authors
+goal"]
+	1847135468080 [label="I am on the home page
+task
+140728069287616"]
+	1847135467696 -> 1847135468080
+	1847135468080 [label="I am on the home page
+task"]
+	1847135468032 [label="I am logged in with the username author
+task
+140728069287616"]
+	1847135467696 -> 1847135468032
+	1847135468032 [label="I am logged in with the username author
+task"]
+	1847135454160 [label="reset their password
+goal
+1847135456656"]
+	1847133471120 -> 1847135454160
+	1847135454160 [label="reset their password
+goal"]
+	1847135455744 [label="I click the span \"Change Password\"
+task
+140728069287616"]
+	1847135454160 -> 1847135455744
+	1847135455744 [label="I click the span \"Change Password\"
+task"]
+	1847135462944 [label="I fill in \"New Password\" with \"new_password\"
+task
+140728069287616"]
+	1847135454160 -> 1847135462944
+	1847135462944 [label="I fill in \"New Password\" with \"new_password\"
+task"]
+	1847135462176 [label="I fill in \"Confirm New Password\" with \"new_password\"
+task
+140728069287616"]
+	1847135454160 -> 1847135462176
+	1847135462176 [label="I fill in \"Confirm New Password\" with \"new_password\"
+task"]
+	1847135460352 [label="I press \"Save\"
+task
+140728069287616"]
+	1847135454160 -> 1847135460352
+	1847135460352 [label="I press \"Save\"
+task"]
+	1847135460208 [label="I log out
+task
+140728069287616"]
+	1847135454160 -> 1847135460208
+	1847135460208 [label="I log out
+task"]
+	1847135459344 [label="I login with username: student password: new_password
+task
+140728069287616"]
+	1847135454160 -> 1847135459344
+	1847135459344 [label="I login with username: student password: new_password
+task"]
+	1847135461600 [label="add a new student
+goal
+1847135461120"]
+	1847133471120 -> 1847135461600
+	1847135461600 [label="add a new student
+goal"]
+	1847135462512 [label="the student \"student\" belongs to class \"Physics\"
+task
+140728069287616"]
+	1847135461600 -> 1847135462512
+	1847135462512 [label="the student \"student\" belongs to class \"Physics\"
+task"]
+	1847135462752 [label="I login with username: teacher
+task
+140728069287616"]
+	1847135461600 -> 1847135462752
+	1847135462752 [label="I login with username: teacher
+task"]
+	1847135453536 [label="I am on \"Student Roster\" page for \"Mathematics\"
+task
+140728069287616"]
+	1847135461600 -> 1847135453536
+	1847135453536 [label="I am on \"Student Roster\" page for \"Mathematics\"
+task"]
+	1847135456224 [label="I select \"Robert, Alfred ( student )\" from the select named \"student_id_selector\"
+task
+140728069287616"]
+	1847135461600 -> 1847135456224
+	1847135456224 [label="I select \"Robert, Alfred ( student )\" from the select named \"student_id_selector\"
+task"]
+	1847135461264 [label="I should see \"Robert, Alfred\"
+task
+140728069287616"]
+	1847135461600 -> 1847135461264
+	1847135461264 [label="I should see \"Robert, Alfred\"
+task"]
+	1847135455312 [label="I press \"Add\"
+task
+140728069287616"]
+	1847135461600 -> 1847135455312
+	1847135455312 [label="I press \"Add\"
+task"]
+	1847135457376 [label="create a portal class
+goal
+1847135455408"]
+	1847133471120 -> 1847135457376
+	1847135457376 [label="create a portal class
+goal"]
+	1847135462560 [label="I fill in \"portal_clazz[name]\" with \"My New Class\"
+task
+140728069287616"]
+	1847135457376 -> 1847135462560
+	1847135462560 [label="I fill in \"portal_clazz[name]\" with \"My New Class\"
+task"]
+	1847135455792 [label="I fill in \"portal_clazz[class_word]\" with \"WINSTON\"
+task
+140728069287616"]
+	1847135457376 -> 1847135455792
+	1847135455792 [label="I fill in \"portal_clazz[class_word]\" with \"WINSTON\"
+task"]
+	1847135461360 [label="I check \"portal_clazz[grade_levels][9]\"
+task
+140728069287616"]
+	1847135457376 -> 1847135461360
+	1847135461360 [label="I check \"portal_clazz[grade_levels][9]\"
+task"]
+	1847135454976 [label="I press \"Save\"
+task
+140728069287616"]
+	1847135457376 -> 1847135454976
+	1847135454976 [label="I press \"Save\"
+task"]
+	1847135459248 [label="visit various pages using left pane
+goal
+1847135462704"]
+	1847133471120 -> 1847135459248
+	1847135459248 [label="visit various pages using left pane
+goal"]
+	1847135456608 [label="Teachers can see their class name
+goal
+140728069287616"]
+	1847135459248 -> 1847135456608
+	1847135456608 [label="Teachers can see their class name
+goal"]
+	1847135469520 [label="teacher visit page
+goal
+140728069287616"]
+	1847135459248 -> 1847135469520
+	1847135469520 [label="teacher visit page
+goal"]
+	1847135462416 [label="Teacher visits Student Roster page
+goal
+140728069287616"]
+	1847135469520 -> 1847135462416
+	1847135462416 [label="Teacher visits Student Roster page
+goal"]
+	1847135462320 [label="I follow \"Classes\"
+task
+140728069287616"]
+	1847135462416 -> 1847135462320
+	1847135462320 [label="I follow \"Classes\"
+task"]
+	1847135460976 [label="I follow \"My Class\"
+task
+140728069287616"]
+	1847135462416 -> 1847135460976
+	1847135460976 [label="I follow \"My Class\"
+task"]
+	1847135459296 [label="Teacher visits Class Setup page
+goal
+140728069287616"]
+	1847135469520 -> 1847135459296
+	1847135459296 [label="Teacher visits Class Setup page
+goal"]
+	1847135462608 [label="I follow \"My Class\"
+task
+140728069287616"]
+	1847135459296 -> 1847135462608
+	1847135462608 [label="I follow \"My Class\"
+task"]
+	1847135455888 [label="I follow \"Class Setup\"
+task
+140728069287616"]
+	1847135459296 -> 1847135455888
+	1847135455888 [label="I follow \"Class Setup\"
+task"]
+	1847135460304 [label="remove a student
+goal
+1847135458384"]
+	1847133471120 -> 1847135460304
+	1847135460304 [label="remove a student
+goal"]
+	1847135459200 [label="the student \"student\" belongs to class \"Class_with_no_students\"
+task
+140728069287616"]
+	1847135460304 -> 1847135459200
+	1847135459200 [label="the student \"student\" belongs to class \"Class_with_no_students\"
+task"]
+	1847135457136 [label="I login with username: teacher password: password
+task
+140728069287616"]
+	1847135460304 -> 1847135457136
+	1847135457136 [label="I login with username: teacher password: password
+task"]
+	1847135462080 [label="I am on \"Student Roster\" page for \"Class_with_no_students\"
+task
+140728069287616"]
+	1847135460304 -> 1847135462080
+	1847135462080 [label="I am on \"Student Roster\" page for \"Class_with_no_students\"
+task"]
+	1847135454448 [label="I accept the upcoming javascript confirm box
+task
+140728069287616"]
+	1847135460304 -> 1847135454448
+	1847135454448 [label="I accept the upcoming javascript confirm box
+task"]
+	1847135458480 [label="I click the span \"Remove Student\"
+task
+140728069287616"]
+	1847135460304 -> 1847135458480
+	1847135458480 [label="I click the span \"Remove Student\"
+task"]
+	1847135457952 [label="edit my classes
+goal
+1847135460016"]
+	1847133471120 -> 1847135457952
+	1847135457952 [label="edit my classes
+goal"]
+	1847138470688 [label="teacher see teacher
+goal
+140728069287616"]
+	1847135457952 -> 1847138470688
+	1847138470688 [label="teacher see teacher
+goal"]
+	1847135463472 [label="Teacher can see all the teachers which are in the class
+goal
+140728069287616"]
+	1847138470688 -> 1847135463472
+	1847135463472 [label="Teacher can see all the teachers which are in the class
+goal"]
+	1847135463520 [label="Teacher can see all the teachers which are not in the class
+goal
+140728069287616"]
+	1847138470688 -> 1847135463520
+	1847135463520 [label="Teacher can see all the teachers which are not in the class
+goal"]
+	1847135463568 [label="Teacher can add teacher from the class edit page
+goal
+140728069287616"]
+	1847135457952 -> 1847135463568
+	1847135463568 [label="Teacher can add teacher from the class edit page
+goal"]
+	1847135463712 [label="I select \"Fernandez, A. (albert)\" from \"teacher_id_selector\"
+task
+140728069287616"]
+	1847135463568 -> 1847135463712
+	1847135463712 [label="I select \"Fernandez, A. (albert)\" from \"teacher_id_selector\"
+task"]
+	1847135463760 [label="I press \"Add\"
+task
+140728069287616"]
+	1847135463568 -> 1847135463760
+	1847135463760 [label="I press \"Add\"
+task"]
+	1847133284784 [label="teacher remove something
+goal
+140728069287616"]
+	1847135457952 -> 1847133284784
+	1847133284784 [label="teacher remove something
+goal"]
+	1847135463616 [label="Teacher can remove teacher from the class edit page
+goal
+140728069287616"]
+	1847133284784 -> 1847135463616
+	1847135463616 [label="Teacher can remove teacher from the class edit page
+goal"]
+	1847135463856 [label="I follow remove image for the teacher name \"Taylor, P. (peterson)\"
+task
+140728069287616"]
+	1847135463616 -> 1847135463856
+	1847135463856 [label="I follow remove image for the teacher name \"Taylor, P. (peterson)\"
+task"]
+	1847135463904 [label="accept the dialog
+task
+140728069287616"]
+	1847135463616 -> 1847135463904
+	1847135463904 [label="accept the dialog
+task"]
+	1847135463664 [label="Teacher can remove themselves as teacher from the class edit page
+goal
+140728069287616"]
+	1847133284784 -> 1847135463664
+	1847135463664 [label="Teacher can remove themselves as teacher from the class edit page
+goal"]
+	1847135464000 [label="I follow remove image for the teacher name \"Nash, J. (teacher)\"
+task
+140728069287616"]
+	1847135463664 -> 1847135464000
+	1847135464000 [label="I follow remove image for the teacher name \"Nash, J. (teacher)\"
+task"]
+	1847135464048 [label="accept the dialog
+task
+140728069287616"]
+	1847135463664 -> 1847135464048
+	1847135464048 [label="accept the dialog
+task"]
+	1847138471456 [label="Teacher saves class setup information
+goal
+140728069287616"]
+	1847135457952 -> 1847138471456
+	1847138471456 [label="Teacher saves class setup information
+goal"]
+	1847138482784 [label="I fill in Class Name with \"Basic Electronics\"
+task
+140728069287616"]
+	1847138471456 -> 1847138482784
+	1847138482784 [label="I fill in Class Name with \"Basic Electronics\"
+task"]
+	1847138470928 [label="I press \"Save\"
+task
+140728069287616"]
+	1847138471456 -> 1847138470928
+	1847138470928 [label="I press \"Save\"
+task"]
+	1847138478608 [label="search instructional materials grouped by material type, sort and preview materials
+goal
+1847138475056"]
+	1847133471120 -> 1847138478608
+	1847138478608 [label="search instructional materials grouped by material type, sort and preview materials
+goal"]
+	1847135047680 [label="teacher assign material
+goal
+140728069287616"]
+	1847138478608 -> 1847135047680
+	1847135047680 [label="teacher assign material
+goal"]
+	1847133277440 [label="Teacher should be on materials preview page to assign materials
+goal
+140728069287616"]
+	1847135047680 -> 1847133277440
+	1847133277440 [label="Teacher should be on materials preview page to assign materials
+goal"]
+	1847133276288 [label="I search for \"differential calculus\" on the search instructional materials page
+task
+140728069287616"]
+	1847133277440 -> 1847133276288
+	1847133276288 [label="I search for \"differential calculus\" on the search instructional materials page
+task"]
+	1847135468800 [label="I follow something
+goal
+140728069287616"]
+	1847133277440 -> 1847135468800
+	1847135468800 [label="I follow something
+goal"]
+	1847133281568 [label="I follow the \"Assign or Share\" link for the activity \"differential calculus\"
+task
+140728069287616"]
+	1847135468800 -> 1847133281568
+	1847133281568 [label="I follow the \"Assign or Share\" link for the activity \"differential calculus\"
+task"]
+	1847133278496 [label="I follow activity link \"differential calculus\" on the search instructional materials page
+task
+140728069287616"]
+	1847135468800 -> 1847133278496
+	1847133278496 [label="I follow activity link \"differential calculus\" on the search instructional materials page
+task"]
+	1847133286032 [label="I press \"Cancel\" within the modal
+task
+140728069287616"]
+	1847133277440 -> 1847133286032
+	1847133286032 [label="I press \"Cancel\" within the modal
+task"]
+	1847133280128 [label="I wait 2 seconds
+task
+140728069287616"]
+	1847133277440 -> 1847133280128
+	1847133280128 [label="I wait 2 seconds
+task"]
+	1847133280848 [label="Teacher can see classes in which materials are assigned on the search page
+goal
+140728069287616"]
+	1847135047680 -> 1847133280848
+	1847133280848 [label="Teacher can see classes in which materials are assigned on the search page
+goal"]
+	1847138468816 [label="the
+class
+\"
+Physics assign activity
+goal
+140728069287616"]
+	1847133280848 -> 1847138468816
+	1847138468816 [label="the
+class
+\"
+Physics assign activity
+goal"]
+	1847125311440 [label="the external activity \"differential calculus\" is assigned to the class \"Physics\"
+task
+140728069287616"]
+	1847138468816 -> 1847125311440
+	1847125311440 [label="the external activity \"differential calculus\" is assigned to the class \"Physics\"
+task"]
+	1847125301408 [label="the external activity \"Fluid Mechanics\" is assigned to the class \"Physics\"
+task
+140728069287616"]
+	1847138468816 -> 1847125301408
+	1847125301408 [label="the external activity \"Fluid Mechanics\" is assigned to the class \"Physics\"
+task"]
+	1847138479760 [label="I search something
+goal
+140728069287616"]
+	1847133280848 -> 1847138479760
+	1847138479760 [label="I search something
+goal"]
+	1847125296752 [label="I search for \"differential calculus\" on the search instructional materials page
+task
+140728069287616"]
+	1847138479760 -> 1847125296752
+	1847125296752 [label="I search for \"differential calculus\" on the search instructional materials page
+task"]
+	1847125298192 [label="I search for \"Fluid Mechanics\" on the search instructional materials page
+task
+140728069287616"]
+	1847138479760 -> 1847125298192
+	1847125298192 [label="I search for \"Fluid Mechanics\" on the search instructional materials page
+task"]
+	1847133274176 [label="Anonymous user can preview activity
+goal
+140728069287616"]
+	1847138478608 -> 1847133274176
+	1847133274176 [label="Anonymous user can preview activity
+goal"]
+	1847135045040 [label="I am on the search instructional materials page
+task
+140728069287616"]
+	1847133274176 -> 1847135045040
+	1847135045040 [label="I am on the search instructional materials page
+task"]
+	1847125311152 [label="I log out
+task
+140728069287616"]
+	1847133274176 -> 1847125311152
+	1847125311152 [label="I log out
+task"]
+	1847135044224 [label="I search for \"differential calculus\" on the search instructional materials page
+task
+140728069287616"]
+	1847133274176 -> 1847135044224
+	1847135044224 [label="I search for \"differential calculus\" on the search instructional materials page
+task"]
+	1847138473568 [label="teacher see something
+goal
+140728069287616"]
+	1847138478608 -> 1847138473568
+	1847138473568 [label="teacher see something
+goal"]
+	1847125301744 [label="Teacher can see search suggestions
+goal
+140728069287616"]
+	1847138473568 -> 1847125301744
+	1847125301744 [label="Teacher can see search suggestions
+goal"]
+	1847135056704 [label="Teacher should be able to see grouped search results on the basis of material type
+goal
+140728069287616"]
+	1847138473568 -> 1847135056704
+	1847135056704 [label="Teacher should be able to see grouped search results on the basis of material type
+goal"]
+	1847135468224 [label="I enter something
+goal
+140728069287616"]
+	1847135056704 -> 1847135468224
+	1847135468224 [label="I enter something
+goal"]
+	1847135454880 [label="I enter search text \"Geometry\" on the search instructional materials page
+task
+140728069287616"]
+	1847135468224 -> 1847135454880
+	1847135454880 [label="I enter search text \"Geometry\" on the search instructional materials page
+task"]
+	1847135463952 [label="I enter search text \"Radioactivity\" on the search instructional materials page
+task
+140728069287616"]
+	1847135468224 -> 1847135463952
+	1847135463952 [label="I enter search text \"Radioactivity\" on the search instructional materials page
+task"]
+	1847132851216 [label="I press something
+goal
+140728069287616"]
+	1847135056704 -> 1847132851216
+	1847132851216 [label="I press something
+goal"]
+	1847135463808 [label="I press \"Go\"
+task
+140728069287616"]
+	1847132851216 -> 1847135463808
+	1847135463808 [label="I press \"Go\"
+task"]
+	1847135464096 [label="I press \"Go\"
+task
+140728069287616"]
+	1847132851216 -> 1847135464096
+	1847135464096 [label="I press \"Go\"
+task"]
+	1847135464144 [label="I wait 2 seconds
+task
+140728069287616"]
+	1847135056704 -> 1847135464144
+	1847135464144 [label="I wait 2 seconds
+task"]
+	1847138473040 [label="teacher sort result
+goal
+140728069287616"]
+	1847138478608 -> 1847138473040
+	1847138473040 [label="teacher sort result
+goal"]
+	1847125306016 [label="Teacher can sort search results alphabetically
+goal
+140728069287616"]
+	1847138473040 -> 1847125306016
+	1847125306016 [label="Teacher can sort search results alphabetically
+goal"]
+	1847133279840 [label="I search something
+goal
+140728069287616"]
+	1847125306016 -> 1847133279840
+	1847133279840 [label="I search something
+goal"]
+	1847135044608 [label="I search for \"lines\" on the search instructional materials page
+task
+140728069287616"]
+	1847133279840 -> 1847135044608
+	1847135044608 [label="I search for \"lines\" on the search instructional materials page
+task"]
+	1847135051664 [label="I search for \"calculus\" on the search instructional materials page
+task
+140728069287616"]
+	1847133279840 -> 1847135051664
+	1847135051664 [label="I search for \"calculus\" on the search instructional materials page
+task"]
+	1847132857312 [label="I follow Alphabetical
+goal
+140728069287616"]
+	1847125306016 -> 1847132857312
+	1847132857312 [label="I follow Alphabetical
+goal"]
+	1847135046336 [label="I follow \"Alphabetical\" in Sort By on the search instructional materials page
+task
+140728069287616"]
+	1847132857312 -> 1847135046336
+	1847135046336 [label="I follow \"Alphabetical\" in Sort By on the search instructional materials page
+task"]
+	1847135051520 [label="I follow \"Alphabetical\" in Sort By on the search instructional materials page
+task
+140728069287616"]
+	1847132857312 -> 1847135051520
+	1847135051520 [label="I follow \"Alphabetical\" in Sort By on the search instructional materials page
+task"]
+	1847135059776 [label="Teacher can sort search results for investigations on the basis of creation date
+goal
+140728069287616"]
+	1847138473040 -> 1847135059776
+	1847135059776 [label="Teacher can sort search results for investigations on the basis of creation date
+goal"]
+	1847135045520 [label="I create investigations \"differential calculus\" before \"integral calculus\" by date
+task
+140728069287616"]
+	1847135059776 -> 1847135045520
+	1847135045520 [label="I create investigations \"differential calculus\" before \"integral calculus\" by date
+task"]
+	1847135049216 [label="I search for \"calculus\" on the search instructional materials page
+task
+140728069287616"]
+	1847135059776 -> 1847135049216
+	1847135049216 [label="I search for \"calculus\" on the search instructional materials page
+task"]
+	1847135469136 [label="I follow something
+goal
+140728069287616"]
+	1847135059776 -> 1847135469136
+	1847135469136 [label="I follow something
+goal"]
+	1847135050224 [label="I follow \"Oldest\" in Sort By on the search instructional materials page
+task
+140728069287616"]
+	1847135469136 -> 1847135050224
+	1847135050224 [label="I follow \"Oldest\" in Sort By on the search instructional materials page
+task"]
+	1847132851072 [label="I follow \"Newest\" in Sort By on the search instructional materials page
+task
+140728069287616"]
+	1847135469136 -> 1847132851072
+	1847132851072 [label="I follow \"Newest\" in Sort By on the search instructional materials page
+task"]
+	1847135056608 [label="I wait something
+goal
+140728069287616"]
+	1847135059776 -> 1847135056608
+	1847135056608 [label="I wait something
+goal"]
+	1847132849200 [label="I wait 2 seconds
+task
+140728069287616"]
+	1847135056608 -> 1847132849200
+	1847132849200 [label="I wait 2 seconds
+task"]
+	1847132851120 [label="I wait 2 seconds
+task
+140728069287616"]
+	1847135056608 -> 1847132851120
+	1847132851120 [label="I wait 2 seconds
+task"]
+	1847135046528 [label="Teacher can sort search results for activities on the basis of creation date
+goal
+140728069287616"]
+	1847138473040 -> 1847135046528
+	1847135046528 [label="Teacher can sort search results for activities on the basis of creation date
+goal"]
+	1847132861200 [label="I create activities \"parallel lines\" before \"graphs and lines\" by date
+task
+140728069287616"]
+	1847135046528 -> 1847132861200
+	1847132861200 [label="I create activities \"parallel lines\" before \"graphs and lines\" by date
+task"]
+	1847132862976 [label="I search for \"lines\" on the search instructional materials page
+task
+140728069287616"]
+	1847135046528 -> 1847132862976
+	1847132862976 [label="I search for \"lines\" on the search instructional materials page
+task"]
+	1847135056128 [label="I follow something
+goal
+140728069287616"]
+	1847135046528 -> 1847135056128
+	1847135056128 [label="I follow something
+goal"]
+	1847132864176 [label="I follow \"Oldest\" in Sort By on the search instructional materials page
+task
+140728069287616"]
+	1847135056128 -> 1847132864176
+	1847132864176 [label="I follow \"Oldest\" in Sort By on the search instructional materials page
+task"]
+	1847132863600 [label="I follow \"Newest\" in Sort By on the search instructional materials page
+task
+140728069287616"]
+	1847135056128 -> 1847132863600
+	1847132863600 [label="I follow \"Newest\" in Sort By on the search instructional materials page
+task"]
+	1847135467984 [label="I wait something
+goal
+140728069287616"]
+	1847135046528 -> 1847135467984
+	1847135467984 [label="I wait something
+goal"]
+	1847132851936 [label="I wait 2 seconds
+task
+140728069287616"]
+	1847135467984 -> 1847132851936
+	1847132851936 [label="I wait 2 seconds
+task"]
+	1847132848960 [label="I wait 2 seconds
+task
+140728069287616"]
+	1847135467984 -> 1847132848960
+	1847132848960 [label="I wait 2 seconds
+task"]
+	1847132854672 [label="Search results should be paginated
+goal
+140728069287616"]
+	1847138478608 -> 1847132854672
+	1847132854672 [label="Search results should be paginated
+goal"]
+	1847135468608 [label="I see something
+goal
+140728069287616"]
+	1847133471120 -> 1847135468608
+	1847135468608 [label="I see something
+goal"]
+	1847138472080 [label="I should see project specific links
+goal
+1847132863984"]
+	1847135468608 -> 1847138472080
+	1847138472080 [label="I should see project specific links
+goal"]
+	1847135464720 [label="Teacher not in project visits homepage
+goal
+140728069287616"]
+	1847138472080 -> 1847135464720
+	1847135464720 [label="Teacher not in project visits homepage
+goal"]
+	1847135464768 [label="Teacher in project visits homepage
+goal
+1847135464912"]
+	1847138472080 -> 1847135464768
+	1847135464768 [label="Teacher in project visits homepage
+goal"]
+	1847135464960 [label="I am on getting started page
+task
+140728069287616"]
+	1847135464768 -> 1847135464960
+	1847135464960 [label="I am on getting started page
+task"]
+	1847135465008 [label="I expand the \"Resources\" section
+task
+140728069287616"]
+	1847135464768 -> 1847135465008
+	1847135465008 [label="I expand the \"Resources\" section
+task"]
+	1847135464288 [label="I should see the full status of students
+goal
+1847135464864"]
+	1847135468608 -> 1847135464288
+	1847135464288 [label="I should see the full status of students
+goal"]
+	1847125300832 [label="teacher see something
+goal
+140728069287616"]
+	1847135464288 -> 1847125300832
+	1847125300832 [label="teacher see something
+goal"]
+	1847135465680 [label="Teacher can see all the offerings of the class
+goal
+140728069287616"]
+	1847125300832 -> 1847135465680
+	1847135465680 [label="Teacher can see all the offerings of the class
+goal"]
+	1847135465728 [label="Teacher can see all the students assigned to the class
+goal
+140728069287616"]
+	1847125300832 -> 1847135465728
+	1847135465728 [label="Teacher can see all the students assigned to the class
+goal"]
+	1847135466016 [label="Anonymous user cannot see the full status page
+goal
+140728069287616"]
+	1847125300832 -> 1847135466016
+	1847135466016 [label="Anonymous user cannot see the full status page
+goal"]
+	1847135466880 [label="I am an anonymous user
+task
+140728069287616"]
+	1847135466016 -> 1847135466880
+	1847135466880 [label="I am an anonymous user
+task"]
+	1847135466928 [label="I try to go to the full status page for \"My Class\"
+task
+140728069287616"]
+	1847135466016 -> 1847135466928
+	1847135466928 [label="I try to go to the full status page for \"My Class\"
+task"]
+	1847135466400 [label="Teacher can see a message if no materials are in the class
+goal
+140728069287616"]
+	1847125300832 -> 1847135466400
+	1847135466400 [label="Teacher can see a message if no materials are in the class
+goal"]
+	1847135467120 [label="I am on the full status page for \"Class_with_no_assignment\"
+task
+140728069287616"]
+	1847135466400 -> 1847135467120
+	1847135467120 [label="I am on the full status page for \"Class_with_no_assignment\"
+task"]
+	1847135467024 [label="the following teacher and class mapping exists:
+task
+140728069287616"]
+	1847135466400 -> 1847135467024
+	1847135467024 [label="the following teacher and class mapping exists:
+task"]
+	1847135467072 [label="I am logged in with the username peterson
+task
+140728069287616"]
+	1847135466400 -> 1847135467072
+	1847135467072 [label="I am logged in with the username peterson
+task"]
+	1847135465776 [label="Teacher can see all the activities when an offering is expanded except teacher only activity
+goal
+140728069287616"]
+	1847135464288 -> 1847135465776
+	1847135465776 [label="Teacher can see all the activities when an offering is expanded except teacher only activity
+goal"]
+	1847135465920 [label="I expand the column \"Atomic Energy\" on the Full Status page
+task
+140728069287616"]
+	1847135465776 -> 1847135465920
+	1847135465920 [label="I expand the column \"Atomic Energy\" on the Full Status page
+task"]
+	1847135465968 [label="I should wait 5 seconds
+task
+140728069287616"]
+	1847135465776 -> 1847135465968
+	1847135465968 [label="I should wait 5 seconds
+task"]
+	1847133275424 [label="different
+part
+of
+the
+application offer
+collapse
+maintain state
+goal
+140728069287616"]
+	1847135464288 -> 1847133275424
+	1847133275424 [label="different
+part
+of
+the
+application offer
+collapse
+maintain state
+goal"]
+	1847135465824 [label="Offering collapsed state is maintained across different parts of the application
+goal
+140728069287616"]
+	1847133275424 -> 1847135465824
+	1847135465824 [label="Offering collapsed state is maintained across different parts of the application
+goal"]
+	1847135466352 [label="I am on the full status page for \"My Class\"
+task
+140728069287616"]
+	1847135465824 -> 1847135466352
+	1847135466352 [label="I am on the full status page for \"My Class\"
+task"]
+	1847135043792 [label="I expand column
+goal
+140728069287616"]
+	1847135465824 -> 1847135043792
+	1847135043792 [label="I expand column
+goal"]
+	1847135466064 [label="I expand the column \"Atomic Energy\" on the Full Status page
+task
+140728069287616"]
+	1847135043792 -> 1847135466064
+	1847135466064 [label="I expand the column \"Atomic Energy\" on the Full Status page
+task"]
+	1847135466160 [label="the column for \"Atomic Energy\" on the Full Status page should be expanded
+task
+140728069287616"]
+	1847135043792 -> 1847135466160
+	1847135466160 [label="the column for \"Atomic Energy\" on the Full Status page should be expanded
+task"]
+	1847135466112 [label="I should wait 5 seconds
+task
+140728069287616"]
+	1847135465824 -> 1847135466112
+	1847135466112 [label="I should wait 5 seconds
+task"]
+	1847135045856 [label="I see something
+goal
+140728069287616"]
+	1847135465824 -> 1847135045856
+	1847135045856 [label="I see something
+goal"]
+	1847135466208 [label="I should see \"Radio activity\"
+task
+140728069287616"]
+	1847135045856 -> 1847135466208
+	1847135466208 [label="I should see \"Radio activity\"
+task"]
+	1847135466256 [label="I should see \"Nuclear Energy\"
+task
+140728069287616"]
+	1847135045856 -> 1847135466256
+	1847135466256 [label="I should see \"Nuclear Energy\"
+task"]
+	1847135466304 [label="I go to the class edit page for \"My Class\"
+task
+140728069287616"]
+	1847135465824 -> 1847135466304
+	1847135466304 [label="I go to the class edit page for \"My Class\"
+task"]
+	1847135465872 [label="Offering collapsed state is maintained across sessions
+goal
+140728069287616"]
+	1847133275424 -> 1847135465872
+	1847135465872 [label="Offering collapsed state is maintained across sessions
+goal"]
+	1847135466784 [label="I am on the full status page for \"My Class\"
+task
+140728069287616"]
+	1847135465872 -> 1847135466784
+	1847135466784 [label="I am on the full status page for \"My Class\"
+task"]
+	1847133290160 [label="I expand column
+goal
+140728069287616"]
+	1847135465872 -> 1847133290160
+	1847133290160 [label="I expand column
+goal"]
+	1847135466448 [label="I expand the column \"Atomic Energy\" on the Full Status page
+task
+140728069287616"]
+	1847133290160 -> 1847135466448
+	1847135466448 [label="I expand the column \"Atomic Energy\" on the Full Status page
+task"]
+	1847135466544 [label="the column for \"Atomic Energy\" on the Full Status page should be expanded
+task
+140728069287616"]
+	1847133290160 -> 1847135466544
+	1847135466544 [label="the column for \"Atomic Energy\" on the Full Status page should be expanded
+task"]
+	1847135466496 [label="I should wait 5 seconds
+task
+140728069287616"]
+	1847135465872 -> 1847135466496
+	1847135466496 [label="I should wait 5 seconds
+task"]
+	1847132854624 [label="I see something
+goal
+140728069287616"]
+	1847135465872 -> 1847132854624
+	1847132854624 [label="I see something
+goal"]
+	1847135466592 [label="I should see \"Radio activity\"
+task
+140728069287616"]
+	1847132854624 -> 1847135466592
+	1847135466592 [label="I should see \"Radio activity\"
+task"]
+	1847135466640 [label="I should see \"Nuclear Energy\"
+task
+140728069287616"]
+	1847132854624 -> 1847135466640
+	1847135466640 [label="I should see \"Nuclear Energy\"
+task"]
+	1847135468752 [label="I log
+out something
+goal
+140728069287616"]
+	1847135465872 -> 1847135468752
+	1847135468752 [label="I log
+out something
+goal"]
+	1847135466688 [label="I log out
+task
+140728069287616"]
+	1847135468752 -> 1847135466688
+	1847135466688 [label="I log out
+task"]
+	1847135466736 [label="I login with username: teacher password: password
+task
+140728069287616"]
+	1847135468752 -> 1847135466736
+	1847135466736 [label="I login with username: teacher password: password
+task"]
+}

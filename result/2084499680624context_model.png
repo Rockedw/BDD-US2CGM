@@ -1,0 +1,40 @@
+// 2084499674240 Context Model
+digraph {
+	2084499680624 [label=Context2]
+	2084499683504 [label="I am on the homepage"]
+	2084499680624 -> 2084499683504
+	2084499683504 [label="I am on the homepage"]
+	2084499683264 [label="I follow \"provider.signup\" translation"]
+	2084499680624 -> 2084499683264
+	2084499683264 [label="I follow \"provider.signup\" translation"]
+	2084499677456 [label="I fill in the provider sign up form for \"Pivotpaul Labs\""]
+	2084499680624 -> 2084499677456
+	2084499677456 [label="I fill in the provider sign up form for \"Pivotpaul Labs\""]
+	2084499670448 [label="I fill in the \"First name\" with \"JD\""]
+	2084499680624 -> 2084499670448
+	2084499670448 [label="I fill in the \"First name\" with \"JD\""]
+	2084499673760 [label="I fill in the \"Last name\" with \"Crow\""]
+	2084499680624 -> 2084499673760
+	2084499673760 [label="I fill in the \"Last name\" with \"Crow\""]
+	2084506421472 [label="I fill in the \"Email\" with \"jdcrow@oleopry.com\""]
+	2084499680624 -> 2084506421472
+	2084506421472 [label="I fill in the \"Email\" with \"jdcrow@oleopry.com\""]
+	2084506434672 [label="I fill in the \"Password\" with \"dingusday\""]
+	2084499680624 -> 2084506434672
+	2084506434672 [label="I fill in the \"Password\" with \"dingusday\""]
+	2084506421760 [label="I fill in the \"Retype password\" with \"greasycoat\""]
+	2084499680624 -> 2084506421760
+	2084506421760 [label="I fill in the \"Retype password\" with \"greasycoat\""]
+	2084506430736 [label="I fill in the \"provider[marketing_description]\" with \"The human mind can only stand so much.\""]
+	2084499680624 -> 2084506430736
+	2084506430736 [label="I fill in the \"provider[marketing_description]\" with \"The human mind can only stand so much.\""]
+	2084506419456 [label="I fill in the \"Company email\" with \"theboys@oleopry.com\""]
+	2084499680624 -> 2084506419456
+	2084506419456 [label="I fill in the \"Company email\" with \"theboys@oleopry.com\""]
+	2084506425840 [label="I fill in the \"Company website\" with \"ole opry\""]
+	2084499680624 -> 2084506425840
+	2084506425840 [label="I fill in the \"Company website\" with \"ole opry\""]
+	2084506435296 [label="I check \"provider[terms_of_service]\""]
+	2084499680624 -> 2084506435296
+	2084506435296 [label="I check \"provider[terms_of_service]\""]
+}

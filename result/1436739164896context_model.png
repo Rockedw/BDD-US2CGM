@@ -1,0 +1,16 @@
+// 1436739162016 Context Model
+digraph {
+	1436739164896 [label=Context4]
+	1436739161968 [label="a provider \"Hotpocket\" belonging to \"paul@test.com\""]
+	1436739164896 -> 1436739161968
+	1436739161968 [label="a provider \"Hotpocket\" belonging to \"paul@test.com\""]
+	1436739174064 [label="\"Hotpocket\" has an approved endorsement \"Vaguely competent service.\" \"3.days.ago\""]
+	1436739164896 -> 1436739174064
+	1436739174064 [label="\"Hotpocket\" has an approved endorsement \"Vaguely competent service.\" \"3.days.ago\""]
+	1436739168304 [label="\"Hotpocket\" has a rejected endorsement \"Literally crap. Totally awful. Barely even Ruby.\" \"2.days.ago\""]
+	1436739164896 -> 1436739168304
+	1436739168304 [label="\"Hotpocket\" has a rejected endorsement \"Literally crap. Totally awful. Barely even Ruby.\" \"2.days.ago\""]
+	1436739162928 [label="I am on the homepage"]
+	1436739164896 -> 1436739162928
+	1436739162928 [label="I am on the homepage"]
+}

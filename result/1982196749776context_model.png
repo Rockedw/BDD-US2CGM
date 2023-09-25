@@ -1,0 +1,16 @@
+// 1982196757744 Context Model
+digraph {
+	1982196749776 [label=Context2]
+	1982196746512 [label="the most basic default settings"]
+	1982196749776 -> 1982196746512
+	1982196746512 [label="the most basic default settings"]
+	1982196749440 [label="the database has been seeded"]
+	1982196749776 -> 1982196749440
+	1982196749440 [label="the database has been seeded"]
+	1982196751408 [label="I am logged in with the username admin"]
+	1982196749776 -> 1982196751408
+	1982196751408 [label="I am logged in with the username admin"]
+	1982196760000 [label="am on the admin settings page"]
+	1982196749776 -> 1982196760000
+	1982196760000 [label="am on the admin settings page"]
+}

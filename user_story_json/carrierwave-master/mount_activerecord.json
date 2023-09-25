@@ -1,0 +1,99 @@
+{
+    "feature_name": "Mount an Uploader on ActiveRecord class",
+    "user_story": {
+        "as_a": "web developer using CarrierWave",
+        "i_want": "mount an uploader on an ActiveRecord class",
+        "so_that": "easily attach files to a form",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I assign the file 'fixtures/bork.txt' to the 'avatar' column"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be a file called 'bork.txt' somewhere in a subdirectory of 'public/uploads/tmp'",
+                        "the file called 'bork.txt' in a subdirectory of 'public/uploads/tmp' should be identical to the file at 'fixtures/bork.txt'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I assign the file 'fixtures/bork.txt' to the 'avatar' column",
+                        "I save the active record"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be a file at 'public/uploads/bork.txt'",
+                        "the file at 'public/uploads/bork.txt' should be identical to the file at 'fixtures/bork.txt'",
+                        "the url for the column 'avatar' should be '/uploads/bork.txt'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I assign the file 'fixtures/bork.txt' to the 'avatar' column",
+                        "I retrieve the file later from the cache name for the column 'avatar'",
+                        "I save the active record"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be a file at 'public/uploads/bork.txt'",
+                        "the file at 'public/uploads/bork.txt' should be identical to the file at 'fixtures/bork.txt'",
+                        "the url for the column 'avatar' should be '/uploads/bork.txt'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I assign the file 'fixtures/bork.txt' to the 'avatar' column",
+                        "I retrieve the file later from the cache name for the column 'avatar'",
+                        "I save the active record"
+                    ],
+                    [
+                        "I reload the active record"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be a file at 'public/uploads/bork.txt'"
+                    ],
+                    [
+                        "the url for the column 'avatar' should be '/uploads/bork.txt'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I assign the file 'fixtures/bork.txt' to the 'avatar' column",
+                        "I retrieve the file later from the cache name for the column 'avatar'",
+                        "I save the active record"
+                    ],
+                    [
+                        "I delete the active record"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be a file at 'public/uploads/bork.txt'"
+                    ],
+                    [
+                        "there should not be a file at 'public/uploads/bork.txt'"
+                    ]
+                ]
+            }
+        ]
+    }
+}

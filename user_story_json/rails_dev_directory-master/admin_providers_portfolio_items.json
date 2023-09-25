@@ -1,0 +1,89 @@
+{
+    "feature_name": "Admin providers portfolio items",
+    "user_story": {
+        "as_a": "n Engine Yard administrator",
+        "i_want": "browse and create portfolio items for providers",
+        "so_that": "I can see the activity on the provider account and provide support if necessary",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a logged in admin user",
+                        "I am on the admin dashboard",
+                        "a provider \"Old Grey Mare\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Developers\"",
+                        "I follow \"Old Grey Mare\"",
+                        "I follow \"Add a new project to your portfolio\"",
+                        "I fill in \"Name\" with \"Norman Blake\"",
+                        "I fill in \"portfolio_item_url\" with \"http://www.normanblake.com\"",
+                        "I select \"2007\" from \"portfolio_item[year_completed]\"",
+                        "I fill in \"Description\" with \"This project was really easy because we are totally professionals.\"",
+                        "I press \"Save\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Old Grey Mare\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a logged in admin user",
+                        "I am on the admin dashboard",
+                        "a provider \"Natalie Haas\"",
+                        "a portfolio item \"Fire and Grace\" belonging to the \"Natalie Haas\" provider"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Developers\"",
+                        "I follow \"Natalie Haas\"",
+                        "I follow \"Fire and Grace\""
+                    ],
+                    [
+                        "I fill in \"Name\" with \"In the Moment\"",
+                        "I press \"Save\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"In the Moment\"",
+                        "I should see \"Portfolio project saved successfully\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Vowel Movements\"",
+                        "a portfolio item \"Pure West\" belonging to the \"Vowel Movements\" provider",
+                        "a logged in admin user"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the admin dashboard",
+                        "I follow \"Developers\"",
+                        "I follow \"Vowel Movements\"",
+                        "I follow \"Pure West\""
+                    ],
+                    [
+                        "I press \"Delete this portfolio project\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Portfolio project deleted successfully\"",
+                        "I should not see \"Pure West\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

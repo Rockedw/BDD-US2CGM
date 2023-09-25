@@ -1,0 +1,13 @@
+// 1982200556672 Context Model
+digraph {
+	1982200557248 [label=Context48]
+	1982200557392 [label="I have a _posts directory"]
+	1982200557248 -> 1982200557392
+	1982200557392 [label="I have a _posts directory"]
+	1982200557488 [label="I have the following post:"]
+	1982200557248 -> 1982200557488
+	1982200557488 [label="I have the following post:"]
+	1982200557584 [label="I have a configuration file with \"permalink\" set to \"pretty\""]
+	1982200557248 -> 1982200557584
+	1982200557584 [label="I have a configuration file with \"permalink\" set to \"pretty\""]
+}

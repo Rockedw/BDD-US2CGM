@@ -1,0 +1,16 @@
+// 1982199709216 Context Model
+digraph {
+	1982199701920 [label=Context1]
+	1982199705712 [label="a provider \"Tim Stafford\" with an approved endorsement from \"Steve Martin\""]
+	1982199701920 -> 1982199705712
+	1982199705712 [label="a provider \"Tim Stafford\" with an approved endorsement from \"Steve Martin\""]
+	1982199749200 [label="a provider \"Chris Thile\" with a rejected endorsement from \"Jimmy Martin\""]
+	1982199701920 -> 1982199749200
+	1982199749200 [label="a provider \"Chris Thile\" with a rejected endorsement from \"Jimmy Martin\""]
+	1982199745264 [label="a logged in admin user"]
+	1982199701920 -> 1982199745264
+	1982199745264 [label="a logged in admin user"]
+	1982199749248 [label="I am on the admin dashboard"]
+	1982199701920 -> 1982199749248
+	1982199749248 [label="I am on the admin dashboard"]
+}

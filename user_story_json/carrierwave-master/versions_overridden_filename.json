@@ -1,0 +1,107 @@
+{
+    "feature_name": "uploader with file storage and overridden filename",
+    "user_story": {
+        "as_a": "developer using CarrierWave",
+        "i_want": "upload files to the filesystem with an overridden filename and different versions",
+        "so_that": "customize the filename of uploaded files",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I store the file 'fixtures/bork.txt'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be a file at 'public/uploads/grark.png'"
+                    ],
+                    [
+                        "there should be a file at 'public/uploads/thumb_grark.png'",
+                        "the file at 'public/uploads/grark.png' should be identical to the file at 'fixtures/bork.txt'",
+                        "the file at 'public/uploads/thumb_grark.png' should be identical to the file at 'fixtures/bork.txt'",
+                        "the uploader should have the url '/uploads/grark.png'",
+                        "the uploader's version 'thumb' should have the url '/uploads/thumb_grark.png'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I cache the file 'fixtures/bork.txt'"
+                    ],
+                    [
+                        "I store the file"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be a file called 'bork.txt' somewhere in a subdirectory of 'public/uploads/tmp'"
+                    ],
+                    [
+                        "there should be a file called 'thumb_bork.txt' somewhere in a subdirectory of 'public/uploads/tmp'",
+                        "the file called 'bork.txt' in a subdirectory of 'public/uploads/tmp' should be identical to the file at 'fixtures/bork.txt'",
+                        "there should not be a file at 'public/uploads/grark.png'",
+                        "there should not be a file at 'public/uploads/thumb_grark.png'"
+                    ],
+                    [
+                        "there should be a file at 'public/uploads/grark.png'",
+                        "there should be a file at 'public/uploads/thumb_grark.png'",
+                        "the file at 'public/uploads/grark.png' should be identical to the file at 'fixtures/bork.txt'",
+                        "the file at 'public/uploads/thumb_grark.png' should be identical to the file at 'fixtures/bork.txt'",
+                        "the uploader should have the url '/uploads/grark.png'",
+                        "the uploader's version 'thumb' should have the url '/uploads/thumb_grark.png'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the file 'fixtures/bork.txt' is cached file at 'public/uploads/tmp/1369894322-345-1234-2255/bork.txt'"
+                    ],
+                    [
+                        "the file 'fixtures/monkey.txt' is cached file at 'public/uploads/tmp/1369894322-345-1234-2255/thumb_bork.txt'"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I retrieve the cache name '1369894322-345-1234-2255/bork.txt' from the cache",
+                        "I store the file"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be a file at 'public/uploads/grark.png'"
+                    ],
+                    [
+                        "there should be a file at 'public/uploads/thumb_grark.png'",
+                        "the file at 'public/uploads/grark.png' should be identical to the file at 'fixtures/bork.txt'",
+                        "the file at 'public/uploads/thumb_grark.png' should be identical to the file at 'fixtures/monkey.txt'"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the file 'fixtures/bork.txt' is stored at 'public/uploads/bork.txt'"
+                    ],
+                    [
+                        "the file 'fixtures/monkey.txt' is stored at 'public/uploads/thumb_bork.txt'"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I retrieve the file 'bork.txt' from the store"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the uploader should have the url '/uploads/bork.txt'",
+                        "the uploader's version 'thumb' should have the url '/uploads/thumb_bork.txt'"
+                    ]
+                ]
+            }
+        ]
+    }
+}

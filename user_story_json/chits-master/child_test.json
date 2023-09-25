@@ -1,0 +1,124 @@
+{
+    "feature_name": "childcare test",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"user\" with password \"user\"",
+                        "I click \"TODAY'S PATIENTS\"",
+                        "I should see \"CONSULTS TODAY\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"last\" with \"Mendoza\"",
+                        "I fill in \"first\" with \"Allan\"",
+                        "I press \"Search\"",
+                        "I should see \"SEARCH RESULTS\"",
+                        "I press \"Select Patient\"",
+                        "I should see \"VISIT DETAILS\"",
+                        "I check by value \"CHILD\"",
+                        "I press \"Save Details\"",
+                        "I should see \"Child Care\"",
+                        "I click \"Child Care\"",
+                        "I should see \"NO REGISTRY ID FOR THIS PATIENT\"",
+                        "I click \"FIRST VISIT\"",
+                        "I should see \"CHILD CARE DATA FORM\"",
+                        "I fill in \"ccdev_date_reg\" with \"03/02/2010\"",
+                        "I fill in \"mother_px_id\" with \"0000001\"",
+                        "I press \"Verify\"",
+                        "I should see \"1\""
+                    ],
+                    [
+                        "I select \"Housewife\" from \"mother_occup\"",
+                        "I select \"College\" from \"mother_educ\"",
+                        "I fill in \"father_name\" with \"Mario\"",
+                        "I select \"Barber\" from \"father_occup\"",
+                        "I select \"College\" from \"father_educ\"",
+                        "I fill in \"birth_weight\" with \"15\"",
+                        "I select \"Home\" from \"delivery_location\""
+                    ],
+                    [
+                        "I press \"Save Data\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"PATIENT DATA\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"user\" with password \"user\"",
+                        "I click \"TODAY'S PATIENTS\"",
+                        "I should see \"CONSULTS TODAY\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"last\" with \"Mendoza\"",
+                        "I fill in \"first\" with \"Allan\"",
+                        "I press \"Search\"",
+                        "I should see \"SEARCH RESULTS\"",
+                        "I press \"Select Patient\"",
+                        "I should see \"VISIT DETAILS\"",
+                        "I check by value \"CHILD\"",
+                        "I press \"Save Details\"",
+                        "I should see \"Child Care\"",
+                        "I click \"Child Care\"",
+                        "I should see \"NO REGISTRY ID FOR THIS PATIENT\"",
+                        "I click \"FIRST VISIT\"",
+                        "I should see \"CHILD CARE DATA FORM\"",
+                        "I fill in \"ccdev_date_reg\" with \"03/02/2010\"",
+                        "I fill in \"mother_px_id\" with \"0000001\"",
+                        "I press \"Verify\"",
+                        "I should see \"1\""
+                    ],
+                    [
+                        "I select \"Housewife\" from \"mother_occup\"",
+                        "I select \"College\" from \"mother_educ\"",
+                        "I fill in \"father_name\" with \"Mario\"",
+                        "I select \"Barber\" from \"father_occup\"",
+                        "I select \"College\" from \"father_educ\"",
+                        "I fill in \"birth_weight\" with \"15\"",
+                        "I select \"Home\" from \"delivery_location\""
+                    ],
+                    [
+                        "I press \"Save Data\""
+                    ],
+                    [
+                        "I press \"Yes\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"FIRST VISIT\"",
+                        "I click \"SIBLINGS\"",
+                        "I should see \"NO FAMILY ID FOR THIS PATIENT\"",
+                        "I click \"SERVICES\"",
+                        "I should see \"SERVICES\"",
+                        "I click \"BREASTFEEDING\"",
+                        "I should see \"FTITLE_CCDEV_BREASTFEED\"",
+                        "I check \"bfed_month[]\"",
+                        "I fill in \"date_bfed_six\" with \"03/02/2010\"",
+                        "I press \"Save Breastfeeding Status\"",
+                        "I should see \"bfed_month\"",
+                        "I click \"CONSULT\"",
+                        "I should see \"form_consult\"",
+                        "I press \"End Consult\"",
+                        "I should see \"confirm_end\""
+                    ],
+                    [
+                        "I should see \"CONSULTS TODAY\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

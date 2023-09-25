@@ -1,0 +1,252 @@
+{
+    "feature_name": "Open directory tree",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I will choose \"plugins/project/spec/fixtures/myproject\" from the \"open_directory\" dialog"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a directory"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the window should have title \"myproject\""
+                    ],
+                    [
+                        "I should see \"lib,spec,vendor,README\" in the tree"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I open \"plugins/project/spec/fixtures/myproject\" using the redcar command"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "the window should have title \"myproject\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I will choose \"plugins/project/spec/fixtures/myproject\" from the \"open_directory\" dialog"
+                    ],
+                    [
+                        "I will choose \"plugins/project/spec/fixtures/myproject/lib\" from the \"open_directory\" dialog"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a directory"
+                    ],
+                    [
+                        "I open a directory"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"foo_lib.rb\" in the tree"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I will choose \"plugins/project/spec/fixtures/myproject\" from the \"open_directory\" dialog"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a directory",
+                        "I open \"plugins/project/spec/fixtures/myproject\" using the redcar command"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the window should have title \"myproject\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I will choose \"plugins/project/spec/fixtures/myproject\" from the \"open_directory\" dialog"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a directory"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the window should have title \"myproject\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I will choose \"plugins/project/spec/fixtures/myproject\" from the \"open_directory\" dialog"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a directory"
+                    ],
+                    [
+                        "I close the directory"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the window should have title \"myproject\""
+                    ],
+                    [
+                        "the window should have title \"Redcar\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I will choose \"plugins/project/spec/fixtures/myproject\" from the \"open_directory\" dialog"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a directory"
+                    ],
+                    [
+                        "I maximize the window size"
+                    ],
+                    [
+                        "I restore the window size"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the tree width should be the default"
+                    ],
+                    [
+                        "the tree width should be the default"
+                    ],
+                    [
+                        "the tree width should be the default"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I will choose \"plugins/project/spec/fixtures/myproject\" from the \"open_directory\" dialog"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a directory",
+                        "I set the treebook width to the default",
+                        "I toggle tree visibility"
+                    ],
+                    [
+                        "I set the treebook width to only a few pixels",
+                        "I toggle tree visibility"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the tree width should be the minimum size"
+                    ],
+                    [
+                        "the tree width should be the default"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I will choose \"plugins/project/spec/fixtures/myproject\" from the \"open_directory\" dialog"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a directory",
+                        "I set the treebook width to the default",
+                        "I toggle tree visibility"
+                    ],
+                    [
+                        "I open the runnables tree"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the tree width should be the minimum size"
+                    ],
+                    [
+                        "the tree width should be the default",
+                        "I toggle tree visibility"
+                    ],
+                    [
+                        "the tree width should be the minimum size"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I will choose \"plugins/project/spec/fixtures/myproject\" from the \"open_directory\" dialog"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a directory"
+                    ],
+                    [
+                        "I set the treebook width to the default",
+                        "I set the treebook width to 50 pixels",
+                        "I toggle tree visibility"
+                    ],
+                    [
+                        "I toggle tree visibility"
+                    ],
+                    [
+                        "I set the treebook width to 250 pixels",
+                        "I toggle tree visibility",
+                        "I toggle tree visibility"
+                    ],
+                    [
+                        "I toggle tree visibility",
+                        "I set the treebook width to 35 pixels",
+                        "I toggle tree visibility"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the tree width should be the minimum size"
+                    ],
+                    [
+                        "the tree width should be 50 pixels"
+                    ],
+                    [
+                        "the tree width should be 250 pixels"
+                    ],
+                    [
+                        "the tree width should be the minimum size"
+                    ]
+                ]
+            }
+        ]
+    }
+}

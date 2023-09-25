@@ -1,0 +1,25 @@
+// 1998092133632 Context Model
+digraph {
+	1998092134880 [label=Context69]
+	1998092135024 [label="I have a _posts directory"]
+	1998092134880 -> 1998092135024
+	1998092135024 [label="I have a _posts directory"]
+	1998092135120 [label="I have a _posts/snippets directory"]
+	1998092134880 -> 1998092135120
+	1998092135120 [label="I have a _posts/snippets directory"]
+	1998092135216 [label="I have a _posts/snippets/welcome_para directory"]
+	1998092134880 -> 1998092135216
+	1998092135216 [label="I have a _posts/snippets/welcome_para directory"]
+	1998092135312 [label="I have a \"_posts/2018-09-02-star-wars.md\" file with content:"]
+	1998092134880 -> 1998092135312
+	1998092135312 [label="I have a \"_posts/2018-09-02-star-wars.md\" file with content:"]
+	1998092135408 [label="I have an \"_posts/snippets/welcome_para.md\" file that contains \"{% include_relative snippets/welcome_para/greeting.md %} Dear Reader!\""]
+	1998092134880 -> 1998092135408
+	1998092135408 [label="I have an \"_posts/snippets/welcome_para.md\" file that contains \"{% include_relative snippets/welcome_para/greeting.md %} Dear Reader!\""]
+	1998092135504 [label="I have an \"_posts/snippets/welcome_para/greeting.md\" file that contains \"Welcome back\""]
+	1998092134880 -> 1998092135504
+	1998092135504 [label="I have an \"_posts/snippets/welcome_para/greeting.md\" file that contains \"Welcome back\""]
+	1998092135600 [label="I have an \"index.md\" page that contains \"{% for post in site.posts %}{{ post.excerpt }}{% endfor %}\""]
+	1998092134880 -> 1998092135600
+	1998092135600 [label="I have an \"index.md\" page that contains \"{% for post in site.posts %}{{ post.excerpt }}{% endfor %}\""]
+}

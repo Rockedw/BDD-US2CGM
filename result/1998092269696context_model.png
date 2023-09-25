@@ -1,0 +1,19 @@
+// 1998092268976 Context Model
+digraph {
+	1998092269696 [label=Context5]
+	1998092270128 [label="I will choose \"plugins/html_view/features/fixtures\" from the \"open_directory\" dialog"]
+	1998092269696 -> 1998092270128
+	1998092270128 [label="I will choose \"plugins/html_view/features/fixtures\" from the \"open_directory\" dialog"]
+	1998092270224 [label="I open a directory"]
+	1998092269696 -> 1998092270224
+	1998092270224 [label="I open a directory"]
+	1998092270320 [label="I open the browser bar"]
+	1998092269696 -> 1998092270320
+	1998092270320 [label="I open the browser bar"]
+	1998092270416 [label="I type \"sample.html\" into the \"New URL:\" field in the speedbar"]
+	1998092269696 -> 1998092270416
+	1998092270416 [label="I type \"sample.html\" into the \"New URL:\" field in the speedbar"]
+	1998092270512 [label="I press \"Go!\" in the speedbar"]
+	1998092269696 -> 1998092270512
+	1998092270512 [label="I press \"Go!\" in the speedbar"]
+}

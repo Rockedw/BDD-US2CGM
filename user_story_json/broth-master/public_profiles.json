@@ -1,0 +1,28 @@
+{
+    "feature_name": "Public profiles",
+    "user_story": {
+        "as_a": "visitor",
+        "i_want": "see public profiles",
+        "so_that": "gauge the value of a community",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "site settings have been enabled for \"public_profiles\"",
+                        "a user exists with an email of \"josh@gethandcrafted.com\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to valid_user's profile page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"josh@gethandcrafted.com\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

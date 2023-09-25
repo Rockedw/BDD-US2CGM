@@ -1,0 +1,77 @@
+// Goal Model
+digraph {
+	1847134318032 [label="As the founder of a new co-op
+goal"]
+	1847134118736 [label="appoint the initial directors and officers
+goal
+1847134124496"]
+	1847134318032 -> 1847134118736
+	1847134118736 [label="appoint the initial directors and officers
+goal"]
+	1847134075536 [label="Founder appoints an initial director
+goal
+140728069287616"]
+	1847134118736 -> 1847134075536
+	1847134075536 [label="Founder appoints an initial director
+goal"]
+	1847134070016 [label="I go to the Directors page
+task
+140728069287616"]
+	1847134075536 -> 1847134070016
+	1847134070016 [label="I go to the Directors page
+task"]
+	1847134075056 [label="I press \"Appoint new Director\"
+task
+140728069287616"]
+	1847134075536 -> 1847134075056
+	1847134075056 [label="I press \"Appoint new Director\"
+task"]
+	1847134073904 [label="I choose a member from the list
+task
+140728069287616"]
+	1847134075536 -> 1847134073904
+	1847134073904 [label="I choose a member from the list
+task"]
+	1847134068144 [label="I press \"Record this appointment\"
+task
+140728069287616"]
+	1847134075536 -> 1847134068144
+	1847134068144 [label="I press \"Record this appointment\"
+task"]
+	1847134075344 [label="Founder appoints an initial officer
+goal
+1847134070256"]
+	1847134118736 -> 1847134075344
+	1847134075344 [label="Founder appoints an initial officer
+goal"]
+	1847134073424 [label="I go to the Directors page
+task
+140728069287616"]
+	1847134075344 -> 1847134073424
+	1847134073424 [label="I go to the Directors page
+task"]
+	1847134071504 [label="I press \"Appoint new Officer\"
+task
+140728069287616"]
+	1847134075344 -> 1847134071504
+	1847134071504 [label="I press \"Appoint new Officer\"
+task"]
+	1847134072992 [label="I choose a director from the list of directors
+task
+140728069287616"]
+	1847134075344 -> 1847134072992
+	1847134072992 [label="I choose a director from the list of directors
+task"]
+	1847134070832 [label="I choose 'Secretary' from the list of offices
+task
+140728069287616"]
+	1847134075344 -> 1847134070832
+	1847134070832 [label="I choose 'Secretary' from the list of offices
+task"]
+	1847134069488 [label="I press \"Record this appointment\"
+task
+140728069287616"]
+	1847134075344 -> 1847134069488
+	1847134069488 [label="I press \"Record this appointment\"
+task"]
+}

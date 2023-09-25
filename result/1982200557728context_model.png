@@ -1,0 +1,16 @@
+// 1982200556864 Context Model
+digraph {
+	1982200557728 [label=Context49]
+	1982200557872 [label="I have an \"index.html\" page that contains \"Totally index\""]
+	1982200557728 -> 1982200557872
+	1982200557872 [label="I have an \"index.html\" page that contains \"Totally index\""]
+	1982200557968 [label="I have an \"awesome.html\" page that contains \"Totally awesome\""]
+	1982200557728 -> 1982200557968
+	1982200557968 [label="I have an \"awesome.html\" page that contains \"Totally awesome\""]
+	1982200558064 [label="I have an \"sitemap.xml\" page that contains \"Totally uhm, sitemap\""]
+	1982200557728 -> 1982200558064
+	1982200558064 [label="I have an \"sitemap.xml\" page that contains \"Totally uhm, sitemap\""]
+	1982200558160 [label="I have a configuration file with \"permalink\" set to \"pretty\""]
+	1982200557728 -> 1982200558160
+	1982200558160 [label="I have a configuration file with \"permalink\" set to \"pretty\""]
+}

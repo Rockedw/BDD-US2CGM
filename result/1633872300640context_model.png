@@ -1,0 +1,22 @@
+// 1633872299200 Context Model
+digraph {
+	1633872300640 [label=Context123]
+	1633872300784 [label="I have a \".gitignore\" file that contains \".DS_Store\""]
+	1633872300640 -> 1633872300784
+	1633872300784 [label="I have a \".gitignore\" file that contains \".DS_Store\""]
+	1633872300880 [label="I have an \".htaccess\" file that contains \"SomeDirective\""]
+	1633872300640 -> 1633872300880
+	1633872300880 [label="I have an \".htaccess\" file that contains \"SomeDirective\""]
+	1633872300976 [label="I have a node_modules directory"]
+	1633872300640 -> 1633872300976
+	1633872300976 [label="I have a node_modules directory"]
+	1633872301072 [label="I have a \"node_modules/bazinga.js\" file that contains \"var c = 'Bazinga!';\""]
+	1633872300640 -> 1633872301072
+	1633872301072 [label="I have a \"node_modules/bazinga.js\" file that contains \"var c = 'Bazinga!';\""]
+	1633872301168 [label="I have a \"node_modules/warning.js\" file that contains \"var w = 'Winter is coming!';\""]
+	1633872300640 -> 1633872301168
+	1633872301168 [label="I have a \"node_modules/warning.js\" file that contains \"var w = 'Winter is coming!';\""]
+	1633872301264 [label="I have a configuration file with \"include\" set to:"]
+	1633872300640 -> 1633872301264
+	1633872301264 [label="I have a configuration file with \"include\" set to:"]
+}

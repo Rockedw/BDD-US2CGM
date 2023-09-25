@@ -1,0 +1,19 @@
+// 3000790305568 Context Model
+digraph {
+	3000790305808 [label=Context9]
+	3000790306336 [label="following users exist:"]
+	3000790305808 -> 3000790306336
+	3000790306336 [label="following users exist:"]
+	3000790306432 [label="a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\""]
+	3000790305808 -> 3000790306432
+	3000790306432 [label="a user with email \"bob@bob.bob\" is connected with \"alice@alice.alice\""]
+	3000790306528 [label="a user with email \"eve@eve.eve\" is connected with \"bob@bob.bob\""]
+	3000790305808 -> 3000790306528
+	3000790306528 [label="a user with email \"eve@eve.eve\" is connected with \"bob@bob.bob\""]
+	3000790306624 [label="\"bob@bob.bob\" has a public post with text \"reshare this!\""]
+	3000790305808 -> 3000790306624
+	3000790306624 [label="\"bob@bob.bob\" has a public post with text \"reshare this!\""]
+	3000790306720 [label="I sign in as \"alice@alice.alice\" on the mobile website"]
+	3000790305808 -> 3000790306720
+	3000790306720 [label="I sign in as \"alice@alice.alice\" on the mobile website"]
+}

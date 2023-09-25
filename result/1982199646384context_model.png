@@ -1,0 +1,13 @@
+// 1982199649072 Context Model
+digraph {
+	1982199646384 [label=Context1]
+	1982199709216 [label="there is a draft co-op"]
+	1982199646384 -> 1982199709216
+	1982199709216 [label="there is a draft co-op"]
+	1982199706528 [label="I am a founder member of the draft co-op"]
+	1982199646384 -> 1982199706528
+	1982199706528 [label="I am a founder member of the draft co-op"]
+	1982199706960 [label="there are at least two directors"]
+	1982199646384 -> 1982199706960
+	1982199706960 [label="there are at least two directors"]
+}

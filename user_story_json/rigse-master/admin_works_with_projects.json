@@ -1,0 +1,247 @@
+{
+    "feature_name": "Admin can work with projects",
+    "user_story": {
+        "as_a": "n admin",
+        "i_want": "",
+        "so_that": "assign materials to projects",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "the default projects exist using factories"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the projects index page",
+                        "I should see \"4 projects\"",
+                        "I should see \"project 1\"",
+                        "I should see \"project 2\"",
+                        "I should see \"project 3\"",
+                        "I should see \"create Project\""
+                    ]
+                ],
+                "thens_list": []
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on the projects index page",
+                        "I click \"create Project\"",
+                        "I fill in \"admin_project[name]\" with \"My new project\"",
+                        "I fill in \"admin_project[landing_page_slug]\" with \"new-project\"",
+                        "I fill in \"admin_project[landing_page_content]\" with \"<h1>New project FooBar!</h1>\"",
+                        "I press \"Save\""
+                    ],
+                    [
+                        "I click \"/new-project\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the projects index page",
+                        "I should see \"2 projects\"",
+                        "I should see \"Project was successfully created.\"",
+                        "I should see \"My new project\""
+                    ],
+                    [
+                        "I should be on the route /new-project",
+                        "I should see \"New project FooBar!\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on the projects index page",
+                        "I click \"create Project\"",
+                        "I press \"Save\"",
+                        "I should see \"there are errors\"",
+                        "I should see \"Name can't be blank\"",
+                        "I fill in \"admin_project[name]\" with \"My new project\"",
+                        "I fill in \"admin_project[landing_page_slug]\" with \"slug\"",
+                        "I press \"Save\""
+                    ],
+                    [
+                        "I click \"create Project\"",
+                        "I fill in \"admin_project[landing_page_slug]\" with \"slug\"",
+                        "I press \"Save\""
+                    ],
+                    [
+                        "I fill in \"admin_project[landing_page_slug]\" with \"invalid/slug\"",
+                        "I press \"Save\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the projects index page",
+                        "I should see \"Project was successfully created.\"",
+                        "I should see \"My new project\""
+                    ],
+                    [
+                        "I should see \"there are errors\"",
+                        "I should see \"Name can't be blank\"",
+                        "I should see \"Landing page slug has already been taken\""
+                    ],
+                    [
+                        "I should see \"there are errors\"",
+                        "I should see \"Name can't be blank\"",
+                        "I should see \"Landing page slug only allows lower case letters, digits and '-' character\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the default projects exist using factories",
+                        "I am on the projects index page",
+                        "I click on the edit link for project \"project 2\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"admin_project[name]\" with \"New project name\"",
+                        "I press \"Save\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"New project name\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the default projects exist using factories",
+                        "I am on the projects index page",
+                        "I click on the edit link for project \"project 2\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I click \"Add a link\"",
+                        "I fill in \"admin_project_link[name]\" with \"New project link\"",
+                        "I fill in \"admin_project_link[link_id]\" with \"new-id\"",
+                        "I fill in \"admin_project_link[href]\" with \"http://google.com\"",
+                        "I press \"Save\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"ProjectLink was successfully created\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the default projects exist using factories",
+                        "I am on the projects index page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I click on the edit link for project \"project 2\"",
+                        "I fill in \"admin_project[name]\" with \"\"",
+                        "I press \"Save\""
+                    ],
+                    [
+                        "I fill in \"admin_project[name]\" with \"new project 2\"",
+                        "I fill in \"admin_project[landing_page_slug]\" with \"project-1\"",
+                        "I press \"Save\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"there are errors\"",
+                        "I should see \"Name can't be blank\""
+                    ],
+                    [
+                        "I should see \"there are errors\"",
+                        "I should see \"Landing page slug has already been taken\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "that this test hasnt run for a while [TODO NP 2020-09-01]"
+                    ],
+                    [
+                        "because the following step wasn't defined:"
+                    ],
+                    [
+                        "the default projects exist using factories"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the search instructional materials page",
+                        "I search for \"testing fast cars\" on the search instructional materials page",
+                        "I follow the \"(portal settings)\" link for the investigation \"testing fast cars\""
+                    ],
+                    [
+                        "I check \"project 1\"",
+                        "I press \"Save\"",
+                        "I am on the search instructional materials page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Projects\"",
+                        "I should see \"project 1\"",
+                        "I should see \"project 2\"",
+                        "I should see \"project 3\""
+                    ],
+                    [
+                        "I should see \"Collections\""
+                    ],
+                    [
+                        "I should see \"project 1\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the default projects exist using factories",
+                        "the following investigations are assigned to projects:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the search instructional materials page"
+                    ],
+                    [
+                        "I check \"project 1\""
+                    ],
+                    [
+                        "I uncheck \"project 1\"",
+                        "I check \"project 2\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Collections\"",
+                        "I should see \"project 1\"",
+                        "I should see \"project 2\"",
+                        "I should not see \"project 3\""
+                    ],
+                    [
+                        "I should see \"Radioactivity\"",
+                        "I should not see \"Set Theory\"",
+                        "I should not see \"Mechanics\""
+                    ],
+                    [
+                        "I should not see \"Radioactivity\"",
+                        "I should see \"Set Theory\"",
+                        "I should see \"Mechanics\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

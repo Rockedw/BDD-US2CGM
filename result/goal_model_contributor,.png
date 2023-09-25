@@ -1,0 +1,1651 @@
+// Goal Model
+digraph {
+	1847134008944 [label="contributor,
+goal"]
+	1847135631248 [label="view lists of the wontologies current contents
+goal
+140728069287616"]
+	1847134008944 -> 1847135631248
+	1847135631248 [label="view lists of the wontologies current contents
+goal"]
+	1847133163856 [label="homepage show something
+goal
+140728069287616"]
+	1847135631248 -> 1847133163856
+	1847133163856 [label="homepage show something
+goal"]
+	1847135497776 [label="homepage show item
+goal
+140728069287616"]
+	1847133163856 -> 1847135497776
+	1847135497776 [label="homepage show item
+goal"]
+	1847135634864 [label="Homepage doesn't show property items
+goal
+140728069287616"]
+	1847135497776 -> 1847135634864
+	1847135634864 [label="Homepage doesn't show property items
+goal"]
+	1847135636160 [label="Item index shows property items
+goal
+140728069287616"]
+	1847135497776 -> 1847135636160
+	1847135636160 [label="Item index shows property items
+goal"]
+	1847135636064 [label="Homepage shows list of existing items
+goal
+1847135636736"]
+	1847133163856 -> 1847135636064
+	1847135636064 [label="Homepage shows list of existing items
+goal"]
+	1847135636928 [label="View index of existing items
+goal
+1847135637696"]
+	1847135631248 -> 1847135636928
+	1847135636928 [label="View index of existing items
+goal"]
+	1847135637120 [label="Show page for an item lists implied connections
+goal
+1847135638080"]
+	1847135631248 -> 1847135637120
+	1847135637120 [label="Show page for an item lists implied connections
+goal"]
+	1847135623280 [label="view a item and its connections at the same time.
+goal
+140728069287616"]
+	1847134008944 -> 1847135623280
+	1847135623280 [label="view a item and its connections at the same time.
+goal"]
+	1847135640336 [label="Item page should contain a new-connection link
+goal
+1847135637312"]
+	1847135623280 -> 1847135640336
+	1847135640336 [label="Item page should contain a new-connection link
+goal"]
+	1847135494176 [label=" view item
+goal
+140728069287616"]
+	1847135623280 -> 1847135494176
+	1847135494176 [label=" view item
+goal"]
+	1847135637744 [label="View a item with no connections
+goal
+1847135637360"]
+	1847135494176 -> 1847135637744
+	1847135637744 [label="View a item with no connections
+goal"]
+	1847135637552 [label="View a item with one connection
+goal
+1847135636352"]
+	1847135494176 -> 1847135637552
+	1847135637552 [label="View a item with one connection
+goal"]
+	1847135468128 [label="create wontology
+goal
+140728069287616"]
+	1847134008944 -> 1847135468128
+	1847135468128 [label="create wontology
+goal"]
+	1847135621024 [label="
+goal
+140728069287616"]
+	1847135468128 -> 1847135621024
+	1847135621024 [label="
+goal"]
+	1847135625488 [label="items/new form has correct Tab order to controls
+goal
+1847135625824"]
+	1847135621024 -> 1847135625488
+	1847135625488 [label="items/new form has correct Tab order to controls
+goal"]
+	1847135625632 [label="I type the \"Tab\" special key
+task
+140728069287616"]
+	1847135625488 -> 1847135625632
+	1847135625632 [label="I type the \"Tab\" special key
+task"]
+	1847135625680 [label="I type the \"Tab\" special key
+task
+140728069287616"]
+	1847135625488 -> 1847135625680
+	1847135625680 [label="I type the \"Tab\" special key
+task"]
+	1847135625728 [label="I type the \"Tab\" special key
+task
+140728069287616"]
+	1847135625488 -> 1847135625728
+	1847135625728 [label="I type the \"Tab\" special key
+task"]
+	1847135625776 [label="I type the \"Tab\" special key
+task
+140728069287616"]
+	1847135625488 -> 1847135625776
+	1847135625776 [label="I type the \"Tab\" special key
+task"]
+	1847135625248 [label="items/new form defaults focus to Type \"select\" control
+goal
+140728069287616"]
+	1847135621024 -> 1847135625248
+	1847135625248 [label="items/new form defaults focus to Type \"select\" control
+goal"]
+	1847135625584 [label="selection of item.sti_type should highlight matching descr. text
+goal
+1847135626112"]
+	1847135621024 -> 1847135625584
+	1847135625584 [label="selection of item.sti_type should highlight matching descr. text
+goal"]
+	1847135468176 [label="I should have special support for the manipulation of an item's class
+goal
+140728069287616"]
+	1847135468128 -> 1847135468176
+	1847135468176 [label="I should have special support for the manipulation of an item's class
+goal"]
+	1847134021776 [label="Create a new item with class
+goal
+1847135497152"]
+	1847135468176 -> 1847134021776
+	1847134021776 [label="Create a new item with class
+goal"]
+	1847135641344 [label="I select something
+goal
+140728069287616"]
+	1847134021776 -> 1847135641344
+	1847135641344 [label="I select something
+goal"]
+	1847134112880 [label="I select \"aClass0\" from \"item_class_item_id\"
+task
+140728069287616"]
+	1847135641344 -> 1847134112880
+	1847134112880 [label="I select \"aClass0\" from \"item_class_item_id\"
+task"]
+	1847134113888 [label="I select \"Individual\" from \"Type\"
+task
+140728069287616"]
+	1847135641344 -> 1847134113888
+	1847134113888 [label="I select \"Individual\" from \"Type\"
+task"]
+	1847135641920 [label="I fill something
+goal
+140728069287616"]
+	1847134021776 -> 1847135641920
+	1847135641920 [label="I fill something
+goal"]
+	1847135502000 [label="I fill in \"Name\" with \"myNewItem\"
+task
+140728069287616"]
+	1847135641920 -> 1847135502000
+	1847135502000 [label="I fill in \"Name\" with \"myNewItem\"
+task"]
+	1847135501424 [label="I fill in \"Title\" with \"An item that is an instance of 'aClass'\"
+task
+140728069287616"]
+	1847135641920 -> 1847135501424
+	1847135501424 [label="I fill in \"Title\" with \"An item that is an instance of 'aClass'\"
+task"]
+	1847133170432 [label="I press \"Create\"
+task
+140728069287616"]
+	1847134021776 -> 1847133170432
+	1847133170432 [label="I press \"Create\"
+task"]
+	1847135494608 [label="I go to the show connections page for \"myNewItem\" \"is_instance_of\" \"aClass0\"
+task
+140728069287616"]
+	1847134021776 -> 1847135494608
+	1847135494608 [label="I go to the show connections page for \"myNewItem\" \"is_instance_of\" \"aClass0\"
+task"]
+	1847133278112 [label=" view something
+goal
+140728069287616"]
+	1847135468176 -> 1847133278112
+	1847133278112 [label=" view something
+goal"]
+	1847133890368 [label="View an item with class
+goal
+1847135492544"]
+	1847133278112 -> 1847133890368
+	1847133890368 [label="View an item with class
+goal"]
+	1847135501616 [label="View items index including item type and class
+goal
+1847135486688"]
+	1847133278112 -> 1847135501616
+	1847135501616 [label="View items index including item type and class
+goal"]
+	1847135497728 [label=" edit item
+goal
+140728069287616"]
+	1847135468176 -> 1847135497728
+	1847135497728 [label=" edit item
+goal"]
+	1847135493024 [label="Edit an item to change its class
+goal
+1847135487648"]
+	1847135497728 -> 1847135493024
+	1847135493024 [label="Edit an item to change its class
+goal"]
+	1847135488080 [label="Edit an item to remove its class
+goal
+1847135499168"]
+	1847135497728 -> 1847135488080
+	1847135488080 [label="Edit an item to remove its class
+goal"]
+	1847135492304 [label="Edit an item to add a class
+goal
+1847135487888"]
+	1847135497728 -> 1847135492304
+	1847135492304 [label="Edit an item to add a class
+goal"]
+	1847135501040 [label="I press \"Update\"
+task
+140728069287616"]
+	1847135492304 -> 1847135501040
+	1847135501040 [label="I press \"Update\"
+task"]
+	1847135487696 [label="I go to the show connections page for \"anInstance0\" \"is_instance_of\" \"aClass0\"
+task
+140728069287616"]
+	1847135492304 -> 1847135487696
+	1847135487696 [label="I go to the show connections page for \"anInstance0\" \"is_instance_of\" \"aClass0\"
+task"]
+	1847135499840 [label=" create something
+goal
+140728069287616"]
+	1847135468128 -> 1847135499840
+	1847135499840 [label=" create something
+goal"]
+	1847135489904 [label=" create item
+goal
+140728069287616"]
+	1847135499840 -> 1847135489904
+	1847135489904 [label=" create item
+goal"]
+	1847135460112 [label="be able create a new item during the creation of a new connection, so
+goal
+140728069287616"]
+	1847135489904 -> 1847135460112
+	1847135460112 [label="be able create a new item during the creation of a new connection, so
+goal"]
+	1847133276912 [label=" create something
+goal
+140728069287616"]
+	1847135460112 -> 1847133276912
+	1847133276912 [label=" create something
+goal"]
+	1847135497824 [label="Item created during cancelled connection creation still persists
+goal
+1847135469968"]
+	1847133276912 -> 1847135497824
+	1847135497824 [label="Item created during cancelled connection creation still persists
+goal"]
+	1847135492496 [label="Can create a new item during connection creation
+goal
+1847135497296"]
+	1847133276912 -> 1847135492496
+	1847135492496 [label="Can create a new item during connection creation
+goal"]
+	1847135490576 [label="I select \"- create a new item for this object -\" from \"Subject\"
+task
+140728069287616"]
+	1847135492496 -> 1847135490576
+	1847135490576 [label="I select \"- create a new item for this object -\" from \"Subject\"
+task"]
+	1847135490768 [label="I pause
+task
+140728069287616"]
+	1847135492496 -> 1847135490768
+	1847135490768 [label="I pause
+task"]
+	1847135493072 [label="I wait something
+goal
+140728069287616"]
+	1847135492496 -> 1847135493072
+	1847135493072 [label="I wait something
+goal"]
+	1847135495472 [label="I wait for Ajax requests to complete
+task
+140728069287616"]
+	1847135493072 -> 1847135495472
+	1847135495472 [label="I wait for Ajax requests to complete
+task"]
+	1847135492208 [label="I wait for Ajax requests to complete
+task
+140728069287616"]
+	1847135493072 -> 1847135492208
+	1847135492208 [label="I wait for Ajax requests to complete
+task"]
+	1847135489808 [label="I press \"Create\"
+task
+140728069287616"]
+	1847135492496 -> 1847135489808
+	1847135489808 [label="I press \"Create\"
+task"]
+	1847135493552 [label="Can cancel the creation of a item during connection creation
+goal
+1847135489088"]
+	1847135460112 -> 1847135493552
+	1847135493552 [label="Can cancel the creation of a item during connection creation
+goal"]
+	1847135490384 [label="I select \"- create a new property for this relationship -\" from \"Relates to\"
+task
+140728069287616"]
+	1847135493552 -> 1847135490384
+	1847135490384 [label="I select \"- create a new property for this relationship -\" from \"Relates to\"
+task"]
+	1847135499216 [label="I wait for Ajax requests to complete
+task
+140728069287616"]
+	1847135493552 -> 1847135499216
+	1847135499216 [label="I wait for Ajax requests to complete
+task"]
+	1847135500704 [label="I pause
+task
+140728069287616"]
+	1847135493552 -> 1847135500704
+	1847135500704 [label="I pause
+task"]
+	1847135494992 [label="I follow \"Cancel item creation\"
+task
+140728069287616"]
+	1847135493552 -> 1847135494992
+	1847135494992 [label="I follow \"Cancel item creation\"
+task"]
+	1847135627456 [label="create and view items.
+goal
+140728069287616"]
+	1847135489904 -> 1847135627456
+	1847135627456 [label="create and view items.
+goal"]
+	1847135628848 [label="Create new item
+goal
+1847135629088"]
+	1847135627456 -> 1847135628848
+	1847135628848 [label="Create new item
+goal"]
+	1847132860336 [label="system prevent entry
+goal
+140728069287616"]
+	1847135627456 -> 1847132860336
+	1847132860336 [label="system prevent entry
+goal"]
+	1847135628992 [label="System should prevent entry of invalid item names
+goal
+1847135629856"]
+	1847132860336 -> 1847135628992
+	1847135628992 [label="System should prevent entry of invalid item names
+goal"]
+	1847135629712 [label="I press \"Create\"
+task
+140728069287616"]
+	1847135628992 -> 1847135629712
+	1847135629712 [label="I press \"Create\"
+task"]
+	1847135629760 [label="I press \"Create\"
+task
+140728069287616"]
+	1847135628992 -> 1847135629760
+	1847135629760 [label="I press \"Create\"
+task"]
+	1847135629808 [label="I press \"Create\"
+task
+140728069287616"]
+	1847135628992 -> 1847135629808
+	1847135629808 [label="I press \"Create\"
+task"]
+	1847135629952 [label="System should prevent entry of invalid item titles
+goal
+1847135631824"]
+	1847132860336 -> 1847135629952
+	1847135629952 [label="System should prevent entry of invalid item titles
+goal"]
+	1847135629184 [label="I can't enter two items with same name
+goal
+1847135630672"]
+	1847135627456 -> 1847135629184
+	1847135629184 [label="I can't enter two items with same name
+goal"]
+	1847135630480 [label="I press \"Create\"
+task
+140728069287616"]
+	1847135629184 -> 1847135630480
+	1847135630480 [label="I press \"Create\"
+task"]
+	1847135630528 [label="I press \"Create\"
+task
+140728069287616"]
+	1847135629184 -> 1847135630528
+	1847135630528 [label="I press \"Create\"
+task"]
+	1847135491440 [label="create and view connections.
+goal
+140728069287616"]
+	1847135499840 -> 1847135491440
+	1847135491440 [label="create and view connections.
+goal"]
+	1847135471312 [label="Create new category-hierarchy-category connection
+goal
+1847135471840"]
+	1847135491440 -> 1847135471312
+	1847135471312 [label="Create new category-hierarchy-category connection
+goal"]
+	1847135471792 [label="I press \"Create\"
+task
+140728069287616"]
+	1847135471312 -> 1847135471792
+	1847135471792 [label="I press \"Create\"
+task"]
+	1847135471744 [label="Create new property-sub_property_of-property connection
+goal
+1847135472608"]
+	1847135491440 -> 1847135471744
+	1847135471744 [label="Create new property-sub_property_of-property connection
+goal"]
+	1847135472560 [label="I press \"Create\"
+task
+140728069287616"]
+	1847135471744 -> 1847135472560
+	1847135472560 [label="I press \"Create\"
+task"]
+	1847135471936 [label="Create new connection with scalar object
+goal
+1847135473376"]
+	1847135491440 -> 1847135471936
+	1847135471936 [label="Create new connection with scalar object
+goal"]
+	1847135473328 [label="I press \"Create\"
+task
+140728069287616"]
+	1847135471936 -> 1847135473328
+	1847135473328 [label="I press \"Create\"
+task"]
+	1847135472704 [label="I can't create an connection duplicating an existing one
+goal
+1847135474144"]
+	1847135491440 -> 1847135472704
+	1847135472704 [label="I can't create an connection duplicating an existing one
+goal"]
+	1847135474096 [label="I press \"Create\"
+task
+140728069287616"]
+	1847135472704 -> 1847135474096
+	1847135474096 [label="I press \"Create\"
+task"]
+	1847135473472 [label="I can't create an connection using a sub/super property of an existing one
+goal
+1847135475008"]
+	1847135491440 -> 1847135473472
+	1847135473472 [label="I can't create an connection using a sub/super property of an existing one
+goal"]
+	1847135474960 [label="I press \"Create\"
+task
+140728069287616"]
+	1847135473472 -> 1847135474960
+	1847135474960 [label="I press \"Create\"
+task"]
+	1847135474240 [label="I can't create an explicit connection duplicating an existing implicit one
+goal
+1847135475872"]
+	1847135491440 -> 1847135474240
+	1847135474240 [label="I can't create an explicit connection duplicating an existing implicit one
+goal"]
+	1847135475824 [label="I press \"Create\"
+task
+140728069287616"]
+	1847135474240 -> 1847135475824
+	1847135475824 [label="I press \"Create\"
+task"]
+	1847135498496 [label="I can't create an individual-contains-category connection
+goal
+1847135489616"]
+	1847135491440 -> 1847135498496
+	1847135498496 [label="I can't create an individual-contains-category connection
+goal"]
+	1847135496336 [label="I press \"Create\"
+task
+140728069287616"]
+	1847135498496 -> 1847135496336
+	1847135496336 [label="I press \"Create\"
+task"]
+	1847135490864 [label="I can't create an category-containedBy-individual connection
+goal
+1847135489760"]
+	1847135491440 -> 1847135490864
+	1847135490864 [label="I can't create an category-containedBy-individual connection
+goal"]
+	1847135490720 [label="I press \"Create\"
+task
+140728069287616"]
+	1847135490864 -> 1847135490720
+	1847135490720 [label="I press \"Create\"
+task"]
+	1847135502096 [label="I can't create an connection which would close a prohibited loop
+goal
+1847135476544"]
+	1847135491440 -> 1847135502096
+	1847135502096 [label="I can't create an connection which would close a prohibited loop
+goal"]
+	1847135475968 [label="I press \"Create\"
+task
+140728069287616"]
+	1847135502096 -> 1847135475968
+	1847135475968 [label="I press \"Create\"
+task"]
+	1847135486064 [label="I can't create an hierarchical_relationship connection-to-self
+goal
+1847135477504"]
+	1847135491440 -> 1847135486064
+	1847135486064 [label="I can't create an hierarchical_relationship connection-to-self
+goal"]
+	1847135477456 [label="I press \"Create\"
+task
+140728069287616"]
+	1847135486064 -> 1847135477456
+	1847135477456 [label="I press \"Create\"
+task"]
+	1847135476640 [label="I can't create an ordered_relationship connection-to-self
+goal
+1847135478272"]
+	1847135491440 -> 1847135476640
+	1847135476640 [label="I can't create an ordered_relationship connection-to-self
+goal"]
+	1847135478224 [label="I press \"Create\"
+task
+140728069287616"]
+	1847135476640 -> 1847135478224
+	1847135478224 [label="I press \"Create\"
+task"]
+	1847135493456 [label="give context relating to my selections, so
+goal
+140728069287616"]
+	1847135468128 -> 1847135493456
+	1847135493456 [label="give context relating to my selections, so
+goal"]
+	1847135471024 [label="I select \"aCategory0 : aCategory item number 0\" from \"Subject\"
+task
+140728069287616"]
+	1847135493456 -> 1847135471024
+	1847135471024 [label="I select \"aCategory0 : aCategory item number 0\" from \"Subject\"
+task"]
+	1847135471072 [label="I select \"aProperty1 : aProperty item number 1\" from \"Relates to\"
+task
+140728069287616"]
+	1847135493456 -> 1847135471072
+	1847135471072 [label="I select \"aProperty1 : aProperty item number 1\" from \"Relates to\"
+task"]
+	1847135471168 [label="I choose \"Item\"
+task
+140728069287616"]
+	1847135493456 -> 1847135471168
+	1847135471168 [label="I choose \"Item\"
+task"]
+	1847135471216 [label="I select \"anItem2 : anItem item number 2\" from \"Object\"
+task
+140728069287616"]
+	1847135493456 -> 1847135471216
+	1847135471216 [label="I select \"anItem2 : anItem item number 2\" from \"Object\"
+task"]
+	1847135498352 [label="I tell page
+goal
+140728069287616"]
+	1847135468128 -> 1847135498352
+	1847135498352 [label="I tell page
+goal"]
+	1847135470976 [label="tell about bad inputs before I submit a page.
+goal
+140728069287616"]
+	1847135498352 -> 1847135470976
+	1847135470976 [label="tell about bad inputs before I submit a page.
+goal"]
+	1847135479136 [label="Form initially has enabled Create button, focus on Subject
+goal
+1847135479808"]
+	1847135470976 -> 1847135479136
+	1847135479136 [label="Form initially has enabled Create button, focus on Subject
+goal"]
+	1847135479856 [label="I am on the edit connections page for \"apollo0\" \"child_of\" \"adama0\"
+task
+140728069287616"]
+	1847135479136 -> 1847135479856
+	1847135479856 [label="I am on the edit connections page for \"apollo0\" \"child_of\" \"adama0\"
+task"]
+	1847135479904 [label="I pause
+task
+140728069287616"]
+	1847135479136 -> 1847135479904
+	1847135479904 [label="I pause
+task"]
+	1847135479760 [label="Form incrementally flags/unflags text/icons when selections changed
+goal
+1847135480768"]
+	1847135470976 -> 1847135479760
+	1847135479760 [label="Form incrementally flags/unflags text/icons when selections changed
+goal"]
+	1847135480336 [label="I am on the edit connections page for \"adama0\" \"parent_of\" \"athena0\"
+task
+140728069287616"]
+	1847135479760 -> 1847135480336
+	1847135480336 [label="I am on the edit connections page for \"adama0\" \"parent_of\" \"athena0\"
+task"]
+	1847135646336 [label="I select something
+goal
+140728069287616"]
+	1847135479760 -> 1847135646336
+	1847135646336 [label="I select something
+goal"]
+	1847135480624 [label="I select \"- to this object -\" from \"Object\"
+task
+140728069287616"]
+	1847135646336 -> 1847135480624
+	1847135480624 [label="I select \"- to this object -\" from \"Object\"
+task"]
+	1847135480432 [label="I select \"- this object -\" from \"Subject\"
+task
+140728069287616"]
+	1847135646336 -> 1847135480432
+	1847135480432 [label="I select \"- this object -\" from \"Subject\"
+task"]
+	1847135480528 [label="I select \"- has this relationship -\" from \"Relates to\"
+task
+140728069287616"]
+	1847135646336 -> 1847135480528
+	1847135480528 [label="I select \"- has this relationship -\" from \"Relates to\"
+task"]
+	1847135480576 [label="I select \"starbuck0 : starbuck item number 0\" from \"Subject\"
+task
+140728069287616"]
+	1847135646336 -> 1847135480576
+	1847135480576 [label="I select \"starbuck0 : starbuck item number 0\" from \"Subject\"
+task"]
+	1847135480480 [label="I pause
+task
+140728069287616"]
+	1847135479760 -> 1847135480480
+	1847135480480 [label="I pause
+task"]
+	1847135480720 [label="I press \"Update\"
+task
+140728069287616"]
+	1847135479760 -> 1847135480720
+	1847135480720 [label="I press \"Update\"
+task"]
+	1847135480000 [label="Edit connections page interactively displays selected item descriptions
+goal
+1847135481392"]
+	1847135470976 -> 1847135480000
+	1847135480000 [label="Edit connections page interactively displays selected item descriptions
+goal"]
+	1847135481440 [label="I am on the edit connections page for \"ColonialViper0\" \"shootsAt1\" \"CylonRaider2\"
+task
+140728069287616"]
+	1847135480000 -> 1847135481440
+	1847135481440 [label="I am on the edit connections page for \"ColonialViper0\" \"shootsAt1\" \"CylonRaider2\"
+task"]
+	1847135480672 [label="I pause something
+goal
+140728069287616"]
+	1847135480000 -> 1847135480672
+	1847135480672 [label="I pause something
+goal"]
+	1847135481488 [label="I pause
+task
+140728069287616"]
+	1847135480672 -> 1847135481488
+	1847135481488 [label="I pause
+task"]
+	1847135481584 [label="I pause
+task
+140728069287616"]
+	1847135480672 -> 1847135481584
+	1847135481584 [label="I pause
+task"]
+	1847135481680 [label="I pause
+task
+140728069287616"]
+	1847135480672 -> 1847135481680
+	1847135481680 [label="I pause
+task"]
+	1847135481776 [label="I pause
+task
+140728069287616"]
+	1847135480672 -> 1847135481776
+	1847135481776 [label="I pause
+task"]
+	1847135480384 [label="I select something
+goal
+140728069287616"]
+	1847135480000 -> 1847135480384
+	1847135480384 [label="I select something
+goal"]
+	1847135481536 [label="I select \"CylonRaider1 : CylonRaider item number 1\" from \"Subject\"
+task
+140728069287616"]
+	1847135480384 -> 1847135481536
+	1847135481536 [label="I select \"CylonRaider1 : CylonRaider item number 1\" from \"Subject\"
+task"]
+	1847135481632 [label="I select \"shootsAt0 : shootsAt item number 0\" from \"Relates to\"
+task
+140728069287616"]
+	1847135480384 -> 1847135481632
+	1847135481632 [label="I select \"shootsAt0 : shootsAt item number 0\" from \"Relates to\"
+task"]
+	1847135481728 [label="I select \"ColonialViper1 : ColonialViper item number 1\" from \"Object\"
+task
+140728069287616"]
+	1847135480384 -> 1847135481728
+	1847135481728 [label="I select \"ColonialViper1 : ColonialViper item number 1\" from \"Object\"
+task"]
+	1847135480864 [label="tell about bad inputs before I submit a page.
+goal
+140728069287616"]
+	1847135498352 -> 1847135480864
+	1847135480864 [label="tell about bad inputs before I submit a page.
+goal"]
+	1847134162752 [label="page generate name
+goal
+140728069287616"]
+	1847135480864 -> 1847134162752
+	1847134162752 [label="page generate name
+goal"]
+	1847135621600 [label="page generates a Name from a Title
+goal
+1847135622128"]
+	1847134162752 -> 1847135621600
+	1847135621600 [label="page generates a Name from a Title
+goal"]
+	1847135622032 [label="More page generates a Name from a Title
+goal
+1847135622512"]
+	1847134162752 -> 1847135622032
+	1847135622032 [label="More page generates a Name from a Title
+goal"]
+	1847135622224 [label="auto Name generation disabled/enabled by editing Name
+goal
+1847135623328"]
+	1847135480864 -> 1847135622224
+	1847135622224 [label="auto Name generation disabled/enabled by editing Name
+goal"]
+	1847138482640 [label="I put focus
+goal
+140728069287616"]
+	1847135622224 -> 1847138482640
+	1847138482640 [label="I put focus
+goal"]
+	1847135622896 [label="I put the focus on the \"item_title\" element
+task
+140728069287616"]
+	1847138482640 -> 1847135622896
+	1847135622896 [label="I put the focus on the \"item_title\" element
+task"]
+	1847135623040 [label="I put the focus on the \"item_name\" element
+task
+140728069287616"]
+	1847138482640 -> 1847135623040
+	1847135623040 [label="I put the focus on the \"item_name\" element
+task"]
+	1847135495136 [label="I pause something
+goal
+140728069287616"]
+	1847135622224 -> 1847135495136
+	1847135495136 [label="I pause something
+goal"]
+	1847135622944 [label="I pause
+task
+140728069287616"]
+	1847135495136 -> 1847135622944
+	1847135622944 [label="I pause
+task"]
+	1847135623088 [label="I pause
+task
+140728069287616"]
+	1847135495136 -> 1847135623088
+	1847135623088 [label="I pause
+task"]
+	1847135498256 [label="I type something
+goal
+140728069287616"]
+	1847135622224 -> 1847135498256
+	1847135498256 [label="I type something
+goal"]
+	1847135623136 [label="I type \"Again\"
+task
+140728069287616"]
+	1847135498256 -> 1847135623136
+	1847135623136 [label="I type \"Again\"
+task"]
+	1847135622992 [label="I type \"another good title--for testing!\"
+task
+140728069287616"]
+	1847135498256 -> 1847135622992
+	1847135622992 [label="I type \"another good title--for testing!\"
+task"]
+	1847135622848 [label="I fill in \"Title\" with \"but not this title!\"
+task
+140728069287616"]
+	1847135622224 -> 1847135622848
+	1847135622848 [label="I fill in \"Title\" with \"but not this title!\"
+task"]
+	1847135622608 [label="non-changing acts on Name field don't block auto generation
+goal
+1847135624960"]
+	1847135480864 -> 1847135622608
+	1847135622608 [label="non-changing acts on Name field don't block auto generation
+goal"]
+	1847138475824 [label="I put focus
+goal
+140728069287616"]
+	1847135622608 -> 1847138475824
+	1847138475824 [label="I put focus
+goal"]
+	1847135624096 [label="I put the focus on the \"item_title\" element
+task
+140728069287616"]
+	1847138475824 -> 1847135624096
+	1847135624096 [label="I put the focus on the \"item_title\" element
+task"]
+	1847135624432 [label="I put the focus on the \"item_title\" element
+task
+140728069287616"]
+	1847138475824 -> 1847135624432
+	1847135624432 [label="I put the focus on the \"item_title\" element
+task"]
+	1847135501328 [label="I pause something
+goal
+140728069287616"]
+	1847135622608 -> 1847135501328
+	1847135501328 [label="I pause something
+goal"]
+	1847135624144 [label="I pause
+task
+140728069287616"]
+	1847135501328 -> 1847135624144
+	1847135624144 [label="I pause
+task"]
+	1847135624240 [label="I pause
+task
+140728069287616"]
+	1847135501328 -> 1847135624240
+	1847135624240 [label="I pause
+task"]
+	1847135624480 [label="I pause
+task
+140728069287616"]
+	1847135501328 -> 1847135624480
+	1847135624480 [label="I pause
+task"]
+	1847135624864 [label="I pause
+task
+140728069287616"]
+	1847135501328 -> 1847135624864
+	1847135624864 [label="I pause
+task"]
+	1847132862304 [label="I type something
+goal
+140728069287616"]
+	1847135622608 -> 1847132862304
+	1847132862304 [label="I type something
+goal"]
+	1847135624192 [label="I type \"PoRtIo\"
+task
+140728069287616"]
+	1847132862304 -> 1847135624192
+	1847135624192 [label="I type \"PoRtIo\"
+task"]
+	1847132848192 [label="I type key
+goal
+140728069287616"]
+	1847132862304 -> 1847132848192
+	1847132848192 [label="I type key
+goal"]
+	1847135624288 [label="I type the \"Tab\" special key
+task
+140728069287616"]
+	1847132848192 -> 1847135624288
+	1847135624288 [label="I type the \"Tab\" special key
+task"]
+	1847135624336 [label="I type the \"Left\" special key
+task
+140728069287616"]
+	1847132848192 -> 1847135624336
+	1847135624336 [label="I type the \"Left\" special key
+task"]
+	1847135624384 [label="I type the \"Left\" special key
+task
+140728069287616"]
+	1847132848192 -> 1847135624384
+	1847135624384 [label="I type the \"Left\" special key
+task"]
+	1847135624576 [label="I type the \"Up\" special key
+task
+140728069287616"]
+	1847132848192 -> 1847135624576
+	1847135624576 [label="I type the \"Up\" special key
+task"]
+	1847135624624 [label="I type the \"Left\" special key
+task
+140728069287616"]
+	1847132848192 -> 1847135624624
+	1847135624624 [label="I type the \"Left\" special key
+task"]
+	1847135624672 [label="I type the \"Escape\" special key
+task
+140728069287616"]
+	1847132848192 -> 1847135624672
+	1847135624672 [label="I type the \"Escape\" special key
+task"]
+	1847135624720 [label="I type the \"Left\" special key
+task
+140728069287616"]
+	1847132848192 -> 1847135624720
+	1847135624720 [label="I type the \"Left\" special key
+task"]
+	1847135624768 [label="I type the \"Down\" special key
+task
+140728069287616"]
+	1847132848192 -> 1847135624768
+	1847135624768 [label="I type the \"Down\" special key
+task"]
+	1847135623616 [label="tell about bad inputs before I submit a page.
+goal
+140728069287616"]
+	1847135498352 -> 1847135623616
+	1847135623616 [label="tell about bad inputs before I submit a page.
+goal"]
+	1847135626352 [label="More errors flagged if bad first character
+goal
+1847135626736"]
+	1847135623616 -> 1847135626352
+	1847135626352 [label="More errors flagged if bad first character
+goal"]
+	1847135626688 [label="I fill in \"Name\" with <badName>
+task
+140728069287616"]
+	1847135626352 -> 1847135626688
+	1847135626688 [label="I fill in \"Name\" with <badName>
+task"]
+	1847135059104 [label="error flag character
+goal
+140728069287616"]
+	1847135623616 -> 1847135059104
+	1847135059104 [label="error flag character
+goal"]
+	1847135626208 [label="error flagged if items/new's Name has bad first character
+goal
+140728069287616"]
+	1847135059104 -> 1847135626208
+	1847135626208 [label="error flagged if items/new's Name has bad first character
+goal"]
+	1847135626400 [label="I am on the new items page
+task
+140728069287616"]
+	1847135626208 -> 1847135626400
+	1847135626400 [label="I am on the new items page
+task"]
+	1847135626496 [label="I select \"Property\" from \"Type\"
+task
+140728069287616"]
+	1847135626208 -> 1847135626496
+	1847135626496 [label="I select \"Property\" from \"Type\"
+task"]
+	1847133037776 [label="I fill
+in something
+goal
+140728069287616"]
+	1847135626208 -> 1847133037776
+	1847133037776 [label="I fill
+in something
+goal"]
+	1847135626544 [label="I fill in \"Title\" with \"A property's title\"
+task
+140728069287616"]
+	1847133037776 -> 1847135626544
+	1847135626544 [label="I fill in \"Title\" with \"A property's title\"
+task"]
+	1847135626592 [label="I fill in \"Name\" with \"temporaryGoodName0-_\"
+task
+140728069287616"]
+	1847133037776 -> 1847135626592
+	1847135626592 [label="I fill in \"Name\" with \"temporaryGoodName0-_\"
+task"]
+	1847135626448 [label="I fill in \"Name\" with \" badNameStartsWithASpace\"
+task
+140728069287616"]
+	1847133037776 -> 1847135626448
+	1847135626448 [label="I fill in \"Name\" with \" badNameStartsWithASpace\"
+task"]
+	1847135626640 [label="error flagged if items/new's Name has bad 2nd+ character
+goal
+1847135627360"]
+	1847135059104 -> 1847135626640
+	1847135626640 [label="error flagged if items/new's Name has bad 2nd+ character
+goal"]
+	1847135627264 [label="I am on the new items page
+task
+140728069287616"]
+	1847135626640 -> 1847135627264
+	1847135627264 [label="I am on the new items page
+task"]
+	1847135627312 [label="I fill in \"Name\" with <badName>
+task
+140728069287616"]
+	1847135626640 -> 1847135627312
+	1847135627312 [label="I fill in \"Name\" with <badName>
+task"]
+	1847135625920 [label="tell about bad inputs before I submit a page.
+goal
+140728069287616"]
+	1847135498352 -> 1847135625920
+	1847135625920 [label="tell about bad inputs before I submit a page.
+goal"]
+	1847135628416 [label="I am on the new items page
+task
+140728069287616"]
+	1847135625920 -> 1847135628416
+	1847135628416 [label="I am on the new items page
+task"]
+	1847135628464 [label="I fill in \"Name\" with \"alreadyExisting0\"
+task
+140728069287616"]
+	1847135625920 -> 1847135628464
+	1847135628464 [label="I fill in \"Name\" with \"alreadyExisting0\"
+task"]
+	1847135628512 [label="I wait 0.20 seconds
+task
+140728069287616"]
+	1847135625920 -> 1847135628512
+	1847135628512 [label="I wait 0.20 seconds
+task"]
+	1847135628560 [label="I wait for Ajax requests to complete
+task
+140728069287616"]
+	1847135625920 -> 1847135628560
+	1847135628560 [label="I wait for Ajax requests to complete
+task"]
+	1847135628608 [label="I fill in \"Name\" with \"anUnusedItemName\"
+task
+140728069287616"]
+	1847135625920 -> 1847135628608
+	1847135628608 [label="I fill in \"Name\" with \"anUnusedItemName\"
+task"]
+	1847135628704 [label="I wait for Ajax requests to complete
+task
+140728069287616"]
+	1847135625920 -> 1847135628704
+	1847135628704 [label="I wait for Ajax requests to complete
+task"]
+	1847135628752 [label="I pause
+task
+140728069287616"]
+	1847135625920 -> 1847135628752
+	1847135628752 [label="I pause
+task"]
+	1847135628368 [label="tell about bad inputs before I submit a page.
+goal
+140728069287616"]
+	1847135498352 -> 1847135628368
+	1847135628368 [label="tell about bad inputs before I submit a page.
+goal"]
+	1847135631920 [label="Empty form starts focus in tab order after Class selector
+goal
+140728069287616"]
+	1847135628368 -> 1847135631920
+	1847135631920 [label="Empty form starts focus in tab order after Class selector
+goal"]
+	1847135632544 [label="I am on the new items page
+task
+140728069287616"]
+	1847135631920 -> 1847135632544
+	1847135632544 [label="I am on the new items page
+task"]
+	1847135632592 [label="I pause
+task
+140728069287616"]
+	1847135631920 -> 1847135632592
+	1847135632592 [label="I pause
+task"]
+	1847135632640 [label="I put the focus on the \"item_class_item_id\" element
+task
+140728069287616"]
+	1847135631920 -> 1847135632640
+	1847135632640 [label="I put the focus on the \"item_class_item_id\" element
+task"]
+	1847135632688 [label="I type the \"Tab\" special key
+task
+140728069287616"]
+	1847135631920 -> 1847135632688
+	1847135632688 [label="I type the \"Tab\" special key
+task"]
+	1847135047920 [label="empty
+form display something
+goal
+140728069287616"]
+	1847135628368 -> 1847135047920
+	1847135047920 [label="empty
+form display something
+goal"]
+	1847135632448 [label="Empty form incrementally displays flag text/icons
+goal
+140728069287616"]
+	1847135047920 -> 1847135632448
+	1847135632448 [label="Empty form incrementally displays flag text/icons
+goal"]
+	1847135632784 [label="I am on the new items page
+task
+140728069287616"]
+	1847135632448 -> 1847135632784
+	1847135632784 [label="I am on the new items page
+task"]
+	1847135488224 [label="I pause something
+goal
+140728069287616"]
+	1847135632448 -> 1847135488224
+	1847135488224 [label="I pause something
+goal"]
+	1847135632832 [label="I pause
+task
+140728069287616"]
+	1847135488224 -> 1847135632832
+	1847135632832 [label="I pause
+task"]
+	1847135632928 [label="I pause
+task
+140728069287616"]
+	1847135488224 -> 1847135632928
+	1847135632928 [label="I pause
+task"]
+	1847135633024 [label="I pause
+task
+140728069287616"]
+	1847135488224 -> 1847135633024
+	1847135633024 [label="I pause
+task"]
+	1847135633120 [label="I pause
+task
+140728069287616"]
+	1847135488224 -> 1847135633120
+	1847135633120 [label="I pause
+task"]
+	1847135633216 [label="I pause
+task
+140728069287616"]
+	1847135488224 -> 1847135633216
+	1847135633216 [label="I pause
+task"]
+	1847135647056 [label="I type key
+goal
+140728069287616"]
+	1847135632448 -> 1847135647056
+	1847135647056 [label="I type key
+goal"]
+	1847135632880 [label="I type the \"Tab\" special key
+task
+140728069287616"]
+	1847135647056 -> 1847135632880
+	1847135632880 [label="I type the \"Tab\" special key
+task"]
+	1847135632976 [label="I type the \"Tab\" special key
+task
+140728069287616"]
+	1847135647056 -> 1847135632976
+	1847135632976 [label="I type the \"Tab\" special key
+task"]
+	1847135633072 [label="I type the \"Tab\" special key
+task
+140728069287616"]
+	1847135647056 -> 1847135633072
+	1847135633072 [label="I type the \"Tab\" special key
+task"]
+	1847135633168 [label="I type the \"Tab\" special key
+task
+140728069287616"]
+	1847135647056 -> 1847135633168
+	1847135633168 [label="I type the \"Tab\" special key
+task"]
+	1847135632496 [label="Empty form displays flags & dialog on (disabled) Create click
+goal
+140728069287616"]
+	1847135047920 -> 1847135632496
+	1847135632496 [label="Empty form displays flags & dialog on (disabled) Create click
+goal"]
+	1847135633312 [label="I am on the new items page
+task
+140728069287616"]
+	1847135632496 -> 1847135633312
+	1847135633312 [label="I am on the new items page
+task"]
+	1847135623472 [label="I pause something
+goal
+140728069287616"]
+	1847135632496 -> 1847135623472
+	1847135623472 [label="I pause something
+goal"]
+	1847135633360 [label="I pause
+task
+140728069287616"]
+	1847135623472 -> 1847135633360
+	1847135633360 [label="I pause
+task"]
+	1847135633520 [label="I pause
+task
+140728069287616"]
+	1847135623472 -> 1847135633520
+	1847135633520 [label="I pause
+task"]
+	1847135633472 [label="I press \"Create\"
+task
+140728069287616"]
+	1847135632496 -> 1847135633472
+	1847135633472 [label="I press \"Create\"
+task"]
+	1847135632736 [label="Inputs flagged for being empty are unflagged when filled in
+goal
+1847135633568"]
+	1847135628368 -> 1847135632736
+	1847135632736 [label="Inputs flagged for being empty are unflagged when filled in
+goal"]
+	1847135633616 [label="I fill in \"Name\" with \"aNewItem\"
+task
+140728069287616"]
+	1847135632736 -> 1847135633616
+	1847135633616 [label="I fill in \"Name\" with \"aNewItem\"
+task"]
+	1847135633664 [label="I pause
+task
+140728069287616"]
+	1847135632736 -> 1847135633664
+	1847135633664 [label="I pause
+task"]
+	1847135633264 [label="When all fields are filled in, submit button is enabled
+goal
+1847135634000"]
+	1847135628368 -> 1847135633264
+	1847135633264 [label="When all fields are filled in, submit button is enabled
+goal"]
+	1847135634048 [label="I put the focus on the \"item_submit\" element
+task
+140728069287616"]
+	1847135633264 -> 1847135634048
+	1847135634048 [label="I put the focus on the \"item_submit\" element
+task"]
+	1847135624528 [label="I pause something
+goal
+140728069287616"]
+	1847135633264 -> 1847135624528
+	1847135624528 [label="I pause something
+goal"]
+	1847135634096 [label="I pause
+task
+140728069287616"]
+	1847135624528 -> 1847135634096
+	1847135634096 [label="I pause
+task"]
+	1847135634144 [label="I pause
+task
+140728069287616"]
+	1847135624528 -> 1847135634144
+	1847135634144 [label="I pause
+task"]
+	1847135634240 [label="I pause
+task
+140728069287616"]
+	1847135624528 -> 1847135634240
+	1847135634240 [label="I pause
+task"]
+	1847135634336 [label="I pause
+task
+140728069287616"]
+	1847135624528 -> 1847135634336
+	1847135634336 [label="I pause
+task"]
+	1847135634432 [label="I pause
+task
+140728069287616"]
+	1847135624528 -> 1847135634432
+	1847135634432 [label="I pause
+task"]
+	1847135634528 [label="I pause
+task
+140728069287616"]
+	1847135624528 -> 1847135634528
+	1847135634528 [label="I pause
+task"]
+	1847133029568 [label="I fill
+in something
+goal
+140728069287616"]
+	1847135633264 -> 1847133029568
+	1847133029568 [label="I fill
+in something
+goal"]
+	1847135634192 [label="I fill in \"Description\" with \"Here's a new item\"
+task
+140728069287616"]
+	1847133029568 -> 1847135634192
+	1847135634192 [label="I fill in \"Description\" with \"Here's a new item\"
+task"]
+	1847135634288 [label="I fill in \"Title\" with \"Another new item\"
+task
+140728069287616"]
+	1847133029568 -> 1847135634288
+	1847135634288 [label="I fill in \"Title\" with \"Another new item\"
+task"]
+	1847135634480 [label="I fill in \"Name\" with \"aNewItem\"
+task
+140728069287616"]
+	1847133029568 -> 1847135634480
+	1847135634480 [label="I fill in \"Name\" with \"aNewItem\"
+task"]
+	1847135634384 [label="I select \"Individual\" from \"Type\"
+task
+140728069287616"]
+	1847135633264 -> 1847135634384
+	1847135634384 [label="I select \"Individual\" from \"Type\"
+task"]
+	1847135633760 [label="Re-empty fields in filled-out form
+goal
+140728069287616"]
+	1847135628368 -> 1847135633760
+	1847135633760 [label="Re-empty fields in filled-out form
+goal"]
+	1847135634912 [label="I am on the new items page
+task
+140728069287616"]
+	1847135633760 -> 1847135634912
+	1847135634912 [label="I am on the new items page
+task"]
+	1847135623184 [label="I pause something
+goal
+140728069287616"]
+	1847135633760 -> 1847135623184
+	1847135623184 [label="I pause something
+goal"]
+	1847135634960 [label="I pause
+task
+140728069287616"]
+	1847135623184 -> 1847135634960
+	1847135634960 [label="I pause
+task"]
+	1847135635104 [label="I pause
+task
+140728069287616"]
+	1847135623184 -> 1847135635104
+	1847135635104 [label="I pause
+task"]
+	1847135635248 [label="I pause
+task
+140728069287616"]
+	1847135623184 -> 1847135635248
+	1847135635248 [label="I pause
+task"]
+	1847135635392 [label="I pause
+task
+140728069287616"]
+	1847135623184 -> 1847135635392
+	1847135635392 [label="I pause
+task"]
+	1847135635488 [label="I pause
+task
+140728069287616"]
+	1847135623184 -> 1847135635488
+	1847135635488 [label="I pause
+task"]
+	1847135635632 [label="I pause
+task
+140728069287616"]
+	1847135623184 -> 1847135635632
+	1847135635632 [label="I pause
+task"]
+	1847135635728 [label="I pause
+task
+140728069287616"]
+	1847135623184 -> 1847135635728
+	1847135635728 [label="I pause
+task"]
+	1847135635824 [label="I pause
+task
+140728069287616"]
+	1847135623184 -> 1847135635824
+	1847135635824 [label="I pause
+task"]
+	1847135635920 [label="I pause
+task
+140728069287616"]
+	1847135623184 -> 1847135635920
+	1847135635920 [label="I pause
+task"]
+	1847135636016 [label="I pause
+task
+140728069287616"]
+	1847135623184 -> 1847135636016
+	1847135636016 [label="I pause
+task"]
+	1847135623376 [label="I select something
+goal
+140728069287616"]
+	1847135633760 -> 1847135623376
+	1847135623376 [label="I select something
+goal"]
+	1847135635008 [label="I select \"Category\" from \"Type\"
+task
+140728069287616"]
+	1847135623376 -> 1847135635008
+	1847135635008 [label="I select \"Category\" from \"Type\"
+task"]
+	1847135635968 [label="I select \"- type of item -\" from \"Type\"
+task
+140728069287616"]
+	1847135623376 -> 1847135635968
+	1847135635968 [label="I select \"- type of item -\" from \"Type\"
+task"]
+	1847135490192 [label="I type something
+goal
+140728069287616"]
+	1847135633760 -> 1847135490192
+	1847135490192 [label="I type something
+goal"]
+	1847135635152 [label="I type \"This is a Title\"
+task
+140728069287616"]
+	1847135490192 -> 1847135635152
+	1847135635152 [label="I type \"This is a Title\"
+task"]
+	1847135635584 [label="I type \"Here is a very simple description.\"
+task
+140728069287616"]
+	1847135490192 -> 1847135635584
+	1847135635584 [label="I type \"Here is a very simple description.\"
+task"]
+	1847135487552 [label="I type key
+goal
+140728069287616"]
+	1847135490192 -> 1847135487552
+	1847135487552 [label="I type key
+goal"]
+	1847135635056 [label="I type the \"Tab\" special key
+task
+140728069287616"]
+	1847135487552 -> 1847135635056
+	1847135635056 [label="I type the \"Tab\" special key
+task"]
+	1847135635200 [label="I type the \"Tab\" special key
+task
+140728069287616"]
+	1847135487552 -> 1847135635200
+	1847135635200 [label="I type the \"Tab\" special key
+task"]
+	1847135635344 [label="I type the \"Tab\" special key
+task
+140728069287616"]
+	1847135487552 -> 1847135635344
+	1847135635344 [label="I type the \"Tab\" special key
+task"]
+	1847135635440 [label="I type the \"Tab\" special key
+task
+140728069287616"]
+	1847135487552 -> 1847135635440
+	1847135635440 [label="I type the \"Tab\" special key
+task"]
+	1847135635536 [label="I put the focus on the \"item_description\" element
+task
+140728069287616"]
+	1847135633760 -> 1847135635536
+	1847135635536 [label="I put the focus on the \"item_description\" element
+task"]
+	1847133172016 [label="I fill something
+goal
+140728069287616"]
+	1847135633760 -> 1847133172016
+	1847133172016 [label="I fill something
+goal"]
+	1847135635680 [label="I fill in \"Name\" with \"\"
+task
+140728069287616"]
+	1847133172016 -> 1847135635680
+	1847135635680 [label="I fill in \"Name\" with \"\"
+task"]
+	1847135635776 [label="I fill in \"Title\" with \"\"
+task
+140728069287616"]
+	1847133172016 -> 1847135635776
+	1847135635776 [label="I fill in \"Title\" with \"\"
+task"]
+	1847135635872 [label="I fill in \"Description\" with \"\"
+task
+140728069287616"]
+	1847133172016 -> 1847135635872
+	1847135635872 [label="I fill in \"Description\" with \"\"
+task"]
+	1847133160208 [label=" change information
+goal
+140728069287616"]
+	1847135468128 -> 1847133160208
+	1847133160208 [label=" change information
+goal"]
+	1847135478368 [label="be able to change the information for existing connections.
+goal
+140728069287616"]
+	1847133160208 -> 1847135478368
+	1847135478368 [label="be able to change the information for existing connections.
+goal"]
+	1847135481872 [label="Change all fields of an existing connection
+goal
+1847135482400"]
+	1847135478368 -> 1847135481872
+	1847135481872 [label="Change all fields of an existing connection
+goal"]
+	1847135482352 [label="I press \"Update\"
+task
+140728069287616"]
+	1847135481872 -> 1847135482352
+	1847135482352 [label="I press \"Update\"
+task"]
+	1847135482304 [label="Change all fields of an existing connection, one in each of three ops
+goal
+1847135483264"]
+	1847135478368 -> 1847135482304
+	1847135482304 [label="Change all fields of an existing connection, one in each of three ops
+goal"]
+	1847138477840 [label="I press update
+goal
+140728069287616"]
+	1847135482304 -> 1847138477840
+	1847138477840 [label="I press update
+goal"]
+	1847135483120 [label="I press \"Update\"
+task
+140728069287616"]
+	1847138477840 -> 1847135483120
+	1847135483120 [label="I press \"Update\"
+task"]
+	1847135483168 [label="I press \"Update\"
+task
+140728069287616"]
+	1847138477840 -> 1847135483168
+	1847135483168 [label="I press \"Update\"
+task"]
+	1847135483216 [label="I press \"Update\"
+task
+140728069287616"]
+	1847138477840 -> 1847135483216
+	1847135483216 [label="I press \"Update\"
+task"]
+	1847135634624 [label="change the information for existing items.
+goal
+140728069287616"]
+	1847133160208 -> 1847135634624
+	1847135634624 [label="change the information for existing items.
+goal"]
+	1847133168560 [label=" change field
+goal
+140728069287616"]
+	1847135634624 -> 1847133168560
+	1847133168560 [label=" change field
+goal"]
+	1847135638176 [label="Change all fields of an existing item
+goal
+1847135638512"]
+	1847133168560 -> 1847135638176
+	1847135638176 [label="Change all fields of an existing item
+goal"]
+	1847135638416 [label="Change all fields of an existing item, one in each of three ops
+goal
+1847135639280"]
+	1847133168560 -> 1847135638416
+	1847135638416 [label="Change all fields of an existing item, one in each of three ops
+goal"]
+	1847135639136 [label="I press \"Update\"
+task
+140728069287616"]
+	1847135638416 -> 1847135639136
+	1847135639136 [label="I press \"Update\"
+task"]
+	1847135639184 [label="I press \"Update\"
+task
+140728069287616"]
+	1847135638416 -> 1847135639184
+	1847135639184 [label="I press \"Update\"
+task"]
+	1847135639232 [label="I press \"Update\"
+task
+140728069287616"]
+	1847135638416 -> 1847135639232
+	1847135639232 [label="I press \"Update\"
+task"]
+	1847135500128 [label="I try item
+goal
+140728069287616"]
+	1847135634624 -> 1847135500128
+	1847135500128 [label="I try item
+goal"]
+	1847135639376 [label="When I try to delete an item, it deletes
+goal
+1847135640240"]
+	1847135500128 -> 1847135639376
+	1847135639376 [label="When I try to delete an item, it deletes
+goal"]
+	1847135639856 [label="When I try to delete an in-use item, it doesn't
+goal
+1847135640720"]
+	1847135500128 -> 1847135639856
+	1847135639856 [label="When I try to delete an in-use item, it doesn't
+goal"]
+	1847135499744 [label=" build
+in something
+goal
+140728069287616"]
+	1847135634624 -> 1847135499744
+	1847135499744 [label=" build
+in something
+goal"]
+	1847135630624 [label="Delete links for user items, not for built-in items
+goal
+1847135631104"]
+	1847135499744 -> 1847135630624
+	1847135630624 [label="Delete links for user items, not for built-in items
+goal"]
+	1847135631008 [label="Edit links for user items, not for built-in items
+goal
+1847135625104"]
+	1847135499744 -> 1847135631008
+	1847135631008 [label="Edit links for user items, not for built-in items
+goal"]
+}

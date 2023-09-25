@@ -1,0 +1,76 @@
+{
+    "feature_name": "ACTIVATE SETTINGS (NO MODULES INSTALLED HERE - ONLY GROUPS)",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I need a \"sale.config.settings\" with oid: scen.sale_settings",
+                        "having:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "execute the setup"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"account.config.settings\" with oid: scen.account_settings",
+                        "having:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "execute the setup"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"res.groups\" with name: 'hidden menus' and oid: scen.no_voucher_group",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"ir.ui.menu\" with name: Sales Receipts",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"ir.ui.menu\" with name: Customer Payments",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"ir.ui.menu\" with name: Purchase Receipts",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"ir.ui.menu\" with name: Supplier Payments",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"ir.ui.menu\" with name: Journal Vouchers",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"ir.ui.menu\" with name: Automatic Reconciliation",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"ir.ui.menu\" with name: Multi-Currencies",
+                        "having:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            }
+        ]
+    }
+}

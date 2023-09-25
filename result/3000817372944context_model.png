@@ -1,0 +1,16 @@
+// 3000817379952 Context Model
+digraph {
+	3000817372944 [label=Context7]
+	3000817377456 [label="I will choose \"plugins/todo_list/spec/fixtures/project\" from the \"open_directory\" dialog"]
+	3000817372944 -> 3000817377456
+	3000817377456 [label="I will choose \"plugins/todo_list/spec/fixtures/project\" from the \"open_directory\" dialog"]
+	3000817372176 [label="I open a directory"]
+	3000817372944 -> 3000817372176
+	3000817372176 [label="I open a directory"]
+	3000817382352 [label="I select menu item \"Project/Todo List\""]
+	3000817372944 -> 3000817382352
+	3000817382352 [label="I select menu item \"Project/Todo List\""]
+	3000817370688 [label="I wait \"2\" seconds"]
+	3000817372944 -> 3000817370688
+	3000817370688 [label="I wait \"2\" seconds"]
+}

@@ -1,0 +1,129 @@
+{
+    "feature_name": "Multiple notebooks",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "there should be one notebook"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I make a new notebook"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be two notebooks"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I make a new notebook"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be two notebooks",
+                        "notebook 1 should have 1 tab",
+                        "notebook 2 should have 0 tabs"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I make a new notebook",
+                        "I open a new edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be two notebooks",
+                        "notebook 1 should have 1 tab",
+                        "notebook 2 should have 0 tabs"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I make a new notebook",
+                        "I move the tab to the other notebook"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "notebook 1 should have 0 tabs",
+                        "notebook 2 should have 1 tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Syndrome!\"",
+                        "I make a new notebook",
+                        "I move the tab to the other notebook"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "notebook 1 should have 0 tabs",
+                        "notebook 2 should have 1 tab",
+                        "the tab in notebook 2 should contain \"Syndrome!\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I make a new notebook",
+                        "I move the tab to the other notebook",
+                        "I move the tab to the other notebook"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "notebook 1 should have 1 tabs",
+                        "notebook 2 should have 0 tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I make a new notebook",
+                        "I close the current notebook"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be one notebook"
+                    ]
+                ]
+            }
+        ]
+    }
+}

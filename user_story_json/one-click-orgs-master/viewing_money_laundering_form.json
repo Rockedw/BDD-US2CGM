@@ -1,0 +1,30 @@
+{
+    "feature_name": "Viewing money laundering form",
+    "user_story": {
+        "as_a": "founder member",
+        "i_want": "view the Co-operatives UK money laundering form",
+        "so_that": "prepare our co-op for registration",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a draft co-op",
+                        "I am a founder member of the draft co-op",
+                        "the money laundering form has been filled in"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to Documents",
+                        "I follow \"Co-operatives UK Anti-Money Laundering Form\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a \".pdf\" download"
+                    ]
+                ]
+            }
+        ]
+    }
+}

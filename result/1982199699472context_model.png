@@ -1,0 +1,13 @@
+// 1982199699136 Context Model
+digraph {
+	1982199699472 [label=Context16]
+	1982199699760 [label="following users exist:"]
+	1982199699472 -> 1982199699760
+	1982199699760 [label="following users exist:"]
+	1982199699856 [label="a user with username \"bob\" is connected with \"alice\""]
+	1982199699472 -> 1982199699856
+	1982199699856 [label="a user with username \"bob\" is connected with \"alice\""]
+	1982199699952 [label="I sign in as \"bob@bob.bob\""]
+	1982199699472 -> 1982199699952
+	1982199699952 [label="I sign in as \"bob@bob.bob\""]
+}

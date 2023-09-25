@@ -1,0 +1,45 @@
+{
+    "feature_name": "Blocking a user from the stream",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I confirm the alert after I click on the first block button",
+                        "I go to the home page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see any posts in my stream"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on \"alice@alice.alice\"'s page",
+                        "I confirm the alert after I click on the profile block button"
+                    ],
+                    [
+                        "I go to the home page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Stop ignoring\" within \"#unblock_user_button\"",
+                        "\"All your base are belong to us!\" should be post 1"
+                    ],
+                    [
+                        "I should not see any posts in my stream"
+                    ]
+                ]
+            }
+        ]
+    }
+}

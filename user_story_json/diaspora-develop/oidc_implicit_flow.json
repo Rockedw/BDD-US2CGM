@@ -1,0 +1,77 @@
+{
+    "feature_name": "Access protected resources using implicit flow",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I register a new client",
+                        "I send a post request from that client to the authorization endpoint using a invalid client id",
+                        "I sign in as \"kent@kent.kent\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a message containing \"Invalid client id or redirect uri\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I register a new client",
+                        "I send a post request from that client to the authorization endpoint",
+                        "I sign in as \"kent@kent.kent\"",
+                        "I deny authorization to the client"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see any tokens in the redirect url"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I register a new client",
+                        "I send a post request from that client to the authorization endpoint",
+                        "I sign in as \"kent@kent.kent\"",
+                        "I give my consent and authorize the client",
+                        "I parse the bearer tokens and use it to access user info"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should receive \"kent\"'s id, username, and email"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I register a new client",
+                        "I sign in as \"kent@kent.kent\"",
+                        "I have signed in 5 minutes ago",
+                        "I send a post request from that client to the authorization endpoint with max age",
+                        "I sign in as \"kent@kent.kent\"",
+                        "I give my consent and authorize the client",
+                        "I parse the bearer tokens and use it to access user info"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should receive \"kent\"'s id, username, and email"
+                    ]
+                ]
+            }
+        ]
+    }
+}

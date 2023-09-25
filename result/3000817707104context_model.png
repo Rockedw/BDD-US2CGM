@@ -1,0 +1,19 @@
+// 3000817700624 Context Model
+digraph {
+	3000817707104 [label=Context31]
+	3000817699376 [label="there is 1 existing category like \"myCategory\""]
+	3000817707104 -> 3000817699376
+	3000817699376 [label="there is 1 existing category like \"myCategory\""]
+	3000817705280 [label="there is 1 existing individual like \"myItem\""]
+	3000817707104 -> 3000817705280
+	3000817705280 [label="there is 1 existing individual like \"myItem\""]
+	3000817702304 [label="there is an existing connection \"myItem0\" \"child_of\" \"myCategory0\""]
+	3000817707104 -> 3000817702304
+	3000817702304 [label="there is an existing connection \"myItem0\" \"child_of\" \"myCategory0\""]
+	3000817699856 [label="I am on the edit connections page for \"myItem0\" \"child_of\" \"myCategory0\""]
+	3000817707104 -> 3000817699856
+	3000817699856 [label="I am on the edit connections page for \"myItem0\" \"child_of\" \"myCategory0\""]
+	3000817697840 [label="I select \"parent_of : Parent Of (basic relationship)\" from \"Relates to\""]
+	3000817707104 -> 3000817697840
+	3000817697840 [label="I select \"parent_of : Parent Of (basic relationship)\" from \"Relates to\""]
+}

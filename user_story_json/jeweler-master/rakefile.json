@@ -1,0 +1,353 @@
+{
+    "feature_name": "generated Rakefile",
+    "user_story": {
+        "as_a": "user should be able to",
+        "i_want": "generate a Rakefile",
+        "so_that": "start a new gem",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I generate a project named 'the-perfect-gem' that is 'zomg, so good' and described as 'Descriptive'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'Rakefile' requires 'bundler'",
+                        "'Rakefile' sets up bundler using the default and development groups",
+                        "'Rakefile' requires 'rubygems'",
+                        "'Rakefile' requires 'rake'",
+                        "'Rakefile' requires 'rdoc/task'",
+                        "Rakefile has 'the-perfect-gem' for the Jeweler::Tasks name",
+                        "Rakefile has 'bar@example.com' for the Jeweler::Tasks email",
+                        "Rakefile has 'zomg, so good' for the Jeweler::Tasks summary",
+                        "Rakefile has 'Descriptive' for the Jeweler::Tasks description",
+                        "Rakefile has 'http://github.com/technicalpickles/the-perfect-gem' for the Jeweler::Tasks homepage",
+                        "Rakefile has 'MIT' for the Jeweler::Tasks license",
+                        "Rakefile instantiates a Jeweler::RubygemsDotOrgTasks",
+                        "Rakefile has a magic comment for UTF-8"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I generate a bacon project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'Rakefile' requires 'rcov/rcovtask'",
+                        "Rakefile has 'spec/**/*_spec.rb' for the Rake::TestTask pattern",
+                        "Rakefile has 'spec/**/*_spec.rb' for the Rcov::RcovTask pattern",
+                        "Rakefile has 'spec' in the Rcov::RcovTask libs",
+                        "Rakefile has \"spec\" as the default task"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I generate a minitest project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'Rakefile' requires 'rcov/rcovtask'",
+                        "Rakefile has 'test/**/test_*.rb' for the Rake::TestTask pattern",
+                        "Rakefile has 'test/**/test_*.rb' for the Rcov::RcovTask pattern",
+                        "Rakefile has 'test' in the Rcov::RcovTask libs",
+                        "Rakefile has \"test\" as the default task"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I generate a rspec project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'Rakefile' requires 'rspec/core'",
+                        "'Rakefile' requires 'rspec/core/rake_task'",
+                        "Rakefile has 'spec/**/*_spec.rb' for the RSpec::Core::RakeTask pattern",
+                        "Rakefile has \"spec\" as the default task"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I generate a shoulda project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'Rakefile' requires 'rcov/rcovtask'",
+                        "Rakefile has 'test/**/test_*.rb' for the Rake::TestTask pattern",
+                        "Rakefile has 'test/**/test_*.rb' for the Rcov::RcovTask pattern",
+                        "Rakefile has 'test' in the Rcov::RcovTask libs",
+                        "Rakefile has \"test\" as the default task"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I generate a micronaut project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'Rakefile' requires 'micronaut/rake_task'",
+                        "Rakefile has 'examples/**/*_example.rb' for the Micronaut::RakeTask pattern",
+                        "Rakefile has \"examples\" as the default task"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'Rakefile' requires 'rcov/rcovtask'"
+                    ],
+                    [
+                        "Rakefile has 'test/**/test_*.rb' for the Rake::TestTask pattern",
+                        "Rakefile has 'test/**/test_*.rb' for the Rcov::RcovTask pattern",
+                        "Rakefile has 'test' in the Rcov::RcovTask libs",
+                        "Rakefile has '--exclude \"gems/*\"' in the Rcov::RcovTask rcov_opts",
+                        "Rakefile has \"test\" as the default task"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I do not want cucumber stories"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "Rakefile does not require 'cucumber/rake/task'",
+                        "Rakefile does not instantiate a Cucumber::Rake::Task"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I want cucumber stories"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "Rakefile requires 'cucumber/rake/task'",
+                        "Rakefile instantiates a Cucumber::Rake::Task"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I do not want reek"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "Rakefile does not require 'reek/rake/task'",
+                        "Rakefile does not instantiate a Reek::Rake::Task"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I want reek"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "Rakefile requires 'reek/rake/task'",
+                        "Rakefile instantiates a Reek::Rake::Task"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I do not want roodi"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "Rakefile does not require 'roodi'",
+                        "Rakefile does not require 'roodi_task'",
+                        "Rakefile does not instantiate a RoodiTask"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I want roodi"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "Rakefile requires 'roodi'",
+                        "Rakefile requires 'roodi_task'",
+                        "Rakefile instantiates a RoodiTask"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I do not want rubyforge setup"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "Rakefile does not instantiate a Jeweler::RubyforgeTasks"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I want to use yard instead of rdoc"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'Rakefile' does not require 'rdoc/task'",
+                        "'Rakefile' requires 'yard'",
+                        "Rakefile instantiates a YARD::Rake::YardocTask"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I want to use rdoc instead of yard"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a testunit project named 'the-perfect-gem' that is 'zomg, so good'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'Rakefile' does not require 'yard'",
+                        "'Rakefile' requires 'rdoc/task'",
+                        "Rakefile does not instantiate a YARD::Rake::YardocTask",
+                        "Rakefile instantiates a Rake::RDocTask.new"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I generate a shindo project named 'the-perfect-gem' that is 'zomg, so good'",
+                        "'Rakefile' requires 'shindo/rake'",
+                        "Rakefile instantiates a Shindo::Rake.new",
+                        "Rakefile has \"tests\" as the default task"
+                    ]
+                ],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I want bundler"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a project named 'the-perfect-gem' that is 'zomg, so good' and described as 'Descriptive'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'Rakefile' requires 'bundler'",
+                        "'Rakefile' sets up bundler using the default and development groups",
+                        "Rakefile does not add 'jeweler' as a development dependency to Jeweler::Tasks"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I do not want bundler"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate a project named 'the-perfect-gem' that is 'zomg, so good' and described as 'Descriptive'"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "'Rakefile' does not require 'bundler'",
+                        "'Rakefile' does not setup bundler",
+                        "Rakefile adds 'jeweler' as a development dependency to Jeweler::Tasks"
+                    ]
+                ]
+            }
+        ]
+    }
+}

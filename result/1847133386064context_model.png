@@ -1,0 +1,13 @@
+// 1847133385920 Context Model
+digraph {
+	1847133386064 [label=Context6]
+	1847133384768 [label="I have an \"index.html\" page that contains \"Collections: {% for method in site.methods %}{{ method.relative_path }} {% endfor %}\""]
+	1847133386064 -> 1847133384768
+	1847133384768 [label="I have an \"index.html\" page that contains \"Collections: {% for method in site.methods %}{{ method.relative_path }} {% endfor %}\""]
+	1847133383520 [label="I have fixture collections"]
+	1847133386064 -> 1847133383520
+	1847133383520 [label="I have fixture collections"]
+	1847133385104 [label="I have a \"_config.yml\" file with content:"]
+	1847133386064 -> 1847133385104
+	1847133385104 [label="I have a \"_config.yml\" file with content:"]
+}

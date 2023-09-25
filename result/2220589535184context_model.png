@@ -1,0 +1,16 @@
+// 2220589534128 Context Model
+digraph {
+	2220589535184 [label=Context4]
+	2220589535328 [label="I have a _layouts directory"]
+	2220589535184 -> 2220589535328
+	2220589535328 [label="I have a _layouts directory"]
+	2220589535424 [label="I have the following page:"]
+	2220589535184 -> 2220589535424
+	2220589535424 [label="I have the following page:"]
+	2220589535520 [label="I have the following page:"]
+	2220589535184 -> 2220589535520
+	2220589535520 [label="I have the following page:"]
+	2220589535616 [label="I have a default layout that contains \"{{ site.pages | sort:'value' | map:'title' | join:', ' }}\""]
+	2220589535184 -> 2220589535616
+	2220589535616 [label="I have a default layout that contains \"{{ site.pages | sort:'value' | map:'title' | join:', ' }}\""]
+}

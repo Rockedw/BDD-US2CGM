@@ -1,0 +1,395 @@
+// Goal Model
+digraph {
+	1847132850544 [label="student
+goal"]
+	1847125305200 [label="
+goal
+1847125305536"]
+	1847132850544 -> 1847125305200
+	1847125305200 [label="
+goal"]
+	1847125306496 [label="Student should see activated offerings
+goal
+140728069287616"]
+	1847125305200 -> 1847125306496
+	1847125306496 [label="Student should see activated offerings
+goal"]
+	1847135057376 [label="I log
+out something
+goal
+140728069287616"]
+	1847125306496 -> 1847135057376
+	1847135057376 [label="I log
+out something
+goal"]
+	1847125298432 [label="I log out
+task
+140728069287616"]
+	1847135057376 -> 1847125298432
+	1847125298432 [label="I log out
+task"]
+	1847125295936 [label="I login with username: monty
+task
+140728069287616"]
+	1847135057376 -> 1847125295936
+	1847125295936 [label="I login with username: monty
+task"]
+	1847125301216 [label="Student should not see deactivated offerings
+goal
+140728069287616"]
+	1847125305200 -> 1847125301216
+	1847125301216 [label="Student should not see deactivated offerings
+goal"]
+	1847125304672 [label="I am on the teacher view of the class page for \"class_with_no_students\"
+task
+140728069287616"]
+	1847125301216 -> 1847125304672
+	1847125304672 [label="I am on the teacher view of the class page for \"class_with_no_students\"
+task"]
+	1847125296560 [label="I am on the class page for \"class_with_no_students\"
+task
+140728069287616"]
+	1847125301216 -> 1847125296560
+	1847125296560 [label="I am on the class page for \"class_with_no_students\"
+task"]
+	1847125298960 [label="I uncheck Active for the external activity \"Plant reproduction\"
+task
+140728069287616"]
+	1847125301216 -> 1847125298960
+	1847125298960 [label="I uncheck Active for the external activity \"Plant reproduction\"
+task"]
+	1847135057808 [label="I log
+out something
+goal
+140728069287616"]
+	1847125301216 -> 1847135057808
+	1847135057808 [label="I log
+out something
+goal"]
+	1847125303712 [label="I log out
+task
+140728069287616"]
+	1847135057808 -> 1847125303712
+	1847125303712 [label="I log out
+task"]
+	1847125297472 [label="I login with username: monty
+task
+140728069287616"]
+	1847135057808 -> 1847125297472
+	1847125297472 [label="I login with username: monty
+task"]
+	1847135052384 [label="I see something
+goal
+140728069287616"]
+	1847125301216 -> 1847135052384
+	1847135052384 [label="I see something
+goal"]
+	1847125299392 [label="I should see \"No offerings available.\" in the content
+task
+140728069287616"]
+	1847135052384 -> 1847125299392
+	1847125299392 [label="I should see \"No offerings available.\" in the content
+task"]
+	1847125295984 [label="I should not see \"run Plant reproduction\" in the content
+task
+140728069287616"]
+	1847135052384 -> 1847125295984
+	1847125295984 [label="I should not see \"run Plant reproduction\" in the content
+task"]
+	1847125303856 [label="
+goal
+1847125297184"]
+	1847132850544 -> 1847125303856
+	1847125303856 [label="
+goal"]
+	1847125300064 [label="Student forced to change password
+goal
+140728069287616"]
+	1847125303856 -> 1847125300064
+	1847125300064 [label="Student forced to change password
+goal"]
+	1847125307744 [label="I am logged in with the username student_password
+task
+140728069287616"]
+	1847125300064 -> 1847125307744
+	1847125307744 [label="I am logged in with the username student_password
+task"]
+	1847125301648 [label="I try to go to my home page
+task
+140728069287616"]
+	1847125300064 -> 1847125301648
+	1847125301648 [label="I try to go to my home page
+task"]
+	1847125308176 [label="Student tries to navigate to their preferences
+goal
+140728069287616"]
+	1847125303856 -> 1847125308176
+	1847125308176 [label="Student tries to navigate to their preferences
+goal"]
+	1847125310864 [label="I am logged in with the username student_password
+task
+140728069287616"]
+	1847125308176 -> 1847125310864
+	1847125310864 [label="I am logged in with the username student_password
+task"]
+	1847125298240 [label="I try to go to my preferences
+task
+140728069287616"]
+	1847125308176 -> 1847125298240
+	1847125298240 [label="I try to go to my preferences
+task"]
+	1847132857744 [label="student update something
+goal
+140728069287616"]
+	1847125303856 -> 1847132857744
+	1847132857744 [label="student update something
+goal"]
+	1847125311104 [label="Student updates password with errors
+goal
+140728069287616"]
+	1847132857744 -> 1847125311104
+	1847125311104 [label="Student updates password with errors
+goal"]
+	1847125311056 [label="I am logged in with the username student_password
+task
+140728069287616"]
+	1847125311104 -> 1847125311056
+	1847125311056 [label="I am logged in with the username student_password
+task"]
+	1847125296800 [label="I try to go to my home page
+task
+140728069287616"]
+	1847125311104 -> 1847125296800
+	1847125296800 [label="I try to go to my home page
+task"]
+	1847125297616 [label="I fill in \"New Password\" with \"c\"
+task
+140728069287616"]
+	1847125311104 -> 1847125297616
+	1847125297616 [label="I fill in \"New Password\" with \"c\"
+task"]
+	1847125300496 [label="I press \"Save\"
+task
+140728069287616"]
+	1847125311104 -> 1847125300496
+	1847125300496 [label="I press \"Save\"
+task"]
+	1847125306160 [label="Student updates password
+goal
+140728069287616"]
+	1847132857744 -> 1847125306160
+	1847125306160 [label="Student updates password
+goal"]
+	1847125303328 [label="I am logged in with the username student_password
+task
+140728069287616"]
+	1847125306160 -> 1847125303328
+	1847125303328 [label="I am logged in with the username student_password
+task"]
+	1847125301024 [label="I try to go to my home page
+task
+140728069287616"]
+	1847125306160 -> 1847125301024
+	1847125301024 [label="I try to go to my home page
+task"]
+	1847125308320 [label="I fill in \"New Password\" with \"xyzzypizza\"
+task
+140728069287616"]
+	1847125306160 -> 1847125308320
+	1847125308320 [label="I fill in \"New Password\" with \"xyzzypizza\"
+task"]
+	1847125300784 [label="I press \"Save\"
+task
+140728069287616"]
+	1847125306160 -> 1847125300784
+	1847125300784 [label="I press \"Save\"
+task"]
+	1847125302800 [label="run an External Activity that has been assigned to me
+goal
+1847125302368"]
+	1847132850544 -> 1847125302800
+	1847125302800 [label="run an External Activity that has been assigned to me
+goal"]
+	1847125307264 [label="the external activity \"My Activity\" is assigned to the class \"Class_with_no_assignment\"
+task
+140728069287616"]
+	1847125302800 -> 1847125307264
+	1847125307264 [label="the external activity \"My Activity\" is assigned to the class \"Class_with_no_assignment\"
+task"]
+	1847125309664 [label="I am logged in with the username student
+task
+140728069287616"]
+	1847125302800 -> 1847125309664
+	1847125309664 [label="I am logged in with the username student
+task"]
+	1847125298096 [label="I go to my classes page
+task
+140728069287616"]
+	1847125302800 -> 1847125298096
+	1847125298096 [label="I go to my classes page
+task"]
+	1847125305248 [label="I follow \"Class_with_no_assignment\" within left panel for class navigation
+task
+140728069287616"]
+	1847125302800 -> 1847125305248
+	1847125305248 [label="I follow \"Class_with_no_assignment\" within left panel for class navigation
+task"]
+	1847125302128 [label="I should see an external run link to \"mock_html/test-external-activity.html\"
+task
+140728069287616"]
+	1847125302800 -> 1847125302128
+	1847125302128 [label="I should see an external run link to \"mock_html/test-external-activity.html\"
+task"]
+	1847125305776 [label="join the class after I have already registered
+goal
+1847125296656"]
+	1847132850544 -> 1847125305776
+	1847125305776 [label="join the class after I have already registered
+goal"]
+	1847125300256 [label="student join class
+goal
+140728069287616"]
+	1847125305776 -> 1847125300256
+	1847125300256 [label="student join class
+goal"]
+	1847125300688 [label="Student joins another class
+goal
+140728069287616"]
+	1847125300256 -> 1847125300688
+	1847125300688 [label="Student joins another class
+goal"]
+	1847125307936 [label="Student joins another class with invalid information
+goal
+1847125307408"]
+	1847125300256 -> 1847125307936
+	1847125307936 [label="Student joins another class with invalid information
+goal"]
+	1847125307168 [label="I fill
+in something
+goal
+140728069287616"]
+	1847125307936 -> 1847125307168
+	1847125307168 [label="I fill
+in something
+goal"]
+	1847125310816 [label="I fill in \"classWord\" with \"invalid-word\"
+task
+140728069287616"]
+	1847125307168 -> 1847125310816
+	1847125310816 [label="I fill in \"classWord\" with \"invalid-word\"
+task"]
+	1847125296272 [label="I fill in \"classWord\" with \"word\"
+task
+140728069287616"]
+	1847125307168 -> 1847125296272
+	1847125296272 [label="I fill in \"classWord\" with \"word\"
+task"]
+	1847125301552 [label="I press submit
+goal
+140728069287616"]
+	1847125307936 -> 1847125301552
+	1847125301552 [label="I press submit
+goal"]
+	1847125300928 [label="I press \"Submit\"
+task
+140728069287616"]
+	1847125301552 -> 1847125300928
+	1847125300928 [label="I press \"Submit\"
+task"]
+	1847125302320 [label="I press \"Submit\"
+task
+140728069287616"]
+	1847125301552 -> 1847125302320
+	1847125302320 [label="I press \"Submit\"
+task"]
+	1847125309136 [label="I wait 1 second
+task
+140728069287616"]
+	1847125307936 -> 1847125309136
+	1847125309136 [label="I wait 1 second
+task"]
+	1847133287520 [label="the
+default
+class enable class
+goal
+140728069287616"]
+	1847125305776 -> 1847133287520
+	1847133287520 [label="the
+default
+class enable class
+goal"]
+	1847125295264 [label="With the default class enabled, student joins another class
+goal
+1847125302464"]
+	1847133287520 -> 1847125295264
+	1847125295264 [label="With the default class enabled, student joins another class
+goal"]
+	1847125300160 [label="With the default class enabled, student joins another class with invalid information
+goal
+1847125295552"]
+	1847133287520 -> 1847125300160
+	1847125300160 [label="With the default class enabled, student joins another class with invalid information
+goal"]
+	1847125295456 [label="I fill
+in something
+goal
+140728069287616"]
+	1847125300160 -> 1847125295456
+	1847125295456 [label="I fill
+in something
+goal"]
+	1847125304624 [label="I fill in \"classWord\" with \"invalid-word\"
+task
+140728069287616"]
+	1847125295456 -> 1847125304624
+	1847125304624 [label="I fill in \"classWord\" with \"invalid-word\"
+task"]
+	1847125310000 [label="I fill in \"classWord\" with \"word\"
+task
+140728069287616"]
+	1847125295456 -> 1847125310000
+	1847125310000 [label="I fill in \"classWord\" with \"word\"
+task"]
+	1847133290064 [label="I press submit
+goal
+140728069287616"]
+	1847125300160 -> 1847133290064
+	1847133290064 [label="I press submit
+goal"]
+	1847125297664 [label="I press \"Submit\"
+task
+140728069287616"]
+	1847133290064 -> 1847125297664
+	1847125297664 [label="I press \"Submit\"
+task"]
+	1847125309952 [label="I press \"Submit\"
+task
+140728069287616"]
+	1847133290064 -> 1847125309952
+	1847125309952 [label="I press \"Submit\"
+task"]
+	1847125299824 [label="I wait 1 second
+task
+140728069287616"]
+	1847125300160 -> 1847125299824
+	1847125299824 [label="I wait 1 second
+task"]
+	1847125296032 [label="I should not see project specific links
+goal
+1847125304960"]
+	1847132850544 -> 1847125296032
+	1847125296032 [label="I should not see project specific links
+goal"]
+	1847133274464 [label="Student not in project visits homepage
+goal
+140728069287616"]
+	1847125296032 -> 1847133274464
+	1847133274464 [label="Student not in project visits homepage
+goal"]
+	1847133283344 [label="Student in project visits homepage
+goal
+1847133282000"]
+	1847125296032 -> 1847133283344
+	1847133283344 [label="Student in project visits homepage
+goal"]
+}

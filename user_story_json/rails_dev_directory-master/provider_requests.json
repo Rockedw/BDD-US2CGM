@@ -1,0 +1,66 @@
+{
+    "feature_name": "Provider requests",
+    "user_story": {
+        "as_a": "n Engine Yard administrator",
+        "i_want": "see the RFPs that a provider has generated",
+        "so_that": "I can monitor the performance of the system",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Jinglicious\" with an RFP called \"Nice work finger\""
+                    ],
+                    [
+                        "a provider \"Tim Stafford\" with an RFP called \"Through the window of a train\"",
+                        "a logged in admin user"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the admin dashboard",
+                        "I follow \"Developers\"",
+                        "I follow \"Jinglicious\"",
+                        "I follow \"provider.rfps\" translation"
+                    ],
+                    [
+                        "I follow \"Nice work finger\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Nice work finger\""
+                    ],
+                    [
+                        "I should not see \"Through the window of a train\""
+                    ],
+                    [
+                        "I should see \"It's such an interesting project, what do you think?\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a provider \"Willy Wallow\" with an RFP called \"Spamtastic\"",
+                        "a logged in admin user"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on the admin dashboard",
+                        "I follow \"Developers\"",
+                        "I follow \"Willy Wallow\"",
+                        "I follow \"provider.rfps\" translation",
+                        "I follow \"Spamtastic\"",
+                        "I press \"Delete Request\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"rfp.deleted_successfully\" translation"
+                    ]
+                ]
+            }
+        ]
+    }
+}

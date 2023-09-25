@@ -1,0 +1,16 @@
+// 1847134461264 Context Model
+digraph {
+	1847134462416 [label=Context7]
+	1847134462560 [label="I have a configuration file with \"theme\" set to \"test-theme\""]
+	1847134462416 -> 1847134462560
+	1847134462560 [label="I have a configuration file with \"theme\" set to \"test-theme\""]
+	1847134462656 [label="I have an assets directory"]
+	1847134462416 -> 1847134462656
+	1847134462656 [label="I have an assets directory"]
+	1847134462752 [label="I have an \"assets/application.coffee\" file that contains \"From your site.\""]
+	1847134462416 -> 1847134462752
+	1847134462752 [label="I have an \"assets/application.coffee\" file that contains \"From your site.\""]
+	1847134462848 [label="I have an \"assets/base.js\" file that contains \"From your site.\""]
+	1847134462416 -> 1847134462848
+	1847134462848 [label="I have an \"assets/base.js\" file that contains \"From your site.\""]
+}

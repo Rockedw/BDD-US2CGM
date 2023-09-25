@@ -1,0 +1,13 @@
+// 1998092577920 Context Model
+digraph {
+	1998092579264 [label=Context9]
+	1998092579408 [label="I have a movies/_posts directory"]
+	1998092579264 -> 1998092579408
+	1998092579408 [label="I have a movies/_posts directory"]
+	1998092579504 [label="I have the following post in \"movies\":"]
+	1998092579264 -> 1998092579504
+	1998092579504 [label="I have the following post in \"movies\":"]
+	1998092579600 [label="I have an \"index.md\" page that contains \"[Movies]({% post_url 2019-02-04-hello-world %})\""]
+	1998092579264 -> 1998092579600
+	1998092579600 [label="I have an \"index.md\" page that contains \"[Movies]({% post_url 2019-02-04-hello-world %})\""]
+}

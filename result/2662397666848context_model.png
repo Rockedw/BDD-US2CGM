@@ -1,0 +1,13 @@
+// 2662397658592 Context Model
+digraph {
+	2662397666848 [label=Context3]
+	2662397671984 [label="I am signed in"]
+	2662397666848 -> 2662397671984
+	2662397671984 [label="I am signed in"]
+	2662397670928 [label="I have following aspects:"]
+	2662397666848 -> 2662397670928
+	2662397670928 [label="I have following aspects:"]
+	2662397671600 [label="I go to the edit user page"]
+	2662397666848 -> 2662397671600
+	2662397671600 [label="I go to the edit user page"]
+}

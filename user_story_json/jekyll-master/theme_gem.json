@@ -1,0 +1,76 @@
+{
+    "feature_name": "Building Theme Gems",
+    "user_story": {
+        "as_a": "hacker who likes to share my expertise",
+        "i_want": "be able to make a bonafide rubygem off my theme",
+        "so_that": "share my awesome style skillz with other Jekyllites",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I run jekyll new-theme my-cool-theme"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the my-cool-theme directory should exist"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I run jekyll new-theme my-cool-theme"
+                    ],
+                    [
+                        "I decide to build the theme gem"
+                    ],
+                    [
+                        "I run git add ."
+                    ],
+                    [
+                        "I run gem build --force my-cool-theme.gemspec"
+                    ],
+                    [
+                        "I run gem unpack my-cool-theme-0.1.0.gem"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the my-cool-theme directory should exist"
+                    ],
+                    [
+                        "the \"_includes/blank.html\" file should exist"
+                    ],
+                    [
+                        "the \"_sass/blank.scss\" file should exist"
+                    ],
+                    [
+                        "the \"assets/blank.scss\" file should exist"
+                    ],
+                    [
+                        "I should get an updated git index"
+                    ],
+                    [
+                        "the \"./my-cool-theme-0.1.0.gem\" file should exist"
+                    ],
+                    [
+                        "the my-cool-theme-0.1.0 directory should exist",
+                        "the \"my-cool-theme-0.1.0/_layouts/default.html\" file should exist",
+                        "the \"my-cool-theme-0.1.0/_includes/blank.html\" file should exist",
+                        "the \"my-cool-theme-0.1.0/_sass/blank.scss\" file should exist",
+                        "the \"my-cool-theme-0.1.0/assets/blank.scss\" file should exist",
+                        "the \"my-cool-theme-0.1.0/_config.yml\" file should exist",
+                        "the my-cool-theme-0.1.0/.git directory should not exist",
+                        "the \"my-cool-theme-0.1.0/.gitignore\" file should not exist",
+                        "the \"my-cool-theme-0.1.0/Gemfile\" file should not exist",
+                        "the \"my-cool-theme-0.1.0/my-cool-theme.gemspec\" file should not exist"
+                    ]
+                ]
+            }
+        ]
+    }
+}

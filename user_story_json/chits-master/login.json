@@ -1,0 +1,72 @@
+{
+    "feature_name": "Login",
+    "user_story": {
+        "as_a": "healthcare worker",
+        "i_want": "",
+        "so_that": "manage patients",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am on the home page"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"chits\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the home page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"login\" with \"admin\"",
+                        "I fill in \"passwd\" with \"admin\"",
+                        "I press \"Login\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"logged in\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"admin\" with password \"admin\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"logged in\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am logged in as \"admin\" with password \"admin\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Sign Out\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"SIGN IN\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

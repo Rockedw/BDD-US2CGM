@@ -1,0 +1,16 @@
+// 1982197195600 Context Model
+digraph {
+	1982197190944 [label=Context7]
+	1982197196128 [label="I select \"Individual\" from \"item_sti_type\""]
+	1982197190944 -> 1982197196128
+	1982197196128 [label="I select \"Individual\" from \"item_sti_type\""]
+	1982197190800 [label="I fill in \"Name\" with \"aNewSubject\""]
+	1982197190944 -> 1982197190800
+	1982197190800 [label="I fill in \"Name\" with \"aNewSubject\""]
+	1982197188976 [label="I fill in \"Title\" with \"A new item for a new connection's Subject\""]
+	1982197190944 -> 1982197188976
+	1982197188976 [label="I fill in \"Title\" with \"A new item for a new connection's Subject\""]
+	1982197186672 [label="I fill in \"Description\" with \"New subject item: test test test\""]
+	1982197190944 -> 1982197186672
+	1982197186672 [label="I fill in \"Description\" with \"New subject item: test test test\""]
+}

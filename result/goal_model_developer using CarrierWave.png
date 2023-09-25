@@ -1,0 +1,713 @@
+// Goal Model
+digraph {
+	1847117879264 [label="developer using CarrierWave
+goal"]
+	1847117874608 [label="cache files
+goal
+140728069287616"]
+	1847117879264 -> 1847117874608
+	1847117874608 [label="cache files
+goal"]
+	1847117879744 [label="cache a file
+goal
+1847088853392"]
+	1847117874608 -> 1847117879744
+	1847117879744 [label="cache a file
+goal"]
+	1847117875664 [label="cache two files in succession
+goal
+1847117755728"]
+	1847117874608 -> 1847117875664
+	1847117875664 [label="cache two files in succession
+goal"]
+	1847117746080 [label="I cache the file 'fixtures/bork.txt'
+task
+140728069287616"]
+	1847117875664 -> 1847117746080
+	1847117746080 [label="I cache the file 'fixtures/bork.txt'
+task"]
+	1847117751984 [label="I cache the file 'fixtures/monkey.txt'
+task
+140728069287616"]
+	1847117875664 -> 1847117751984
+	1847117751984 [label="I cache the file 'fixtures/monkey.txt'
+task"]
+	1847117752272 [label="retrieving a file from cache
+goal
+1847117755968"]
+	1847117874608 -> 1847117752272
+	1847117752272 [label="retrieving a file from cache
+goal"]
+	1847117874176 [label="download files to the filesystem via HTTP
+goal
+1847117749104"]
+	1847117879264 -> 1847117874176
+	1847117874176 [label="download files to the filesystem via HTTP
+goal"]
+	1847117745648 [label="download a file
+goal
+140728069287616"]
+	1847117874176 -> 1847117745648
+	1847117745648 [label="download a file
+goal"]
+	1847117744496 [label="I download the file 'http://s3.amazonaws.com/Monkey/testfile.txt'
+task
+140728069287616"]
+	1847117745648 -> 1847117744496
+	1847117744496 [label="I download the file 'http://s3.amazonaws.com/Monkey/testfile.txt'
+task"]
+	1847117755344 [label="downloading a file then storing
+goal
+140728069287616"]
+	1847117874176 -> 1847117755344
+	1847117755344 [label="downloading a file then storing
+goal"]
+	1847117744304 [label="I download the file 'http://s3.amazonaws.com/Monkey/testfile.txt'
+task
+140728069287616"]
+	1847117755344 -> 1847117744304
+	1847117744304 [label="I download the file 'http://s3.amazonaws.com/Monkey/testfile.txt'
+task"]
+	1847117746512 [label="I store the file
+task
+140728069287616"]
+	1847117755344 -> 1847117746512
+	1847117746512 [label="I store the file
+task"]
+	1847117873264 [label="
+goal
+140728069287616"]
+	1847117879264 -> 1847117873264
+	1847117873264 [label="
+goal"]
+	1847117752848 [label="upload files to the filesystem
+goal
+1847117751024"]
+	1847117873264 -> 1847117752848
+	1847117752848 [label="upload files to the filesystem
+goal"]
+	1847124504400 [label=" store file
+goal
+140728069287616"]
+	1847117752848 -> 1847124504400
+	1847124504400 [label=" store file
+goal"]
+	1847117751552 [label="store a file
+goal
+140728069287616"]
+	1847124504400 -> 1847117751552
+	1847117751552 [label="store a file
+goal"]
+	1847117750880 [label="I store the file 'fixtures/bork.txt'
+task
+140728069287616"]
+	1847117751552 -> 1847117750880
+	1847117750880 [label="I store the file 'fixtures/bork.txt'
+task"]
+	1847117753952 [label="store two files in succession
+goal
+140728069287616"]
+	1847124504400 -> 1847117753952
+	1847117753952 [label="store two files in succession
+goal"]
+	1847124495904 [label="I store file
+goal
+140728069287616"]
+	1847117753952 -> 1847124495904
+	1847124495904 [label="I store file
+goal"]
+	1847117753088 [label="I store the file 'fixtures/bork.txt'
+task
+140728069287616"]
+	1847124495904 -> 1847117753088
+	1847117753088 [label="I store the file 'fixtures/bork.txt'
+task"]
+	1847117749296 [label="I store the file 'fixtures/monkey.txt'
+task
+140728069287616"]
+	1847124495904 -> 1847117749296
+	1847117749296 [label="I store the file 'fixtures/monkey.txt'
+task"]
+	1847117749440 [label="cache a file and then store it
+goal
+140728069287616"]
+	1847124504400 -> 1847117749440
+	1847117749440 [label="cache a file and then store it
+goal"]
+	1847124621056 [label="I cache the file 'fixtures/bork.txt'
+task
+140728069287616"]
+	1847117749440 -> 1847124621056
+	1847124621056 [label="I cache the file 'fixtures/bork.txt'
+task"]
+	1847124619952 [label="I store the file
+task
+140728069287616"]
+	1847117749440 -> 1847124619952
+	1847124619952 [label="I store the file
+task"]
+	1847124622448 [label="retrieving a file from cache then storing
+goal
+1847124619616"]
+	1847117752848 -> 1847124622448
+	1847124622448 [label="retrieving a file from cache then storing
+goal"]
+	1847124623024 [label="I retrieve the cache name '1369894322-345-1234-2255/bork.txt' from the cache
+task
+140728069287616"]
+	1847124622448 -> 1847124623024
+	1847124623024 [label="I retrieve the cache name '1369894322-345-1234-2255/bork.txt' from the cache
+task"]
+	1847124620720 [label="I store the file
+task
+140728069287616"]
+	1847124622448 -> 1847124620720
+	1847124620720 [label="I store the file
+task"]
+	1847117755248 [label="upload files to the filesystem with an overridden filename
+goal
+1847124616400"]
+	1847117873264 -> 1847117755248
+	1847117755248 [label="upload files to the filesystem with an overridden filename
+goal"]
+	1847124503776 [label=" store file
+goal
+140728069287616"]
+	1847117755248 -> 1847124503776
+	1847124503776 [label=" store file
+goal"]
+	1847124616064 [label="store a file
+goal
+140728069287616"]
+	1847124503776 -> 1847124616064
+	1847124616064 [label="store a file
+goal"]
+	1847124622688 [label="I store the file 'fixtures/bork.txt'
+task
+140728069287616"]
+	1847124616064 -> 1847124622688
+	1847124622688 [label="I store the file 'fixtures/bork.txt'
+task"]
+	1847124621872 [label="store two files in succession
+goal
+140728069287616"]
+	1847124503776 -> 1847124621872
+	1847124621872 [label="store two files in succession
+goal"]
+	1847124495232 [label="I store file
+goal
+140728069287616"]
+	1847124621872 -> 1847124495232
+	1847124495232 [label="I store file
+goal"]
+	1847124618752 [label="I store the file 'fixtures/bork.txt'
+task
+140728069287616"]
+	1847124495232 -> 1847124618752
+	1847124618752 [label="I store the file 'fixtures/bork.txt'
+task"]
+	1847124614240 [label="I store the file 'fixtures/monkey.txt'
+task
+140728069287616"]
+	1847124495232 -> 1847124614240
+	1847124614240 [label="I store the file 'fixtures/monkey.txt'
+task"]
+	1847124620672 [label="cache a file and then store it
+goal
+140728069287616"]
+	1847124503776 -> 1847124620672
+	1847124620672 [label="cache a file and then store it
+goal"]
+	1847124618800 [label="I cache the file 'fixtures/bork.txt'
+task
+140728069287616"]
+	1847124620672 -> 1847124618800
+	1847124618800 [label="I cache the file 'fixtures/bork.txt'
+task"]
+	1847124621488 [label="I store the file
+task
+140728069287616"]
+	1847124620672 -> 1847124621488
+	1847124621488 [label="I store the file
+task"]
+	1847124614336 [label="retrieving a file from cache then storing
+goal
+1847124620288"]
+	1847117755248 -> 1847124614336
+	1847124614336 [label="retrieving a file from cache then storing
+goal"]
+	1847124622208 [label="I retrieve the cache name '1369894322-345-1234-2255/bork.txt' from the cache
+task
+140728069287616"]
+	1847124614336 -> 1847124622208
+	1847124622208 [label="I retrieve the cache name '1369894322-345-1234-2255/bork.txt' from the cache
+task"]
+	1847124621968 [label="I store the file
+task
+140728069287616"]
+	1847124614336 -> 1847124621968
+	1847124621968 [label="I store the file
+task"]
+	1847124620960 [label="upload files to the filesystem
+goal
+1847124622976"]
+	1847117873264 -> 1847124620960
+	1847124620960 [label="upload files to the filesystem
+goal"]
+	1847124672224 [label=" store file
+goal
+140728069287616"]
+	1847124620960 -> 1847124672224
+	1847124672224 [label=" store file
+goal"]
+	1847124615968 [label="store a file
+goal
+140728069287616"]
+	1847124672224 -> 1847124615968
+	1847124615968 [label="store a file
+goal"]
+	1847124623072 [label="I store the file 'fixtures/bork.txt'
+task
+140728069287616"]
+	1847124615968 -> 1847124623072
+	1847124623072 [label="I store the file 'fixtures/bork.txt'
+task"]
+	1847124621344 [label="store two files in succession
+goal
+140728069287616"]
+	1847124672224 -> 1847124621344
+	1847124621344 [label="store two files in succession
+goal"]
+	1847124670832 [label="I store file
+goal
+140728069287616"]
+	1847124621344 -> 1847124670832
+	1847124670832 [label="I store file
+goal"]
+	1847124614432 [label="I store the file 'fixtures/bork.txt'
+task
+140728069287616"]
+	1847124670832 -> 1847124614432
+	1847124614432 [label="I store the file 'fixtures/bork.txt'
+task"]
+	1847124619712 [label="I store the file 'fixtures/monkey.txt'
+task
+140728069287616"]
+	1847124670832 -> 1847124619712
+	1847124619712 [label="I store the file 'fixtures/monkey.txt'
+task"]
+	1847124614864 [label="cache a file and then store it
+goal
+140728069287616"]
+	1847124672224 -> 1847124614864
+	1847124614864 [label="cache a file and then store it
+goal"]
+	1847124618896 [label="I cache the file 'fixtures/bork.txt'
+task
+140728069287616"]
+	1847124614864 -> 1847124618896
+	1847124618896 [label="I cache the file 'fixtures/bork.txt'
+task"]
+	1847124622496 [label="I store the file
+task
+140728069287616"]
+	1847124614864 -> 1847124622496
+	1847124622496 [label="I store the file
+task"]
+	1847124616304 [label="retrieving a file from cache then storing
+goal
+1847124620624"]
+	1847124620960 -> 1847124616304
+	1847124616304 [label="retrieving a file from cache then storing
+goal"]
+	1847124619856 [label="I retrieve the cache name '1369894322-345-1234-2255/bork.txt' from the cache
+task
+140728069287616"]
+	1847124616304 -> 1847124619856
+	1847124619856 [label="I retrieve the cache name '1369894322-345-1234-2255/bork.txt' from the cache
+task"]
+	1847124622400 [label="I store the file
+task
+140728069287616"]
+	1847124616304 -> 1847124622400
+	1847124622400 [label="I store the file
+task"]
+	1847124618944 [label="upload files to the filesystem
+goal
+1847124619328"]
+	1847117873264 -> 1847124618944
+	1847124618944 [label="upload files to the filesystem
+goal"]
+	1847124671840 [label=" store file
+goal
+140728069287616"]
+	1847124618944 -> 1847124671840
+	1847124671840 [label=" store file
+goal"]
+	1847124618848 [label="store a file
+goal
+140728069287616"]
+	1847124671840 -> 1847124618848
+	1847124618848 [label="store a file
+goal"]
+	1847124622304 [label="I store the file 'fixtures/bork.txt'
+task
+140728069287616"]
+	1847124618848 -> 1847124622304
+	1847124622304 [label="I store the file 'fixtures/bork.txt'
+task"]
+	1847124619664 [label="store two files in succession
+goal
+140728069287616"]
+	1847124671840 -> 1847124619664
+	1847124619664 [label="store two files in succession
+goal"]
+	1847124665936 [label="I store file
+goal
+140728069287616"]
+	1847124619664 -> 1847124665936
+	1847124665936 [label="I store file
+goal"]
+	1847124620816 [label="I store the file 'fixtures/bork.txt'
+task
+140728069287616"]
+	1847124665936 -> 1847124620816
+	1847124620816 [label="I store the file 'fixtures/bork.txt'
+task"]
+	1847124614816 [label="I store the file 'fixtures/monkey.txt'
+task
+140728069287616"]
+	1847124665936 -> 1847124614816
+	1847124614816 [label="I store the file 'fixtures/monkey.txt'
+task"]
+	1847124619040 [label="cache a file and then store it
+goal
+140728069287616"]
+	1847124671840 -> 1847124619040
+	1847124619040 [label="cache a file and then store it
+goal"]
+	1847124622736 [label="I cache the file 'fixtures/bork.txt'
+task
+140728069287616"]
+	1847124619040 -> 1847124622736
+	1847124622736 [label="I cache the file 'fixtures/bork.txt'
+task"]
+	1847124620336 [label="I store the file
+task
+140728069287616"]
+	1847124619040 -> 1847124620336
+	1847124620336 [label="I store the file
+task"]
+	1847124613088 [label="retrieving a file from cache then storing
+goal
+1847124612992"]
+	1847124618944 -> 1847124613088
+	1847124613088 [label="retrieving a file from cache then storing
+goal"]
+	1847124615344 [label="I retrieve the cache name '1369894322-345-1234-2255/bork.txt' from the cache
+task
+140728069287616"]
+	1847124613088 -> 1847124615344
+	1847124615344 [label="I retrieve the cache name '1369894322-345-1234-2255/bork.txt' from the cache
+task"]
+	1847124618992 [label="I store the file
+task
+140728069287616"]
+	1847124613088 -> 1847124618992
+	1847124618992 [label="I store the file
+task"]
+	1847124620384 [label="upload files to the filesystem
+goal
+1847124620912"]
+	1847117873264 -> 1847124620384
+	1847124620384 [label="upload files to the filesystem
+goal"]
+	1847124656192 [label=" store file
+goal
+140728069287616"]
+	1847124620384 -> 1847124656192
+	1847124656192 [label=" store file
+goal"]
+	1847124622112 [label="store a file
+goal
+140728069287616"]
+	1847124656192 -> 1847124622112
+	1847124622112 [label="store a file
+goal"]
+	1847124621584 [label="I store the file 'fixtures/bork.txt'
+task
+140728069287616"]
+	1847124622112 -> 1847124621584
+	1847124621584 [label="I store the file 'fixtures/bork.txt'
+task"]
+	1847124619472 [label="cache a file and then store it
+goal
+140728069287616"]
+	1847124656192 -> 1847124619472
+	1847124619472 [label="cache a file and then store it
+goal"]
+	1847124620192 [label="I cache the file 'fixtures/bork.txt'
+task
+140728069287616"]
+	1847124619472 -> 1847124620192
+	1847124620192 [label="I cache the file 'fixtures/bork.txt'
+task"]
+	1847124621632 [label="I store the file
+task
+140728069287616"]
+	1847124619472 -> 1847124621632
+	1847124621632 [label="I store the file
+task"]
+	1847124671792 [label=" retrieve file
+goal
+140728069287616"]
+	1847124620384 -> 1847124671792
+	1847124671792 [label=" retrieve file
+goal"]
+	1847124623120 [label="retrieving a file from cache then storing
+goal
+1847124621152"]
+	1847124671792 -> 1847124623120
+	1847124623120 [label="retrieving a file from cache then storing
+goal"]
+	1847124621920 [label="I retrieve the cache name '1369894322-345-1234-2255/bork.txt' from the cache
+task
+140728069287616"]
+	1847124623120 -> 1847124621920
+	1847124621920 [label="I retrieve the cache name '1369894322-345-1234-2255/bork.txt' from the cache
+task"]
+	1847124619568 [label="I store the file
+task
+140728069287616"]
+	1847124623120 -> 1847124619568
+	1847124619568 [label="I store the file
+task"]
+	1847124616112 [label="retrieving a file from store
+goal
+1847124622016"]
+	1847124671792 -> 1847124616112
+	1847124616112 [label="retrieving a file from store
+goal"]
+	1847124620144 [label="I retrieve the file 'bork.txt' from the store
+task
+140728069287616"]
+	1847124616112 -> 1847124620144
+	1847124620144 [label="I retrieve the file 'bork.txt' from the store
+task"]
+	1847117750400 [label="upload files to the filesystem
+goal
+1847117753232"]
+	1847117873264 -> 1847117750400
+	1847117750400 [label="upload files to the filesystem
+goal"]
+	1847124616256 [label="cache a file and then store it
+goal
+140728069287616"]
+	1847117750400 -> 1847124616256
+	1847124616256 [label="cache a file and then store it
+goal"]
+	1847124611264 [label="I cache the file 'fixtures/bork.txt'
+task
+140728069287616"]
+	1847124616256 -> 1847124611264
+	1847124611264 [label="I cache the file 'fixtures/bork.txt'
+task"]
+	1847124615200 [label="I store the file
+task
+140728069287616"]
+	1847124616256 -> 1847124615200
+	1847124615200 [label="I store the file
+task"]
+	1847124656864 [label="upload files to the filesystem
+goal
+1847124658016"]
+	1847117873264 -> 1847124656864
+	1847124656864 [label="upload files to the filesystem
+goal"]
+	1847124672176 [label=" store file
+goal
+140728069287616"]
+	1847124656864 -> 1847124672176
+	1847124672176 [label=" store file
+goal"]
+	1847124659072 [label="store a file
+goal
+140728069287616"]
+	1847124672176 -> 1847124659072
+	1847124659072 [label="store a file
+goal"]
+	1847124659168 [label="I store the file 'fixtures/bork.txt'
+task
+140728069287616"]
+	1847124659072 -> 1847124659168
+	1847124659168 [label="I store the file 'fixtures/bork.txt'
+task"]
+	1847124659120 [label="cache a file and then store it
+goal
+140728069287616"]
+	1847124672176 -> 1847124659120
+	1847124659120 [label="cache a file and then store it
+goal"]
+	1847124659264 [label="I cache the file 'fixtures/bork.txt'
+task
+140728069287616"]
+	1847124659120 -> 1847124659264
+	1847124659264 [label="I cache the file 'fixtures/bork.txt'
+task"]
+	1847124659312 [label="I store the file
+task
+140728069287616"]
+	1847124659120 -> 1847124659312
+	1847124659312 [label="I store the file
+task"]
+	1847124659216 [label="retrieving a file from cache then storing
+goal
+1847124659600"]
+	1847124656864 -> 1847124659216
+	1847124659216 [label="retrieving a file from cache then storing
+goal"]
+	1847124659456 [label="I retrieve the cache name '1369894322-345-1234-2255/bork.txt' from the cache
+task
+140728069287616"]
+	1847124659216 -> 1847124659456
+	1847124659456 [label="I retrieve the cache name '1369894322-345-1234-2255/bork.txt' from the cache
+task"]
+	1847124659504 [label="I store the file
+task
+140728069287616"]
+	1847124659216 -> 1847124659504
+	1847124659504 [label="I store the file
+task"]
+	1847117749584 [label="set nested versions
+goal
+1847124616928"]
+	1847117879264 -> 1847117749584
+	1847117749584 [label="set nested versions
+goal"]
+	1847124671744 [label=" store file
+goal
+140728069287616"]
+	1847117749584 -> 1847124671744
+	1847124671744 [label=" store file
+goal"]
+	1847124507856 [label="store a file
+goal
+140728069287616"]
+	1847124671744 -> 1847124507856
+	1847124507856 [label="store a file
+goal"]
+	1847124505216 [label="cache a file and then store it
+goal
+140728069287616"]
+	1847124671744 -> 1847124505216
+	1847124505216 [label="cache a file and then store it
+goal"]
+	1847124508336 [label="I cache the file 'fixtures/bork.txt'
+task
+140728069287616"]
+	1847124505216 -> 1847124508336
+	1847124508336 [label="I cache the file 'fixtures/bork.txt'
+task"]
+	1847124501712 [label="I store the file
+task
+140728069287616"]
+	1847124505216 -> 1847124501712
+	1847124501712 [label="I store the file
+task"]
+	1847124662096 [label=" retrieve file
+goal
+140728069287616"]
+	1847117749584 -> 1847124662096
+	1847124662096 [label=" retrieve file
+goal"]
+	1847124499072 [label="retrieving a file from cache then storing
+goal
+1847124503488"]
+	1847124662096 -> 1847124499072
+	1847124499072 [label="retrieving a file from cache then storing
+goal"]
+	1847124505024 [label="I retrieve the cache name '1369894322-345-1234-2255/bork.txt' from the cache
+task
+140728069287616"]
+	1847124499072 -> 1847124505024
+	1847124505024 [label="I retrieve the cache name '1369894322-345-1234-2255/bork.txt' from the cache
+task"]
+	1847124496192 [label="I store the file
+task
+140728069287616"]
+	1847124499072 -> 1847124496192
+	1847124496192 [label="I store the file
+task"]
+	1847124500224 [label="retrieving a file from store
+goal
+1847124656528"]
+	1847124662096 -> 1847124500224
+	1847124500224 [label="retrieving a file from store
+goal"]
+	1847124621680 [label="upload files to the filesystem with an overridden filename and different versions
+goal
+1847124500512"]
+	1847117879264 -> 1847124621680
+	1847124621680 [label="upload files to the filesystem with an overridden filename and different versions
+goal"]
+	1847124659936 [label=" store file
+goal
+140728069287616"]
+	1847124621680 -> 1847124659936
+	1847124659936 [label=" store file
+goal"]
+	1847124657296 [label="store a file
+goal
+140728069287616"]
+	1847124659936 -> 1847124657296
+	1847124657296 [label="store a file
+goal"]
+	1847124657344 [label="cache a file and then store it
+goal
+140728069287616"]
+	1847124659936 -> 1847124657344
+	1847124657344 [label="cache a file and then store it
+goal"]
+	1847124657488 [label="I cache the file 'fixtures/bork.txt'
+task
+140728069287616"]
+	1847124657344 -> 1847124657488
+	1847124657488 [label="I cache the file 'fixtures/bork.txt'
+task"]
+	1847124657536 [label="I store the file
+task
+140728069287616"]
+	1847124657344 -> 1847124657536
+	1847124657536 [label="I store the file
+task"]
+	1847124664160 [label=" retrieve file
+goal
+140728069287616"]
+	1847124621680 -> 1847124664160
+	1847124664160 [label=" retrieve file
+goal"]
+	1847124657440 [label="retrieving a file from cache then storing
+goal
+1847124657824"]
+	1847124664160 -> 1847124657440
+	1847124657440 [label="retrieving a file from cache then storing
+goal"]
+	1847124657680 [label="I retrieve the cache name '1369894322-345-1234-2255/bork.txt' from the cache
+task
+140728069287616"]
+	1847124657440 -> 1847124657680
+	1847124657680 [label="I retrieve the cache name '1369894322-345-1234-2255/bork.txt' from the cache
+task"]
+	1847124657728 [label="I store the file
+task
+140728069287616"]
+	1847124657440 -> 1847124657728
+	1847124657728 [label="I store the file
+task"]
+	1847124657584 [label="retrieving a file from store
+goal
+1847124658304"]
+	1847124664160 -> 1847124657584
+	1847124657584 [label="retrieving a file from store
+goal"]
+}

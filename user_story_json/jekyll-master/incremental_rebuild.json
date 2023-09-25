@@ -1,0 +1,230 @@
+{
+    "feature_name": "Incremental rebuild",
+    "user_story": {
+        "as_a": "n impatient hacker who likes to blog",
+        "i_want": "be able to make a static site",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have a _layouts directory",
+                        "I have a _posts directory",
+                        "I have the following posts:",
+                        "I have a default layout that contains \"Post Layout: {{ content }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build -I"
+                    ],
+                    [
+                        "I run jekyll build -I"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post Layout: <p>The only winning move is not to play.</p>\" in \"_site/2009/03/27/wargames.html\""
+                    ],
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Post Layout: <p>The only winning move is not to play.</p>\" in \"_site/2009/03/27/wargames.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.html\" file that contains \"Basic Site\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build -I"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \".jekyll-metadata\" file should exist"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an \"index.html\" file that contains \"Basic Site\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build -I"
+                    ],
+                    [
+                        "I wait 1 second"
+                    ],
+                    [
+                        "I run jekyll build -I"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Basic Site\" in \"_site/index.html\""
+                    ],
+                    [
+                        "I have an \"index.html\" file that contains \"Bacon Site\""
+                    ],
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Bacon Site\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _layouts directory",
+                        "I have an \"index.html\" page with layout \"default\" that contains \"Basic Site with Layout\"",
+                        "I have a default layout that contains \"Page Layout: {{ content }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build -I"
+                    ],
+                    [
+                        "I wait 1 second"
+                    ],
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Page Layout: Basic Site with Layout\" in \"_site/index.html\""
+                    ],
+                    [
+                        "I have a default layout that contains \"Page Layout Changed: {{ content }}\""
+                    ],
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Page Layout Changed: Basic Site with Layout\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _includes directory",
+                        "I have an \"index.html\" page that contains \"Basic Site with include tag: {% include about.textile %}\"",
+                        "I have an \"_includes/about.textile\" file that contains \"Generated by Jekyll\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build -I"
+                    ],
+                    [
+                        "I wait 1 second"
+                    ],
+                    [
+                        "I run jekyll build -I"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Basic Site with include tag: Generated by Jekyll\" in \"_site/index.html\""
+                    ],
+                    [
+                        "I have an \"_includes/about.textile\" file that contains \"Regenerated by Jekyll\""
+                    ],
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Basic Site with include tag: Regenerated by Jekyll\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a _includes directory",
+                        "I have a configuration file with \"collections_dir\" set to \"collections\"",
+                        "I have a collections/_posts directory",
+                        "I have the following post within the \"collections\" directory:",
+                        "I have an \"_includes/about.html\" file that contains \"Generated by Jekyll\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build -I"
+                    ],
+                    [
+                        "I wait 1 second"
+                    ],
+                    [
+                        "I run jekyll build -I"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Basic Site with include tag: Generated by Jekyll\" in \"_site/2009/03/27/wargames.html\""
+                    ],
+                    [
+                        "I have an \"_includes/about.html\" file that contains \"Regenerated by Jekyll\""
+                    ],
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Basic Site with include tag: Regenerated by Jekyll\" in \"_site/2009/03/27/wargames.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with \"theme\" set to \"test-theme\"",
+                        "I have an \"index.md\" page that contains \"Themed site\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build --incremental --verbose"
+                    ],
+                    [
+                        "I wait 1 second",
+                        "I have an \"about.md\" page that contains \"About Themed site\""
+                    ],
+                    [
+                        "I run jekyll build --incremental --verbose"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"Rendering: index.md\" in the build output",
+                        "I should see \"Themed site\" in \"_site/index.html\""
+                    ],
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should not see \"Rendering: index.md\" in the build output"
+                    ]
+                ]
+            }
+        ]
+    }
+}

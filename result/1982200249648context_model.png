@@ -1,0 +1,13 @@
+// 1982200248880 Context Model
+digraph {
+	1982200249648 [label=Context63]
+	1982200249792 [label="I should have a company"]
+	1982200249648 -> 1982200249792
+	1982200249792 [label="I should have a company"]
+	1982200249888 [label="the company currency is \"CHF\" with a rate of \"1.00\""]
+	1982200249648 -> 1982200249888
+	1982200249888 [label="the company currency is \"CHF\" with a rate of \"1.00\""]
+	1982200249984 [label="I update the address country code to CH"]
+	1982200249648 -> 1982200249984
+	1982200249984 [label="I update the address country code to CH"]
+}

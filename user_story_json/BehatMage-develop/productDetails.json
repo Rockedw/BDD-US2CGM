@@ -1,0 +1,27 @@
+{
+    "feature_name": "ProductDetails",
+    "user_story": {
+        "as_a": "Customer using a commerce website",
+        "i_want": "be able to see Product details",
+        "so_that": "I can find the Product I am looking for",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "the following products exist:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I am on \"<url>\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see text \"<name>\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

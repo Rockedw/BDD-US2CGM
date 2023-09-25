@@ -1,0 +1,10 @@
+// 1436757040848 Context Model
+digraph {
+	1436757042096 [label=Context136]
+	1436757042240 [label="I have an \"index.html\" page with layout \"page\" that contains \"FOO\""]
+	1436757042096 -> 1436757042240
+	1436757042240 [label="I have an \"index.html\" page with layout \"page\" that contains \"FOO\""]
+	1436757042336 [label="I have a \"_config.yml\" file that contains \"layouts: '../../../../../../../../../../../../../../usr/include'\""]
+	1436757042096 -> 1436757042336
+	1436757042336 [label="I have a \"_config.yml\" file that contains \"layouts: '../../../../../../../../../../../../../../usr/include'\""]
+}

@@ -1,0 +1,13 @@
+// 1436757146688 Context Model
+digraph {
+	1436739307072 [label=Context1]
+	1436757581328 [label="The default settings exist using factories"]
+	1436739307072 -> 1436757581328
+	1436757581328 [label="The default settings exist using factories"]
+	1436757680544 [label="the database has been seeded"]
+	1436739307072 -> 1436757680544
+	1436757680544 [label="the database has been seeded"]
+	1436739051840 [label="I am logged in with the username admin"]
+	1436739307072 -> 1436739051840
+	1436739051840 [label="I am logged in with the username admin"]
+}

@@ -1,0 +1,16 @@
+// 1982200112864 Context Model
+digraph {
+	1982200117664 [label=Context10]
+	1982200110272 [label="there is a co-op"]
+	1982200117664 -> 1982200110272
+	1982200110272 [label="there is a co-op"]
+	1982200112336 [label="I am the secretary of the co-op"]
+	1982200117664 -> 1982200112336
+	1982200112336 [label="I am the secretary of the co-op"]
+	1982200118192 [label="there is a director named \"Bob Smith\""]
+	1982200117664 -> 1982200118192
+	1982200118192 [label="there is a director named \"Bob Smith\""]
+	1982200105280 [label="a resolution to terminate the directorship of \"Bob Smith\" has been attached to a past General Meeting"]
+	1982200117664 -> 1982200105280
+	1982200105280 [label="a resolution to terminate the directorship of \"Bob Smith\" has been attached to a past General Meeting"]
+}

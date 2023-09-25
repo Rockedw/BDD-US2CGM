@@ -1,0 +1,90 @@
+{
+    "feature_name": "Param the new database",
+    "user_story": {
+        "as_a": "",
+        "i_want": "autmated the manual steps.",
+        "so_that": "have a coherent installation",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I update the module list"
+                    ],
+                    [
+                        "I install the required modules with dependencies:"
+                    ],
+                    [
+                        "I give all groups right access to admin user"
+                    ],
+                    [
+                        "the main company has a default_income_account set to \"3000\""
+                    ],
+                    [
+                        "the main company has a default payment_term set to \"30 Days End of Month\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "my modules should have been installed and models reloaded"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a journal named \"Banque CHF\" of type \"bank\"",
+                        "the journal default debit account is set to \"1020\"",
+                        "the journal default credit account is set to \"1020\""
+                    ],
+                    [
+                        "all journals allow entry cancellation"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have the module account installed",
+                        "no account set",
+                        "I want to generate account chart from module l10n_ch"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I generate the chart"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "accounts should be available"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a bank account named \"XX-XXXX-X\" linked to partner \"Customer_name\"",
+                        "I set the bank account with the following data :",
+                        "the bank account is linked to bank \"Postfinance\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I should have a company",
+                        "the company currency is \"CHF\" with a rate of \"1.00\"",
+                        "I update the address country code to CH"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            }
+        ]
+    }
+}

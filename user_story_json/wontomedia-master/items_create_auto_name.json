@@ -1,0 +1,156 @@
+{
+    "feature_name": "Verify inputs for creation of new item dynamically within the page",
+    "user_story": {
+        "as_a": "as a contributor, I want",
+        "i_want": "tell about bad inputs before I submit a page.",
+        "so_that": "create a wontology,",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am on the new items page",
+                        "I select \"Category\" from \"Type\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"Title\" with \"42 isn't a good start--for a name}\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"item_name\" field should be \"IsntAGoodStartForAName\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the new items page",
+                        "I select \"Property\" from \"Type\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"Title\" with \"<inputTitle>\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"item_name\" field should be \"<outputName>\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the new items page",
+                        "I select \"Individual\" from \"Type\""
+                    ],
+                    [
+                        "I fill in \"Name\" with \"\"",
+                        "I fill in \"Title\" with \"\"",
+                        "I put the focus on the \"item_title\" element",
+                        "I pause"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I put the focus on the \"item_title\" element",
+                        "I pause",
+                        "I type \"another good title--for testing!\""
+                    ],
+                    [
+                        "I put the focus on the \"item_name\" element",
+                        "I pause",
+                        "I type \"Again\""
+                    ],
+                    [
+                        "I fill in \"Title\" with \"but not this title!\""
+                    ],
+                    [
+                        "I type \"auto-gen again\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"item_name\" field should be \"AnotherGoodTitleForTesting\""
+                    ],
+                    [
+                        "the \"item_name\" field should be \"AnotherGoodTitleForTestingAgain\""
+                    ],
+                    [
+                        "the \"item_name\" field should be \"AnotherGoodTitleForTestingAgain\""
+                    ],
+                    [
+                        "the \"item_name\" field should be \"AutoGenAgain\"",
+                        "the element \"name_required\" has the format \"font-weight=400\"",
+                        "the image \"name_error_icon\" is \"blank_error_icon\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the new items page",
+                        "I select \"Property\" from \"Type\""
+                    ],
+                    [
+                        "I put the focus on the \"item_name\" element",
+                        "I pause"
+                    ],
+                    [
+                        "I put the focus on the \"item_title\" element",
+                        "I pause"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I put the focus on the \"item_title\" element",
+                        "I pause",
+                        "I type \"PoRtIo\"",
+                        "I pause"
+                    ],
+                    [
+                        "I type the \"Tab\" special key",
+                        "I type the \"Left\" special key",
+                        "I type the \"Left\" special key"
+                    ],
+                    [
+                        "I put the focus on the \"item_title\" element",
+                        "I pause",
+                        "I type \"n of a t\""
+                    ],
+                    [
+                        "I type the \"Up\" special key",
+                        "I type the \"Left\" special key",
+                        "I type the \"Escape\" special key",
+                        "I type the \"Left\" special key",
+                        "I type the \"Down\" special key"
+                    ],
+                    [
+                        "I type \"itle\"",
+                        "I pause"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the \"item_name\" field should be \"portio\""
+                    ],
+                    [
+                        "the \"item_name\" field should be \"portio\""
+                    ],
+                    [
+                        "the \"item_name\" field should be \"portionOfAT\""
+                    ],
+                    [
+                        "the \"item_name\" field should be \"portionOfAT\""
+                    ],
+                    [
+                        "the \"item_name\" field should be \"portionOfATitle\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,187 @@
+{
+    "feature_name": "A student advisor can invite/add/edit/delete a user",
+    "user_story": {
+        "as_a": "student advisor",
+        "i_want": "invite/add/edit/delete users",
+        "so_that": "I can manage the webapp",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am a mentor teacher",
+                        "I go to /invites"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should not be located at \"/invites\"",
+                        "I should see \"You don't have permission to access that page\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am a mentor teacher",
+                        "I go to /user/adv_new"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should not be located at \"/user/adv_new\"",
+                        "I should see \"You don't have permission to access that page\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am signed up as a student advisor",
+                        "I am on the login page",
+                        "I fill in \"Email\" with \"myemail@nowhere.com\"",
+                        "I fill in \"Password\" with \"1234\"",
+                        "I press \"Login\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to /invites"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be located at \"/settings\""
+                    ],
+                    [
+                        "I should be located at \"/invites\"",
+                        "I follow \"New Invite\""
+                    ],
+                    [
+                        "I should be located at \"/invites/new\"",
+                        "I select \"Student\" from \"Owner type\"",
+                        "I fill in \"First name\" with \"sangyoon\"",
+                        "I fill in \"Last name\" with \"park\"",
+                        "I fill in \"Email\" with \"sangp@email.com\"",
+                        "I press \"Save\""
+                    ],
+                    [
+                        "I should be located at \"/invites\"",
+                        "I should see \"Invite was successfully created\"",
+                        "I should see \"sangp@email.com\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am signed up as a student advisor",
+                        "I am on the login page",
+                        "I fill in \"Email\" with \"myemail@nowhere.com\"",
+                        "I fill in \"Password\" with \"1234\"",
+                        "I press \"Login\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to /invites"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be located at \"/settings\""
+                    ],
+                    [
+                        "I should be located at \"/invites\"",
+                        "I follow \"New Invite\""
+                    ],
+                    [
+                        "I should be located at \"/invites/new\"",
+                        "I press \"Save\""
+                    ],
+                    [
+                        "I should be located at \"/invites\"",
+                        "I should see \"There was a problem inviting a user\"",
+                        "I should see \"Email can't be blank\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am signed up as a student advisor",
+                        "I am on the login page",
+                        "I fill in \"Email\" with \"myemail@nowhere.com\"",
+                        "I fill in \"Password\" with \"1234\"",
+                        "I press \"Login\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to /user/adv_new"
+                    ],
+                    [
+                        "I go to /user/2/adv_edit"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be located at \"/settings\""
+                    ],
+                    [
+                        "I should see \"Add an account\"",
+                        "I select \"Student\" from \"Owner type\"",
+                        "I fill in \"First name\" with \"testuser1\"",
+                        "I fill in \"Last name\" with \"TEST\"",
+                        "I fill in \"Street address\" with \"testaddress\"",
+                        "I fill in \"City\" with \"testcity\"",
+                        "I fill in \"State\" with \"CA\"",
+                        "I fill in \"Zipcode\" with \"testzip\"",
+                        "I fill in \"Phone number\" with \"123-456-7890\"",
+                        "I fill in \"Email\" with \"testuser@test.edu\"",
+                        "I fill in \"Password\" with \"1234\"",
+                        "I fill in \"Password confirmation\" with \"1234\"",
+                        "I press \"Register\""
+                    ],
+                    [
+                        "I should be located at \"/students\"",
+                        "I should see \"Students\"",
+                        "I should see \"testuser@test.edu\""
+                    ],
+                    [
+                        "I should see \"Edit Account\"",
+                        "the \"user_first_name\" field should contain \"testuser1\"",
+                        "the \"user_last_name\" field should contain \"TEST\"",
+                        "the \"user_street_address\" field should contain \"testaddress\"",
+                        "the \"user_city\" field should contain \"testcity\"",
+                        "the \"user_state\" field should contain \"CA\"",
+                        "the \"user_zipcode\" field should contain \"testzip\"",
+                        "the \"user_phone_number\" field should contain \"123-456-7890\"",
+                        "the \"user_email\" field should contain \"testuser@test.edu\"",
+                        "the \"user_password\" field should not contain \"1234\""
+                    ],
+                    [
+                        "I fill in \"user_first_name\" with \"editeduser999\"",
+                        "I fill in \"user_email\" with \"changed@email.com\"",
+                        "I press \"Update\""
+                    ],
+                    [
+                        "I should be located at \"/students\"",
+                        "I should see \"editeduser999\"",
+                        "I should see \"changed@email.com\"",
+                        "I should not see \"testuser1\"",
+                        "I should not see \"testuser@test.edu\""
+                    ],
+                    [
+                        "I follow \"Delete\""
+                    ],
+                    [
+                        "I should see \"User 'changed@email.com' deleted\"",
+                        "I should not see \"editeduser999\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

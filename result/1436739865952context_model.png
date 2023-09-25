@@ -1,0 +1,13 @@
+// 1436739864800 Context Model
+digraph {
+	1436739865952 [label=Context42]
+	1436739866096 [label="I have an _includes directory"]
+	1436739865952 -> 1436739866096
+	1436739866096 [label="I have an _includes directory"]
+	1436739866192 [label="I have an \"_includes/one.html\" file that contains \"include\""]
+	1436739865952 -> 1436739866192
+	1436739866192 [label="I have an \"_includes/one.html\" file that contains \"include\""]
+	1436739866288 [label="I have an \"index.html\" page that contains \"{% include one.html %}\""]
+	1436739865952 -> 1436739866288
+	1436739866288 [label="I have an \"index.html\" page that contains \"{% include one.html %}\""]
+}

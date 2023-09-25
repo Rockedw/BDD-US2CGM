@@ -1,0 +1,16 @@
+// 2486258550960 Context Model
+digraph {
+	2486258551344 [label=Context44]
+	2486258551488 [label="I am on the new items page"]
+	2486258551344 -> 2486258551488
+	2486258551488 [label="I am on the new items page"]
+	2486258551584 [label="I select \"Property\" from \"Type\""]
+	2486258551344 -> 2486258551584
+	2486258551584 [label="I select \"Property\" from \"Type\""]
+	2486258551680 [label="I fill in \"Title\" with \"A property's title\""]
+	2486258551344 -> 2486258551680
+	2486258551680 [label="I fill in \"Title\" with \"A property's title\""]
+	2486258551776 [label="I fill in \"Name\" with \"temporaryGoodName0-_\""]
+	2486258551344 -> 2486258551776
+	2486258551776 [label="I fill in \"Name\" with \"temporaryGoodName0-_\""]
+}

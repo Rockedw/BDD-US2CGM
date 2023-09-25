@@ -1,0 +1,242 @@
+{
+    "feature_name": "Include tags",
+    "user_story": {
+        "as_a": "hacker who likes to blog",
+        "i_want": "be able to include files in my blog posts",
+        "so_that": "share their content across several pages",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have an _includes directory",
+                        "I have an \"_includes/header.html\" file that contains \"<header>My awesome blog header: {{include.param}}</header>\"",
+                        "I have an \"_includes/params.html\" file that contains \"Parameters:<ul>{% for param in include %}<li>{{param[0]}} = {{param[1]}}</li>{% endfor %}</ul>\"",
+                        "I have an \"_includes/ignore.html\" file that contains \"<footer>My blog footer</footer>\"",
+                        "I have a _posts directory",
+                        "I have the following posts:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"<header>My awesome blog header: myparam</header>\" in \"_site/2013/03/21/include-files.html\"",
+                        "I should not see \"myparam\" in \"_site/2013/03/21/ignore-params-if-unused.html\"",
+                        "I should see \"<li>date = today</li>\" in \"_site/2013/03/21/list-multiple-parameters.html\"",
+                        "I should see \"<li>start = tomorrow</li>\" in \"_site/2013/03/21/list-multiple-parameters.html\"",
+                        "I should not see \"<header>My awesome blog header: myparam</header>\" in \"_site/2013/03/21/dont-keep-parameters.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an _includes directory",
+                        "I have an \"_includes/snippet.html\" file that contains \"a snippet\"",
+                        "I have an \"_includes/parametrized.html\" file that contains \"works with {{include.what}}\"",
+                        "I have a configuration file with:",
+                        "I have an \"index.html\" page that contains \"{% include {{site.include_file1}} %} that {% include {{site.include_file2}} what='parameters' %}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"a snippet that works with parameters\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an _includes directory",
+                        "I have an \"_includes/one.html\" file that contains \"one\"",
+                        "I have an \"_includes/two.html\" file that contains \"two\"",
+                        "I have an \"index.html\" page with files \"[one.html, two.html]\" that contains \"{% for file in page.files %}{% include {{file}} %} {% endfor %}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"one two\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an _includes directory",
+                        "I have an \"_includes/one.html\" file that contains \"one included\"",
+                        "I have a configuration file with:",
+                        "I have an \"index.html\" page that contains \"{% include {{ site.include_file | append: '.html' }} %}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"one included\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an _includes directory",
+                        "I have an \"_includes/one.html\" file that contains \"one included\"",
+                        "I have a configuration file with:",
+                        "I have an \"index.html\" page that contains \"{% include {{ site.include_file }}.html %}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"one included\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an _includes directory",
+                        "I have an \"_includes/one.html\" file that contains \"include\"",
+                        "I have an \"index.html\" page that contains \"{% include one.html %}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ],
+                    [
+                        "I wait 1 second"
+                    ],
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"include\" in \"_site/index.html\""
+                    ],
+                    [
+                        "I have an \"_includes/one.html\" file that contains \"include content changed\""
+                    ],
+                    [
+                        "I should see \"include content changed\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an _includes directory",
+                        "I have an \"_includes/header-en.html\" file that contains \"include\"",
+                        "I have an \"index.html\" page that contains \"{% assign name = 'header' %}{% assign locale = 'en' %}{% include {{name}}-{{locale}}.html %}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"include\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have an _includes directory",
+                        "I have an \"_includes/header-en.html\" file that contains \"include\"",
+                        "I have an \"index.html\" page that contains \"{% include ./header-en.html %}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ],
+                    [
+                        "I have an \"index.html\" page that contains \"{% include foo/.header-en.html %}\""
+                    ],
+                    [
+                        "I run jekyll build"
+                    ],
+                    [
+                        "I have an \"index.html\" page that contains \"{% include //header-en.html %}\""
+                    ],
+                    [
+                        "I run jekyll build"
+                    ],
+                    [
+                        "I have an \"index.html\" page that contains \"{% include ..header-en.html %}\""
+                    ],
+                    [
+                        "I run jekyll build"
+                    ],
+                    [
+                        "I have an \"index.html\" page that contains \"{% include header-en.html %}\""
+                    ],
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a non-zero exit status",
+                        "I should see \"Invalid syntax for include tag.\" in the build output"
+                    ],
+                    [
+                        "I should get a non-zero exit status",
+                        "I should see \"Invalid syntax for include tag.\" in the build output"
+                    ],
+                    [
+                        "I should get a non-zero exit status",
+                        "I should see \"Invalid syntax for include tag.\" in the build output"
+                    ],
+                    [
+                        "I should get a non-zero exit status",
+                        "I should see \"Invalid syntax for include tag.\" in the build output"
+                    ],
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"include\" in \"_site/index.html\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

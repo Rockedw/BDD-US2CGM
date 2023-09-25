@@ -1,0 +1,13 @@
+// 1847133108544 Context Model
+digraph {
+	1847133161120 [label=Context19]
+	1847133161936 [label="following users exist:"]
+	1847133161120 -> 1847133161936
+	1847133161936 [label="following users exist:"]
+	1847133162032 [label="a client with a provided picture exists for user \"augier@example.org\""]
+	1847133161120 -> 1847133162032
+	1847133162032 [label="a client with a provided picture exists for user \"augier@example.org\""]
+	1847133162128 [label="a client exists for user \"augier@example.org\""]
+	1847133161120 -> 1847133162128
+	1847133162128 [label="a client exists for user \"augier@example.org\""]
+}

@@ -1,0 +1,13 @@
+// 1998090231792 Context Model
+digraph {
+	1998090232704 [label=Context20]
+	1998090232992 [label="I am logged in as \"user\" with password \"user\""]
+	1998090232704 -> 1998090232992
+	1998090232992 [label="I am logged in as \"user\" with password \"user\""]
+	1998090233088 [label="I click \"RECORDS\""]
+	1998090232704 -> 1998090233088
+	1998090233088 [label="I click \"RECORDS\""]
+	1998090233184 [label="I am on the patient management form"]
+	1998090232704 -> 1998090233184
+	1998090233184 [label="I am on the patient management form"]
+}

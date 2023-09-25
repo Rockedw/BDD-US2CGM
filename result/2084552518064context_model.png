@@ -1,0 +1,13 @@
+// 2084552521952 Context Model
+digraph {
+	2084552518064 [label=Context2]
+	2084552521088 [label="I will choose \"plugins/strip_trailing_spaces/features/fixtures/test.txt\" from the \"open_file\" dialog"]
+	2084552518064 -> 2084552521088
+	2084552521088 [label="I will choose \"plugins/strip_trailing_spaces/features/fixtures/test.txt\" from the \"open_file\" dialog"]
+	2084552509952 [label="I open a file"]
+	2084552518064 -> 2084552509952
+	2084552509952 [label="I open a file"]
+	2084552517872 [label="I replace the contents with \"Hi \n \n Foo \n\""]
+	2084552518064 -> 2084552517872
+	2084552517872 [label="I replace the contents with \"Hi \n \n Foo \n\""]
+}

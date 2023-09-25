@@ -1,0 +1,19 @@
+// 2084500073792 Context Model
+digraph {
+	2084500074368 [label=Context20]
+	2084500074512 [label="I visit the mobile publisher page"]
+	2084500074368 -> 2084500074512
+	2084500074512 [label="I visit the mobile publisher page"]
+	2084500074608 [label="I append \"I am eating yogurt\" to the publisher"]
+	2084500074368 -> 2084500074608
+	2084500074608 [label="I append \"I am eating yogurt\" to the publisher"]
+	2084500074704 [label="I attach the file \"spec/fixtures/button.gif\" to hidden \"qqfile\" within \"#file-upload-publisher\""]
+	2084500074368 -> 2084500074704
+	2084500074704 [label="I attach the file \"spec/fixtures/button.gif\" to hidden \"qqfile\" within \"#file-upload-publisher\""]
+	2084500074800 [label="I attach the file \"spec/fixtures/button.png\" to hidden \"qqfile\" within \"#file-upload-publisher\""]
+	2084500074368 -> 2084500074800
+	2084500074800 [label="I attach the file \"spec/fixtures/button.png\" to hidden \"qqfile\" within \"#file-upload-publisher\""]
+	2084500074896 [label="I click to delete the first uploaded photo"]
+	2084500074368 -> 2084500074896
+	2084500074896 [label="I click to delete the first uploaded photo"]
+}

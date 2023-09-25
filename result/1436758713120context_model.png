@@ -1,0 +1,28 @@
+// 1436758614288 Context Model
+digraph {
+	1436758713120 [label=Context19]
+	1436758713264 [label="there are 3 existing individuals like \"indiv\""]
+	1436758713120 -> 1436758713264
+	1436758713264 [label="there are 3 existing individuals like \"indiv\""]
+	1436758713360 [label="there is an existing connection \"indiv0\" \"predecessor_of\" \"indiv1\""]
+	1436758713120 -> 1436758713360
+	1436758713360 [label="there is an existing connection \"indiv0\" \"predecessor_of\" \"indiv1\""]
+	1436758713456 [label="there is an existing connection \"indiv1\" \"predecessor_of\" \"indiv2\""]
+	1436758713120 -> 1436758713456
+	1436758713456 [label="there is an existing connection \"indiv1\" \"predecessor_of\" \"indiv2\""]
+	1436758713552 [label="I am on the new connections page"]
+	1436758713120 -> 1436758713552
+	1436758713552 [label="I am on the new connections page"]
+	1436758713648 [label="I select \"indiv2 : indiv item number 2\" from \"Subject\""]
+	1436758713120 -> 1436758713648
+	1436758713648 [label="I select \"indiv2 : indiv item number 2\" from \"Subject\""]
+	1436758713744 [label="I select \"predecessor_of : Predecessor Of (basic relationship)\" from \"Relates to\""]
+	1436758713120 -> 1436758713744
+	1436758713744 [label="I select \"predecessor_of : Predecessor Of (basic relationship)\" from \"Relates to\""]
+	1436758713840 [label="I choose \"Item\""]
+	1436758713120 -> 1436758713840
+	1436758713840 [label="I choose \"Item\""]
+	1436758713936 [label="I select \"indiv0 : indiv item number 0\" from \"Object\""]
+	1436758713120 -> 1436758713936
+	1436758713936 [label="I select \"indiv0 : indiv item number 0\" from \"Object\""]
+}

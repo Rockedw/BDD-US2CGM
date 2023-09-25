@@ -1,0 +1,16 @@
+// 1633827995168 Context Model
+digraph {
+	1633872777408 [label=Context7]
+	1633871677712 [label="I select \"Individual\" from \"item_sti_type\""]
+	1633872777408 -> 1633871677712
+	1633871677712 [label="I select \"Individual\" from \"item_sti_type\""]
+	1633871679056 [label="I fill in \"Name\" with \"aNewSubject\""]
+	1633872777408 -> 1633871679056
+	1633871679056 [label="I fill in \"Name\" with \"aNewSubject\""]
+	1633871683040 [label="I fill in \"Title\" with \"A new item for a new connection's Subject\""]
+	1633872777408 -> 1633871683040
+	1633871683040 [label="I fill in \"Title\" with \"A new item for a new connection's Subject\""]
+	1633871680688 [label="I fill in \"Description\" with \"New subject item: test test test\""]
+	1633872777408 -> 1633871680688
+	1633871680688 [label="I fill in \"Description\" with \"New subject item: test test test\""]
+}

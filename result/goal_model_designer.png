@@ -1,0 +1,41 @@
+// Goal Model
+digraph {
+	1847133385872 [label="designer
+goal"]
+	1847133287136 [label="be able to dynamically change the header of the provider signup form
+goal
+140728069287616"]
+	1847133385872 -> 1847133287136
+	1847133287136 [label="be able to dynamically change the header of the provider signup form
+goal"]
+	1847133289008 [label="Adding content to the homepage by creating a page with a url of 'home'
+goal
+1847133286272"]
+	1847133287136 -> 1847133289008
+	1847133289008 [label="Adding content to the homepage by creating a page with a url of 'home'
+goal"]
+	1847133288960 [label="I am on the homepage
+task
+140728069287616"]
+	1847133289008 -> 1847133288960
+	1847133288960 [label="I am on the homepage
+task"]
+	1847133286032 [label="Adding content to the provider signup page by creating a page with a url of 'provider-signup'
+goal
+1847133289872"]
+	1847133287136 -> 1847133286032
+	1847133286032 [label="Adding content to the provider signup page by creating a page with a url of 'provider-signup'
+goal"]
+	1847133281472 [label="I am on the homepage
+task
+140728069287616"]
+	1847133286032 -> 1847133281472
+	1847133281472 [label="I am on the homepage
+task"]
+	1847133284880 [label="I follow \"provider.signup\" translation
+task
+140728069287616"]
+	1847133286032 -> 1847133284880
+	1847133284880 [label="I follow \"provider.signup\" translation
+task"]
+}

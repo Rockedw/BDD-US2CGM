@@ -1,0 +1,34 @@
+{
+    "feature_name": "Appointing new director",
+    "user_story": {
+        "as_a": "As the secretary",
+        "i_want": "record the appointment of a new director",
+        "so_that": "keep the record of directors up-to-date",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a co-op",
+                        "I am the Secretary of the co-op",
+                        "there is a member named \"Claire Simmons\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Directors page",
+                        "I press \"Appoint new Director\"",
+                        "I choose \"Claire Simmons\" from the list of members",
+                        "I certify the appointment",
+                        "I press \"Record this appointment\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Directors page",
+                        "I should see \"Claire Simmons\" in the list of directors"
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,83 @@
+{
+    "feature_name": "Site pagination",
+    "user_story": {
+        "as_a": "blog's user",
+        "i_want": "",
+        "so_that": "paginate my blog",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with:",
+                        "I have a _layouts directory",
+                        "I have an \"index.html\" page that contains \"{{ paginator.posts.size }}\"",
+                        "I have a _posts directory",
+                        "I have the following posts:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the _site/page<exist> directory should exist",
+                        "the \"_site/page<exist>/index.html\" file should exist",
+                        "I should see \"<posts>\" in \"_site/page<exist>/index.html\"",
+                        "the \"_site/page<not_exist>/index.html\" file should not exist"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with:",
+                        "I have a blog directory",
+                        "I have an \"blog/index.html\" page that contains \"{{ paginator.posts.size }}\"",
+                        "I have a _posts directory",
+                        "I have the following posts:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the _site/blog/page-<exist> directory should exist",
+                        "the \"_site/blog/page-<exist>/index.html\" file should exist",
+                        "I should see \"<posts>\" in \"_site/blog/page-<exist>/index.html\"",
+                        "the \"_site/blog/page-<not_exist>/index.html\" file should not exist"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with:",
+                        "I have a blog directory",
+                        "I have an \"blog/index.html\" page that contains \"{{ paginator.posts.size }}\"",
+                        "I have an \"index.html\" page that contains \"Don't pick me!\"",
+                        "I have a _posts directory",
+                        "I have the following posts:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the _site/blog/page/<exist> directory should exist",
+                        "the \"_site/blog/page/<exist>/index.html\" file should exist",
+                        "I should see \"<posts>\" in \"_site/blog/page/<exist>/index.html\"",
+                        "the \"_site/blog/page/<not_exist>/index.html\" file should not exist"
+                    ]
+                ]
+            }
+        ]
+    }
+}

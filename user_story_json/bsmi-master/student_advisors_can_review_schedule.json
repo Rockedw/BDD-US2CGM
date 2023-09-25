@@ -1,0 +1,159 @@
+{
+    "feature_name": "Student advisors can review students/mentors schedule and contact info",
+    "user_story": {
+        "as_a": "student advisor",
+        "i_want": "oversee the schedule of the students and teachers",
+        "so_that": "I can make reasonable judgement when the student or the mentor ask me to tweak their schedule",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to /user",
+                        "I follow \"Students\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be located at \"/students\""
+                    ],
+                    [
+                        "I should see \"Andrew\""
+                    ],
+                    [
+                        "I should see \"Mains\""
+                    ],
+                    [
+                        "I should see \"andrew@berkeley.edu\""
+                    ],
+                    [
+                        "I should see \"Orion\""
+                    ],
+                    [
+                        "I should see \"Allen\""
+                    ],
+                    [
+                        "I should see \"orion@berkeley.edu\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to /user",
+                        "I follow \"Teachers\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be located at \"/mentor_teachers\""
+                    ],
+                    [
+                        "I should see \"Alex\""
+                    ],
+                    [
+                        "I should see \"Tom\""
+                    ],
+                    [
+                        "I should see \"alex@berkeley.edu\""
+                    ],
+                    [
+                        "I should see \"Tony\""
+                    ],
+                    [
+                        "I should see \"Adam\""
+                    ],
+                    [
+                        "I should see \"tony@berkeley.edu\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the students page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Last Name\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Orion\" before \"Andrew\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the students page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"First Name\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Andrew\" before \"Orion\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the mentor_teachers page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Last Name\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Tony\" before \"Alex\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the mentor_teachers page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Last Name\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Tony\" before \"Alex\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the mentor_teachers page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"First Name\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Alex\" before \"Tony\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

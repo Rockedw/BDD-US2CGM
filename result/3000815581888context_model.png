@@ -1,0 +1,16 @@
+// 3000815581024 Context Model
+digraph {
+	3000815581888 [label=Context49]
+	3000815582032 [label="I have an \"index.html\" page that contains \"Totally index\""]
+	3000815581888 -> 3000815582032
+	3000815582032 [label="I have an \"index.html\" page that contains \"Totally index\""]
+	3000815582128 [label="I have an \"awesome.html\" page that contains \"Totally awesome\""]
+	3000815581888 -> 3000815582128
+	3000815582128 [label="I have an \"awesome.html\" page that contains \"Totally awesome\""]
+	3000815582224 [label="I have an \"sitemap.xml\" page that contains \"Totally uhm, sitemap\""]
+	3000815581888 -> 3000815582224
+	3000815582224 [label="I have an \"sitemap.xml\" page that contains \"Totally uhm, sitemap\""]
+	3000815582320 [label="I have a configuration file with \"permalink\" set to \"pretty\""]
+	3000815581888 -> 3000815582320
+	3000815582320 [label="I have a configuration file with \"permalink\" set to \"pretty\""]
+}

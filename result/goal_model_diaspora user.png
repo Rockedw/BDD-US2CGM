@@ -1,0 +1,101 @@
+// Goal Model
+digraph {
+	1847088851328 [label="diaspora user
+goal"]
+	1847132820560 [label="use the aspect navigation menu
+goal
+1847132818160"]
+	1847088851328 -> 1847132820560
+	1847132820560 [label="use the aspect navigation menu
+goal"]
+	1847132861680 [label="All aspects are selected by default
+goal
+140728069287616"]
+	1847132820560 -> 1847132861680
+	1847132861680 [label="All aspects are selected by default
+goal"]
+	1847132862400 [label="I go to the aspects page
+task
+140728069287616"]
+	1847132861680 -> 1847132862400
+	1847132862400 [label="I go to the aspects page
+task"]
+	1847132862016 [label="Aspects selection is remembered through site navigation
+goal
+140728069287616"]
+	1847132820560 -> 1847132862016
+	1847132862016 [label="Aspects selection is remembered through site navigation
+goal"]
+	1847132860384 [label="I select only \"Besties\" aspect
+task
+140728069287616"]
+	1847132862016 -> 1847132860384
+	1847132860384 [label="I select only \"Besties\" aspect
+task"]
+	1847132852320 [label="I go to the stream page
+task
+140728069287616"]
+	1847132862016 -> 1847132852320
+	1847132852320 [label="I go to the stream page
+task"]
+	1847132849632 [label="I go to the aspects page
+task
+140728069287616"]
+	1847132862016 -> 1847132849632
+	1847132849632 [label="I go to the aspects page
+task"]
+	1847132851648 [label="I go to the contacts page
+task
+140728069287616"]
+	1847132862016 -> 1847132851648
+	1847132851648 [label="I go to the contacts page
+task"]
+	1847132854144 [label="I go to the aspects page
+task
+140728069287616"]
+	1847132862016 -> 1847132854144
+	1847132854144 [label="I go to the aspects page
+task"]
+	1847132857408 [label="Aspects selection can include one or more aspects
+goal
+140728069287616"]
+	1847132820560 -> 1847132857408
+	1847132857408 [label="Aspects selection can include one or more aspects
+goal"]
+	1847132854912 [label="I go to the aspects page
+task
+140728069287616"]
+	1847132857408 -> 1847132854912
+	1847132854912 [label="I go to the aspects page
+task"]
+	1847132861104 [label="I select only \"Besties\" aspect
+task
+140728069287616"]
+	1847132857408 -> 1847132861104
+	1847132861104 [label="I select only \"Besties\" aspect
+task"]
+	1847132862160 [label="I select \"Unicorns\" aspect as well
+task
+140728069287616"]
+	1847132857408 -> 1847132862160
+	1847132862160 [label="I select \"Unicorns\" aspect as well
+task"]
+	1847132863600 [label="Deselect all aspects
+goal
+140728069287616"]
+	1847132820560 -> 1847132863600
+	1847132863600 [label="Deselect all aspects
+goal"]
+	1847132855536 [label="I go to the aspects page
+task
+140728069287616"]
+	1847132863600 -> 1847132855536
+	1847132855536 [label="I go to the aspects page
+task"]
+	1847132858992 [label="I follow \"Deselect all\"
+task
+140728069287616"]
+	1847132863600 -> 1847132858992
+	1847132858992 [label="I follow \"Deselect all\"
+task"]
+}

@@ -1,0 +1,16 @@
+// 3000790259536 Context Model
+digraph {
+	3000790261504 [label=Context2]
+	3000790262128 [label="a user with username \"bob\""]
+	3000790261504 -> 3000790262128
+	3000790262128 [label="a user with username \"bob\""]
+	3000790262224 [label="a user named \"Alice Awesome\" with email \"alice@alice.alice\""]
+	3000790261504 -> 3000790262224
+	3000790262224 [label="a user named \"Alice Awesome\" with email \"alice@alice.alice\""]
+	3000790262320 [label="a user with username \"bob\" is connected with \"alice_awesome\""]
+	3000790261504 -> 3000790262320
+	3000790262320 [label="a user with username \"bob\" is connected with \"alice_awesome\""]
+	3000790262416 [label="I sign in as \"bob@bob.bob\" on the mobile website"]
+	3000790261504 -> 3000790262416
+	3000790262416 [label="I sign in as \"bob@bob.bob\" on the mobile website"]
+}

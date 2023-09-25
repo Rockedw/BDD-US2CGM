@@ -1,0 +1,51 @@
+{
+    "feature_name": "Block selection in macros",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I turn block selection on",
+                        "I start recording a macro",
+                        "I select down",
+                        "I select down",
+                        "I type \"a\"",
+                        "I stop recording a macro",
+                        "I turn block selection off",
+                        "I move to the start of the text",
+                        "I run the last recorded macro"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the content should be:"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I turn block selection on",
+                        "I select down",
+                        "I select down",
+                        "I type \"a\"",
+                        "I stop recording a macro",
+                        "I turn block selection off",
+                        "I move to the start of the text",
+                        "I run the last recorded macro"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the content should be:"
+                    ]
+                ]
+            }
+        ]
+    }
+}

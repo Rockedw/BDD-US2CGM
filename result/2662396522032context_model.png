@@ -1,0 +1,10 @@
+// 2662397167648 Context Model
+digraph {
+	2662396522032 [label=Context1]
+	2662396867680 [label="I am logged in as \"admin\""]
+	2662396522032 -> 2662396867680
+	2662396867680 [label="I am logged in as \"admin\""]
+	2662396794512 [label="I go to the \"configuration\" admin page"]
+	2662396522032 -> 2662396794512
+	2662396794512 [label="I go to the \"configuration\" admin page"]
+}

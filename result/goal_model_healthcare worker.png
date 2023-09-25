@@ -1,0 +1,59 @@
+// Goal Model
+digraph {
+	1847124983664 [label="healthcare worker
+goal"]
+	1847125298576 [label="
+goal
+140728069287616"]
+	1847124983664 -> 1847125298576
+	1847125298576 [label="
+goal"]
+	1847125302896 [label="View the login page
+goal
+1847125300496"]
+	1847125298576 -> 1847125302896
+	1847125302896 [label="View the login page
+goal"]
+	1847125305536 [label="Login with default admin password
+goal
+1847125297232"]
+	1847125298576 -> 1847125305536
+	1847125305536 [label="Login with default admin password
+goal"]
+	1847125307504 [label="I fill in \"login\" with \"admin\"
+task
+140728069287616"]
+	1847125305536 -> 1847125307504
+	1847125307504 [label="I fill in \"login\" with \"admin\"
+task"]
+	1847125298768 [label="I fill in \"passwd\" with \"admin\"
+task
+140728069287616"]
+	1847125305536 -> 1847125298768
+	1847125298768 [label="I fill in \"passwd\" with \"admin\"
+task"]
+	1847125299392 [label="I press \"Login\"
+task
+140728069287616"]
+	1847125305536 -> 1847125299392
+	1847125299392 [label="I press \"Login\"
+task"]
+	1847125300928 [label="Login with default admin password
+goal
+1847125307984"]
+	1847125298576 -> 1847125300928
+	1847125300928 [label="Login with default admin password
+goal"]
+	1847125306784 [label="Logout
+goal
+1847125297856"]
+	1847125298576 -> 1847125306784
+	1847125306784 [label="Logout
+goal"]
+	1847125307120 [label="I press \"Sign Out\"
+task
+140728069287616"]
+	1847125306784 -> 1847125307120
+	1847125307120 [label="I press \"Sign Out\"
+task"]
+}

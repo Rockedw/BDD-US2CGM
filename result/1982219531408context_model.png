@@ -1,0 +1,10 @@
+// 1982219523776 Context Model
+digraph {
+	1982219531408 [label=Context11]
+	1982219528192 [label="I have a file A Path/myfile.php containing"]
+	1982219531408 -> 1982219528192
+	1982219528192 [label="I have a file A Path/myfile.php containing"]
+	1982219524880 [label="I start the debugger with the PHP script A Path/myfile.php"]
+	1982219531408 -> 1982219524880
+	1982219524880 [label="I start the debugger with the PHP script A Path/myfile.php"]
+}

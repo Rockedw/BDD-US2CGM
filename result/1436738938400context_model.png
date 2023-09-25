@@ -1,0 +1,13 @@
+// 1436738931632 Context Model
+digraph {
+	1436738938400 [label=Context2]
+	1436738943488 [label="the following users exist:"]
+	1436738938400 -> 1436738943488
+	1436738943488 [label="the following users exist:"]
+	1436738936528 [label="the following External Activity exist:"]
+	1436738938400 -> 1436738936528
+	1436738936528 [label="the following External Activity exist:"]
+	1436738936288 [label="I reindex external activity"]
+	1436738938400 -> 1436738936288
+	1436738936288 [label="I reindex external activity"]
+}

@@ -1,0 +1,19 @@
+// 2662396629856 Context Model
+digraph {
+	2662396631680 [label=Context1]
+	2662396581520 [label="the application is set up"]
+	2662396631680 -> 2662396581520
+	2662396581520 [label="the application is set up"]
+	2662396584592 [label="an association is active"]
+	2662396631680 -> 2662396584592
+	2662396584592 [label="an association is active"]
+	2662396576864 [label="I am a member of the organisation"]
+	2662396631680 -> 2662396576864
+	2662396576864 [label="I am a member of the organisation"]
+	2662396576384 [label="the subdomain is the organisation's subdomain"]
+	2662396631680 -> 2662396576384
+	2662396576384 [label="the subdomain is the organisation's subdomain"]
+	2662396576912 [label="I have logged in"]
+	2662396631680 -> 2662396576912
+	2662396576912 [label="I have logged in"]
+}

@@ -1,0 +1,210 @@
+{
+    "feature_name": "Ranking possible student times",
+    "user_story": {
+        "as_a": "student",
+        "i_want": "rank which time slots I can work with in order of my preference",
+        "so_that": "I can be matched with a class to match my schedule",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "the following timeslots exist"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to /students/1/semesters/1/courses/1/select_timeslots/friday",
+                        "I press \"Save\""
+                    ],
+                    [
+                        "I go to /students/1/semesters/1/courses/1/select_timeslots/friday",
+                        "I press \"Save & Continue\""
+                    ],
+                    [
+                        "I go to /students/1/semesters/1/courses/1/select_timeslots/summary"
+                    ],
+                    [
+                        "I go to /students/1/semesters/1/courses/1/select_timeslots/rank"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"You must select 3-5 timeslots.\""
+                    ],
+                    [
+                        "I should see \"You must select 3-5 timeslots.\""
+                    ],
+                    [
+                        "I should see \"You must select 3-5 timeslots.\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the following timeslots exist"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to /students/1/semesters/1/courses/1/select_timeslots"
+                    ],
+                    [
+                        "I click element containing \"08:00 am to 09:00 am\""
+                    ],
+                    [
+                        "I go to /students/1/semesters/1/courses/1/select_timeslots/rank"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I press \"Save & Continue\""
+                    ],
+                    [
+                        "I should not see \"You must select 3-5 timeslots.\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to /students/1/semesters/1/courses/1/select_timeslots/rank"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"You must select 3-5 timeslots.\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the following timeslots exist"
+                    ],
+                    [
+                        "the following preferences exist:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to /students/1/semesters/1/courses/1/select_timeslots/rank"
+                    ],
+                    [
+                        "I select \"1\" from \"student[preferences_attributes][0][ranking]\""
+                    ],
+                    [
+                        "I select \"1\" from \"student[preferences_attributes][1][ranking]\""
+                    ],
+                    [
+                        "I select \"3\" from \"student[preferences_attributes][2][ranking]\""
+                    ],
+                    [
+                        "I select \"4\" from \"student[preferences_attributes][3][ranking]\"",
+                        "I press \"Submit Rankings\""
+                    ],
+                    [
+                        "I go to /students/1/semesters/1/courses/1/select_timeslots/summary"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"The ranking for preference must be unique.\""
+                    ],
+                    [
+                        "I should see /1.*8:00 am.*9:00 am/"
+                    ],
+                    [
+                        "I should see /2.*9:00 am.*10:00 am/"
+                    ],
+                    [
+                        "I should see /3.*11:00 am.*12:00 pm/"
+                    ],
+                    [
+                        "I should see /4.*12:00 pm.*1:00 pm/"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the following timeslots exist"
+                    ],
+                    [
+                        "the following preferences exist:"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to /students/1/semesters/1/courses/1/select_timeslots"
+                    ],
+                    [
+                        "I click element containing \"09:00 am to 10:00 am\"",
+                        "I press \"Save\""
+                    ],
+                    [
+                        "I go to /students/1/semesters/1/courses/1/select_timeslots/summary"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see /9:00 am.*10:00 am/"
+                    ],
+                    [
+                        "I should see /1.*8:00 am.*9:00 am/"
+                    ],
+                    [
+                        "I should see /2.*11:00 am.*12:00 pm/"
+                    ],
+                    [
+                        "I should see /3.*12:00 pm.*1:00 pm/"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "the following timeslots exist"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to /students/1/semesters/1/courses/1/select_timeslots"
+                    ],
+                    [
+                        "I click element containing \"08:00 am to 09:00 am\""
+                    ],
+                    [
+                        "I click element containing \"09:00 am to 10:00 am\"",
+                        "I press \"Save & Continue\""
+                    ],
+                    [
+                        "I click element containing \"11:00 am to 12:00 pm\""
+                    ],
+                    [
+                        "I click element containing \"12:00 pm to 01:00 pm\"",
+                        "I press \"Save & Continue\""
+                    ],
+                    [
+                        "I go to /students/1/semesters/1/courses/1/select_timeslots/rank"
+                    ],
+                    [
+                        "I select \"1\" from \"student[preferences_attributes][0][ranking]\""
+                    ],
+                    [
+                        "I select \"2\" from \"student[preferences_attributes][1][ranking]\""
+                    ],
+                    [
+                        "I select \"3\" from \"student[preferences_attributes][2][ranking]\""
+                    ],
+                    [
+                        "I select \"4\" from \"student[preferences_attributes][3][ranking]\"",
+                        "I press \"Submit Rankings\""
+                    ]
+                ],
+                "thens_list": []
+            }
+        ]
+    }
+}

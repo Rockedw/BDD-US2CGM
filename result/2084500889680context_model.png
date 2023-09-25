@@ -1,0 +1,10 @@
+// 2084500894960 Context Model
+digraph {
+	2084500889680 [label=Context4]
+	2084500896448 [label="I login as an admin"]
+	2084500889680 -> 2084500896448
+	2084500896448 [label="I login as an admin"]
+	2084500890016 [label="am on the admin settings page"]
+	2084500889680 -> 2084500890016
+	2084500890016 [label="am on the admin settings page"]
+}

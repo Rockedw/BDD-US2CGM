@@ -1,0 +1,35 @@
+{
+    "feature_name": "Proposing a new member",
+    "user_story": {
+        "as_a": "member",
+        "i_want": "propose a new member",
+        "so_that": "involve a new person in the running of the association",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the voting and proposals page",
+                        "I press \"Propose a new member\"",
+                        "I fill in \"Email\" with \"bob@example.com\"",
+                        "I fill in \"First name\" with \"Bob\"",
+                        "I fill in \"Last name\" with \"Smith\"",
+                        "I press \"Invite member\""
+                    ],
+                    [
+                        "I go to the voting and proposals page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Add Member Proposal successfully created\"",
+                        "everyone should receive an email notifying them of the proposal"
+                    ],
+                    [
+                        "I should see a proposal to add \"Bob Smith\" as a member"
+                    ]
+                ]
+            }
+        ]
+    }
+}

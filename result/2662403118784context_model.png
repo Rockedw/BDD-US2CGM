@@ -1,0 +1,16 @@
+// 2662403117728 Context Model
+digraph {
+	2662403118784 [label=Context8]
+	2662403118928 [label="I have a _posts directory"]
+	2662403118784 -> 2662403118928
+	2662403118928 [label="I have a _posts directory"]
+	2662403119024 [label="I have a _layouts directory"]
+	2662403118784 -> 2662403119024
+	2662403119024 [label="I have a _layouts directory"]
+	2662403119120 [label="I have the following post:"]
+	2662403118784 -> 2662403119120
+	2662403119120 [label="I have the following post:"]
+	2662403119216 [label="I have a default layout that contains \"{{ page.tags | array_to_sentence_string }}\""]
+	2662403118784 -> 2662403119216
+	2662403119216 [label="I have a default layout that contains \"{{ page.tags | array_to_sentence_string }}\""]
+}

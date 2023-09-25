@@ -1,0 +1,48 @@
+{
+    "feature_name": "Static pages",
+    "user_story": {
+        "as_a": "n Engine Yard administrator",
+        "i_want": "add pages",
+        "so_that": "I can add static content to the site",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a logged in admin user",
+                        "I am on the admin dashboard"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"navigation.pages\" translation",
+                        "I follow \"page.add_new\" translation",
+                        "I fill in \"page[title]\" with \"New page\"",
+                        "I fill in \"page[url]\" with \"new_page\"",
+                        "I fill in \"page[content]\" with \"Hello\"",
+                        "I press \"forms.save\" translation"
+                    ],
+                    [
+                        "I follow \"New page\"",
+                        "I fill in \"page[title]\" with \"Page revision\"",
+                        "I press \"forms.save\" translation"
+                    ],
+                    [
+                        "I follow \"general.delete\" translation"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"New page\""
+                    ],
+                    [
+                        "I should see \"Page revision\""
+                    ],
+                    [
+                        "I should not see \"Page revision\"",
+                        "I should see \"page.deleted_successfully\" translation"
+                    ]
+                ]
+            }
+        ]
+    }
+}

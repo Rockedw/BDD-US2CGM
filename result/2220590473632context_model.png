@@ -1,0 +1,10 @@
+// 2220590473200 Context Model
+digraph {
+	2220590473632 [label=Context24]
+	2220590473968 [label="I open a new edit tab"]
+	2220590473632 -> 2220590473968
+	2220590473968 [label="I open a new edit tab"]
+	2220590474064 [label="tabs are hard"]
+	2220590473632 -> 2220590474064
+	2220590474064 [label="tabs are hard"]
+}

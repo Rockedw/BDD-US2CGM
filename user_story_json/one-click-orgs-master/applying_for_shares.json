@@ -1,0 +1,48 @@
+{
+    "feature_name": "Applying for shares",
+    "user_story": {
+        "as_a": "Member",
+        "i_want": "apply for more shares",
+        "so_that": "increase my investment in the co-op",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Shares page",
+                        "I press \"Apply for more shares\"",
+                        "I enter the number of additional shares I want"
+                    ],
+                    [
+                        "I press \"Apply for more shares\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the payment that will be required"
+                    ],
+                    [
+                        "I should see that a payment is required for my new shares",
+                        "the Secretary should receive a notification of the new share application"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the Shares page",
+                        "I press \"Apply for more shares\"",
+                        "I enter a number of additional shares that would take me over the maximum legal shareholding"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a message telling me that I cannot apply for this number of shares",
+                        "I should not be able to press \"Apply for more shares\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

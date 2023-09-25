@@ -1,0 +1,192 @@
+{
+    "feature_name": "preview posts in the stream",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "see a preview of my posts in the stream",
+        "so_that": "test markdown without posting",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I expand the publisher"
+                    ],
+                    [
+                        "I edit the post"
+                    ],
+                    [
+                        "I edit the post"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I write the status message \"I am eating yogurt\"",
+                        "I preview the post"
+                    ],
+                    [
+                        "I write the status message \"This preview rocks\"",
+                        "I preview the post"
+                    ],
+                    [
+                        "I write the status message \"I like rocks\"",
+                        "I press \"Share\""
+                    ],
+                    [
+                        "I expand the publisher"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"I am eating yogurt\" in the preview"
+                    ],
+                    [
+                        "I should see \"This preview rocks\" in the preview",
+                        "I should not see \"I am eating a yogurt\" in the preview"
+                    ],
+                    [
+                        "\"I like rocks\" should be post 1"
+                    ],
+                    [
+                        "I should not be in preview mode"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I expand the publisher"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I insert an extremely long status message",
+                        "I preview the post"
+                    ],
+                    [
+                        "I press \"Share\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the preview should not be collapsed"
+                    ],
+                    [
+                        "the post should be collapsed"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I expand the publisher",
+                        "I attach \"spec/fixtures/button.png\" to the publisher"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in the following:",
+                        "I preview the post"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a \"img\" within \".md-preview .stream-element .photo-attachments\"",
+                        "I should see \"Look at this dog\" within \".md-preview .stream-element\"",
+                        "I close the publisher"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I expand the publisher",
+                        "I mention Alice in the publisher",
+                        "I preview the post",
+                        "I follow \"Alice Smith\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"Alice Smith\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a user \"Samuel Beckett\" who's tagged \"#rockstar\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the tag page for \"rockstar\""
+                    ],
+                    [
+                        "I expand the publisher",
+                        "I fill in the following:",
+                        "I preview the post"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Samuel Beckett\""
+                    ],
+                    [
+                        "I should see \"This preview rocks\" in the preview",
+                        "I close the publisher"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I expand the publisher"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in the following:",
+                        "I click on selector \"#poll_creator\""
+                    ],
+                    [
+                        "I fill in the following:",
+                        "I fill in the following for the options:",
+                        "I preview the post"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a \".poll-form\" within \".md-preview .stream-element\"",
+                        "I should see a \"form\" within \".md-preview .stream-element\"",
+                        "I close the publisher"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I expand the publisher"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in the following:",
+                        "I allow geolocation",
+                        "I click on selector \"#locator\""
+                    ],
+                    [
+                        "I fill in the following:",
+                        "I preview the post"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a \".near-from\" within \".md-preview .stream-element\"",
+                        "I should see \"Some cool place\" within \".md-preview .stream-element .near-from\"",
+                        "I close the publisher"
+                    ]
+                ]
+            }
+        ]
+    }
+}

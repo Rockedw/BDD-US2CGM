@@ -1,0 +1,283 @@
+{
+    "feature_name": "Verify inputs for creation of new connection dynamically within the page",
+    "user_story": {
+        "as_a": "as a contributor, I want",
+        "i_want": "tell about bad inputs before I submit a page.",
+        "so_that": "create a wontology,",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on the new connections page",
+                        "I pause"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the focus is on the \"connection_subject_id\" element",
+                        "the element \"connection_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on the new connections page"
+                    ],
+                    [
+                        "I type the \"Tab\" special key",
+                        "I pause"
+                    ],
+                    [
+                        "I type the \"Tab\" special key"
+                    ],
+                    [
+                        "I type the \"Tab\" special key"
+                    ],
+                    [
+                        "I type the \"Tab\" special key"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the focus is on the \"connection_subject_id\" element",
+                        "the element \"subject_required\" has the format \"font-weight=400\"",
+                        "the element \"predicate_required\" has the format \"font-weight=400\"",
+                        "the element \"obj_required\" has the format \"font-weight=400\"",
+                        "the image \"subject_error_icon\" is \"blank_error_icon\"",
+                        "the image \"predicate_error_icon\" is \"blank_error_icon\"",
+                        "the image \"kind_of_obj_error_icon\" is \"blank_error_icon\"",
+                        "the image \"obj_error_icon\" is \"blank_error_icon\"",
+                        "the element \"connection_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ],
+                    [
+                        "the focus is on the \"connection_predicate_id\" element",
+                        "the element \"subject_required\" has the format \"font-weight=bold\"",
+                        "the element \"predicate_required\" has the format \"font-weight=400\"",
+                        "the element \"obj_required\" has the format \"font-weight=400\"",
+                        "the image \"subject_error_icon\" is \"error_error_icon\"",
+                        "the image \"predicate_error_icon\" is \"blank_error_icon\"",
+                        "the image \"kind_of_obj_error_icon\" is \"blank_error_icon\"",
+                        "the image \"obj_error_icon\" is \"blank_error_icon\"",
+                        "the element \"connection_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ],
+                    [
+                        "the focus is on a \"connection_kind_of_obj\" element",
+                        "the element \"subject_required\" has the format \"font-weight=bold\"",
+                        "the element \"predicate_required\" has the format \"font-weight=bold\"",
+                        "the element \"obj_required\" has the format \"font-weight=400\"",
+                        "the image \"subject_error_icon\" is \"error_error_icon\"",
+                        "the image \"predicate_error_icon\" is \"error_error_icon\"",
+                        "the image \"kind_of_obj_error_icon\" is \"blank_error_icon\"",
+                        "the image \"obj_error_icon\" is \"blank_error_icon\"",
+                        "the control \"connection_obj_id\" is disabled",
+                        "the control \"connection_scalar_obj\" is disabled",
+                        "the element \"connection_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ],
+                    [
+                        "the focus is on a \"connection_kind_of_obj\" element",
+                        "the element \"subject_required\" has the format \"font-weight=bold\"",
+                        "the element \"predicate_required\" has the format \"font-weight=bold\"",
+                        "the element \"obj_required\" has the format \"font-weight=400\"",
+                        "the image \"subject_error_icon\" is \"error_error_icon\"",
+                        "the image \"predicate_error_icon\" is \"error_error_icon\"",
+                        "the image \"kind_of_obj_error_icon\" is \"blank_error_icon\"",
+                        "the image \"obj_error_icon\" is \"blank_error_icon\"",
+                        "the control \"connection_obj_id\" is disabled",
+                        "the control \"connection_scalar_obj\" is disabled",
+                        "the element \"connection_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ],
+                    [
+                        "the focus is on the \"connection_submit\" element",
+                        "the element \"subject_required\" has the format \"font-weight=bold\"",
+                        "the element \"predicate_required\" has the format \"font-weight=bold\"",
+                        "the element \"obj_required\" has the format \"font-weight=bold\"",
+                        "the image \"subject_error_icon\" is \"error_error_icon\"",
+                        "the image \"predicate_error_icon\" is \"error_error_icon\"",
+                        "the image \"kind_of_obj_error_icon\" is \"error_error_icon\"",
+                        "the image \"obj_error_icon\" is \"error_error_icon\"",
+                        "the control \"connection_obj_id\" is disabled",
+                        "the control \"connection_scalar_obj\" is disabled",
+                        "the element \"connection_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on the new connections page"
+                    ],
+                    [
+                        "I type the \"Tab\" special key"
+                    ],
+                    [
+                        "I type the \"Tab\" special key"
+                    ],
+                    [
+                        "I type the \"Tab\" special key"
+                    ],
+                    [
+                        "I choose \"Item\""
+                    ],
+                    [
+                        "I type the \"Tab\" special key"
+                    ],
+                    [
+                        "I type the \"Tab\" special key"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the focus is on the \"connection_subject_id\" element",
+                        "the element \"subject_required\" has the format \"font-weight=400\"",
+                        "the element \"predicate_required\" has the format \"font-weight=400\"",
+                        "the element \"obj_required\" has the format \"font-weight=400\"",
+                        "the image \"subject_error_icon\" is \"blank_error_icon\"",
+                        "the image \"predicate_error_icon\" is \"blank_error_icon\"",
+                        "the image \"kind_of_obj_error_icon\" is \"blank_error_icon\"",
+                        "the image \"obj_error_icon\" is \"blank_error_icon\"",
+                        "the element \"connection_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ],
+                    [
+                        "the focus is on the \"connection_predicate_id\" element",
+                        "the element \"subject_required\" has the format \"font-weight=bold\"",
+                        "the element \"predicate_required\" has the format \"font-weight=400\"",
+                        "the element \"obj_required\" has the format \"font-weight=400\"",
+                        "the image \"subject_error_icon\" is \"error_error_icon\"",
+                        "the image \"predicate_error_icon\" is \"blank_error_icon\"",
+                        "the image \"kind_of_obj_error_icon\" is \"blank_error_icon\"",
+                        "the image \"obj_error_icon\" is \"blank_error_icon\"",
+                        "the element \"connection_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ],
+                    [
+                        "the focus is on a \"connection_kind_of_obj\" element",
+                        "the element \"subject_required\" has the format \"font-weight=bold\"",
+                        "the element \"predicate_required\" has the format \"font-weight=bold\"",
+                        "the element \"obj_required\" has the format \"font-weight=400\"",
+                        "the image \"subject_error_icon\" is \"error_error_icon\"",
+                        "the image \"predicate_error_icon\" is \"error_error_icon\"",
+                        "the image \"kind_of_obj_error_icon\" is \"blank_error_icon\"",
+                        "the image \"obj_error_icon\" is \"blank_error_icon\"",
+                        "the control \"connection_obj_id\" is disabled",
+                        "the control \"connection_scalar_obj\" is disabled",
+                        "the element \"connection_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ],
+                    [
+                        "the focus is on a \"connection_kind_of_obj\" element",
+                        "the element \"subject_required\" has the format \"font-weight=bold\"",
+                        "the element \"predicate_required\" has the format \"font-weight=bold\"",
+                        "the element \"obj_required\" has the format \"font-weight=400\"",
+                        "the image \"subject_error_icon\" is \"error_error_icon\"",
+                        "the image \"predicate_error_icon\" is \"error_error_icon\"",
+                        "the image \"kind_of_obj_error_icon\" is \"blank_error_icon\"",
+                        "the image \"obj_error_icon\" is \"blank_error_icon\"",
+                        "the control \"connection_obj_id\" is disabled",
+                        "the control \"connection_scalar_obj\" is disabled",
+                        "the element \"connection_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ],
+                    [
+                        "the control \"connection_obj_id\" is enabled",
+                        "the control \"connection_scalar_obj\" is disabled",
+                        "the element \"subject_required\" has the format \"font-weight=bold\"",
+                        "the element \"predicate_required\" has the format \"font-weight=bold\"",
+                        "the element \"obj_required\" has the format \"font-weight=400\"",
+                        "the image \"subject_error_icon\" is \"error_error_icon\"",
+                        "the image \"predicate_error_icon\" is \"error_error_icon\"",
+                        "the image \"kind_of_obj_error_icon\" is \"blank_error_icon\"",
+                        "the image \"obj_error_icon\" is \"blank_error_icon\"",
+                        "the element \"connection_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ],
+                    [
+                        "the focus is on the \"connection_obj_id\" element",
+                        "the element \"subject_required\" has the format \"font-weight=bold\"",
+                        "the element \"predicate_required\" has the format \"font-weight=bold\"",
+                        "the element \"obj_required\" has the format \"font-weight=400\"",
+                        "the image \"subject_error_icon\" is \"error_error_icon\"",
+                        "the image \"predicate_error_icon\" is \"error_error_icon\"",
+                        "the image \"kind_of_obj_error_icon\" is \"blank_error_icon\"",
+                        "the image \"obj_error_icon\" is \"blank_error_icon\"",
+                        "the element \"connection_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ],
+                    [
+                        "the focus is on the \"connection_submit\" element",
+                        "the element \"subject_required\" has the format \"font-weight=bold\"",
+                        "the element \"predicate_required\" has the format \"font-weight=bold\"",
+                        "the element \"obj_required\" has the format \"font-weight=bold\"",
+                        "the image \"subject_error_icon\" is \"error_error_icon\"",
+                        "the image \"predicate_error_icon\" is \"error_error_icon\"",
+                        "the image \"kind_of_obj_error_icon\" is \"blank_error_icon\"",
+                        "the image \"obj_error_icon\" is \"error_error_icon\"",
+                        "the element \"connection_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I am on the new connections page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I press \"Create\"",
+                        "I pause"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the element \"subject_required\" has the format \"font-weight=bold\"",
+                        "the element \"predicate_required\" has the format \"font-weight=bold\"",
+                        "the element \"obj_required\" has the format \"font-weight=bold\"",
+                        "the image \"subject_error_icon\" is \"error_error_icon\"",
+                        "the image \"predicate_error_icon\" is \"error_error_icon\"",
+                        "the image \"kind_of_obj_error_icon\" is \"error_error_icon\"",
+                        "the image \"obj_error_icon\" is \"error_error_icon\"",
+                        "the element \"connection_submit\" has the format \"background-color=$inactive_button_color;\"",
+                        "the \"MB_content\" element should match \"Subject[^\\.]+must have\"",
+                        "the \"MB_content\" element should match \"Relationship[^\\.]+must have\"",
+                        "the \"MB_content\" element should match \"Object[^\\.]+must have\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is 1 existing individual like \"indiv\"",
+                        "there is 1 existing property like \"property\"",
+                        "I am on the new connections page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I put the focus on the \"connection_submit\" element",
+                        "I pause"
+                    ],
+                    [
+                        "I select \"indiv0 : indiv item number 0\" from \"Subject\"",
+                        "I select \"property0 : property item number 0\" from \"Relates to\"",
+                        "I choose \"Value\"",
+                        "I fill in \"connection_scalar_obj\" with \"10:05:15\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the element \"connection_submit\" has the format \"background-color=$inactive_button_color;\""
+                    ],
+                    [
+                        "the element \"subject_required\" has the format \"font-weight=400\"",
+                        "the element \"predicate_required\" has the format \"font-weight=400\"",
+                        "the element \"obj_required\" has the format \"font-weight=400\"",
+                        "the image \"subject_error_icon\" is \"blank_error_icon\"",
+                        "the image \"predicate_error_icon\" is \"blank_error_icon\"",
+                        "the image \"kind_of_obj_error_icon\" is \"blank_error_icon\"",
+                        "the image \"obj_error_icon\" is \"blank_error_icon\"",
+                        "the element \"connection_submit\" has the format \"background-color=$active_button_color;\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

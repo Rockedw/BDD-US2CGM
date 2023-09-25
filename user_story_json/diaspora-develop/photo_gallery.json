@@ -1,0 +1,37 @@
+{
+    "feature_name": "viewing the photo lightbox",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I press the attached image"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the photo lightbox"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I press the attached image",
+                        "I press the close lightbox link"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see the photo lightbox"
+                    ]
+                ]
+            }
+        ]
+    }
+}

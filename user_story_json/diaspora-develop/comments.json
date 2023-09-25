@@ -1,0 +1,193 @@
+{
+    "feature_name": "commenting",
+    "user_story": {
+        "as_a": "As Alice's friend",
+        "i_want": "comment on her post",
+        "so_that": "tell Alice how great the picture of her dog is",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on \"alice@alice.alice\"'s page"
+                    ],
+                    [
+                        "I focus the comment field",
+                        "I fill in the following:",
+                        "I press \"Comment\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Look at this dog\""
+                    ],
+                    [
+                        "I should see \"is that a poodle?\" within \".comment\"",
+                        "I should see \"less than a minute ago\" within \".comment time\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "\"bob@bob.bob\" has commented \"is that a poodle?\" on \"Look at this dog\"",
+                        "I am on \"alice@alice.alice\"'s page"
+                    ],
+                    [
+                        "I confirm the alert after I click to delete the first comment"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"is that a poodle?\""
+                    ],
+                    [
+                        "I should not see \"is that a poodle?\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I focus the comment field"
+                    ],
+                    [
+                        "I select only \"Besties\" aspect"
+                    ],
+                    [
+                        "I focus the comment field"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Look at this dog\"",
+                        "the first comment field should be closed"
+                    ],
+                    [
+                        "the first comment field should be open"
+                    ],
+                    [
+                        "I should see \"Look at this dog\"",
+                        "the first comment field should be closed"
+                    ],
+                    [
+                        "the first comment field should be open"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on \"alice@alice.alice\"'s page"
+                    ],
+                    [
+                        "I follow \"less than a minute ago\""
+                    ],
+                    [
+                        "I make a show page comment \"I think that’s a cat\""
+                    ],
+                    [
+                        "I go to \"alice@alice.alice\"'s page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Look at this dog\""
+                    ],
+                    [
+                        "I should see \"Look at this dog\""
+                    ],
+                    [
+                        "I should see \"less than a minute ago\" within \"#comments\""
+                    ],
+                    [
+                        "I should see \"I think that’s a cat\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "\"bob@bob.bob\" has commented a lot on \"Look at this dog\"",
+                        "\"bob@bob.bob\" has commented \"I think that’s a cat\" on \"Look at this dog\"",
+                        "I am on \"alice@alice.alice\"'s page"
+                    ],
+                    [
+                        "I follow \"less than a minute ago\" within \".comment:last-child\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Look at this dog\"",
+                        "I should see \"I think that’s a cat\" within \".comment:last-child\""
+                    ],
+                    [
+                        "I should see \"Look at this dog\" within \"#single-post-content\"",
+                        "I should see \"I think that’s a cat\" within \".comment .highlighted\"",
+                        "I should have scrolled down"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "\"bob@bob.bob\" has commented a lot on \"Look at this dog\"",
+                        "\"bob@bob.bob\" has commented \"I think that’s a cat\" on \"Look at this dog\"",
+                        "I am on \"alice@alice.alice\"'s page"
+                    ],
+                    [
+                        "I follow \"less than a minute ago\" within \"span.details.gray\""
+                    ],
+                    [
+                        "I follow \"less than a minute ago\" within \".comments .comment:last-child\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Look at this dog\""
+                    ],
+                    [
+                        "I should see \"I think that’s a cat\" within \".comments .comment:last-child\""
+                    ],
+                    [
+                        "I should see \"I think that’s a cat\" within \".comments .comment .highlighted\"",
+                        "I should have scrolled down"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "\"alice@alice.alice\" has commented a lot on \"Look at this dog\"",
+                        "\"alice@alice.alice\" has liked the post \"Look at this dog\"",
+                        "I am on \"alice@alice.alice\"'s page"
+                    ],
+                    [
+                        "I follow \"1 Like\""
+                    ],
+                    [
+                        "I click on selector \".toggle_post_comments\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Look at this dog\"",
+                        "I should not see \"Comment 2\""
+                    ],
+                    [
+                        "I should not see \"1 Like\""
+                    ],
+                    [
+                        "I should see \"Comment 2\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

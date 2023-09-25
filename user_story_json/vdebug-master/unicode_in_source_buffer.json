@@ -1,0 +1,28 @@
+{
+    "feature_name": "Unicode in source buffer",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "debug code that uses Unicode characters",
+        "so_that": "use Vdebug with all character sets",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have a file test.php containing",
+                        "I start the debugger with the PHP script test.php"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I step over"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the watch window should show $arr"
+                    ]
+                ]
+            }
+        ]
+    }
+}

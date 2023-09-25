@@ -1,0 +1,10 @@
+// 2662398604144 Context Model
+digraph {
+	2662398600496 [label=Context1]
+	2662398602848 [label="a page \"Home\" with url \"home\""]
+	2662398600496 -> 2662398602848
+	2662398602848 [label="a page \"Home\" with url \"home\""]
+	2662398597856 [label="page \"Home\" has content \"Oh, I like that\""]
+	2662398600496 -> 2662398597856
+	2662398597856 [label="page \"Home\" has content \"Oh, I like that\""]
+}

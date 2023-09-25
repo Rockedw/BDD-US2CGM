@@ -1,0 +1,16 @@
+// 2486258488544 Context Model
+digraph {
+	2486258489504 [label=Context27]
+	2486258489648 [label="there are 4 existing individuals like \"indiv\""]
+	2486258489504 -> 2486258489648
+	2486258489648 [label="there are 4 existing individuals like \"indiv\""]
+	2486258489744 [label="there is an existing connection \"indiv0\" \"child_of\" \"indiv1\""]
+	2486258489504 -> 2486258489744
+	2486258489744 [label="there is an existing connection \"indiv0\" \"child_of\" \"indiv1\""]
+	2486258489840 [label="I am on the edit connections page for \"indiv0\" \"child_of\" \"indiv1\""]
+	2486258489504 -> 2486258489840
+	2486258489840 [label="I am on the edit connections page for \"indiv0\" \"child_of\" \"indiv1\""]
+	2486258489936 [label="I select \"indiv2 : indiv item number 2\" from \"Subject\""]
+	2486258489504 -> 2486258489936
+	2486258489936 [label="I select \"indiv2 : indiv item number 2\" from \"Subject\""]
+}

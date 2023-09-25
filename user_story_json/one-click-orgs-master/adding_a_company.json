@@ -1,0 +1,36 @@
+{
+    "feature_name": "Adding a company",
+    "user_story": {
+        "as_a": "director",
+        "i_want": "add an existing company to the instance",
+        "so_that": "start running a company virtually",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "the domain is the signup domain"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the new company page",
+                        "I fill in \"First name\" with \"Bob\"",
+                        "I fill in \"Last name\" with \"Smith\"",
+                        "I fill in \"Email address\" with \"bob@example.com\"",
+                        "I fill in \"Choose password\" with \"letmein\"",
+                        "I fill in \"Confirm password\" with \"letmein\"",
+                        "I fill in \"Company's official name\" with \"Coffee Ventures Ltd\"",
+                        "I fill in \"One Click Orgs web address\" with \"coffee\"",
+                        "I press \"Add company\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the Votes & Minutes page",
+                        "the subdomain should be \"coffee\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

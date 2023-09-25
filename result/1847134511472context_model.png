@@ -1,0 +1,16 @@
+// 1847134306464 Context Model
+digraph {
+	1847134511472 [label=Context76]
+	1847134505040 [label="I have recorded on the 11 oct 2009 an invoice (in_invoice) of 1144.0 CHF without tax called MySupplierInvoiceRounding"]
+	1847134511472 -> 1847134505040
+	1847134505040 [label="I have recorded on the 11 oct 2009 an invoice (in_invoice) of 1144.0 CHF without tax called MySupplierInvoiceRounding"]
+	1847134510656 [label="I add a line called MyFirstLine on the last created invoice of 91.73"]
+	1847134511472 -> 1847134510656
+	1847134510656 [label="I add a line called MyFirstLine on the last created invoice of 91.73"]
+	1847134508784 [label="I add a line called MySecondLine on the last created invoice of 63.00"]
+	1847134511472 -> 1847134508784
+	1847134508784 [label="I add a line called MySecondLine on the last created invoice of 63.00"]
+	1847134505376 [label="I correct the total amount of the invoice according to changes"]
+	1847134511472 -> 1847134505376
+	1847134505376 [label="I correct the total amount of the invoice according to changes"]
+}

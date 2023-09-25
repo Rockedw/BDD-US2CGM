@@ -1,0 +1,133 @@
+{
+    "feature_name": "Admin can add, edit and remove notices",
+    "user_story": {
+        "as_a": "n admin",
+        "i_want": "add, edit and remove notices",
+        "so_that": "update my users with important updates or information",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I create a notice \"Notice for users\"",
+                        "am on the getting started page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Notice for users\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a notice \"Notice for admin\"",
+                        "am on the site notices index page",
+                        "the notices have loaded"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"edit\"",
+                        "I fill \"Edited notice for users\" in the tinyMCE editor with id \"notice_html\"",
+                        "I press \"Update Notice\"",
+                        "am on the getting started page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Edited notice for users\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a notice \"Notice for admin\"",
+                        "am on the site notices index page",
+                        "the notices have loaded"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I follow \"Delete Notice\"",
+                        "accept the dialog",
+                        "am on the my home page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"Notice for admin\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I create a notice \" \""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Notice text is blank\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a notice \"Notice for admin\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the admin create notice page",
+                        "I follow \"Cancel\""
+                    ],
+                    [
+                        "I follow \"edit\"",
+                        "I follow \"Cancel\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on \"the site notices index page\"",
+                        "the notices have loaded"
+                    ],
+                    [
+                        "I should be on \"the site notices index page\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am an anonymous user",
+                        "I try to go to the admin create notice page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on \"the signin page\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on the site notices index page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"You have no notices.\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

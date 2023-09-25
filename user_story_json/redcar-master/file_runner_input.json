@@ -1,0 +1,40 @@
+{
+    "feature_name": "Using file properties in commands",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "run commands that rely on the current edit view",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have opened \"plugins/runnables/features/fixtures/name_app.rb\"",
+                        "I run the command Redcar::Runnables::RunEditTabCommand"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "my active tab should be \"Running name_app.rb\"",
+                        "the HTML tab should say \"name_app\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have opened \"plugins/runnables/features/fixtures/line_app.rb\"",
+                        "I run the command Redcar::Runnables::RunEditTabCommand"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "my active tab should be \"Running line_app.rb\"",
+                        "the HTML tab should say \"1\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

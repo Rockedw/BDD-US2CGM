@@ -1,0 +1,58 @@
+{
+    "feature_name": "Managing share withdrawals",
+    "user_story": {
+        "as_a": "As the Secretary",
+        "i_want": "process share withdrawal applications",
+        "so_that": "respond to member's requests for withdrawal of shares",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a member's share withdrawal application has fallen due"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "the share transaction daily job runs",
+                        "I go to the Shares page"
+                    ],
+                    [
+                        "I press \"Mark as paid, and cancel shares\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see that a share withdrawal application is now due"
+                    ],
+                    [
+                        "I should see that the member's shareholding has reduced accordingly"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a share withdrawal application which is not yet due"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Shares page"
+                    ],
+                    [
+                        "I press \"Waive the notice period\"",
+                        "I certify that the Board has agreed with this"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a share withdrawal application which is not yet due"
+                    ],
+                    [
+                        "I should see that the member's shareholding has reduced accordingly"
+                    ]
+                ]
+            }
+        ]
+    }
+}

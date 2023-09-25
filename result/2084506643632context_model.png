@@ -1,0 +1,19 @@
+// 2084506643872 Context Model
+digraph {
+	2084506643632 [label=Context5]
+	2084506633216 [label="I am the Secretary of the co-op"]
+	2084506643632 -> 2084506633216
+	2084506633216 [label="I am the Secretary of the co-op"]
+	2084506635040 [label="there has been a past meeting"]
+	2084506643632 -> 2084506635040
+	2084506635040 [label="there has been a past meeting"]
+	2084506645648 [label="the meeting has no minutes yet"]
+	2084506643632 -> 2084506645648
+	2084506645648 [label="the meeting has no minutes yet"]
+	2084506645888 [label="there were resolutions attached to the meeting"]
+	2084506643632 -> 2084506645888
+	2084506645888 [label="there were resolutions attached to the meeting"]
+	2084506644400 [label="the resolutions were open for electronic voting"]
+	2084506643632 -> 2084506644400
+	2084506644400 [label="the resolutions were open for electronic voting"]
+}

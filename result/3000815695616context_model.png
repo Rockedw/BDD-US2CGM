@@ -1,0 +1,19 @@
+// 3000815686208 Context Model
+digraph {
+	3000815695616 [label=Context8]
+	3000815691056 [label="I have a _data directory"]
+	3000815695616 -> 3000815691056
+	3000815691056 [label="I have a _data directory"]
+	3000815689616 [label="I have a _data/categories directory"]
+	3000815695616 -> 3000815689616
+	3000815689616 [label="I have a _data/categories directory"]
+	3000815581840 [label="I have a \"_data/categories/dairy.yaml\" file with content:"]
+	3000815695616 -> 3000815581840
+	3000815581840 [label="I have a \"_data/categories/dairy.yaml\" file with content:"]
+	3000815582896 [label="I have a \"_data/categories.yaml\" file with content:"]
+	3000815695616 -> 3000815582896
+	3000815582896 [label="I have a \"_data/categories.yaml\" file with content:"]
+	3000815580880 [label="I have an \"index.html\" page that contains \"{{ site.data.categories.dairy.name }}\""]
+	3000815695616 -> 3000815580880
+	3000815580880 [label="I have an \"index.html\" page that contains \"{{ site.data.categories.dairy.name }}\""]
+}

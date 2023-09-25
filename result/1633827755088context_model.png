@@ -1,0 +1,16 @@
+// 1633827764160 Context Model
+digraph {
+	1633827755088 [label=Context1]
+	1633827764352 [label="I have an \"index.html\" page that contains \"Collections: {{ site.methods }}\""]
+	1633827755088 -> 1633827764352
+	1633827764352 [label="I have an \"index.html\" page that contains \"Collections: {{ site.methods }}\""]
+	1633827763920 [label="I have fixture collections"]
+	1633827755088 -> 1633827763920
+	1633827763920 [label="I have fixture collections"]
+	1633827758640 [label="I have a \"_methods/static-file.txt\" file that contains \"Static Content {{ site.title }}\""]
+	1633827755088 -> 1633827758640
+	1633827758640 [label="I have a \"_methods/static-file.txt\" file that contains \"Static Content {{ site.title }}\""]
+	1633827765264 [label="I have a configuration file with \"collections\" set to \"['methods']\""]
+	1633827755088 -> 1633827765264
+	1633827765264 [label="I have a configuration file with \"collections\" set to \"['methods']\""]
+}

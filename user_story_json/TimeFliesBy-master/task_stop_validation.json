@@ -1,0 +1,31 @@
+{
+    "feature_name": "Task stop validation",
+    "user_story": {
+        "as_a": "time tracking analyzer",
+        "i_want": "be certain that the stop is greater than start time",
+        "so_that": "> have meaningful time tracking data",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am on the new task page"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I fill in \"task_start\" with \"1/21/2010 8:38 PM\""
+                    ],
+                    [
+                        "I fill in \"task_stop\" with \"1/21/2010 8:30 PM\"",
+                        "I press \"Create\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Stop needs to be greater than start.\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

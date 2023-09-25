@@ -1,0 +1,40 @@
+// 1982166716224 Context Model
+digraph {
+	1982166713200 [label=Context5]
+	1982166715168 [label="I am in the CalCourse edit 1 page"]
+	1982166713200 -> 1982166715168
+	1982166715168 [label="I am in the CalCourse edit 1 page"]
+	1982166714592 [label="the \"cal_course_name\" field should contain \"Educ 111\""]
+	1982166713200 -> 1982166714592
+	1982166714592 [label="the \"cal_course_name\" field should contain \"Educ 111\""]
+	1982166719344 [label="I should see /Bob Ross/"]
+	1982166713200 -> 1982166719344
+	1982166719344 [label="I should see /Bob Ross/"]
+	1982166719872 [label="I should see /Ren Gar/"]
+	1982166713200 -> 1982166719872
+	1982166719872 [label="I should see /Ren Gar/"]
+	1982166717808 [label="I should see /El Cerrito High/"]
+	1982166713200 -> 1982166717808
+	1982166717808 [label="I should see /El Cerrito High/"]
+	1982166722320 [label="I should see /Ocean View/"]
+	1982166713200 -> 1982166722320
+	1982166722320 [label="I should see /Ocean View/"]
+	1982166713632 [label="I should see /Monday.*08:00AM.*09:00AM/"]
+	1982166713200 -> 1982166713632
+	1982166713632 [label="I should see /Monday.*08:00AM.*09:00AM/"]
+	1982166717184 [label="I should see /Monday.*09:00AM.*10:00AM/"]
+	1982166713200 -> 1982166717184
+	1982166717184 [label="I should see /Monday.*09:00AM.*10:00AM/"]
+	1982166717328 [label="I should not see /Tuesday.*11:00AM.*12:00AM/"]
+	1982166713200 -> 1982166717328
+	1982166717328 [label="I should not see /Tuesday.*11:00AM.*12:00AM/"]
+	1982166715264 [label="I should not see /Tuesday.*12:00AM.*01:00PM/"]
+	1982166713200 -> 1982166715264
+	1982166715264 [label="I should not see /Tuesday.*12:00AM.*01:00PM/"]
+	1982166719440 [label="I check \"timeslots[1]\""]
+	1982166713200 -> 1982166719440
+	1982166719440 [label="I check \"timeslots[1]\""]
+	1982166723088 [label="I press \"Save\""]
+	1982166713200 -> 1982166723088
+	1982166723088 [label="I press \"Save\""]
+}

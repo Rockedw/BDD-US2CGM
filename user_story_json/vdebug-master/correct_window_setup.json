@@ -1,0 +1,90 @@
+{
+    "feature_name": "Correct window setup",
+    "user_story": {
+        "as_a": "user",
+        "i_want": "see correct watch, stack and status information",
+        "so_that": "use Vdebug with all window panels",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have a file example.php containing"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I start the debugger with the PHP script example.php"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the status should be break",
+                        "the status window should contain :9000"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a file example.php containing",
+                        "I start the debugger with the PHP script example.php"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I step over"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the watch window should show $var1",
+                        "the watch window should show $var2",
+                        "the watch window variable $var1 should be (int) 1",
+                        "the watch window variable $var2 should be (uninitialized)"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a file example.php containing",
+                        "I start the debugger with the PHP script example.php"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I step over"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the first item on the stack should show the file example.php",
+                        "the first item on the stack should show line 3"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a file example.php containing",
+                        "I have a file example2.php containing",
+                        "I start the debugger with the PHP script example.php"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I step in"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "item 1 on the stack should show the file example2.php",
+                        "item 1 on the stack should show line 2",
+                        "item 2 on the stack should show the file example.php",
+                        "item 2 on the stack should show line 2"
+                    ]
+                ]
+            }
+        ]
+    }
+}

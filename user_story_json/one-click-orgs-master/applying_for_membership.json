@@ -1,0 +1,33 @@
+{
+    "feature_name": "Applying for membership",
+    "user_story": {
+        "as_a": "n applicant",
+        "i_want": "apply for membership of the co-op",
+        "so_that": "become part of the co-op",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a co-op"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the home page",
+                        "I follow \"Apply for membership\"",
+                        "I fill in my details",
+                        "I apply for the necessary number of shares",
+                        "I certify that I am aged 16 years or over",
+                        "I press \"Send membership application\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Your membership application has been received.\"",
+                        "the Secretary should receive a notification of the new membership application"
+                    ]
+                ]
+            }
+        ]
+    }
+}

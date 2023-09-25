@@ -1,0 +1,45 @@
+{
+    "feature_name": "PRE-DEFINED USERS FOR GO LIVE",
+    "user_story": {
+        "as_a": "n administrator, I do the following installation steps.",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "we select users below:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "we assign all groups to the users"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"res.users\" with oid: scen.fr_main_user",
+                        "having:",
+                        "we assign to user the groups bellow:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"res.users\" with oid: scen.ch_main_user",
+                        "having:",
+                        "we assign to user the groups bellow:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            }
+        ]
+    }
+}

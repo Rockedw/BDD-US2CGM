@@ -1,0 +1,61 @@
+{
+    "feature_name": "Viewing association details",
+    "user_story": {
+        "as_a": "member",
+        "i_want": "view details of the association",
+        "so_that": "understand my association",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "a proposal has been made"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the voting and proposals page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a list of votes in progress",
+                        "I should see a list of recent activity"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there are active members",
+                        "there are pending members"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the members page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the list of members",
+                        "I should see a list of pending members"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to a member's page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see the member's details",
+                        "I should see a list of recent activity by the member"
+                    ]
+                ]
+            }
+        ]
+    }
+}

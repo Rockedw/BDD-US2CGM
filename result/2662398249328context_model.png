@@ -1,0 +1,13 @@
+// 2662398259168 Context Model
+digraph {
+	2662398249328 [label=Context17]
+	2662398252400 [label="I have an \"index.html\" page that contains \"Second document's output: {{ site.documents[2].output }}\""]
+	2662398249328 -> 2662398252400
+	2662398252400 [label="I have an \"index.html\" page that contains \"Second document's output: {{ site.documents[2].output }}\""]
+	2662398259360 [label="I have fixture collections"]
+	2662398249328 -> 2662398259360
+	2662398259360 [label="I have fixture collections"]
+	2662398251440 [label="I have a \"_config.yml\" file with content:"]
+	2662398249328 -> 2662398251440
+	2662398251440 [label="I have a \"_config.yml\" file with content:"]
+}

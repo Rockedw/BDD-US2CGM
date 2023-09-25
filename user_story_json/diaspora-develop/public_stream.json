@@ -1,0 +1,37 @@
+{
+    "feature_name": "The public stream",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I sign in as \"alice@alice.alice\"",
+                        "I am on the public stream page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Bob’s public post\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I am on the public stream page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Bob’s public post\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

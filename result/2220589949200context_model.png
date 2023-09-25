@@ -1,0 +1,16 @@
+// 2220589947136 Context Model
+digraph {
+	2220589949200 [label=Context5]
+	2220589949344 [label="I have a _posts directory"]
+	2220589949200 -> 2220589949344
+	2220589949344 [label="I have a _posts directory"]
+	2220589949440 [label="I have the following posts:"]
+	2220589949200 -> 2220589949440
+	2220589949440 [label="I have the following posts:"]
+	2220589949536 [label="I have a configuration file with \"permalink\" set to \"/:title:output_ext\""]
+	2220589949200 -> 2220589949536
+	2220589949536 [label="I have a configuration file with \"permalink\" set to \"/:title:output_ext\""]
+	2220589949632 [label="I have an \"index.md\" page that contains \"[Welcome Again]({% post_url 2119-02-04-we-meet-again %})\""]
+	2220589949200 -> 2220589949632
+	2220589949632 [label="I have an \"index.md\" page that contains \"[Welcome Again]({% post_url 2119-02-04-we-meet-again %})\""]
+}

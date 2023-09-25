@@ -1,0 +1,48 @@
+{
+    "feature_name": "CUSTOM ANALYTIC ACCOUNTS CHART IMPORT BASED ON CSV TEMPLATE + ANALYTIC JOURNALS SETTINGS",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I execute the SQL commands"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "\"account.analytic.account\" is imported from CSV \"Plan_analytique.csv\" using delimiter \";\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"account.analytic.journal\" with oid: scen.fr_analytic_journal",
+                        "having:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"account.analytic.journal\" with oid: scen.ch_analytic_journal",
+                        "having:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            }
+        ]
+    }
+}

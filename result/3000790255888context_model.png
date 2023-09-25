@@ -1,0 +1,19 @@
+// 3000790254352 Context Model
+digraph {
+	3000790255888 [label=Context2]
+	3000790255648 [label="I have an \"index.html\" page that contains \"Collections: output => {{ site.collections[0].output }} label => {{ site.collections[0].label }}\""]
+	3000790255888 -> 3000790255648
+	3000790255648 [label="I have an \"index.html\" page that contains \"Collections: output => {{ site.collections[0].output }} label => {{ site.collections[0].label }}\""]
+	3000790257088 [label="I have an \"collection_metadata.html\" page that contains \"Methods metadata: {{ site.collections[0].foo }} {{ site.collections[0] }}\""]
+	3000790255888 -> 3000790257088
+	3000790257088 [label="I have an \"collection_metadata.html\" page that contains \"Methods metadata: {{ site.collections[0].foo }} {{ site.collections[0] }}\""]
+	3000790255168 [label="I have fixture collections"]
+	3000790255888 -> 3000790255168
+	3000790255168 [label="I have fixture collections"]
+	3000790254256 [label="I have a \"_methods/static-file.txt\" file that contains \"Static Content {{ site.title }}\""]
+	3000790255888 -> 3000790254256
+	3000790254256 [label="I have a \"_methods/static-file.txt\" file that contains \"Static Content {{ site.title }}\""]
+	3000790255456 [label="I have a \"_config.yml\" file with content:"]
+	3000790255888 -> 3000790255456
+	3000790255456 [label="I have a \"_config.yml\" file with content:"]
+}

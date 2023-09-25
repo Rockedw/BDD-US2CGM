@@ -1,0 +1,130 @@
+{
+    "feature_name": "INITIAL SET-UP FOR NEW DATABASE",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I create database \"7XA\" with admin password \"admin\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I do not want all demo data to be loaded on install",
+                        "I update the module list",
+                        "I install the required modules with dependencies:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "my modules should have been installed and models reloaded"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I install the following languages:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "the language should be available"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I install the following languages:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "the language should be available"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"res.lang\" with code: en_US",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"res.lang\" with code: fr_FR",
+                        "having:"
+                    ],
+                    [
+                        "I need a \"res.lang\" with code: de_DE",
+                        "having:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"account.fiscalyear\" with oid: scenario.fy2012",
+                        "having:",
+                        "I create monthly periods on the fiscal year with reference \"scenario.fy2012\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I find a \"account.fiscalyear\" with oid: scenario.fy2012"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"account.fiscalyear\" with oid: scenario.fy2013",
+                        "having:",
+                        "I create monthly periods on the fiscal year with reference \"scenario.fy2013\""
+                    ],
+                    [
+                        "I install the required modules with dependencies:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I find a \"account.fiscalyear\" with oid: scenario.fy2013"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I need a \"res.company\" with oid: base.main_company",
+                        "I set the webkit path to \"/srv/openerp/webkit_library/wkhtmltopdf-amd64\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I set the following currency rates:"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            }
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "feature_name": "Commenting on minutes",
+    "user_story": {
+        "as_a": "director",
+        "i_want": "comment on some minutes",
+        "so_that": "register my disagreement with the accuracy of some minutes",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the page for the minutes",
+                        "I enter a comment of \"I didn't say that!\"",
+                        "I press \"Save comment\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the page for the minutes",
+                        "I should see a comment by me saying \"I didn't say that!\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

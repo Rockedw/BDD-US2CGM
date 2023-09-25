@@ -1,0 +1,226 @@
+{
+    "feature_name": "Watch for modified files",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I wait \"2\" seconds",
+                        "I put \"Summer\" into the file \"plugins/project/spec/fixtures/winter.txt\"",
+                        "I close the focussed tab",
+                        "the edit tab updates its contents"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be one edit tab",
+                        "I should see \"Wintersmith\" in the edit tab"
+                    ],
+                    [
+                        "I should see \"Summer\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I will choose \"yes\" from the \"message_box\" dialog",
+                        "I close the focussed tab",
+                        "the edit tab updates its contents"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I wait \"2\" seconds",
+                        "I put \"Summer\" into the file \"plugins/project/spec/fixtures/winter.txt\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be one edit tab",
+                        "I should see \"Wintersmith\" in the edit tab",
+                        "I replace the contents with \"FOFOOF\""
+                    ],
+                    [
+                        "I should see \"Summer\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I will choose \"no\" from the \"message_box\" dialog",
+                        "I close the focussed tab",
+                        "the edit tab updates its contents"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I wait \"2\" seconds",
+                        "I put \"Summer\" into the file \"plugins/project/spec/fixtures/winter.txt\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be one edit tab",
+                        "I should see \"Wintersmith\" in the edit tab",
+                        "I replace the contents with \"Newton\""
+                    ],
+                    [
+                        "I should see \"Newton\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I will choose \"no\" from the \"message_box\" dialog",
+                        "I close the focussed tab",
+                        "the edit tab updates its contents"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I wait \"2\" seconds",
+                        "I put \"Summer\" into the file \"plugins/project/spec/fixtures/winter.txt\""
+                    ],
+                    [
+                        "I open a new edit tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be one edit tab",
+                        "I should see \"Wintersmith\" in the edit tab",
+                        "I replace the contents with \"Newton\""
+                    ],
+                    [
+                        "I should see \"Newton\" in the edit tab"
+                    ],
+                    [
+                        "I should not see a \"message_box\" dialog for the rest of the feature",
+                        "I close the focussed tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I close the focussed tab",
+                        "I put a lot of lines into the file \"plugins/project/spec/fixtures/winter.txt\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a file",
+                        "I move to line 100"
+                    ],
+                    [
+                        "I open a new edit tab",
+                        "I wait \"2\" seconds",
+                        "I put a lot of lines into the file \"plugins/project/spec/fixtures/winter.txt\"",
+                        "I close the focussed tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be one edit tab"
+                    ],
+                    [
+                        "the cursor should be on line 100"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I close the focussed tab",
+                        "I put a lot of lines into the file \"plugins/project/spec/fixtures/winter.txt\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I open a file",
+                        "I move to line 100"
+                    ],
+                    [
+                        "I open a new edit tab",
+                        "I wait \"2\" seconds",
+                        "I put \"Summer\" into the file \"plugins/project/spec/fixtures/winter.txt\"",
+                        "I close the focussed tab",
+                        "the edit tab updates its contents"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be one edit tab"
+                    ],
+                    [
+                        "the cursor should be on line 0"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new window with title \"new\""
+                    ],
+                    [
+                        "I wait \"2\" seconds",
+                        "\"plugins/project/spec/fixtures/winter.txt\" goes missing",
+                        "I close the window \"new\" through the gui",
+                        "I focus the window \"Redcar\" through the gui"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be one edit tab",
+                        "I should see \"Wintersmith\" in the edit tab"
+                    ],
+                    [
+                        "there should be one edit tab",
+                        "the edit tab updates its contents",
+                        "my active tab should have an \"exclamation\" icon"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I replace the contents with \"Jenny Green Eyes\"",
+                        "I open a new window with title \"new\"",
+                        "I wait \"2\" seconds",
+                        "\"plugins/project/spec/fixtures/winter.txt\" goes missing",
+                        "I close the window \"new\" through the gui",
+                        "I focus the window \"Redcar\" through the gui"
+                    ],
+                    [
+                        "I save the tab"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "there should be one edit tab",
+                        "I should see \"Wintersmith\" in the edit tab"
+                    ],
+                    [
+                        "my active tab should have an \"exclamation\" icon"
+                    ],
+                    [
+                        "my active tab should have an \"document_attribute_t\" icon"
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,25 @@
+// 3000817706480 Context Model
+digraph {
+	3000817706192 [label=Context30]
+	3000817698464 [label="there are 2 existing individuals like \"thing\""]
+	3000817706192 -> 3000817698464
+	3000817698464 [label="there are 2 existing individuals like \"thing\""]
+	3000817703216 [label="there is an existing connection \"thing0\" \"contains\" \"thing1\""]
+	3000817706192 -> 3000817703216
+	3000817703216 [label="there is an existing connection \"thing0\" \"contains\" \"thing1\""]
+	3000817705712 [label="there is an existing connection \"thing0\" \"peer_of\" \"thing1\""]
+	3000817706192 -> 3000817705712
+	3000817705712 [label="there is an existing connection \"thing0\" \"peer_of\" \"thing1\""]
+	3000817701056 [label="I am on the edit connections page for \"thing0\" \"contains\" \"thing1\""]
+	3000817706192 -> 3000817701056
+	3000817701056 [label="I am on the edit connections page for \"thing0\" \"contains\" \"thing1\""]
+	3000817700096 [label="I select \"thing1 : thing item number 1\" from \"Subject\""]
+	3000817706192 -> 3000817700096
+	3000817700096 [label="I select \"thing1 : thing item number 1\" from \"Subject\""]
+	3000817699136 [label="I select \"one_of : One Of (basic relationship)\" from \"Relates to\""]
+	3000817706192 -> 3000817699136
+	3000817699136 [label="I select \"one_of : One Of (basic relationship)\" from \"Relates to\""]
+	3000817700720 [label="I select \"thing0 : thing item number 0\" from \"Object\""]
+	3000817706192 -> 3000817700720
+	3000817700720 [label="I select \"thing0 : thing item number 0\" from \"Object\""]
+}

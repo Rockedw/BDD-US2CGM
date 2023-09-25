@@ -1,0 +1,65 @@
+// Goal Model
+digraph {
+	1847133286128 [label="software as a service provider
+goal"]
+	1847133042384 [label="
+goal
+140728069287616"]
+	1847133286128 -> 1847133042384
+	1847133042384 [label="
+goal"]
+	1847133166448 [label="I follow \"Sign out\"
+task
+140728069287616"]
+	1847133042384 -> 1847133166448
+	1847133166448 [label="I follow \"Sign out\"
+task"]
+	1847133166208 [label="I am signed in as a new user \"test22@timefliesby.com\"
+task
+140728069287616"]
+	1847133042384 -> 1847133166208
+	1847133166208 [label="I am signed in as a new user \"test22@timefliesby.com\"
+task"]
+	1847133174368 [label="I am on the tasks page
+task
+140728069287616"]
+	1847133042384 -> 1847133174368
+	1847133174368 [label="I am on the tasks page
+task"]
+	1847133030576 [label="identify each user
+goal
+140728069287616"]
+	1847133286128 -> 1847133030576
+	1847133030576 [label="identify each user
+goal"]
+	1847133037728 [label="Register as new user
+goal
+1847134017408"]
+	1847133030576 -> 1847133037728
+	1847133037728 [label="Register as new user
+goal"]
+	1847134022160 [label="Sign in
+goal
+1847134017744"]
+	1847133030576 -> 1847134022160
+	1847134022160 [label="Sign in
+goal"]
+	1847133035472 [label="Authentication required
+goal
+1847133032064"]
+	1847133030576 -> 1847133035472
+	1847133035472 [label="Authentication required
+goal"]
+	1847134023888 [label="Verify email
+goal
+1847134021344"]
+	1847133030576 -> 1847134023888
+	1847134023888 [label="Verify email
+goal"]
+	1847134026096 [label="Sign out
+goal
+1847133160688"]
+	1847133030576 -> 1847134026096
+	1847134026096 [label="Sign out
+goal"]
+}

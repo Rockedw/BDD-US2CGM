@@ -1,0 +1,39 @@
+{
+    "feature_name": "Forcing a resolution",
+    "user_story": {
+        "as_a": "member",
+        "i_want": "collaborate with other members to force a resolution to be opened for voting",
+        "so_that": "deal with an unresponsive board",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a co-op",
+                        "I am a Member of the co-op"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to the Proposals page",
+                        "I press \"Create a proposal\"",
+                        "I fill in \"Title\" with \"Remove John Smith from the Board of Directors\"",
+                        "I fill in \"Description\" with \"We all know why.\"",
+                        "I press \"Submit suggestion\""
+                    ],
+                    [
+                        "enough of the membership supports the proposal",
+                        "the proposal closer runs"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a special link to share the proposal"
+                    ],
+                    [
+                        "the proposal should be open for voting as a resolution"
+                    ]
+                ]
+            }
+        ]
+    }
+}

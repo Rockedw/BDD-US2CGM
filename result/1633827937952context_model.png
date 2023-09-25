@@ -1,0 +1,25 @@
+// 1633827937424 Context Model
+digraph {
+	1633827937952 [label=Context6]
+	1633827938384 [label="following users exist:"]
+	1633827937952 -> 1633827938384
+	1633827938384 [label="following users exist:"]
+	1633827938480 [label="I am on the home page"]
+	1633827937952 -> 1633827938480
+	1633827938480 [label="I am on the home page"]
+	1633827938576 [label="I sign in as \"bob@bob.bob\" on the mobile website"]
+	1633827937952 -> 1633827938576
+	1633827938576 [label="I sign in as \"bob@bob.bob\" on the mobile website"]
+	1633827938672 [label="a user with username \"bob\" is connected with \"alice\""]
+	1633827937952 -> 1633827938672
+	1633827938672 [label="a user with username \"bob\" is connected with \"alice\""]
+	1633827938768 [label="I have following aspects:"]
+	1633827937952 -> 1633827938768
+	1633827938768 [label="I have following aspects:"]
+	1633827938864 [label="I have user with username \"alice\" in an aspect called \"PostingTo\""]
+	1633827937952 -> 1633827938864
+	1633827938864 [label="I have user with username \"alice\" in an aspect called \"PostingTo\""]
+	1633827938960 [label="I have user with username \"alice\" in an aspect called \"NotPostingThingsHere\""]
+	1633827937952 -> 1633827938960
+	1633827938960 [label="I have user with username \"alice\" in an aspect called \"NotPostingThingsHere\""]
+}

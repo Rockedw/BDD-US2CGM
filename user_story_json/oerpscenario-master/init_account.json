@@ -1,0 +1,72 @@
+{
+    "feature_name": "Param the new database",
+    "user_story": {
+        "as_a": "",
+        "i_want": "autmated the manual steps.",
+        "so_that": "have a coherent installation",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I update the module list"
+                    ],
+                    [
+                        "I install the required modules with dependencies:"
+                    ],
+                    [
+                        "I give all groups right access to admin user"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "my modules should have been installed and models reloaded"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "a purchase tax called 'Buy 19.6%' with a rate of 0.196 exists",
+                        "a sale tax called 'Sale 19.6%' with a rate of 0.196 exists"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a bank account named \"XX-XXXX-X\" linked to partner \"Customer_name\"",
+                        "I set the bank account with the following data :"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have created a cash account in USD",
+                        "I have created a cash account in CHF",
+                        "I have created a cash account in EUR"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            },
+            {
+                "givens_list": [
+                    [
+                        "a cash journal in USD exists",
+                        "a cash journal in CHF exists",
+                        "a cash journal in EUR exists",
+                        "on all journal entries can be canceled"
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": []
+            }
+        ]
+    }
+}

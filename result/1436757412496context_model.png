@@ -1,0 +1,13 @@
+// 1436757310240 Context Model
+digraph {
+	1436757412496 [label=Context7]
+	1436757411968 [label="there are no pages"]
+	1436757412496 -> 1436757411968
+	1436757411968 [label="there are no pages"]
+	1436757411824 [label="I am logged in as \"existing\""]
+	1436757412496 -> 1436757411824
+	1436757411824 [label="I am logged in as \"existing\""]
+	1436757412640 [label="I create a homepage"]
+	1436757412496 -> 1436757412640
+	1436757412640 [label="I create a homepage"]
+}

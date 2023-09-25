@@ -1,0 +1,55 @@
+{
+    "feature_name": "Terminating a directorship by resolution",
+    "user_story": {
+        "as_a": "As the secretary",
+        "i_want": "draft a resolution to terminate a directorship",
+        "so_that": "terminate a directorship",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "there is a co-op",
+                        "I am the secretary of the co-op",
+                        "there is a director named \"Bob Smith\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to create a new resolution",
+                        "I select \"Terminate a director's appointment\" from \"Type of proposal\"",
+                        "I select \"Bob Smith\" from \"Director\"",
+                        "I press \"Save this proposal as a draft\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see a draft resolution \"Terminate Bob Smith's appointment as a director\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "there is a co-op",
+                        "I am the secretary of the co-op",
+                        "there is a director named \"Bob Smith\"",
+                        "a resolution to terminate the directorship of \"Bob Smith\" has been attached to a past General Meeting"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I go to minute the General Meeting",
+                        "I mark that the resolution \"Terminate Bob Smith's appointment as a director\" was passed",
+                        "I save the minutes",
+                        "I go to the Directors page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should not see \"Bob Smith\" in the list of directors"
+                    ]
+                ]
+            }
+        ]
+    }
+}

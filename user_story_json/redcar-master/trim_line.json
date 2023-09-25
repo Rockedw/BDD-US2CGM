@@ -1,0 +1,172 @@
+{
+    "feature_name": "Trim line",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Once upon a time\"",
+                        "I move the cursor to 4",
+                        "I trim the line"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Once\" in the edit tab",
+                        "I should not see \"upon a time\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"Once upon a time\"",
+                        "I select from 5 to 9",
+                        "I trim the line"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should see \"Once \" in the edit tab",
+                        "I should not see \"upon a time\" in the edit tab"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo\\nbść\\nbaz\"",
+                        "I move the cursor to 5",
+                        "I trim the line"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"foo\\nb\\nbaz\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo\\r\\nbść\\r\\nbaz\"",
+                        "I move the cursor to 6",
+                        "I trim the line"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"foo\\r\\nb\\r\\nbaz\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo\\n\\nbaz\"",
+                        "I move the cursor to 4",
+                        "I trim the line"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"foo\\nbaz\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo\\r\\n\\r\\nbaz\"",
+                        "I move the cursor to 5",
+                        "I trim the line"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"foo\\r\\nbaz\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo\\nbść\\nbaz\"",
+                        "I move the cursor to 7",
+                        "I trim the line"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"foo\\nbśćbaz\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo\\nbść\\nbaz\"",
+                        "I move the cursor to 11",
+                        "I trim the line"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"foo\\nbść\\nbaz\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo\\nbść\\nbaz\\n\"",
+                        "I move the cursor to 11",
+                        "I trim the line"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"foo\\nbść\\nbaz\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I open a new edit tab",
+                        "I replace the contents with \"foo\\nbść\\nbaz\\n\"",
+                        "I move the cursor to 12",
+                        "I trim the line"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "the contents should be \"foo\\nbść\\nbaz\\n\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

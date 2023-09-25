@@ -1,0 +1,28 @@
+{
+    "feature_name": "Being notified of co-op approval",
+    "user_story": {
+        "as_a": "founder member",
+        "i_want": "receive an email notification when our co-op is approved",
+        "so_that": "keep up-to-date with the status of our co-op registration",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am a founder member",
+                        "our co-op has been submitted for approval"
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "the co-op is approved"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should receive an email notifying me that the co-op has been approved"
+                    ]
+                ]
+            }
+        ]
+    }
+}

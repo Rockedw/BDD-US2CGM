@@ -1,0 +1,10 @@
+// 1633872549856 Context Model
+digraph {
+	1633872809024 [label=Context75]
+	1633872808160 [label="I take the created invoice MySupplierInvoice"]
+	1633872809024 -> 1633872808160
+	1633872808160 [label="I take the created invoice MySupplierInvoice"]
+	1633872807824 [label="the entries on the invoice related journal can be cancelled"]
+	1633872809024 -> 1633872807824
+	1633872807824 [label="the entries on the invoice related journal can be cancelled"]
+}

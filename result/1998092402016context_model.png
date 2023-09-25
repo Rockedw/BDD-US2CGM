@@ -1,0 +1,16 @@
+// 1998091590128 Context Model
+digraph {
+	1998092402016 [label=Context2]
+	1998092401920 [label="I have a _posts directory"]
+	1998092402016 -> 1998092401920
+	1998092401920 [label="I have a _posts directory"]
+	1998092399808 [label="I have the following post:"]
+	1998092402016 -> 1998092399808
+	1998092399808 [label="I have the following post:"]
+	1998092391456 [label="I have an \"index.html\" page that contains \"just {{page.custom}} by {{page.author}}\""]
+	1998092402016 -> 1998092391456
+	1998092391456 [label="I have an \"index.html\" page that contains \"just {{page.custom}} by {{page.author}}\""]
+	1998092402064 [label="I have a configuration file with \"defaults\" set to \"[{scope: {path: \"\"}, values: {custom: \"some special data\", author: \"Ben\"}}]\""]
+	1998092402016 -> 1998092402064
+	1998092402064 [label="I have a configuration file with \"defaults\" set to \"[{scope: {path: \"\"}, values: {custom: \"some special data\", author: \"Ben\"}}]\""]
+}

@@ -1,0 +1,72 @@
+{
+    "feature_name": "Bundling Config file with Theme gems",
+    "user_story": {
+        "as_a": "web developer who likes to share my expertise",
+        "i_want": "be able to pre-configure my gemified theme",
+        "so_that": "make it easier for other Jekyllites to use my theme",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with \"theme\" set to \"test-theme\"",
+                        "I have an \"index.md\" page that contains \"{{ site.test_theme.skin }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should see \"aero\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with:",
+                        "I have an \"index.md\" page that contains \"{{ site.test_theme.skin }}\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "I should not see \"aero\" in \"_site/index.html\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [
+                    [
+                        "I have a configuration file with \"theme\" set to \"test-theme\"",
+                        "I have an \"index.md\" page that contains \"{{ site.baseurl }}\"",
+                        "I have a node_modules directory",
+                        "I have a \"node_modules/alert.js\" file that contains \"alert('foo');\""
+                    ]
+                ],
+                "whens_list": [
+                    [
+                        "I run jekyll build"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should get a zero exit status",
+                        "the _site directory should exist",
+                        "the \"_site/index.html\" file should exist"
+                    ]
+                ]
+            }
+        ]
+    }
+}

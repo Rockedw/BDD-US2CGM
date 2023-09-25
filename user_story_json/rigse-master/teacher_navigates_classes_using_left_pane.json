@@ -1,0 +1,64 @@
+{
+    "feature_name": "Teacher navigates using left pane",
+    "user_story": {
+        "as_a": "teacher",
+        "i_want": "visit various pages using left pane",
+        "so_that": "make navigation more effective",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"Classese\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I follow \"Classes\"",
+                        "I follow \"My Class\""
+                    ],
+                    [
+                        "I follow \"Student Roster\" within \"My Class\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on \"Student Roster\" page for \"My Class\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I follow \"My Class\"",
+                        "I follow \"Class Setup\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the class edit page for \"My Class\""
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I follow \"My Class\"",
+                        "I follow \"Assignments\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on Instructional Materials page for \"My Class\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,17 @@
+// Goal Model
+digraph {
+	1847117881568 [label="Cal Faculty member
+goal"]
+	1847117884112 [label="see which placements have been made
+goal
+1847117886560"]
+	1847117881568 -> 1847117884112
+	1847117884112 [label="see which placements have been made
+goal"]
+	1847124608336 [label="I go to /students/1/semesters/1/placements
+task
+140728069287616"]
+	1847117884112 -> 1847124608336
+	1847124608336 [label="I go to /students/1/semesters/1/placements
+task"]
+}

@@ -1,0 +1,191 @@
+// Goal Model
+digraph {
+	1847133890272 [label="n administrator I want to manage the set of users
+goal"]
+	1847134171152 [label="
+goal
+1847134163856"]
+	1847133890272 -> 1847134171152
+	1847134171152 [label="
+goal"]
+	1847134169856 [label="Listing users
+goal
+140728069287616"]
+	1847134171152 -> 1847134169856
+	1847134169856 [label="Listing users
+goal"]
+	1847134017024 [label="View a user
+goal
+140728069287616"]
+	1847134171152 -> 1847134017024
+	1847134017024 [label="View a user
+goal"]
+	1847134014288 [label="I view a user
+task
+140728069287616"]
+	1847134017024 -> 1847134014288
+	1847134014288 [label="I view a user
+task"]
+	1847134017312 [label="Create new user
+goal
+140728069287616"]
+	1847134171152 -> 1847134017312
+	1847134017312 [label="Create new user
+goal"]
+	1847134027008 [label="I follow \"New User\"
+task
+140728069287616"]
+	1847134017312 -> 1847134027008
+	1847134027008 [label="I follow \"New User\"
+task"]
+	1847134025664 [label="I fill in \"Name\" with \"New Guy\"
+task
+140728069287616"]
+	1847134017312 -> 1847134025664
+	1847134025664 [label="I fill in \"Name\" with \"New Guy\"
+task"]
+	1847134022928 [label="I fill in \"E-mail\" with \"newguy@example.com\"
+task
+140728069287616"]
+	1847134017312 -> 1847134022928
+	1847134022928 [label="I fill in \"E-mail\" with \"newguy@example.com\"
+task"]
+	1847134015824 [label="I fill in \"Username\" with \"new_guy\"
+task
+140728069287616"]
+	1847134017312 -> 1847134015824
+	1847134015824 [label="I fill in \"Username\" with \"new_guy\"
+task"]
+	1847134016544 [label="I fill in \"New Password\" with \"password\"
+task
+140728069287616"]
+	1847134017312 -> 1847134016544
+	1847134016544 [label="I fill in \"New Password\" with \"password\"
+task"]
+	1847134023264 [label="I fill in \"Confirm New Password\" with \"password\"
+task
+140728069287616"]
+	1847134017312 -> 1847134023264
+	1847134023264 [label="I fill in \"Confirm New Password\" with \"password\"
+task"]
+	1847134013328 [label="I press \"Create User\"
+task
+140728069287616"]
+	1847134017312 -> 1847134013328
+	1847134013328 [label="I press \"Create User\"
+task"]
+	1847134021296 [label="Display form errors on submit
+goal
+140728069287616"]
+	1847134171152 -> 1847134021296
+	1847134021296 [label="Display form errors on submit
+goal"]
+	1847134018176 [label="I follow \"New User\"
+task
+140728069287616"]
+	1847134021296 -> 1847134018176
+	1847134018176 [label="I follow \"New User\"
+task"]
+	1847134016976 [label="I fill in \"Name\" with \"New Guy\"
+task
+140728069287616"]
+	1847134021296 -> 1847134016976
+	1847134016976 [label="I fill in \"Name\" with \"New Guy\"
+task"]
+	1847134018800 [label="I fill in \"E-mail\" with \"newguy@example.com\"
+task
+140728069287616"]
+	1847134021296 -> 1847134018800
+	1847134018800 [label="I fill in \"E-mail\" with \"newguy@example.com\"
+task"]
+	1847134014048 [label="I press \"Create User\"
+task
+140728069287616"]
+	1847134021296 -> 1847134014048
+	1847134014048 [label="I press \"Create User\"
+task"]
+	1847134022400 [label="Edit existing user
+goal
+140728069287616"]
+	1847134171152 -> 1847134022400
+	1847134022400 [label="Edit existing user
+goal"]
+	1847134019184 [label="I follow \"Designer\"
+task
+140728069287616"]
+	1847134022400 -> 1847134019184
+	1847134019184 [label="I follow \"Designer\"
+task"]
+	1847134025472 [label="I fill in \"Name\" with \"Old Guy\"
+task
+140728069287616"]
+	1847134022400 -> 1847134025472
+	1847134025472 [label="I fill in \"Name\" with \"Old Guy\"
+task"]
+	1847134014816 [label="I fill in \"Username\" with \"oldguy\"
+task
+140728069287616"]
+	1847134022400 -> 1847134014816
+	1847134014816 [label="I fill in \"Username\" with \"oldguy\"
+task"]
+	1847134019424 [label="I uncheck \"Designer\"
+task
+140728069287616"]
+	1847134022400 -> 1847134019424
+	1847134019424 [label="I uncheck \"Designer\"
+task"]
+	1847134013232 [label="I press \"Save Changes\"
+task
+140728069287616"]
+	1847134022400 -> 1847134013232
+	1847134013232 [label="I press \"Save Changes\"
+task"]
+	1847134014528 [label="Cannot remove self
+goal
+140728069287616"]
+	1847134171152 -> 1847134014528
+	1847134014528 [label="Cannot remove self
+goal"]
+	1847134024320 [label="I attempt to remove my own account
+task
+140728069287616"]
+	1847134014528 -> 1847134024320
+	1847134024320 [label="I attempt to remove my own account
+task"]
+	1847134012272 [label="Cannot forcefully delete self
+goal
+140728069287616"]
+	1847134171152 -> 1847134012272
+	1847134012272 [label="Cannot forcefully delete self
+goal"]
+	1847134022016 [label="I attempt to delete my own account
+task
+140728069287616"]
+	1847134012272 -> 1847134022016
+	1847134022016 [label="I attempt to delete my own account
+task"]
+	1847134020720 [label="Delete other users
+goal
+140728069287616"]
+	1847134171152 -> 1847134020720
+	1847134020720 [label="Delete other users
+goal"]
+	1847134014672 [label="I follow \"Remove\"
+task
+140728069287616"]
+	1847134020720 -> 1847134014672
+	1847134014672 [label="I follow \"Remove\"
+task"]
+	1847134016880 [label="I press \"Delete User\"
+task
+140728069287616"]
+	1847134020720 -> 1847134016880
+	1847134016880 [label="I press \"Delete User\"
+task"]
+	1847134024368 [label="I should not see \"Another\"
+task
+140728069287616"]
+	1847134020720 -> 1847134024368
+	1847134024368 [label="I should not see \"Another\"
+task"]
+}

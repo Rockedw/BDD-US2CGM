@@ -1,0 +1,52 @@
+// 1633871777888 Context Model
+digraph {
+	1633871782064 [label=Context5]
+	1633871783504 [label="I have a gathering/_puppies directory"]
+	1633871782064 -> 1633871783504
+	1633871783504 [label="I have a gathering/_puppies directory"]
+	1633871780672 [label="I have a gathering/_posts directory"]
+	1633871782064 -> 1633871780672
+	1633871780672 [label="I have a gathering/_posts directory"]
+	1633871784272 [label="I have a gathering/_drafts directory"]
+	1633871782064 -> 1633871784272
+	1633871784272 [label="I have a gathering/_drafts directory"]
+	1633871779760 [label="I have a _puppies directory"]
+	1633871782064 -> 1633871779760
+	1633871779760 [label="I have a _puppies directory"]
+	1633871787200 [label="I have a _posts directory"]
+	1633871782064 -> 1633871787200
+	1633871787200 [label="I have a _posts directory"]
+	1633871780528 [label="I have a _drafts directory"]
+	1633871782064 -> 1633871780528
+	1633871780528 [label="I have a _drafts directory"]
+	1633871778368 [label="I have the following document under the \"puppies\" collection within the \"gathering\" directory:"]
+	1633871782064 -> 1633871778368
+	1633871778368 [label="I have the following document under the \"puppies\" collection within the \"gathering\" directory:"]
+	1633871777504 [label="I have the following document under the puppies collection:"]
+	1633871782064 -> 1633871777504
+	1633871777504 [label="I have the following document under the puppies collection:"]
+	1633871776400 [label="I have the following post within the \"gathering\" directory:"]
+	1633871782064 -> 1633871776400
+	1633871776400 [label="I have the following post within the \"gathering\" directory:"]
+	1633871777216 [label="I have the following post:"]
+	1633871782064 -> 1633871777216
+	1633871777216 [label="I have the following post:"]
+	1633871778992 [label="I have the following draft within the \"gathering\" directory:"]
+	1633871782064 -> 1633871778992
+	1633871778992 [label="I have the following draft within the \"gathering\" directory:"]
+	1633871787488 [label="I have the following draft:"]
+	1633871782064 -> 1633871787488
+	1633871787488 [label="I have the following draft:"]
+	1633871782256 [label="I have a \"_config.yml\" file with content:"]
+	1633871782064 -> 1633871782256
+	1633871782256 [label="I have a \"_config.yml\" file with content:"]
+	1633871785712 [label="I have a \"gathering/_puppies/static_file.txt\" file that contains \"Static content.\""]
+	1633871782064 -> 1633871785712
+	1633871785712 [label="I have a \"gathering/_puppies/static_file.txt\" file that contains \"Static content.\""]
+	1633871786432 [label="I have a gathering/_puppies/nested directory"]
+	1633871782064 -> 1633871786432
+	1633871786432 [label="I have a gathering/_puppies/nested directory"]
+	1633871776112 [label="I have a \"gathering/_puppies/nested/static_file.txt\" file that contains \"Nested Static content.\""]
+	1633871782064 -> 1633871776112
+	1633871776112 [label="I have a \"gathering/_puppies/nested/static_file.txt\" file that contains \"Nested Static content.\""]
+}

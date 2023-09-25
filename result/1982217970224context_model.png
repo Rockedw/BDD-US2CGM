@@ -1,0 +1,22 @@
+// 1982217969120 Context Model
+digraph {
+	1982217970224 [label=Context4]
+	1982217970368 [label="I have a _layouts directory"]
+	1982217970224 -> 1982217970368
+	1982217970368 [label="I have a _layouts directory"]
+	1982217970464 [label="I have a \"_layouts/default.html\" file with content:"]
+	1982217970224 -> 1982217970464
+	1982217970464 [label="I have a \"_layouts/default.html\" file with content:"]
+	1982217970560 [label="I have a \"_layouts/special.html\" file with content:"]
+	1982217970224 -> 1982217970560
+	1982217970560 [label="I have a \"_layouts/special.html\" file with content:"]
+	1982217970656 [label="I have a \"_layouts/page.html\" file with content:"]
+	1982217970224 -> 1982217970656
+	1982217970656 [label="I have a \"_layouts/page.html\" file with content:"]
+	1982217970752 [label="I have an \"index.html\" page with layout \"special\" that contains \"page content\""]
+	1982217970224 -> 1982217970752
+	1982217970752 [label="I have an \"index.html\" page with layout \"special\" that contains \"page content\""]
+	1982217970848 [label="I have an \"jekyll.html\" page with layout \"page\" that contains \"page content\""]
+	1982217970224 -> 1982217970848
+	1982217970848 [label="I have an \"jekyll.html\" page with layout \"page\" that contains \"page content\""]
+}

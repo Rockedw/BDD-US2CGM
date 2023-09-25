@@ -1,0 +1,13 @@
+// 1847134017552 Context Model
+digraph {
+	1847134064112 [label=Context10]
+	1847134061232 [label="a provider \"HJ\""]
+	1847134064112 -> 1847134061232
+	1847134061232 [label="a provider \"HJ\""]
+	1847134061808 [label="a logged in admin user"]
+	1847134064112 -> 1847134061808
+	1847134061808 [label="a logged in admin user"]
+	1847134073856 [label="I am on the admin dashboard"]
+	1847134064112 -> 1847134073856
+	1847134073856 [label="I am on the admin dashboard"]
+}

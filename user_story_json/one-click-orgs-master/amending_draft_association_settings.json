@@ -1,0 +1,37 @@
+{
+    "feature_name": "Amending draft association settings",
+    "user_story": {
+        "as_a": "founder",
+        "i_want": "amend the draft association's settings",
+        "so_that": "make sure the constitution fits our needs",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I go to the amendments page",
+                        "I fill in the organisation name with \"Tea Club Mark II\"",
+                        "I fill in the objectives with \"REALLY enjoying tea\"",
+                        "I choose \"Absolute majority\" for general decisions",
+                        "I choose \"Unanimous\" for membership decisions",
+                        "I choose \"Simple majority\" for constitution decisions",
+                        "I choose \"5 minutes\"",
+                        "I press \"Save changes\""
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should be on the constitution page",
+                        "I should see \"Constitutional changes were made\"",
+                        "I should see \"Tea Club Mark II\"",
+                        "I should see \"REALLY enjoying tea\"",
+                        "I should see \"5 minutes\"",
+                        "I should see \"A Decision is made if a Proposal receives Supporting Votes from more than half of Members during the Voting Period. \"",
+                        "I should see \"The Constitution may only be amended by a Decision where Supporting Votes from more than half of the Members are received during the Voting Period; or when more Supporting Votes than Opposing Votes have been received for the Proposal at the end of the Voting Period.\"",
+                        "I should see \"New Members may be appointed (and existing Members ejected) only by a Decision where Supporting Votes are received from all Members during the Voting Period.\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

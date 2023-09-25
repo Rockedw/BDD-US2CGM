@@ -1,0 +1,62 @@
+{
+    "feature_name": "auto follow back a user",
+    "user_story": {
+        "as_a": "",
+        "i_want": "",
+        "so_that": "",
+        "scenarios": [
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I sign in as \"alice@alice.alice\"",
+                        "I am on \"bob@bob.bob\"'s page",
+                        "I add the person to my \"Besties\" aspect",
+                        "I sign out",
+                        "I sign in as \"bob@bob.bob\""
+                    ],
+                    [
+                        "I am on \"alice@alice.alice\"'s page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should have 1 contact in \"Others\""
+                    ],
+                    [
+                        "I should see \"Others\" within the contact aspect dropdown"
+                    ]
+                ]
+            },
+            {
+                "givens_list": [],
+                "whens_list": [
+                    [
+                        "I sign in as \"bob@bob.bob\"",
+                        "I am on \"alice@alice.alice\"'s page",
+                        "I click on the profile block button",
+                        "I sign out"
+                    ],
+                    [
+                        "I sign in as \"alice@alice.alice\"",
+                        "I am on \"bob@bob.bob\"'s page",
+                        "I add the person to my \"Besties\" aspect",
+                        "I sign out",
+                        "I sign in as \"bob@bob.bob\""
+                    ],
+                    [
+                        "I am on \"alice@alice.alice\"'s page"
+                    ]
+                ],
+                "thens_list": [
+                    [
+                        "I should have 0 contact in \"Others\""
+                    ],
+                    [
+                        "I should see \"Stop ignoring\" within \"#unblock_user_button\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+// 2084506640128 Context Model
+digraph {
+	2084506639072 [label=Context3]
+	2084506639648 [label="I have an \"index.html\" file that contains \"Whatever\""]
+	2084506639072 -> 2084506639648
+	2084506639648 [label="I have an \"index.html\" file that contains \"Whatever\""]
+	2084506639744 [label="I have a configuration file with:"]
+	2084506639072 -> 2084506639744
+	2084506639744 [label="I have a configuration file with:"]
+}

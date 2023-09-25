@@ -1,0 +1,16 @@
+// 3000838674016 Context Model
+digraph {
+	3000838670848 [label=Context2]
+	3000838675792 [label="the following external REST activity:"]
+	3000838670848 -> 3000838675792
+	3000838675792 [label="the following external REST activity:"]
+	3000838674448 [label="\"activities.com/activity/1\" handles a GET with query:"]
+	3000838670848 -> 3000838674448
+	3000838674448 [label="\"activities.com/activity/1\" handles a GET with query:"]
+	3000838678720 [label="\"activities.com/activity/1\" GET responds with"]
+	3000838670848 -> 3000838678720
+	3000838678720 [label="\"activities.com/activity/1\" GET responds with"]
+	3000838675936 [label="\"imageshack.com/images/1.png\" GET responds with"]
+	3000838670848 -> 3000838675936
+	3000838675936 [label="\"imageshack.com/images/1.png\" GET responds with"]
+}

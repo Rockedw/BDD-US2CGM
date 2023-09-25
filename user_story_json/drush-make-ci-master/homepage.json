@@ -1,0 +1,23 @@
+{
+    "feature_name": "Homepage",
+    "user_story": {
+        "as_a": "website user",
+        "i_want": "",
+        "so_that": "know that CI worked",
+        "scenarios": [
+            {
+                "givens_list": [
+                    [
+                        "I am on \"/\""
+                    ]
+                ],
+                "whens_list": [],
+                "thens_list": [
+                    [
+                        "I should see \"Travis Did It\""
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+// 1998092482784 Context Model
+digraph {
+	1998092483216 [label=Context4]
+	1998092483360 [label="I have a _layouts directory"]
+	1998092483216 -> 1998092483360
+	1998092483360 [label="I have a _layouts directory"]
+	1998092483456 [label="I have an \"index.html\" page with layout \"default\" that contains \"Basic Site with Layout\""]
+	1998092483216 -> 1998092483456
+	1998092483456 [label="I have an \"index.html\" page with layout \"default\" that contains \"Basic Site with Layout\""]
+	1998092483552 [label="I have a default layout that contains \"Page Layout: {{ content }}\""]
+	1998092483216 -> 1998092483552
+	1998092483552 [label="I have a default layout that contains \"Page Layout: {{ content }}\""]
+}

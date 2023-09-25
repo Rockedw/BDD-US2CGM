@@ -1,0 +1,16 @@
+// 1982200609520 Context Model
+digraph {
+	1982200610576 [label=Context84]
+	1982200610720 [label="I have a movies/_posts/scifi directory"]
+	1982200610576 -> 1982200610720
+	1982200610720 [label="I have a movies/_posts/scifi directory"]
+	1982217732160 [label="I have a \"movies/_posts/scifi/2009-03-27-star-wars.html\" page with layout \"simple\" that contains \"hi\""]
+	1982200610576 -> 1982217732160
+	1982217732160 [label="I have a \"movies/_posts/scifi/2009-03-27-star-wars.html\" page with layout \"simple\" that contains \"hi\""]
+	1982217732256 [label="I have a _layouts directory"]
+	1982200610576 -> 1982217732256
+	1982217732256 [label="I have a _layouts directory"]
+	1982217732352 [label="I have a simple layout that contains \"Post category: {{ page.categories }}\""]
+	1982200610576 -> 1982217732352
+	1982217732352 [label="I have a simple layout that contains \"Post category: {{ page.categories }}\""]
+}

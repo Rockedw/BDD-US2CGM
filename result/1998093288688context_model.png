@@ -1,0 +1,10 @@
+// 1998093288112 Context Model
+digraph {
+	1998093288688 [label=Context29]
+	1998093289264 [label="I will choose \"plugins/project/spec/fixtures/winter.txt\" from the \"open_file\" dialog"]
+	1998093288688 -> 1998093289264
+	1998093289264 [label="I will choose \"plugins/project/spec/fixtures/winter.txt\" from the \"open_file\" dialog"]
+	1998093289360 [label="I open a file"]
+	1998093288688 -> 1998093289360
+	1998093289360 [label="I open a file"]
+}
